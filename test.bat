@@ -1,0 +1,1 @@
+php cgtest.php --verbose %*

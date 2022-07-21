@@ -1,0 +1,4 @@
+/.tests/output/*.txt
+/.tests/output/*.exe
+/.tests/output/*.out
+**/*.exe

@@ -1,0 +1,11 @@
+{
+    //excludes files & folders for watcher service
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+      },
+    "[txt]": {
+        "files.trimFinalNewlines": false,
+        "files.trimTrailingWhitespace": false
+    }
+}
