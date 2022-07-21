@@ -29,6 +29,15 @@ $defaultConfig = [
     'errorLog' => '.tests/output/_error_log.txt',
     'languages' => ['php'],
     'puzzles' => [],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'c#' => [
+        'sourcePath' => 'c#/',
+        'sourceExtension' => '.cs',
+        'versionCommand' => 'dotnet --version',
+        'buildCommand' => '',
+        'runCommand' => 'dotnet run --nologo --verbosity quiet --project dotnet.csproj %s',
+        'cleanPatterns' => [],
+    ],
     'dart' => [
         'sourcePath' => 'dart/',
         'sourceExtension' => '.dart',
@@ -51,6 +60,15 @@ $defaultConfig = [
         'versionCommand' => 'java --version',
         'buildCommand' => '',
         'runCommand' => 'java %s',
+        'cleanPatterns' => [],
+    ],
+    // todo: readline() is missing
+    'javascript' => [
+        'sourcePath' => 'javascript/',
+        'sourceExtension' => '.js',
+        'versionCommand' => 'node --version',
+        'buildCommand' => '',
+        'runCommand' => 'node %s',
         'cleanPatterns' => [],
     ],
     'lua' => [
@@ -103,6 +121,15 @@ $defaultConfig = [
             '%o%p_%l.exe',
             '%o%p_%l.pdb',
         ],
+    ],
+    // todo: readline() is missing
+    'typescript' => [
+        'sourcePath' => 'typescript/',
+        'sourceExtension' => '.ts',
+        'versionCommand' => 'node --version',
+        'buildCommand' => '',
+        'runCommand' => 'node %s',
+        'cleanPatterns' => [],
     ],
 ];
 foreach ($defaultConfig['languages'] as $language) {

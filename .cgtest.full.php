@@ -30,12 +30,33 @@ return [
     //     %t testIndex [01..99]
     // == Tests will be run in the following languages:
     'languages' => [
+        // 'bash',
+        // 'c',
+        // 'c#',
+        // 'c++',
+        // 'clojure',
+        // 'd',
         'dart',
-        // 'php',
+        // 'f#',
         'go',
+        // 'groovy',
+        // 'haskell',
         'java',
+        // 'javascript',
+        // 'kotlin',
+        // 'lua',
+        // 'objective-c',
+        // 'ocaml',
+        // 'pascal',
         'perl',
+        'php',
         'python',
+        'ruby',
+        'rust',
+        // 'scala',
+        // 'swift',
+        // 'typescript',
+        // 'vb.net',
     ],
     // == Tests will be run for the following puzzles in all languages (can be overriden in the per-language config):
     // 'puzzles' => [
@@ -97,13 +118,16 @@ return [
         ],
     ],
     // == The following per-language config options are available:
-    //     if 'sourcePath' is given, it will OVERRIDE the 'path/' keys in the 'puzzles' and 'includePuzzles' lists
     // 'languageName' => [
+    //     // IMPORTANT NOTE: if 'sourcePath' is given, it will OVERRIDE the 'path/' keys
+    //     // in the 'puzzles' and 'includePuzzles' lists.
     //     'sourcePath' => 'language/',
     //     'sourceExtension' => '.lang',
     //     'versionCommand' => 'lang --version',
     //     'buildCommand' => '',
     //     'runCommand' => 'lang %s',
+    //     'cleanPatterns' => [
+    //     ],
     //     'excludePuzzles' => [
     //         'puzzleName',
     //     ],
@@ -113,11 +137,12 @@ return [
     //         ],
     //     ],
     // ],
-    // == Patterns available in 'buildCommand', 'runCommand':
+    // == Patterns available in 'buildCommand', 'runCommand', 'cleanPatterns':
     //     %l languageName
     //     %p puzzleName
-    //     %s sourceFileName (with path and extension);
     //     %o outputPath
+    // == Patterns available in 'buildCommand', 'runCommand':
+    //     %s sourceFileName (with path and extension);
     'java' => [
         'sourcePath' => 'java/',
         'sourceExtension' => '.java',
