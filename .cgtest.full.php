@@ -149,6 +149,7 @@ return [
         'versionCommand' => 'java --version',
         'buildCommand' => '',
         'runCommand' => 'java %s',
+        'cleanPatterns' => [],
         'excludePuzzles' => [],
         'includePuzzles' => [
             'puzzle/cg/easy/' => [
@@ -163,11 +164,34 @@ return [
         'versionCommand' => 'php --version',
         'buildCommand' => '',
         'runCommand' => 'php %s',
+        'cleanPatterns' => [],
         'excludePuzzles' => [],
         'includePuzzles' => [
             'puzzle/cg/easy/' => [
                 'easy_defibrillators',
                 'easy_mime_type',
+            ],
+            'puzzle/cg/medium/' => [
+                'med_bender_ep1',
+            ],
+            'puzzle/cg/hard/' => [
+                'hard_bender_ep2',
+            ],
+            'puzzle/cg/expert/' => [
+                'expert_music_scores',
+                'expert_the_resistance',
+            ],
+            'puzzle/community/easy/' => [
+                'easy_com_crop_circles',
+            ],
+            'puzzle/community/medium/' => [
+                'med_com_tennis_score',
+            ],
+            'puzzle/community/hard/' => [
+                'hard_com_7_segment_display',
+            ],
+            'puzzle/community/expert/' => [
+                'expert_com_binary_neural_network_part_2',
             ],
         ],
     ],
@@ -177,6 +201,7 @@ return [
         'versionCommand' => 'python --version',
         'buildCommand' => '',
         'runCommand' => 'python %s',
+        'cleanPatterns' => [],
         'excludePuzzles' => [],
         'includePuzzles' => [
             'puzzle/cg/easy/' => [
