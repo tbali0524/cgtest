@@ -42,7 +42,7 @@ Of course, your code does not need to be in php. Any languages can be used, for 
 
 ## Test cases
 
-The package already includes some test cases for several CodinGame puzzles. Most of these puzzles are rather short and simple, especially well-suited if you go to solve puzzles in __all the CG languages__.
+The repository already includes some test cases for several CodinGame puzzles. Most of these puzzles are rather short and simple, especially well-suited if you go to solve puzzles in __all the CG languages__.
 
 * The input data for these test cases are in `.tests/input` directory.
 * The expected test output data for these test cases are in `.tests/expected` directory.
@@ -51,6 +51,12 @@ The package already includes some test cases for several CodinGame puzzles. Most
 * Running CGTest with the `--clean` option deletes all temporary and test output files from the previous run.
 * You can easily add test cases for other puzzles (even outside CodinGame).
 * You can change the directory structure and the naming conventions `CGTest` is using out of the box. However you will need to tweak the config file a bit.
+
+### Important
+
+Some CG test cases have an expected output with trailing spaces in a line. Some code editors remove the trailing whitespaces automatically when you open these `.txt` files, resulting failing test runs as your codes output would be no longer identical what is stored in the expected test output file.
+
+__Turn off__ such false autocorrection for `.txt` files. The provided `.editorconfig` and `.vscode/sewttings.json` files already contain the correct settings, other editors might need different actions.
 
 ## Configuration file
 
@@ -61,6 +67,8 @@ You can override these by using a configuration file. The default configuration 
 Note: while the configuration file os a valid `php` source code, you don't need to know php to use it. It only defines an associative array, very similar to any JSON data. All the options are documented with comments in the sample config file.
 
 Some settings (but not all) can be also overriden via command-line arguments. If an option is set both in the config file and via the command-line, then the command line takes precedence.
+
+__SPOILER ALERT__: In the repository there are solutions in multiple languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). The sample `.cgtest.php` runs test cases for these solutions in several languages, assuming you have the local runtimes installed. If you haven't solved this puzzle yet, do so before checking the sample solutions.
 
 ## Restrictions
 
