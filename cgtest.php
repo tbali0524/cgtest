@@ -30,6 +30,24 @@ $defaultConfig = [
     'languages' => ['php'],
     'puzzles' => [],
     // todo: buildCommand, runCommand, cleanPatterns
+    'bash' => [
+        'sourcePath' => 'bash/',
+        'sourceExtension' => '.sh',
+        'versionCommand' => 'bash --version',
+        'buildCommand' => '',
+        'runCommand' => 'bash %s',
+        'cleanPatterns' => [],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'c' => [
+        'sourcePath' => 'c/',
+        'sourceExtension' => '.c',
+        'versionCommand' => 'gcc --version',
+        'buildCommand' => 'gcc -o %o%p_%l.exe %s',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.exe'],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
     'c#' => [
         'sourcePath' => 'c#/',
         'sourceExtension' => '.cs',
@@ -37,6 +55,33 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'dotnet run --nologo --verbosity quiet --project dotnet.csproj %s',
         'cleanPatterns' => [],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'c++' => [
+        'sourcePath' => 'c++/',
+        'sourceExtension' => '.cpp',
+        'versionCommand' => 'g++ --version',
+        'buildCommand' => 'g++ -o %o%p_%l.exe -x c++ %s',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.exe'],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'clojure' => [
+        'sourcePath' => 'clojure/',
+        'sourceExtension' => '.clj',
+        'versionCommand' => '',
+        'buildCommand' => '',
+        'runCommand' => 'java -cp clojure.jar %s',
+        'cleanPatterns' => [],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'd' => [
+        'sourcePath' => 'd/',
+        'sourceExtension' => '.d',
+        'versionCommand' => 'dmd --version',
+        'buildCommand' => 'dmd %s',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.exe'],
     ],
     'dart' => [
         'sourcePath' => 'dart/',
@@ -46,6 +91,15 @@ $defaultConfig = [
         'runCommand' => 'dart %s',
         'cleanPatterns' => [],
     ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'f#' => [
+        'sourcePath' => 'f#/',
+        'sourceExtension' => '.fs',
+        'versionCommand' => 'dotnet --version ',
+        'buildCommand' => '',
+        'runCommand' => 'dotnet run %s',
+        'cleanPatterns' => [],
+    ],
     'go' => [
         'sourcePath' => 'go/',
         'sourceExtension' => '.go',
@@ -53,6 +107,24 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'go run %s',
         'cleanPatterns' => [],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'groovy' => [
+        'sourcePath' => 'groovy/',
+        'sourceExtension' => '.groovy',
+        'versionCommand' => 'groovy --version',
+        'buildCommand' => '',
+        'runCommand' => 'groovy %s',
+        'cleanPatterns' => [],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'haskell' => [
+        'sourcePath' => 'haskell/',
+        'sourceExtension' => '.hs',
+        'versionCommand' => 'ghc --version',
+        'buildCommand' => 'ghc %s -v0',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.exe'],
     ],
     'java' => [
         'sourcePath' => 'java/',
@@ -71,13 +143,50 @@ $defaultConfig = [
         'runCommand' => 'node %s',
         'cleanPatterns' => [],
     ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'kotlin' => [
+        'sourcePath' => 'kotlin/',
+        'sourceExtension' => '.kt',
+        'versionCommand' => 'kotlinc -version',
+        'buildCommand' => 'kotlinc %s -include-runtime -d %o%p_%l.jar',
+        'runCommand' => 'java -jar %o%p_%l.jar',
+        'cleanPatterns' => ['%o%p_%l.jar'],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
     'lua' => [
         'sourcePath' => 'lua/',
         'sourceExtension' => '.lua',
-        'versionCommand' => 'lua --version',
+        'versionCommand' => 'lua -v',
         'buildCommand' => '',
         'runCommand' => 'lua %s',
         'cleanPatterns' => [],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'objective-c' => [
+        'sourcePath' => 'objective-c/',
+        'sourceExtension' => '.m',
+        'versionCommand' => 'clang --version',
+        'buildCommand' => 'clang %s',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.exe'],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'ocaml' => [
+        'sourcePath' => 'ocaml/',
+        'sourceExtension' => '.ml',
+        'versionCommand' => 'ocamlopt -v',
+        'buildCommand' => 'ocamlopt %s -o %o%p_%l.exe',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.exe'],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'pascal' => [
+        'sourcePath' => 'pascal/',
+        'sourceExtension' => '.pas',
+        'versionCommand' => 'fpc -iW',
+        'buildCommand' => 'fpc -v0 %s >%o%p_%l.txt',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.txt', '%o%p_%l.exe'],
     ],
     'perl' => [
         'sourcePath' => 'perl/',
@@ -122,13 +231,40 @@ $defaultConfig = [
             '%o%p_%l.pdb',
         ],
     ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'scala' => [
+        'sourcePath' => 'scala/',
+        'sourceExtension' => '.scala',
+        'versionCommand' => 'scala --version',
+        'buildCommand' => '',
+        'runCommand' => 'scala -cp %o %s',
+        'cleanPatterns' => [],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'swift' => [
+        'sourcePath' => 'swift/',
+        'sourceExtension' => '.swift',
+        'versionCommand' => 'swift --version ',
+        'buildCommand' => '',
+        'runCommand' => 'swift %s',
+        'cleanPatterns' => [],
+    ],
     // todo: readline() is missing
     'typescript' => [
         'sourcePath' => 'typescript/',
         'sourceExtension' => '.ts',
-        'versionCommand' => 'node --version',
+        'versionCommand' => 'tsc --version',
         'buildCommand' => '',
         'runCommand' => 'node %s',
+        'cleanPatterns' => [],
+    ],
+    // todo: buildCommand, runCommand, cleanPatterns
+    'vb.net' => [
+        'sourcePath' => 'vb.net/',
+        'sourceExtension' => '.vb',
+        'versionCommand' => 'dotnet --version ',
+        'buildCommand' => '',
+        'runCommand' => 'dotnet run %s',
         'cleanPatterns' => [],
     ],
 ];
@@ -137,7 +273,7 @@ foreach ($defaultConfig['languages'] as $language) {
     $defaultConfig[$language]['includePuzzles'] = [];
 }
 $reservedConfigKeys = [
-    'dry-run', 'ansi', 'verbose', 'lang-versions', 'clean', 'puzzles',
+    'dry-run', 'ansi', 'verbose', 'lang-versions', 'show-defaults', 'clean', 'puzzles',
     'inputPath', 'inputPattern', 'expectedPath', 'expectedPattern', 'outputPath', 'outputPattern',
     'errorLog', 'languages', 'puzzles'
 ];
@@ -161,16 +297,22 @@ for ($i = 1; $i < $argc; ++$i) {
         echo '   --no-ansi          Disable color output' . PHP_EOL;
         echo '   --verbose          Increase the verbosity of messages: also show each passed tests' . PHP_EOL;
         echo '   --lang-versions    Show versions for all configured programming languages' . PHP_EOL;
-        echo '   --clean            Delete temporary and output files of previous test run'
-            . PHP_EOL;
+        echo '   --show-defaults    Show default configuration settings (as json)' . PHP_EOL;
+        echo '   --clean            Delete temporary and output files of previous test run' . PHP_EOL;
         echo '   --config=FILENAME  Use configfile [default: ' . $defaultConfigFileName . ']' . PHP_EOL;
         echo '   --lang=LANGUAGES   Run tests in these languages (comma separated list) [default: '
             . implode(',', $defaultConfig['languages'] ?? 'none') . ']' . PHP_EOL;
         echo PHP_EOL;
         echo 'Puzzles:              Space separated list of source filenames (without extension)' . PHP_EOL;
-        echo '                        if given, it overrides the list in the config file' . PHP_EOL;
-        echo '                        path can be given, but no wildcards allowed' . PHP_EOL;
+        echo '                       - if given, it overrides the list in the config file' . PHP_EOL;
+        echo '                       - path can be given, but no wildcards allowed' . PHP_EOL;
         echo PHP_EOL;
+        exit(0);
+    }
+    if ($arg == '--show-defaults') {
+        echo $infoTag . 'Default configuration settings (before applying any config file):' . PHP_EOL;
+        // var_dump($defaultConfig);
+        echo json_encode($defaultConfig, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL . PHP_EOL;
         exit(0);
     }
     if ((substr($arg, 0, 9) == '--config=') and (strlen($arg) > 9)) {
@@ -300,7 +442,7 @@ if (
     }
     fwrite($logFile, $title . PHP_EOL . PHP_EOL);
     fclose($logFile);
-    echo $infoTag . 'Error logs during the tests runs redirected to file: ' . $config['errorLog'] . PHP_EOL;
+    echo $infoTag . '<stderr> output from the test runs redirected to file: ' . $config['errorLog'] . PHP_EOL;
 }
 foreach ($config['languages'] as $language) {
     if (!isset($config[$language])) {

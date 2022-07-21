@@ -37,12 +37,12 @@ return [
         'dart',
         // 'f#',
         'go',
-        // 'groovy',
+        'groovy',
         // 'haskell',
         'java',
         // 'javascript',
         // 'kotlin',
-        // 'lua',
+        'lua',
         // 'objective-c',
         // 'ocaml',
         // 'pascal',
@@ -93,4 +93,20 @@ return [
     //     %o outputPath
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension);
+    // == Example (not really needed here, as these are the default settings for rust):
+    'rust' => [
+        'sourcePath' => 'rust/',
+        'sourceExtension' => '.rs',
+        'versionCommand' => 'rustc --version',
+        'buildCommand' => 'rustc %s -o%o%p_%l.exe',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => [
+            '%o%p_%l.exe',
+            '%o%p_%l.pdb',
+        ],
+        'excludePuzzles' => [
+        ],
+        'includePuzzles' => [
+        ],
+    ],
 ];
