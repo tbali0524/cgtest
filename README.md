@@ -81,8 +81,8 @@ _CGTest_ supports only solo I/O puzzles. For any test case, the input must be a 
 
 I don't have local dev environment for all the 27 languages Codingame supports. Therefore some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
 
-CGTest was successfully used running `dart`, `go`, `groovy`, `java`, `lua`, `perl`, `php`, `python`, `ruby` and `rust` tests.
+CGTest was successfully used running `c`, `c++`, `dart`, `go`, `groovy`, `java`, `lua`, `perl`, `php`, `python`, `ruby` and `rust` tests.
 
-If you have experience in setting up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax).
+If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax).
 
 I have open issues with `c#` and `javascript`.
