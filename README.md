@@ -50,7 +50,7 @@ The repository already includes some test cases for several CodinGame puzzles. M
 * The input data for these test cases are in `.tests/input` directory.
 * The expected test output data for these test cases are in `.tests/expected` directory.
 * Running the tests generates output files in the `.tests/output` directory.
-* If your code writes also to the error console (maybe some debug info), you can check these in `.tests/output/_error_log.txt`.
+* If your code writes also to the error console (maybe some debug info), you can check these in `.tests/output/_debug_log.txt`.
 * Running CGTest with the `--clean` option deletes all temporary and test output files from the previous run.
 * You can easily add test cases for other puzzles.
 * You can change the directory structure and the file naming conventions `CGTest` is using out of the box. However you will need to tweak the config file a bit.
