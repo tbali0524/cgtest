@@ -5,12 +5,20 @@
  * CGTest v1.0.0 - multi-language offline batch test runner for CodinGame solo I/O puzzles.
  *
  * (c) 2022, by TBali
+ *
+ * For usage, see:
+ *   php cgtest.php --help
+ *
+ * Latest version: https://github.com/tbali0524/cgtest
  */
 
 declare(strict_types=1);
 
 namespace TBali\CGTest;
 
+// Yes, this is a spaghetti code, I know... Don't look at it.
+// I wanted a zero-dependency, single file script.
+// So I skipped using OOP, and - as code repetition is low - even functions.
 $startTime = microtime(true);
 $title = 'CGTest v1.0.0 - multi-language offline batch test runner for CodinGame solo I/O puzzles, (c) 2022, by TBali';
 echo $title . PHP_EOL . PHP_EOL;
@@ -87,7 +95,7 @@ $defaultConfig = [
         'cleanPatterns' => [
             '%o%p_%l.exe',
             '%o%p_%l.obj',
-            '%o%p_%l.o'
+            '%o%p_%l.o',
         ],
     ],
     'dart' => [
@@ -181,7 +189,7 @@ $defaultConfig = [
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => ['%o%p_%l.exe'],
     ],
-    // note: works under Linux
+    // todo: try out also in Windows:
     'ocaml' => [
         'sourcePath' => 'ocaml/',
         'sourceExtension' => '.ml',
@@ -197,8 +205,8 @@ $defaultConfig = [
         'buildCommand' => 'fpc -v0 -FE%o -o%p_%l.exe %s',
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => [
+            '%o%p_%l.exe',
             '%o%p.o',
-            '%o%p_%l.exe'
         ],
     ],
     'perl' => [
@@ -287,7 +295,7 @@ foreach ($defaultConfig['languages'] as $language) {
 $reservedConfigKeys = [
     'dry-run', 'ansi', 'verbose', 'lang-versions', 'show-defaults', 'clean', 'puzzles',
     'inputPath', 'inputPattern', 'expectedPath', 'expectedPattern', 'outputPath', 'outputPattern',
-    'debugLog', 'languages', 'puzzles'
+    'debugLog', 'buildLog', 'languages', 'puzzles',
 ];
 $infoTag = '[INFO] ';
 $errorTag = '[ERROR] ';
@@ -313,7 +321,7 @@ for ($i = 1; $i < $argc; ++$i) {
         echo '   --clean            Delete temporary and output files of previous test run' . PHP_EOL;
         echo '   --config=FILENAME  Use configfile [default: ' . $defaultConfigFileName . ']' . PHP_EOL;
         echo '   --lang=LANGUAGES   Run tests in these languages (comma separated list) [default: '
-            . implode(',', $defaultConfig['languages'] ?? 'none') . '; or the list in the config file]' . PHP_EOL;
+            . implode(',', $defaultConfig['languages']) . '; or the list in the config file]' . PHP_EOL;
         echo PHP_EOL;
         echo 'Puzzles:              Space separated list of source filenames (without extension)' . PHP_EOL;
         echo '                       - if given, it overrides the list in the config file' . PHP_EOL;
@@ -502,7 +510,6 @@ foreach ($config['languages'] as $language) {
         $execOutput = [];
         $execResultCode = 0;
         $execResult = exec($versionCommand, $execOutput, $execResultCode);
-        // @phpstan-ignore-next-line
         if ($execResult === false) {
             echo $warnTag . 'Language is unavaliable: ' . $config[$language]['versionCommand'] . PHP_EOL;
             continue;
@@ -586,7 +593,6 @@ foreach ($config['languages'] as $language) {
                 $execOutput = [];
                 $execResultCode = 0;
                 $execResult = exec($buildCommand, $execOutput, $execResultCode);
-                // @phpstan-ignore-next-line
                 if ($execResult === false) {
                     echo $warnTag . 'Build unsuccessful for source: ' . $sourceFullFileName . PHP_EOL;
                     continue;
@@ -677,7 +683,6 @@ foreach ($config['languages'] as $language) {
                 $execOutput = [];
                 $execResultCode = 0;
                 $execResult = exec($runCommand, $execOutput, $execResultCode);
-                // @phpstan-ignore-next-line
                 if ($execResult === false) {
                     echo $errorTag . 'Execution unsuccessful for source: ' . $sourceFullFileName . PHP_EOL;
                     continue;
