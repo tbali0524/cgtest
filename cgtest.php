@@ -39,7 +39,6 @@ $defaultConfig = [
         'runCommand' => 'bash %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'c' => [
         'sourcePath' => 'c/',
         'sourceExtension' => '.c',
@@ -57,7 +56,6 @@ $defaultConfig = [
         'runCommand' => 'dotnet run --nologo --verbosity quiet --project dotnet.csproj %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'c++' => [
         'sourcePath' => 'c++/',
         'sourceExtension' => '.cpp',
@@ -70,19 +68,21 @@ $defaultConfig = [
     'clojure' => [
         'sourcePath' => 'clojure/',
         'sourceExtension' => '.clj',
-        'versionCommand' => '',
+        'versionCommand' => 'clj --version',
         'buildCommand' => '',
-        'runCommand' => 'java -cp clojure.jar %s',
+        'runCommand' => 'clj %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'd' => [
         'sourcePath' => 'd/',
         'sourceExtension' => '.d',
         'versionCommand' => 'dmd --version',
-        'buildCommand' => 'dmd %s',
+        'buildCommand' => 'dmd -od=%o -of=%o%p_%l.exe %s',
         'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.exe'],
+        'cleanPatterns' => [
+            '%o%p_%l.exe',
+            '%o%p_%l.obj'
+        ],
     ],
     'dart' => [
         'sourcePath' => 'dart/',
@@ -109,7 +109,6 @@ $defaultConfig = [
         'runCommand' => 'go run %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'groovy' => [
         'sourcePath' => 'groovy/',
         'sourceExtension' => '.groovy',
@@ -118,14 +117,17 @@ $defaultConfig = [
         'runCommand' => 'groovy %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'haskell' => [
         'sourcePath' => 'haskell/',
         'sourceExtension' => '.hs',
         'versionCommand' => 'ghc --version',
-        'buildCommand' => 'ghc %s -v0',
+        'buildCommand' => 'ghc -outputdir %o -o %o%p_%l.exe %s',
         'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.exe'],
+        'cleanPatterns' => [
+            '%o%p_%l.exe',
+            '%oMain.o',
+            '%oMain.hi',
+        ],
     ],
     'java' => [
         'sourcePath' => 'java/',
@@ -153,7 +155,6 @@ $defaultConfig = [
         'runCommand' => 'java -jar %o%p_%l.jar',
         'cleanPatterns' => ['%o%p_%l.jar'],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'lua' => [
         'sourcePath' => 'lua/',
         'sourceExtension' => '.lua',
@@ -180,14 +181,16 @@ $defaultConfig = [
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => ['%o%p_%l.exe'],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'pascal' => [
         'sourcePath' => 'pascal/',
         'sourceExtension' => '.pas',
         'versionCommand' => 'fpc -iW',
-        'buildCommand' => 'fpc -v0 %s >%o%p_%l.txt',
+        'buildCommand' => 'fpc -v0 -FE%o -o%p_%l.exe %s',
         'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.txt', '%o%p_%l.exe'],
+        'cleanPatterns' => [
+            '%o%p.o',
+            '%o%p_%l.exe'
+        ],
     ],
     'perl' => [
         'sourcePath' => 'perl/',
@@ -245,7 +248,7 @@ $defaultConfig = [
     'swift' => [
         'sourcePath' => 'swift/',
         'sourceExtension' => '.swift',
-        'versionCommand' => 'swift --version ',
+        'versionCommand' => 'swift --version',
         'buildCommand' => '',
         'runCommand' => 'swift %s',
         'cleanPatterns' => [],
@@ -265,7 +268,7 @@ $defaultConfig = [
         'sourceExtension' => '.vb',
         'versionCommand' => 'dotnet --version ',
         'buildCommand' => '',
-        'runCommand' => 'dotnet run %s',
+        'runCommand' => '',
         'cleanPatterns' => [],
     ],
 ];
@@ -482,7 +485,7 @@ foreach ($config['languages'] as $language) {
     if (!($config['clean'] ?? false) and (($config[$language]['versionCommand'] ?? '') != '')) {
         if ($config['lang-versions'] ?? false) {
             echo $infoTag . 'Version info for language: ' . $language . PHP_EOL;
-            $versionCommand = $config[$language]['versionCommand'];
+            $versionCommand = $config[$language]['versionCommand'] . ' 2>&1';
         } elseif ($config['dry-run'] ?? false) {
             $versionCommand = $config[$language]['versionCommand'] . ' >> ' . $config['buildLog'] . ' 2>&1';
         } else {
@@ -497,8 +500,11 @@ foreach ($config['languages'] as $language) {
             continue;
         }
         if ($config['lang-versions'] ?? false) {
-            for ($i = 0; $i < min(3, count($execOutput)); ++$i) {
-                echo $execOutput[$i] . PHP_EOL;
+            for ($i = 0; $i < min(4, count($execOutput)); ++$i) {
+                if (($execOutput[$i] ?? '') == '') {
+                    continue;
+                }
+                echo '    ' . $execOutput[$i] . PHP_EOL;
             }
             ++$totalLanguages;
             continue;

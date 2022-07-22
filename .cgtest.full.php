@@ -128,6 +128,7 @@ return [
     //     'buildCommand' => '',
     //     'runCommand' => 'lang %s',
     //     'cleanPatterns' => [
+    //         'fileNameWithPathOrPattern',
     //     ],
     //     'excludePuzzles' => [
     //         'puzzleName',
@@ -143,7 +144,7 @@ return [
     //     %p puzzleName
     //     %o outputPath
     // == Patterns available in 'buildCommand', 'runCommand':
-    //     %s sourceFileName (with path and extension);
+    //     %s sourceFileName (with path and extension)
     // == Example (not really needed here, as these are the default settings for rust):
     'rust' => [
         'sourcePath' => 'rust/',
