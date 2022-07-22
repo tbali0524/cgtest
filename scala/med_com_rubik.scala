@@ -6,7 +6,7 @@ import scala.io.StdIn._
 object Solution extends App {
     val N = readInt
     var ans = 0
-    if (N > 1)) {
+    if (N > 1) then {
         ans = 6 * N * (N - 2) + 8;
     } else {
         ans = 1;

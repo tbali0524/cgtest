@@ -14,9 +14,9 @@ However, sometimes you might want to setup and use your own local dev environmen
 
 __CGTest__ is a simple tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__, and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby` and `rust` tests.
+CGTest was successfully used running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests.
 
-The test runner works for any non-ingteractive code that reads from a standard input and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
+The test runner works for any non-interactive code that reads from a standard input and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
 ## Command line usage
 
@@ -34,7 +34,7 @@ Options:
    --show-defaults    Show default configuration settings (as json)
    --clean            Delete temporary and output files of previous test run
    --config=FILENAME  Use configfile [default: .cgtest.php]
-   --lang=LANGUAGES   Run tests in these languages (comma separated list) [default: php]
+   --lang=LANGUAGES   Run tests in these languages (comma separated list) [default: php; or the list in the config file]
 
 Puzzles:              Space separated list of source filenames (without extension)
                        - if given, it overrides the list in the config file
@@ -78,7 +78,7 @@ _Note:_ While the configuration file is a valid `php` source code, you don't nee
 
 Some settings (but not all) can be also overriden via command-line arguments. If an option is set both in the config file and via the command-line, then the command-line takes precedence.
 
-_SPOILER ALERT:_ In the repository, there is a solution source code in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._ 
+_SPOILER ALERT:_ In the repository, there is a solution source code in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._
 
 * The sample `.cgtest.php` runs test cases for these solutions in several languages, assuming you have the local runtimes installed.
 * If you don't have the local setup for a language, just comment it out in the `'languages'` section of config file, or override the language selection with the `--lang=` command-line option.
@@ -90,8 +90,10 @@ _CGTest_ supports only solo I/O puzzles. For any test case, the input must be a 
 
 ## Issues
 
-I don't have local dev environment for all the 27 languages Codingame supports. Therefore some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
+I don't have local dev environment for all the 27 languages Codingame supports. Therefore, some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
 
 If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax).
 
-E.g. I have open issues with `c#` and `javascript`.
+* I could not set up local run properly for: `c#`, `f#`, `vb.net`, `clojure`, `objective-c`, `ocaml`, `swift`
+* `javascript` and `typescript` code is run by `node`, however the `readline()` function is missing. I don't know how to properly polyfill this locally.
+* Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows.

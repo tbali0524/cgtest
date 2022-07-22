@@ -2,13 +2,11 @@
 
 import java.util.*
 
-fun main(args : Array<String>) {
+fun main() {
     val input = Scanner(System.`in`)
     val N = input.nextInt()
-    var ans = 0
-    if (N == 1) {
-        ans = 1;
-    } else {
+    var ans = 1
+    if (N > 1) {
         ans = 6 * N * (N - 2) + 8;
     }
     println(ans)

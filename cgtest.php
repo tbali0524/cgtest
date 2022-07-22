@@ -30,13 +30,13 @@ $defaultConfig = [
     'buildLog' => '.tests/output/_build_log.txt',
     'languages' => ['php'],
     'puzzles' => [],
-    // todo: buildCommand, runCommand, cleanPatterns
+    // todo: fix buildCommand, runCommand, cleanPatterns
     'bash' => [
         'sourcePath' => 'bash/',
         'sourceExtension' => '.sh',
         'versionCommand' => 'bash --version',
-        'buildCommand' => '',
-        'runCommand' => 'bash %s',
+        'buildCommand' => 'chmod +x %s',
+        'runCommand' => '%s',
         'cleanPatterns' => [],
     ],
     'c' => [
@@ -47,7 +47,7 @@ $defaultConfig = [
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => ['%o%p_%l.exe'],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
+    // todo: fix buildCommand, runCommand, cleanPatterns
     'c#' => [
         'sourcePath' => 'c#/',
         'sourceExtension' => '.cs',
@@ -64,13 +64,13 @@ $defaultConfig = [
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => ['%o%p_%l.exe'],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
+    // todo: fix buildCommand, runCommand, cleanPatterns
     'clojure' => [
         'sourcePath' => 'clojure/',
         'sourceExtension' => '.clj',
-        'versionCommand' => 'clj --version',
+        'versionCommand' => 'pwsh -Command clj --version',
         'buildCommand' => '',
-        'runCommand' => 'clj %s',
+        'runCommand' => 'pwsh -Command clj -m %s',
         'cleanPatterns' => [],
     ],
     'd' => [
@@ -92,7 +92,7 @@ $defaultConfig = [
         'runCommand' => 'dart %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
+    // todo: fix buildCommand, runCommand, cleanPatterns
     'f#' => [
         'sourcePath' => 'f#/',
         'sourceExtension' => '.fs',
@@ -146,14 +146,17 @@ $defaultConfig = [
         'runCommand' => 'node %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'kotlin' => [
         'sourcePath' => 'kotlin/',
         'sourceExtension' => '.kt',
         'versionCommand' => 'kotlinc -version',
-        'buildCommand' => 'kotlinc %s -include-runtime -d %o%p_%l.jar',
+        'buildCommand' => 'kotlinc -include-runtime -d %o%p_%l.jar %s',
         'runCommand' => 'java -jar %o%p_%l.jar',
         'cleanPatterns' => ['%o%p_%l.jar'],
+        // 'versionCommand' => 'kotlinc-native -version',
+        // 'buildCommand' => 'kotlinc-native -o %o%p_%l.exe %s',
+        // 'runCommand' => '%o%p_%l.exe',
+        // 'cleanPatterns' => ['%o%p_%l.exe'],
     ],
     'lua' => [
         'sourcePath' => 'lua/',
@@ -163,7 +166,7 @@ $defaultConfig = [
         'runCommand' => 'lua %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
+    // todo: fix buildCommand, runCommand, cleanPatterns
     'objective-c' => [
         'sourcePath' => 'objective-c/',
         'sourceExtension' => '.m',
@@ -172,7 +175,7 @@ $defaultConfig = [
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => ['%o%p_%l.exe'],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
+    // todo: fix buildCommand, runCommand, cleanPatterns
     'ocaml' => [
         'sourcePath' => 'ocaml/',
         'sourceExtension' => '.ml',
@@ -235,7 +238,6 @@ $defaultConfig = [
             '%o%p_%l.pdb',
         ],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
     'scala' => [
         'sourcePath' => 'scala/',
         'sourceExtension' => '.scala',
@@ -244,7 +246,7 @@ $defaultConfig = [
         'runCommand' => 'scala -cp %o %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
+    // todo: fix buildCommand, runCommand, cleanPatterns
     'swift' => [
         'sourcePath' => 'swift/',
         'sourceExtension' => '.swift',
@@ -262,11 +264,11 @@ $defaultConfig = [
         'runCommand' => 'node %s',
         'cleanPatterns' => [],
     ],
-    // todo: buildCommand, runCommand, cleanPatterns
+    // todo: fix buildCommand, runCommand, cleanPatterns
     'vb.net' => [
         'sourcePath' => 'vb.net/',
         'sourceExtension' => '.vb',
-        'versionCommand' => 'dotnet --version ',
+        'versionCommand' => 'dotnet --version',
         'buildCommand' => '',
         'runCommand' => '',
         'cleanPatterns' => [],
@@ -305,7 +307,7 @@ for ($i = 1; $i < $argc; ++$i) {
         echo '   --clean            Delete temporary and output files of previous test run' . PHP_EOL;
         echo '   --config=FILENAME  Use configfile [default: ' . $defaultConfigFileName . ']' . PHP_EOL;
         echo '   --lang=LANGUAGES   Run tests in these languages (comma separated list) [default: '
-            . implode(',', $defaultConfig['languages'] ?? 'none') . ']' . PHP_EOL;
+            . implode(',', $defaultConfig['languages'] ?? 'none') . '; or the list in the config file]' . PHP_EOL;
         echo PHP_EOL;
         echo 'Puzzles:              Space separated list of source filenames (without extension)' . PHP_EOL;
         echo '                       - if given, it overrides the list in the config file' . PHP_EOL;
