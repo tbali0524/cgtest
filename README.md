@@ -14,7 +14,7 @@ However, sometimes you might want to setup and use your own local dev environmen
 
 __CGTest__ is a simple tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__, and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests.
+CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash`, `f#` and `ocaml` in Linux.
 
 The test runner works for any non-interactive code that reads from a standard input and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
@@ -94,6 +94,6 @@ I don't have local dev environment for all the 27 languages Codingame supports. 
 
 If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax).
 
-* I could not set up local run properly for: `c#`, `f#`, `vb.net`, `clojure`, `objective-c`, `ocaml`, `swift`
+* I could not yet set up to run the tester properly for: `c#`, `vb.net`, `clojure`, `objective-c`, `swift`
 * `javascript` and `typescript` code is run by `node`, however the `readline()` function is missing. I don't know how to properly polyfill this locally.
-* Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows.
+* Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows using a _'bash for Windows'_ package such as `MSYS2`.

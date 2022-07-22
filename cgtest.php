@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 /**
@@ -30,7 +31,7 @@ $defaultConfig = [
     'buildLog' => '.tests/output/_build_log.txt',
     'languages' => ['php'],
     'puzzles' => [],
-    // todo: fix buildCommand, runCommand, cleanPatterns
+    // todo: fix to work also under Windows
     'bash' => [
         'sourcePath' => 'bash/',
         'sourceExtension' => '.sh',
@@ -68,10 +69,14 @@ $defaultConfig = [
     'clojure' => [
         'sourcePath' => 'clojure/',
         'sourceExtension' => '.clj',
-        'versionCommand' => 'pwsh -Command clj --version',
+        'versionCommand' => 'clj --version',
         'buildCommand' => '',
-        'runCommand' => 'pwsh -Command clj -m %s',
+        'runCommand' => 'clj -X Solution/main %s',
         'cleanPatterns' => [],
+        // 'versionCommand' => 'pwsh -Command clj --version',
+        // 'buildCommand' => '',
+        // 'runCommand' => 'pwsh -Command clj -X Solution/main %s',
+        // 'cleanPatterns' => [],
     ],
     'd' => [
         'sourcePath' => 'd/',
@@ -81,7 +86,8 @@ $defaultConfig = [
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => [
             '%o%p_%l.exe',
-            '%o%p_%l.obj'
+            '%o%p_%l.obj',
+            '%o%p_%l.o'
         ],
     ],
     'dart' => [
@@ -92,13 +98,12 @@ $defaultConfig = [
         'runCommand' => 'dart %s',
         'cleanPatterns' => [],
     ],
-    // todo: fix buildCommand, runCommand, cleanPatterns
     'f#' => [
         'sourcePath' => 'f#/',
-        'sourceExtension' => '.fs',
-        'versionCommand' => 'dotnet --version ',
+        'sourceExtension' => '.fsx',
+        'versionCommand' => 'dotnet --version',
         'buildCommand' => '',
-        'runCommand' => 'dotnet run %s',
+        'runCommand' => 'dotnet fsi %s',
         'cleanPatterns' => [],
     ],
     'go' => [
@@ -170,12 +175,13 @@ $defaultConfig = [
     'objective-c' => [
         'sourcePath' => 'objective-c/',
         'sourceExtension' => '.m',
-        'versionCommand' => 'clang --version',
-        'buildCommand' => 'clang %s',
+        'versionCommand' => 'gcc --version',
+        'buildCommand' => 'gcc -o %o%p_%l.exe -lobjc -lgnustep-base -F /usr/lib/GNUstep -I /usr/include/GNUstep'
+            . ' -fconstant-string-class=NSConstantString %s',
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => ['%o%p_%l.exe'],
     ],
-    // todo: fix buildCommand, runCommand, cleanPatterns
+    // note: works under Linux
     'ocaml' => [
         'sourcePath' => 'ocaml/',
         'sourceExtension' => '.ml',
@@ -270,7 +276,7 @@ $defaultConfig = [
         'sourceExtension' => '.vb',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => '',
-        'runCommand' => '',
+        'runCommand' => 'dotnet run %s',
         'cleanPatterns' => [],
     ],
 ];
