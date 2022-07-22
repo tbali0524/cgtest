@@ -26,7 +26,8 @@ $defaultConfig = [
     'expectedPattern' => '%p_e%t.txt',
     'outputPath' => '.tests/output/',
     'outputPattern' => '%p_o%t_%l.txt',
-    'errorLog' => '.tests/output/_error_log.txt',
+    'debugLog' => '.tests/output/_debug_log.txt',
+    'buildLog' => '.tests/output/_build_log.txt',
     'languages' => ['php'],
     'puzzles' => [],
     // todo: buildCommand, runCommand, cleanPatterns
@@ -275,7 +276,7 @@ foreach ($defaultConfig['languages'] as $language) {
 $reservedConfigKeys = [
     'dry-run', 'ansi', 'verbose', 'lang-versions', 'show-defaults', 'clean', 'puzzles',
     'inputPath', 'inputPattern', 'expectedPath', 'expectedPattern', 'outputPath', 'outputPattern',
-    'errorLog', 'languages', 'puzzles'
+    'debugLog', 'languages', 'puzzles'
 ];
 $infoTag = '[INFO] ';
 $errorTag = '[ERROR] ';
@@ -311,7 +312,6 @@ for ($i = 1; $i < $argc; ++$i) {
     }
     if ($arg == '--show-defaults') {
         echo $infoTag . 'Default configuration settings (before applying any config file):' . PHP_EOL;
-        // var_dump($defaultConfig);
         echo json_encode($defaultConfig, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL . PHP_EOL;
         exit(0);
     }
@@ -415,18 +415,36 @@ if (($config['outputPattern'] ?? '') == '') {
     echo $errorTag . 'Invalid configuration: missing test output file pattern' . PHP_EOL;
     exit(2);
 }
+if (($config['debugLog'] ?? '') == '') {
+    echo $errorTag . 'Invalid configuration: missing debug log destination' . PHP_EOL;
+    exit(2);
+}
+if (($config['buildLog'] ?? '') == '') {
+    echo $errorTag . 'Invalid configuration: missing build log destination' . PHP_EOL;
+    exit(2);
+}
 $totalLanguages = 0;
 $totalDirectories = 0;
 $totalFiles = 0;
 $totalTests = 0;
 $totalPassed = 0;
-if (file_exists($config['errorLog'] ?? '')) {
-    $unlinkResult = unlink($config['errorLog']);
+if (file_exists($config['debugLog'] ?? '')) {
+    $unlinkResult = unlink($config['debugLog']);
     if ($config['clean'] ?? false) {
         if (!$unlinkResult) {
-            echo $warnTag . 'Could not delete file: ' . $config['errorLog'] . PHP_EOL;
+            echo $warnTag . 'Could not delete file: ' . $config['debugLog'] . PHP_EOL;
         } elseif ($config['verbose'] ?? false) {
-            echo $infoTag . 'Deleted file: ' . $config['errorLog'] . PHP_EOL;
+            echo $infoTag . 'Deleted file: ' . $config['debugLog'] . PHP_EOL;
+        }
+    }
+}
+if (file_exists($config['buildLog'] ?? '')) {
+    $unlinkResult = unlink($config['buildLog']);
+    if ($config['clean'] ?? false) {
+        if (!$unlinkResult) {
+            echo $warnTag . 'Could not delete file: ' . $config['buildLog'] . PHP_EOL;
+        } elseif ($config['verbose'] ?? false) {
+            echo $infoTag . 'Deleted file: ' . $config['buildLog'] . PHP_EOL;
         }
     }
 }
@@ -435,14 +453,14 @@ if (
     and !($config['lang-versions'] ?? false)
     and !($config['dry-run'] ?? false)
 ) {
-    $logFile = fopen($config['errorLog'], 'ab');
+    $logFile = fopen($config['debugLog'], 'ab');
     if ($logFile === false) {
-        echo $errorTag . 'Cannot open logfile to write: ' . $config['errorLog'] . PHP_EOL . PHP_EOL;
+        echo $errorTag . 'Cannot open logfile to write: ' . $config['debugLog'] . PHP_EOL . PHP_EOL;
         exit(2);
     }
     fwrite($logFile, $title . PHP_EOL . PHP_EOL);
     fclose($logFile);
-    echo $infoTag . '<stderr> output from the test runs redirected to file: ' . $config['errorLog'] . PHP_EOL;
+    echo $infoTag . '<stderr> output from the test runs redirected to file: ' . $config['debugLog'] . PHP_EOL;
 }
 foreach ($config['languages'] as $language) {
     if (!isset($config[$language])) {
@@ -466,9 +484,9 @@ foreach ($config['languages'] as $language) {
             echo $infoTag . 'Version info for language: ' . $language . PHP_EOL;
             $versionCommand = $config[$language]['versionCommand'];
         } elseif ($config['dry-run'] ?? false) {
-            $versionCommand = $config[$language]['versionCommand'];
+            $versionCommand = $config[$language]['versionCommand'] . ' >> ' . $config['buildLog'] . ' 2>&1';
         } else {
-            $versionCommand = $config[$language]['versionCommand'] . ' >> ' . $config['errorLog'] . ' 2>>&1';
+            $versionCommand = $config[$language]['versionCommand'] . ' >> ' . $config['debugLog'] . ' 2>&1';
         }
         $execOutput = [];
         $execResultCode = 0;
@@ -550,7 +568,7 @@ foreach ($config['languages'] as $language) {
                 if (PHP_OS_FAMILY == 'Windows') {
                     $baseBuildCommand = str_replace('/', '\\', $baseBuildCommand);
                 }
-                $buildCommand = $baseBuildCommand . ' >> ' . $config['errorLog'] . ' 2>>&1';
+                $buildCommand = $baseBuildCommand . ' >> ' . $config['debugLog'] . ' 2>> ' . $config['buildLog'];
                 $execOutput = [];
                 $execResultCode = 0;
                 $execResult = exec($buildCommand, $execOutput, $execResultCode);
@@ -631,7 +649,7 @@ foreach ($config['languages'] as $language) {
                     --$i;
                 }
                 $expectedFileContents = substr($expectedFileContents, 0, $i + 1);
-                $logFile = fopen($config['errorLog'], 'ab');
+                $logFile = fopen($config['debugLog'], 'ab');
                 if ($logFile !== false) {
                     $s = "| $language | $stringIdxTest | $sourceFullFileName |";
                     fwrite($logFile, str_repeat('=', strlen($s)) . PHP_EOL);
@@ -641,7 +659,7 @@ foreach ($config['languages'] as $language) {
                     fclose($logFile);
                 }
                 $runCommand = $baseRunCommand . " < $inputFullFileName > $outputFullFileName 2>> "
-                    . $config['errorLog'];
+                    . $config['debugLog'];
                 $execOutput = [];
                 $execResultCode = 0;
                 $execResult = exec($runCommand, $execOutput, $execResultCode);

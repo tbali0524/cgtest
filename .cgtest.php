@@ -21,7 +21,8 @@ return [
     // 'expectedPattern' => '%p_e%t.txt',
     // 'outputPath' => '.tests/output/',
     // 'outputPattern' => '%p_o%t_%l.txt',
-    // 'errorLog' => '.tests/output/_error_log.txt',
+    // 'debugLog' => '.tests/output/_debug_log.txt',
+    // 'buildLog' => '.tests/output/_build_log.txt',
     // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern'
     //     %l languageName
     //     %p puzzleName
@@ -70,7 +71,7 @@ return [
     // == The following per-language config options are available:
     // 'languageName' => [
     //     // IMPORTANT NOTE: if 'sourcePath' is given, it will OVERRIDE the 'path/' keys
-    //     // in the 'puzzles' and 'includePuzzles' lists.
+    //     //   in the 'puzzles' and 'includePuzzles' lists.
     //     'sourcePath' => 'language/',
     //     'sourceExtension' => '.lang',
     //     'versionCommand' => 'lang --version',

@@ -22,7 +22,8 @@ return [
     // 'outputPath' => '.tests/output/',
     // 'outputPattern' => '%p_o%t_%l.txt',
     // 'execPattern' => '%p_%l.exe',        // used only with --clean CLI argument
-    // 'errorLog' => '.tests/output/_error_log.txt',
+    // 'debugLog' => '.tests/output/_debug_log.txt',
+    // 'buildLog' => '.tests/output/_build_log.txt',
     // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern', 'execPattern':
     //     %l languageName
     //     %p puzzleName
@@ -120,7 +121,7 @@ return [
     // == The following per-language config options are available:
     // 'languageName' => [
     //     // IMPORTANT NOTE: if 'sourcePath' is given, it will OVERRIDE the 'path/' keys
-    //     // in the 'puzzles' and 'includePuzzles' lists.
+    //     //   in the 'puzzles' and 'includePuzzles' lists.
     //     'sourcePath' => 'language/',
     //     'sourceExtension' => '.lang',
     //     'versionCommand' => 'lang --version',
@@ -143,21 +144,23 @@ return [
     //     %o outputPath
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension);
-    'java' => [
-        'sourcePath' => 'java/',
-        'sourceExtension' => '.java',
-        'versionCommand' => 'java --version',
-        'buildCommand' => '',
-        'runCommand' => 'java %s',
-        'cleanPatterns' => [],
-        'excludePuzzles' => [],
+    // == Example (not really needed here, as these are the default settings for rust):
+    'rust' => [
+        'sourcePath' => 'rust/',
+        'sourceExtension' => '.rs',
+        'versionCommand' => 'rustc --version',
+        'buildCommand' => 'rustc %s -o%o%p_%l.exe',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => [
+            '%o%p_%l.exe',
+            '%o%p_%l.pdb',
+        ],
+        'excludePuzzles' => [
+        ],
         'includePuzzles' => [
-            'puzzle/cg/easy/' => [
-                'easy_defibrillators',
-                'easy_mime_type',
-            ],
         ],
     ],
+    // == Additional test cases for a single language:
     'php' => [
         'sourcePath' => 'php/',
         'sourceExtension' => '.php',
@@ -192,21 +195,6 @@ return [
             ],
             'puzzle/community/expert/' => [
                 'expert_com_binary_neural_network_part_2',
-            ],
-        ],
-    ],
-    'python' => [
-        'sourcePath' => 'python/',
-        'sourceExtension' => '.py',
-        'versionCommand' => 'python --version',
-        'buildCommand' => '',
-        'runCommand' => 'python %s',
-        'cleanPatterns' => [],
-        'excludePuzzles' => [],
-        'includePuzzles' => [
-            'puzzle/cg/easy/' => [
-                'easy_defibrillators',
-                'easy_mime_type',
             ],
         ],
     ],
