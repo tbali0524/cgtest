@@ -58,7 +58,6 @@ CGTest is a single-file php script, so you need `PHP` (v7.3 or newer) installed 
 
 * If you are unfamiliar with setting up php, [this section on my tech.io article about php dev tools](https://www.codingame.com/playgrounds/77580/php-dev-tools-for-codingame-or-elsewhere/running-your-code-locally-php) might provide some help.
 
-
 Of course, your code does not need to be written in php. _Any language can be used_, for which you have a local dev environment. You might just need to configure how the test runner should invoke your compiler and/or interpreter. _(But there is a high chance that default settings, provided for ~30 languages will also work for you.)_
 
 ## Configuration file
