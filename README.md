@@ -1,22 +1,24 @@
 # CGTest v1.0.0
 
-A multi-language offline batch test runner for `CodinGame` solo I/O puzzles.
+A multi-language offline batch test runner for `CodinGame` (or other) solo I/O puzzles.
 
-(c) 2022, by [TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033)
+(c) 2022, by Balint Toth [TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033)
 
 ## Intro
+
+__CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
+
+CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash`, `f#` and `ocaml` in Linux. It should also work on almost any other computer system, including Mac.
+
+The test runner works for any non-interactive code that reads from a standard input stream, and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
+
+### Using with CodinGame
 
 [CodinGame solo puzzles](https://www.codingame.com/training) provide a fun way to practice and improve your coding skills in any of its [27 supported programming languages](https://www.codingame.com/playgrounds/40701/help-center/languages-versions).
 
 At CG you don't have to bother about setting up any local development environment: just start to write your code directly on the CG website using your browser, run there the provided test cases (for solo puzzles), and submit your solution when you feel ready.
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
-
-__CGTest__ is a simple tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__, and for __multiple test cases__ per puzzle.
-
-CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash`, `f#` and `ocaml` in Linux.
-
-The test runner works for any non-interactive code that reads from a standard input and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
 ## Command line usage
 
@@ -34,7 +36,8 @@ Options:
    --show-defaults    Show default configuration settings (as json)
    --clean            Delete temporary and output files of previous test run
    --config=FILENAME  Use configfile [default: .cgtest.php]
-   --lang=LANGUAGES   Run tests in these languages (comma separated list) [default: php; or the list in the config file]
+   --lang=LANGUAGES   Run tests in these languages (comma separated list)
+                        - default: php; or the languages section in the config file
 
 Puzzles:              Space separated list of source filenames (without extension)
                        - if given, it overrides the list in the config file
@@ -45,28 +48,15 @@ An example run result:
 
 ![screenshot](cgtest_screenshot.png)
 
-CGTest is a single-file _php_ script, so you need `php` (v7.4 or newer) installed on your machine to use it.
+The minimal required configuration to run CGTest is to define (either via command-line or via the config file) the list of puzzles to test, and the list of languages to run.
 
-Of course, your code does not need to be in php. Any language can be used for which you have a local dev environment. You might just need to configure how the test runner should invoke your compiler and/or interpreter. _(But there is a high chance that default settings will work for you.)_
+## Prerequisites
 
-## Test cases
+![php-version-73](https://shields.io/badge/php->=7.3-blue)
 
-The repository already includes some test cases for several `CodinGame` puzzles. Most of these puzzles are rather short and simple. So especially well-suited, if you want to solve some puzzles in __all the CG languages__.
+CGTest is a single-file _php_ script, so you need `php` (v7.3 or newer) installed on your machine to use it.
 
-* The input data for these test cases are in `.tests/input` directory.
-* The expected test output data for these test cases are in `.tests/expected` directory.
-* Running the tests generates output files in the `.tests/output` directory.
-* If your code writes also to the error console (maybe some debug info), you can check these in `.tests/output/_debug_log.txt`.
-* Rerunning CGTest with the `--clean` option added deletes all temporary and test output files from the previous run.
-* You can easily add test cases for other puzzles.
-* You can either put your source files in per-language folders or you can structure them in a per-puzzle (or per-puzzle-group) basis.
-* You can change the directory structure and the file naming conventions `CGTest` is using out of the box. However, you will need to tweak the config file a bit to your liking.
-
-### Important
-
-Some CG test cases have an expected output with trailing spaces in some lines. __Some code editors remove the trailing whitespaces automatically__, when you open these `.txt` files. This results failing test runs, as your codes output is no longer identical to what is stored in the expected test output file.
-
-__Turn off__ such _false_ autocorrection for `.txt` files. The `.editorconfig` and `.vscode/settings.json` files incéuided this repository already contain the correct settings, other editors might need different actions.
+Of course, your code does not need to be in php. __Any language can be used__, for which you have a local dev environment. You might just need to configure how the test runner should invoke your compiler and/or interpreter. _(But there is a high chance that default settings, provided for ~30 languages will also work for you.)_
 
 ## Configuration file
 
@@ -78,9 +68,34 @@ _Note:_ While the configuration file is a valid `php` source code, you don't nee
 
 Some settings (but not all) can be also overriden via command-line arguments. If an option is set both in the config file and via the command-line, then the command-line takes precedence.
 
-_SPOILER ALERT:_ In the repository, there is a solution source code in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._
+## Test cases
 
-* The sample `.cgtest.php` runs test cases for these solutions in several languages, assuming you have the local runtimes installed.
+* By default, the input data for the test cases is in the `.tests/input` directory.
+    * Naming convention: `puzzleName_iXX.txt`, where XX is the two letter test case number, starting from 01.
+* The expected test output data is in the `.tests/expected` directory.
+    * Naming convention: `puzzleName_eXX.txt`, where XX is test case number.
+* Running the tests generates output files in the `.tests/output` directory.
+    * Naming convention: `puzzleName_oXX_languageName.txt`, where XX is test case number.
+* If your code writes also to the error console (maybe some debug info), you can check these in `.tests/output/_debug_log.txt`.
+* Rerunning CGTest with the `--clean` option added deletes all temporary and test output files from the previous run.
+* You can either put your source files in _per-language_ directories, or you can structure them in a _per-puzzle (or per-puzzle-group)_ basis.
+    * By default, all source code is expected to be in the respective `languageName/` directory, with the same name as the beginning of the test case input data file name.
+    * If using _per-puzzle_ directories for the test cases, you must set the per-language `'sourcePath'` setting to `''` in the config file.)
+* You can change the directory structure and the file naming conventions `CGTest` is using out of the box. However, you will need to tweak the config file a bit to your liking. For more details, check out the comments in the sample config file.
+
+### Important
+
+Some CG test cases have an expected output with trailing spaces in some lines. __Some code editors remove the trailing whitespaces automatically__, when you open these `.txt` files. This results failing test runs, as your codes output is no longer identical to what is stored in the expected test output file.
+
+__Turn off__ such _false_ autocorrection for `.txt` files. The `.editorconfig` and `.vscode/settings.json` files incéuided this repository already contain the correct settings, other editors might need different actions.
+
+### Sample test cases
+
+The repository already includes some test cases for several `CodinGame` puzzles. Most of these puzzles are rather short and simple. So they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
+
+_SPOILER ALERT:_ In the repository, there are solution source code files in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._
+
+* The sample `.cgtest.php` runs test cases for these solutions in several languages, assuming you have the local compilers or runtimes installed.
 * If you don't have the local setup for a language, just comment it out in the `'languages'` section of config file, or override the language selection with the `--lang=` command-line option.
 * There is an additional sample configuration file `.cgtest.full.php`. This has references all the provided test cases in a per-language `'includePuzzles'` section. Use this config with the `--config=.cgtest.full.php` command-line option.
 
@@ -88,7 +103,9 @@ _SPOILER ALERT:_ In the repository, there is a solution source code in multiple 
 
 _CGTest_ supports only solo I/O puzzles. For any test case, the input must be a fixed file (so a given line of input cannot depend on the output previously provided by the code). This means that some solo and optim puzzles cannot be tested. Bot programming is also out of question.
 
-## Issues
+CGTest is a single thread application, so tests are running in sequenca which can be rather slow if you have lots of test cases. If you start CGTest multiple times concurrently, use separate configuration files, with different output directory settings.
+
+## Known issues
 
 I don't have local dev environment for all the 27 languages Codingame supports. Therefore, some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
 

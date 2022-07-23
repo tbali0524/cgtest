@@ -2,8 +2,9 @@
 <?php
 
 /**
- * CGTest v1.0.0 - multi-language offline batch test runner for CodinGame solo I/O puzzles.
+ * CGTest v1.0.0
  *
+ * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by TBali
  *
  * For usage, see:
@@ -20,8 +21,10 @@ namespace TBali\CGTest;
 // I wanted a zero-dependency, single file script.
 // So I skipped using OOP, and - as code repetition is low - even functions.
 $startTime = microtime(true);
-$title = 'CGTest v1.0.0 - multi-language offline batch test runner for CodinGame solo I/O puzzles, (c) 2022, by TBali';
-echo $title . PHP_EOL . PHP_EOL;
+$title = 'CGTest v1.0.0' . PHP_EOL
+    . 'A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles' . PHP_EOL
+    . '(c) 2022, by Balint Toth [TBali]' . PHP_EOL;
+echo $title . PHP_EOL;
 // --------------------------------------------------------------------
 // default configuration
 $defaultConfigFileName = '.cgtest.php';
@@ -45,6 +48,7 @@ $defaultConfig = [
     'bash' => [
         'sourcePath' => 'bash/',
         'sourceExtension' => '.sh',
+        'codinGameVersion' => 'GNU bash, version 5.1.16(1)',
         'versionCommand' => 'bash --version',
         'buildCommand' => 'chmod +x %s',
         'runCommand' => '%s',
@@ -53,6 +57,7 @@ $defaultConfig = [
     'c' => [
         'sourcePath' => 'c/',
         'sourceExtension' => '.c',
+        'codinGameVersion' => 'gcc 11.2.0-20',
         'versionCommand' => 'gcc --version',
         'buildCommand' => 'gcc -o %o%p_%l.exe %s',
         'runCommand' => '%o%p_%l.exe',
@@ -62,6 +67,7 @@ $defaultConfig = [
     'c#' => [
         'sourcePath' => 'c#/',
         'sourceExtension' => '.cs',
+        'codinGameVersion' => '.NET Core 3.1.201',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => '',
         'runCommand' => 'dotnet run --nologo --verbosity quiet --project dotnet.csproj %s',
@@ -70,6 +76,7 @@ $defaultConfig = [
     'c++' => [
         'sourcePath' => 'c++/',
         'sourceExtension' => '.cpp',
+        'codinGameVersion' => 'g++ 11.2.0-20',
         'versionCommand' => 'g++ --version',
         'buildCommand' => 'g++ -o %o%p_%l.exe -x c++ %s',
         'runCommand' => '%o%p_%l.exe',
@@ -79,6 +86,7 @@ $defaultConfig = [
     'clojure' => [
         'sourcePath' => 'clojure/',
         'sourceExtension' => '.clj',
+        'codinGameVersion' => 'Clojure 1.11.1',
         'versionCommand' => 'clj --version',
         'buildCommand' => '',
         'runCommand' => 'clj -X Solution/main %s',
@@ -91,6 +99,7 @@ $defaultConfig = [
     'd' => [
         'sourcePath' => 'd/',
         'sourceExtension' => '.d',
+        'codinGameVersion' => 'DMD64 D Compiler v2.099.1',
         'versionCommand' => 'dmd --version',
         'buildCommand' => 'dmd -od=%o -of=%o%p_%l.exe %s',
         'runCommand' => '%o%p_%l.exe',
@@ -103,6 +112,7 @@ $defaultConfig = [
     'dart' => [
         'sourcePath' => 'dart/',
         'sourceExtension' => '.dart',
+        'codinGameVersion' => 'Dart SDK version: 2.16.2',
         'versionCommand' => 'dart --version',
         'buildCommand' => '',
         'runCommand' => 'dart %s',
@@ -111,6 +121,7 @@ $defaultConfig = [
     'f#' => [
         'sourcePath' => 'f#/',
         'sourceExtension' => '.fsx',
+        'codinGameVersion' => '.NET Core 3.1.201',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => '',
         'runCommand' => 'dotnet fsi %s',
@@ -119,6 +130,7 @@ $defaultConfig = [
     'go' => [
         'sourcePath' => 'go/',
         'sourceExtension' => '.go',
+        'codinGameVersion' => 'go version go1.18.1',
         'versionCommand' => 'go version',
         'buildCommand' => '',
         'runCommand' => 'go run %s',
@@ -127,6 +139,7 @@ $defaultConfig = [
     'groovy' => [
         'sourcePath' => 'groovy/',
         'sourceExtension' => '.groovy',
+        'codinGameVersion' => 'Groovy Version: 3.0.8 JVM: 11.0.2',
         'versionCommand' => 'groovy --version',
         'buildCommand' => '',
         'runCommand' => 'groovy %s',
@@ -135,6 +148,7 @@ $defaultConfig = [
     'haskell' => [
         'sourcePath' => 'haskell/',
         'sourceExtension' => '.hs',
+        'codinGameVersion' => 'The Glorious Glasgow Haskell Compilation System, version 8.4.3',
         'versionCommand' => 'ghc --version',
         'buildCommand' => 'ghc -outputdir %o -o %o%p_%l.exe %s',
         'runCommand' => '%o%p_%l.exe',
@@ -147,6 +161,7 @@ $defaultConfig = [
     'java' => [
         'sourcePath' => 'java/',
         'sourceExtension' => '.java',
+        'codinGameVersion' => 'openjdk 11.0.2',
         'versionCommand' => 'java --version',
         'buildCommand' => '',
         'runCommand' => 'java %s',
@@ -156,6 +171,7 @@ $defaultConfig = [
     'javascript' => [
         'sourcePath' => 'javascript/',
         'sourceExtension' => '.js',
+        'codinGameVersion' => 'node.js v16.14.2',
         'versionCommand' => 'node --version',
         'buildCommand' => '',
         'runCommand' => 'node %s',
@@ -164,6 +180,7 @@ $defaultConfig = [
     'kotlin' => [
         'sourcePath' => 'kotlin/',
         'sourceExtension' => '.kt',
+        'codinGameVersion' => 'kotlinc-jvm 1.5.0 (JRE 11.0.2+9)',
         'versionCommand' => 'kotlinc -version',
         'buildCommand' => 'kotlinc -include-runtime -d %o%p_%l.jar %s',
         'runCommand' => 'java -jar %o%p_%l.jar',
@@ -176,6 +193,7 @@ $defaultConfig = [
     'lua' => [
         'sourcePath' => 'lua/',
         'sourceExtension' => '.lua',
+        'codinGameVersion' => 'Lua 5.4.4',
         'versionCommand' => 'lua -v',
         'buildCommand' => '',
         'runCommand' => 'lua %s',
@@ -185,6 +203,7 @@ $defaultConfig = [
     'objective-c' => [
         'sourcePath' => 'objective-c/',
         'sourceExtension' => '.m',
+        'codinGameVersion' => 'clang version 13.0.1-3+b2',
         'versionCommand' => 'gcc --version',
         'buildCommand' => 'gcc -o %o%p_%l.exe -lobjc -lgnustep-base -F /usr/lib/GNUstep -I /usr/include/GNUstep'
             . ' -fconstant-string-class=NSConstantString %s',
@@ -195,6 +214,7 @@ $defaultConfig = [
     'ocaml' => [
         'sourcePath' => 'ocaml/',
         'sourceExtension' => '.ml',
+        'codinGameVersion' => 'The OCaml native-code compiler, version 4.12.0',
         'versionCommand' => 'ocamlopt -v',
         'buildCommand' => 'ocamlopt %s -o %o%p_%l.exe',
         'runCommand' => '%o%p_%l.exe',
@@ -203,6 +223,7 @@ $defaultConfig = [
     'pascal' => [
         'sourcePath' => 'pascal/',
         'sourceExtension' => '.pas',
+        'codinGameVersion' => 'Free Pascal Compiler 3.2.2',
         'versionCommand' => 'fpc -iW',
         'buildCommand' => 'fpc -v0 -FE%o -o%p_%l.exe %s',
         'runCommand' => '%o%p_%l.exe',
@@ -214,6 +235,7 @@ $defaultConfig = [
     'perl' => [
         'sourcePath' => 'perl/',
         'sourceExtension' => '.pl',
+        'codinGameVersion' => 'perl 5, version 34, subversion 0 (v5.34.0)',
         'versionCommand' => 'perl --version',
         'buildCommand' => '',
         'runCommand' => 'perl %s',
@@ -222,6 +244,7 @@ $defaultConfig = [
     'php' => [
         'sourcePath' => 'php/',
         'sourceExtension' => '.php',
+        'codinGameVersion' => 'PHP 7.3.9',
         'versionCommand' => 'php --version',
         'buildCommand' => '',
         'runCommand' => 'php %s',
@@ -230,6 +253,7 @@ $defaultConfig = [
     'python' => [
         'sourcePath' => 'python/',
         'sourceExtension' => '.py',
+        'codinGameVersion' => 'Python 3.9.12',
         'versionCommand' => 'python --version',
         'buildCommand' => '',
         'runCommand' => 'python %s',
@@ -238,6 +262,7 @@ $defaultConfig = [
     'ruby' => [
         'sourcePath' => 'ruby/',
         'sourceExtension' => '.rb',
+        'codinGameVersion' => 'ruby 3.1.2p20',
         'versionCommand' => 'ruby --version',
         'buildCommand' => '',
         'runCommand' => 'ruby %s',
@@ -246,6 +271,7 @@ $defaultConfig = [
     'rust' => [
         'sourcePath' => 'rust/',
         'sourceExtension' => '.rs',
+        'codinGameVersion' => 'rustc 1.60.0',
         'versionCommand' => 'rustc --version',
         'buildCommand' => 'rustc %s -o%o%p_%l.exe',
         'runCommand' => '%o%p_%l.exe',
@@ -257,6 +283,7 @@ $defaultConfig = [
     'scala' => [
         'sourcePath' => 'scala/',
         'sourceExtension' => '.scala',
+        'codinGameVersion' => 'Scala code runner version 2.13.5',
         'versionCommand' => 'scala --version',
         'buildCommand' => '',
         'runCommand' => 'scala -cp %o %s',
@@ -266,6 +293,7 @@ $defaultConfig = [
     'swift' => [
         'sourcePath' => 'swift/',
         'sourceExtension' => '.swift',
+        'codinGameVersion' => 'Swift version 5.3.3',
         'versionCommand' => 'swift --version',
         'buildCommand' => '',
         'runCommand' => 'swift %s',
@@ -275,6 +303,7 @@ $defaultConfig = [
     'typescript' => [
         'sourcePath' => 'typescript/',
         'sourceExtension' => '.ts',
+        'codinGameVersion' => 'node.js v16.14.2; Typescript Compiler Version 4.6.3',
         'versionCommand' => 'tsc --version',
         'buildCommand' => '',
         'runCommand' => 'node %s',
@@ -284,9 +313,38 @@ $defaultConfig = [
     'vb.net' => [
         'sourcePath' => 'vb.net/',
         'sourceExtension' => '.vb',
+        'codinGameVersion' => '.NET Core 3.1.201',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => '',
         'runCommand' => 'dotnet run %s',
+        'cleanPatterns' => [],
+    ],
+    // unsupported on CodinGame
+    'cobol' => [
+        'sourcePath' => 'cobol/',
+        'sourceExtension' => '.cob',
+        'codinGameVersion' => 'cobc (GnuCOBOL) 3.1.2.0',
+        'versionCommand' => 'cobc --version',
+        'buildCommand' => 'cobc -x -o%o%p_%l.exe %s',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.exe'],
+    ],
+    'fortran' => [
+        'sourcePath' => 'fortran/',
+        'sourceExtension' => '.f90',
+        'codinGameVersion' => 'GNU Fortran (Debian 11.2.0-20) 11.2.0',
+        'versionCommand' => 'gfortran --version',
+        'buildCommand' => 'gfortran -o%o%p_%l.exe %s',
+        'runCommand' => '%o%p_%l.exe',
+        'cleanPatterns' => ['%o%p_%l.exe'],
+    ],
+    'r' => [
+        'sourcePath' => 'r/',
+        'sourceExtension' => '.R',
+        'codinGameVersion' => 'R version 3.6.3',
+        'versionCommand' => 'Rscript --version',
+        'buildCommand' => '',
+        'runCommand' => 'Rscript %s',
         'cleanPatterns' => [],
     ],
 ];
@@ -301,7 +359,7 @@ $arrayConfigKeys = ['languages', 'puzzles'];
 $reservedConfigKeys
     = array_merge($booleanConfigKeys, $nonEmptyStringConfigKeys, $optionalStringConfigKeys, $arrayConfigKeys);
 $languageNonEmptyStringConfigKeys = ['sourceExtension', 'runCommand'];
-$languageOptionalStringConfigKeys = ['sourcePath', 'versionCommand', 'buildCommand'];
+$languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionCommand', 'buildCommand'];
 $languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles'];
 $infoTag = '[INFO] ';
 $errorTag = '[ERROR] ';
@@ -328,12 +386,13 @@ for ($i = 1; $i < $argc; ++$i) {
         echo '   --show-defaults    Show default configuration settings (as json)' . PHP_EOL;
         echo '   --clean            Delete temporary and output files of previous test run' . PHP_EOL;
         echo '   --config=FILENAME  Use configfile [default: ' . $defaultConfigFileName . ']' . PHP_EOL;
-        echo '   --lang=LANGUAGES   Run tests in these languages (comma separated list) [default: '
-            . implode(',', $defaultConfig['languages']) . '; or the list in the config file]' . PHP_EOL;
+        echo '   --lang=LANGUAGES   Run tests in these languages (comma separated list)' . PHP_EOL
+            . '                        - default: ' . implode(',', $defaultConfig['languages'])
+            . '; or the languages section in the config file' . PHP_EOL;
         echo PHP_EOL;
         echo 'Puzzles:              Space separated list of source filenames (without extension)' . PHP_EOL;
-        echo '                       - if given, it overrides the list in the config file' . PHP_EOL;
-        echo '                       - path can be given, but no wildcards allowed' . PHP_EOL;
+        echo '                        - if given, it overrides the list in the config file' . PHP_EOL;
+        echo '                        - path can be given, but no wildcards allowed' . PHP_EOL;
         echo PHP_EOL;
         exit(0);
     }
@@ -532,7 +591,7 @@ if (!$config['clean'] and !$config['lang-versions'] and !$config['dry-run']) {
         echo $errorTag . 'Cannot open logfile to write: ' . $config['debugLog'] . PHP_EOL . PHP_EOL;
         exit(2);
     }
-    fwrite($logFile, $title . PHP_EOL . PHP_EOL);
+    fwrite($logFile, $title . PHP_EOL);
     fclose($logFile);
     echo $infoTag . '<stderr> output from the test runs redirected to file: ' . $config['debugLog'] . PHP_EOL;
 }
@@ -600,6 +659,10 @@ foreach ($config['languages'] as $language) {
     if (!$config['clean'] and ($config[$language]['versionCommand'] != '')) {
         if ($config['lang-versions']) {
             echo $infoTag . 'Version info for language: ' . $language . PHP_EOL;
+            if ($config[$language]['codinGameVersion'] != '') {
+                echo $infoTag . '-- version supported at CodinGame: ' . $config[$language]['codinGameVersion']
+                    . PHP_EOL;
+            }
             $versionCommand = $config[$language]['versionCommand'] . ' 2>&1';
         } elseif ($config['dry-run']) {
             $versionCommand = $config[$language]['versionCommand'] . ' >> ' . $config['buildLog'] . ' 2>&1';

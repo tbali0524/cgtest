@@ -1,9 +1,10 @@
 <?php
 
 /**
- * CGTest v1.0.0 - multi-language offline batch test runner for CodinGame solo I/O puzzles, (c) 2022, by TBali
+ * CGTest v1.0.0 - configuration ile
  *
- * configuration file
+ * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
+ * (c) 2022, by TBali
  */
 
 declare(strict_types=1);
@@ -56,6 +57,10 @@ return [
         // 'swift',
         // 'typescript',
         // 'vb.net',
+    // Additional languages, unsupported on CodinGame:
+        // 'cobol',
+        // 'fortran',
+        // 'r',
     ],
     // == Tests will be run for the following puzzles in all languages (can be overriden in the per-language config):
     // 'puzzles' => [
@@ -74,6 +79,7 @@ return [
     //     //   in the 'puzzles' and 'includePuzzles' lists.
     //     'sourcePath' => 'language/',
     //     'sourceExtension' => '.lang',
+    //     'codinGameVersion' => '',
     //     'versionCommand' => 'lang --version',
     //     'buildCommand' => '',
     //     'runCommand' => 'lang %s',
