@@ -1,0 +1,6 @@
+4
+// simple test with multiple lines, also with _ and numbers in identifiers
+fscanf(STDIN, "%s", $s);
+fscanf(STDIN, "%f", $a);
+$r = str_rev($s);$t=atan2($a);
+

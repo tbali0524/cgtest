@@ -1,0 +1,5 @@
+4
+// beware of quotes within quotes
+fscanf(STDIN, "%s", $s);
+$len = strlen($s);
+$a = "mixing quotes ' "; $b=strlen();

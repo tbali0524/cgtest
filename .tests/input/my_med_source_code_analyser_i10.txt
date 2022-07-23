@@ -1,0 +1,10 @@
+8
+// reserved keywords shall be excluded regardless of case
+$a = explode(' ', stream_get_line(STDIN, 999, "\n"));
+ForEach($a as $w)
+    for($i = 0; $i < strlen($w); $i++)
+        if(($w[$i] == 'a') And($i > 0))
+            echo('+');
+        else
+            echo($w[$i]);
+

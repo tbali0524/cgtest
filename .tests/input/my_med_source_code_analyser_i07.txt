@@ -1,0 +1,4 @@
+3
+// within a comment /* shall not start a comment, and a quote " shall not start a string literal
+fscanf(STDIN, "%s", $s);
+$len = strlen($s); 

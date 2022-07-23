@@ -1,0 +1,142 @@
+141
+<?php
+// https://www.codingame.com/training/easy/the-lost-child-episode-1
+
+define('DEBUG', FALSE);
+
+// --------------------------------------------------------------------
+class Pos
+{
+    public $x;
+    public $y;
+
+    public function __construct(int $_x, int $_y)
+    {
+        $this->x = $_x;
+        $this->y = $_y;
+    }
+
+    public function isSamePlace(?Pos $pos): bool
+    {
+        if (is_null($pos))
+            return FALSE;
+        else
+            return ($this->x == $pos->x) and ($this->y == $pos->y);
+    }
+
+    public function toString(): string
+    {
+        return '(' . $this->x . ',' . $this->y . ')';
+    }
+
+} // class Pos
+
+// --------------------------------------------------------------------
+class GameMap
+{
+    public $maxX = 10;
+    public $maxY = 10;
+    public $grid = array();         // array[y][x] of char .MC
+    public $startPos = NULL;        // Pos
+    public $targetPos = NULL;       // Pos
+
+    public $dist = array();         // array[y][x] of int
+
+    const Infinity = PHP_INT_MAX >> 2;  // less than PHP_INT_MAX to avoid addition overflow in some algorithms
+    const Floor = '.';
+    const Wall  = '#';
+    const Start = 'C';
+    const Target = 'M';
+
+    const Delta = array(    // dx, dy
+        [ 0, -1],
+        [ 1,  0],
+        [ 0,  1],
+        [-1,  0],
+    );
+
+    public function readInitInput(): void
+    {
+        $this->grid = array();
+        for ($y = 0; $y < $this->maxY; $y++)
+        {
+            $this->grid[$y] = stream_get_line(STDIN, $this->maxX + 1, "\n") ?: '';
+            for ($x = 0; $x < $this->maxX; $x++)
+                if ($this->grid[$y][$x] == self::Start)
+                    $this->startPos = new Pos($x, $y);
+                elseif ($this->grid[$y][$x] == self::Target)
+                    $this->targetPos = new Pos($x, $y);
+        }
+    } // function readInitInput
+
+    public function logMap(): void
+    {
+        error_log('Map:');
+        foreach ($this->grid as $row)
+            error_log('  ' . $row);
+        error_log('Start: ' . $this->startPos->toString() . ', target: ' . $this->targetPos->toString());
+    } // function logMap
+
+    public function dijkstra(): void
+    {
+        $pq = new MinPriorityQueue;
+        $this->dist = array();
+        for ($y = 0; $y < $this->maxY; $y++)
+            for ($x = 0; $x < $this->maxX; $x++)
+                $this->dist[$y][$x] = self::Infinity;
+        $this->dist[$this->startPos->y][$this->startPos->x] = 0;
+        $this->pathPrev = array();
+        $pq->insert($this->startPos, 0);
+        while (!$pq->isEmpty())
+        {
+            $pos = $pq->extract();
+            if ($this->dist[$pos->y][$pos->x] == self::Infinity)
+                return;
+            foreach (self::Delta as $delta)
+            {
+                $grid1 = $this->grid[$pos->y][$pos->x];
+                $xp2 = $pos->x + $delta[0];
+                $yp2 = $pos->y + $delta[1];
+                if (($xp2 < 0) or ($xp2 >= $this->maxX) or ($yp2 < 0) or ($yp2 >= $this->maxY))
+                    continue;
+                if ($this->grid[$yp2][$xp2] == self::Wall)
+                    continue;
+                $pos2 = new Pos($xp2, $yp2);
+                $alt = $this->dist[$pos->y][$pos->x] + 1;
+                if ($alt < $this->dist[$pos2->y][$pos2->x])
+                {
+                    $this->dist[$pos2->y][$pos2->x] = $alt;
+                    $pq->insert($pos2, $alt);
+                }
+            }
+        }
+    } // function dijkstra
+
+    public function output(): void
+    {
+        $ans = $this->dist[$this->targetPos->y][$this->targetPos->x] * 10;
+        echo $ans . "km\n";
+    } // function output
+
+} // class GameMap
+
+// --------------------------------------------------------------------
+// used by Dijkstra algorithm
+class MinPriorityQueue extends SPLPriorityQueue
+{
+	public function compare($a, $b)
+	{
+		return parent::compare($b, $a);     //inverse the order
+	}
+} // class MinPriorityQueue
+
+// ---------- main program
+$map = new GameMap;
+$map->readInitInput();
+if (DEBUG)
+    $map->logMap();
+$map->dijkstra();
+$map->output();
+// Write an answer using echo(). DON'T FORGET THE TRAILING \n
+// To debug: error_log(var_export($var, true)); (equivalent to var_dump)
+?>

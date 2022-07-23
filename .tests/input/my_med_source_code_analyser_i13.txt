@@ -1,0 +1,7 @@
+5
+// in this puzzle the function names are case sensitive
+fscanf(STDIN, "%s", $s);
+FSCANF(STDIN, "%f", $a);
+$r = str_rev($s);
+$b=Str_rev($s);
+

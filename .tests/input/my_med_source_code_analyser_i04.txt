@@ -1,0 +1,6 @@
+5
+// reserved keyword 'if' is not a function call
+fscanf(STDIN, "%s", $s);
+$len = strlen($s);
+if(strlen($s) == $len)
+  echo "surprise\n";

@@ -1,0 +1,10 @@
+6
+// string literals are not function calls. String literals can also span multiple lines
+fscanf(STDIN, "%s", $s);
+$len = strlen($s);
+$a = 'strlen()';
+echo "
+strlen()";
+
+
+

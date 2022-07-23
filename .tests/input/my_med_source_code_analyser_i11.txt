@@ -1,0 +1,9 @@
+8
+// user-defined function test
+function lower_rev(string $s): string
+{
+    return strtolower(str_rev($s));
+} // lower_rev
+
+fscanf(STDIN, "%s", $s);
+echo lower_rev($s) . "\n";

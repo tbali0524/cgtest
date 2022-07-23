@@ -1,0 +1,7 @@
+define 1
+error_log 3
+extract 1
+insert 2
+isEmpty 1
+is_null 1
+stream_get_line 1

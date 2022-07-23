@@ -1,0 +1,4 @@
+3
+// single line comment test
+fscanf(STDIN, "%s", $s);
+$len = strlen($s); // strlen() gives the length of the string

@@ -1,0 +1,7 @@
+5
+/* test with fscanf() and strlen() */
+fscanf(STDIN, "%s", $s);
+$len = strlen($s); // strlen() gives the length of the string
+if(strlen($s) == $len)
+  echo "strlen() matching\n";
+

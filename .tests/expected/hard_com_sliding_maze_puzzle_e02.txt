@@ -1,0 +1,23 @@
+22
+P <
+P <
+P ^
+P >
+P >
+P ^
+T <
+T ^
+T >
+T v
+T <
+T ^
+T ^
+T >
+T v
+T <
+T v
+T >
+P <
+T ^
+P <
+P <

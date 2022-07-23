@@ -1,0 +1,3 @@
+explode 1
+stream_get_line 1
+strlen 1

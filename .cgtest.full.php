@@ -172,9 +172,25 @@ return [
             ],
             'puzzle/cg/medium/' => [
                 'med_bender_ep1',
+                'med_conway_sequence',
+                'med_dwarves_standing_on_shoulders_of_giants',
+                'med_mayan_calculation',
+                'med_network_cabling',
+                'med_scrabble',
+                'med_telephone_numbers',
+                'med_the_gift',
+                'med_war',
             ],
             'puzzle/cg/hard/' => [
                 'hard_bender_ep2',
+                'hard_bender_ep3',
+                'hard_cgx_formatter',
+                'hard_genome_sequencing',
+                'hard_roller_coaster',
+                'hard_super_computer',
+                'hard_surface',
+                'hard_tan_network',
+                'hard_winamax_sponsored_contest',
             ],
             'puzzle/cg/expert/' => [
                 'expert_music_scores',
@@ -189,8 +205,26 @@ return [
             'puzzle/community/hard/' => [
                 'hard_com_7_segment_display',
             ],
+            'puzzle/community/hard/nonogram_inversor/' => [
+                'hard_com_nonogram_inversor',
+            ],
+            'puzzle/community/hard/sliding_maze_puzzle/' => [
+                'hard_com_sliding_maze_puzzle',
+            ],
             'puzzle/community/expert/' => [
                 'expert_com_binary_neural_network_part_2',
+            ],
+            'puzzle/community/expert/flood_the_world/' => [
+                'expert_com_flood_the_world',
+            ],
+            'puzzle/own/hello_world/' => [
+                'my_easy_com_hello_world',
+            ],
+            'puzzle/own/lets_go_to_the_cinema/' => [
+                'my_med_com_lets_go_to_the_cinema',
+            ],
+            'puzzle/own/source_code_analyser/' => [
+                'my_med_source_code_analyser',
             ],
         ],
     ],

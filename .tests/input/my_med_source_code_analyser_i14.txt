@@ -1,0 +1,5 @@
+4
+// calling function name stored in a variable shall not be counted
+$f='strlen';
+fscanf(STDIN, "%s", $s);
+$len = $f($s);
