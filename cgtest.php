@@ -5,7 +5,7 @@
  * CGTest v1.0.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- * (c) 2022, by TBali
+ * (c) 2022, by Balint Toth [TBali]
  *
  * For usage, see:
  *   php cgtest.php --help
