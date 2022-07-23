@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # https://www.codingame.com/training/medium/rubik%C2%AE
 
 read n

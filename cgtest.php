@@ -59,7 +59,7 @@ $defaultConfig = [
         'sourceExtension' => '.c',
         'codinGameVersion' => 'gcc 11.2.0-20',
         'versionCommand' => 'gcc --version',
-        'buildCommand' => 'gcc -o %o%p_%l.exe %s',
+        'buildCommand' => 'gcc %s -o %o%p_%l.exe -lm',
         'runCommand' => '%o%p_%l.exe',
         'cleanPatterns' => ['%o%p_%l.exe'],
     ],
