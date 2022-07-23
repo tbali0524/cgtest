@@ -2,13 +2,13 @@
 
 A multi-language offline batch test runner for `CodinGame` (or other) solo I/O puzzles.
 
-(c) 2022, by Balint Toth [TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033)
+(c) 2022, by Balint Toth \[[TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033)\]
 
 ## Intro
 
 __CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash`, `f#` and `ocaml` in Linux. It should also work on almost any other computer system, including Mac.
+CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash`, `f#` and `ocaml` in Linux. It should also work on almost any other computer systems, including Mac.
 
 The test runner works for any non-interactive code that reads from a standard input stream, and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
@@ -16,7 +16,7 @@ The test runner works for any non-interactive code that reads from a standard in
 
 [CodinGame solo puzzles](https://www.codingame.com/training) provide a fun way to practice and improve your coding skills in any of its [27 supported programming languages](https://www.codingame.com/playgrounds/40701/help-center/languages-versions).
 
-At CG you don't have to bother about setting up any local development environment: just start to write your code directly on the CG website using your browser, run there the provided test cases (for solo puzzles), and submit your solution when you feel ready.
+At CG, you don't have to bother about setting up any local development environment: just start to write your code directly on the CG website using your browser, run there the provided test cases (for solo puzzles), and submit your solution when you feel ready.
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
 
@@ -54,9 +54,9 @@ The minimal required configuration to run CGTest is to define (either via comman
 
 ![php-version-73](https://shields.io/badge/php->=7.3-blue)
 
-CGTest is a single-file _php_ script, so you need `php` (v7.3 or newer) installed on your machine to use it.
+CGTest is a single-file php script, so you need `PHP` (v7.3 or newer) installed on your machine to use it. (PHP is very easy to install on Windows or Mac, and comes already pre-installed on most Linux distributions.)
 
-Of course, your code does not need to be in php. __Any language can be used__, for which you have a local dev environment. You might just need to configure how the test runner should invoke your compiler and/or interpreter. _(But there is a high chance that default settings, provided for ~30 languages will also work for you.)_
+Of course, your code does not need to be written in php. _Any language can be used_, for which you have a local dev environment. You might just need to configure how the test runner should invoke your compiler and/or interpreter. _(But there is a high chance that default settings, provided for ~30 languages will also work for you.)_
 
 ## Configuration file
 
@@ -81,7 +81,8 @@ Some settings (but not all) can be also overriden via command-line arguments. If
 * You can either put your source files in _per-language_ directories, or you can structure them in a _per-puzzle (or per-puzzle-group)_ basis.
     * By default, all source code is expected to be in the respective `languageName/` directory, with the same name as the beginning of the test case input data file name.
     * If using _per-puzzle_ directories for the test cases, you must set the per-language `'sourcePath'` setting to `''` in the config file.)
-* You can change the directory structure and the file naming conventions `CGTest` is using out of the box. However, you will need to tweak the config file a bit to your liking. For more details, check out the comments in the sample config file.
+* If not provided via command-line, list the puzzle names in the config file either in the global `'puzzles'` section, or in a per-language `'includePuzzles'` list.
+* You can change the directory structure and the file naming conventions that `CGTest` is using out of the box. However, you will need to tweak the config file a bit to your liking. For more details, check out the comments in the sample config file.
 
 ### Important
 
@@ -95,7 +96,7 @@ The repository already includes some test cases for several `CodinGame` puzzles.
 
 _SPOILER ALERT:_ In the repository, there are solution source code files in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._
 
-* The sample `.cgtest.php` runs test cases for these solutions in several languages, assuming you have the local compilers or runtimes installed.
+* The sample `.cgtest.php` runs test cases for the solutions for this single puzzle in several languages, assuming you have the local compilers or runtimes installed.
 * If you don't have the local setup for a language, just comment it out in the `'languages'` section of config file, or override the language selection with the `--lang=` command-line option.
 * There is an additional sample configuration file `.cgtest.full.php`. This has references all the provided test cases in a per-language `'includePuzzles'` section. Use this config with the `--config=.cgtest.full.php` command-line option.
 
