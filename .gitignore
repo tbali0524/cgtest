@@ -1,4 +1,4 @@
-/.tests/output/*.txt
-/.tests/output/*.exe
-/.tests/output/*.out
+/.tests/output/*
+**/*.o
+**/*.obj
 **/*.exe

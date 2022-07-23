@@ -97,3 +97,7 @@ If you have experience in how to set up any of the other languages, please send 
 * I could not yet set up to run the tester properly for: `c#`, `vb.net`, `clojure`, `objective-c`, `swift`
 * `javascript` and `typescript` code is run by `node`, however the `readline()` function is missing. I don't know how to properly polyfill this locally.
 * Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows using a _'bash for Windows'_ package such as `MSYS2`.
+
+## License
+
+CGTest is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

@@ -163,13 +163,6 @@ return [
     ],
     // == Additional test cases for a single language:
     'php' => [
-        'sourcePath' => 'php/',
-        'sourceExtension' => '.php',
-        'versionCommand' => 'php --version',
-        'buildCommand' => '',
-        'runCommand' => 'php %s',
-        'cleanPatterns' => [],
-        'excludePuzzles' => [],
         'includePuzzles' => [
             'puzzle/cg/easy/' => [
                 'easy_defibrillators',
