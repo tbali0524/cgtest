@@ -20,6 +20,8 @@ At CG, you don't have to bother about setting up any local development environme
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
 
+The repository also includes some test cases for 100+ `CodinGame` puzzles.
+
 ## Command line usage
 
 ```txt
@@ -70,7 +72,7 @@ _Note:_ While the configuration file is a valid `php` source code, you don't nee
 
 Some settings (but not all) can be also overriden via command-line arguments. If an option is set both in the config file and via the command-line, then the command-line takes precedence.
 
-## Test cases
+## Preparing and running test cases
 
 * By default, the input data for the test cases is in the `.tests/input` directory.
     * Naming convention: `puzzleName_iXX.txt`, where XX is the two letter test case number, starting from 01.
@@ -79,7 +81,8 @@ Some settings (but not all) can be also overriden via command-line arguments. If
 * Running the tests generates output files in the `.tests/output` directory.
     * Naming convention: `puzzleName_oXX_languageName.txt`, where XX is test case number.
 * If your code writes also to the error console (maybe some debug info), you can check these in `.tests/output/_debug_log.txt`.
-* Rerunning CGTest with the `--clean` option added deletes all temporary and test output files from the previous run.
+* Rerunning CGTest with the `--clean` option added deletes all temporary and test output files from the previous run. (The puzzle and language selection rules in effect still apply.)
+    * Besides the test run output, CGTest will delete the files defined in the per-language `'cleanPatterns'` configuration section. If you override the defaults, be extra careful with the file pattern, not to accidentaly delete something in your system.
 * You can either put your source files in _per-language_ directories, or you can structure them in a _per-puzzle (or per-puzzle-group)_ basis.
     * By default, all source code is expected to be in the respective `languageName/` directory, with the same name as the beginning of the test case input data file name.
     * If using _per-puzzle_ directories for the test cases, you must set the per-language `'sourcePath'` setting to `''` in the config file.)
@@ -90,23 +93,25 @@ Some settings (but not all) can be also overriden via command-line arguments. If
 
 Some CG test cases have an expected output with trailing spaces in some lines. __Some code editors remove the trailing whitespaces automatically__, when you open these `.txt` files. This results failing test runs, as your codes output is no longer identical to what is stored in the expected test output file.
 
-__Turn off__ such _false_ autocorrection for `.txt` files. The `.editorconfig` and `.vscode/settings.json` files incéuided this repository already contain the correct settings, other editors might need different actions.
+__Turn off__ such _false_ autocorrection for `.txt` files. The `.editorconfig` and `.vscode/settings.json` files included this repository already contain the correct settings, other editors might need different actions.
 
 ### Sample test cases
 
-The repository already includes some test cases for several `CodinGame` puzzles. Most of these puzzles are rather short and simple. So they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
+The repository also includes some test cases for `CodinGame` puzzles. Some of these puzzles are rather short and simple, so they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
 
 _SPOILER ALERT:_ In the repository, there are solution source code files in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._
 
 * The sample `.cgtest.php` runs test cases for the solutions for this single puzzle in several languages, assuming you have the local compilers or runtimes installed.
 * If you don't have the local setup for a language, just comment it out in the `'languages'` section of config file, or override the language selection with the `--lang=` command-line option.
-* There is an additional sample configuration file `.cgtest.full.php`. This has references all the provided test cases in a per-language `'includePuzzles'` section. Use this config with the `--config=.cgtest.full.php` command-line option.
+* There is an additional sample configuration file `.cgtest.full.php`. This has references to all the provided test cases in a per-language `'includePuzzles'` section. Use this config with the `--config=.cgtest.full.php` command-line option.
 
 ## Restrictions
 
 _CGTest_ supports only solo I/O puzzles. For any test case, the input must be a fixed file (so a given line of input cannot depend on the output previously provided by the code). This means that some solo and optim puzzles cannot be tested. Bot programming is also out of question.
 
 CGTest is a single thread application, so tests are running in sequence, which can be rather slow if you have lots of test cases. If you start CGTest multiple times concurrently, use separate configuration files, with different output directory settings.
+
+CGTest does not use containers or any other encironment separation when running your tests. If your code does silly things, like deleting files, then CGTest will NOT prevent it doing the damage.
 
 ## Known issues
 

@@ -1,0 +1,16 @@
+Fred Mark Kim Anita Dwayne Nick
+Daniel 1 chinese
+Clem 1 german
+Dwayne 1 french
+Anita 1 french
+Spruce 1 german
+Fred 1 french
+Adan 1 chinese
+Sven 1 irish
+Nick 1 french
+Tim 1 irish
+Harley 1 english
+Mary 1 russian
+Kim 1 french
+Rashad 1 chinese
+Mark 1 french

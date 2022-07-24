@@ -24,7 +24,7 @@ return [
     // 'outputPattern' => '%p_o%t_%l.txt',
     // 'debugLog' => '.tests/output/_debug_log.txt',
     // 'buildLog' => '.tests/output/_build_log.txt',
-    // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern'
+    // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern':
     //     %l languageName
     //     %p puzzleName
     //     %t testIndex [01..99]

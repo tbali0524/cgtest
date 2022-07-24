@@ -1,0 +1,29 @@
+1 1
+hacker
+puzzle
+24
+<__observer>     since I never set a context
+<__observer>     all my lines are ignored
+<MadKnife> Hi, *[CG]ThisBot*
+<__observer>     MK's _context_ is now [CG]TB
+<[CG]ThisBot> Hello.
+<MadKnife> UR an awesome hacker yet?
+<__observer>     "hacker" is a _good_ word
+<__observer>     so "an awesome hacker" is a _constant_
+<__observer>     since there is one _adjective_
+<__observer>     the value is 2 x 1 = 2
+<__observer>     the keyword "ur" pushes 2 onto [CG]TB
+<[CG]ThisBot> I'm getting better all the time.
+<MadKnife> I'll tell you how to be an awesome hacker.
+<__observer>     the keyword "tell" pops then
+<__observer>     prints the top of [CG]TB
+<[CG]ThisBot> Oh really?
+<MadKnife> You're still stuck on a silly, pointless puzzle.
+<__observer>     "puzzle" is a _bad_ word
+<__observer>     with 2 _adjectives_, the phrase
+<__observer>     "a silly pointless puzzle" pushes
+<__observer>     2 x 2 x -1 = -4 onto [CG]TB
+<MadKnife> I'm telling the truth.
+<__observer>     "telling" is another form of "tell"
+<__observer>     pop then print
+<MadKnife> Play CSB. Then you'll be awesome.

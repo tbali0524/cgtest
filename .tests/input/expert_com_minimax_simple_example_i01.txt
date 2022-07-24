@@ -1,0 +1,6 @@
+4 4
+A S R E
+SA 2
+SE 4
+RE 1
+A 1

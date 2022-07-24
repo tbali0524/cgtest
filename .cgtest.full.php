@@ -22,13 +22,11 @@ return [
     // 'expectedPattern' => '%p_e%t.txt',
     // 'outputPath' => '.tests/output/',
     // 'outputPattern' => '%p_o%t_%l.txt',
-    // 'execPattern' => '%p_%l.exe',        // used only with --clean CLI argument
     // 'debugLog' => '.tests/output/_debug_log.txt',
     // 'buildLog' => '.tests/output/_build_log.txt',
-    // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern', 'execPattern':
+    // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern':
     //     %l languageName
     //     %p puzzleName
-    // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern':
     //     %t testIndex [01..99]
     // == Tests will be run in the following languages:
     'languages' => [
@@ -165,6 +163,7 @@ return [
     ],
     // == Additional test cases for a single language:
     'php' => [
+        // 'sourcePath' => '', // uncomment if source is not in 'php/' but in the keys, e.g. 'puzzle/...'
         'includePuzzles' => [
             'puzzle/cg/easy/' => [
                 'easy_defibrillators',
@@ -197,25 +196,58 @@ return [
                 'expert_the_resistance',
             ],
             'puzzle/community/easy/' => [
+                'easy_com_1_ngr_basic_radar',
                 'easy_com_crop_circles',
+                'easy_com_auto_pickup',
+                'easy_com_decode_the_message',
             ],
             'puzzle/community/medium/' => [
+                'med_com_2_5d_maze',
                 'med_com_tennis_score',
             ],
             'puzzle/community/hard/' => [
+                'hard_com_3d_ascii_cube',
                 'hard_com_7_segment_display',
-            ],
-            'puzzle/community/hard/nonogram_inversor/' => [
                 'hard_com_nonogram_inversor',
-            ],
-            'puzzle/community/hard/sliding_maze_puzzle/' => [
                 'hard_com_sliding_maze_puzzle',
             ],
             'puzzle/community/expert/' => [
                 'expert_com_binary_neural_network_part_2',
-            ],
-            'puzzle/community/expert/flood_the_world/' => [
+                'expert_com_cg_chat_interpreter_part_1',
+                'expert_com_chemical_equation_balancing',
+                'expert_com_codindice',
+                'expert_com_completed_mahjong_hands',
+                'expert_com_cross_the_lines',
+                'expert_com_cubax_folding',
+                'expert_com_dungeon_designer',
+                'expert_com_fill_the_square',
                 'expert_com_flood_the_world',
+                'expert_com_haunted_manor',
+                'expert_com_heart_of_the_city',
+                'expert_com_high_rise_buildings',
+                'expert_com_hitori_solver',
+                'expert_com_hourglass',
+                'expert_com_king_of_diamonds',
+                'expert_com_mathematics_for_big_ears',
+                'expert_com_minimax_simple_example',
+                'expert_com_nurikabe',
+                'expert_com_prime_fractals_in_pascals_triangle',
+                'expert_com_prime_transformations',
+                'expert_com_skylines',
+                'expert_com_sliding_puzzle',
+                'expert_com_spy_the_spies',
+                'expert_com_squares_order',
+                'expert_com_the_barnyard',
+                'expert_com_the_crime_scene',
+                'expert_com_the_lucky_number',
+                'expert_com_the_two_piles_difference',
+                'expert_com_the_water_jug_riddle_from_die_hard_3',
+                'expert_com_ticket_to_ride_europe',
+                'expert_com_tiling_squares',
+                'expert_com_unflood_the_world',
+                'expert_com_unfolding_paper',
+                'expert_com_when_pigs_fly',
+                'expert_com_xorandor',
             ],
             'puzzle/own/hello_world/' => [
                 'my_easy_com_hello_world',
@@ -224,8 +256,16 @@ return [
                 'my_med_com_lets_go_to_the_cinema',
             ],
             'puzzle/own/source_code_analyser/' => [
-                'my_med_source_code_analyser',
+                'my_med_com_source_code_analyser',
             ],
         ],
     ],
+    'c++' => [
+        'includePuzzles' => [
+            'puzzle/cg/expert/' => [
+                'expert_nintendo_sponsored_contest',
+            ],
+        ],
+    ],
+
 ];
