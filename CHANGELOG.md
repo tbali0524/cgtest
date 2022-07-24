@@ -9,7 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- 100+ more CG puzzle test cases added.
+- `--stats` command-line option added.
+- 100+ CG puzzle test cases added.
+- Fortran default config and sample code added.
 
 ### Changed
 

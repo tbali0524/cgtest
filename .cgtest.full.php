@@ -16,6 +16,7 @@ return [
     // 'dry-run' => false,
     // 'ansi' => true,
     // 'verbose' => false,
+    // 'stats' => false,
     // 'inputPath' => '.tests/input/',
     // 'inputPattern' => '%p_i%t.txt',
     // 'expectedPath' => '.tests/expected/',
@@ -57,6 +58,10 @@ return [
         // 'swift',
         // 'typescript',
         // 'vb.net',
+    // Additional languages, unsupported on CodinGame:
+        // 'cobol',
+        // 'fortran',
+        // 'r',
     ],
     // == Tests will be run for the following puzzles in all languages (can be overriden in the per-language config):
     // 'puzzles' => [

@@ -8,7 +8,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 __CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash`, `f#` and `ocaml` in Linux. It should also work on almost any other computer systems, including Mac.
+CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash`, `f#`, `fortran` and `ocaml` in Linux. It should also work on almost any other computer system, including Mac.
 
 The test runner works for any non-interactive code that reads from a standard input stream, and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
@@ -34,6 +34,7 @@ Options:
    --ansi             Use color output [default]
    --no-ansi          Disable color output
    --verbose          Increase the verbosity of messages: also show each passed tests
+   --stats            Show per-language test stats
    --lang-versions    Show versions for all configured programming languages
    --show-defaults    Show default configuration settings (as json)
    --clean            Delete temporary and output files of previous test run
@@ -42,8 +43,8 @@ Options:
                         - default: php; or the languages section in the config file
 
 Puzzles:              Space separated list of source filenames (without extension)
-                       - if given, it overrides the list in the config file
-                       - path can be given, but no wildcards allowed
+                        - if given, it overrides the list in the config file
+                        - path can be given, but no wildcards allowed
 ```
 
 An example run result:

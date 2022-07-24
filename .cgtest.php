@@ -16,6 +16,7 @@ return [
     // 'dry-run' => false,
     // 'ansi' => true,
     // 'verbose' => false,
+    // 'stats' => false,
     // 'inputPath' => '.tests/input/',
     // 'inputPattern' => '%p_i%t.txt',
     // 'expectedPath' => '.tests/expected/',

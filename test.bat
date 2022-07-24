@@ -1,1 +1,1 @@
-php cgtest.php --verbose %*
+php cgtest.php --verbose --stats %*
