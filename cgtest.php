@@ -737,8 +737,10 @@ foreach ($config['languages'] as $language) {
     // --------------------------------------------------------------------
     // loop: for each puzzle to test or clean
     foreach ($puzzles as $sourcePath => $filesArray) {
-        ++$stats['totals']['countDirectories'];
-        ++$stats[$language]['countDirectories'];
+        if (($config[$language]['sourcePath'] == '') or ($stats[$language]['countDirectories'] == 0)) {
+            ++$stats['totals']['countDirectories'];
+            ++$stats[$language]['countDirectories'];
+        }
         foreach ($filesArray as $puzzleNameOriginal) {
             $puzzleName = strtolower($puzzleNameOriginal);
             if (
