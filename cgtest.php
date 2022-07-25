@@ -388,6 +388,7 @@ $languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionC
 $languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles'];
 $infoTag = '[INFO] ';
 $errorTag = '[ERROR] ';
+$testIdxWidth = 2;
 // --------------------------------------------------------------------
 // command-line arguments
 $argumentConfig = [];
@@ -846,7 +847,7 @@ foreach ($config['languages'] as $language) {
                 ++$idxTest;
                 // --------------------------------------------------------------------
                 // check input and expected output
-                $stringIdxTest = str_pad(strval($idxTest), 2, '0', STR_PAD_LEFT);
+                $stringIdxTest = str_pad(strval($idxTest), $testIdxWidth, '0', STR_PAD_LEFT);
                 $inputFullFileName = str_replace(
                     ['%l', '%p', '%t'],
                     [$language, $puzzleName, $stringIdxTest],
@@ -973,18 +974,23 @@ foreach ($config['languages'] as $language) {
                 echo $warnTag . 'No test input found for source: ' . $sourceFullFileName . PHP_EOL;
             }
             if ($config['dry-run']) {
-                echo $infoTag . str_pad(strval($countTestsForFile), 2, ' ', STR_PAD_LEFT) . ' test'
-                    . ($countTestsForFile > 1 ? 's' : ' ') . ' for : ' . $sourceFullFileName . PHP_EOL;
+                echo $infoTag . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
+                    . ($countTestsForFile > 1 ? 's' : ' ') . ' : ' . $sourceFullFileName . PHP_EOL;
                 continue;
             }
-            if (count($testsFailed) != 0) {
-                echo $ansiRed . '[FAIL]' . $ansiReset . ' ' . $sourceFullFileName . PHP_EOL;
-                echo '  at test' . (count($testsFailed) > 1 ? 's' : ' ')
-                    . ' : #' . implode(' #', $testsFailed) . ' from a total of ' . $countTestsForFile . ' test'
-                    . ($countTestsForFile > 1 ? 's' : '') . '.' . PHP_EOL;
+            if ((count($testsFailed) > 0) and (count($testsFailed) == $countTestsForFile)) {
+                echo $ansiRed . '[FAIL]' . $ansiReset
+                    . ' -- all ' . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
+                    . ($countTestsForFile > 1 ? 's' : ' ') . ' failed : ' . $sourceFullFileName . PHP_EOL;
+            } elseif (count($testsFailed) > 0) {
+                echo $ansiRed . '[FAIL]' . $ansiReset
+                    . ' -- ' . str_pad(strval(count($testsFailed)), $testIdxWidth, ' ', STR_PAD_LEFT) . ' of '
+                    . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
+                    . ($countTestsForFile > 1 ? 's' : ' ') . ' failed : ' . $sourceFullFileName
+                    . ' : [ #' . implode(' #', $testsFailed) . ' ]' . PHP_EOL;
             } elseif ($config['verbose'] and ($countTestsForFile > 0)) {
                 echo $ansiGreen . '[PASS]' . $ansiReset . ' '
-                    . str_pad(strval($countTestsForFile), 2, ' ', STR_PAD_LEFT) . ' test'
+                    . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
                     . ($countTestsForFile > 1 ? 's' : ' ') . ' OK : ' . $sourceFullFileName . PHP_EOL;
             }
         }
