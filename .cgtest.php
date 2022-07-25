@@ -60,7 +60,7 @@ return [
         // 'vb.net',
     // Additional languages, unsupported on CodinGame:
         // 'cobol',
-        // 'fortran',
+        'fortran',
         // 'r',
     ],
     // == Tests will be run for the following puzzles in all languages (can be overriden in the per-language config):

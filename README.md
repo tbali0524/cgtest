@@ -47,11 +47,23 @@ Puzzles:              Space separated list of source filenames (without extensio
                         - path can be given, but no wildcards allowed
 ```
 
-An example run result:
-
-![screenshot](cgtest_screenshot.png)
-
 The minimal required configuration to run CGTest is to define (either via command-line or via the config file) the list of puzzles to test, and the list of languages to run.
+
+### Typical output
+
+CGTest shows the list of failed tests and a summary:
+
+![screenshot](cgtest_screenshot_base.png)
+
+With the `--verbose` option, all tested source files listed, even if passing:
+
+![screenshot verbose](cgtest_screenshot_verbose.png)
+
+The `--stats` option is useful if you run the test for multiple languages:
+
+![screenshot stats](cgtest_screenshot_stats.png)
+
+_Note: The spent time shown includes the time of compiling, not just the time spent in your source code._
 
 ## Prerequisites
 
@@ -69,7 +81,7 @@ CGTest includes some sensible defaults for both its global and per-language sett
 
 You can override these by using a configuration file. The default configuration file is `.cgtest.php`, or you can provide a different name with the `--config=...` command-line option.
 
-_Note:_ While the configuration file is a valid `php` source code, you don't need to know php at all to use it. It only defines an associative array, very similar to a JSON configuration. All the options are documented with comments in the sample config file.
+_Note: While the configuration file is a valid `php` source code, you don't need to know php at all to use it. It only defines an associative array, very similar to a JSON configuration. All the options are documented with comments in the sample config file._
 
 Some settings (but not all) can be also overriden via command-line arguments. If an option is set both in the config file and via the command-line, then the command-line takes precedence.
 
@@ -92,15 +104,15 @@ Some settings (but not all) can be also overriden via command-line arguments. If
 
 ### Important
 
-Some CG test cases have an expected output with trailing spaces in some lines. __Some code editors remove the trailing whitespaces automatically__, when you open these `.txt` files. This results failing test runs, as your codes output is no longer identical to what is stored in the expected test output file.
+Some CG test cases have an expected output with trailing spaces in some lines. _Some code editors remove the trailing whitespaces automatically_, when you open these `.txt` files. This results failing test runs, as your codes output is no longer identical to what is stored in the expected test output file.
 
-__Turn off__ such _false_ autocorrection for `.txt` files. The `.editorconfig` and `.vscode/settings.json` files included this repository already contain the correct settings, other editors might need different actions.
+_Turn off_ such _false_ autocorrection for `.txt` files. The `.editorconfig` and `.vscode/settings.json` files included this repository already contain the correct settings, other editors might need different actions.
 
 ### Sample test cases
 
 The repository also includes some test cases for `CodinGame` puzzles. Some of these puzzles are rather short and simple, so they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
 
-_SPOILER ALERT:_ In the repository, there are solution source code files in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._
+___SPOILER ALERT:___ In the repository, there are solution source code files in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._
 
 * The sample `.cgtest.php` runs test cases for the solutions for this single puzzle in several languages, assuming you have the local compilers or runtimes installed.
 * If you don't have the local setup for a language, just comment it out in the `'languages'` section of config file, or override the language selection with the `--lang=` command-line option.
@@ -108,21 +120,21 @@ _SPOILER ALERT:_ In the repository, there are solution source code files in mult
 
 ## Restrictions
 
-_CGTest_ supports only solo I/O puzzles. For any test case, the input must be a fixed file (so a given line of input cannot depend on the output previously provided by the code). This means that some solo and optim puzzles cannot be tested. Bot programming is also out of question.
+* _CGTest_ supports only solo I/O puzzles. For any test case, the input must be a fixed file (so a given line of input cannot depend on the output previously provided by the code). This means that some solo and optim puzzles cannot be tested. Bot programming is also out of question.
 
-CGTest is a single thread application, so tests are running in sequence, which can be rather slow if you have lots of test cases. If you start CGTest multiple times concurrently, use separate configuration files, with different output directory settings.
+* CGTest is a single thread application, so tests are running in sequence, which can be rather slow if you have lots of test cases. If you start CGTest multiple times concurrently, use separate configuration files, with different output directory settings.
 
-CGTest does not use containers or any other encironment separation when running your tests. If your code does silly things, like deleting files, then CGTest will NOT prevent it doing the damage.
+* CGTest does not use containers or any other encironment separation when running your tests. If your code does silly things, like deleting files, then CGTest will NOT prevent it doing the damage.
 
 ## Known issues
 
 I don't have local dev environment for all the 27 languages Codingame supports. Therefore, some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
 
-If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax).
-
 * I could not yet set up to run the tester properly for: `c#`, `vb.net`, `clojure`, `objective-c`, `swift`
 * `javascript` and `typescript` code is run by `node`, however the `readline()` function is missing. I don't know how to properly polyfill this locally.
 * Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows using a _'bash for Windows'_ package such as `MSYS2`.
+
+_If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax)._
 
 ## License
 
