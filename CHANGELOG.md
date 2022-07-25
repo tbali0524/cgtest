@@ -9,8 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Nothing yet.
+
+### Changed
+
+- Nothing yet.
+
+### Fixed
+
+- Nothing yet.
+
+## [v1.1.0](https://github.com/tbali0524/cgtest/releases/v1.1.0) - 2022-07-25
+
+### Added
+
 - `--stats` command-line option added.
-- 100+ CG puzzle test cases added.
+- 150+ CG puzzle test cases added.
 - Fortran default config and sample code added.
 
 ### Changed
@@ -23,6 +37,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Shebang added to the bash sample solution.
 - Added -lm to default gcc build command.
 
-## [v1.0.0](https://github.com/tbali0524/cgtest) - 2022-07-23
+## [v1.0.0](https://github.com/tbali0524/cgtest/releases/v1.0.0) - 2022-07-23
 
 Initial release.

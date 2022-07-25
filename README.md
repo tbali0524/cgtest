@@ -1,4 +1,4 @@
-# CGTest v1.0.0
+# CGTest v1.1.0
 
 A multi-language offline batch test runner for `CodinGame` (or other) solo I/O puzzles.
 

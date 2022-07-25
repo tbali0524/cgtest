@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.0.0
+ * CGTest v1.1.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth [TBali]
@@ -42,7 +42,7 @@ $infoTag = '[INFO] ';
 $errorTag = '[ERROR] ';
 // --------------------------------------------------------------------
 // print application title, check php version
-$title = 'CGTest v1.0.0' . PHP_EOL
+$title = 'CGTest v1.1.0' . PHP_EOL
     . 'A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles' . PHP_EOL
     . '(c) 2022, by Balint Toth [TBali]' . PHP_EOL;
 echo $title . PHP_EOL;
