@@ -2,7 +2,7 @@
 
 A multi-language offline batch test runner for `CodinGame` (or other) solo I/O puzzles.
 
-(c) 2022, by Balint Toth \[[TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033)\]
+(c) 2022, by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
 ## Intro
 
@@ -20,7 +20,7 @@ At CG, you don't have to bother about setting up any local development environme
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
 
-The repository also includes some test cases for 100+ `CodinGame` puzzles.
+_The repository also includes some test cases for __100+__ `CodinGame` puzzles._
 
 ## Command line usage
 
@@ -110,13 +110,18 @@ _Turn off_ such _false_ autocorrection for `.txt` files. The `.editorconfig` and
 
 ### Sample test cases
 
-The repository also includes some test cases for `CodinGame` puzzles. Some of these puzzles are rather short and simple, so they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
+The repository also includes some test cases for many `CodinGame` puzzles.
 
 ___SPOILER ALERT:___ In the repository, there are solution source code files in multiple programming languages for a very simple CG puzzle, called [Rubik](https://www.codingame.com/training/medium/rubik%C2%AE). _If you haven't solved this puzzle yet, do so before checking the sample solutions._
 
 * The sample `.cgtest.php` runs test cases for the solutions for this single puzzle in several languages, assuming you have the local compilers or runtimes installed.
-* If you don't have the local setup for a language, just comment it out in the `'languages'` section of config file, or override the language selection with the `--lang=` command-line option.
-* There is an additional sample configuration file `.cgtest.full.php`. This has references to all the provided test cases in a per-language `'includePuzzles'` section. Use this config with the `--config=.cgtest.full.php` command-line option.
+    * If you don't have the local setup for a language, just comment it out in the `'languages'` section of config file, or override the language selection with the `--lang=` command-line option.
+* There is an additional sample configuration file `.cgtest.full.php`.
+    * Use this config with the `--config=.cgtest.full.php` command-line option.
+    * This has references to ALL the test cases included in the CGTest reporitory.
+    * Some puzzles are listed in the global `'puzzles'` section. These are the shortest and simplest puzzles, so they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
+    * Other puzzles are listed in a per-language `'includePuzzles'` section. Modify the language and comment out the puzzle names as needed.
+    * For most puzzles only currently only a single test case is provided. That is OK for a simple smoke-test but not to prove that your solution is correct.
 
 ## Restrictions
 
