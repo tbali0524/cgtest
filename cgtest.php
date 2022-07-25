@@ -38,10 +38,20 @@ $zeroStat = [
 $stats['totals'] = $zeroStat;
 $stats['totals']['countLanguages'] = 0;
 $stats['totals']['startTime'] = hrtime(true);
+$infoTag = '[INFO] ';
+$errorTag = '[ERROR] ';
+// --------------------------------------------------------------------
+// print application title, check php version
 $title = 'CGTest v1.0.0' . PHP_EOL
     . 'A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles' . PHP_EOL
     . '(c) 2022, by Balint Toth [TBali]' . PHP_EOL;
 echo $title . PHP_EOL;
+const MIN_PHP_VERSION = '7.3.0';
+if (version_compare(phpversion(), MIN_PHP_VERSION, '<')) {
+    echo $errorTag . 'Minimum required PHP version is ' . MIN_PHP_VERSION . '; you are on ' . phpversion()
+        . PHP_EOL . PHP_EOL;
+    exit(1);
+}
 // --------------------------------------------------------------------
 // default configuration
 $defaultConfigFileName = '.cgtest.php';
@@ -386,8 +396,6 @@ $reservedConfigKeys = array_merge(
 $languageNonEmptyStringConfigKeys = ['sourceExtension', 'runCommand'];
 $languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionCommand', 'buildCommand'];
 $languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles'];
-$infoTag = '[INFO] ';
-$errorTag = '[ERROR] ';
 $testIdxWidth = 2;
 // --------------------------------------------------------------------
 // command-line arguments

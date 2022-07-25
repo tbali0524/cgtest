@@ -1,0 +1,3 @@
+encrypt
+! @ # $ % ^ & * ( ) [ ] { } | / < > ` ~ - _ = + ? .
+HELLO WORLDZ WHAT IS UP
