@@ -1,5 +1,7 @@
 // https://www.codingame.com/training/medium/rubik%C2%AE
 
+module solution;
+
 import std.stdio;
 
 void main()

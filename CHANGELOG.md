@@ -15,7 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- report output changed for failed tests
+- Report output changed for failed tests.
+- All puzzles renamed in `.cgtest.full.php` config file (to better match the slug in the CG URLs).
 
 ### Fixed
 

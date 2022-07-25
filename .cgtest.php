@@ -71,7 +71,7 @@ return [
     // ],
     'puzzles' => [
         './' => [
-            'med_com_rubik',
+            'medium_com_rubik',
         ],
     ],
     // == The following per-language config options are available:
