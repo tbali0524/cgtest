@@ -854,6 +854,10 @@ foreach ($config['languages'] as $language) {
                     $config['inputPath'] . $config['inputPattern']
                 );
                 if (!file_exists($inputFullFileName)) {
+                    if ($countTestsForFile == 0) {
+                        ++$stats['totals']['countSkippedTests'];
+                        ++$stats[$language]['countSkippedTests'];
+                    }
                     break;
                 }
                 $expectedFullFileName = str_replace(
@@ -1078,7 +1082,7 @@ if ($config['clean']) {
         exit(1);
     }
     if ($stats['totals']['countDeletedFiles'] == 0) {
-        echo $infoTag . 'There were nothing to clean.' . PHP_EOL;
+        echo $infoTag . 'There was nothing to clean.' . PHP_EOL;
     }
     echo PHP_EOL;
     exit(0);
@@ -1096,7 +1100,7 @@ if ($stats['totals']['countSkippedFiles'] > 0) {
         . ' due to missing source.' . PHP_EOL . PHP_EOL;
 }
 if ($stats['totals']['countSkippedTests'] > 0) {
-    echo $warnTag . 'Skipped ' . $stats['totals']['countSkippedTests'] . ' tests'
+    echo $warnTag . 'Skipped ' . $stats['totals']['countSkippedTests'] . ' test'
         . ($stats['totals']['countSkippedTests'] > 1 ? 's' : '')
         . ' due to missing test case files.' . PHP_EOL . PHP_EOL;
 }
