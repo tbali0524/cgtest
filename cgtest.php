@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$stats = [];
+$version = 'v1.1.0-dev';
 $zeroStat = [
     'countDirectories' => 0,
     'countFiles' => 0,
@@ -35,6 +35,7 @@ $zeroStat = [
     'startTime' => 0,
     'spentTime' => 0,
 ];
+$stats = [];
 $stats['totals'] = $zeroStat;
 $stats['totals']['countLanguages'] = 0;
 $stats['totals']['startTime'] = hrtime(true);
@@ -42,7 +43,7 @@ $infoTag = '[INFO] ';
 $errorTag = '[ERROR] ';
 // --------------------------------------------------------------------
 // print application title, check php version
-$title = 'CGTest v1.1.0' . PHP_EOL
+$title = 'CGTest ' . $version . PHP_EOL
     . 'A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles' . PHP_EOL
     . '(c) 2022, by Balint Toth [TBali]' . PHP_EOL;
 echo $title . PHP_EOL;
