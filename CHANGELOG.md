@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Nothing yet.
+- If puzzle name is given via command-line with path given, it will override the per-language path settings.
 
 ## [v1.1.0](https://github.com/tbali0524/cgtest/releases/v1.1.0) - 2022-07-25
 

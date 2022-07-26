@@ -42,9 +42,10 @@ Options:
    --lang=LANGUAGES   Run tests in these languages (comma separated list)
                         - default: php; or the languages section in the config file
 
-Puzzles:              Space separated list of source filenames (without extension)
+Puzzles:              Space separated list of source filenames (WITHOUT extension)
                         - if given, it overrides the list in the config file
                         - path can be given, but no wildcards allowed
+                        - if no path given, then per-language path setting is taken from the config file
 ```
 
 The minimal required configuration to run CGTest is to define (either via command-line or via the config file) the list of puzzles to test, and the list of languages to run.

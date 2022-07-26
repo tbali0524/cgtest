@@ -397,6 +397,7 @@ $languageNonEmptyStringConfigKeys = ['sourceExtension', 'runCommand'];
 $languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionCommand', 'buildCommand'];
 $languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles'];
 $testIdxWidth = 2;
+$noPathKey = '@';
 // --------------------------------------------------------------------
 // command-line arguments
 $argumentConfig = [];
@@ -481,7 +482,7 @@ for ($i = 1; $i < $argc; ++$i) {
     }
     $path = substr($arg, 0, $j + 1);
     if ($path == '') {
-        $path = './';
+        $path = $noPathKey;
     }
     $puzzle = substr($arg, $j + 1);
     if ($puzzle == '') {
@@ -526,6 +527,20 @@ foreach ($configFromFile as $configKey => $configValue) {
     }
 }
 $config = array_merge($config, $argumentConfig);
+if (isset($argumentConfig['puzzles']) and (count($argumentConfig['puzzles']) != 0)) {
+    $overrideSourcePath = false;
+    foreach ($config['puzzles'] as $path => $puzzleArray) {
+        if ($path != $noPathKey) {
+            $overrideSourcePath = true;
+            break;
+        }
+    }
+    if ($overrideSourcePath) {
+        foreach ($config['languages'] as $language) {
+            $config[$language]['sourcePath'] = '';
+        }
+    }
+}
 // --------------------------------------------------------------------
 // setup color mode
 if (!isset($config['ansi']) or !is_bool($config['ansi'])) {
@@ -745,7 +760,8 @@ foreach ($config['languages'] as $language) {
     }
     // --------------------------------------------------------------------
     // loop: for each puzzle to test or clean
-    foreach ($puzzles as $sourcePath => $filesArray) {
+    foreach ($puzzles as $sourcePathKey => $filesArray) {
+        $sourcePath = ($sourcePathKey == $noPathKey ? '' : $sourcePathKey);
         if (($config[$language]['sourcePath'] == '') or ($stats[$language]['countDirectories'] == 0)) {
             ++$stats['totals']['countDirectories'];
             ++$stats[$language]['countDirectories'];
@@ -1011,15 +1027,6 @@ foreach ($config['languages'] as $language) {
 }
 $stats['totals']['spentTime'] = hrtime(true) - $stats['totals']['startTime'];
 // --------------------------------------------------------------------
-$zeroStat = [
-    'countDirectories' => 0,
-    'countFiles' => 0,
-    'countTests' => 0,
-    'countPassedTests' => 0,
-    'countSkippedFiles' => 0,
-    'countSkippedTests' => 0,
-    'countDeletedFiles' => 0,
-];
 // print per language stats
 if ($config['stats']) {
     echo '------+------------+------+------+------+------+-------+' . PHP_EOL;
@@ -1114,7 +1121,7 @@ if ($stats['totals']['countSkippedTests'] > 0) {
 }
 if ($stats['totals']['countTests'] == 0) {
     echo PHP_EOL;
-    echo $ansiYellow . str_pad(' [WARN] There were nothing to test.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
+    echo $ansiYellow . str_pad(' [WARN] There was nothing to test.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
     exit(1);
 }
 echo $infoTag . 'Total: ' . $stats['totals']['countPassedTests'] . ' / '
