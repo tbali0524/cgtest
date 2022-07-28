@@ -1,0 +1,4 @@
+3
+(21:52:18) Magus: Hey MadKnight, did you improve your CSB AI recently?
+(21:53:05) MadKnight: Hey Magus. Yes my CSB AI use a new genetic algorithm! And you?
+(21:53:42) Magus: No i'm too busy trying to fix Automaton2000

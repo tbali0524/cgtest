@@ -1,0 +1,2 @@
+hangman
+a e s m g n h

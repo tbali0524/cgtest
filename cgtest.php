@@ -51,7 +51,8 @@ const MIN_PHP_VERSION = '7.3.0';
 if (version_compare(phpversion(), MIN_PHP_VERSION, '<')) {
     echo $errorTag . 'Minimum required PHP version is ' . MIN_PHP_VERSION . '; you are on ' . phpversion()
         . PHP_EOL . PHP_EOL;
-    exit(1);
+    // OS exit codes: 0 = OK, 1 = some tests failed, 2 = error (wrong CLI arguments, etc)
+    exit(2);
 }
 // --------------------------------------------------------------------
 // default configuration
@@ -1043,6 +1044,25 @@ if ($config['stats']) {
             $testsStr = $ansiYellow . $testsStr . $ansiReset;
             $status = $ansiYellow . '[WARN]' . $ansiReset;
         }
+        $msg = '';
+        if ($stat['countSkippedLanguages'] > 0) {
+            $status = $ansiYellow . '[WARN]' . $ansiReset;
+            $msg = ' language skipped.';
+        } elseif ($config['clean']) {
+            $status = str_repeat(' ', 6);
+            if ($stat['countDeletedFiles'] > 0) {
+                $msg .= ' ' . strval($stat['countDeletedFiles']) . ' files deleted.';
+            }
+        } else {
+            if ($stat['countSkippedFiles'] > 0) {
+                $status = $ansiYellow . '[WARN]' . $ansiReset;
+                $msg .= ' ' . strval($stat['countSkippedFiles']) . ' puzzles skipped.';
+            }
+            if ($stat['countSkippedTests'] > 0) {
+                $status = $ansiYellow . '[WARN]' . $ansiReset;
+                $msg .= ' ' . strval($stat['countSkippedTests']) . ' tests skipped.';
+            }
+        }
         $countFailed = $stat['countTests'] - $stat['countPassedTests'];
         if ($config['dry-run'] or $config['clean']) {
             $countFailed = 0;
@@ -1051,22 +1071,6 @@ if ($config['stats']) {
         if ($countFailed > 0) {
             $failStr = $ansiRed . $failStr . $ansiReset;
             $status = $ansiRed . '[FAIL]' . $ansiReset;
-        }
-        $msg = '';
-        if ($stat['countSkippedLanguages'] > 0) {
-            $status = $ansiYellow . '[WARN]' . $ansiReset;
-            $msg = ' language skipped';
-        } elseif ($config['clean']) {
-            $status = str_repeat(' ', 6);
-            if ($stat['countDeletedFiles'] > 0) {
-                $msg = ' ' . strval($stat['countDeletedFiles']) . ' files deleted';
-            }
-        } elseif ($stat['countSkippedFiles'] > 0) {
-            $status = $ansiYellow . '[WARN]' . $ansiReset;
-            $msg = ' ' . strval($stat['countSkippedFiles']) . ' puzzles skipped';
-        } elseif ($stat['countSkippedTests'] > 0) {
-            $status = $ansiYellow . '[WARN]' . $ansiReset;
-            $msg = ' ' . strval($stat['countSkippedTests']) . ' tests skipped';
         }
         echo $status
             . '|' . str_pad(substr($language, 0, 12), 12)
@@ -1082,28 +1086,47 @@ if ($config['stats']) {
 // --------------------------------------------------------------------
 // print global results
 $statusWidth = 78;
+$wasLF = false;
 if ($stats['totals']['countSkippedLanguages'] > 0) {
+    echo PHP_EOL;
+    $wasLF = true;
     echo $warnTag . 'Skipped ' . $stats['totals']['countSkippedLanguages'] . ' language'
         . ($stats['totals']['countSkippedLanguages'] > 1 ? 's' : '')
         . ' due to configuration errors.' . PHP_EOL;
 }
 if ($config['clean']) {
     if ($stats['totals']['countDeletedFiles'] > 0) {
+        if (!$wasLF) {
+            echo PHP_EOL;
+            $wasLF = true;
+        }
         echo $infoTag . 'Deleted ' . $stats['totals']['countDeletedFiles'] . ' temporary and test output file'
             . ($stats['totals']['countDeletedFiles'] > 1 ? 's' : '') . '.' . PHP_EOL;
     }
     if ($totalUnsuccessfulDeleteFiles > 0) {
+        if (!$wasLF) {
+            echo PHP_EOL;
+            $wasLF = true;
+        }
         echo $warnTag . 'Failed to delete ' . $totalUnsuccessfulDeleteFiles . ' file'
             . ($totalUnsuccessfulDeleteFiles > 1 ? 's' : '') . '.' . PHP_EOL . PHP_EOL;
         exit(1);
     }
     if ($stats['totals']['countDeletedFiles'] == 0) {
+        if (!$wasLF) {
+            echo PHP_EOL;
+            $wasLF = true;
+        }
         echo $infoTag . 'There was nothing to clean.' . PHP_EOL;
     }
     echo PHP_EOL;
     exit(0);
 }
 if ($config['lang-versions']) {
+    if (!$wasLF) {
+        echo PHP_EOL;
+        $wasLF = true;
+    }
     $countLangs = $stats['totals']['countLanguages'] - $stats['totals']['countSkippedLanguages'];
     echo $infoTag . 'Total: ' . $countLangs . ' programming language'
        . ($countLangs > 1 ? 's' : '')
@@ -1111,19 +1134,34 @@ if ($config['lang-versions']) {
     exit(0);
 }
 if ($stats['totals']['countSkippedFiles'] > 0) {
-    echo $warnTag . 'Skipped ' . $stats['totals']['countSkippedFiles'] . ' source file'
+    if (!$wasLF) {
+        echo PHP_EOL;
+        $wasLF = true;
+    }
+    echo $warnTag . 'Skipped ' . $stats['totals']['countSkippedFiles'] . ' puzzle'
         . ($stats['totals']['countSkippedFiles'] > 1 ? 's' : '')
-        . ' due to missing source.' . PHP_EOL . PHP_EOL;
+        . ' due to missing source code file.' . PHP_EOL;
 }
 if ($stats['totals']['countSkippedTests'] > 0) {
+    if (!$wasLF) {
+        echo PHP_EOL;
+        $wasLF = true;
+    }
     echo $warnTag . 'Skipped ' . $stats['totals']['countSkippedTests'] . ' test'
         . ($stats['totals']['countSkippedTests'] > 1 ? 's' : '')
-        . ' due to missing test case files.' . PHP_EOL . PHP_EOL;
+        . ' due to missing test case files.' . PHP_EOL;
 }
 if ($stats['totals']['countTests'] == 0) {
-    echo PHP_EOL;
+    if (!$wasLF) {
+        echo PHP_EOL;
+        $wasLF = true;
+    }
     echo $ansiYellow . str_pad(' [WARN] There was nothing to test.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
     exit(1);
+}
+if (!$wasLF) {
+    echo PHP_EOL;
+    $wasLF = true;
 }
 echo $infoTag . 'Total: ' . $stats['totals']['countPassedTests'] . ' / '
     . $stats['totals']['countTests'] . ' tests passed while testing '
@@ -1140,7 +1178,8 @@ if (!$config['dry-run']) {
         echo $ansiRed . str_pad(' [FAIL] Some tests failed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
         exit(1);
     }
-    echo $ansiGreen . str_pad(' [OK] All tests passed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
+    echo $ansiGreen . str_pad(' [OK] All tests passed.', $statusWidth) . $ansiReset . PHP_EOL;
 }
+echo PHP_EOL;
 exit(0);
 // --------------------------------------------------------------------

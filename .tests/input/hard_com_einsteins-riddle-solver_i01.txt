@@ -1,0 +1,21 @@
+4 4
+Amelia Bob Charles Daniel
+Autobus Car Bicycle Roller
+Herb Bush Tree Flower
+Turtle Ant Rhinoceros Elephant
+15
+Charles & Bicycle
+Flower & Bob
+Elephant ! Daniel
+Elephant & Autobus
+Rhinoceros & Bicycle
+Amelia & Turtle
+Tree & Turtle
+Herb ! Car
+Bush ! Daniel
+Elephant & Bob
+Tree & Car
+Roller & Ant
+Flower ! Daniel
+Tree ! Elephant
+Tree ! Bob

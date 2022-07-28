@@ -178,16 +178,16 @@ return [
         // 'sourcePath' => '', // uncomment if source code is not in 'php/' but in the keys, e.g. 'puzzle/cg/...'
         'includePuzzles' => [
             'codegolf/' => [
-                'codegolf_chuck-norris',                    // see also above
-                'codegolf_temperatures',                    // see also above
+                'codegolf_chuck-norris',                    // also in global section
+                'codegolf_temperatures',                    // also in global section
             ],
                 'puzzle/cg/easy/' => [
-                'easy_cg_ascii-art',                        // see also above
-                'easy_cg_chuck-norris',                     // see also above
+                'easy_cg_ascii-art',                        // also in global section
+                'easy_cg_chuck-norris',                     // also in global section
                 'easy_cg_defibrillators',
-                'easy_cg_horse-racing-duals',               // see also above
+                'easy_cg_horse-racing-duals',               // also in global section
                 'easy_cg_mime-type',
-                'easy_cg_temperatures',                     // see also above
+                'easy_cg_temperatures',                     // also in global section
             ],
             'puzzle/cg/medium/' => [
                 'medium_cg_bender-episode-1',
@@ -196,7 +196,7 @@ return [
                 'medium_cg_mayan-calculation',
                 'medium_cg_network-cabling',
                 'medium_cg_scrabble',
-                // 'medium_cg_stock-exchange-losses',       // see also above
+                // 'medium_cg_stock-exchange-losses',       // also in global section
                 'medium_cg_telephone-numbers',
                 'medium_cg_the-gift',
                 'medium_cg_war',
@@ -219,7 +219,7 @@ return [
             ],
             'puzzle/community/easy/' => [
                 'easy_com_1-ngr-basic-radar',
-                // 'easy_com_1d-bush-fire',                 // see also above
+                // 'easy_com_1d-bush-fire',                 // also in global section
                 'easy_com_1000000000d-world',
                 'easy_com_10-pin-bowling-scores',
                 'easy_com_111-rubiks-cube-movements',
@@ -254,9 +254,9 @@ return [
                 'easy_com_code-breaker-puzzle',
                 'easy_com_container-terminal',
                 'easy_com_cosmic-love',
-                // 'easy_com_count-as-i-count',                     // see also above
-                // 'easy_com_create-the-longest-sequence-of-1s',    // see also above
-                // 'easy_com_credit-card-verifier-luhns-algorithm', // see also above
+                // 'easy_com_count-as-i-count',                     // also in global section
+                // 'easy_com_create-the-longest-sequence-of-1s',    // also in global section
+                // 'easy_com_credit-card-verifier-luhns-algorithm', // also in global section
                 'easy_com_crop-circles',
                 'easy_com_cubic-bezier-curves',
                 'easy_com_currency-conversion-challenge',   // removed puzzle
@@ -340,7 +340,7 @@ return [
                 'easy_com_reverse-fizzbuzz',
                 'easy_com_reverse-minesweeper',
                 'easy_com_robot-reach',
-                // 'easy_com_robot-show',                   // see also above
+                // 'easy_com_robot-show',                   // also in global section
                 'easy_com_rock-paper-scissors-lizard-spock',
                 'easy_com_rooks-movements',
                 'easy_com_rotating-arrows',
@@ -352,13 +352,13 @@ return [
                 'easy_com_simple-auto-scaling',
                 'easy_com_simple-awale',
                 'easy_com_simple-load-balancing',
-                // 'easy_com_smooth',                       // see also above
+                // 'easy_com_smooth',                       // also in global section
                 'easy_com_snail-run',
                 'easy_com_someones-acting-sus----',
                 'easy_com_stall-tilt',
                 'easy_com_substitution-encoding',
                 'easy_com_sudoku-validator',
-                // 'easy_com_sum-of-spirals-diagonals',     // see also above
+                // 'easy_com_sum-of-spirals-diagonals',     // also in global section
                 'easy_com_survey-prediction',
                 'easy_com_sweet-spot',
                 'easy_com_teds-compiler',
@@ -368,16 +368,16 @@ return [
                 'easy_com_the-electrician-apprentice',
                 'easy_com_the-frog-jump-1',                 // removed puzzle
                 'easy_com_the-michelangelo-code',
-                // 'easy_com_the-mystic-rectangle',         // see also above
-                // 'easy_com_the-river-i-',                 // see also above
-                // 'easy_com_the-river-ii-',                // see also above
+                // 'easy_com_the-mystic-rectangle',         // also in global section
+                // 'easy_com_the-river-i-',                 // also in global section
+                // 'easy_com_the-river-ii-',                // also in global section
                 'easy_com_the-travelling-salesman-problem',
                 'easy_com_tictactoe',
                 'easy_com_treasure-hunt',
                 'easy_com_tree-paths',
                 'easy_com_tricky-number-verifier',
                 'easy_com_unique-prefixes',
-                // 'easy_com_unit-fractions',               // see also above
+                // 'easy_com_unit-fractions',               // also in global section
                 'easy_com_van-ecks-sequence',
                 'easy_com_walk-on-a-die',
                 'easy_com_whats-so-complex-about-mandelbrot',
@@ -387,17 +387,17 @@ return [
                 'easy_com_zhiwei-sun-squares',
             ],
             'puzzle/community/medium/' => [
-                // 'medium_com_bit-count-to-limit',            // see also above
-                // 'medium_com_factorial-vs-exponential',      // see also above
-                // 'medium_com_halting-sequences',             // see also above
-                // 'medium_com_minimal-number-of-swaps',       // see also above
-                // 'medium_com_porcupine-fever',               // see also above
-                // 'medium_com_remaining-card',                // see also above
-                // 'medium_com_reversed-look-and-say',         // see also above
-                // 'medium_com_rubik',                         // see also above
-                // 'medium_com_sum-of-divisors',               // see also above
-                // 'medium_com_the-experience-for-creating-puzzles',   // see also above
-                // 'medium_com_the-fastest',                   // see also above
+                // 'medium_com_bit-count-to-limit',            // also in global section
+                // 'medium_com_factorial-vs-exponential',      // also in global section
+                // 'medium_com_halting-sequences',             // also in global section
+                // 'medium_com_minimal-number-of-swaps',       // also in global section
+                // 'medium_com_porcupine-fever',               // also in global section
+                // 'medium_com_remaining-card',                // also in global section
+                // 'medium_com_reversed-look-and-say',         // also in global section
+                // 'medium_com_rubik',                         // also in global section
+                // 'medium_com_sum-of-divisors',               // also in global section
+                // 'medium_com_the-experience-for-creating-puzzles',   // also in global section
+                // 'medium_com_the-fastest',                   // also in global section
             // todo: add more test cases
                 // 'medium_com_10101',
                 // 'medium_com_2048-scores',
@@ -625,71 +625,67 @@ return [
                 // 'medium_com_wine-from-kalbodia-episode-1',
             ],
             'puzzle/community/hard/' => [
-                // 'hard_com_execution-circle',                // see also above
-                // 'hard_com_google-interview---the-two-egg-problem',    // see also above
-                // 'hard_com_highest-truncated-pyramid',       // see also above
                 'hard_com_3d-ascii-cube',                   // removed puzzle
                 'hard_com_7-segment-display',
+                'hard_com_alternative-vote',
+                'hard_com_apple-tree',
+                'hard_com_a-game-of-go',
+                'hard_com_a-man-with-a-plan',
+                'hard_com_bailey-borwein-plouffe-pi',
+                'hard_com_balanced-levers',
+                'hard_com_basic-decision-tree---1',
+                'hard_com_basic-decision-tree---2',
+                'hard_com_big-bang-theory---sheldons-array-puzzle',
+                'hard_com_binary-neural-network---part-1',
+                'hard_com_binary-permutations',
+                'hard_com_boggle',
+                'hard_com_breaking-apart',
+                'hard_com_breakout',
+                'hard_com_candies',
+                'hard_com_castle-siege',
+                'hard_com_cgs-next-top-model',
+                'hard_com_cheat-solving',
+                'hard_com_chess-board-analyzer',
+                'hard_com_chess-cavalry',
+                'hard_com_chess-moves-on-FEN-position',
+                'hard_com_closest-number',
+                'hard_com_cloudy-weather',
+                'hard_com_code-your-own-automaton2000-step-1',
+                'hard_com_connect-four',
+                'hard_com_cryptarithm',
+                'hard_com_dawg',
+                'hard_com_derivative-time---part2',
+                'hard_com_discrete-log-problem',
+                'hard_com_disks-intersection',
+                'hard_com_divisibility-of-fibonacci-numbers-sum',
+                'hard_com_dominoes-solver',
+                'hard_com_doubly-solved-rubiks-cube',
+                'hard_com_drawing-polygons',
+                'hard_com_dumbbells-solver',
+                'hard_com_egyptian-multiplication',
+                'hard_com_einsteins-riddle-solver',
+                'hard_com_electrical-grid',
+                'hard_com_elevator',
+                'hard_com_encounter-surface',
+                'hard_com_erdos-number',
+                // 'hard_com_execution-circle',                // also in global section
+                'hard_com_expand-the-polynomial',
+                'hard_com_factorials-of-primes-decomposition',
+                'hard_com_flower-beds',
+                'hard_com_fractal-carpet',
+                'hard_com_gerrymandering',
+                // 'hard_com_google-interview---the-two-egg-problem',    // also in global section
+                'hard_com_hangman',
+                'hard_com_hanoi-tower',
+                'hard_com_harmless-rooks',
+                'hard_com_her-majestys-well-shared-secret',
+                // 'hard_com_highest-truncated-pyramid',       // also in global section
+                'hard_com_hill-notation-and-hill-order',
+                'hard_com_hit-the-road',
+                'hard_com_horn-sat-solver',
+                'hard_com_inertia-ride',
+                'hard_com_kakuro-solver',
             // todo: add more test cases
-                // 'hard_com_alternative-vote',
-                // 'hard_com_apple-tree',
-                // 'hard_com_a-game-of-go',
-                // 'hard_com_a-man-with-a-plan',
-                // 'hard_com_bailey-borwein-plouffe-pi',
-                // 'hard_com_balanced-levers',
-                // 'hard_com_basic-decision-tree-1',
-                // 'hard_com_basic-decision-tree-2',
-                // 'hard_com_big-bang-theory-sheldons-array-puzzle',
-                // 'hard_com_binary-extension',
-                // 'hard_com_binary-neural-network---part-1',
-                // 'hard_com_binary-permutations',
-                // 'hard_com_blockout',
-                // 'hard_com_boggle',
-                // 'hard_com_breaking-apart',
-                // 'hard_com_breakout',
-                // 'hard_com_candies',
-                // 'hard_com_castle-siege',
-                // 'hard_com_cgs-next-top-model',
-                // 'hard_com_cheat-solving',
-                // 'hard_com_chess-board-analyzer',
-                // 'hard_com_chess-cavalry',
-                // 'hard_com_chess-moves-on-FEN-position',
-                // 'hard_com_closest-number',
-                // 'hard_com_cloudy-weather',
-                // 'hard_com_code-your-own-automaton2000-step-1',
-                // 'hard_com_connect-four',
-                // 'hard_com_cryptarithm',
-                // 'hard_com_dawg',
-                // 'hard_com_derivative-time---part2',
-                // 'hard_com_discrete-log-problem',
-                // 'hard_com_disks-intersection',
-                // 'hard_com_divisibility-of-fibonacci-numbers-sum',
-                // 'hard_com_dominoes-solver',
-                // 'hard_com_doubly-solved-rubiks-cube',
-                // 'hard_com_drawing-polygons',
-                // 'hard_com_dumbbells-solver',
-                // 'hard_com_egyptian-multiplication',
-                // 'hard_com_einsteins-riddle-solver',
-                // 'hard_com_electrical-grid',
-                // 'hard_com_elevator',
-                // 'hard_com_encounter-surface',
-                // 'hard_com_erdos-number',
-                // 'hard_com_expand-the-polynomial',
-                // 'hard_com_factorials-of-primes-decomposition',
-                // 'hard_com_flower-beds',
-                // 'hard_com_fractal-carpet',
-                // 'hard_com_gerrymandering',
-                // 'hard_com_hangman',
-                // 'hard_com_hanoi-tower',
-                // 'hard_com_harmless-rooks',
-                // 'hard_com_her-majestys-well-shared-secret',
-                // 'hard_com_hill-notation-and-hill-order',
-                // 'hard_com_hit-the-road',
-                // 'hard_com_horn-sat-solver',
-                // 'hard_com_inertia-ride',
-                // 'hard_com_jump-point-search-preprocessing',
-                // 'hard_com_jump-point-search-runtime',
-                // 'hard_com_kakuro-solver',
                 // 'hard_com_kgood',
                 // 'hard_com_kolakoski-sequence',
                 // 'hard_com_laser-and-mirrors',
@@ -708,10 +704,10 @@ return [
                 // 'hard_com_musical-intervals',
                 // 'hard_com_mystery-sums',
                 // 'hard_com_neighbor-sum-grids',
+                'hard_com_n-pearls-necklace',
+                'hard_com_n-queens',
                 'hard_com_nonogram-inversor',
                 // 'hard_com_nugget-numbers',
-                'hard_com_n-pearls-necklace',
-                // 'hard_com_n-queens',
                 // 'hard_com_obsolete-programming',
                 // 'hard_com_order-of-oopserations',
                 // 'hard_com_paper-folding-curve',
@@ -779,7 +775,7 @@ return [
                 // 'expert_com_nurikabe',
                 'expert_com_prime-fractals-in-pascals-triangle',
                 'expert_com_prime-transformations',
-                // 'expert_com_recurring-decimals',         // see also above
+                // 'expert_com_recurring-decimals',         // also in global section
                 'expert_com_skylines',
                 'expert_com_sliding-puzzle',
                 'expert_com_spy-the-spies',
@@ -840,8 +836,12 @@ return [
         //     'medium_com_minesweeper-1',
         //     'hard_com_11-puzzle',
         //     'hard_com_adversarial-mate-with-rook',
+        //     'hard_com_binary-extension',
+        //     'hard_com_blockout',
         //     'hard_com_can-you-save-the-forest---episode-2',
         //     'hard_com_freecell',
+        //     'hard_com_jump-point---search-preprocessing',
+        //     'hard_com_jump-point---search-runtime',
         //     'hard_com_sokoban',
         //     'expert_com_breach',
         //     'expert_com_space-maze',
