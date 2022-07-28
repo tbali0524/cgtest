@@ -1,0 +1,5 @@
+2
+Bowser
+Mario
+1
+Mario killed Bowser

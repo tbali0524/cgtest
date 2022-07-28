@@ -1,0 +1,6 @@
+5
+find
+the
+shortest
+unique
+prefix

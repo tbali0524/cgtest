@@ -1,0 +1,22 @@
+a b c
+A B
+6
+A a B
+A b B
+A c B
+B a A
+B b A
+B c A
+A
+B
+10
+a
+ab
+abc
+abcd
+abcde
+aabbcc
+aabbcca
+abcabcabc
+z
+abcabcabo

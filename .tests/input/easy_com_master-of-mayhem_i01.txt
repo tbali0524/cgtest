@@ -1,0 +1,15 @@
+2
+SPEEDO
+TYPO
+3
+Mayhem's hat is a FEDORA
+Mayhem's neckwear is a STRING OF PEARLS
+Mayhem's word is "SNARK"
+7
+SPEEDO's hat is a FEDORA
+TYPO's catchphrase is "I am HUNTING for a SNARK"
+TYPO's companion is a MINIATURE DRAGON
+SPEEDO's neckwear is a STRING OF PEARLS
+SPEEDO's companion is a BEAVER
+TYPO's hat is a FEDORA
+TYPO's neckwear is a PENDANT

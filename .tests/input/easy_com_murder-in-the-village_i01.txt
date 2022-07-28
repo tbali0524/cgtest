@@ -1,0 +1,5 @@
+4
+Tom: I was in the church with Bob.
+Jane: I was in the garden with Joyce.
+Bob: I was in the church with Tom.
+Joyce: I was in the garden with Jane.

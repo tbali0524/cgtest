@@ -1,0 +1,5 @@
+100
+1 NiceGuy1
+* C
+1 NiceGuy2
+* C

@@ -1,0 +1,7 @@
+Name: Bowser
+Killed: None
+Killer: Mario
+
+Name: Mario
+Killed: Bowser
+Killer: Winner
