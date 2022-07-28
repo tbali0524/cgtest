@@ -38,7 +38,7 @@ return [
         // 'clojure',
         'd',
         'dart',
-        // 'f#',
+        'f#',
         'go',
         'groovy',
         'haskell',
