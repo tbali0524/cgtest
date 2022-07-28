@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- More CG puzzle test cases added, total is over 400 test cases for 300 puzzles.
+- More CG puzzle test cases added, total is now over 500 test cases for 400 puzzles.
 
 ### Changed
 

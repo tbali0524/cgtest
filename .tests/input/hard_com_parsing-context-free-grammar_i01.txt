@@ -1,0 +1,19 @@
+6
+S
+S -> SS
+S -> OT
+T -> SC
+S -> OC
+O -> a
+C -> b
+10
+ab
+ba
+abba
+ababab
+aaabbb
+abaabb
+a
+aaabababbb
+aababababbb
+aaabababbabb

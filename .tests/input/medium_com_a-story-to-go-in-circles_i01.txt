@@ -1,0 +1,6 @@
+7
+4
+abcd
+dcba
+ba#d
+dabc
