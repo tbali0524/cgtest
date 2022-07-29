@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.1.0
+ * CGTest v1.2.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth [TBali]
@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.1.0-dev';
+$version = 'v1.2.0';
 $zeroStat = [
     'countDirectories' => 0,
     'countFiles' => 0,

@@ -1,0 +1,9 @@
+A-E B-K C-M D-F E-L F-G G-D H-Q I-V J-Z K-N L-T M-O N-W O-Y P-H Q-X R-U S-S T-P U-A V-I W-B X-R Y-C Z-J
+Q
+A-A B-J C-D D-K E-S F-I G-R H-U I-X J-B K-L L-H M-W N-T O-M P-C Q-Q R-G S-Z T-N U-P V-Y W-F X-V Y-O Z-E
+E
+A-B B-D C-F D-H E-J F-L G-C H-P I-R J-T K-X L-V M-Z N-N O-Y P-E Q-I R-W S-G T-A U-K V-M W-U X-S Y-Q Z-O
+V
+A-Y B-R C-U D-H E-Q F-S G-L H-D I-P J-X K-N L-G M-O N-K O-M P-I Q-E R-B S-F T-Z U-C V-W W-V X-J Y-A Z-T
+A A A
+XQGNTD

@@ -1,0 +1,6 @@
+300
+4
+bread 90
+green salad 115
+sugar 750g 95
+rice 500g 299

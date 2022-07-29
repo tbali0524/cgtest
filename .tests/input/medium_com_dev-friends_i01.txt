@@ -1,0 +1,16 @@
+4
+10
+Donatello t
+Leonardo 5#
+Michelangelo #
+Rafaelo if
+name = "Picasso"
+if name.is_italian():
+ print("Part of the team, mate !")
+else :
+ print("I don't know you")
+# Picasso knocks Donatello out
+# Leonardo punches Picasso's head
+# This is why Picasso doesn't see very well
+# I hope you don't think Leonardo did this
+# Because this comments are at the end

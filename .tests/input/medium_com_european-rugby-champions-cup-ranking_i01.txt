@@ -1,0 +1,65 @@
+Cardiff Blues,FC Grenoble,London Irish,Rovigo Delta
+Atlantique Stade Rochelais,Aviron Bayonnais,Connacht,Exeter Chiefs
+Bucuresti Wolves,Newcastle Falcons,Newport Dragons,Stade Francais Paris
+Edinburgh Rugby,London Welsh,Lyon Olympique Universitaire,Union Bordeaux-Begles
+CA Brive,Gloucester Rugby,US Oyonnax,Zebre
+Cardiff Blues,37,5,FC Grenoble,14,1
+London Irish,70,10,Rovigo Delta,14,2
+Rovigo Delta,18,2,Cardiff Blues,33,5
+FC Grenoble,15,0,London Irish,25,4
+FC Grenoble,68,10,Rovigo Delta,10,1
+Cardiff Blues,24,3,London Irish,14,2
+Rovigo Delta,17,1,FC Grenoble,20,4
+London Irish,34,3,Cardiff Blues,23,2
+Cardiff Blues,104,16,Rovigo Delta,12,2
+London Irish,43,6,FC Grenoble,41,4
+Rovigo Delta,6,0,London Irish,34,5
+FC Grenoble,3,0,Cardiff Blues,28,4
+Connacht,48,7,Atlantique Stade Rochelais,12,2
+Aviron Bayonnais,30,3,Exeter Chiefs,24,2
+Atlantique Stade Rochelais,25,3,Aviron Bayonnais,13,1
+Exeter Chiefs,33,5,Connacht,13,1
+Atlantique Stade Rochelais,10,1,Exeter Chiefs,36,4
+Connacht,42,5,Aviron Bayonnais,19,1
+Exeter Chiefs,41,6,Atlantique Stade Rochelais,17,2
+Aviron Bayonnais,27,3,Connacht,29,2
+Aviron Bayonnais,14,2,Atlantique Stade Rochelais,0,0
+Connacht,24,4,Exeter Chiefs,33,3
+Exeter Chiefs,45,6,Aviron Bayonnais,3,1
+Atlantique Stade Rochelais,20,2,Connacht,30,4
+Newcastle Falcons,43,7,Bucuresti Wolves,19,3
+Stade Francais Paris,22,1,Newport Dragons,38,4
+Newport Dragons,26,3,Newcastle Falcons,30,3
+Bucuresti Wolves,9,0,Stade Francais Paris,13,1
+Newcastle Falcons,30,4,Stade Francais Paris,23,2
+Bucuresti Wolves,10,1,Newport Dragons,37,5
+Stade Francais Paris,31,5,Newcastle Falcons,24,3
+Newport Dragons,69,11,Bucuresti Wolves,17,3
+Stade Francais Paris,47,7,Bucuresti Wolves,12,0
+Newcastle Falcons,29,4,Newport Dragons,40,6
+Newport Dragons,30,2,Stade Francais Paris,19,3
+Bucuresti Wolves,10,1,Newcastle Falcons,52,8
+Union Bordeaux-Begles,13,1,Edinburgh Rugby,15,2
+Lyon Olympique Universitaire,28,4,London Welsh,18,2
+London Welsh,20,2,Union Bordeaux-Begles,52,7
+Edinburgh Rugby,25,1,Lyon Olympique Universitaire,17,2
+Union Bordeaux-Begles,37,5,Lyon Olympique Universitaire,29,2
+Edinburgh Rugby,25,3,London Welsh,13,1
+Lyon Olympique Universitaire,37,4,Union Bordeaux-Begles,28,3
+London Welsh,6,0,Edinburgh Rugby,24,2
+Union Bordeaux-Begles,26,4,London Welsh,3,0
+Lyon Olympique Universitaire,21,2,Edinburgh Rugby,19,2
+Edinburgh Rugby,38,4,Union Bordeaux-Begles,20,2
+London Welsh,12,2,Lyon Olympique Universitaire,17,3
+Gloucester Rugby,55,7,CA Brive,0,0
+Zebre,24,2,US Oyonnax,33,3
+CA Brive,21,3,Zebre,26,2
+US Oyonnax,15,0,Gloucester Rugby,25,1
+CA Brive,22,3,US Oyonnax,30,3
+Gloucester Rugby,35,4,Zebre,10,2
+Zebre,16,2,Gloucester Rugby,32,4
+US Oyonnax,22,3,CA Brive,17,2
+Gloucester Rugby,33,5,US Oyonnax,3,0
+Zebre,23,2,CA Brive,13,1
+CA Brive,20,2,Gloucester Rugby,31,4
+US Oyonnax,20,3,Zebre,3,0

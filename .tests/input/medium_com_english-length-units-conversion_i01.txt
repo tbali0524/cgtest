@@ -1,0 +1,5 @@
+inch in twip
+3
+1 point = 20 twip
+1 inch = 12 line
+1 line = 6 point

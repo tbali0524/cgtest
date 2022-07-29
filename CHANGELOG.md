@@ -9,12 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- More CG puzzle test cases added, total is now over 500 test cases for 400 puzzles.
-- Stats for  unique puzzles.
+- Nothing yet.
 
 ### Changed
 
 - Nothing yet.
+
+### Fixed
+
+- Nothing yet.
+
+## [v1.2.0](https://github.com/tbali0524/cgtest/releases/v1.2.0) - 2022-07-29
+
+### Added
+
+- Test cases for all CG solo I/O puzzles added. Total is now over 750 test cases for around 600 puzzles.
+- Stats for  unique puzzles.
 
 ### Fixed
 

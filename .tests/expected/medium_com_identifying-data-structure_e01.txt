@@ -1,0 +1,5 @@
+queue
+stack
+priority queue
+unsure
+mystery
