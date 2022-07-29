@@ -115,7 +115,7 @@ return [
         ],
         'puzzle/community/hard/' => [
             'hard_com_execution-circle',
-            'hard_com_google-interview-the-two-egg-problem',
+            'hard_com_google-interview---the-two-egg-problem',
             'hard_com_highest-truncated-pyramid',
         ],
         'puzzle/community/expert/' => [
@@ -648,7 +648,7 @@ return [
                 'hard_com_cheat-solving',
                 'hard_com_chess-board-analyzer',
                 'hard_com_chess-cavalry',
-                'hard_com_chess-moves-on-FEN-position',
+                'hard_com_chess-moves-on-fen-position',
                 'hard_com_closest-number',
                 'hard_com_cloudy-weather',
                 'hard_com_code-your-own-automaton2000-step-1',

@@ -38,7 +38,12 @@ $zeroStat = [
 $stats = [];
 $stats['totals'] = $zeroStat;
 $stats['totals']['countLanguages'] = 0;
+$stats['totals']['uniquePuzzles'] = 0;
+$stats['totals']['uniqueTests'] = 0;
+$stats['totals']['uniquePassedTests'] = 0;
 $stats['totals']['startTime'] = hrtime(true);
+$uniquePuzzleTests = []; // puzzleName => # of test
+$uniquePuzzlePassed = []; // puzzleName => bitmap of passed tests
 $infoTag = '[INFO] ';
 $errorTag = '[ERROR] ';
 // --------------------------------------------------------------------
@@ -940,6 +945,10 @@ foreach ($config['languages'] as $language) {
                 ++$countTestsForFile;
                 ++$stats['totals']['countTests'];
                 ++$stats[$language]['countTests'];
+                if (!isset($uniquePuzzleTests[$puzzleName])) {
+                    $uniquePuzzleTests[$puzzleName] = 0;
+                    $uniquePuzzlePassed[$puzzleName] = 0;
+                }
                 if ($config['dry-run'] or !$buildSuccessful) {
                     continue;
                 }
@@ -994,6 +1003,7 @@ foreach ($config['languages'] as $language) {
                 }
                 ++$stats['totals']['countPassedTests'];
                 ++$stats[$language]['countPassedTests'];
+                $uniquePuzzlePassed[$puzzleName] |= (1 << $idxTest);
             }
             // --------------------------------------------------------------------
             // print test results for the puzzle
@@ -1003,9 +1013,14 @@ foreach ($config['languages'] as $language) {
             if ($countTestsForFile == 0) {
                 echo $warnTag . 'No test input found for source: ' . $sourceFullFileName . PHP_EOL;
             }
+            if (isset($uniquePuzzleTests[$puzzleName])) {
+                $uniquePuzzleTests[$puzzleName] = max($uniquePuzzleTests[$puzzleName], $countTestsForFile);
+            }
             if ($config['dry-run']) {
-                echo $infoTag . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
-                    . ($countTestsForFile > 1 ? 's' : ' ') . ' : ' . $sourceFullFileName . PHP_EOL;
+                if ($config['verbose']) {
+                    echo $infoTag . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
+                        . ($countTestsForFile > 1 ? 's' : ' ') . ' : ' . $sourceFullFileName . PHP_EOL;
+                }
                 continue;
             }
             if ((count($testsFailed) > 0) and (count($testsFailed) == $countTestsForFile)) {
@@ -1027,6 +1042,18 @@ foreach ($config['languages'] as $language) {
     }
     $stats[$language]['spentTime'] = hrtime(true) - $stats[$language]['startTime'];
 }
+// --------------------------------------------------------------------
+// process some stats
+$stats['totals']['uniquePuzzles'] = count($uniquePuzzleTests);
+$stats['totals']['uniqueTests'] = array_sum($uniquePuzzleTests);
+$stats['totals']['uniquePassedTests'] = 0;
+foreach ($uniquePuzzlePassed as $bitmap) {
+    $i = $bitmap;
+    while ($i != 0) {
+        $stats['totals']['uniquePassedTests'] += ($i & 1);
+        $i >>= 1;
+    }
+}
 $stats['totals']['spentTime'] = hrtime(true) - $stats['totals']['startTime'];
 // --------------------------------------------------------------------
 // print per language stats
@@ -1039,6 +1066,9 @@ if ($config['stats']) {
             continue;
         }
         $status = $ansiGreen . '[PASS]' . $ansiReset;
+        if ($config['dry-run'] or $config['clean']) {
+            $status = str_repeat(' ', 6);
+        }
         $testsStr = str_pad(substr(strval($stat['countTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
         if (!$config['clean'] and ($stat['countTests'] == 0)) {
             $testsStr = $ansiYellow . $testsStr . $ansiReset;
@@ -1164,13 +1194,20 @@ if (!$wasLF) {
     $wasLF = true;
 }
 echo $infoTag . 'Total: ' . $stats['totals']['countPassedTests'] . ' / '
-    . $stats['totals']['countTests'] . ' tests passed while testing '
+    . $stats['totals']['countTests'] . ' test'
+    . ($stats['totals']['countTests'] > 1 ? 's' : '') . ' passed while testing '
     . $stats['totals']['countFiles'] . ' source file'
     . ($stats['totals']['countFiles'] > 1 ? 's' : '') . ' in '
     . $stats['totals']['countDirectories'] . ' director'
     . ($stats['totals']['countDirectories'] > 1 ? 'ies' : 'y') . ' in '
     . $stats['totals']['countLanguages'] . ' programming language'
     . ($stats['totals']['countLanguages'] > 1 ? 's' : '') . '.' . PHP_EOL;
+if ($stats['totals']['uniquePuzzles'] != $stats['totals']['countFiles']) {
+    echo $infoTag . 'Total unique: ' . $stats['totals']['uniquePassedTests'] . ' / '
+    . $stats['totals']['uniqueTests'] . ' tests passed while testing '
+    . $stats['totals']['uniquePuzzles'] . ' puzzle'
+    . ($stats['totals']['uniquePuzzles'] > 1 ? 's' : '') . ' (in any language). ' . PHP_EOL;
+}
 $timeStr = number_format($stats['totals']['spentTime'] / 1000000000, 1, '.', '');
 echo $infoTag . "Time spent: $timeStr seconds." . PHP_EOL . PHP_EOL;
 if (!$config['dry-run']) {
@@ -1178,8 +1215,7 @@ if (!$config['dry-run']) {
         echo $ansiRed . str_pad(' [FAIL] Some tests failed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
         exit(1);
     }
-    echo $ansiGreen . str_pad(' [OK] All tests passed.', $statusWidth) . $ansiReset . PHP_EOL;
+    echo $ansiGreen . str_pad(' [OK] All tests passed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
 }
-echo PHP_EOL;
 exit(0);
 // --------------------------------------------------------------------
