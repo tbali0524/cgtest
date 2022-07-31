@@ -832,6 +832,7 @@ return [
         //     'medium_com_find-the-winning-strategy',
         //     'medium_com_forest-fire',
         //     'medium_com_minesweeper-1',
+        //     'medium_com_rush-hour',
         //     'hard_com_11-puzzle',
         //     'hard_com_adversarial-mate-with-rook',
         //     'hard_com_binary-extension',

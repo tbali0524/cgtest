@@ -8,7 +8,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 __CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash`, `f#`, `fortran` and `ocaml` in Linux. It should also work on almost any other computer system, including Mac.
+CGTest was successfully used for running `c`, `c++`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust` and `scala` tests both in Windows and in Linux; and additionally `bash` and `ocaml` in Linux. It should also work on almost any other computer system, including Mac.
 
 The test runner works for any non-interactive code that reads from a standard input stream, and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
@@ -20,7 +20,7 @@ At CG, you don't have to bother about setting up any local development environme
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
 
-_The repository also includes  __750+__ test cases for around __600__ `CodinGame` puzzles._
+_The repository also contains  __750+__ test cases for around __600__ `CodinGame` puzzles._
 
 ## Command line usage
 
@@ -89,7 +89,7 @@ Some settings (but not all) can be also overriden via command-line arguments. If
 ## Preparing and running test cases
 
 * By default, the input data for the test cases is in the `.tests/input` directory.
-    * Naming convention: `puzzleName_iXX.txt`, where XX is the two letter test case number, starting from 01.
+    * Naming convention: `puzzleName_iXX.txt`, where XX is the two-digit test case number, starting from 01.
 * The expected test output data is in the `.tests/expected` directory.
     * Naming convention: `puzzleName_eXX.txt`, where XX is test case number.
 * Running the tests generates output files in the `.tests/output` directory.
@@ -100,7 +100,7 @@ Some settings (but not all) can be also overriden via command-line arguments. If
 * You can either put your source files in _per-language_ directories, or you can structure them in a _per-puzzle (or per-puzzle-group)_ basis.
     * By default, all source code is expected to be in the respective `languageName/` directory, with the same name as the beginning of the test case input data file name.
     * If using _per-puzzle_ directories for the test cases, you must set the per-language `'sourcePath'` setting to `''` in the config file.)
-* If not provided via command-line, list the puzzle names in the config file either in the global `'puzzles'` section, or in a per-language `'includePuzzles'` list.
+* If not provided via command-line, list the puzzle names in the config file either in the global `'puzzles'` section, or in a per-language `'includePuzzles'` list. If you have solution for a puzzle in most (but not all) languages, you can list it in the global puzzles section, but add also add to the per-language `'excludePuzzles'` lists for languages that you lack the solution.  
 * You can change the directory structure and the file naming conventions that `CGTest` is using out of the box. However, you will need to tweak the config file a bit to your liking. For more details, check out the comments in the sample config file.
 
 ### Important
@@ -119,10 +119,10 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
     * If you don't have the local setup for a language, just comment it out in the `'languages'` section of config file, or override the language selection with the `--lang=` command-line option.
 * There is an additional sample configuration file `.cgtest.full.php`.
     * Use this config with the `--config=.cgtest.full.php` command-line option.
-    * This has references to ALL the test cases included in the CGTest reporitory.
+    * This has references to ALL the test cases included in the CGTest repository.
     * Some puzzles are listed in the global `'puzzles'` section. These are the shortest and simplest puzzles, so they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
     * Other puzzles are listed in a per-language `'includePuzzles'` section. Modify the language and comment out the puzzle names as needed.
-    * For most puzzles only currently only a single test case is provided. That is OK for a simple smoke-test but not to prove that your solution is correct.
+    * For most puzzles currently only a single test case is provided. That is OK for a simple smoke-test, but not to prove that your solution is correct.
 
 ## Restrictions
 
@@ -130,7 +130,7 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
 
 * CGTest is a single thread application, so tests are running in sequence, which can be rather slow if you have lots of test cases. If you start CGTest multiple times concurrently, use separate configuration files, with different output directory settings.
 
-* CGTest does not use containers or any other encironment separation when running your tests. If your code does silly things, like deleting files, then CGTest will NOT prevent it doing the damage.
+* CGTest does not use containers or any other environment separation when running your tests. If your code does silly things, like deleting files, then CGTest will NOT prevent it doing the damage.
 
 ## Known issues
 
