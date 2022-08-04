@@ -25,7 +25,7 @@ _The repository also contains  __750+__ test cases for around __600__ `CodinGame
 ## Command line usage
 
 ```txt
-Usage:   php pgtest.php [options] [puzzles]
+Usage:   php cgtest.php [options] [puzzles]
 
 Options:
    --version          Display CGTest application version

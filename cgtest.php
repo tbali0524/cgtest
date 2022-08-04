@@ -424,7 +424,7 @@ for ($i = 1; $i < $argc; ++$i) {
         exit(0);
     }
     if ($arg == '--help') {
-        echo 'Usage:   php pgtest.php [options] [puzzles]' . PHP_EOL;
+        echo 'Usage:   php cgtest.php [options] [puzzles]' . PHP_EOL;
         echo PHP_EOL;
         echo 'Options:' . PHP_EOL;
         echo '   --version          Display CGTest application version' . PHP_EOL;
