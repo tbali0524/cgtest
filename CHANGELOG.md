@@ -10,9 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `c#` support added.
-- `'runOnlyPuzzles'` language-specific option added to config file format.
-- `'run-only'` global option added to config file format.
 - `'--run-only'` command-line argument added.
+- `'run-only'` global option added to config file format.
+- `'runOnlyPuzzles'` language-specific option added to config file format.
+- `'buildPath'` global option added to config file format.
+- _turn #0_ input files added for several optimization puzzles.
 
 ### Changed
 
@@ -27,11 +29,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Test cases for all CG solo I/O puzzles added. Total is now over 750 test cases for around 600 puzzles.
-- Stats for  unique puzzles.
+- Stats for unique puzzles.
 
 ### Fixed
 
-- If puzzle name is given via command-line with path given, it will override the per-language path settings.
+- If the puzzle name is given via command-line and it includes a path, it will override the per-language path settings.
 
 ## [v1.1.0](https://github.com/tbali0524/cgtest/releases/v1.1.0) - 2022-07-25
 

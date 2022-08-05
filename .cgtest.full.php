@@ -161,23 +161,24 @@ return [
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
     // == Example (not really needed here, as these are the default settings for rust):
-    'rust' => [
-        'sourcePath' => 'rust/',
-        'sourceExtension' => '.rs',
-        'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc %s -o%o%p_%l.exe',
-        'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => [
-            '%o%p_%l.exe',
-            '%o%p_%l.pdb',
+        'rust' => [
+            'sourcePath' => 'rust/',
+            'sourceExtension' => '.rs',
+            'codinGameVersion' => 'rustc 1.60.0',
+            'versionCommand' => 'rustc --version',
+            'buildCommand' => 'rustc %s -o%b%p_%l.exe',
+            'runCommand' => '%b%p_%l.exe',
+            'cleanPatterns' => [
+                '%b%p_%l.exe',
+                '%b%p_%l.pdb',
+            ],
+            'excludePuzzles' => [
+            ],
+            'includePuzzles' => [
+            ],
+            'runOnlyPuzzles' => [
+            ],
         ],
-        'excludePuzzles' => [
-        ],
-        'includePuzzles' => [
-        ],
-        'runOnlyPuzzles' => [
-        ],
-    ],
     // == Additional test cases for a single language:
     'c++' => [
         'includePuzzles' => [
@@ -812,7 +813,19 @@ return [
                 'my_medium_com_source-code-analyser',
             ],
         ],
+        // Note: For the following puzzles, only turn #0 input is available.
         'runOnlyPuzzles' => [
+            'optim/cg/' => [
+                'optim_cg_a-star-craft',
+                'optim_cg_code-of-the-rings',
+            ],
+            'optim/community/' => [
+                'optim_com_bender---episode-4',
+                'optim_com_travelling-salesman',
+            ],
+            'optim/community/2048/' => [
+                'optim_com_2048',
+            ],
             'puzzle/community/medium/' => [
                 'medium_com_rush-hour',
             ],
@@ -853,7 +866,6 @@ return [
         //     'medium_com_find-the-winning-strategy',
         //     'medium_com_forest-fire',
         //     'medium_com_minesweeper-1',
-        //     'medium_com_rush-hour',
         //     'hard_com_11-puzzle',
         //     'hard_com_adversarial-mate-with-rook',
         //     'hard_com_binary-extension',
@@ -862,7 +874,6 @@ return [
         //     'hard_com_freecell',
         //     'hard_com_jump-point---search-preprocessing',
         //     'hard_com_jump-point---search-runtime',
-        //     'hard_com_sokoban',
         //     'expert_com_breach',
         //     'expert_com_space-maze',
         // ],
