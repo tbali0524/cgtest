@@ -61,7 +61,7 @@ return [
         'scala',
         // 'swift',
         // 'typescript',
-        // 'vb.net',
+        'vb.net',
     // Additional languages, unsupported on CodinGame:
         // 'cobol',
         'fortran',

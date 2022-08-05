@@ -9,12 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `c#` support added.
+- Nothing yet.
+
+### Changed
+
+- Nothing yet.
+
+### Fixed
+
+- Nothing yet.
+
+## [v1.3.0](https://github.com/tbali0524/cgtest/releases/v1.3.0) - 2022-08-05
+
+### Added
+
+- `c#` and `vb.net` support added.
 - `'--run-only'` command-line argument added.
 - `'run-only'` global option added to config file format.
 - `'runOnlyPuzzles'` language-specific option added to config file format.
 - `'buildPath'` global option added to config file format.
-- _turn #0_ input files added for several optimization puzzles.
+- partial test cases (input files with _turn #0_ data) added for several optimization and multi-turn solo puzzles.
 
 ### Changed
 

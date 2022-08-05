@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.3.0-dev';
+$version = 'v1.3.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countDirectories' => 0,
@@ -71,6 +71,9 @@ if (version_compare(phpversion(), MIN_PHP_VERSION, '<')) {
 // --------------------------------------------------------------------
 // default configuration
 $defaultConfigFileName = '.cgtest.php';
+$csprojExtension = '.csproj';
+$vbprojExtension = '.vbproj';
+$vbProjectName = 'vb_project';
 $defaultConfig = [
     'dry-run' => false,
     'run-only' => false,
@@ -114,10 +117,11 @@ $defaultConfig = [
         'sourceExtension' => '.cs',
         'codinGameVersion' => '.NET Core 3.1.201',
         'versionCommand' => 'dotnet --version',
-        'buildCommand' => 'dotnet publish %b%p.csproj -o %b --nologo --use-current-runtime --sc -v:q',
-        'runCommand' => (PHP_OS_FAMILY == 'Windows' ? '%b%p.exe' : '%b%p'),
+        'buildCommand' => 'dotnet publish %b%p' . $csprojExtension
+            . ' -o %b --nologo --use-current-runtime --sc -v:q',
+        'runCommand' => '%b%p' . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
         'cleanPatterns' => [
-            (PHP_OS_FAMILY == 'Windows' ? '%b%p.exe' : '%b%p'),
+            '%b%p' . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
             '%b%p.pdb',
         ],
     ],
@@ -363,9 +367,13 @@ $defaultConfig = [
         'sourceExtension' => '.vb',
         'codinGameVersion' => '.NET Core 3.1.201',
         'versionCommand' => 'dotnet --version',
-        'buildCommand' => '',
-        'runCommand' => 'dotnet run %s',
-        'cleanPatterns' => [],
+        'buildCommand' => 'dotnet publish %b' . $vbProjectName . $vbprojExtension
+            . ' -o %b --nologo --use-current-runtime --sc -v:q', // -v:q
+        'runCommand' => '%b' . $vbProjectName . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
+        'cleanPatterns' => [
+            '%b' . $vbProjectName . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
+            '%b' . $vbProjectName . '.pdb',
+        ],
     ],
     // unsupported on CodinGame
     // todo: check
@@ -417,7 +425,6 @@ $reservedConfigKeys = array_merge(
 $languageNonEmptyStringConfigKeys = ['sourceExtension', 'runCommand'];
 $languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionCommand', 'buildCommand'];
 $languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles', 'runOnlyPuzzles'];
-$csprojExtension = ".csproj";
 $csprojTemplate =
 "<Project Sdk=\"Microsoft.NET.Sdk\">
   <ItemGroup>
@@ -799,8 +806,8 @@ foreach ($config['languages'] as $language) {
         }
     }
     // --------------------------------------------------------------------
-    // Special case for C#: delete Directory.build.props file
-    if (($language == 'c#') and $config['clean']) {
+    // Special case for C# and VB.NET: delete Directory.build.props file
+    if ((($language == 'c#') or ($language == 'vb.net')) and $config['clean']) {
         if (file_exists($csDirectoryBuildPropsFilename)) {
             $unlinkResult = unlink($csDirectoryBuildPropsFilename);
             if (!$unlinkResult) {
@@ -918,9 +925,13 @@ foreach ($config['languages'] as $language) {
                 }
             }
             // --------------------------------------------------------------------
-            // Special case for C#
-            if (($language == 'c#') and !$config['dry-run']) {
-                $csprojFilename = $config['buildPath'] . $puzzleName . $csprojExtension;
+            // Special case for C# and VB.NET
+            if ((($language == 'c#') or ($language == 'vb.net')) and !$config['dry-run']) {
+                if ($language == 'c#') {
+                    $csprojFilename = $config['buildPath'] . $puzzleName . $csprojExtension;
+                } else {
+                    $csprojFilename = $config['buildPath'] . $vbProjectName . $vbprojExtension;
+                }
                 if (file_exists($csprojFilename)) {
                     $unlinkResult = unlink($csprojFilename);
                     if ($config['clean']) {
