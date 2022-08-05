@@ -716,7 +716,7 @@ foreach ($config['languages'] as $language) {
     // check for configuration errors in per-language settings
     $isLanguageOk = true;
     if ((trim($language) == '') or (array_search($language, $reservedConfigKeys, true) !== false)) {
-        echo $warnTag . 'Invalid language name: ' . $lang . PHP_EOL . PHP_EOL;
+        echo $warnTag . 'Invalid language name: ' . $language . PHP_EOL . PHP_EOL;
         ++$languageStats[$language]['countSkippedLanguages'];
         continue;
     }
@@ -1071,6 +1071,7 @@ foreach ($config['languages'] as $language) {
                 }
                 // --------------------------------------------------------------------
                 // read and process expected test output (replace CRLF with LF, remove trailing LF)
+                $expectedFileContents = '';
                 if (!$runOnlyCurrentPuzzle) {
                     $expectedFileContents = file_get_contents($expectedFullFileName);
                     if ($expectedFileContents === false) {
@@ -1183,7 +1184,7 @@ foreach ($config['languages'] as $language) {
             if ($countTestsForFile > 0) {
                 ++$languageStats[$language]['countPassedFiles'];
                 if ($config['verbose']) {
-                    echo ($runOnlyCurrentPuzzle ? $infoTag : $passTag);
+                    echo $runOnlyCurrentPuzzle ? $infoTag : $passTag;
                     echo str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
                         . ($countTestsForFile > 1 ? 's' : ' ') . ' OK : ' . $sourceFullFileName . PHP_EOL;
                 }
@@ -1292,7 +1293,7 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
             }
         }
         echo $status
-            . '|' . str_pad(substr($language, 0, 12), 12)
+            . '|' . str_pad(substr(strval($language), 0, 12), 12)
             . '|' . $msgCountDirectories
             . '|' . $msgCountFiles
             . '|' . $msgCountFailedFiles
@@ -1350,9 +1351,6 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
             $msgCountSkippedTests = str_repeat(' ', 6);
             $msgTime = str_repeat(' ', 7);
             $msgCountDeletedFiles = '';
-            if ($config['clean']) {
-                $msgCountDeletedFiles = str_repeat(' ', 7) . '|';
-            }
             $msgLanguageSkipped = '';
             echo $emptyTag
                 . '|' . str_pad('Total unique', 12)
