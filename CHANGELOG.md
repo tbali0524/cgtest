@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Nothing yet.
+- `javascript` and `typescript` support added _(currently Linux only)_.
 
 ### Changed
 
@@ -33,10 +33,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Revamped output for `--stats` option.
-
-### Fixed
-
-- Nothing yet.
 
 ## [v1.2.0](https://github.com/tbali0524/cgtest/releases/v1.2.0) - 2022-07-29
 

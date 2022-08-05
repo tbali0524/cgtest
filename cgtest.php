@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.3.0';
+$version = 'v1.3.1-dev';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countDirectories' => 0,
@@ -226,7 +226,7 @@ $defaultConfig = [
         'codinGameVersion' => 'node.js v16.14.2',
         'versionCommand' => 'node --version',
         'buildCommand' => '',
-        'runCommand' => 'node %s',
+        'runCommand' => 'node -r polyfill.js %s',
         'cleanPatterns' => [],
     ],
     'kotlin' => [
@@ -358,7 +358,7 @@ $defaultConfig = [
         'codinGameVersion' => 'node.js v16.14.2; Typescript Compiler Version 4.6.3',
         'versionCommand' => 'tsc --version',
         'buildCommand' => '',
-        'runCommand' => 'node %s',
+        'runCommand' => 'node -r polyfill.js %s',
         'cleanPatterns' => [],
     ],
     // todo: fix buildCommand, runCommand, cleanPatterns
@@ -969,8 +969,8 @@ foreach ($config['languages'] as $language) {
                     );
                     $csDirectoryBuildPropsFile = fopen($csDirectoryBuildPropsFilename, 'w');
                     if ($csDirectoryBuildPropsFile === false) {
-                        echo $errorTag . 'Cannot create project file for C#: ' . $csDirectoryBuildPropsFilename
-                            . PHP_EOL . PHP_EOL;
+                        echo $errorTag . 'Cannot create project file for ' . $language . ': '
+                            . $csDirectoryBuildPropsFilename . PHP_EOL . PHP_EOL;
                         exit(2);
                     }
                     fwrite($csDirectoryBuildPropsFile, $csDirectoryBuildPropsFileContents);
@@ -1378,7 +1378,7 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
     }
 }
 // --------------------------------------------------------------------
-// Special case for C#: delete Directory.build.props file
+// Special case for C# and VB.NET: delete Directory.build.props file
 if (file_exists($csDirectoryBuildPropsFilename)) {
     unlink($csDirectoryBuildPropsFilename);
 }

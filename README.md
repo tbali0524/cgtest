@@ -8,7 +8,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 __CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used for running `c`, `c#`, `c++`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust`, `scala` and `vb.net` tests both in Windows and in Linux, and additionally `bash` and `ocaml` in Linux. It should also work on almost any other computer system, including Mac.
+CGTest was successfully used for running `c`, `c#`, `c++`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust`, `scala` and `vb.net` tests both in Windows and in Linux, and additionally `bash`, `javascript`, `ocaml` and `typescript` in Linux. It should also work on almost any other computer system, including Mac.
 
 The test runner works for any non-interactive code that reads from a standard input stream, and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
@@ -143,7 +143,7 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
 I don't have local dev environment for all the 27 languages Codingame supports. Therefore, some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
 
 * I could not yet set up to run the tester properly for: `clojure`, `objective-c`, `swift`
-* `javascript` and `typescript` code is run by `node`, however the `readline()` function is missing. I don't know how to properly polyfill this locally.
+* `javascript` and `typescript` code is run by `node`, using a `readline()` polyfill function, taken from the CG runtime environment. This polyfill currently works only in Linux.
 * Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows using a _'bash for Windows'_ package such as `MSYS2`.
 
 _If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax)._
