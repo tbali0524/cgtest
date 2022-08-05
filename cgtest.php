@@ -219,7 +219,7 @@ $defaultConfig = [
         'runCommand' => 'java %s',
         'cleanPatterns' => [],
     ],
-    // todo: readline() is missing
+    // todo: fix readline() polyfill for Windows
     'javascript' => [
         'sourcePath' => 'javascript/',
         'sourceExtension' => '.js',
@@ -237,10 +237,6 @@ $defaultConfig = [
         'buildCommand' => 'kotlinc -include-runtime -d %b%p_%l.jar %s',
         'runCommand' => 'java -jar %b%p_%l.jar',
         'cleanPatterns' => ['%b%p_%l.jar'],
-        // 'versionCommand' => 'kotlinc-native -version',
-        // 'buildCommand' => 'kotlinc-native -o %b%p_%l.exe %s',
-        // 'runCommand' => '%b%p_%l.exe',
-        // 'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     'lua' => [
         'sourcePath' => 'lua/',
@@ -351,7 +347,7 @@ $defaultConfig = [
         'runCommand' => 'swift %s',
         'cleanPatterns' => [],
     ],
-    // todo: readline() is missing
+    // todo: fix readline() polyfill for Windows
     'typescript' => [
         'sourcePath' => 'typescript/',
         'sourceExtension' => '.ts',
@@ -361,7 +357,6 @@ $defaultConfig = [
         'runCommand' => 'node -r polyfill.js %s',
         'cleanPatterns' => [],
     ],
-    // todo: fix buildCommand, runCommand, cleanPatterns
     'vb.net' => [
         'sourcePath' => 'vb.net/',
         'sourceExtension' => '.vb',

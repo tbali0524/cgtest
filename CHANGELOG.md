@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `javascript` and `typescript` support added _(currently Linux only)_.
+- `javascript` and `typescript` support added.
 
 ### Changed
 

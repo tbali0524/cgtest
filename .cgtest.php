@@ -35,11 +35,11 @@ return [
     //     %t testIndex [01..99]
     // == Tests will be run in the following languages:
     'languages' => [
-        // 'bash',
+        // 'bash',          // uncomment in Linux
         'c',
         'c#',
         'c++',
-        // 'clojure',
+        // 'clojure',       // untested
         'd',
         'dart',
         'f#',
@@ -47,11 +47,11 @@ return [
         'groovy',
         'haskell',
         'java',
-        // 'javascript',
+        'javascript',
         'kotlin',
         'lua',
-        // 'objective-c',
-        // 'ocaml',
+        // 'objective-c',   // untested
+        // 'ocaml',         // tested in Linux only
         'pascal',
         'perl',
         'php',
@@ -59,8 +59,8 @@ return [
         'ruby',
         'rust',
         'scala',
-        // 'swift',
-        // 'typescript',
+        // 'swift',         // untested
+        'typescript',
         'vb.net',
     // Additional languages, unsupported on CodinGame:
         // 'cobol',
