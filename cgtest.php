@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.2.0
+ * CGTest v1.3.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth [TBali]
@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.2.1';
+$version = 'v1.3.0-dev';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countDirectories' => 0,
@@ -73,6 +73,7 @@ if (version_compare(phpversion(), MIN_PHP_VERSION, '<')) {
 $defaultConfigFileName = '.cgtest.php';
 $defaultConfig = [
     'dry-run' => false,
+    'run-only' => false,
     'ansi' => true,
     'verbose' => false,
     'stats' => false,
@@ -84,8 +85,9 @@ $defaultConfig = [
     'expectedPattern' => '%p_e%t.txt',
     'outputPath' => '.tests/output/',
     'outputPattern' => '%p_o%t_%l.txt',
+    'buildPath' => '.tests/temp/',
     'debugLog' => '.tests/output/_debug_log.txt',
-    'buildLog' => '.tests/output/_build_log.txt',
+    'buildLog' => '.tests/temp/_build_log.txt',
     'languages' => ['php'],
     'puzzles' => [],
     // todo: fix to work also under Windows
@@ -103,9 +105,9 @@ $defaultConfig = [
         'sourceExtension' => '.c',
         'codinGameVersion' => 'gcc 11.2.0-20',
         'versionCommand' => 'gcc --version',
-        'buildCommand' => 'gcc %s -o %o%p_%l.exe -lm',
-        'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.exe'],
+        'buildCommand' => 'gcc %s -o %b%p_%l.exe -lm',
+        'runCommand' => '%b%p_%l.exe',
+        'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     // todo: fix buildCommand, runCommand, cleanPatterns
     'c#' => [
@@ -113,18 +115,21 @@ $defaultConfig = [
         'sourceExtension' => '.cs',
         'codinGameVersion' => '.NET Core 3.1.201',
         'versionCommand' => 'dotnet --version',
-        'buildCommand' => '',
-        'runCommand' => 'dotnet run --nologo --verbosity quiet --project dotnet.csproj %s',
-        'cleanPatterns' => [],
+        'buildCommand' => 'dotnet publish %b%p.csproj -o %b --nologo --use-current-runtime --sc',
+        'runCommand' => '%b%p.exe',
+        'cleanPatterns' => [
+            '%b%p.exe',
+            '%b%p.pdb',
+        ],
     ],
     'c++' => [
         'sourcePath' => 'c++/',
         'sourceExtension' => '.cpp',
         'codinGameVersion' => 'g++ 11.2.0-20',
         'versionCommand' => 'g++ --version',
-        'buildCommand' => 'g++ -o %o%p_%l.exe -x c++ %s',
-        'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.exe'],
+        'buildCommand' => 'g++ -o %b%p_%l.exe -x c++ %s',
+        'runCommand' => '%b%p_%l.exe',
+        'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     // todo: fix buildCommand, runCommand, cleanPatterns
     'clojure' => [
@@ -145,12 +150,12 @@ $defaultConfig = [
         'sourceExtension' => '.d',
         'codinGameVersion' => 'DMD64 D Compiler v2.099.1',
         'versionCommand' => 'dmd --version',
-        'buildCommand' => 'dmd -od=%o -of=%o%p_%l.exe %s',
-        'runCommand' => '%o%p_%l.exe',
+        'buildCommand' => 'dmd -od=%b -of=%b%p_%l.exe %s',
+        'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => [
-            '%o%p_%l.exe',
-            '%o%p_%l.obj',
-            '%o%p_%l.o',
+            '%b%p_%l.exe',
+            '%b%p_%l.obj',
+            '%b%p_%l.o',
         ],
     ],
     'dart' => [
@@ -194,12 +199,12 @@ $defaultConfig = [
         'sourceExtension' => '.hs',
         'codinGameVersion' => 'The Glorious Glasgow Haskell Compilation System, version 8.4.3',
         'versionCommand' => 'ghc --version',
-        'buildCommand' => 'ghc -outputdir %o -o %o%p_%l.exe %s',
-        'runCommand' => '%o%p_%l.exe',
+        'buildCommand' => 'ghc -outputdir %b -o %b%p_%l.exe %s',
+        'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => [
-            '%o%p_%l.exe',
-            '%oMain.o',
-            '%oMain.hi',
+            '%b%p_%l.exe',
+            '%bMain.o',
+            '%bMain.hi',
         ],
     ],
     'java' => [
@@ -226,13 +231,13 @@ $defaultConfig = [
         'sourceExtension' => '.kt',
         'codinGameVersion' => 'kotlinc-jvm 1.5.0 (JRE 11.0.2+9)',
         'versionCommand' => 'kotlinc -version',
-        'buildCommand' => 'kotlinc -include-runtime -d %o%p_%l.jar %s',
-        'runCommand' => 'java -jar %o%p_%l.jar',
-        'cleanPatterns' => ['%o%p_%l.jar'],
+        'buildCommand' => 'kotlinc -include-runtime -d %b%p_%l.jar %s',
+        'runCommand' => 'java -jar %b%p_%l.jar',
+        'cleanPatterns' => ['%b%p_%l.jar'],
         // 'versionCommand' => 'kotlinc-native -version',
-        // 'buildCommand' => 'kotlinc-native -o %o%p_%l.exe %s',
-        // 'runCommand' => '%o%p_%l.exe',
-        // 'cleanPatterns' => ['%o%p_%l.exe'],
+        // 'buildCommand' => 'kotlinc-native -o %b%p_%l.exe %s',
+        // 'runCommand' => '%b%p_%l.exe',
+        // 'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     'lua' => [
         'sourcePath' => 'lua/',
@@ -249,10 +254,10 @@ $defaultConfig = [
         'sourceExtension' => '.m',
         'codinGameVersion' => 'clang version 13.0.1-3+b2',
         'versionCommand' => 'gcc --version',
-        'buildCommand' => 'gcc -o %o%p_%l.exe -lobjc -lgnustep-base -F /usr/lib/GNUstep -I /usr/include/GNUstep'
+        'buildCommand' => 'gcc -o %b%p_%l.exe -lobjc -lgnustep-base -F /usr/lib/GNUstep -I /usr/include/GNUstep'
             . ' -fconstant-string-class=NSConstantString %s',
-        'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.exe'],
+        'runCommand' => '%b%p_%l.exe',
+        'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     // todo: try out also in Windows:
     'ocaml' => [
@@ -260,20 +265,20 @@ $defaultConfig = [
         'sourceExtension' => '.ml',
         'codinGameVersion' => 'The OCaml native-code compiler, version 4.12.0',
         'versionCommand' => 'ocamlopt -v',
-        'buildCommand' => 'ocamlopt %s -o %o%p_%l.exe',
-        'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.exe'],
+        'buildCommand' => 'ocamlopt %s -o %b%p_%l.exe',
+        'runCommand' => '%b%p_%l.exe',
+        'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     'pascal' => [
         'sourcePath' => 'pascal/',
         'sourceExtension' => '.pas',
         'codinGameVersion' => 'Free Pascal Compiler 3.2.2',
         'versionCommand' => 'fpc -iW',
-        'buildCommand' => 'fpc -v0 -FE%o -o%p_%l.exe %s',
-        'runCommand' => '%o%p_%l.exe',
+        'buildCommand' => 'fpc -v0 -FE%b -o%p_%l.exe %s',
+        'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => [
-            '%o%p_%l.exe',
-            '%o%p.o',
+            '%b%p_%l.exe',
+            '%b%p.o',
         ],
     ],
     'perl' => [
@@ -317,11 +322,11 @@ $defaultConfig = [
         'sourceExtension' => '.rs',
         'codinGameVersion' => 'rustc 1.60.0',
         'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc %s -o%o%p_%l.exe',
-        'runCommand' => '%o%p_%l.exe',
+        'buildCommand' => 'rustc %s -o%b%p_%l.exe',
+        'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => [
-            '%o%p_%l.exe',
-            '%o%p_%l.pdb',
+            '%b%p_%l.exe',
+            '%b%p_%l.pdb',
         ],
     ],
     'scala' => [
@@ -330,7 +335,7 @@ $defaultConfig = [
         'codinGameVersion' => 'Scala code runner version 2.13.5',
         'versionCommand' => 'scala --version',
         'buildCommand' => '',
-        'runCommand' => 'scala -cp %o %s',
+        'runCommand' => 'scala -cp %b %s',
         'cleanPatterns' => [],
     ],
     // todo: fix buildCommand, runCommand, cleanPatterns
@@ -370,18 +375,18 @@ $defaultConfig = [
         'sourceExtension' => '.cob',
         'codinGameVersion' => 'cobc (GnuCOBOL) 3.1.2.0',
         'versionCommand' => 'cobc --version',
-        'buildCommand' => 'cobc -x -o%o%p_%l.exe %s',
-        'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.exe'],
+        'buildCommand' => 'cobc -x -o%b%p_%l.exe %s',
+        'runCommand' => '%b%p_%l.exe',
+        'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     'fortran' => [
         'sourcePath' => 'fortran/',
         'sourceExtension' => '.f90',
         'codinGameVersion' => 'GNU Fortran 11.2.0-20',
         'versionCommand' => 'gfortran --version',
-        'buildCommand' => 'gfortran -o%o%p_%l.exe %s',
-        'runCommand' => '%o%p_%l.exe',
-        'cleanPatterns' => ['%o%p_%l.exe'],
+        'buildCommand' => 'gfortran -o%b%p_%l.exe %s',
+        'runCommand' => '%b%p_%l.exe',
+        'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     // todo: check
     'r' => [
@@ -397,10 +402,11 @@ $defaultConfig = [
 foreach ($defaultConfig['languages'] as $language) {
     $defaultConfig[$language]['excludePuzzles'] = [];
     $defaultConfig[$language]['includePuzzles'] = [];
+    $defaultConfig[$language]['runOnlyPuzzles'] = [];
 }
-$booleanConfigKeys = ['dry-run', 'ansi', 'verbose', 'stats', 'lang-versions', 'clean', 'show-defaults'];
+$booleanConfigKeys = ['dry-run', 'run-only', 'ansi', 'verbose', 'stats', 'lang-versions', 'clean', 'show-defaults'];
 $nonEmptyStringConfigKeys = ['inputPattern', 'expectedPattern', 'outputPattern'];
-$optionalStringConfigKeys = ['inputPath', 'expectedPath', 'outputPath'];
+$optionalStringConfigKeys = ['inputPath', 'expectedPath', 'outputPath', 'buildPath'];
 $arrayConfigKeys = ['languages', 'puzzles'];
 $reservedConfigKeys = array_merge(
     $booleanConfigKeys,
@@ -411,7 +417,32 @@ $reservedConfigKeys = array_merge(
 );
 $languageNonEmptyStringConfigKeys = ['sourceExtension', 'runCommand'];
 $languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionCommand', 'buildCommand'];
-$languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles'];
+$languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles', 'runOnlyPuzzles'];
+$csprojExtension = ".csproj";
+$csprojTemplate =
+"<Project Sdk=\"Microsoft.NET.Sdk\">
+  <ItemGroup>
+    <Compile Include = \"../../%s\"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputPath>bin/</OutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <PublishTrimmed>true</PublishTrimmed>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishSingleFile>true</PublishSingleFile>
+  </PropertyGroup>
+</Project>
+";
+$csDirectoryBuildPropsFilename = "Directory.Build.props";
+$csDirectoryBuildPropsTemplate =
+"<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
+";
 $testIdxWidth = 2;
 $noPathKey = '@';
 // --------------------------------------------------------------------
@@ -430,6 +461,7 @@ for ($i = 1; $i < $argc; ++$i) {
         echo '   --version          Display CGTest application version' . PHP_EOL;
         echo '   --help             Display this help message' . PHP_EOL;
         echo '   --dry-run          Do not run the tests; only show what test cases would run' . PHP_EOL;
+        echo '   --run-only         Run the tests, but do not evaluate results' . PHP_EOL;
         echo '   --ansi             Use color output [default]' . PHP_EOL;
         echo '   --no-ansi          Disable color output' . PHP_EOL;
         echo '   --verbose          Increase the verbosity of messages: also show each passed tests' . PHP_EOL;
@@ -496,13 +528,13 @@ for ($i = 1; $i < $argc; ++$i) {
     while (($j >= 0) and ($arg[$j] != '/') and ($arg[$j] != '\\')) {
         --$j;
     }
-    $path = substr($arg, 0, $j + 1);
+    $path = substr($argv[$i], 0, $j + 1);
     if ($path == '') {
         $path = $noPathKey;
     }
-    $puzzle = substr($arg, $j + 1);
+    $puzzle = substr($argv[$i], $j + 1);
     if ($puzzle == '') {
-        echo $errorTag . 'Invalid puzzle name: ' . $arg . PHP_EOL . PHP_EOL;
+        echo $errorTag . 'Invalid puzzle name: ' . $argv[$i] . PHP_EOL . PHP_EOL;
         exit(2);
     }
     if (!isset($argumentConfig['puzzles'][$path])) {
@@ -610,19 +642,27 @@ foreach ($arrayConfigKeys as $configKey) {
     }
 }
 if ($config['lang-versions'] and $config['clean']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --clean and --lang-versions' . PHP_EOL . PHP_EOL;
+    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --clean' . PHP_EOL . PHP_EOL;
     exit(2);
 }
 if ($config['lang-versions'] and $config['dry-run']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --dry-run and --lang-versions' . PHP_EOL . PHP_EOL;
+    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --dry-run' . PHP_EOL . PHP_EOL;
+    exit(2);
+}
+if ($config['lang-versions'] and $config['run-only']) {
+    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --run-only' . PHP_EOL . PHP_EOL;
+    exit(2);
+}
+if ($config['lang-versions'] and $config['stats']) {
+    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --stats' . PHP_EOL . PHP_EOL;
     exit(2);
 }
 if ($config['clean'] and $config['dry-run']) {
     echo $errorTag . 'Invalid arguments: cannot use both --clean and --dry-run' . PHP_EOL . PHP_EOL;
     exit(2);
 }
-if ($config['lang-versions'] and $config['stats']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --stats' . PHP_EOL . PHP_EOL;
+if ($config['clean'] and $config['run-only']) {
+    echo $errorTag . 'Invalid arguments: cannot use both --clean and --run-only' . PHP_EOL . PHP_EOL;
     exit(2);
 }
 // --------------------------------------------------------------------
@@ -745,7 +785,7 @@ foreach ($config['languages'] as $language) {
         $execResultCode = 0;
         $execResult = exec($versionCommand, $execOutput, $execResultCode);
         if ($execResult === false) {
-            echo $warnTag . 'Language is unavaliable: ' . $config[$language]['versionCommand'] . PHP_EOL;
+            echo $warnTag . 'Language is unavailable: ' . $config[$language]['versionCommand'] . PHP_EOL;
             ++$languageStats[$language]['countSkippedLanguages'];
             continue;
         }
@@ -760,6 +800,22 @@ foreach ($config['languages'] as $language) {
         }
     }
     // --------------------------------------------------------------------
+    // Special case for C#: delete Directory.build.props file
+    if (($language == 'c#') and $config['clean']) {
+        if (file_exists($csDirectoryBuildPropsFilename)) {
+            $unlinkResult = unlink($csDirectoryBuildPropsFilename);
+            if (!$unlinkResult) {
+                ++$totalUnsuccessfulDeleteFiles;
+                echo $warnTag . 'Could not delete file: ' . $csDirectoryBuildPropsFilename . PHP_EOL;
+            } else {
+                ++$languageStats['totals']['countDeletedFiles'];
+                if ($config['verbose']) {
+                    echo $infoTag . 'Deleted file: ' . $csDirectoryBuildPropsFilename . PHP_EOL;
+                }
+            }
+        }
+    }
+    // --------------------------------------------------------------------
     // prepare puzzle list for this language
     $puzzles = $config['puzzles'];
     if (($argumentConfig['puzzles'] ?? []) == []) {
@@ -768,7 +824,15 @@ foreach ($config['languages'] as $language) {
                 $puzzles[$sourcePath] = [];
             }
             foreach ($filesArray as $puzzleNameOriginal) {
-                $puzzles[$sourcePath][] = strtolower($puzzleNameOriginal);
+                $puzzles[$sourcePath][] = $puzzleNameOriginal;
+            }
+        }
+        foreach ($config[$language]['runOnlyPuzzles'] as $sourcePath => $filesArray) {
+            if (!isset($puzzles[$sourcePath])) {
+                $puzzles[$sourcePath] = [];
+            }
+            foreach ($filesArray as $puzzleNameOriginal) {
+                $puzzles[$sourcePath][] = $puzzleNameOriginal;
             }
         }
     }
@@ -779,13 +843,23 @@ foreach ($config['languages'] as $language) {
         if (($config[$language]['sourcePath'] == '') or ($languageStats[$language]['countDirectories'] == 0)) {
             ++$languageStats[$language]['countDirectories'];
         }
-        foreach ($filesArray as $puzzleNameOriginal) {
-            $puzzleName = strtolower($puzzleNameOriginal);
+        foreach ($filesArray as $puzzleName) {
             if (
                 (($argumentConfig['puzzles'] ?? []) == [])
                 and (in_array($puzzleName, $config[$language]['excludePuzzles'], true))
             ) {
                 continue;
+            }
+            $runOnlyCurrentPuzzle = $config['run-only'];
+            if (!$runOnlyCurrentPuzzle) {
+                foreach ($config[$language]['runOnlyPuzzles'] as $sourcePathRunOnly => $filesArrayRunOnly) {
+                    foreach ($filesArrayRunOnly as $puzzleRunOnly) {
+                        if ($puzzleNameRunOnly == $puzzleName) {
+                            $runOnlyCurrentPuzzle = true;
+                            break 2;
+                        }
+                    }
+                }
             }
             // --------------------------------------------------------------------
             // check source file
@@ -814,8 +888,8 @@ foreach ($config['languages'] as $language) {
             if ($config['clean']) {
                 foreach ($config[$language]['cleanPatterns'] as $patternToClean) {
                     $tempFileName = str_replace(
-                        ['%l', '%p', '%o'],
-                        [$language, $puzzleName, $config['outputPath']],
+                        ['%l', '%p', '%o', '%b'],
+                        [$language, $puzzleName, $config['outputPath'], $config['buildPath']],
                         $patternToClean
                     );
                     if (file_exists($tempFileName)) {
@@ -833,14 +907,65 @@ foreach ($config['languages'] as $language) {
                 }
             }
             // --------------------------------------------------------------------
-            // special case for Haskell: Main.o must be deleted before each build
-            $tempFileName = $config['outputPath'] . 'Main.o';
-            if (file_exists($tempFileName)) {
-                unlink($tempFileName);
+            // Special case for Haskell: Main.o must be deleted before each build
+            if ($language == 'haskell') {
+                $tempFileName = $config['buildPath'] . 'Main.o';
+                if (file_exists($tempFileName)) {
+                    unlink($tempFileName);
+                }
+                $tempFileName = $config['buildPath'] . 'Main.hi';
+                if (file_exists($tempFileName)) {
+                    unlink($tempFileName);
+                }
             }
-            $tempFileName = $config['outputPath'] . 'Main.hi';
-            if (file_exists($tempFileName)) {
-                unlink($tempFileName);
+            // --------------------------------------------------------------------
+            // Special case for C#
+            if (($language == 'c#') and !$config['dry-run']) {
+                $csprojFilename = $config['buildPath'] . $puzzleName . $csprojExtension;
+                if (file_exists($csprojFilename)) {
+                    $unlinkResult = unlink($csprojFilename);
+                    if ($config['clean']) {
+                        if (!$unlinkResult) {
+                            ++$totalUnsuccessfulDeleteFiles;
+                            echo $warnTag . 'Could not delete file: ' . $csprojFilename . PHP_EOL;
+                        } else {
+                            ++$languageStats[$language]['countDeletedFiles'];
+                            if ($config['verbose']) {
+                                echo $infoTag . 'Deleted file: ' . $csprojFilename . PHP_EOL;
+                            }
+                        }
+                    }
+                }
+                if (file_exists($csDirectoryBuildPropsFilename)) {
+                    unlink($csDirectoryBuildPropsFilename);
+                }
+                if (!$config['clean']) {
+                    $csprojFileContents = str_replace(
+                        ['%l', '%p', '%o', '%b', '%s'],
+                        [$language, $puzzleName, $config['outputPath'], $config['buildPath'], $sourceFullFileName],
+                        $csprojTemplate
+                    );
+                    $csprojFile = fopen($csprojFilename, 'w');
+                    if ($csprojFile === false) {
+                        echo $errorTag . 'Cannot create project file for C#: ' . $csprojFilename . PHP_EOL . PHP_EOL;
+                        exit(2);
+                    }
+                    fwrite($csprojFile, $csprojFileContents);
+                    fclose($csprojFile);
+                    $csDirectoryBuildPropsFileContents = str_replace(
+                        ['%l', '%p', '%o', '%b', '%s'],
+                        [$language, $puzzleName, $config['outputPath'], $config['buildPath'], $sourceFullFileName],
+                        $csDirectoryBuildPropsTemplate
+                    );
+                    $csDirectoryBuildPropsFile = fopen($csDirectoryBuildPropsFilename, 'w');
+                    if ($csDirectoryBuildPropsFile === false) {
+                        echo $errorTag . 'Cannot create project file for C#: ' . $csDirectoryBuildPropsFilename
+                            . PHP_EOL . PHP_EOL;
+                        exit(2);
+                    }
+                    fwrite($csDirectoryBuildPropsFile, $csDirectoryBuildPropsFileContents);
+                    fclose($csDirectoryBuildPropsFile);
+                }
             }
             // --------------------------------------------------------------------
             // build the source (for compiled languages)
@@ -852,8 +977,8 @@ foreach ($config['languages'] as $language) {
                 and ($config[$language]['buildCommand'] != '')
             ) {
                 $baseBuildCommand = str_replace(
-                    ['%l', '%p', '%o', '%s'],
-                    [$language, $puzzleName, $config['outputPath'], $sourceFullFileName],
+                    ['%l', '%p', '%o', '%b', '%s'],
+                    [$language, $puzzleName, $config['outputPath'], $config['buildPath'], $sourceFullFileName],
                     $config[$language]['buildCommand']
                 );
                 if (PHP_OS_FAMILY == 'Windows') {
@@ -871,19 +996,19 @@ foreach ($config['languages'] as $language) {
             // --------------------------------------------------------------------
             // preparation common for all tests
             $baseRunCommand = str_replace(
-                ['%l', '%p', '%o', '%s'],
-                [$language, $puzzleName, $config['outputPath'], $sourceFullFileName],
+                ['%l', '%p', '%o', '%b', '%s'],
+                [$language, $puzzleName, $config['outputPath'], $config['buildPath'], $sourceFullFileName],
                 $config[$language]['runCommand']
             );
             if (PHP_OS_FAMILY == 'Windows') {
                 $baseRunCommand = str_replace('/', '\\', $baseRunCommand);
             }
-            // --------------------------------------------------------------------
-            // loop: for each test case for the puzzle
             $testsFailed = [];
             $countTestsForFile = 0;
             $countSkippedTestsForFile = 0;
             $idxTest = 0;
+            // --------------------------------------------------------------------
+            // loop: for each test case for the puzzle
             while (true) {
                 ++$idxTest;
                 // --------------------------------------------------------------------
@@ -906,11 +1031,13 @@ foreach ($config['languages'] as $language) {
                     [$language, $puzzleName, $stringIdxTest],
                     $config['expectedPath'] . $config['expectedPattern']
                 );
-                if (!file_exists($expectedFullFileName)) {
-                    ++$languageStats[$language]['countSkippedTests'];
-                    ++$countSkippedTestsForFile;
-                    echo $warnTag . 'Cannot read expected test output file: ' . $expectedFullFileName . PHP_EOL;
-                    continue;
+                if (!$runOnlyCurrentPuzzle) {
+                    if (!file_exists($expectedFullFileName)) {
+                        ++$languageStats[$language]['countSkippedTests'];
+                        ++$countSkippedTestsForFile;
+                        echo $warnTag . 'Cannot read expected test output file: ' . $expectedFullFileName . PHP_EOL;
+                        continue;
+                    }
                 }
                 $outputFullFileName = str_replace(
                     ['%l', '%p', '%t'],
@@ -944,12 +1071,14 @@ foreach ($config['languages'] as $language) {
                 }
                 // --------------------------------------------------------------------
                 // read and process expected test output (replace CRLF with LF, remove trailing LF)
-                $expectedFileContents = file_get_contents($expectedFullFileName);
-                if ($expectedFileContents === false) {
-                    ++$languageStats[$language]['countSkippedTests'];
-                    ++$countSkippedTestsForFile;
-                    echo $warnTag . 'Cannot read expected test output file: ' . $expectedFullFileName . PHP_EOL;
-                    continue;
+                if (!$runOnlyCurrentPuzzle) {
+                    $expectedFileContents = file_get_contents($expectedFullFileName);
+                    if ($expectedFileContents === false) {
+                        ++$languageStats[$language]['countSkippedTests'];
+                        ++$countSkippedTestsForFile;
+                        echo $warnTag . 'Cannot read expected test output file: ' . $expectedFullFileName . PHP_EOL;
+                        continue;
+                    }
                 }
                 ++$countTestsForFile;
                 ++$languageStats[$language]['countTests'];
@@ -959,12 +1088,14 @@ foreach ($config['languages'] as $language) {
                 if ($config['dry-run'] or !$buildSuccessful) {
                     continue;
                 }
-                $expectedFileContents = str_replace("\r\n", "\n", $expectedFileContents);
-                $i = strlen($expectedFileContents) - 1;
-                while (($i > 0) and ($expectedFileContents[$i] == "\n")) {
-                    --$i;
+                if (!$runOnlyCurrentPuzzle) {
+                    $expectedFileContents = str_replace("\r\n", "\n", $expectedFileContents);
+                    $i = strlen($expectedFileContents) - 1;
+                    while (($i > 0) and ($expectedFileContents[$i] == "\n")) {
+                        --$i;
+                    }
+                    $expectedFileContents = substr($expectedFileContents, 0, $i + 1);
                 }
-                $expectedFileContents = substr($expectedFileContents, 0, $i + 1);
                 $logFile = fopen($config['debugLog'], 'ab');
                 if ($logFile !== false) {
                     $s = "| $language | $stringIdxTest | $sourceFullFileName |";
@@ -1004,7 +1135,7 @@ foreach ($config['languages'] as $language) {
                 $outputFileContents = substr($outputFileContents, 0, $i + 1);
                 // --------------------------------------------------------------------
                 // evaluate test result
-                if ($expectedFileContents !== $outputFileContents) {
+                if (!$runOnlyCurrentPuzzle and ($expectedFileContents !== $outputFileContents)) {
                     $testsFailed[] = $stringIdxTest;
                     ++$languageStats[$language]['countFailedTests'];
                     $puzzleStats[$puzzleName]['failedTests'] |= (1 << $idxTest);
@@ -1052,8 +1183,8 @@ foreach ($config['languages'] as $language) {
             if ($countTestsForFile > 0) {
                 ++$languageStats[$language]['countPassedFiles'];
                 if ($config['verbose']) {
-                    echo $passTag . ' '
-                        . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
+                    echo ($runOnlyCurrentPuzzle ? $infoTag : $passTag);
+                    echo str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
                         . ($countTestsForFile > 1 ? 's' : ' ') . ' OK : ' . $sourceFullFileName . PHP_EOL;
                 }
             }
@@ -1237,6 +1368,11 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
         }
         echo $separator . PHP_EOL;
     }
+}
+// --------------------------------------------------------------------
+// Special case for C#: delete Directory.build.props file
+if (file_exists($csDirectoryBuildPropsFilename)) {
+    unlink($csDirectoryBuildPropsFilename);
 }
 // --------------------------------------------------------------------
 // print global results

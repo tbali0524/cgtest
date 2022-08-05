@@ -9,7 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Nothing yet.
+- `c#` support added.
+- `'runOnlyPuzzles'` language-specific option added to config file format.
+- `'run-only'` global option added to config file format.
+- `'--run-only'` command-line argument added.
 
 ### Changed
 

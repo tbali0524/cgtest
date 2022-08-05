@@ -1,4 +1,10 @@
 /.tests/output/*
+/.tests/temp/*
+**/*.csproj
+**/*.hi
 **/*.o
 **/*.obj
+**/*.pdb
+**/*.jar
 **/*.exe
+Directory.Build.props

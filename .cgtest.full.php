@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.2.0 - configuration file
+ * CGTest v1.3.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth (TBali)
@@ -14,17 +14,21 @@ namespace TBali\CGTest;
 return [
     // == The following default config options can be overriden:
     // 'dry-run' => false,
+    // 'run-only' => false,
     // 'ansi' => true,
     // 'verbose' => false,
     // 'stats' => false,
+    // 'lang-versions' => false,
+    // 'clean' => false,
     // 'inputPath' => '.tests/input/',
     // 'inputPattern' => '%p_i%t.txt',
     // 'expectedPath' => '.tests/expected/',
     // 'expectedPattern' => '%p_e%t.txt',
     // 'outputPath' => '.tests/output/',
     // 'outputPattern' => '%p_o%t_%l.txt',
+    // 'buildPath' => '.tests/temp/',
     // 'debugLog' => '.tests/output/_debug_log.txt',
-    // 'buildLog' => '.tests/output/_build_log.txt',
+    // 'buildLog' => '.tests/temp/_build_log.txt',
     // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern':
     //     %l languageName
     //     %p puzzleName
@@ -33,7 +37,7 @@ return [
     'languages' => [
         // 'bash',
         'c',
-        // 'c#',
+        'c#',
         'c++',
         // 'clojure',
         'd',
@@ -143,11 +147,17 @@ return [
     //             'puzzleName',
     //         ],
     //     ],
+    //     'runOnlyPuzzles' => [
+    //         'path/' => [
+    //             'puzzleName',
+    //         ],
+    //     ],
     // ],
     // == Patterns available in 'buildCommand', 'runCommand', 'cleanPatterns':
     //     %l languageName
     //     %p puzzleName
     //     %o outputPath
+    //     %b buildPath
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
     // == Example (not really needed here, as these are the default settings for rust):
@@ -164,6 +174,8 @@ return [
         'excludePuzzles' => [
         ],
         'includePuzzles' => [
+        ],
+        'runOnlyPuzzles' => [
         ],
     ],
     // == Additional test cases for a single language:
@@ -292,6 +304,7 @@ return [
                 'easy_com_hunger-games',
                 'easy_com_if-then-else',
                 'easy_com_in-stereo',
+                'easy_com_insert-to-string',
                 'easy_com_ipv6-shortener',
                 'easy_com_is-that-a-possible-word-ep1',
                 'easy_com_is-the-king-in-check-part-1',
@@ -797,6 +810,14 @@ return [
             ],
             'puzzle/own/source-code-analyser/' => [
                 'my_medium_com_source-code-analyser',
+            ],
+        ],
+        'runOnlyPuzzles' => [
+            'puzzle/community/medium/' => [
+                'medium_com_rush-hour',
+            ],
+            'puzzle/community/hard/' => [
+                'hard_com_sokoban',
             ],
         ],
         // Note: The following puzzles cannot be tested with CGTest, as they are NOT simple I/O puzzles:

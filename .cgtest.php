@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.2.0 - configuration file
+ * CGTest v1.3.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth [TBali]
@@ -14,17 +14,21 @@ namespace TBali\CGTest;
 return [
     // == The following default config options can be overriden:
     // 'dry-run' => false,
+    // 'run-only' => false,
     // 'ansi' => true,
     // 'verbose' => false,
     // 'stats' => false,
+    // 'lang-versions' => false,
+    // 'clean' => false,
     // 'inputPath' => '.tests/input/',
     // 'inputPattern' => '%p_i%t.txt',
     // 'expectedPath' => '.tests/expected/',
     // 'expectedPattern' => '%p_e%t.txt',
     // 'outputPath' => '.tests/output/',
     // 'outputPattern' => '%p_o%t_%l.txt',
+    // 'buildPath' => '.tests/temp/',
     // 'debugLog' => '.tests/output/_debug_log.txt',
-    // 'buildLog' => '.tests/output/_build_log.txt',
+    // 'buildLog' => '.tests/temp/_build_log.txt',
     // == Patterns available in 'inputPattern', 'expectedPattern', 'outputPattern':
     //     %l languageName
     //     %p puzzleName
@@ -33,7 +37,7 @@ return [
     'languages' => [
         // 'bash',
         'c',
-        // 'c#',
+        'c#',
         'c++',
         // 'clojure',
         'd',
@@ -95,27 +99,36 @@ return [
     //             'puzzleName',
     //         ],
     //     ],
+    //     'runOnlyPuzzles' => [
+    //         'path/' => [
+    //             'puzzleName',
+    //         ],
+    //     ],
     // ],
     // == Patterns available in 'buildCommand', 'runCommand', 'cleanPatterns':
     //     %l languageName
     //     %p puzzleName
     //     %o outputPath
+    //     %b buildPath
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
     // == Example (not really needed here, as these are the default settings for rust):
     'rust' => [
         'sourcePath' => 'rust/',
         'sourceExtension' => '.rs',
+        'codinGameVersion' => 'rustc 1.60.0',
         'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc %s -o%o%p_%l.exe',
-        'runCommand' => '%o%p_%l.exe',
+        'buildCommand' => 'rustc %s -o%b%p_%l.exe',
+        'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => [
-            '%o%p_%l.exe',
-            '%o%p_%l.pdb',
+            '%b%p_%l.exe',
+            '%b%p_%l.pdb',
         ],
         'excludePuzzles' => [
         ],
         'includePuzzles' => [
+        ],
+        'runOnlyPuzzles' => [
         ],
     ],
 ];
