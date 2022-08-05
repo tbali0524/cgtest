@@ -115,7 +115,7 @@ $defaultConfig = [
         'sourceExtension' => '.cs',
         'codinGameVersion' => '.NET Core 3.1.201',
         'versionCommand' => 'dotnet --version',
-        'buildCommand' => 'dotnet publish %b%p.csproj -o %b --nologo --use-current-runtime --sc',
+        'buildCommand' => 'dotnet publish %b%p.csproj -o %b --nologo --use-current-runtime --sc -v:q',
         'runCommand' => '%b%p.exe',
         'cleanPatterns' => [
             '%b%p.exe',
@@ -853,7 +853,7 @@ foreach ($config['languages'] as $language) {
             $runOnlyCurrentPuzzle = $config['run-only'];
             if (!$runOnlyCurrentPuzzle) {
                 foreach ($config[$language]['runOnlyPuzzles'] as $sourcePathRunOnly => $filesArrayRunOnly) {
-                    foreach ($filesArrayRunOnly as $puzzleRunOnly) {
+                    foreach ($filesArrayRunOnly as $puzzleNameRunOnly) {
                         if ($puzzleNameRunOnly == $puzzleName) {
                             $runOnlyCurrentPuzzle = true;
                             break 2;
