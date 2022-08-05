@@ -109,16 +109,15 @@ $defaultConfig = [
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
-    // todo: fix buildCommand, runCommand, cleanPatterns
     'c#' => [
         'sourcePath' => 'c#/',
         'sourceExtension' => '.cs',
         'codinGameVersion' => '.NET Core 3.1.201',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => 'dotnet publish %b%p.csproj -o %b --nologo --use-current-runtime --sc -v:q',
-        'runCommand' => '%b%p.exe',
+        'runCommand' => (PHP_OS_FAMILY == 'Windows' ? '%b%p.exe' : '%b%p'),
         'cleanPatterns' => [
-            '%b%p.exe',
+            (PHP_OS_FAMILY == 'Windows' ? '%b%p.exe' : '%b%p'),
             '%b%p.pdb',
         ],
     ],
