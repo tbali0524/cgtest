@@ -10,10 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `javascript` and `typescript` support added.
+- global `'runOnlyPuzzles'` option added to config file format.
+- More partial test cases (input files with _turn #0_ data) added.
 
 ### Changed
 
-- Nothing yet.
+- Output for `--stats` option extended with 'run only' puzzles.
 
 ### Fixed
 
@@ -26,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `c#` and `vb.net` support added.
 - `'--run-only'` command-line argument added.
 - `'run-only'` global option added to config file format.
-- `'runOnlyPuzzles'` language-specific option added to config file format.
+- language-specific `'runOnlyPuzzles'` option added to config file format.
 - `'buildPath'` global option added to config file format.
 - partial test cases (input files with _turn #0_ data) added for several optimization and multi-turn solo puzzles.
 

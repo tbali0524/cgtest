@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.3.0 - configuration file
+ * CGTest v1.4.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth (TBali)
@@ -34,8 +34,9 @@ return [
     //     %p puzzleName
     //     %t testIndex [01..99]
     // == Tests will be run in the following languages:
+    //      Note: can be overriden via the '--lang=...' command-line option
     'languages' => [
-        // 'bash',          // uncomment in Linux
+        // 'bash',          // uncomment on Linux
         'c',
         'c#',
         'c++',
@@ -51,7 +52,7 @@ return [
         'kotlin',
         'lua',
         // 'objective-c',   // untested
-        // 'ocaml',         // tested in Linux only
+        // 'ocaml',         // tested on Linux only
         'pascal',
         'perl',
         'php',
@@ -63,11 +64,12 @@ return [
         'typescript',
         'vb.net',
     // Additional languages, unsupported on CodinGame:
-        // 'cobol',
+        // 'cobol',         // untested
         'fortran',
-        // 'r',
+        // 'r',             // untested
     ],
-    // == Tests will be run for the following puzzles in all languages (can be overriden in the per-language config):
+    // == Tests will be run for the following puzzles in ALL languages
+    //      Note: can be overriden via command-line or in the per-language 'excludePuzzles' sections
     // 'puzzles' => [
     //     'path/' => [
     //         'puzzleName',
@@ -126,10 +128,35 @@ return [
             'expert_com_recurring-decimals',
         ],
     ],
+    // == Tests will be run without test result evaluation for the following puzzles in ALL languages
+    //      Note: can be overrriden in the per-language 'excludePuzzles' sections
+    //      Note: the puzzle solution code must exit after reading turn #0 data to avoid infinite loop!
+    // 'runOnlyPuzzles' => [
+    //     'path/' => [
+    //         'puzzleName',
+    //     ],
+    // ],
+    'runOnlyPuzzles' => [
+        // 'codegolf/' => [
+        //     'codegolf-dont-panic',
+        //     'codegolf-power-of-thor',
+        // ],
+        'puzzle/cg/' => [
+            'tutorial_onboarding',
+        ],
+        'puzzle/cg/easy/' => [
+            'easy_cg_mars-lander-episode-1',
+            'easy_cg_power-of-thor-episode-1',
+            'easy_cg_the-descent',
+        ],
+        'puzzle/cg/medium/' => [
+            'medium_cg_dont-panic-episode-1',
+        ],
+    ],
     // == The following per-language config options are available:
     // 'languageName' => [
     //     // IMPORTANT NOTE: if 'sourcePath' is given, it will OVERRIDE the 'path/' keys
-    //     //   in the 'puzzles' and 'includePuzzles' lists.
+    //     //   in the 'puzzles', 'runOnlyPuzzles' and 'includePuzzles' lists.
     //     'sourcePath' => 'language/',
     //     'sourceExtension' => '.lang',
     //     'codinGameVersion' => '',
@@ -161,32 +188,33 @@ return [
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
     // == Example (not really needed here, as these are the default settings for rust):
-        'rust' => [
-            'sourcePath' => 'rust/',
-            'sourceExtension' => '.rs',
-            'codinGameVersion' => 'rustc 1.60.0',
-            'versionCommand' => 'rustc --version',
-            'buildCommand' => 'rustc %s -o%b%p_%l.exe',
-            'runCommand' => '%b%p_%l.exe',
-            'cleanPatterns' => [
-                '%b%p_%l.exe',
-                '%b%p_%l.pdb',
-            ],
-            'excludePuzzles' => [
-            ],
-            'includePuzzles' => [
-            ],
-            'runOnlyPuzzles' => [
-            ],
+    'rust' => [
+        'sourcePath' => 'rust/',
+        'sourceExtension' => '.rs',
+        'codinGameVersion' => 'rustc 1.60.0',
+        'versionCommand' => 'rustc --version',
+        'buildCommand' => 'rustc %s -o%b%p_%l.exe',
+        'runCommand' => '%b%p_%l.exe',
+        'cleanPatterns' => [
+            '%b%p_%l.exe',
+            '%b%p_%l.pdb',
         ],
+        'excludePuzzles' => [
+        ],
+        'includePuzzles' => [
+        ],
+        'runOnlyPuzzles' => [
+        ],
+    ],
     // == Additional test cases for a single language:
     'c++' => [
         'includePuzzles' => [
             'puzzle/cg/expert/' => [
-                'expert_nintendo-sponsored-contest',
+                'expert_nintendo-sponsored-contest',        // puzzle available only in c++
             ],
         ],
     ],
+    // == Additional test cases for a single language:
     'php' => [
         // 'sourcePath' => '', // uncomment if source code is not in 'php/' but in the keys, e.g. 'puzzle/cg/...'
         'includePuzzles' => [
@@ -227,7 +255,7 @@ return [
             ],
             'puzzle/cg/expert/' => [
                 'expert_cg_music-scores',
-                // 'expert_cg_nintendo-sponsored-contest',  // c++ only
+                // 'expert_cg_nintendo-sponsored-contest',  // puzzle available only in c++
                 'expert_cg_the-resistance',
             ],
             'puzzle/community/easy/' => [
@@ -813,69 +841,152 @@ return [
                 'my_medium_com_source-code-analyser',
             ],
         ],
-        // Note: For the following puzzles, only turn #0 input is available.
+        // == Tests will be run without test result evaluation for the following puzzles
+        //      Note: the puzzle solution code must exit after reading turn #0 data to avoid infinite loop!
         'runOnlyPuzzles' => [
+            // 'codegolf/' => [
+            //     'codegolf-dont-panic',
+            //     'codegolf-power-of-thor',
+            // ],
             'optim/cg/' => [
                 'optim_cg_a-star-craft',
                 'optim_cg_code-of-the-rings',
             ],
             'optim/community/' => [
                 'optim_com_bender---episode-4',
+                'optim_com_cgfunge-prime',
                 'optim_com_travelling-salesman',
             ],
             'optim/community/2048/' => [
                 'optim_com_2048',
             ],
+            'puzzle/cg/' => [
+                // 'tutorial_onboarding',                   // also in global section
+            ],
+            'puzzle/cg/easy/' => [
+                // 'easy_cg_mars-lander-episode-1',         // also in global section
+                // 'easy_cg_power-of-thor-episode-1',       // also in global section
+                // 'easy_cg_the-descent',                   // also in global section
+            ],
+            'puzzle/cg/medium/' => [
+                // 'medium_cg_dont-panic-episode-1',        // also in global section
+                'medium_cg_mars-lander-episode-2',
+                'medium_cg_shadows-of-the-knight-episode-1',
+                'medium_cg_skynet-revolution-episode-1',
+                'medium_cg_the-last-crusade-episode-1',
+                'medium_cg_there-is-no-spoon-episode-1',
+            ],
+            'puzzle/cg/hard/' => [
+                'hard_cg_dont-panic-episode-2',
+                'hard_cg_power-of-thor-episode-2',
+                'hard_cg_skynet-revolution-episode-2',
+                'hard_cg_the-bridge-episode-2',
+            // TODO add input data
+                // 'hard_cg_the-labyrinth',
+                // 'hard_cg_the-last-crusade-episode-2',
+                // 'hard_cg_there-is-no-spoon-episode-2',
+                // 'hard_cg_vox-codei-episode-1',
+            ],
+            'puzzle/cg/expert/' => [
+            // TODO add input data
+                // 'expert_cg_mars-lander-episode-3',
+                // 'expert_cg_shadows-of-the-knight-episode-2',
+                // 'expert_cg_vox-codei-episode-2',
+                // 'expert_cg_the-last-crusade-episode-3',
+            ],
+            'puzzle/community/easy/' => [
+            // TODO add input data
+                // 'easy_com_catching-up',
+            ],
             'puzzle/community/medium/' => [
+            // TODO add input data
+                // 'medium_com_can-you-save-the-forest---episode-1',
+                // 'medium_com_cooperative-mate-with-rook',
+                // 'medium_com_escaping-the-cat',
+                // 'medium_com_find-the-winning-strategy',
+                // 'medium_com_forest-fire',
+                // 'medium_com_minesweeper-1',
                 'medium_com_rush-hour',
             ],
             'puzzle/community/hard/' => [
+            // TODO add input data
+                // 'hard_com_11-puzzle',
+                // 'hard_com_adversarial-mate-with-rook',
+                // 'hard_com_binary-extension',
+                // 'hard_com_blockout',
+                // 'hard_com_can-you-save-the-forest---episode-2',
+                // 'hard_com_freecell',
+                // 'hard_com_jump-point---search-preprocessing',
+                // 'hard_com_jump-point---search-runtime',
                 'hard_com_sokoban',
             ],
+            'puzzle/community/expert/' => [
+            // TODO add input data
+                // 'expert_com_breach',
+                // 'expert_com_space-maze',
+            ],
         ],
-        // Note: The following puzzles cannot be tested with CGTest, as they are NOT simple I/O puzzles:
-        // 'excludePuzzles' => [
-        //     'codegolf-dont-panic',
-        //     'codegolf-power-of-thor',
-        //     'tutorial-onboarding',
-        //     'easy_cg_mars-lander-episode-1',
-        //     'easy_cg_power-of-thor-episode-1',
-        //     'easy_cg_the-descent',
-        //     'medium_cg_dont-panic-episode-1',
-        //     'medium_cg_mars-lander-episode-2',
-        //     'medium_cg_shadows-of-the-knight-episode-1',
-        //     'medium_cg_skynet-revolution-episode-1',
-        //     'medium_cg_the-last-crusade-episode-1',
-        //     'medium_cg_there-is-no-spoon-episode-1',
-        //     'hard_cg_dont-panic-episode-2',
-        //     'hard_cg_power-of-thor-episode-2',
-        //     'hard_cg_skynet-revolution-episode-2',
-        //     'hard_cg_the-bridge-episode-2',
-        //     'hard_cg_the-labyrinth',
-        //     'hard_cg_the-last-crusade-episode-2',
-        //     'hard_cg_there-is-no-spoon-episode-2',
-        //     'hard_cg_vox-codei-episode-1',
-        //     'expert_cg_mars-lander-episode-3',
-        //     'expert_cg_shadows-of-the-knight-episode-2',
-        //     'expert_cg_vox-codei-episode-2',
-        //     'expert_cg_the-last-crusade-episode-3',
-        //     'easy_com_catching-up',
-        //     'medium_com_can-you-save-the-forest---episode-1',
-        //     'medium_com_cooperative-mate-with-rook',
-        //     'medium_com_escaping-the-cat',
-        //     'medium_com_find-the-winning-strategy',
-        //     'medium_com_forest-fire',
-        //     'medium_com_minesweeper-1',
-        //     'hard_com_11-puzzle',
-        //     'hard_com_adversarial-mate-with-rook',
-        //     'hard_com_binary-extension',
-        //     'hard_com_blockout',
-        //     'hard_com_can-you-save-the-forest---episode-2',
-        //     'hard_com_freecell',
-        //     'hard_com_jump-point---search-preprocessing',
-        //     'hard_com_jump-point---search-runtime',
-        //     'expert_com_breach',
-        //     'expert_com_space-maze',
-        // ],
+        // == Exclude these puzzles from testing in php, if the required php extension is not available:
+        'excludePuzzles' => array_merge(
+            (extension_loaded('bcmath') ? [] : [
+                'medium_com_christmas-tree',
+                'medium_com_gravity-centrifuge-tuning',
+                'medium_com_oneway-city',
+                'medium_com_polydivisible-number',
+            ]),
+            (extension_loaded('mbstring') ? [] : [
+                'easy_com_frame-the-picture',
+                'medium_com_ascii-cube',
+            ]),
+            (extension_loaded('ctype') ? [] : [
+                'easy_com_sentence-tokenising',
+                'hard_com_derivative-time---part2',
+                'medium_com_lost-astronaut',
+                'medium_com_sticky-keyboard',
+            ]),
+        ),
+    ],
+    // Additional languages, unsupported on CodinGame:
+    'fortran' => [
+        'excludePuzzles' => [
+            // exclude puzzles from the global 'puzzles' and 'runOnlyPuzzles' lists, except 'medium_com_rubik'
+            'codegolf_chuck-norris',
+            'codegolf_temperatures',
+            'tutorial_onboarding',
+            'easy_cg_ascii-art',
+            'easy_cg_chuck-norris',
+            'easy_cg_horse-racing-duals',
+            'easy_cg_mars-lander-episode-1',
+            'easy_cg_power-of-thor-episode-1',
+            'easy_cg_temperatures',
+            'easy_cg_the-descent',
+            'medium_cg_dont-panic-episode-1',
+            'medium_cg_stock-exchange-losses',
+            'easy_com_1d-bush-fire',
+            'easy_com_count-as-i-count',
+            'easy_com_create-the-longest-sequence-of-1s',
+            'easy_com_credit-card-verifier-luhns-algorithm',
+            'easy_com_robot-show',
+            'easy_com_smooth',
+            'easy_com_sum-of-spirals-diagonals',
+            'easy_com_the-mystic-rectangle',
+            'easy_com_the-river-i-',
+            'easy_com_the-river-ii-',
+            'easy_com_unit-fractions',
+            'medium_com_bit-count-to-limit',
+            'medium_com_factorial-vs-exponential',
+            'medium_com_halting-sequences',
+            'medium_com_minimal-number-of-swaps',
+            'medium_com_porcupine-fever',
+            'medium_com_remaining-card',
+            'medium_com_reversed-look-and-say',
+            'medium_com_sum-of-divisors',
+            'medium_com_the-experience-for-creating-puzzles',
+            'medium_com_the-fastest',
+            'hard_com_execution-circle',
+            'hard_com_google-interview---the-two-egg-problem',
+            'hard_com_highest-truncated-pyramid',
+            'expert_com_recurring-decimals',
+        ],
     ],
 ];

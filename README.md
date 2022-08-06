@@ -8,7 +8,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 __CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used for running `c`, `c#`, `c++`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust`, `scala` and `vb.net` tests both in Windows and in Linux, and additionally `bash`, `javascript`, `ocaml` and `typescript` in Linux. It should also work on almost any other computer system, including Mac.
+CGTest was successfully used for running `c`, `c#`, `c++`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `javascript`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust`, `scala`, `typescript` and `vb.net` tests both on Windows and on Linux, and additionally `bash` and `ocaml` on Linux. It should also work on almost any other computer system, including Mac.
 
 The test runner works for any non-interactive code that reads from a standard input stream, and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
@@ -123,14 +123,14 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
 * There is an additional sample configuration file `.cgtest.full.php`.
     * Use this config with the `--config=.cgtest.full.php` command-line option.
     * This has references to ALL the test cases included in the CGTest repository.
-    * Some puzzles are listed in the global `'puzzles'` section. These are the shortest and simplest puzzles, so they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
+    * Some puzzles are listed in the global `'puzzles'` or `'runOnlyPuzzles'` sections. These are the shortest and simplest puzzles, so they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
     * Other puzzles are listed in a per-language `'includePuzzles'` or `'runOnlyPuzzles'` section. Modify the language and comment out the puzzle names as needed.
     * For most puzzles, currently only a single test case is provided. That is OK for a simple smoke-test, but not enough to prove that your solution is really correct.
 
 ## Restrictions
 
 * _CGTest_ supports only solo I/O puzzles. For any test case, the input must be a fixed file (so a given line of input cannot depend on the output previously provided by the code). This means that some solo and optim puzzles cannot be tested. Bot programming is also out of question.
-    * The `run-only` configuration can be used to run these puzzles based on _turn #0_ input data, however your code must be modified for offline use to avoid running out of input.
+    * You can still run these puzzles (without evaluating the test result) based on the _turn #0_ input data, however your code must be modified for offline use to avoid running out of input.
 
 * CGTest is a single thread application, so tests are running in sequence, which can be rather slow if you have lots of test cases. If you start CGTest multiple times concurrently, use separate configuration files, with different output directory settings.
 
@@ -143,7 +143,6 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
 I don't have local dev environment for all the 27 languages Codingame supports. Therefore, some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
 
 * I could not yet set up to run the tester properly for: `clojure`, `objective-c`, `swift`
-* `javascript` and `typescript` code is run by `node`, using a `readline()` polyfill function, taken from the CG runtime environment. This polyfill currently works only in Linux.
 * Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows using a _'bash for Windows'_ package such as `MSYS2`.
 
 _If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax)._

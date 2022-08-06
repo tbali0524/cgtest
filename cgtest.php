@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.3.0
+ * CGTest v1.4.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth [TBali]
@@ -22,15 +22,17 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.3.1-dev';
+$version = 'v1.4.0-dev';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countDirectories' => 0,
     'countFiles' => 0,
     'countPassedFiles' => 0,
+    'countRunOnlyFiles' => 0,
     'countFailedFiles' => 0,
     'countSkippedFiles' => 0,
     'countTests' => 0,
+    'countRunOnlyTests' => 0,
     'countPassedTests' => 0,
     'countFailedTests' => 0,
     'countSkippedTests' => 0,
@@ -45,10 +47,13 @@ $languageStats['totals']['startTime'] = hrtime(true);
 $languageStats['unique'] = $zeroLanguageStat;
 $zeroPuzzleStat = [
     'countFailedFiles' => 0,
+    'countRunOnlyFiles' => 0,
     'countSkippedFiles' => 0,
     'countTests' => 0,
+    'countRunOnlyTests' => 0,
     'countSkippedTests' => 0,
     'failedTests' => 0,     //bitmap of failed tests (bit #0 = 1, if test #01 failed, etc.)
+    'runOnlyTests' => 0,    //bitmap of runOnly tests
     'skippedTests' => 0,    //bitmap of skipped tests
 ];
 $puzzleStats = [];
@@ -93,6 +98,7 @@ $defaultConfig = [
     'buildLog' => '.tests/temp/_build_log.txt',
     'languages' => ['php'],
     'puzzles' => [],
+    'runOnlyPuzzles' => [],
     // todo: fix to work also under Windows
     'bash' => [
         'sourcePath' => 'bash/',
@@ -219,7 +225,6 @@ $defaultConfig = [
         'runCommand' => 'java %s',
         'cleanPatterns' => [],
     ],
-    // todo: fix readline() polyfill for Windows
     'javascript' => [
         'sourcePath' => 'javascript/',
         'sourceExtension' => '.js',
@@ -347,7 +352,6 @@ $defaultConfig = [
         'runCommand' => 'swift %s',
         'cleanPatterns' => [],
     ],
-    // todo: fix readline() polyfill for Windows
     'typescript' => [
         'sourcePath' => 'typescript/',
         'sourceExtension' => '.ts',
@@ -409,7 +413,7 @@ foreach ($defaultConfig['languages'] as $language) {
 $booleanConfigKeys = ['dry-run', 'run-only', 'ansi', 'verbose', 'stats', 'lang-versions', 'clean', 'show-defaults'];
 $nonEmptyStringConfigKeys = ['inputPattern', 'expectedPattern', 'outputPattern'];
 $optionalStringConfigKeys = ['inputPath', 'expectedPath', 'outputPath', 'buildPath'];
-$arrayConfigKeys = ['languages', 'puzzles'];
+$arrayConfigKeys = ['languages', 'puzzles', 'runOnlyPuzzles'];
 $reservedConfigKeys = array_merge(
     $booleanConfigKeys,
     $nonEmptyStringConfigKeys,
@@ -563,7 +567,7 @@ $config = $defaultConfig;
 foreach ($configFromFile as $configKey => $configValue) {
     if (
         !is_array($defaultConfig[$configKey])
-        or (in_array($configKey, ['languages', 'puzzles'], true) !== false)
+        or (in_array($configKey, $arrayConfigKeys, true) !== false)
     ) {
         $config[$configKey] = $configValue;
         continue;
@@ -705,7 +709,8 @@ if (!$config['clean'] and !$config['lang-versions'] and !$config['dry-run']) {
     }
     fwrite($logFile, $title . PHP_EOL);
     fclose($logFile);
-    echo $infoTag . '<stderr> output from the test runs redirected to file: ' . $config['debugLog'] . PHP_EOL;
+    echo $infoTag . '<STDERR> output from the test runs redirected to file: ' . $config['debugLog'] . PHP_EOL;
+    echo $infoTag . 'Compilers / interpreters\' messages redirected to file: ' . $config['buildLog'] . PHP_EOL;
 }
 // --------------------------------------------------------------------
 // main loop: tests run by language
@@ -820,6 +825,14 @@ foreach ($config['languages'] as $language) {
     // prepare puzzle list for this language
     $puzzles = $config['puzzles'];
     if (($argumentConfig['puzzles'] ?? []) == []) {
+        foreach ($config['runOnlyPuzzles'] as $sourcePath => $filesArray) {
+            if (!isset($puzzles[$sourcePath])) {
+                $puzzles[$sourcePath] = [];
+            }
+            foreach ($filesArray as $puzzleNameOriginal) {
+                $puzzles[$sourcePath][] = $puzzleNameOriginal;
+            }
+        }
         foreach ($config[$language]['includePuzzles'] as $sourcePath => $filesArray) {
             if (!isset($puzzles[$sourcePath])) {
                 $puzzles[$sourcePath] = [];
@@ -853,11 +866,21 @@ foreach ($config['languages'] as $language) {
             }
             $runOnlyCurrentPuzzle = $config['run-only'];
             if (!$runOnlyCurrentPuzzle) {
-                foreach ($config[$language]['runOnlyPuzzles'] as $sourcePathRunOnly => $filesArrayRunOnly) {
+                foreach ($config['runOnlyPuzzles'] as $sourcePathRunOnly => $filesArrayRunOnly) {
                     foreach ($filesArrayRunOnly as $puzzleNameRunOnly) {
                         if ($puzzleNameRunOnly == $puzzleName) {
                             $runOnlyCurrentPuzzle = true;
                             break 2;
+                        }
+                    }
+                }
+                if (!$runOnlyCurrentPuzzle) {
+                    foreach ($config[$language]['runOnlyPuzzles'] as $sourcePathRunOnly => $filesArrayRunOnly) {
+                        foreach ($filesArrayRunOnly as $puzzleNameRunOnly) {
+                            if ($puzzleNameRunOnly == $puzzleName) {
+                                $runOnlyCurrentPuzzle = true;
+                                break 2;
+                            }
                         }
                     }
                 }
@@ -884,6 +907,13 @@ foreach ($config['languages'] as $language) {
                 continue;
             }
             ++$languageStats[$language]['countFiles'];
+            if ($runOnlyCurrentPuzzle) {
+                ++$languageStats[$language]['countRunOnlyFiles'];
+                if (!isset($puzzleStats[$puzzleName])) {
+                    $puzzleStats[$puzzleName] = $zeroPuzzleStat;
+                }
+                $puzzleStats[$puzzleName]['countRunOnlyFiles'] = 1;
+            }
             // --------------------------------------------------------------------
             // clean temporary and output files from previous test run
             if ($config['clean']) {
@@ -1049,7 +1079,7 @@ foreach ($config['languages'] as $language) {
                     [$language, $puzzleName, $stringIdxTest],
                     $config['outputPath'] . $config['outputPattern']
                 );
-                if ($expectedFullFileName === $outputFullFileName) {
+                if (!$runOnlyCurrentPuzzle and ($expectedFullFileName === $outputFullFileName)) {
                     echo $errorTag . 'Invalid configuration: expected and real test output filenames '
                         . 'must not be the same: ' . $expectedFullFileName . PHP_EOL . PHP_EOL;
                     exit(2);
@@ -1141,6 +1171,10 @@ foreach ($config['languages'] as $language) {
                 $outputFileContents = substr($outputFileContents, 0, $i + 1);
                 // --------------------------------------------------------------------
                 // evaluate test result
+                if ($runOnlyCurrentPuzzle) {
+                    ++$languageStats[$language]['countRunOnlyTests'];
+                    $puzzleStats[$puzzleName]['runOnlyTests'] |= (1 << $idxTest);
+                }
                 if (!$runOnlyCurrentPuzzle and ($expectedFileContents !== $outputFileContents)) {
                     $testsFailed[] = $stringIdxTest;
                     ++$languageStats[$language]['countFailedTests'];
@@ -1162,6 +1196,10 @@ foreach ($config['languages'] as $language) {
                     = max($puzzleStats[$puzzleName]['countTests'], $countTestsForFile);
                 $puzzleStats[$puzzleName]['countSkippedTests']
                     = max($puzzleStats[$puzzleName]['countSkippedTests'], $countSkippedTestsForFile);
+                if ($runOnlyCurrentPuzzle) {
+                    $puzzleStats[$puzzleName]['countRunOnlyTests']
+                    = max($puzzleStats[$puzzleName]['countRunOnlyTests'], $countTestsForFile);
+                }
             }
             if ($config['dry-run']) {
                 if ($config['verbose']) {
@@ -1212,7 +1250,9 @@ $languageStats['unique']['countDirectories'] = count($directoryStats);
 $languageStats['unique']['countFiles'] = count($puzzleStats);
 $languageStats['unique']['countPassedTests'] = 0;
 foreach ($puzzleStats as $puzzleStat) {
+    $languageStats['unique']['countRunOnlyFiles'] += $puzzleStat['countRunOnlyFiles'];
     $languageStats['unique']['countTests'] += $puzzleStat['countTests'];
+    $languageStats['unique']['countRunOnlyTests'] += $puzzleStat['countRunOnlyTests'];
     $countFailed = 0;
     $i = $puzzleStat['failedTests'];
     while ($i != 0) {
@@ -1241,10 +1281,13 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
         $cleanHeader3 = ' files |';
     }
     $emptyTag = str_repeat(' ', 7);
-    $separator = '-------+------------+------+------+------+------+------+------+------+-------+' . $cleanHeader1;
+    $separator = '-------+------------+------+------+------+------+------+------+------+------+------+-------+'
+        . $cleanHeader1;
     echo $separator . PHP_EOL;
-    echo '       |            |Direc-|  Puzzles (files)   |       Tests        |       |' . $cleanHeader2 . PHP_EOL;
-    echo '       | Language   |tories| Total| Fail | Skip | Total| Fail | Skip |  Time |' . $cleanHeader3 . PHP_EOL;
+    echo '       |            |Direc-|   Puzzles (source files)  |         Test cases        |       |'
+        . $cleanHeader2 . PHP_EOL;
+    echo '       | Language   |tories| Total|NoEval| Fail | Skip | Total|NoEval| Fail | Skip |  Time |'
+        . $cleanHeader3 . PHP_EOL;
     echo $separator . PHP_EOL;
     foreach ($languageStats as $language => $stat) {
         if (($language == 'totals') or ($language == 'unique')) {
@@ -1257,9 +1300,11 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
         }
         $msgCountDirectories = str_pad(substr(strval($stat['countDirectories']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountFiles = str_pad(substr(strval($stat['countFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
+        $msgCountRunOnlyFiles = str_pad(substr(strval($stat['countRunOnlyFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountFailedFiles = str_pad(substr(strval($stat['countFailedFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountSkippedFiles = str_pad(substr(strval($stat['countSkippedFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountTests = str_pad(substr(strval($stat['countTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
+        $msgCountRunOnlyTests = str_pad(substr(strval($stat['countRunOnlyTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountFailedTests = str_pad(substr(strval($stat['countFailedTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountSkippedTests = str_pad(substr(strval($stat['countSkippedTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgTime = str_pad(number_format($stat['spentTime'] / 1000000000, 1, '.', ''), 6, ' ', STR_PAD_LEFT);
@@ -1301,9 +1346,11 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
             . '|' . str_pad(substr(strval($language), 0, 12), 12)
             . '|' . $msgCountDirectories
             . '|' . $msgCountFiles
+            . '|' . $msgCountRunOnlyFiles
             . '|' . $msgCountFailedFiles
             . '|' . $msgCountSkippedFiles
             . '|' . $msgCountTests
+            . '|' . $msgCountRunOnlyTests
             . '|' . $msgCountFailedTests
             . '|' . $msgCountSkippedTests
             . '|' . $msgTime
@@ -1317,9 +1364,11 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
         $status = $emptyTag;
         $msgCountDirectories = str_pad(substr(strval($stat['countDirectories']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountFiles = str_pad(substr(strval($stat['countFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
+        $msgCountRunOnlyFiles = str_pad(substr(strval($stat['countRunOnlyFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountFailedFiles = str_pad(substr(strval($stat['countFailedFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountSkippedFiles = str_pad(substr(strval($stat['countSkippedFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountTests = str_pad(substr(strval($stat['countTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
+        $msgCountRunOnlyTests = str_pad(substr(strval($stat['countRunOnlyTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountFailedTests = str_pad(substr(strval($stat['countFailedTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgCountSkippedTests = str_pad(substr(strval($stat['countSkippedTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
         $msgTime = str_pad(number_format($stat['spentTime'] / 1000000000, 1, '.', ''), 6, ' ', STR_PAD_LEFT);
@@ -1336,9 +1385,11 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
             . '|' . str_pad('Total', 12)
             . '|' . $msgCountDirectories
             . '|' . $msgCountFiles
+            . '|' . $msgCountRunOnlyFiles
             . '|' . $msgCountFailedFiles
             . '|' . $msgCountSkippedFiles
             . '|' . $msgCountTests
+            . '|' . $msgCountRunOnlyTests
             . '|' . $msgCountFailedTests
             . '|' . $msgCountSkippedTests
             . '|' . $msgTime
@@ -1349,9 +1400,11 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
             $stat = $languageStats['unique'];
             $msgCountDirectories = str_pad(substr(strval($stat['countDirectories']), 0, 6), 6, ' ', STR_PAD_LEFT);
             $msgCountFiles = str_pad(substr(strval($stat['countFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
+            $msgCountRunOnlyFiles = str_pad(substr(strval($stat['countRunOnlyFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
             $msgCountFailedFiles = str_pad(substr(strval($stat['countFailedFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
             $msgCountSkippedFiles = str_pad(substr(strval($stat['countSkippedFiles']), 0, 6), 6, ' ', STR_PAD_LEFT);
             $msgCountTests = str_pad(substr(strval($stat['countTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
+            $msgCountRunOnlyTests = str_pad(substr(strval($stat['countRunOnlyTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
             $msgCountFailedTests = str_pad(substr(strval($stat['countFailedTests']), 0, 6), 6, ' ', STR_PAD_LEFT);
             $msgCountSkippedTests = str_repeat(' ', 6);
             $msgTime = str_repeat(' ', 7);
@@ -1361,9 +1414,11 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
                 . '|' . str_pad('Total unique', 12)
                 . '|' . $msgCountDirectories
                 . '|' . $msgCountFiles
+                . '|' . $msgCountRunOnlyFiles
                 . '|' . $msgCountFailedFiles
                 . '|' . $msgCountSkippedFiles
                 . '|' . $msgCountTests
+                . '|' . $msgCountRunOnlyTests
                 . '|' . $msgCountFailedTests
                 . '|' . $msgCountSkippedTests
                 . '|' . $msgTime
@@ -1380,47 +1435,31 @@ if (file_exists($csDirectoryBuildPropsFilename)) {
 // --------------------------------------------------------------------
 // print global results
 $statusWidth = 78;
-$wasLF = false;
+echo PHP_EOL;
+$wasLF = true;
 if ($languageStats['totals']['countSkippedLanguages'] > 0) {
-    echo PHP_EOL;
-    $wasLF = true;
     echo $warnTag . 'Skipped ' . $languageStats['totals']['countSkippedLanguages'] . ' language'
         . ($languageStats['totals']['countSkippedLanguages'] > 1 ? 's' : '')
         . ' due to configuration errors.' . PHP_EOL;
+    $wasLF = false;
 }
 if ($config['clean']) {
     if ($languageStats['totals']['countDeletedFiles'] > 0) {
-        if (!$wasLF) {
-            echo PHP_EOL;
-            $wasLF = true;
-        }
         echo $infoTag . 'Deleted ' . $languageStats['totals']['countDeletedFiles'] . ' temporary and test output file'
             . ($languageStats['totals']['countDeletedFiles'] > 1 ? 's' : '') . '.' . PHP_EOL;
     }
     if ($totalUnsuccessfulDeleteFiles > 0) {
-        if (!$wasLF) {
-            echo PHP_EOL;
-            $wasLF = true;
-        }
         echo $warnTag . 'Failed to delete ' . $totalUnsuccessfulDeleteFiles . ' file'
             . ($totalUnsuccessfulDeleteFiles > 1 ? 's' : '') . '.' . PHP_EOL . PHP_EOL;
         exit(1);
     }
     if ($languageStats['totals']['countDeletedFiles'] == 0) {
-        if (!$wasLF) {
-            echo PHP_EOL;
-            $wasLF = true;
-        }
         echo $infoTag . 'There was nothing to clean.' . PHP_EOL;
     }
     echo PHP_EOL;
     exit(0);
 }
 if ($config['lang-versions']) {
-    if (!$wasLF) {
-        echo PHP_EOL;
-        $wasLF = true;
-    }
     $countLangs = $languageStats['totals']['countLanguages'] - $languageStats['totals']['countSkippedLanguages'];
     echo $infoTag . 'Total: ' . $countLangs . ' programming language'
        . ($countLangs > 1 ? 's' : '')
@@ -1428,10 +1467,6 @@ if ($config['lang-versions']) {
     exit(0);
 }
 if ($languageStats['totals']['countSkippedFiles'] > 0) {
-    if (!$wasLF) {
-        echo PHP_EOL;
-        $wasLF = true;
-    }
     $msg = '';
     if ($languageStats['totals']['countSkippedFiles'] != $languageStats['unique']['countSkippedFiles']) {
         $msg = ' for ' . $languageStats['unique']['countSkippedFiles'] . ' unique puzzle'
@@ -1440,34 +1475,26 @@ if ($languageStats['totals']['countSkippedFiles'] > 0) {
     echo $warnTag . 'Skipped ' . $languageStats['totals']['countSkippedFiles'] . ' solution'
         . ($languageStats['totals']['countSkippedFiles'] > 1 ? 's' : '')
         . $msg . ' due to missing source code file.' . PHP_EOL;
+    $wasLF = false;
 }
 if ($languageStats['totals']['countSkippedTests'] > 0) {
-    if (!$wasLF) {
-        echo PHP_EOL;
-        $wasLF = true;
-    }
     echo $warnTag . 'Skipped ' . $languageStats['totals']['countSkippedTests'] . ' test'
         . ($languageStats['totals']['countSkippedTests'] > 1 ? 's' : '')
         . ' due to missing test case files.' . PHP_EOL;
+    $wasLF = false;
 }
 if ($languageStats['totals']['countTests'] == 0) {
     if (!$wasLF) {
         echo PHP_EOL;
-        $wasLF = true;
     }
     echo $ansiYellow . str_pad(' [WARN] There was nothing to test.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
     exit(1);
-}
-if (!$wasLF) {
-    echo PHP_EOL;
-    $wasLF = true;
 }
 $msg = '';
 if ($languageStats['unique']['countFiles'] != $languageStats['totals']['countFiles']) {
     $msg = ' for ' . $languageStats['unique']['countFiles'] . ' unique puzzle'
         . ($languageStats['unique']['countFiles'] > 1 ? 's' : '');
 }
-
 echo $infoTag . 'Total: ' . $languageStats['totals']['countPassedTests'] . ' / '
     . $languageStats['totals']['countTests'] . ' test'
     . ($languageStats['totals']['countTests'] > 1 ? 's' : '') . ' passed while testing '

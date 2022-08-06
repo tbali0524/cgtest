@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.3.0 - configuration file
+ * CGTest v1.4.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth [TBali]
@@ -34,8 +34,9 @@ return [
     //     %p puzzleName
     //     %t testIndex [01..99]
     // == Tests will be run in the following languages:
+    //      Note: can be overriden via the '--lang=...' command-line option
     'languages' => [
-        // 'bash',          // uncomment in Linux
+        // 'bash',          // uncomment on Linux
         'c',
         'c#',
         'c++',
@@ -51,7 +52,7 @@ return [
         'kotlin',
         'lua',
         // 'objective-c',   // untested
-        // 'ocaml',         // tested in Linux only
+        // 'ocaml',         // tested on Linux only
         'pascal',
         'perl',
         'php',
@@ -63,11 +64,12 @@ return [
         'typescript',
         'vb.net',
     // Additional languages, unsupported on CodinGame:
-        // 'cobol',
+        // 'cobol',         // untested
         'fortran',
-        // 'r',
+        // 'r',             // untested
     ],
-    // == Tests will be run for the following puzzles in all languages (can be overriden in the per-language config):
+    // == Tests will be run for the following puzzles in ALL languages
+    //      Note: can be overriden via command-line or in the per-language 'excludePuzzles' sections
     // 'puzzles' => [
     //     'path/' => [
     //         'puzzleName',
@@ -78,10 +80,20 @@ return [
             'medium_com_rubik',
         ],
     ],
+    // == Tests will be run without test result evaluation for the following puzzles in ALL languages
+    //      Note: can be overriden in the per-language 'excludePuzzles' sections
+    //      Note: the puzzle solution code must exit after reading turn #0 data to avoid infinite loop!
+    // 'runOnlyPuzzles' => [
+    //     'path/' => [
+    //         'puzzleName',
+    //     ],
+    // ],
+    'runOnlyPuzzles' => [
+    ],
     // == The following per-language config options are available:
     // 'languageName' => [
     //     // IMPORTANT NOTE: if 'sourcePath' is given, it will OVERRIDE the 'path/' keys
-    //     //   in the 'puzzles' and 'includePuzzles' lists.
+    //     //   in the 'puzzles', 'runOnlyPuzzles' and 'includePuzzles' lists.
     //     'sourcePath' => 'language/',
     //     'sourceExtension' => '.lang',
     //     'codinGameVersion' => '',
