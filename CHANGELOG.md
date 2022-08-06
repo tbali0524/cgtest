@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Nothing yet.
+- Build errors were not reported as failed tests.
 
 ## [v1.3.0](https://github.com/tbali0524/cgtest/releases/v1.3.0) - 2022-08-05
 

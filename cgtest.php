@@ -356,7 +356,8 @@ $defaultConfig = [
         'sourcePath' => 'typescript/',
         'sourceExtension' => '.ts',
         'codinGameVersion' => 'node.js v16.14.2; Typescript Compiler Version 4.6.3',
-        'versionCommand' => 'tsc --version',
+        'versionCommand' => 'node --version',
+        // 'versionCommand' => 'tsc --version',
         'buildCommand' => '',
         'runCommand' => 'node -r polyfill.js %s',
         'cleanPatterns' => [],
@@ -790,7 +791,7 @@ foreach ($config['languages'] as $language) {
         $execOutput = [];
         $execResultCode = 0;
         $execResult = exec($versionCommand, $execOutput, $execResultCode);
-        if ($execResult === false) {
+        if (($execResult === false) or ($execResultCode != 0)) {
             echo $warnTag . 'Language is unavailable: ' . $config[$language]['versionCommand'] . PHP_EOL;
             ++$languageStats[$language]['countSkippedLanguages'];
             continue;
@@ -1023,7 +1024,7 @@ foreach ($config['languages'] as $language) {
                 $execOutput = [];
                 $execResultCode = 0;
                 $execResult = exec($buildCommand, $execOutput, $execResultCode);
-                if ($execResult === false) {
+                if (($execResult === false) or ($execResultCode != 0)) {
                     $buildSuccessful = false;
                     echo $warnTag . 'Build unsuccessful for source: ' . $sourceFullFileName . PHP_EOL;
                 }
@@ -1121,7 +1122,13 @@ foreach ($config['languages'] as $language) {
                 if (!isset($puzzleStats[$puzzleName])) {
                     $puzzleStats[$puzzleName] = $zeroPuzzleStat;
                 }
-                if ($config['dry-run'] or !$buildSuccessful) {
+                if ($config['dry-run']) {
+                    continue;
+                }
+                if (!$buildSuccessful) {
+                    $testsFailed[] = $stringIdxTest;
+                    ++$languageStats[$language]['countFailedTests'];
+                    $puzzleStats[$puzzleName]['failedTests'] |= (1 << $idxTest);
                     continue;
                 }
                 if (!$runOnlyCurrentPuzzle) {
@@ -1148,8 +1155,11 @@ foreach ($config['languages'] as $language) {
                 $execOutput = [];
                 $execResultCode = 0;
                 $execResult = exec($runCommand, $execOutput, $execResultCode);
-                if ($execResult === false) {
+                if (($execResult === false) or ($execResultCode != 0)) {
                     echo $errorTag . 'Execution unsuccessful for source: ' . $sourceFullFileName . PHP_EOL;
+                    $testsFailed[] = $stringIdxTest;
+                    ++$languageStats[$language]['countFailedTests'];
+                    $puzzleStats[$puzzleName]['failedTests'] |= (1 << $idxTest);
                     continue;
                 }
                 // --------------------------------------------------------------------

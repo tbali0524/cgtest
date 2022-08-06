@@ -881,11 +881,10 @@ return [
                 'hard_cg_power-of-thor-episode-2',
                 'hard_cg_skynet-revolution-episode-2',
                 'hard_cg_the-bridge-episode-2',
-            // TODO add input data
-                // 'hard_cg_the-labyrinth',
-                // 'hard_cg_the-last-crusade-episode-2',
-                // 'hard_cg_there-is-no-spoon-episode-2',
-                // 'hard_cg_vox-codei-episode-1',
+                'hard_cg_the-labyrinth',
+                // 'hard_cg_the-last-crusade-episode-2',    // TODO fix
+                'hard_cg_there-is-no-spoon-episode-2',
+                'hard_cg_vox-codei-episode-1',
             ],
             'puzzle/cg/expert/' => [
             // TODO add input data
