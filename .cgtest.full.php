@@ -798,7 +798,7 @@ return [
                 'expert_com_chemical-equation-balancing',
                 'expert_com_codindice',
                 'expert_com_completed-mahjong-hands',
-                // 'expert_com_cross-the-lines',
+                'expert_com_cross-the-lines',
                 'expert_com_cubax-folding',
                 'expert_com_dungeon-designer',
                 'expert_com_fill-the-square',
@@ -809,12 +809,12 @@ return [
                 'expert_com_hitori-solver',
                 'expert_com_hourglass',
                 'expert_com_king-of-diamonds',              // removed puzzle
-                // 'expert_com_mathematics-for-big-ears',
+                'expert_com_mathematics-for-big-ears',
                 'expert_com_minimax-simple-example',
-                // 'expert_com_nurikabe',
+                'expert_com_nurikabe',
                 'expert_com_prime-fractals-in-pascals-triangle',
                 'expert_com_prime-transformations',
-                // 'expert_com_recurring-decimals',         // also in global section
+                'expert_com_recurring-decimals',            // also in global section
                 'expert_com_skylines',
                 'expert_com_sliding-puzzle',
                 'expert_com_spy-the-spies',
@@ -824,7 +824,7 @@ return [
                 'expert_com_the-lucky-number',
                 'expert_com_the-two-piles-difference',
                 'expert_com_the-water-jug-riddle-from-die-hard-3',
-                // 'expert_com_ticket-to-ride-europe',
+                'expert_com_ticket-to-ride-europe',
                 'expert_com_tiling-squares',
                 'expert_com_unflood-the-world',
                 'expert_com_unfolding-paper',
@@ -845,16 +845,23 @@ return [
         //      Note: the puzzle solution code must exit after reading turn #0 data to avoid infinite loop!
         'runOnlyPuzzles' => [
             // 'codegolf/' => [
-            //     'codegolf-dont-panic',
-            //     'codegolf-power-of-thor',
+            //     'codegolf-dont-panic',                   // also in global section
+            //     'codegolf-power-of-thor',                // also in global section
             // ],
             'optim/cg/' => [
                 'optim_cg_a-star-craft',
                 'optim_cg_code-of-the-rings',
+                // 'optim_cg_code-vs-zombies',
+                // 'optim_cg_codingame-sponsored',
+                // 'optim_cg_mars-lander',
             ],
             'optim/community/' => [
                 'optim_com_bender---episode-4',
+                // 'bulls-and-cows-2',
                 'optim_com_cgfunge-prime',
+                // 'number-shifting',
+                // 'samegame',
+                // 'search-race',
                 'optim_com_travelling-salesman',
             ],
             'optim/community/2048/' => [
@@ -882,47 +889,42 @@ return [
                 'hard_cg_skynet-revolution-episode-2',
                 'hard_cg_the-bridge-episode-2',
                 'hard_cg_the-labyrinth',
-                // 'hard_cg_the-last-crusade-episode-2',    // TODO fix
+                'hard_cg_the-last-crusade-episode-2',
                 'hard_cg_there-is-no-spoon-episode-2',
                 'hard_cg_vox-codei-episode-1',
             ],
             'puzzle/cg/expert/' => [
-            // TODO add input data
-                // 'expert_cg_mars-lander-episode-3',
-                // 'expert_cg_shadows-of-the-knight-episode-2',
-                // 'expert_cg_vox-codei-episode-2',
-                // 'expert_cg_the-last-crusade-episode-3',
+                'expert_cg_mars-lander-episode-3',
+                'expert_cg_shadows-of-the-knight-episode-2',
+                'expert_cg_the-last-crusade-episode-3',
+                'expert_cg_vox-codei-episode-2',
             ],
             'puzzle/community/easy/' => [
-            // TODO add input data
-                // 'easy_com_catching-up',
+                'easy_com_catching-up',
             ],
             'puzzle/community/medium/' => [
-            // TODO add input data
-                // 'medium_com_can-you-save-the-forest---episode-1',
-                // 'medium_com_cooperative-mate-with-rook',
-                // 'medium_com_escaping-the-cat',
-                // 'medium_com_find-the-winning-strategy',
-                // 'medium_com_forest-fire',
-                // 'medium_com_minesweeper-1',
+                'medium_com_can-you-save-the-forest---episode-1',
+                'medium_com_cooperative-mate-with-rook',
+                'medium_com_escaping-the-cat',
+                'medium_com_find-the-winning-strategy',
+                'medium_com_forest-fire',
+                'medium_com_minesweeper-1',
                 'medium_com_rush-hour',
             ],
             'puzzle/community/hard/' => [
-            // TODO add input data
-                // 'hard_com_11-puzzle',
-                // 'hard_com_adversarial-mate-with-rook',
-                // 'hard_com_binary-extension',
-                // 'hard_com_blockout',
-                // 'hard_com_can-you-save-the-forest---episode-2',
-                // 'hard_com_freecell',
-                // 'hard_com_jump-point---search-preprocessing',
-                // 'hard_com_jump-point---search-runtime',
+                'hard_com_11-puzzle',
+                'hard_com_adversarial-mate-with-rook',
+                'hard_com_binary-extension',
+                'hard_com_blockout',
+                'hard_com_can-you-save-the-forest---episode-2',
+                'hard_com_freecell',
+                'hard_com_jump-point-search---preprocessing',
+                'hard_com_jump-point-search---runtime',
                 'hard_com_sokoban',
             ],
             'puzzle/community/expert/' => [
-            // TODO add input data
-                // 'expert_com_breach',
-                // 'expert_com_space-maze',
+                'expert_com_breach',
+                'expert_com_space-maze',
             ],
         ],
         // == Exclude these puzzles from testing in php, if the required php extension is not available:
@@ -948,7 +950,7 @@ return [
     // Additional languages, unsupported on CodinGame:
     'fortran' => [
         'excludePuzzles' => [
-            // exclude puzzles from the global 'puzzles' and 'runOnlyPuzzles' lists, except 'medium_com_rubik'
+            // exclude ALL puzzles from the global 'puzzles' and 'runOnlyPuzzles' lists, except 'medium_com_rubik'
             'codegolf_chuck-norris',
             'codegolf_temperatures',
             'tutorial_onboarding',
