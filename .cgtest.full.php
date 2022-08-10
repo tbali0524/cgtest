@@ -418,6 +418,7 @@ return [
                 'easy_com_treasure-hunt',
                 'easy_com_tree-paths',
                 'easy_com_tricky-number-verifier',
+                'easy_com_ulam-spiral',
                 'easy_com_unique-prefixes',
                 // 'easy_com_unit-fractions',               // also in global section
                 'easy_com_van-ecks-sequence',
@@ -851,17 +852,17 @@ return [
             'optim/cg/' => [
                 'optim_cg_a-star-craft',
                 'optim_cg_code-of-the-rings',
-                // 'optim_cg_code-vs-zombies',
-                // 'optim_cg_codingame-sponsored',
-                // 'optim_cg_mars-lander',
+                'optim_cg_code-vs-zombies',
+                'optim_cg_codingame-sponsored',
+                'optim_cg_mars-lander',
             ],
             'optim/community/' => [
                 'optim_com_bender---episode-4',
-                // 'bulls-and-cows-2',
+                'optim_com_bulls-and-cows-2',
                 'optim_com_cgfunge-prime',
-                // 'number-shifting',
-                // 'samegame',
-                // 'search-race',
+                'optim_com_number-shifting',
+                'optim_com_samegame',
+                'optim_com_search-race',
                 'optim_com_travelling-salesman',
             ],
             'optim/community/2048/' => [

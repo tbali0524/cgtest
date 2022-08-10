@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `javascript` and `typescript` support added.
 - global `'runOnlyPuzzles'` option added to config file format.
-- More partial test cases (input files with _turn #0_ data) added.
+- Partial test cases (input files with _turn #0_ data) for all multi-turn or multi-solution CG puzzles added.
 
 ### Changed
 

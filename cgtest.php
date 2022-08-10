@@ -1164,7 +1164,7 @@ foreach ($config['languages'] as $language) {
                 $execOutput = [];
                 $execResultCode = 0;
                 $execResult = exec($runCommand, $execOutput, $execResultCode);
-                if (($execResult === false) or ($execResultCode != 0)) {
+                if (($execResult === false) or (!is_null($execResultCode) and ($execResultCode != 0))) {
                     echo $errorTag . 'Execution unsuccessful for source: ' . $sourceFullFileName . PHP_EOL;
                     $testsFailed[] = $stringIdxTest;
                     ++$languageStats[$language]['countFailedTests'];
