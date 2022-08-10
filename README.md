@@ -130,7 +130,7 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
 ## Restrictions
 
 * _CGTest_ supports only solo I/O puzzles. For any test case, the input must be a fixed file (so a given line of input cannot depend on the output previously provided by the code). This means that some solo and optim puzzles cannot be tested. Bot programming is also out of question.
-    * You can still run these puzzles (without evaluating the test result) based on the _turn #0_ input data, however your code must be modified for offline use to avoid running out of input.
+    * You can still run these puzzles (without evaluating the test result) based on the _turn #0_ input data, however, your code must be modified for offline use to avoid running out of input or being in an endless loop.
 
 * CGTest is a single thread application, so tests are running in sequence, which can be rather slow if you have lots of test cases. If you start CGTest multiple times concurrently, use separate configuration files, with different output directory settings.
 

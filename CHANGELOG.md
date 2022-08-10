@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Nothing yet
+
+### Changed
+
+- Nothing yet
+
+### Fixed
+
+- Nothing yet
+
+## [v1.4.0](https://github.com/tbali0524/cgtest/releases/v1.4.0) - 2022-08-10
+
+### Added
+
 - `javascript` and `typescript` support added.
 - global `'runOnlyPuzzles'` option added to config file format.
 - Partial test cases (input files with _turn #0_ data) for all multi-turn or multi-solution CG puzzles added.

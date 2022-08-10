@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.4.0-dev';
+$version = 'v1.4.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -415,12 +415,13 @@ $booleanConfigKeys = ['dry-run', 'run-only', 'ansi', 'verbose', 'stats', 'lang-v
 $nonEmptyStringConfigKeys = ['inputPattern', 'expectedPattern', 'outputPattern'];
 $optionalStringConfigKeys = ['inputPath', 'expectedPath', 'outputPath', 'buildPath'];
 $arrayConfigKeys = ['languages', 'puzzles', 'runOnlyPuzzles'];
+$languageStatsSpecKeys = ['totals', 'unique'];
 $reservedConfigKeys = array_merge(
     $booleanConfigKeys,
     $nonEmptyStringConfigKeys,
     $optionalStringConfigKeys,
     $arrayConfigKeys,
-    ['totals', 'unique'],
+    $languageStatsSpecKeys,
 );
 $languageNonEmptyStringConfigKeys = ['sourceExtension', 'runCommand'];
 $languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionCommand', 'buildCommand'];
@@ -896,6 +897,7 @@ foreach ($config['languages'] as $language) {
                 $sourceFullFileName = $config[$language]['sourcePath'] . $sourceFileName;
                 $directoryStats[$config[$language]['sourcePath']] = 1;
             }
+            ++$languageStats[$language]['countFiles'];
             if (!file_exists($sourceFullFileName)) {
                 if (!$config['clean']) {
                     echo $warnTag . 'Cannot find sourcefile: ' . $sourceFullFileName . PHP_EOL;
@@ -907,7 +909,6 @@ foreach ($config['languages'] as $language) {
                 $puzzleStats[$puzzleName]['countSkippedFiles'] = 1;
                 continue;
             }
-            ++$languageStats[$language]['countFiles'];
             if ($runOnlyCurrentPuzzle) {
                 ++$languageStats[$language]['countRunOnlyFiles'];
                 if (!isset($puzzleStats[$puzzleName])) {
@@ -1253,7 +1254,10 @@ foreach ($config['languages'] as $language) {
 }
 // --------------------------------------------------------------------
 // process stats per unique puzzle
-foreach ($languageStats as $stat) {
+foreach ($languageStats as $language => $stat) {
+    if (in_array($language, $languageStatsSpecKeys, true)) {
+        continue;
+    }
     foreach ($stat as $name => $count) {
         if ($name == 'startTime') {
             continue;
