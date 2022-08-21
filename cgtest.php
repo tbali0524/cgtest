@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.4.0';
+$version = 'v1.4.1-dev';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -114,7 +114,8 @@ $defaultConfig = [
         'sourceExtension' => '.c',
         'codinGameVersion' => 'gcc 11.2.0-20',
         'versionCommand' => 'gcc --version',
-        'buildCommand' => 'gcc %s -o %b%p_%l.exe -lm',
+        // note: omitting -ldl -lcrypt from CG settings
+        'buildCommand' => 'gcc -lm -lpthread -o %b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
@@ -136,7 +137,8 @@ $defaultConfig = [
         'sourceExtension' => '.cpp',
         'codinGameVersion' => 'g++ 11.2.0-20',
         'versionCommand' => 'g++ --version',
-        'buildCommand' => 'g++ -o %b%p_%l.exe -x c++ %s',
+        // note: omitting -ldl -lcrypt from CG settings
+        'buildCommand' => 'g++ -lm -lpthread -m64 -std=c++17 -x c++ -o %b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],

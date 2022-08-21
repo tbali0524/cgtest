@@ -930,22 +930,22 @@ return [
         ],
         // == Exclude these puzzles from testing in php, if the required php extension is not available:
         'excludePuzzles' => array_merge(
-            (extension_loaded('bcmath') ? [] : [
+            !extension_loaded('bcmath') ? [
                 'medium_com_christmas-tree',
                 'medium_com_gravity-centrifuge-tuning',
                 'medium_com_oneway-city',
                 'medium_com_polydivisible-number',
-            ]),
-            (extension_loaded('mbstring') ? [] : [
+            ] : [],
+            !extension_loaded('mbstring') ? [
                 'easy_com_frame-the-picture',
                 'medium_com_ascii-cube',
-            ]),
-            (extension_loaded('ctype') ? [] : [
+            ] : [],
+            !extension_loaded('ctype') ? [
                 'easy_com_sentence-tokenising',
                 'hard_com_derivative-time---part2',
                 'medium_com_lost-astronaut',
                 'medium_com_sticky-keyboard',
-            ]),
+            ] : [],
         ),
     ],
     // Additional languages, unsupported on CodinGame:
