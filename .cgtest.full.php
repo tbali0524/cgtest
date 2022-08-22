@@ -484,6 +484,7 @@ return [
                 'medium_com_condition-overshadowing',
                 'medium_com_connect-the-hyper-dots',
                 'medium_com_consecutive-balanced-substrings',
+                'medium_com_constrained-latin-squares',
                 'medium_com_continued-fractions',
                 'medium_com_cooking-passion',
                 'medium_com_counting-squares-on-pegs',
@@ -992,3 +993,4 @@ return [
         ],
     ],
 ];
+// Note: last puzzle added on 22.08.22: 'medium_com_constrained-latin-squares'
