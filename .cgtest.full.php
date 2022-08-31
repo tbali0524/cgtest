@@ -526,6 +526,7 @@ return [
                 'medium_com_format-string-validation',
                 'medium_com_fractal-image-recognition',
                 'medium_com_frobenius-coin-puzzle',         // removed puzzle
+                'medium_com_frog-exchange',
                 'medium_com_fun-with-set-theory',
                 'medium_com_futoshiki-solver',
                 'medium_com_game-of-life',
@@ -576,6 +577,7 @@ return [
                 'medium_com_minesweeper',
                 // 'medium_com_minimal-number-of-swaps',    // also in global section
                 'medium_com_minimax-exercise',
+                'medium_com_mitosis-mayhem',
                 'medium_com_monthly-system',
                 'medium_com_near-palindromes',
                 'medium_com_next-car-license-plate',
@@ -814,6 +816,7 @@ return [
                 'expert_com_mathematics-for-big-ears',
                 'expert_com_minimax-simple-example',
                 'expert_com_nurikabe',
+                'expert_com_running-up-that-hill',
                 'expert_com_prime-fractals-in-pascals-triangle',
                 'expert_com_prime-transformations',
                 'expert_com_recurring-decimals',            // also in global section
@@ -993,4 +996,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.08.22: 'medium_com_constrained-latin-squares'
+// Note: last puzzle added on 22.08.31: 'medium_com_mitosis-mayhem'
