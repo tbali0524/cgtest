@@ -426,6 +426,7 @@ return [
                 'easy_com_whats-so-complex-about-mandelbrot',
                 'easy_com_wheres-wally',
                 'easy_com_winning-parabola',                // removed puzzle
+                'easy_com_ww2-mortar-warfare',
                 'easy_com_xml-mdf-2016',
                 'easy_com_zhiwei-sun-squares',
             ],
@@ -996,4 +997,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.08.31: 'medium_com_mitosis-mayhem'
+// Note: last puzzle added on 22.09.01: 'easy_com_ww2-mortar-warfare'
