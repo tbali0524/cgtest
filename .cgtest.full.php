@@ -283,6 +283,7 @@ return [
                 'easy_com_benfords-law',
                 'easy_com_bet-payout-calculator',           // removed puzzle
                 'easy_com_binary-image',
+                'easy_com_blackjack-solver',
                 'easy_com_blowing-fuse',
                 'easy_com_body-weight-is-a-girls-secret',
                 'easy_com_brackets-extreme-ed',
@@ -390,6 +391,7 @@ return [
                 'easy_com_self-driving-car-testing',
                 // 'easy_com_sentence-tokenising',          // removed puzzle, unavailable
                 'easy_com_shadow-casting',
+                'easy_com_should-bakers-be-frugal',
                 'easy_com_simple-ai-duels',
                 'easy_com_simple-auto-scaling',
                 'easy_com_simple-awale',
@@ -572,8 +574,10 @@ return [
                 'medium_com_magic-square',
                 'medium_com_magic-stones',
                 'medium_com_maximum-sub-sequence',
+                'medium_com_maze-w-teleporters-and-jumps',
                 'medium_com_maze',
                 'medium_com_mcxxxx-microcontroller-simulation',
+                'medium_com_merlins-magic-square',
                 'medium_com_micro-assembly',
                 'medium_com_minesweeper',
                 // 'medium_com_minimal-number-of-swaps',    // also in global section
@@ -696,6 +700,7 @@ return [
                 'hard_com_closest-number',
                 'hard_com_cloudy-weather',
                 'hard_com_code-your-own-automaton2000-step-1',
+                'hard_com_conditional-probabilities',
                 'hard_com_connect-four',
                 'hard_com_cryptarithm',
                 'hard_com_dawg',
@@ -997,4 +1002,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.09.01: 'easy_com_ww2-mortar-warfare'
+// Note: last puzzle added on 22.09.16: 'medium_com_merlins-magic-square',
