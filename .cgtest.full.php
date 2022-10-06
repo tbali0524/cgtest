@@ -344,6 +344,7 @@ return [
                 'easy_com_largest-number',
                 'easy_com_logically-reasonable-inequalities',
                 'easy_com_logic-gates',
+                'easy_com_longest-coast',
                 'easy_com_longest-road',
                 'easy_com_low-resolution-whats-the-shape',
                 'easy_com_lumen',
@@ -398,6 +399,7 @@ return [
                 'easy_com_simple-load-balancing',
                 // 'easy_com_smooth',                       // also in global section
                 'easy_com_snail-run',
+                'easy_com_snake-sort-2d',
                 'easy_com_someones-acting-sus----',
                 'easy_com_stall-tilt',
                 'easy_com_substitution-encoding',
@@ -1002,4 +1004,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.09.16: 'medium_com_merlins-magic-square',
+// Note: last puzzle added on 22.10.06: 'easy_com_snake-sort-2d',
