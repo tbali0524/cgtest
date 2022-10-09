@@ -268,6 +268,7 @@ return [
                 'easy_com_24-game',
                 'easy_com_2nd-degree-polynomial-simple-analysis',
                 'easy_com_7-segment-scanner',
+                'easy_com_abcdefghijklmnopqrstuvwxyz',
                 'easy_com_add-em-up',
                 'easy_com_annihilation',
                 'easy_com_are-the-clumps-normal',
@@ -284,6 +285,7 @@ return [
                 'easy_com_bet-payout-calculator',           // removed puzzle
                 'easy_com_binary-image',
                 'easy_com_blackjack-solver',
+                'easy_com_blending-colors',
                 'easy_com_blowing-fuse',
                 'easy_com_body-weight-is-a-girls-secret',
                 'easy_com_brackets-extreme-ed',
@@ -351,6 +353,7 @@ return [
                 'easy_com_magic-string',
                 'easy_com_markov-text-generation',
                 'easy_com_master-of-mayhem',
+                'easy_com_match-dna-sequence',
                 'easy_com_may-the-triforce-be-with-you',
                 'easy_com_metric-units',
                 'easy_com_minesweeper-level-generator',
@@ -547,6 +550,7 @@ return [
                 'medium_com_hacking-at-robbercity',
                 // 'medium_com_halting-sequences',          // also in global section
                 'medium_com_hexagonal-maze',
+                'medium_com_hexagonal-maze---part2',
                 'medium_com_hidden-word',
                 'medium_com_holey-times',
                 'medium_com_horse-hyperracing-hyperduals',
@@ -1004,4 +1008,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.10.06: 'easy_com_snake-sort-2d',
+// Note: last puzzle added on 22.10.09: 'medium_com_hexagonal-maze---part2',
