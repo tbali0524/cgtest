@@ -295,6 +295,7 @@ return [
                 'easy_com_by-train-or-by-car',
                 'easy_com_caesar-is-the-chief',
                 'easy_com_calculator',
+                'easy_com_character-replacement-problem',
                 'easy_com_code-breaker-puzzle',
                 'easy_com_container-terminal',
                 'easy_com_cosmic-love',
@@ -354,6 +355,7 @@ return [
                 'easy_com_markov-text-generation',
                 'easy_com_master-of-mayhem',
                 'easy_com_match-dna-sequence',
+                'easy_com_max-area',
                 'easy_com_may-the-triforce-be-with-you',
                 'easy_com_metric-units',
                 'easy_com_minesweeper-level-generator',
@@ -1008,4 +1010,5 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.10.09: 'medium_com_hexagonal-maze---part2',
+// Note: last puzzle added on 22.10.16: 'easy_com_character-replacement-problem',
+
