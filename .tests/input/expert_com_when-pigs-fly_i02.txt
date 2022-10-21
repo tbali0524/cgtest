@@ -1,0 +1,5 @@
+4
+PIGS have FEET
+PIGS are ANIMALS
+ANIMALS with FEET that can RUN can FLY
+ANIMALS can RUN

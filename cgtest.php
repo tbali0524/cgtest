@@ -122,7 +122,7 @@ $defaultConfig = [
     'c#' => [
         'sourcePath' => 'c#/',
         'sourceExtension' => '.cs',
-        'codinGameVersion' => '.NET Core 3.1.201',
+        'codinGameVersion' => '.NET 6.0.401',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => 'dotnet publish %b%p' . $csprojExtension
             . ' -o %b --nologo --use-current-runtime --sc -v:q',
@@ -181,7 +181,7 @@ $defaultConfig = [
     'f#' => [
         'sourcePath' => 'f#/',
         'sourceExtension' => '.fsx',
-        'codinGameVersion' => '.NET Core 3.1.201',
+        'codinGameVersion' => '.NET 6.0.401',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => '',
         'runCommand' => 'dotnet fsi %s',
@@ -367,7 +367,7 @@ $defaultConfig = [
     'vb.net' => [
         'sourcePath' => 'vb.net/',
         'sourceExtension' => '.vb',
-        'codinGameVersion' => '.NET Core 3.1.201',
+        'codinGameVersion' => '.NET 6.0.401',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => 'dotnet publish %b' . $vbProjectName . $vbprojExtension
             . ' -o %b --nologo --use-current-runtime --sc -v:q', // -v:q

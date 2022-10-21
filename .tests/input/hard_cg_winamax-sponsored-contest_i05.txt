@@ -1,0 +1,9 @@
+8 8
+.XXX.5X.
+X.4.X..X
+X4..X3.X
+X...X.X.
+.X.X.H.X
+X.HX...X
+X..X.H.X
+.XH.XXX.
