@@ -1,0 +1,13 @@
+15 3 8
+4 3 4 1 0 0 2 1 4
+2 Lisboa Cadiz
+5 Rostov Erzurum
+8 Barcelona Munchen
+2 0 Gray Sochi Rostov
+3 0 Red Sochi Erzurum
+2 0 Blue Cadiz Lisboa
+4 0 Gray Barcelona Marseille
+2 0 Pink Marseille Zurich
+2 0 Yellow Zurich Munchen
+6 0 Gray Budapest Kyiv
+1 0 White Wien Budapest

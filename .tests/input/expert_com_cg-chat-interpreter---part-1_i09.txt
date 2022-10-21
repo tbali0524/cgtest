@@ -1,0 +1,35 @@
+1 1
+flashlight
+squeegee
+31
+<SuperPinkMunk> *Rekkur*, your like a big flaming squeegee!
+<__imnothere>     SPM -> R (immediate)
+<__imnothere>     "a big flaming squeegee" -> -4
+<__imnothere>     "your -4" -> R -> [ -4 ]
+<SuperPinkMunk> you listen to me!
+<__imnothere>     "listen" -> duplicate top of R
+<__imnothere>     R -> [ -4 -4 ]
+<SuperPinkMunk> your a bright, shining flashlight in the darkness.
+<__imnothere>     "a bright, shining flashlight" -> 4
+<__imnothere>     "your 4" -> R -> [ -4 -4 4 ]
+<SuperPinkMunk> don't flip out on me.
+<__imnothere>     "flip" -> exchange top 2 of R
+<__imnothere>     R -> [ -4 4 -4 ]
+<SuperPinkMunk> your a squeegee and a flashlight too.
+<__imnothere>     "a squeegee" -> -1
+<__imnothere>     "a flashlight" -> 1
+<__imnothere>     "-1 and 1 too" -> 0
+<__imnothere>     "your 0"
+<__imnothere>     R -> [ -4 4 -4 0 ]
+<SuperPinkMunk> don't forget it.
+<__imnothere>     "forget" -> pop top of R
+<__imnothere>     R -> [ -4 4 -4 ]
+<SuperPinkMunk> I'm telling you.
+<__imnothere>     "telling" -> print "-4"
+<__imnothere>     R -> [ -4 4 ]
+<SuperPinkMunk> That's what I'll tell you.
+<__imnothere>     "tell" -> print "4"
+<__imnothere>     R -> [ -4 ]
+<SuperPinkMunk> I'm telling you.
+<__imnothere>     "telling" -> print "-4"
+<__imnothere>     R -> [ ]

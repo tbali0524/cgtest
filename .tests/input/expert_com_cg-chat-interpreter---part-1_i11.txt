@@ -1,0 +1,96 @@
+5 2
+batman late times filth coder
+dweeb troll
+92
+<CaptainCocktail_61ac> *FlamingImp_5f5d*
+<pray_or_run>     CC -> FI
+<CaptainCocktail_61ac> i am batman.
+<CaptainCocktail_61ac> your a pathetic imitation of batman, and a dweeb too, *FlamingImp_5f5d*.
+<pray_or_run>     "a pathetic imitation of batman" -> 8
+<pray_or_run>     "a dweeb" -> -1
+<pray_or_run>     "8 and -1 too" -> 8 + -1 = 7
+<pray_or_run>     FI -> [ 7 ]
+<FlamingImp_5f5d> Hey *TheRustyLady_89e6*!
+<pray_or_run>     FI -> TRL
+<FlamingImp_5f5d> You're actually a teeny tiny bit late, but not a lot late though.
+<pray_or_run>     "a teeny tiny bit late" -> 8
+<pray_or_run>     "a lot late" -> 2
+<pray_or_run>     "8 but not 2 though" -> 8 - 2 = 6
+<pray_or_run>     TRL -> [ 6 ]
+<TheRustyLady_89e6> Late for what?
+<CaptainCocktail_61ac> *TheRustyLady_89e6* your actually you squared!
+<pray_or_run>     CC -> TRL
+<pray_or_run>     "you" -> 6 (top of TRL)
+<pray_or_run>     "6 squared" -> 6 ^ 2 = 36
+<pray_or_run>     TRL -> [ 6 36 ]
+<TheRustyLady_89e6> What does that even mean, *CaptainCocktail_61ac*??
+<pray_or_run>     TRL -> CC
+<TheRustyLady_89e6> I thought you're a beginner, just like me and *FlamingImp_5f5d* too?
+<pray_or_run>     "a beginner" -> beginner is neither _good_ nor _bad
+<pray_or_run>     so it's not a _constant_
+<pray_or_run>     "me and FI too" -> 36 + 7 = 43
+<pray_or_run>     CC -> [ 43 ]
+<FlamingImp_5f5d> Yeah, *CaptainCocktail_61ac*!
+<pray_or_run>     FI -> CC
+<FlamingImp_5f5d> Tell us!
+<pray_or_run>     print "43"
+<pray_or_run>     CC -> [ ]
+<FlamingImp_5f5d> you're not as nice as me, and an immature troll too!
+<pray_or_run>     "me and an immature troll too" -> 7 + -2 = 5
+<pray_or_run>     CC -> [ 5 ]
+<TheRustyLady_89e6> YOU'RE *CaptainCocktail_61ac* squared! :-P
+<pray_or_run>     "CC squared" -> 5 ^ 2 = 25
+<pray_or_run>     CC -> [ 5 25 ]
+<TheRustyLady_89e6> whatever that means...
+<TheRustyLady_89e6> i'm ready to listen
+<pray_or_run>     "listen" -> dup
+<pray_or_run>     CC -> [ 5 25 25 ]
+<TheRustyLady_89e6> please tell us!
+<pray_or_run>     print "25"
+<pray_or_run>     CC -> [ 5 25 ]
+<CaptainCocktail_61ac> *FlamingImp_5f5d*, UR JUST LIKE ME
+<pray_or_run>     CC -> FI
+<pray_or_run>     "UR ME" -> 25
+<pray_or_run>     FI -> [ 7 25 ]
+<CaptainCocktail_61ac> except ur me by a hundred thousand million times multiplied.
+<pray_or_run>     "me by a hundred thousand million times multiplied" -> 25 x 8 = 200
+<pray_or_run>     FI -> [ 7 25 200 ]
+<TheRustyLady_89e6> Ha!
+<TheRustyLady_89e6> *FlamingImp_5f5d*, listen to that!
+<pray_or_run>     FI -> [ 7 25 200 200 ]
+<TheRustyLady_89e6> Boy did he tell you, *FlamingImp_5f5d*!
+<pray_or_run>     print "200"
+<pray_or_run>     FI -> [ 7 25 200 ]
+<CaptainCocktail_61ac> *TheRustyLady_89e6* YOU listen to ME!
+<pray_or_run>     CC -> TRL
+<pray_or_run>     TRL -> [ 6 36 36 ]
+<CaptainCocktail_61ac> Your code is like a steaming, stinking, putrid, pile of filth!
+<pray_or_run>     "a steaming stinking putrid pile of filth" -> 32
+<pray_or_run>     TRL -> [ 6 36 36 32 ]
+<CaptainCocktail_61ac> *FlamingImp_5f5d* ur code is just like *TheRustyLady_89e6*
+<pray_or_run>     "ur TRL" -> 32
+<pray_or_run>     FI -> [ 7 25 200 32 ]
+<CaptainCocktail_61ac> u listen
+<pray_or_run>     FI -> [ 7 25 200 32 32 ]
+<CaptainCocktail_61ac> Boy did I tell you!
+<pray_or_run>     print "32"
+<pray_or_run>     FI -> [ 7 25 200 32 ]
+<CaptainCocktail_61ac> *TheRustyLady_89e6* dont you forget it
+<pray_or_run>     CC -> TRL
+<CaptainCocktail_61ac> your you by a truckloadof filth multiplied, and a spoonfulof filth too
+<pray_or_run>     "you by a truckloadof filth multiplied" -> 36 x 2 = 72
+<pray_or_run>     "72 and a spoonfulof filth too" -> 72 + 2 = 74
+<pray_or_run>     TRL -> [ 6 36 36 74 ]
+<CaptainCocktail_61ac> tell me what you think of that!
+<pray_or_run>     print "74"
+<pray_or_run>     TRL -> [ 6 36 36 ]
+<CaptainCocktail_61ac> *TheRustyLady_89e6*, ur as bad as *FlamingImp_5f5d*
+<pray_or_run>     TRL -> [ 6 36 36 32 ]
+<FlamingImp_5f5d> Ignore that troll, *TheRustyLady_89e6*.
+<pray_or_run>     FI -> TRL
+<FlamingImp_5f5d> you're perfectly you and a very well respected good coder too.
+<pray_or_run>     "you and a very well respected good coder too" -> 32 + 16 = 48
+<pray_or_run>     TRL -> [ 6 36 36 32 48 ]
+<FlamingImp_5f5d> That's what i will tell you.
+<pray_or_run>     print "48"
+<pray_or_run>     TRL -> [ 6 36 36 32 ]

@@ -1,0 +1,42 @@
+1 0
+coder
+
+38
+<[CG]JustAxe> hi *TearyMoon*
+<__observer>     [CG]JA _context_ -> TM
+<[CG]JustAxe> what you doin?
+<TearyMoon> Hi *[CG]JustAxe*
+<__observer>     TM _context_ -> [CG]JA
+<TearyMoon> Working on csb
+<[CG]JustAxe> dude, ur a real good coder
+<__observer>     "a real good coder" -> 4
+<__observer>     "ur" -> push
+<__observer>     TM stack: [ 4 ]
+<TearyMoon> Thanks, man!
+<TearyMoon> You too!
+<TearyMoon> You're a great coder, yourself
+<__observer>     "a great coder" -> 2
+<__observer>     "youre" -> push
+<__observer>     [CG]JA stack: [ 2 ]
+<[CG]JustAxe> you hear that, *SoftCounterKitcheh*?
+<__observer>     [CG]JA _context_ -> SCK
+<TearyMoon> *SoftCounterKitcheh*, you're a really excellent coder too!
+<__observer>     since the reference to SCK is
+<__observer>     at the beginning of the line,
+<__observer>     the context is effective
+<__observer>     immediately for this statement
+<__observer>     SCK stack: [ 4 ]
+<SoftCounterKitcheh> Awe, that's so sweet, *TearyMoon*!
+<__observer>     SCK _context_ -> TM
+<SoftCounterKitcheh> Tell me more!
+<__observer>     "tell" -> print int
+<__observer>     print "4"
+<__observer>     TM stack: [ ]
+<SoftCounterKitcheh> *[CG]JustAxe*, you going to tell me something nice too?
+<__observer>     since the reference to [CG]JA is
+<__observer>     at the beginning of the line,
+<__observer>     the context is effective
+<__observer>     immediately for this statement
+<__observer>     "tell" -> print int
+<__observer>     print "2"
+<__observer>     [CG]JA stack: [ ]

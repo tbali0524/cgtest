@@ -1,0 +1,5 @@
+6 0 3
+6 0 0 0 0 0 0 0 0
+4 0 Red Manchester London
+3 0 Red Dieppe Paris
+3 0 Red Paris Luton

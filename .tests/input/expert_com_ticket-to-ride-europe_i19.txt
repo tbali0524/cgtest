@@ -1,0 +1,7 @@
+4 2 3
+2 1 0 0 0 0 0 0 1
+15 Dieppe London
+5 London Brighton
+2 0 Gray Dieppe London
+2 0 Red London Brighton
+1 0 Yellow Orleans Rouen

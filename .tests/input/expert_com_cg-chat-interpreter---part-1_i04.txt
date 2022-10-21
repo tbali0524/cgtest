@@ -1,0 +1,20 @@
+1 0
+meme
+
+16
+<RickyMoppet> You here, *JayBeEmmy*?
+<__lurker>     RM -> JBE
+<JayBeEmmy> I'm here, *RickyMoppet*.
+<__lurker>     JBE -> RM
+<RickyMoppet> Your nick is reminiscent of an old, boring, confusing meme, but not a bad meme, though.
+<__lurker>     "an old boring confusing meme" -> 2 x 2 x 2 x 1 = 8
+<__lurker>     "a bad meme" -> 2 x 1 = 2
+<__lurker>     the keywords "but not" and "though" indicate subtraction
+<__lurker>     "8 but not 2 though" -> 8 - 2 = 6
+<__lurker>     "your {extra words ignored} 6" -> push 6
+<__lurker>     JBE -> [ 6 ]
+<RickyMoppet> Tell me what you think of that?
+<__lurker>     "tell" -> print
+<__lurker>     print "6"
+<__lurker>     JBE -> [ ]
+<JayBeEmmy> I think I'm confused.

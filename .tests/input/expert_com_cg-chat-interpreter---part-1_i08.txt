@@ -1,0 +1,33 @@
+0 2
+
+complainer jerk
+29
+<RoyL> *NoMan*
+<__harvey>     RL -> NM
+<NoMan> What's up, *RoyL*?
+<__harvey>     NM -> RL
+<RoyL> I was just talking with *[CG]VonFlagPole*
+<__harvey>     RL -> [CG]VFP
+<RoyL> and he said you're an annoying complainer.
+<__harvey>     "an annoying complainer" -> -2
+<__harvey>     "youre -2" -> [CG]VFP -> [ -2 ]
+<NoMan> Dude, ur more of a complainer than I am!
+<__harvey>     "a complainer" -> -1
+<__harvey>     "ur ... -1" -> RL -> [ -1 ]
+<[CG]VonFlagPole> *NoMan*, youre at least as bad as *RoyL*, but not a complete jerk, though.
+<__harvey>     [CG]VFP -> NM (immediate)
+<__harvey>     ref to nick "RoyL" -> -1 (no context change)
+<__harvey>     "a complete jerk" -> -2
+<__harvey>     "-1 but not -2 though" -> -1 - -2 = 1
+<__harvey>     "youre ... 1" -> NM -> [ 1 ]
+<[CG]VonFlagPole> I'm sorry to have to be the one to tell you.
+<__harvey>     "tell" -> print "1"
+<__harvey>     NM -> [ ]
+<RoyL> I have no problem telling him.
+<__harvey>     "telling" -> print "-2"
+<__harvey>     [CG]VFP -> [ ]
+<[CG]VonFlagPole> *RoyL*, you otoh are a complete jerk.
+<__harvey>     [CG]VFP -> RL
+<[CG]VonFlagPole> And I have no problem telling you that.
+<__harvey>     "telling" -> print "-1"
+<__harvey>     RL -> [ ]

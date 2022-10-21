@@ -1,0 +1,21 @@
+1 1
+apple
+core
+17
+<MrRandomNum> hey *[CG]SexyApple*
+<__lurker>     MRN -> [CG]SA
+<[CG]SexyApple> What's up?
+<MrRandomNum> I was just contemplating...
+<MrRandomNum> I think your a bright, shiny, juicy apple and a tough core too.
+<__lurker>     "a bright shiny juicy apple" -> 2 x 2 x 2 x 1 = 8
+<__lurker>     "a tough core" -> 2 x -1 = -2
+<__lurker>     the keywords "and" and "too" indicate addition
+<__lurker>     "8 and -2 too" -> 8 + -2 = 6
+<__lurker>     "your 6" -> push 6
+<__lurker>     [CG]SA -> [ 6 ]
+<[CG]SexyApple> Wow. That's deep.
+<[CG]SexyApple> And a bit random, too.
+<MrRandomNum> I tell it like it is.
+<__lurker>     "tell" -> print
+<__lurker>     print "6"
+<__lurker>     [CG]SA -> [ ]

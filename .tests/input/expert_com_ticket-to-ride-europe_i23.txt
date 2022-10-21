@@ -1,0 +1,22 @@
+16 5 15
+3 2 0 2 4 3 3 2 5
+3 Berlin Wien
+9 Berlin Roma
+3 London Paris
+5 Dieppe Marseille
+7 Brest Marseille
+2 1 Gray Dieppe London
+1 0 Pink Dieppe Paris
+4 0 Gray Paris Marseille
+3 0 Black Brest Paris
+4 0 Red Marseille Pamplona
+3 0 Gray Paris Zurich
+2 0 Pink Zurich Marseille
+3 0 Green Berlin Wien
+2 0 Gray Zagrab Wien
+2 0 Gray Zagrab Venezia
+2 0 Black Roma Venezia
+4 0 Orange London Edinburgh
+2 0 Orange Dieppe Brest
+1 0 Black Amsterdam Bruxelles
+2 2 Gray London Amsterdam

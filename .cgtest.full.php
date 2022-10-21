@@ -423,6 +423,7 @@ return [
                 // 'easy_com_the-river-i-',                 // also in global section
                 // 'easy_com_the-river-ii-',                // also in global section
                 'easy_com_the-travelling-salesman-problem',
+                'easy_com_the-weight-of-words',
                 'easy_com_tictactoe',
                 'easy_com_treasure-hunt',
                 'easy_com_tree-paths',
@@ -528,6 +529,7 @@ return [
                 // 'medium_com_factorial-vs-exponential',   // also in global section
                 'medium_com_fair-numbering',
                 'medium_com_find-the-liars',
+                'medium_com_find-the-missing-plus-signs-in-addition',
                 'medium_com_find-the-replacement',
                 'medium_com_fishing-with-a-stick',
                 'medium_com_flood-fill-example',
@@ -1010,5 +1012,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.10.16: 'easy_com_character-replacement-problem',
-
+// Note: last puzzle added on 22.10.21: 'medium_com_find-the-missing-plus-signs-in-additio',

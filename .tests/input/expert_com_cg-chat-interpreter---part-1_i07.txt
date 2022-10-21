@@ -1,0 +1,32 @@
+1 1
+developer
+baby
+28
+<aGate> *MoGas*
+<__fanboi>     AG -> MG
+<MoGas> I'm here, *aGate*.
+<__fanboi>     MG -> AG
+<aGate> You seen my CB?
+<aGate> UR AI fell down like a squealing baby!
+<__fanboi>     "a squealing baby" -> -2
+<__fanboi>     "ur ... -2" -> MG -> [ -2 ]
+<MoGas> Haven't seen it
+<MoGas> But I believe it
+<MoGas> You're a very highly skilled AI developer.
+<__fanboi>     "a very highly skilled AI developer" -> 16
+<__fanboi>     "youre 16" -> AG -> [ 16 ]
+<aGate> Yeah, but you're you! And a monster of a developer too!
+<__fanboi>     "you" -> Top of MG -> [ -2 ]
+<__fanboi>     "a monster of a developer" -> 8
+<__fanboi>     "-2 and 8 too" -> -2 + 8 = 6
+<__fanboi>     "youre 6" -> MG -> [ -2 6 ]
+<aGate> You're like as good as me squared!
+<__fanboi>     "me" -> 16
+<__fanboi>     "16 squared" -> 256
+<__fanboi>     "youre ... 256" -> MG -> [ -2 6 256 ]
+<aGate> I can't tell you how excited I am.
+<__fanboi>     "tell" -> print "256"
+<__fanboi>     MG -> [ -2 6 ]
+<aGate> Can't tell you.
+<__fanboi>     "tell" -> print "6"
+<__fanboi>     MG -> [ -2 ]

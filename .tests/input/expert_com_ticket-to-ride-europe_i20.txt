@@ -1,0 +1,9 @@
+4 4 3
+3 0 0 0 0 0 0 0 0
+3 Manchester London
+2 Dieppe Paris
+2 Lille Paris
+1 Dieppe Lille
+3 0 Red Manchester London
+2 0 Red Dieppe Paris
+1 0 Red Paris Lille

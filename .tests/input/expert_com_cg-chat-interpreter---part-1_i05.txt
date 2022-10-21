@@ -1,0 +1,22 @@
+1 0
+lines times
+
+18
+<SeeSam> Hi all
+<Bub> Hello *SeeSam*.
+<SeeSam> Hey, *Bub*, can you help me with something?
+<__bigbrother>     SS -> B
+<Bub> I'd love to, but
+<Bub> your code is always like a tragic mess of lines by a thousand times multiplied
+<__bigbrother>     "a tragic mess of lines" -> 2 x 2 x 2 x 1 = 8
+<__bigbrother>     "a thousand times" -> 2 x 1 = 2
+<__bigbrother>     the keywords "by" and "multiplied" indicate multiplication
+<__bigbrother>     "8 by 2 multiplied" -> 8 x 2 = 16
+<__bigbrother>     "your {extra words ignored} 16" -> push 16
+<__bigbrother>     SS -> [ 16 ]
+<Bub> Sorry, but I had to tell you.
+<__bigbrother>     "tell" -> print
+<__bigbrother>     print "16"
+<__bigbrother>     SS -> [ ]
+<SeeSam> Sigh.
+<SeeSam> I get it.

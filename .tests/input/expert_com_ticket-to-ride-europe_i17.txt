@@ -1,0 +1,7 @@
+12 0 5
+0 0 3 2 0 4 0 0 3
+6 2 Gray Smyrna Palermo
+4 0 Gray Bucuresti Kyiv
+2 1 Gray Sevastopol Sochi
+4 0 Green Wilno Riga
+4 0 Blue Wilno Petrograd

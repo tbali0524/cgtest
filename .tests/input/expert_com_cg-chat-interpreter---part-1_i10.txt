@@ -1,0 +1,21 @@
+2 1
+squid basket
+partridge
+17
+<Angst> *PbjIsGood* ur more fun than a blind squid and a stunned partridge squared too!
+<__somebody>     A -> PIG (immediate)
+<__somebody>     "a blind squid" -> 2
+<__somebody>     "a stunned partridge" -> -2
+<__somebody>     "-2 squared" -> 4
+<__somebody>     "2 and 4 too" -> 6
+<__somebody>     "ur ... 6" -> PIG -> [ 6 ]
+<Angst> ur like u and u too but not a hand made basket squared though
+<__somebody>     "u" -> 6 (twice)
+<__somebody>     "6 and 6 too" -> 12
+<__somebody>     "a hand made basket" -> 4
+<__somebody>     "4 squared" -> 16
+<__somebody>     "12 but not 16 though" -> -4
+<__somebody>     "ur ... -4" -> PIG -> [ 6 -4 ]
+<Angst> u hear what I tell u?
+<__somebody>     "tell" -> print "-4"
+<__somebody>     PIG -> [ 6 ]

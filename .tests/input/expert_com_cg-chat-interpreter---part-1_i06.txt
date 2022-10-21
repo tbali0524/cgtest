@@ -1,0 +1,17 @@
+0 1
+
+problem
+13
+<SeeTheRazor> Hey! Any CG around?
+<[CG]JayPullTongue> I'm here, *SeeTheRazor*
+<__nobody>     [CG]JPT -> STR
+<SeeTheRazor> *[CG]JayPullTongue*, your site has a really big problem squared!
+<__nobody>     STR -> [CG]JPT
+<__nobody>     "a really big problem" -> -4
+<__nobody>     "-4 squared" -> 16
+<__nobody>     "your ... 16" -> [CG]JPT -> [ 16 ]
+<[CG]JayPullTongue> Sounds serious!
+<SeeTheRazor> Should I tell you about it?
+<__nobody>     "tell" -> print "16"
+<__nobody>     [GC]JPT -> [ ]
+<[CG]JayPullTongue> Shoot!

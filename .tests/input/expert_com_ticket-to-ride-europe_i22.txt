@@ -1,0 +1,6 @@
+12 0 4
+6 6 0 0 0 0 0 0 0
+6 0 Yellow Bodmin Wenford
+4 0 Red Manchester London
+3 0 Red Dieppe Paris
+3 0 Red Paris Luton

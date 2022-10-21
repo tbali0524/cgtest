@@ -1,0 +1,5 @@
+6 1 2
+4 2 0 0 0 0 0 0 0
+3 Dieppe Brighton
+2 0 Gray Dieppe London
+4 0 Gray London Brighton
