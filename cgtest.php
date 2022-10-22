@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.4.0
+ * CGTest v1.5.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth [TBali]
@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.4.1-dev';
+$version = 'v1.5.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -87,6 +87,7 @@ $defaultConfig = [
     'stats' => false,
     'lang-versions' => false,
     'clean' => false,
+    'test-case' => 'all',
     'inputPath' => '.tests/input/',
     'inputPattern' => '%p_i%t.txt',
     'expectedPath' => '.tests/expected/',
@@ -415,7 +416,7 @@ foreach ($defaultConfig['languages'] as $language) {
 }
 $booleanConfigKeys = ['dry-run', 'run-only', 'ansi', 'verbose', 'stats', 'lang-versions', 'clean', 'show-defaults'];
 $nonEmptyStringConfigKeys = ['inputPattern', 'expectedPattern', 'outputPattern'];
-$optionalStringConfigKeys = ['inputPath', 'expectedPath', 'outputPath', 'buildPath'];
+$optionalStringConfigKeys = ['inputPath', 'expectedPath', 'outputPath', 'buildPath', 'test-case'];
 $arrayConfigKeys = ['languages', 'puzzles', 'runOnlyPuzzles'];
 $languageStatsSpecKeys = ['totals', 'unique'];
 $reservedConfigKeys = array_merge(
@@ -479,6 +480,7 @@ for ($i = 1; $i < $argc; ++$i) {
         echo '   --show-defaults    Show default configuration settings (as json)' . PHP_EOL;
         echo '   --clean            Delete temporary and output files of previous test run' . PHP_EOL;
         echo '   --config=FILENAME  Use configfile [default: ' . $defaultConfigFileName . ']' . PHP_EOL;
+        echo '   --test-case=id     Run only a specific test case [default: all]' . PHP_EOL;
         echo '   --lang=LANGUAGES   Run tests in these languages (comma separated list)' . PHP_EOL
             . '                        - default: ' . implode(',', $defaultConfig['languages'])
             . '; or the languages section in the config file' . PHP_EOL;
@@ -516,6 +518,14 @@ for ($i = 1; $i < $argc; ++$i) {
                 $argumentConfig['languages'][] = $lang;
             }
         }
+        continue;
+    }
+    if ((substr($arg, 0, 12) == '--test-case=') and (strlen($arg) > 12)) {
+        if (isset($argumentConfig['test-case'])) {
+            echo $errorTag . 'Invalid arguments: test-case can be given only once.' . PHP_EOL . PHP_EOL;
+            exit(2);
+        }
+        $argumentConfig['test-case'] = substr($arg, 12);
         continue;
     }
     if ($arg == '--no-ansi') {
@@ -650,6 +660,14 @@ foreach ($arrayConfigKeys as $configKey) {
         exit(2);
     }
 }
+if ($config['test-case'] != 'all') {
+    $value = intval($config['test-case']);
+    if (($value <= 0) or ($value > 99)) {
+        echo $errorTag . "Invalid arguments: test-case must be 'all' or between 01 and 99" . PHP_EOL . PHP_EOL;
+        exit(2);
+    }
+}
+
 if ($config['lang-versions'] and $config['clean']) {
     echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --clean' . PHP_EOL . PHP_EOL;
     exit(2);
@@ -660,10 +678,6 @@ if ($config['lang-versions'] and $config['dry-run']) {
 }
 if ($config['lang-versions'] and $config['run-only']) {
     echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --run-only' . PHP_EOL . PHP_EOL;
-    exit(2);
-}
-if ($config['lang-versions'] and $config['stats']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --stats' . PHP_EOL . PHP_EOL;
     exit(2);
 }
 if ($config['clean'] and $config['dry-run']) {
@@ -715,6 +729,9 @@ if (!$config['clean'] and !$config['lang-versions'] and !$config['dry-run']) {
     fclose($logFile);
     echo $infoTag . '<STDERR> output from the test runs redirected to file: ' . $config['debugLog'] . PHP_EOL;
     echo $infoTag . 'Compilers / interpreters\' messages redirected to file: ' . $config['buildLog'] . PHP_EOL;
+}
+if (!$config['clean'] and !$config['lang-versions'] and ($config['test-case'] != 'all')) {
+    echo $infoTag . 'Limited to test case #' . $config['test-case'] . PHP_EOL;
 }
 // --------------------------------------------------------------------
 // main loop: tests run by language
@@ -1049,9 +1066,15 @@ foreach ($config['languages'] as $language) {
             // --------------------------------------------------------------------
             // loop: for each test case for the puzzle
             while (true) {
+                if ($config['test-case'] != 'all') {
+                    if ($idxTest != 0) {
+                        break;
+                    }
+                    $idxTest = intval($config['test-case']) - 1;
+                }
                 ++$idxTest;
-                if ($idxTest >= 60) {
-                    echo $warnTag . 'Maximum number of test cases per puzzle is 60. Exceeded at: ' . $sourceFullFileName
+                if ($idxTest > 99) {
+                    echo $warnTag . 'Maximum number of test cases per puzzle is 99. Exceeded at: ' . $sourceFullFileName
                         . PHP_EOL;
                     break;
                 }
