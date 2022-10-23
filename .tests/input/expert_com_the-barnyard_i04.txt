@@ -1,0 +1,7 @@
+5
+Cows Pegasi Demons Chickens Rabbits
+Eyes 128
+Heads 61
+Legs 202
+Wings 72
+Horns 34

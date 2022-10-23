@@ -1,0 +1,4 @@
+Cows 14
+Pegasi 5
+Demons 8
+Chickens 3

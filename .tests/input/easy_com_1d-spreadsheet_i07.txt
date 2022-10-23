@@ -1,0 +1,10 @@
+9
+VALUE 0 _
+VALUE 1 _
+ADD $0 $1
+ADD $1 $2
+ADD $2 $3
+ADD $3 $4
+ADD $4 $5
+ADD $5 $6
+ADD $6 $7

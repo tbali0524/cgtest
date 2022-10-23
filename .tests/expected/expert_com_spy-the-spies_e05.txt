@@ -1,0 +1,11 @@
+short
+NOT chubby
+red-haired
+NOT russian
+blond
+NOT tall
+french
+NOT freckled
+thai
+NOT thin
+gray-eyed

@@ -1,0 +1,6 @@
+0 -2 -3 -4
+4
+MOV a -1
+SUB b c -3
+ADD d d -1
+JNE 2 d -10

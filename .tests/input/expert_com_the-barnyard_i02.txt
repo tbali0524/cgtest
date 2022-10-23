@@ -1,0 +1,5 @@
+3
+Rabbits Chickens Cows
+Heads 9
+Horns 6
+Wings 8

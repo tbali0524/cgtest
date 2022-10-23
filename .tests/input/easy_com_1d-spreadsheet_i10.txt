@@ -1,0 +1,7 @@
+6
+MULT $5 $2
+ADD $5 $0
+VALUE 12 _
+ADD $2 $2
+MULT $3 $2
+SUB $3 $2

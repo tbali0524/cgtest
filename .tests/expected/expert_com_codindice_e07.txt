@@ -1,0 +1,4 @@
+0 RIGHT
+4 UP
+4 LEFT
+4 DOWN

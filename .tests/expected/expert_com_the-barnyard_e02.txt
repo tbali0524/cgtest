@@ -1,0 +1,3 @@
+Rabbits 2
+Chickens 4
+Cows 3

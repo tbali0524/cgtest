@@ -1,0 +1,6 @@
+4
+Cows Pegasi Demons Chickens
+Heads 30
+Wings 32
+Legs 114
+Horns 60

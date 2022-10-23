@@ -1,0 +1,24 @@
++=====================+
+ \                   /
+  \o                /
+   \ooo         ooo/
+    \oooo     oooo/
+     \ooooo ooooo/
+      \ooooooooo/
+       \ooooooo/
+        \ooooo/
+         \ooo/
+          \o/
+           X
+          /o\
+         / o \
+        /  o  \
+       /   o   \
+      /    o    \
+     /   ooooo   \
+    /   ooooooo   \
+   /   ooooooooo   \
+  /   ooooooooooo   \
+ /   ooooooooooooo   \
++=====================+
+13

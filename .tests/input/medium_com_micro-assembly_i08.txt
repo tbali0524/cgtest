@@ -1,0 +1,15 @@
+0 7 5 3
+13
+ADD a a b
+SUB c c 1
+JNE 0 c 0
+MOV b a
+SUB c d 1
+ADD a a b
+SUB c c 1
+JNE 5 c 0
+SUB b 0 d
+JNE 11 a -105
+MOV a 0
+ADD d d b
+SUB b b b

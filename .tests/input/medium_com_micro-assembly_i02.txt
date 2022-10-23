@@ -1,0 +1,5 @@
+2 3 4 5
+3
+ADD a b 1
+ADD b 2 7
+ADD c a b

@@ -1,0 +1,16 @@
+Derick Ronaldo Tempest Rolf Jeanne Tabitha
+Tabitha 1 scottish
+Rolf 1 hebrew
+Mohammad 1 arabic
+Jacob 1 arabic
+Derick 1 hebrew
+Meta 1 arabic
+Ronaldo 1 scottish
+Melville 1 arabic
+Hermon 1 arabic
+Tempest 1 swedish
+Jeanne 1 persian
+Kourtney 1 arabic
+Dallas 1 arabic
+Vena 1 arabic
+Eros 1 arabic

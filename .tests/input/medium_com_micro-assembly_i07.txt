@@ -1,0 +1,11 @@
+1 3 3 7
+9
+MOV a 10
+MOV b 5
+MOV c b
+SUB c c 1
+ADD a a c
+JNE 3 c 0
+SUB b b 1
+JNE 2 b c
+SUB d 0 d

@@ -1,0 +1,5 @@
+4
+SUB $1 4
+VALUE 3 _
+ADD 8 $1
+MULT $0 $2
