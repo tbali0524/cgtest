@@ -433,6 +433,7 @@ return [
                 'easy_com_unique-prefixes',
                 // 'easy_com_unit-fractions',               // also in global section
                 'easy_com_van-ecks-sequence',
+                'easy_com_video-comments',
                 'easy_com_walk-on-a-die',
                 'easy_com_whats-so-complex-about-mandelbrot',
                 'easy_com_wheres-wally',
@@ -1013,4 +1014,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.10.21: 'medium_com_find-the-missing-plus-signs-in-additio',
+// Note: last puzzle added on 22.10.24: 'easy_com_video-comments',
