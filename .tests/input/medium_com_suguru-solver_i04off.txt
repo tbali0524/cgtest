@@ -1,0 +1,21 @@
+20 20
+R. R6 R. B6 B. R. B. B6 B. R. R. B. B5 R6 R. R1 G. G. G. B.
+R3 B. B. B2 R. R. R. B. B. B. G6 B. B. R2 R. R. B. G. G. B2
+R5 G. B. G. R. G. G3 R. R. G. G. B3 B. G. G. G. B. B5 R. B5
+R. G. G5 G. R. G. G. R. B. G. B. R. R. R. G. G. B. B. R. B.
+B. B. G. R. B. B. G. B4 B. G. B4 B. R. R. Y. R4 R. B6 R. B.
+B5 R. R3 R1 R. Y. G. B. B. G. B. B6 Y. Y. Y. Y. R. R. Y. B4
+B. B. G. R. Y. Y. Y. G1 B. R. B. R. B. B5 B. R. R. G. Y. Y.
+R. B. G4 G. Y2 Y. R. G3 G. R. R. R5 G. B. B. G3 G. G. G. Y.
+R. R. G. G. R. R. R. G. B6 B. R. G4 G. G1 B6 R. G. B. B. G.
+R. B3 G. B. B5 R. G. G5 B. B. B2 G. R. G. R. R. R2 R. G. G.
+B. B. R. B. B1 Y. Y. R. R. G. B. R6 R. R. B. Y. Y. R. G3 G.
+B. B5 R. B. G. R. Y. R. G. G4 R. R. B. B. B3 B. Y4 Y. Y. Y.
+G. B. R6 B. G5 R. Y. Y3 G. Y. Y. Y. B. R. G. G. G. G. R1 R4
+G. G. R. R3 G. G. R. Y. G. G. Y. G. R. R4 R. Y. G5 G. R3 R.
+G. G. B. R. G. G. R4 B. B. B6 G. G5 R. R2 Y. Y. Y. B1 R. R.
+R. B5 B. B. B. B. R. R6 B. B. G2 G. G. B. Y. Y1 B. B. B5 G.
+R. G. G. G. G. R. R. G. G. B3 R1 B. B6 B. B. R. B. B6 Y. G.
+R. B. G6 G. R. G2 G. G. G6 R. R. B. G. R. R3 R4 R. Y. Y. G.
+B1 B. B. R. R4 R. R3 B. B. R4 R. G. G. G. R. G. G. Y5 Y. R.
+B. B. G. G. G. G. R. B. B3 R. G5 G1 B. B. B. G. G4 G. Y. R.

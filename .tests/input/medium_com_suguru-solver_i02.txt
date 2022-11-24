@@ -1,0 +1,9 @@
+8 8
+G. G. G. M. M5 R. R. G.
+R. R. R. R. M. M. G. G.
+G. M. R. C. C4 M. G. R.
+G. M. M. C. C. B. B. R.
+G. M. M. C. B. B. R. R.
+R. B. G. G. B. G. G4 G.
+R. B. B. G. R. R. G. G.
+R. B. B. G. G. R. R. B.

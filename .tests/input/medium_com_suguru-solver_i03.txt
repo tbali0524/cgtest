@@ -1,0 +1,11 @@
+15 10
+R. B5 B. B4 B. R. R4 R. B. B5 B. R1 R4 R. B.
+R4 R. B1 B. R. R6 G. R. B. G4 R. R. G. R6 B1
+R. R6 R. G5 G. G. G2 B. B. G3 G. G. G. B. B4
+B. B1 B. G. B. B. B. R1 R. R6 C1 C. C. B5 B.
+B5 B. R. R. R. B. R. R. G. R. C. C6 R. R1 R.
+B. R. R. C. R. B6 B. G. G. G. C. R. R. G. R.
+G2 G. C. C1 C. C. R. R3 G. B. B. G. G. G. G4
+C. G4 G. C. B3 B. B4 R. R6 R. B. R. R. R. G.
+C2 C. C. B. B. R. B. G. R. G. R. R. B. R. B.
+C. C6 R3 R5 R. R. R. G5 G. G. G. B6 B2 B4 B.

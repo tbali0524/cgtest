@@ -296,6 +296,7 @@ return [
                 'easy_com_by-train-or-by-car',
                 'easy_com_caesar-is-the-chief',
                 'easy_com_calculator',
+                'easy_com_card-counting-when-easily-distracted',
                 'easy_com_character-replacement-problem',
                 'easy_com_code-breaker-puzzle',
                 'easy_com_container-terminal',
@@ -316,6 +317,7 @@ return [
                 'easy_com_dolbears-law',
                 'easy_com_duck-hunt',
                 'easy_com_dungeons-and-maps',
+                'easy_com_embedded-chessboards',
                 'easy_com_encryptiondecryption-software',   // removed puzzle
                 'easy_com_encryption-enigma-machine',
                 'easy_com_equivalent-resistance-circuit-building',
@@ -358,8 +360,10 @@ return [
                 'easy_com_match-dna-sequence',
                 'easy_com_max-area',
                 'easy_com_may-the-triforce-be-with-you',
+                'easy_com_messed-up-mosaics',
                 'easy_com_metric-units',
                 'easy_com_minesweeper-level-generator',
+                'easy_com_minimal-palindrome-distance',
                 'easy_com_monday-tuesday-happy-days',
                 'easy_com_morellets-random-lines',
                 'easy_com_mountain-map-convergence',
@@ -651,6 +655,7 @@ return [
                 'medium_com_sticky-keyboard',
                 'medium_com_straddling-checkerboard-cryptography',
                 'medium_com_sudoku-solver',
+                'medium_com_suguru_solver',
                 // 'medium_com_sum-of-divisors',            // also in global section
                 'medium_com_surakarta',
                 'medium_com_target-firing',
@@ -933,6 +938,7 @@ return [
                 'medium_com_forest-fire',
                 'medium_com_minesweeper-1',
                 'medium_com_rush-hour',
+                'medium_com_sky-maze-adventures-1',
             ],
             'puzzle/community/hard/' => [
                 'hard_com_11-puzzle',
@@ -1014,4 +1020,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.10.24: 'easy_com_video-comments',
+// Note: last puzzle added on 22.11.24: 'easy_com_embedded-chessboards',

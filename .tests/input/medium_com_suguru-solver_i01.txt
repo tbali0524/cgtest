@@ -1,0 +1,6 @@
+4 5
+G. G4 G1 G.
+R. G. B. B.
+G. R. R4 B.
+G. R. R2 B.
+G3 G. R. B.
