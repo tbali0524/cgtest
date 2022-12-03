@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.5.0
+ * CGTest v1.6.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth [TBali]
@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.5.1-dev';
+$version = 'v1.6.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -58,6 +58,7 @@ $zeroPuzzleStat = [
 ];
 $puzzleStats = [];
 $directoryStats = [];
+$slowTests = [];
 $infoTag = '[INFO] ';
 $errorTag = '[ERROR] ';
 // --------------------------------------------------------------------
@@ -88,6 +89,7 @@ $defaultConfig = [
     'lang-versions' => false,
     'clean' => false,
     'test-case' => 'all',
+    'slowThreshold' => 5, // in seconds
     'inputPath' => '.tests/input/',
     'inputPattern' => '%p_i%t.txt',
     'expectedPath' => '.tests/expected/',
@@ -1063,6 +1065,7 @@ foreach ($config['languages'] as $language) {
             $countTestsForFile = 0;
             $countSkippedTestsForFile = 0;
             $idxTest = 0;
+            $spentTimePuzzle = 0;
             // --------------------------------------------------------------------
             // loop: for each test case for the puzzle
             while (true) {
@@ -1189,6 +1192,7 @@ foreach ($config['languages'] as $language) {
                     . $config['debugLog'];
                 $execOutput = [];
                 $execResultCode = 0;
+                $testStartTime = hrtime(true);
                 $execResult = exec($runCommand, $execOutput, $execResultCode);
                 if (($execResult === false) or (!is_null($execResultCode) and ($execResultCode != 0))) {
                     echo $errorTag . 'Execution unsuccessful for source: ' . $sourceFullFileName . PHP_EOL;
@@ -1197,6 +1201,19 @@ foreach ($config['languages'] as $language) {
                     $puzzleStats[$puzzleName]['failedTests'] |= (1 << $idxTest);
                     continue;
                 }
+                $spentTimeTestCase = (hrtime(true) - $testStartTime) / 1000000000;
+                if (
+                    (($config['slowThreshold'] ?? 0) > 0)
+                    and ($spentTimeTestCase >= ($config['slowThreshold'] ?? 0))
+                ) {
+                    $slowTests[] = [
+                        'language' => $language,
+                        'puzzle' => $puzzleName,
+                        'test-case' => $idxTest,
+                        'time' => $spentTimeTestCase,
+                    ];
+                }
+                $spentTimePuzzle += $spentTimeTestCase;
                 // --------------------------------------------------------------------
                 // read and process test output (replace CRLF with LF, remove trailing LF)
                 if (!file_exists($outputFullFileName)) {
@@ -1313,6 +1330,19 @@ foreach ($puzzleStats as $puzzleStat) {
     }
 }
 $languageStats['totals']['spentTime'] = hrtime(true) - $languageStats['totals']['startTime'];
+// --------------------------------------------------------------------
+// print slow test runs
+if ($config['verbose'] and (($config['slowThreshold'] ?? 0) > 0) and (count($slowTests) > 0)) {
+    echo $warnTag . 'The following test case'
+        . (count($slowTests) > 1 ? 's' : '')
+        . ' took longer than ' . ($config['slowThreshold'] ?? 0) . ' seconds:' . PHP_EOL;
+    foreach ($slowTests as $slowTest) {
+        $msgLang = str_pad(substr(strval($slowTest['language'] ?? ''), 0, 12), 12);
+        $msgTime = str_pad(number_format($slowTest['time'] ?? 0, 1, '.', ''), 6, ' ', STR_PAD_LEFT);
+        $testMsg = str_pad(strval($slowTest['test-case']), $testIdxWidth, '0', STR_PAD_LEFT);
+        echo '  ' . $msgLang . ':' . $msgTime . 's in test #' . $testMsg . ' of ' . $slowTest['puzzle'] . PHP_EOL;
+    }
+}
 // --------------------------------------------------------------------
 // print per language stats
 if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
@@ -1544,6 +1574,11 @@ echo $infoTag . 'Total: ' . $languageStats['totals']['countPassedTests'] . ' / '
     . $msg . ' in '
     . $languageStats['totals']['countLanguages'] . ' programming language'
     . ($languageStats['totals']['countLanguages'] > 1 ? 's' : '') . '.' . PHP_EOL;
+if ((($config['slowThreshold'] ?? 0) > 0) and (count($slowTests) > 0)) {
+    echo $infoTag . 'There were ' . count($slowTests) . ' test'
+        . (count($slowTests) > 1 ? 's' : '')
+        . ' taking longer than ' . ($config['slowThreshold'] ?? 0) . ' seconds.' . PHP_EOL;
+}
 $timeStr = number_format($languageStats['totals']['spentTime'] / 1000000000, 1, '.', '');
 echo $infoTag . "Time spent: $timeStr seconds." . PHP_EOL . PHP_EOL;
 if (!$config['dry-run']) {

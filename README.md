@@ -103,7 +103,7 @@ Some settings (but not all) can be also overriden via command-line arguments. If
 * You can either put your source files in _per-language_ directories, or you can structure them in a _per-puzzle (or per-puzzle-group)_ basis.
     * By default, all source code is expected to be in the respective `languageName/` directory, with the same name as the beginning of the test case input data file name.
     * If using _per-puzzle_ directories for the test cases, you must set the per-language `'sourcePath'` setting to `''` in the config file.)
-* If not provided via command-line, list the puzzle names in the config file either in the global `'puzzles'` section, or in a per-language `'includePuzzles'` list. If you have solution for a puzzle in most (but not all) languages, you can list it in the global puzzles section, but add also add to the per-language `'excludePuzzles'` lists for languages that you lack the solution.  
+* If not provided via command-line, list the puzzle names in the config file either in the global `'puzzles'` section, or in a per-language `'includePuzzles'` list. If you have solution for a puzzle in most (but not all) languages, you can list it in the global puzzles section, but also add it to the per-language `'excludePuzzles'` lists for languages that you lack the solution.  
 * You can also add a puzzle to a per-language `'runOnlyPuzzles'` list in the config file. These puzzles will be built and run, but the tests will always pass, without evaluating the test results. This is useful to run some _optimization_ and _multi-turn_ puzzles on CodinGame.
 * You can change the directory structure and the file naming conventions that `CGTest` is using out of the box. However, you will need to tweak the config file a bit to your liking. For more details, check out the comments in the sample config file.
 
@@ -111,7 +111,7 @@ Some settings (but not all) can be also overriden via command-line arguments. If
 
 Some CG test cases have an expected output with trailing spaces in some lines. _Some code editors remove the trailing whitespaces automatically_, when you open these `.txt` files. This results failing test runs, as your codes output is no longer identical to what is stored in the expected test output file.
 
-_Turn off_ such _false_ autocorrection for `.txt` files. The `.editorconfig` and `.vscode/settings.json` files included this repository already contain the correct settings, other editors might need different actions.
+_Turn off_ such _false_ autocorrection for `.txt` files. The `.editorconfig` and `.vscode/settings.json` files included in this repository already contain the correct settings, other editors might need different actions.
 
 ### Sample test cases
 

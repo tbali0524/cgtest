@@ -1,0 +1,16 @@
+ULULRDDLRU
+14
+-2 -3 enemy goblin
+-1 0 money 83G
+2 -1 enemy goblin
+-2 2 enemy slime
+-1 1 money 31G
+-4 -2 enemy slime
+-3 0 enemy goblin
+-4 -1 money 17G
+1 -3 money 60G
+3 0 enemy slime
+1 -2 enemy slime
+3 -1 enemy goblin
+-1 -3 enemy slime
+3 3 enemy goblin

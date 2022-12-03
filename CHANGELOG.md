@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- More CG puzzle test cases added
+- Nothing yet
 
 ### Changed
 
@@ -19,20 +19,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet
 
+## [v1.6.0](https://github.com/tbali0524/cgtest/releases/v1.6.0) - 2022-12-03
+
+### Added
+
+- A global `'slowThreshold'` option added to config file format.
+- In `--verbose` mode, the tests taking longer then `'slowThreshold'` are also listed.
+- More CG puzzle test cases added.
+
 ## [v1.5.0](https://github.com/tbali0524/cgtest/releases/v1.5.0) - 2022-10-22
 
 ### Added
 
 - `--test-case=id` command-line argument added.
-- global `'test-case'` option added to config file format.
-- More CG puzzle test cases added
+- A global `'test-case'` option added to config file format.
+- More CG puzzle test cases added.
 
 ## [v1.4.0](https://github.com/tbali0524/cgtest/releases/v1.4.0) - 2022-08-10
 
 ### Added
 
 - `javascript` and `typescript` support added.
-- global `'runOnlyPuzzles'` option added to config file format.
+- A global `'runOnlyPuzzles'` option added to config file format.
 - Partial test cases (input files with _turn #0_ data) for all multi-turn or multi-solution CG puzzles added.
 
 ### Changed
@@ -50,9 +58,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `c#` and `vb.net` support added.
 - `--run-only` command-line argument added.
 - `'run-only'` global option added to config file format.
-- language-specific `'runOnlyPuzzles'` option added to config file format.
+- A language-specific `'runOnlyPuzzles'` option added to config file format.
 - `'buildPath'` global option added to config file format.
-- partial test cases (input files with _turn #0_ data) added for several optimization and multi-turn solo puzzles.
+- Partial test cases (input files with _turn #0_ data) added for several optimization and multi-turn solo puzzles.
 
 ### Changed
 

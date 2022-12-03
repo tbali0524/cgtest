@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.5.0 - configuration file
+ * CGTest v1.6.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2022, by Balint Toth (TBali)
@@ -21,6 +21,7 @@ return [
     // 'lang-versions' => false,
     // 'clean' => false,
     // 'test-case' => 'all',
+    // 'slowThreshold' => 5, // in seconds
     // 'inputPath' => '.tests/input/',
     // 'inputPattern' => '%p_i%t.txt',
     // 'expectedPath' => '.tests/expected/',
@@ -272,6 +273,8 @@ return [
                 'easy_com_abcdefghijklmnopqrstuvwxyz',
                 'easy_com_add-em-up',
                 'easy_com_annihilation',
+                'easy_com_another-road-construction-site---1',
+                'easy_com_an-adventure-in-the-fantasy-world',
                 'easy_com_are-the-clumps-normal',
                 'easy_com_artificial-emotional-intelligence',
                 'easy_com_asteroids',
@@ -399,6 +402,7 @@ return [
                 'easy_com_rooks-movements',
                 'easy_com_rotating-arrows',
                 'easy_com_rugby-score',
+                'easy_com_saving-snoopy',
                 'easy_com_self-driving-car-testing',
                 // 'easy_com_sentence-tokenising',          // removed puzzle, unavailable
                 'easy_com_shadow-casting',
@@ -655,7 +659,7 @@ return [
                 'medium_com_sticky-keyboard',
                 'medium_com_straddling-checkerboard-cryptography',
                 'medium_com_sudoku-solver',
-                'medium_com_suguru_solver',
+                'medium_com_suguru-solver',
                 // 'medium_com_sum-of-divisors',            // also in global section
                 'medium_com_surakarta',
                 'medium_com_target-firing',
@@ -1020,4 +1024,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.11.24: 'easy_com_embedded-chessboards',
+// Note: last puzzle added on 22.12.03: 'easy_com_another-road-construction-site---1',
