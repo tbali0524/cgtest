@@ -1,0 +1,10 @@
+56..1..2. aabbccdde
+..72..68. afghhiide
+..2.87.15 jfggklmme
+......3.9 jjgnklopp
+.7....2.. qqgnooorr
+9.634.8.. stuuvwwxx
+2.9..8... stuuvvwyz
+..41.2... sAuuByyyz
+.8.4...3. CADDBEEFF
+a=12 b=17 c=4 d=14 e=15 f=13 g=19 h=7 i=10 j=16 k=10 l=13 m=10 n=15 o=15 p=13 q=11 r=11 s=18 t=3 u=28 v=15 w=20 x=8 y=22 z=12 A=11 B=13 C=6 D=9 E=10 F=5

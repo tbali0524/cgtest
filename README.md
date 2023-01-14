@@ -1,8 +1,12 @@
 # CGTest
 
+![languages](https://img.shields.io/github/languages/count/tbali0524/cgtest?label=supported%20languages)
+![CG test cases](https://img.shields.io/github/directory-file-count/tbali0524/cgtest/.tests/input?label=CG%20test%20cases)
+![MIT](https://img.shields.io/github/license/tbali0524/cgtest)
+
 A multi-language offline batch test runner for `CodinGame` (or other) solo I/O puzzles.
 
-(c) 2022, by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
+(c) 2023, by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
 ## Intro
 
@@ -70,7 +74,8 @@ _Note: The spent time shown includes the time of compiling, not just the time sp
 
 ## Prerequisites
 
-![php-version-73](https://shields.io/badge/php->=7.3-blue)
+![php >=v7.3](https://shields.io/badge/php->=7.3-blue?logo=php)
+
 
 CGTest is a single-file php script, so you need `PHP` (v7.3 or newer) installed on your machine to use it. (PHP is very easy to install on Windows or Mac, and comes already pre-installed on most Linux distributions.)
 

@@ -1,0 +1,10 @@
+........1 abbcdddef
+....5.... agccchfff
+...3..... ijjjhhkkl
+.......9. ijmmnnokp
+..6...... qrrsttuvv
+....9.7.. qwxsyuuzA
+.....3... qwxxyBBCA
+......... qDxEEBBCC
+..8..5... DDFFFBGHH
+a=14 b=9 c=17 d=22 e=3 f=20 g=3 h=9 i=6 j=21 k=19 l=7 m=9 n=11 o=4 p=6 q=16 r=15 s=11 t=11 u=10 v=9 w=9 x=20 y=16 z=5 A=5 B=22 C=19 D=17 E=11 F=15 G=3 H=11

@@ -421,12 +421,14 @@ return [
                 // 'easy_com_sum-of-spirals-diagonals',     // also in global section
                 'easy_com_survey-prediction',
                 'easy_com_sweet-spot',
+                'easy_com_table-of-contents',
                 'easy_com_teds-compiler',
                 'easy_com_text-formatting',
                 'easy_com_the-broken-editor',
                 'easy_com_the-dart-101',
                 'easy_com_the-electrician-apprentice',
                 'easy_com_the-frog-jump-1',                 // removed puzzle
+                'easy_com_the-logo-beyond-c-and-c',
                 'easy_com_the-michelangelo-code',
                 // 'easy_com_the-mystic-rectangle',         // also in global section
                 // 'easy_com_the-river-i-',                 // also in global section
@@ -512,6 +514,7 @@ return [
                 'medium_com_count-of-primes-in-a-number-grid',
                 'medium_com_criminal',
                 'medium_com_crossword',
+                'medium_com_cylinders',
                 'medium_com_data-compression-1',            // removed puzzle
                 'medium_com_ddcg-mapper',
                 'medium_com_de-fizzbuzzer',
@@ -581,6 +584,7 @@ return [
                 'medium_com_jumping-frogs',
                 'medium_com_kaprekars-routine',
                 'medium_com_kids-blocks',
+                'medium_com_killer-sudoku-solver',
                 'medium_com_knights-jam',
                 'medium_com_l-triominoes',
                 'medium_com_langtons-ant',
@@ -710,6 +714,7 @@ return [
                 'hard_com_binary-permutations',
                 'hard_com_boggle',
                 'hard_com_breaking-apart',
+                'hard_com_breaking-bifid',
                 'hard_com_breakout',
                 'hard_com_candies',
                 'hard_com_castle-siege',
@@ -1024,4 +1029,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 22.12.03: 'easy_com_another-road-construction-site---1',
+// Note: last puzzle added on 23.01.14: 'medium_com_cylinders',

@@ -1,0 +1,10 @@
+......... abbcccddd
+......... aabefghii
+......... jkkefghil
+......... jmnnnooil
+......... mmmppqqrl
+......... sttpuuqrr
+......... svwwwxxxy
+......... zvvABBCCy
+......... zDDAAEEFF
+a=7 b=23 c=13 d=13 e=5 f=10 g=17 h=11 i=28 j=12 k=8 l=16 m=20 n=9 o=11 p=22 q=14 r=8 s=15 t=13 u=4 v=17 w=11 x=16 y=8 z=4 A=19 B=10 C=7 D=13 E=15 F=6
