@@ -1,3 +1,4 @@
+# exclude temporary files generated dusing test runs
 /.tests/output/*
 /.tests/temp/*
 **/*.csproj

@@ -1,9 +1,10 @@
 {
-    //excludes files & folders for watcher service
+    // excludes files & folders for watcher service
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
       },
+    // some test cases have input files with trailing spaces that must be kept
     "[txt]": {
         "files.trimFinalNewlines": false,
         "files.trimTrailingWhitespace": false

@@ -4,7 +4,7 @@
  * CGTest v1.6.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- * (c) 2022, by Balint Toth (TBali)
+ * (c) 2023, by Balint Toth (TBali)
  */
 
 declare(strict_types=1);
@@ -555,6 +555,7 @@ return [
                 'medium_com_fun-with-set-theory',
                 'medium_com_futoshiki-solver',
                 'medium_com_game-of-life',
+                'medium_com_goldbachs-conjecture',
                 'medium_com_goro-want-chocolate',
                 'medium_com_go-competition',
                 'medium_com_gravity',
@@ -593,11 +594,13 @@ return [
                 'medium_com_level-of-nested-parentheses',
                 'medium_com_light-bulbs',
                 'medium_com_locked-in-gear',
+                'medium_com_longest-increasing-subsequence',
                 'medium_com_lost-astronaut',
                 'medium_com_lunar-lockout',
                 'medium_com_magic-square',
                 'medium_com_magic-stones',
                 'medium_com_maximum-sub-sequence',
+                'medium_com_maze-for-the-champions',
                 'medium_com_maze-w-teleporters-and-jumps',
                 'medium_com_maze',
                 'medium_com_mcxxxx-microcontroller-simulation',
@@ -1029,4 +1032,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.01.14: 'medium_com_cylinders',
+// Note: last puzzle added on 23.01.29: 'medium_com_longest-increasing-subsequence',

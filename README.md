@@ -77,7 +77,6 @@ _Note: The spent time shown includes the time of compiling, not just the time sp
 
 ![php >=v7.3](https://shields.io/badge/php->=7.3-blue?logo=php)
 
-
 CGTest is a single-file php script, so you need `PHP` (v7.3 or newer) installed on your machine to use it. (PHP is very easy to install on Windows or Mac, and comes already pre-installed on most Linux distributions.)
 
 * If you are unfamiliar with setting up php, [this section on my tech.io article about php dev tools](https://www.codingame.com/playgrounds/77580/php-dev-tools-for-codingame-or-elsewhere/running-your-code-locally-php) might provide some help.
