@@ -1,0 +1,21 @@
+9
+10
+....WWB..
+...WWB.B.
+.W.WBBB..
+W.WBWWWB.
+BWWB...B.
+BBBBW.WB.
+...BBW.W.
+WBW.BBW..
+.WB...W..
+B 4 4
+W 4 5
+B 4 6
+W 6 6
+B 5 5
+W 7 3
+B 8 0
+W 2 7
+B 2 8
+W 8 1

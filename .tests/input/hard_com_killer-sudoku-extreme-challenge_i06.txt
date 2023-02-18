@@ -1,0 +1,65 @@
+32
+aabbccddeffbgghiiejkbgghhlljkmmmmnlojpqqrrnsotpuuvwnsxtyyzvwAAxtzzzBCCADEEBBBBFDD
+abcccdeeefbbgddhiefjggdkhilfjmgkknilooppqqnrrsotuvqnnwxxtuyyzzABCDDEFzAABBDGGGzzz
+aaabbbbcdaeeebffcdaeeghijcckegghijllkkmmnnolpkqrrnnoopkqssttuuuvvvwwtuuxyyvwzzuxx
+abbbcccdeafffggcdeahiigjkkeahllgjjkemmnloppqqmnnloprqqmsstttruuvvvvwwwxxyyzzzAAxx
+aabbccddeafghhiidejfggklmmejjgnkloppqqgnooorrstuuvwwxxstuuvvwyzsAuuByyyzCADDBEEFF
+aabbbccddaabeffgddahbeffgiijhklmfgnnjkklmoppqrrstmopuqvvsttwxuyzzsttwxyyzzAAxxxyy
+abcccdeeefbbgddhiefjggdkhilfjmgkknilooppqqnrrsotuvqnnwxxtuyyzzABCDDEFzAABBDGGGzzz
+abcddeeffabcgeehhfaiggjjkhhlmmnnnkoollmppqqqrssttuuvvrsswwwuvxxyzzAABCCxDDDDEEFFF
+abcccdeeefbbgddhiefjggdkhilfjmgkknilooppqqnrrsotuvqnnwxxtuyyzzABCDDEFzAABBDGGGzzz
+abbbcccdeafffggcdeahiigjkkeahllgjjkemmnloppqqmnnloprqqmsstttruuvvvvwwwxxyyzzzAAxx
+aaabbbbcdaeeebffcdaeeghijcckegghijllkkmmnnolpkqrrnnoopkqssttuuuvvvwwtuuxyyvwzzuxx
+aabbbccddaabeffgddahbeffgiijhklmfgnnjkklmoppqrrstmopuqvvsttwxuyzzsttwxyyzzAAxxxyy
+aabbccddeffbgghiiejkbgghhlljkmmmmnlojpqqrrnsotpuuvwnsxtyyzvwAAxtzzzBCCADEEBBBBFDD
+aabbbccddaabeffgddahbeffgiijhklmfgnnjkklmoppqrrstmopuqvvsttwxuyzzsttwxyyzzAAxxxyy
+abbcccdddaabefghiijkkefghiljmnnnooilmmmppqqrlsttpuuqrrsvwwwxxxyzvvABBCCyzDDAAEEFF
+aabbccddeafghhiidejfggklmmejjgnkloppqqgnooorrstuuvwwxxstuuvvwyzsAuuByyyzCADDBEEFF
+abbbcccdeafffggcdeahiigjkkeahllgjjkemmnloppqqmnnloprqqmsstttruuvvvvwwwxxyyzzzAAxx
+abbcccdddaabefghiijkkefghiljmnnnooilmmmppqqrlsttpuuqrrsvwwwxxxyzvvABBCCyzDDAAEEFF
+aaabbbbcdaeeebffcdaeeghijcckegghijllkkmmnnolpkqrrnnoopkqssttuuuvvvwwtuuxyyvwzzuxx
+aabbbccddaabeffgddahbeffgiijhklmfgnnjkklmoppqrrstmopuqvvsttwxuyzzsttwxyyzzAAxxxyy
+abbbcccdeafffggcdeahiigjkkeahllgjjkemmnloppqqmnnloprqqmsstttruuvvvvwwwxxyyzzzAAxx
+aabbccddeffbgghiiejkbgghhlljkmmmmnlojpqqrrnsotpuuvwnsxtyyzvwAAxtzzzBCCADEEBBBBFDD
+abcddeeffabcgeehhfaiggjjkhhlmmnnnkoollmppqqqrssttuuvvrsswwwuvxxyzzAABCCxDDDDEEFFF
+aaabbbbcdaeeebffcdaeeghijcckegghijllkkmmnnolpkqrrnnoopkqssttuuuvvvwwtuuxyyvwzzuxx
+aabbccddeffbgghiiejkbgghhlljkmmmmnlojpqqrrnsotpuuvwnsxtyyzvwAAxtzzzBCCADEEBBBBFDD
+aabbccddeafghhiidejfggklmmejjgnkloppqqgnooorrstuuvwwxxstuuvvwyzsAuuByyyzCADDBEEFF
+abcddeeffabcgeehhfaiggjjkhhlmmnnnkoollmppqqqrssttuuvvrsswwwuvxxyzzAABCCxDDDDEEFFF
+abcccdeeefbbgddhiefjggdkhilfjmgkknilooppqqnrrsotuvqnnwxxtuyyzzABCDDEFzAABBDGGGzzz
+aabbccddeafghhiidejfggklmmejjgnkloppqqgnooorrstuuvwwxxstuuvvwyzsAuuByyyzCADDBEEFF
+abbcccdddaabefghiijkkefghiljmnnnooilmmmppqqrlsttpuuqrrsvwwwxxxyzvvABBCCyzDDAAEEFF
+abbcccdddaabefghiijkkefghiljmnnnooilmmmppqqrlsttpuuqrrsvwwwxxxyzvvABBCCyzDDAAEEFF
+abcddeeffabcgeehhfaiggjjkhhlmmnnnkoollmppqqqrssttuuvvrsswwwuvxxyzzAABCCxDDDDEEFFF
+a=4 b=26 c=6 d=15 e=8 f=11 g=18 h=16 i=9 j=10 k=14 l=17 m=19 n=17 o=5 p=14 q=10 r=13 s=9 t=21 u=8 v=8 w=13 x=10 y=7 z=17 A=12 B=23 C=8 D=16 E=13 F=8
+a=5 b=11 c=12 d=22 e=24 f=11 g=20 h=8 i=16 j=12 k=13 l=12 m=5 n=20 o=21 p=10 q=19 r=9 s=4 t=8 u=14 v=8 w=1 x=8 y=13 z=29 A=16 B=14 C=5 D=14 E=3 F=1 G=17
+a=23 b=18 c=17 d=15 e=27 f=13 g=18 h=17 i=8 j=10 k=29 l=12 m=15 n=23 o=18 p=6 q=13 r=3 s=13 t=7 u=24 v=14 w=19 x=21 y=11 z=11
+a=16 b=13 c=18 d=14 e=13 f=12 g=25 h=10 i=16 j=13 k=16 l=19 m=24 n=21 o=5 p=20 q=22 r=7 s=13 t=10 u=8 v=16 w=20 x=22 y=8 z=14 A=10
+a=14 b=3 c=8 d=17 e=21 f=10 g=27 h=8 i=12 j=9 k=12 l=16 m=3 n=14 o=16 p=12 q=15 r=8 s=16 t=10 u=34 v=16 w=17 x=7 y=23 z=5 A=9 B=10 C=7 D=10 E=8 F=8
+a=21 b=23 c=13 d=24 e=8 f=31 g=15 h=5 i=7 j=9 k=17 l=9 m=21 n=15 o=4 p=12 q=8 r=9 s=14 t=31 u=13 v=10 w=9 x=22 y=21 z=28 A=6
+a=3 b=21 c=8 d=25 e=22 f=12 g=18 h=6 i=20 j=11 k=14 l=10 m=3 n=24 o=14 p=16 q=19 r=7 s=7 t=6 u=9 v=2 w=1 x=8 y=13 z=29 A=16 B=18 C=3 D=15 E=4 F=7 G=14
+a=19 b=11 c=5 d=5 e=27 f=15 g=14 h=20 i=2 j=16 k=3 l=11 m=15 n=20 o=14 p=11 q=8 r=14 s=19 t=9 u=16 v=16 w=14 x=14 y=8 z=16 A=5 B=5 C=8 D=20 E=10 F=15
+a=2 b=15 c=14 d=20 e=19 f=9 g=27 h=9 i=15 j=10 k=18 l=8 m=5 n=27 o=18 p=10 q=11 r=4 s=4 t=7 u=11 v=9 w=8 x=13 y=11 z=31 A=14 B=18 C=7 D=7 E=8 F=3 G=13
+a=18 b=19 c=14 d=7 e=23 f=15 g=26 h=9 i=8 j=20 k=13 l=13 m=25 n=6 o=14 p=20 q=16 r=13 s=8 t=15 u=13 v=20 w=13 x=21 y=17 z=16 A=3
+a=21 b=23 c=19 d=13 e=35 f=17 g=12 h=11 i=7 j=11 k=25 l=15 m=10 n=23 o=11 p=10 q=10 r=6 s=8 t=13 u=35 v=19 w=22 x=10 y=15 z=4
+a=26 b=22 c=17 d=19 e=9 f=26 g=14 h=3 i=13 j=7 k=24 l=10 m=8 n=13 o=15 p=13 q=4 r=7 s=10 t=35 u=10 v=12 w=3 x=25 y=29 z=27 A=4
+a=12 b=21 c=5 d=12 e=11 f=3 g=24 h=16 i=16 j=15 k=7 l=10 m=21 n=18 o=9 p=13 q=9 r=9 s=6 t=21 u=9 v=15 w=10 x=10 y=8 z=20 A=12 B=17 C=6 D=20 E=12 F=8
+a=23 b=23 c=11 d=20 e=9 f=31 g=11 h=5 i=15 j=8 k=14 l=11 m=21 n=12 o=7 p=19 q=3 r=17 s=10 t=21 u=11 v=11 w=11 x=19 y=26 z=21 A=15
+a=18 b=11 c=14 d=17 e=11 f=11 g=9 h=3 i=26 j=11 k=8 l=13 m=19 n=15 o=16 p=14 q=14 r=11 s=7 t=17 u=11 v=14 w=15 x=18 y=12 z=12 A=18 B=3 C=11 D=10 E=9 F=7
+a=18 b=13 c=3 d=12 e=24 f=12 g=24 h=11 i=6 j=8 k=12 l=14 m=8 n=9 o=22 p=13 q=10 r=6 s=19 t=10 u=24 v=15 w=19 x=14 y=23 z=3 A=8 B=10 C=5 D=16 E=5 F=9
+a=21 b=16 c=10 d=17 e=19 f=11 g=29 h=9 i=4 j=16 k=13 l=22 m=21 n=13 o=12 p=15 q=20 r=11 s=7 t=17 u=12 v=27 w=15 x=11 y=5 z=21 A=11
+a=6 b=21 c=12 d=16 e=5 f=11 g=17 h=6 i=24 j=10 k=12 l=14 m=22 n=14 o=11 p=16 q=18 r=8 s=14 t=4 u=14 v=11 w=19 x=14 y=7 z=15 A=18 B=12 C=10 D=5 E=5 F=14
+a=26 b=30 c=16 d=16 e=25 f=7 g=13 h=17 i=7 j=6 k=18 l=24 m=15 n=19 o=9 p=7 q=9 r=14 s=12 t=15 u=36 v=26 w=14 x=9 y=8 z=7
+a=24 b=19 c=13 d=25 e=8 f=33 g=8 h=12 i=5 j=7 k=20 l=13 m=9 n=9 o=13 p=18 q=8 r=13 s=17 t=28 u=13 v=5 w=5 x=29 y=21 z=22 A=8
+a=19 b=14 c=18 d=16 e=16 f=13 g=21 h=10 i=8 j=17 k=11 l=24 m=18 n=21 o=13 p=22 q=15 r=5 s=4 t=19 u=11 v=22 w=11 x=25 y=11 z=11 A=10
+a=6 b=30 c=6 d=9 e=12 f=4 g=15 h=16 i=14 j=12 k=17 l=14 m=16 n=15 o=8 p=10 q=15 r=7 s=14 t=21 u=6 v=11 w=15 x=8 y=3 z=24 A=13 B=23 C=4 D=16 E=13 F=8
+a=8 b=7 c=16 d=10 e=22 f=19 g=14 h=19 i=6 j=12 k=11 l=8 m=17 n=14 o=6 p=17 q=15 r=7 s=25 t=10 u=15 v=17 w=11 x=15 y=9 z=8 A=10 B=3 C=9 D=24 E=7 F=14
+a=23 b=28 c=19 d=10 e=27 f=15 g=14 h=13 i=12 j=3 k=21 l=21 m=15 n=13 o=9 p=13 q=15 r=13 s=13 t=15 u=28 v=20 w=13 x=17 y=7 z=8
+a=5 b=22 c=8 d=11 e=15 f=14 g=17 h=12 i=6 j=12 k=8 l=16 m=27 n=21 o=5 p=15 q=13 r=4 s=10 t=16 u=11 v=9 w=12 x=6 y=6 z=19 A=21 B=27 C=9 D=18 E=7 F=3
+a=16 b=8 c=12 d=17 e=13 f=15 g=26 h=8 i=5 j=10 k=9 l=10 m=12 n=17 o=22 p=11 q=5 r=9 s=20 t=5 u=25 v=7 w=20 x=10 y=19 z=14 A=10 B=17 C=9 D=13 E=6 F=5
+a=17 b=10 c=11 d=5 e=24 f=18 g=12 h=17 i=2 j=15 k=12 l=12 m=16 n=12 o=12 p=15 q=14 r=7 s=24 t=10 u=13 v=16 w=11 x=18 y=6 z=9 A=9 B=3 C=10 D=24 E=7 F=14
+a=2 b=14 c=13 d=23 e=28 f=12 g=20 h=4 i=17 j=5 k=23 l=9 m=3 n=14 o=18 p=11 q=13 r=12 s=8 t=12 u=15 v=3 w=6 x=10 y=7 z=33 A=12 B=17 C=8 D=12 E=1 F=6 G=14
+a=14 b=7 c=11 d=15 e=19 f=11 g=28 h=5 i=12 j=12 k=15 l=11 m=4 n=14 o=18 p=11 q=15 r=3 s=19 t=7 u=21 v=18 w=19 x=17 y=18 z=8 A=7 B=10 C=5 D=16 E=6 F=9
+a=15 b=15 c=6 d=18 e=12 f=17 g=10 h=3 i=20 j=4 k=14 l=17 m=16 n=11 o=16 p=14 q=18 r=12 s=12 t=15 u=10 v=13 w=16 x=18 y=6 z=15 A=14 B=11 C=11 D=11 E=5 F=10
+a=12 b=20 c=11 d=16 e=10 f=11 g=13 h=7 i=25 j=3 k=11 l=12 m=24 n=13 o=14 p=14 q=16 r=13 s=14 t=9 u=8 v=13 w=10 x=13 y=15 z=12 A=21 B=10 C=6 D=10 E=13 F=6
+a=13 b=15 c=6 d=10 e=23 f=24 g=14 h=12 i=3 j=11 k=11 l=15 m=9 n=15 o=17 p=10 q=15 r=7 s=24 t=9 u=14 v=16 w=11 x=15 y=8 z=11 A=9 B=5 C=8 D=24 E=8 F=13

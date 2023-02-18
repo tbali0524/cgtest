@@ -1,5 +1,6 @@
-# config file format documentation: https://editorconfig.org
-
+# config file for source code editors.
+#
+# @see https://editorconfig.org
 root = true
 
 [*]

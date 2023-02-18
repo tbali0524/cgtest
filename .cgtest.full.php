@@ -294,6 +294,7 @@ return [
                 'easy_com_body-weight-is-a-girls-secret',
                 'easy_com_brackets-extreme-ed',
                 'easy_com_brick-in-the-wall',
+                'easy_com_build-a-bookcase',
                 'easy_com_bulk-email-generator',
                 'easy_com_buzzle',
                 'easy_com_by-train-or-by-car',
@@ -306,6 +307,7 @@ return [
                 'easy_com_cosmic-love',
                 // 'easy_com_count-as-i-count',                     // also in global section
                 // 'easy_com_create-the-longest-sequence-of-1s',    // also in global section
+                'easy_com_create-turn-here-signs',
                 // 'easy_com_credit-card-verifier-luhns-algorithm', // also in global section
                 'easy_com_crop-circles',
                 'easy_com_cubic-bezier-curves',
@@ -324,6 +326,7 @@ return [
                 'easy_com_encryptiondecryption-software',   // removed puzzle
                 'easy_com_encryption-enigma-machine',
                 'easy_com_equivalent-resistance-circuit-building',
+                'easy_com_euclids-algorithm',
                 'easy_com_extended-hamming-codes',
                 'easy_com_faro-shuffle',
                 'easy_com_fax-machine',
@@ -358,6 +361,7 @@ return [
                 'easy_com_low-resolution-whats-the-shape',
                 'easy_com_lumen',
                 'easy_com_magic-string',
+                'easy_com_make-an-atari-font',
                 'easy_com_markov-text-generation',
                 'easy_com_master-of-mayhem',
                 'easy_com_match-dna-sequence',
@@ -406,6 +410,7 @@ return [
                 'easy_com_self-driving-car-testing',
                 // 'easy_com_sentence-tokenising',          // removed puzzle, unavailable
                 'easy_com_shadow-casting',
+                'easy_com_shoot-enemy-aircraft',
                 'easy_com_should-bakers-be-frugal',
                 'easy_com_simple-ai-duels',
                 'easy_com_simple-auto-scaling',
@@ -468,6 +473,8 @@ return [
                 'medium_com_ancestors-descendants',
                 'medium_com_army-ants',
                 'medium_com_ascii-art-glass-stacking',
+                'medium_com_ascii-art-with-logo-language',
+                'medium_com_ascii-art-with-logo-language-part-2',
                 'medium_com_ascii-cube',
                 'medium_com_ascii-graph',
                 'medium_com_assignments-are-boring',
@@ -538,6 +545,7 @@ return [
                 'medium_com_enigma---3-rotors-without-plugboard',
                 'medium_com_entry-code',
                 'medium_com_equalizing-arrays',
+                'medium_com_eratosthenes-wallpaper',
                 'medium_com_european-rugby-champions-cup-ranking',
                 // 'medium_com_factorial-vs-exponential',   // also in global section
                 'medium_com_fair-numbering',
@@ -650,6 +658,7 @@ return [
                 'medium_com_rock-paper-scissors-war',
                 'medium_com_rocket-engines',
                 'medium_com_rod-cutting-problem',
+                'medium_com_roman-sorting',
                 'medium_com_sandpile-addition',
                 'medium_com_scary-ride-at-the-haunted-mansion',
                 'medium_com_seam-carving',
@@ -706,6 +715,7 @@ return [
                 'hard_com_7-segment-display',
                 'hard_com_alternative-vote',
                 'hard_com_apple-tree',
+                'hard_com_ascii-art-qr-code',
                 'hard_com_a-game-of-go',
                 'hard_com_a-man-with-a-plan',
                 'hard_com_bailey-borwein-plouffe-pi',
@@ -765,6 +775,7 @@ return [
                 'hard_com_inertia-ride',
                 'hard_com_kakuro-solver',
                 'hard_com_kgood',
+                'hard_com_killer-sudoku-extreme-challenge',
                 'hard_com_kolakoski-sequence',
                 'hard_com_laser-and-mirrors',
                 'hard_com_legendary-archer-octavius',
@@ -792,6 +803,7 @@ return [
                 'hard_com_parsing-context-free-grammar',
                 'hard_com_pascal-trapezoid',
                 'hard_com_pedestrian-traffic',
+                'hard_com_picture-puzzle',
                 'hard_com_rocket-mice',
                 'hard_com_sha-256-hash',
                 'hard_com_simple-cpu-emulation-1',
@@ -1032,4 +1044,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.01.29: 'medium_com_longest-increasing-subsequence',
+// Note: last puzzle added on 23.02.18: 'medium_com_ascii-art-with-logo-language-part-2',

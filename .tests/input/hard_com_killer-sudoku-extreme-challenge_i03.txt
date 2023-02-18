@@ -1,0 +1,5 @@
+2
+aabbbccddaabeffgddahbeffgiijhklmfgnnjkklmoppqrrstmopuqvvsttwxuyzzsttwxyyzzAAxxxyy
+abcccdeeefbbgddhiefjggdkhilfjmgkknilooppqqnrrsotuvqnnwxxtuyyzzABCDDEFzAABBDGGGzzz
+a=22 b=18 c=6 d=30 e=8 f=32 g=13 h=14 i=7 j=6 k=10 l=10 m=19 n=11 o=8 p=15 q=9 r=15 s=17 t=25 u=9 v=3 w=14 x=27 y=19 z=27 A=11
+a=3 b=13 c=13 d=18 e=26 f=17 g=19 h=7 i=16 j=7 k=18 l=8 m=7 n=20 o=15 p=8 q=15 r=11 s=8 t=12 u=13 v=9 w=2 x=8 y=10 z=32 A=13 B=17 C=8 D=7 E=7 F=5 G=13

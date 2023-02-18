@@ -1,4 +1,6 @@
-# exclude temporary files generated dusing test runs
+# git config file: exclude these directories from the git repo.
+
+# temporary files generated during test runs:
 /.tests/output/*
 /.tests/temp/*
 **/*.csproj
