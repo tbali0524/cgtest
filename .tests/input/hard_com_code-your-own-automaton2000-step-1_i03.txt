@@ -1,0 +1,7 @@
+6
+(12:45:56) Test1: Are you sure of that Automaton2000? 
+(12:45:56) Test2: Are you realy sure of that Automaton2000?
+(12:45:56) Test2: Maybe you are right
+(12:45:56) Test2: Maybe you are wrong
+(12:45:56) Test2: Maybe not
+(12:45:56) Test2: Automaton2000?

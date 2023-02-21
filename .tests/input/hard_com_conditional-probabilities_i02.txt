@@ -1,0 +1,3 @@
+A = 3/10
+NOT B = 1/3
+NOT A AND B = 8/15

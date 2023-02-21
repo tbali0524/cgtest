@@ -1,0 +1,3 @@
+A = 3/10
+B GIVEN A = 4/5
+B GIVEN NOT A = 3/5

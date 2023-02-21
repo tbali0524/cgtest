@@ -698,6 +698,7 @@ return [
                 'medium_com_the-ultimate-test',
                 'medium_com_the-urinal-problem',
                 'medium_com_the-voucher',
+                'medium_com_tiny-forest',
                 'medium_com_train-passenger',
                 'medium_com_trits-balanced-ternary-computing',
                 'medium_com_valid-brackets-in-code',
@@ -1044,4 +1045,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.02.18: 'medium_com_ascii-art-with-logo-language-part-2',
+// Note: last puzzle added on 23.02.21: 'medium_com_tiny-forest',

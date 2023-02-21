@@ -1,0 +1,5 @@
+rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR
+3
+e2e4
+c7c5
+g1f3

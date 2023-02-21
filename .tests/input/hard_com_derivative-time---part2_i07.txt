@@ -1,0 +1,3 @@
+Var_1+3*Var_1^ln Gamma^cos(2*pi)*y3+y3*sin pi^4*e^Gamma
+Gamma
+Gamma 1.00 y3 2.00 Var_1 3.00

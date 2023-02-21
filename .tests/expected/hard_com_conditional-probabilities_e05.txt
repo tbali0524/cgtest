@@ -1,0 +1,6 @@
+A = 9/10
+A AND B = 1/2
+A AND NOT B = 2/5
+B GIVEN A = 5/9
+NOT A = 1/10
+NOT B GIVEN A = 4/9

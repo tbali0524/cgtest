@@ -1,0 +1,3 @@
+A AND B = 1/2
+A AND NOT B = 2/5
+NOT A = 1/10

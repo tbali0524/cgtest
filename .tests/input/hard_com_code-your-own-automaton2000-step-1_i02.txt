@@ -1,0 +1,73 @@
+72
+(09:18:47) PED : Hello
+(09:21:33) PED : Typical gold battle
+(09:21:33) PED : https://www.codingame.com/replay/197403764
+(09:35:12) izik1 : ga?
+(09:35:25) PED : for this replay ?
+(09:35:29) izik1 : yea'
+(09:35:47) PED : For me it's just for testing withoutcollisions
+(09:35:53) izik1 : ahh
+(09:36:37) PED : but somehow 600 bots are worst than a bot that circles arround a corner of the map
+(09:36:49) izik1 : they are broken
+(09:36:53) izik1 : from silver
+(09:37:04) PED : some of them are
+(09:37:21) izik1 : this looks like a bug I have fixed twice, are you re using your previous best solution without re-scoring it or anything? (I personally get rid of my previous best)
+(09:38:01) PED : I'm not sure I understand
+(09:38:09) PED : I don't do GA
+(09:38:11) izik1 : oh
+(09:38:27) izik1 : this is fairly simple so let me try not to over complicate it
+(09:38:41) PED : I don't want to do a GA ^^
+(09:38:43) izik1 : you have your best output from your sim right?
+(09:39:10) izik1 : when your pods update
+(09:39:18) PED : I'm writting an offline referee using magus's post to try ML
+(09:39:25) izik1 : ahh
+(09:39:51) PED : GA is probably better but I don't really care
+(09:40:08) izik1 : k
+(10:39:09) MadKnight : hi ped
+(10:39:23) PED : Hi MadKnight
+(10:39:25) MadKnight : but ML got another physics
+(10:39:41) MadKnight : u can find it on the forum
+(10:40:35) PED : What do you mean 'another physics ?'
+(10:44:55) MadKnight : not the same
+(10:45:10) MadKnight : u can't just apply the CSB physics on ML
+(10:45:48) MadKnight : CSB physics sim will be giving wrong next positions of lander
+(10:46:19) PED : :thinking:
+(10:46:44) PED : For now Magus's code and CG's referee seem to have the exact same output
+(10:52:12) MadKnight : which CG referee?
+(10:52:36) PED : the one that's used online
+(10:53:23) MadKnight : have u tried simulating 30 turns ahead?
+(10:53:51) PED : that's not what a referee is for
+(10:54:27) MadKnight : then what's it used for?
+(10:55:41) PED : Take the inputs of both players for one turn, apply the "rules" of the game, give back the new state of the game to both players
+(10:56:22) PED : if you have a code that does that, you can run thousands of games offline to generate training datasets
+(10:59:14) PED : To be clear, I agree that you can you a referee to simulate many turns in advance
+(11:04:41) MadKnight : people are solving ML3 with just a GA
+(11:06:06) PED : ML3 ?
+(11:07:42) MadKnight : mars lander 3
+(11:10:44) MadKnight : Automaton2000
+(11:11:10) PED : sweet
+(11:11:13) MadKnight : ped, do u know that Automaton2000 is a bot who's sending a random message everytime u send his nick?
+(11:11:27) PED : Automaton2000
+(11:11:39) PED : I didn't know
+(11:11:50) PED : where does he find these messages ?
+(11:12:04) MadKnight : from the chat history
+(11:12:35) Earthborne : Haha
+(11:12:37) Earthborne : Automaton2000
+(11:12:53) Earthborne : Good for you, Automaton2000
+(11:12:55) MadKnight : you're the AI, Automaton2000
+(11:13:10) MadKnight : Autoreplay2000
+(11:13:17) Earthborne : What a fantastic replay, Automaton2000
+(11:13:37) Earthborne : No, you can't, Automaton2000
+(11:15:18) Earthborne : This was rather amusing 
+(11:18:14) Earthborne : Any last words, Automaton2000?
+(11:18:22) Earthborne : k
+(11:18:35) mmmd : oh man you are mean to Automaton2000
+(11:19:02) Earthborne : Oh no, Automaton2000 doesn't mind
+(11:19:02) Uljan : hellou, Automaton2000
+(11:19:30) mmmd : wait i thought this was a joke about Automaton2000
+(11:19:56) PED : Me too Automaton2000...
+(11:20:22) PED : out of context none of these make any sense
+(11:20:30) mmmd : yeah
+(11:20:55) mmmd : and then someone writes a Automaton2000 response bot
+(11:20:58) mmmd : and crashes the server
+(11:21:32) Earthborne : How much CP would you get for that?
