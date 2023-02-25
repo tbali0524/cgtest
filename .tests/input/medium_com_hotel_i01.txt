@@ -1,0 +1,9 @@
+3
+Jon Snow
+Daenerys Targaryen
+The Night King
+4
+The Night King is alone at his/her floor
+There's nobody at floor 0
+Jon Snow is just above Daenerys Targaryen
+Jon Snow is at floor 2

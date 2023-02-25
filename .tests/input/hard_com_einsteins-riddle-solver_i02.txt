@@ -1,0 +1,29 @@
+4 5
+Windsurfing Climbing Badminton Ping-pong Ice-skating
+Sarah Charlie Paul Ryan Frederic
+Policeman Painter Pilot Dentist Engineer
+Guitar Violin Trumpet Tambourine Xylophone
+23
+Painter ! Tambourine
+Policeman ! Violin
+Frederic ! Ping-pong
+Pilot ! Climbing
+Windsurfing ! Tambourine
+Climbing ! Tambourine
+Paul & Dentist
+Charlie & Trumpet
+Dentist & Tambourine
+Engineer ! Violin
+Sarah & Badminton
+Violin ! Windsurfing
+Climbing ! Guitar
+Painter ! Violin
+Policeman ! Guitar
+Badminton ! Guitar
+Policeman ! Xylophone
+Frederic & Violin
+Painter ! Windsurfing
+Ryan & Guitar
+Frederic & Ice-skating
+Windsurfing ! Xylophone
+Charlie ! Tambourine

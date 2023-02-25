@@ -1,0 +1,8 @@
+Newton
+3
+"Principia mathematica philosophiae naturalis"
+"On random graphs"
+"Tight bounds on the chromatic sum of a connected graph"
+Newton
+Erdős Rényi
+Alavi Erdős Malde Schwenk Thomassen

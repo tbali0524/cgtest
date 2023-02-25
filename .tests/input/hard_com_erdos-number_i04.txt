@@ -1,0 +1,12 @@
+Mirzakhani
+5
+"Two combinatorial problems in group theory"
+"Decomposition of complete tripartite graphs into 5-cycles"
+"A theorem in the partition calculus"
+"Corrections to Steinbach's posets of graphs (orders 5, 6, 7)"
+"Growth of the number of simple closed geodesics on hyperbolic surfaces"
+Eggleton Erdős
+Mahmoodian Mirzakhani
+Erdős Milner
+Adams Eggleton MacDougall Mahmoodian
+Mirzakhani

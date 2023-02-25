@@ -1,0 +1,11 @@
+    DUF
+    LBD
+    DFL
+
+LDB RLU BRD RBF
+FRU RDD FLD BUU
+DFF LUR FRB RBL
+
+    ULU
+    RFB
+    BLU

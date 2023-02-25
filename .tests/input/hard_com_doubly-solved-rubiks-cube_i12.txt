@@ -1,0 +1,11 @@
+    FDF
+    BDU
+    FFB
+
+UDD RRL UFU LLR
+LRU LFL BLR BBF
+BDD RRB RUD LUD
+
+    BDU
+    FUR
+    LBF

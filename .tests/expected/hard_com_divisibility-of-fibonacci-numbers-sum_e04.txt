@@ -1,0 +1,23 @@
+F_123 + ... + F_234 is divisible by 343
+F_123 + ... + F_234 is NOT divisible by 2401
+F_123 + ... + F_234 is divisible by 26013
+F_123 + ... + F_234 is divisible by 3
+F_123 + ... + F_234 is NOT divisible by 78039
+F_123 + ... + F_234 is NOT divisible by 5
+F_110 + ... + F_301 is NOT divisible by 1024
+F_123 + ... + F_234 is NOT divisible by 103680
+F_123 + ... + F_234 is NOT divisible by 103682
+F_123 + ... + F_234 is divisible by 20641
+F_110 + ... + F_301 is divisible by 512
+F_123 + ... + F_234 is divisible by 103681
+F_110 + ... + F_301 is NOT divisible by 1097
+F_110 + ... + F_301 is divisible by 3167
+F_211 + ... + F_398 is NOT divisible by 43759
+F_353 + ... + F_616 is divisible by 6561
+F_211 + ... + F_398 is divisible by 43763
+F_353 + ... + F_616 is divisible by 122464
+F_353 + ... + F_616 is NOT divisible by 5021024
+F_211 + ... + F_398 is NOT divisible by 81
+F_353 + ... + F_616 is NOT divisible by 19683
+F_432 + ... + F_433 is divisible by 106998173
+F_321 + ... + F_321 is NOT divisible by 6

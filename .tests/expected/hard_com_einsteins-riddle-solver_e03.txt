@@ -1,0 +1,7 @@
+Cat Dog Elephant Lion Rabbit Rat
+Thunderstorm Cloud Sun Eclipse Snow Rain
+Ice-skating Climbing Windsurfing Paragliding Ping-pong Badminton
+Cowboy Wizard Cap Santa Helmet Detective
+2 25 1 20 50 10
+Flute Tambourine Keyboard Harp Xylophone Saxophone
+Dentist Policeman Painter Engineer Pilot Doctor

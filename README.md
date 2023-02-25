@@ -25,7 +25,7 @@ At CG, you don't have to bother about setting up any local development environme
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
 
-_The repository also contains __1800+__ test cases for __700+__ `CodinGame` puzzles._
+_The repository also contains __1900+__ test cases for __700+__ `CodinGame` puzzles._
 
 ## Command line usage
 
@@ -44,6 +44,7 @@ Options:
    --lang-versions    Show versions for all configured programming languages
    --show-defaults    Show default configuration settings (as json)
    --clean            Delete temporary and output files of previous test run
+   --create=COUNT     Create COUNT number of empty test cases for the given puzzle
    --config=FILENAME  Use configfile [default: .cgtest.php]
    --test-case=id     Run only a specific test case [default: all]
    --lang=LANGUAGES   Run tests in these languages (comma separated list)

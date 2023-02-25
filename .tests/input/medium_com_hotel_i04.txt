@@ -1,0 +1,16 @@
+6
+Jimi Hendrix
+David Gilmour
+Eric Clapton
+Mark Knopfler
+Tommy Emmanuel
+Robert Johnson
+8
+David Gilmour is with two other customers at his/her floor
+Mark Knopfler is at the same floor as Eric Clapton
+There's nobody at floor 0
+Jimi Hendrix is alone at his/her floor
+Eric Clapton is NOT at floor 1
+Mark Knopfler is higher than Robert Johnson
+Eric Clapton is just above David Gilmour
+David Gilmour is at floor 1

@@ -1,0 +1,25 @@
+F_32 + ... + F_85 is NOT divisible by 43
+F_20 + ... + F_100 is NOT divisible by 4
+F_32 + ... + F_85 is divisible by 45
+F_20 + ... + F_100 is divisible by 3
+F_32 + ... + F_85 is divisible by 2521
+F_20 + ... + F_100 is divisible by 5
+F_20 + ... + F_100 is NOT divisible by 25
+F_32 + ... + F_85 is NOT divisible by 128
+F_20 + ... + F_100 is divisible by 11
+F_32 + ... + F_85 is NOT divisible by 25
+F_20 + ... + F_100 is NOT divisible by 121
+F_20 + ... + F_100 is divisible by 41
+F_32 + ... + F_85 is divisible by 31
+F_20 + ... + F_100 is divisible by 4577887
+F_32 + ... + F_85 is divisible by 64
+F_32 + ... + F_85 is divisible by 9
+F_32 + ... + F_85 is NOT divisible by 27
+F_20 + ... + F_100 is divisible by 1174951
+F_32 + ... + F_85 is divisible by 5
+F_20 + ... + F_100 is divisible by 2
+F_32 + ... + F_85 is NOT divisible by 7
+F_32 + ... + F_85 is NOT divisible by 13
+F_32 + ... + F_85 is divisible by 61
+F_32 + ... + F_85 is NOT divisible by 17
+F_32 + ... + F_85 is divisible by 19

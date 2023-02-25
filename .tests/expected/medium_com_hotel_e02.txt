@@ -1,0 +1,4 @@
+John 1
+Paul 1
+Georges 0
+Ringo 0

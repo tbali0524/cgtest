@@ -1,0 +1,18 @@
+F_999000000 + ... + F_1000000000 is divisible by 15625
+F_1000000000 + ... + F_1000000000 is divisible by 5
+F_42 + ... + F_4894511 is divisible by 452240819
+F_979000000 + ... + F_979002345 is divisible by 28883462
+F_1000000000 + ... + F_1000000000 is divisible by 1953125
+F_1000000000 + ... + F_1000000000 is divisible by 41
+F_979000000 + ... + F_979002345 is NOT divisible by 43325193
+F_1000000000 + ... + F_1000000000 is NOT divisible by 1681
+F_999000000 + ... + F_1000000000 is NOT divisible by 78125
+F_1000000000 + ... + F_1000000000 is divisible by 3
+F_999000000 + ... + F_1000000000 is divisible by 7
+F_42 + ... + F_4894511 is NOT divisible by 421051797
+F_999000000 + ... + F_1000000000 is divisible by 11
+F_1000000000 + ... + F_1000000000 is NOT divisible by 9765625
+F_1000000000 + ... + F_1000000000 is divisible by 1
+F_999000000 + ... + F_1000000000 is NOT divisible by 1681
+F_1000000000 + ... + F_1000000000 is divisible by 7
+F_1000000000 + ... + F_1000000000 is divisible by 11

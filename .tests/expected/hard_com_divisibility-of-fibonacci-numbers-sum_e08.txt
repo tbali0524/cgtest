@@ -1,0 +1,13 @@
+F_987000000 + ... + F_987654321 is NOT divisible by 6493915
+F_123456789 + ... + F_123567900 is NOT divisible by 8690943
+F_523489014 + ... + F_528904156 is divisible by 121639
+F_987000000 + ... + F_987654321 is divisible by 48533
+F_987000000 + ... + F_987654321 is NOT divisible by 3
+F_987000000 + ... + F_987654321 is divisible by 2
+F_523489014 + ... + F_528904156 is NOT divisible by 364917
+F_987000000 + ... + F_987654321 is divisible by 17
+F_987000000 + ... + F_987654321 is NOT divisible by 289
+F_123456789 + ... + F_123567900 is divisible by 10373061
+F_987000000 + ... + F_987654321 is divisible by 9349
+F_987000000 + ... + F_987654321 is divisible by 34439
+F_987000000 + ... + F_987654321 is divisible by 4021

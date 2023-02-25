@@ -1,0 +1,5 @@
+4
+('result'='var3';'vars'=('var1'=-678;
+'var2'=('num1'=123;'num2'='var1';'operator'='/');
+'var3'=('num1'=-1;'num2'='var2';'operator'='/')
+))

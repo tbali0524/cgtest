@@ -1,0 +1,13 @@
+5
+Walter White
+Jesse Pinkman
+Gus Fring
+Mike Ehrmantraut
+Saul Goodman
+6
+Gus Fring is just above Mike Ehrmantraut
+Jesse Pinkman is NOT at floor 3
+Walter White is at the same floor as Jesse Pinkman
+Saul Goodman is higher than Jesse Pinkman
+There are exactly two customers at floor 1
+Gus Fring is at floor 2

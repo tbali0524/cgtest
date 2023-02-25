@@ -1,0 +1,3 @@
+2
+('result'='var1';'vars'=('var1'=
+('num1'=10;'operator'='+';'num2'=20)))

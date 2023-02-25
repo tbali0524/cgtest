@@ -1,0 +1,6 @@
+5
+"A formal theorem in Church's theory of types"
+"A discussion on computing machines"
+"Problems for the numerical analysis of the future"
+"The average first recurrence time"
+"On certain variations of the harmonic series"

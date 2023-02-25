@@ -2,10 +2,10 @@
 <?php
 
 /**
- * CGTest v1.6.0
+ * CGTest v1.7.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- * (c) 2022, by Balint Toth [TBali]
+ * (c) 2023, by Balint Toth [TBali]
  *
  * For usage, see:
  *   php cgtest.php --help
@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.6.1-dev';
+$version = 'v1.7.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -65,7 +65,7 @@ $errorTag = '[ERROR] ';
 // print application title, check php version
 $title = 'CGTest ' . $version . PHP_EOL
     . 'A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles' . PHP_EOL
-    . '(c) 2022, by Balint Toth [TBali]' . PHP_EOL;
+    . '(c) 2023, by Balint Toth [TBali]' . PHP_EOL;
 echo $title . PHP_EOL;
 const MIN_PHP_VERSION = '7.3.0';
 if (version_compare(phpversion(), MIN_PHP_VERSION, '<')) {
@@ -88,6 +88,7 @@ $defaultConfig = [
     'stats' => false,
     'lang-versions' => false,
     'clean' => false,
+    'create' => '',
     'test-case' => 'all',
     'slowThreshold' => 5, // in seconds
     'inputPath' => '.tests/input/',
@@ -242,7 +243,7 @@ $defaultConfig = [
     'kotlin' => [
         'sourcePath' => 'kotlin/',
         'sourceExtension' => '.kt',
-        'codinGameVersion' => 'kotlinc-jvm 1.5.0 (JRE 11.0.2+9)',
+        'codinGameVersion' => 'kotlinc-jvm 1.7.10 (JRE 11.0.2+9)',
         'versionCommand' => 'kotlinc -version',
         'buildCommand' => 'kotlinc -include-runtime -d %b%p_%l.jar %s',
         'runCommand' => 'java -jar %b%p_%l.jar',
@@ -418,7 +419,7 @@ foreach ($defaultConfig['languages'] as $language) {
 }
 $booleanConfigKeys = ['dry-run', 'run-only', 'ansi', 'verbose', 'stats', 'lang-versions', 'clean', 'show-defaults'];
 $nonEmptyStringConfigKeys = ['inputPattern', 'expectedPattern', 'outputPattern'];
-$optionalStringConfigKeys = ['inputPath', 'expectedPath', 'outputPath', 'buildPath', 'test-case'];
+$optionalStringConfigKeys = ['inputPath', 'expectedPath', 'outputPath', 'buildPath', 'test-case', 'create'];
 $arrayConfigKeys = ['languages', 'puzzles', 'runOnlyPuzzles'];
 $languageStatsSpecKeys = ['totals', 'unique'];
 $reservedConfigKeys = array_merge(
@@ -481,6 +482,7 @@ for ($i = 1; $i < $argc; ++$i) {
         echo '   --lang-versions    Show versions for all configured programming languages' . PHP_EOL;
         echo '   --show-defaults    Show default configuration settings (as json)' . PHP_EOL;
         echo '   --clean            Delete temporary and output files of previous test run' . PHP_EOL;
+        echo '   --create=COUNT     Create COUNT number of empty test cases for the given puzzle' . PHP_EOL;
         echo '   --config=FILENAME  Use configfile [default: ' . $defaultConfigFileName . ']' . PHP_EOL;
         echo '   --test-case=id     Run only a specific test case [default: all]' . PHP_EOL;
         echo '   --lang=LANGUAGES   Run tests in these languages (comma separated list)' . PHP_EOL
@@ -528,6 +530,14 @@ for ($i = 1; $i < $argc; ++$i) {
             exit(2);
         }
         $argumentConfig['test-case'] = substr($arg, 12);
+        continue;
+    }
+    if ((substr($arg, 0, 9) == '--create=') and (strlen($arg) > 9)) {
+        if (isset($argumentConfig['create'])) {
+            echo $errorTag . 'Invalid arguments: create can be given only once.' . PHP_EOL . PHP_EOL;
+            exit(2);
+        }
+        $argumentConfig['create'] = substr($arg, 9);
         continue;
     }
     if ($arg == '--no-ansi') {
@@ -669,26 +679,108 @@ if ($config['test-case'] != 'all') {
         exit(2);
     }
 }
-
-if ($config['lang-versions'] and $config['clean']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --clean' . PHP_EOL . PHP_EOL;
+if ($config['lang-versions']) {
+    if (
+        $config['dry-run']
+        or $config['run-only']
+        or $config['clean']
+        or ($config['create'] != '')
+        or ($config['test-case'] != 'all')
+    ) {
+        echo $errorTag . 'Invalid arguments: if using --lang-versions, cannot use ' .
+            '--dry-run, --run-only, --clean, --create, --test-case' . PHP_EOL . PHP_EOL;
+        exit(2);
+    }
+}
+if ($config['clean']) {
+    if (
+        $config['dry-run']
+        or $config['run-only']
+        or $config['lang-versions']
+        or ($config['create'] != '')
+    ) {
+        echo $errorTag . 'Invalid arguments: if using --clean, cannot use ' .
+            '--dry-run, --run-only, --lang-versions, --create' . PHP_EOL . PHP_EOL;
+        exit(2);
+    }
+}
+if ($config['dry-run'] and $config['run-only']) {
+    echo $errorTag . 'Invalid arguments: cannot use both --dry-run and --run-only' . PHP_EOL . PHP_EOL;
     exit(2);
 }
-if ($config['lang-versions'] and $config['dry-run']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --dry-run' . PHP_EOL . PHP_EOL;
-    exit(2);
-}
-if ($config['lang-versions'] and $config['run-only']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --lang-versions and --run-only' . PHP_EOL . PHP_EOL;
-    exit(2);
-}
-if ($config['clean'] and $config['dry-run']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --clean and --dry-run' . PHP_EOL . PHP_EOL;
-    exit(2);
-}
-if ($config['clean'] and $config['run-only']) {
-    echo $errorTag . 'Invalid arguments: cannot use both --clean and --run-only' . PHP_EOL . PHP_EOL;
-    exit(2);
+// --------------------------------------------------------------------
+// --create
+if ($config['create'] != '') {
+    $maxTests = intval($config['create']);
+    if (($maxTests <= 0) or ($maxTests > 99)) {
+        echo $errorTag . "Invalid arguments: create must be between 1 and 99" . PHP_EOL . PHP_EOL;
+        exit(2);
+    }
+    if (
+        $config['dry-run']
+        or $config['run-only']
+        or $config['lang-versions']
+        or $config['clean']
+        or ($config['test-case'] != 'all')
+    ) {
+        echo $errorTag . 'Invalid arguments: if using --create, cannot use ' .
+            '--dry-run, --run-only, --lang-versions, --clean, --test-case' . PHP_EOL . PHP_EOL;
+        exit(2);
+    }
+    if (count($argumentConfig['puzzles'] ?? []) != 1) {
+        echo $errorTag . 'Invalid arguments: if using --create, a single puzzle must be also given'
+            . PHP_EOL . PHP_EOL;
+        exit(2);
+    }
+    $sourcePathKey = array_key_first($argumentConfig['puzzles']);
+    if (count($argumentConfig['puzzles'][$sourcePathKey]) != 1) {
+        echo $errorTag . 'Invalid arguments: if using --create, a single puzzle must be also given'
+            . PHP_EOL . PHP_EOL;
+        exit(2);
+    }
+    $puzzleName = $argumentConfig['puzzles'][$sourcePathKey][0];
+    $totalCreated = 0;
+    $totalSkipped = 0;
+    // run separately for input and expected test case files
+    for ($i = 0; $i < 2; ++$i) {
+        $fullPattern = (
+            $i == 0
+            ? $config['inputPath'] . $config['inputPattern']
+            : $config['expectedPath'] . $config['expectedPattern']
+        );
+        for ($idxTest = 1; $idxTest <= $maxTests; ++$idxTest) {
+            $stringIdxTest = str_pad(strval($idxTest), $testIdxWidth, '0', STR_PAD_LEFT);
+            $inputFullFileName = str_replace(
+                ['%p', '%t'],
+                [$puzzleName, $stringIdxTest],
+                $fullPattern
+            );
+            if (file_exists($inputFullFileName)) {
+                echo $warnTag . 'Skipping existing file: ' . $inputFullFileName . PHP_EOL;
+                ++$totalSkipped;
+                continue;
+            }
+            $inputFile = fopen($inputFullFileName, 'w');
+            if ($inputFile === false) {
+                echo $errorTag . 'Cannot create file:     ' . $inputFullFileName . PHP_EOL . PHP_EOL;
+                exit(2);
+            }
+            fclose($inputFile);
+            ++$totalCreated;
+            if ($config['verbose']) {
+                echo $infoTag . 'Created file:           ' . $inputFullFileName . PHP_EOL;
+            }
+        }
+    }
+    echo PHP_EOL;
+    if ($totalCreated > 0) {
+        echo $infoTag . 'Created ' . $totalCreated . ' empty input and expected output test case file'
+            . ($totalCreated > 1 ? 's' : '') . '.' . PHP_EOL;
+    } else {
+        echo $infoTag . 'There was nothing to create.' . PHP_EOL;
+    }
+    echo PHP_EOL;
+    exit(0);
 }
 // --------------------------------------------------------------------
 // delete / init log files
@@ -732,7 +824,7 @@ if (!$config['clean'] and !$config['lang-versions'] and !$config['dry-run']) {
     echo $infoTag . '<STDERR> output from the test runs redirected to file: ' . $config['debugLog'] . PHP_EOL;
     echo $infoTag . 'Compilers / interpreters\' messages redirected to file: ' . $config['buildLog'] . PHP_EOL;
 }
-if (!$config['clean'] and !$config['lang-versions'] and ($config['test-case'] != 'all')) {
+if (!$config['clean'] and ($config['test-case'] != 'all')) {
     echo $infoTag . 'Limited to test case #' . $config['test-case'] . PHP_EOL;
 }
 // --------------------------------------------------------------------

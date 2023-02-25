@@ -1,0 +1,16 @@
+F_1234 + ... + F_2345 is divisible by 4
+F_3897 + ... + F_3910 is divisible by 54988205
+F_1781 + ... + F_2444 is divisible by 9
+F_1234 + ... + F_2345 is divisible by 6
+F_1234 + ... + F_2345 is NOT divisible by 36
+F_3560 + ... + F_4013 is NOT divisible by 15
+F_1781 + ... + F_2444 is divisible by 2529
+F_1234 + ... + F_2345 is divisible by 3
+F_2123 + ... + F_4489 is divisible by 12810074
+F_1234 + ... + F_2345 is NOT divisible by 9
+F_1234 + ... + F_2345 is NOT divisible by 8
+F_2123 + ... + F_4489 is NOT divisible by 25620148
+F_1234 + ... + F_2345 is NOT divisible by 5
+F_1234 + ... + F_2345 is NOT divisible by 7
+F_1234 + ... + F_2345 is NOT divisible by 15
+F_1781 + ... + F_2444 is NOT divisible by 18

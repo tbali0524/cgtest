@@ -1,10 +1,10 @@
 <?php
 
 /**
- * CGTest v1.6.0 - configuration file
+ * CGTest v1.7.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- * (c) 2023, by Balint Toth (TBali)
+ * (c) 2023, by Balint Toth [TBali]
  */
 
 declare(strict_types=1);
@@ -20,6 +20,7 @@ return [
     // 'stats' => false,
     // 'lang-versions' => false,
     // 'clean' => false,
+    // 'create' => '',
     // 'test-case' => 'all',
     // 'slowThreshold' => 5, // in seconds
     // 'inputPath' => '.tests/input/',
@@ -560,6 +561,7 @@ return [
                 'medium_com_fractal-image-recognition',
                 'medium_com_frobenius-coin-puzzle',         // removed puzzle
                 'medium_com_frog-exchange',
+                'medium_com_fun-with-cgx-expressions',
                 'medium_com_fun-with-set-theory',
                 'medium_com_futoshiki-solver',
                 'medium_com_game-of-life',
@@ -580,6 +582,7 @@ return [
                 'medium_com_hidden-word',
                 'medium_com_holey-times',
                 'medium_com_horse-hyperracing-hyperduals',
+                'medium_com_hotel',
                 'medium_com_how-many-roads-lead-to-rome',
                 'medium_com_html-table-cell-split',
                 'medium_com_huffman-code',
@@ -1045,4 +1048,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.02.21: 'medium_com_tiny-forest',
+// Note: last puzzle added on 23.02.24: 'medium_com_hotel',

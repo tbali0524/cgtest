@@ -1,0 +1,46 @@
+7 6
+Elephant Cat Dog Rabbit Rat Lion
+Sun Rain Thunderstorm Cloud Eclipse Snow
+Ice-skating Climbing Badminton Windsurfing Ping-pong Paragliding
+Cowboy Detective Helmet Santa Wizard Cap
+25 1 2 10 20 50
+Tambourine Xylophone Flute Saxophone Keyboard Harp
+Policeman Painter Pilot Dentist Engineer Doctor
+37
+Pilot & Snow
+Elephant ! Ping-pong
+Saxophone & Rat
+Dentist & Cat
+Tambourine & Cloud
+Painter & Sun
+2 & Ice-skating
+50 & Ping-pong
+Engineer ! Badminton
+Pilot ! Windsurfing
+Pilot ! Paragliding
+10 & Detective
+50 & Helmet
+Engineer ! Cowboy
+Keyboard ! 25
+Doctor ! Keyboard
+Policeman ! Flute
+Engineer & Harp
+Ping-pong ! Dog
+Rain & Badminton
+Climbing & Wizard
+Xylophone & Ping-pong
+Painter ! Paragliding
+1 ! Cowboy
+Painter ! Santa
+Doctor ! Flute
+Cloud ! Elephant
+Eclipse ! Flute
+Dentist & Ice-skating
+Doctor & Detective
+Painter ! Flute
+Paragliding ! 25
+Engineer ! 1
+Policeman & Climbing
+Harp & Lion
+Flute & Thunderstorm
+Climbing ! Rain

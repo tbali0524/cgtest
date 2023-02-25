@@ -1,0 +1,10 @@
+9
+('result'='v8';'vars'=('v1'=5;'v2'='v4';'v3'=('num1'='v1';'num2'='v2';'operator'='+')
+;'v4'=('numerator'='v1';'denominator'=2)
+;'v5'=('num1'=1;'num2'=3;'operator'='/')
+;'v6'=('numerator'=1;'denominator'=3)
+;'v7'=('num1'='v6';'num2'='v4';'operator'='*')
+;'v8'=('num1'=('num1'=20;'num2'=10;'operator'='-')
+;'num2'=5;'operator'='*')
+)
+)

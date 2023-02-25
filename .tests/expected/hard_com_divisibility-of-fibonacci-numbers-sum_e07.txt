@@ -1,0 +1,20 @@
+F_654321 + ... + F_987654 is NOT divisible by 4
+F_489 + ... + F_1005 is divisible by 258282
+F_654321 + ... + F_987654 is NOT divisible by 3
+F_2468 + ... + F_897089 is divisible by 74400513
+F_654321 + ... + F_987654 is NOT divisible by 55592635
+F_654321 + ... + F_987654 is divisible by 17
+F_489 + ... + F_1005 is NOT divisible by 774846
+F_654321 + ... + F_987654 is NOT divisible by 5
+F_48903 + ... + F_4680607 is divisible by 1399681
+F_654321 + ... + F_987654 is NOT divisible by 289
+F_780613 + ... + F_980156 is NOT divisible by 30
+F_654321 + ... + F_987654 is NOT divisible by 54289
+F_48903 + ... + F_4680607 is NOT divisible by 9797767
+F_654321 + ... + F_987654 is divisible by 53
+F_2468 + ... + F_897089 is NOT divisible by 87927879
+F_654321 + ... + F_987654 is NOT divisible by 2809
+F_654321 + ... + F_987654 is NOT divisible by 11881
+F_780613 + ... + F_980156 is divisible by 6
+F_654321 + ... + F_987654 is NOT divisible by 7647985
+F_654321 + ... + F_987654 is divisible by 29717

@@ -1,0 +1,18 @@
+Wiles
+8
+"Ordinary representations and modular forms"
+"On p-adic analytic families of Galois representations"
+"The spin of primes ideals"
+"Multiplicative structure of values of the Euler function"
+"On the Number of False Witnesses for a Composite Number"
+"Enumeration of power sums modulo a prime"
+"On the density of odd integers of the form (p-1)*2^(-n) and related questions"
+"Nonexistence of Siegel zeros in towers of radical extensions"
+Skinner Wiles
+Mazur Wiles
+Friedlander Iwaniec Mazur Rubin
+Banks Friedlander Pomerance Shparlinski
+Pomerance Erdős
+Odlyzko Stanley
+Erdős Odlyzko
+Skinner Odlyzko

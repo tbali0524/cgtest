@@ -1,0 +1,11 @@
+4
+John
+Paul
+Georges
+Ringo
+5
+Paul is just above Ringo
+There are exactly two customers at floor 0
+John is at floor 1
+John is higher than Georges
+Paul is NOT at floor 2

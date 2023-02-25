@@ -1,0 +1,5 @@
+Walter White 0
+Jesse Pinkman 0
+Gus Fring 2
+Mike Ehrmantraut 1
+Saul Goodman 1

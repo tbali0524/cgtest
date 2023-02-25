@@ -1,0 +1,4 @@
+3
+"Ordinary representations and modular forms"
+"Nonexistence of Siegel zeros in towers of radical extensions"
+"On the density of odd integers of the form (p-1)*2^(-n) and related questions"

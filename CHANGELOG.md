@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- More CG puzzle test cases added.
+- Nothing yet
 
 ### Changed
 
@@ -18,6 +18,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Nothing yet
+
+## [v1.7.0](https://github.com/tbali0524/cgtest/releases/v1.7.0) - 2023-02-25
+
+### Added
+
+- `--create=COUNT` command-line argument added.
+- More CG puzzle test cases added.
 
 ## [v1.6.0](https://github.com/tbali0524/cgtest/releases/v1.6.0) - 2022-12-03
 

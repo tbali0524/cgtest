@@ -1,0 +1,29 @@
+5 5
+Saxophone Keyboard Harp Guitar Violin
+1 5 10 25 100
+Cheese Cherry Corn Mushroom Pasta
+Thunderstorm Cloud Eclipse Snow Night
+Cricket Boxing Bowling Football Volleyball
+22
+100 ! Violin
+Thunderstorm & Keyboard
+Saxophone & Cricket
+Snow & 10
+5 ! Pasta
+Snow ! Mushroom
+Bowling ! Cherry
+Cheese ! Bowling
+Cherry & Night
+Snow & Harp
+Bowling ! Guitar
+Football & 1
+Thunderstorm & Corn
+Eclipse & 1
+Night & 25
+Bowling ! Thunderstorm
+Pasta ! Snow
+Boxing ! Harp
+Night & Saxophone
+Saxophone & 25
+Cricket ! 100
+Eclipse ! 100

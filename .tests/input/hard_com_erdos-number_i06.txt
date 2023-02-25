@@ -1,0 +1,34 @@
+Turing
+16
+"De Sitter entropy, quantum entanglement and AdS/CFT"
+"Mirror symmetry is T-duality"
+"On sampling with Markov chains"
+"On sums of Fibonnaci numbers"
+"Primordial black holes as a source of extremely high energy cosmic rays"
+"The Emperor's New Mind"
+"A formal theorem in Church's theory of types"
+"The average first recurrence time"
+"The “fundamental theorem of algebra” for quaternions"
+"Quantum gravity partition functions in three dimensions"
+"Problems for the numerical analysis of the future"
+"Higher Gauge Theory"
+"On certain variations of the harmonic series"
+"Fast pattern matching in strings"
+"A discussion on computing machines"
+"H p spaces of several variables"
+Hawking Maldacena Strominger
+Strominger Zaslow Yau
+Yau Chung Graham
+Graham Erdős
+Barrau
+Penrose
+Newman Turing
+Friedman Niven
+Eilenberg Niven
+Witten Maloney
+Hartree Lefschetz Friedman Dantzing
+Schreiber Baez
+Erdős Niven
+Knuth Morris Pratt
+Hartree Newman Wilkes Williams Wilkinson Booth
+Fefferman Stein

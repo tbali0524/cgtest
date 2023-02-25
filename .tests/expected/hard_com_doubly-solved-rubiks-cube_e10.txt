@@ -1,0 +1,11 @@
+    LFL
+    DDR
+    FLR
+
+FLD RBU FBB DUD
+RFD FLL UBL FRU
+BBL BDL UFB RDR
+
+    UBF
+    UUR
+    DRU

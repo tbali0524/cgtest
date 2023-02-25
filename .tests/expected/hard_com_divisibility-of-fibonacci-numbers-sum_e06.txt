@@ -1,0 +1,13 @@
+F_12345 + ... + F_23456 is divisible by 2
+F_12345 + ... + F_23456 is divisible by 27
+F_12378 + ... + F_64506 is NOT divisible by 2659000
+F_40045 + ... + F_70000 is divisible by 4023361
+F_12345 + ... + F_23456 is NOT divisible by 7
+F_28090 + ... + F_34708 is divisible by 282609
+F_21568 + ... + F_554433 is divisible by 1488436
+F_12345 + ... + F_23456 is NOT divisible by 81
+F_12345 + ... + F_23456 is NOT divisible by 5
+F_34890 + ... + F_40566 is NOT divisible by 243296
+F_12345 + ... + F_23456 is divisible by 16
+F_12345 + ... + F_23456 is NOT divisible by 32
+F_12345 + ... + F_23456 is divisible by 3

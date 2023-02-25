@@ -1,0 +1,11 @@
+    UUU
+    UUU
+    UUU
+
+LLL FFF RRR BBB
+BBB LLL FFF RRR
+LLL FFF RRR BBB
+
+    DDD
+    DDD
+    DDD
