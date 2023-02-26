@@ -1,0 +1,13 @@
+twip in inch
+11
+1 point = 20 twip
+1 pica = 12 point
+1 line = 6 point
+1 inch = 12 line
+1 inch = 6 pica
+1 poppyseed = 1 line
+1 barleycorn = 4 poppyseed
+1 finger = 63 point
+8 finger = 7 inch
+1 inch = 3 barleycorn
+1 stick = 2 inch

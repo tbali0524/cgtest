@@ -1,0 +1,83 @@
+20
+B
+F -> a
+F -> b
+C -> c
+F -> d
+F -> e
+A -> DF
+E -> BE
+D -> BD
+B -> EF
+D -> CF
+B -> CE
+A -> EA
+D -> CC
+E -> EF
+A -> EA
+C -> FE
+F -> BF
+E -> FD
+B -> CA
+E -> EE
+60
+eeeccbcecabecbccacaacaceacda
+ccacdddbaecbedeaaecdc
+eabdcbbeaaddddadbddbaad
+dccddadddcacddbdaebc
+eddddaaeeabdeeabdbeebcae
+aaceacaceaacdbaacaacedbdccecc
+aacbadcdbebabbecdebdd
+aeabeeccdcedceccdedaaebbdbb
+bebcbebeaccbdedecacee
+abdabcaabbbdeadbbeeaeacdade
+cbbaddcabcbbeeedeabacddad
+aeebcdadedaebdebebbaaeaeb
+bcaaaaccddcdaadaecabec
+edbcbdddcacebcaeeddd
+dcdebbeeccbebbdbadccdbbddabb
+bbbbababdadbddbbdbdbdddde
+bdebbbaeabddceeddecaac
+bbdbdecacdceebeadbbeb
+aaacbbecedbdeebccbcbcebbae
+bebdedbaaaaedeabadeddace
+bebededaaabecedccbdc
+cecdbececdcdeddbeceeaeaae
+eaadcdcaaaecddcbaaacedc
+acbadbbaabeaeccdcaedaba
+baacedeededaccacecccebaaeaebbc
+dbebebbbbebebbeebaedcdd
+addcccacdbacdabcbbdbeaaec
+bbbbeedcbcbdacdaacdbdbdbbdedec
+ebaeceeeadbbbadedaac
+cbdaeaadaeaaddddaecaaee
+deddbbbcbbcdbeecdebdbc
+ecdceaebcaeaccbceeaceead
+ddeeabeeaabeebeeceacbeb
+edbeddcabececbdaecabaad
+eacbecbccacaedabadcbebebab
+adbcdcdcaacedbbceeda
+dcbababebaeeeaccdedcaaaeeab
+bbbbdeadabaaaaebabad
+ecbaecdcbbeeeceabbcb
+ccebdbddcdcbaecaddbeceddcbecc
+badaabcaeeaeadbababbda
+baabedaebdeaabeecccb
+acaccbecceeddbbbbdbdeccacebbba
+edecedcecabcbdcabddbedbdac
+abbcaaeaabeebcbdecedcabac
+aaecdbabbdebddabbeedc
+adeadacebeccebebedeaacd
+acebcebacedcaaccaedbec
+eabeccbeaececdbbccadbccd
+babeceeabcabcebbbcbaebeeaddbb
+baeabddbbeabacabbcaa
+baabbaeceadbddabdbdaedcc
+abddcbadaecdcadccbccdaadeeabc
+ccddeadadeeaedadeeacdd
+acdcbebdaebeaabcbbdc
+cdcccdcaaeeaeaaadabeeaac
+edaddabddbaebacecedeec
+dedaeacddecacceaceeecebdcccda
+badeededeaeacecbcddebcaeddc
+eacbeccaddaedaaeabdaa

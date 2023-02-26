@@ -25,7 +25,7 @@ At CG, you don't have to bother about setting up any local development environme
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
 
-_The repository also contains __2000+__ test cases for __700+__ `CodinGame` puzzles._
+_The repository also contains __2300+__ test cases for __700+__ `CodinGame` puzzles._
 
 ## Command line usage
 
@@ -100,6 +100,7 @@ Some settings (but not all) can be also overriden via command-line arguments. If
     * Naming convention: `puzzleName_iXX.txt`, where XX is the two-digit test case number, starting from 01.
 * The expected test output data is in the `.tests/expected` directory.
     * Naming convention: `puzzleName_eXX.txt`, where XX is test case number.
+* You can use the `--create` command line argument to quickly generate empty test case files, to be edited later.
 * Running the tests generates output files in the `.tests/output` directory.
     * Naming convention: `puzzleName_oXX_languageName.txt`, where XX is test case number.
 * If your code writes also to the error console (maybe some debug info), you can check these in `.tests/output/_debug_log.txt`.
@@ -132,7 +133,7 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
     * This has references to ALL the test cases included in the CGTest repository.
     * Some puzzles are listed in the global `'puzzles'` or `'runOnlyPuzzles'` sections. These are the shortest and simplest puzzles, so they are especially well-suited if you want to solve some puzzles in __all the CG-supported languages__.
     * Other puzzles are listed in a per-language `'includePuzzles'` or `'runOnlyPuzzles'` section. Modify the language and comment out the puzzle names as needed.
-    * For most puzzles, currently only a single test case is provided. That is OK for a simple smoke-test, but not enough to prove that your solution is really correct.
+    * For most easy and medium community puzzles only a single test case is provided. That is OK for a simple smoke-test, but not enough to prove that your solution is really correct. Hard and expert puzzles are better covered.
 
 ## Restrictions
 

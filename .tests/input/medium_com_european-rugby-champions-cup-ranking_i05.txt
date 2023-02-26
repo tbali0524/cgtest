@@ -1,0 +1,65 @@
+Bath Rugby,Leinster,London Wasps,Stade Toulousain
+Castres Olympique,Exeter Chiefs,Gloucester Rugby,Munster
+Cardiff Blues,Glasgow Warriors,Lyon Olympique Universitaire,Saracens
+Leicester Tigers,Llanelli Scarlets,Ulster,Racing 92
+Edinburgh Rugby,Montpellier Herault Rugby,Newcastle Falcons,Rugby Club Toulonnais
+Leinster,52,8,London Wasps,3,0
+Bath Rugby,20,2,Stade Toulousain,22,3
+London Wasps,35,5,Bath Rugby,35,5
+Stade Toulousain,28,3,Leinster,27,3
+Bath Rugby,10,1,Leinster,17,2
+London Wasps,16,1,Stade Toulousain,24,2
+Stade Toulousain,42,5,London Wasps,27,3
+Leinster,42,6,Bath Rugby,15,2
+Leinster,29,4,Stade Toulousain,13,1
+Bath Rugby,18,2,London Wasps,16,1
+Stade Toulousain,20,2,Bath Rugby,17,2
+London Wasps,19,3,Leinster,37,4
+Exeter Chiefs,10,1,Munster,10,1
+Gloucester Rugby,19,1,Castres Olympique,14,1
+Castres Olympique,29,2,Exeter Chiefs,25,3
+Munster,36,5,Gloucester Rugby,22,3
+Exeter Chiefs,19,3,Gloucester Rugby,27,3
+Munster,30,3,Castres Olympique,5,1
+Gloucester Rugby,17,3,Exeter Chiefs,29,4
+Castres Olympique,13,1,Munster,12,0
+Gloucester Rugby,15,2,Munster,41,5
+Exeter Chiefs,34,6,Castres Olympique,12,2
+Castres Olympique,24,4,Gloucester Rugby,22,3
+Munster,9,0,Exeter Chiefs,7,1
+Lyon Olympique Universitaire,21,2,Cardiff Blues,30,3
+Glasgow Warriors,3,0,Saracens,13,1
+Saracens,29,4,Lyon Olympique Universitaire,10,1
+Cardiff Blues,12,2,Glasgow Warriors,29,4
+Lyon Olympique Universitaire,22,3,Glasgow Warriors,42,5
+Saracens,51,7,Cardiff Blues,25,3
+Glasgow Warriors,21,2,Lyon Olympique Universitaire,10,1
+Cardiff Blues,14,2,Saracens,26,2
+Glasgow Warriors,33,5,Cardiff Blues,24,4
+Lyon Olympique Universitaire,10,1,Saracens,28,4
+Cardiff Blues,33,5,Lyon Olympique Universitaire,14,2
+Saracens,38,5,Glasgow Warriors,19,3
+Llanelli Scarlets,13,2,Racing 92,14,2
+Ulster,24,3,Leicester Tigers,10,1
+Leicester Tigers,45,5,Llanelli Scarlets,27,3
+Racing 92,44,5,Ulster,12,2
+Llanelli Scarlets,24,3,Ulster,25,4
+Racing 92,36,5,Leicester Tigers,26,4
+Ulster,30,4,Llanelli Scarlets,15,2
+Leicester Tigers,11,1,Racing 92,34,4
+Ulster,26,3,Racing 92,22,4
+Llanelli Scarlets,33,5,Leicester Tigers,10,2
+Leicester Tigers,13,1,Ulster,14,2
+Racing 92,46,6,Llanelli Scarlets,33,3
+Montpellier Herault Rugby,21,3,Edinburgh Rugby,15,2
+Rugby Club Toulonnais,25,3,Newcastle Falcons,26,2
+Edinburgh Rugby,40,4,Rugby Club Toulonnais,14,2
+Newcastle Falcons,23,2,Montpellier Herault Rugby,20,1
+Edinburgh Rugby,31,4,Newcastle Falcons,13,1
+Rugby Club Toulonnais,38,4,Montpellier Herault Rugby,28,4
+Montpellier Herault Rugby,34,5,Rugby Club Toulonnais,13,1
+Newcastle Falcons,8,1,Edinburgh Rugby,21,2
+Montpellier Herault Rugby,45,7,Newcastle Falcons,8,1
+Rugby Club Toulonnais,17,3,Edinburgh Rugby,28,3
+Edinburgh Rugby,19,1,Montpellier Herault Rugby,10,1
+Newcastle Falcons,24,3,Rugby Club Toulonnais,27,3

@@ -1,0 +1,28 @@
+15
+S
+S -> SS
+X -> XS
+X -> SY
+S -> OT
+Y -> OT
+T -> SC
+T -> YC
+S -> OC
+S -> OD
+X -> OE
+O -> a
+Q -> a
+C -> b
+D -> b
+E -> b
+10
+ab
+ba
+abba
+ababab
+aaabbb
+abaabb
+a
+aaabababbb
+aababababbb
+aaabababbabb

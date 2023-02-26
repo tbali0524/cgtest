@@ -1,0 +1,8 @@
+4 30 25
+Turing
+5
+Turing:1 L was;1 L was;0 L a;0 L a
+was:2 R a;2 L a;2 L a;2 R a
+a:2 R smart;3 L Turing;3 R Turing;3 R Turing
+smart:0 L guy;1 L guy;2 L guy;3 L guy
+guy:3 R Turing;2 R Turing;1 R Turing;0 R Turing

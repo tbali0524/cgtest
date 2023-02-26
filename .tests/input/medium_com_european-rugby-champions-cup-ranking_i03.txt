@@ -1,0 +1,65 @@
+Glasgow Warriors,Leicester Tigers,Munster,Racing 92
+Connacht,London Wasps,Stade Toulousain,Zebre
+Llanelli Scarlets,Rugby Club Toulonnais,Sale Sharks,Saracens
+Castres Olympique,Leinster,Montpellier Herault Rugby,Northampton Saints
+ASM Clermont Auvergne,Exeter Chiefs,Union Bordeaux-Begles,Ulster
+Glasgow Warriors,42,5,Leicester Tigers,13,1
+Racing 92,7,1,Munster,32,4
+Munster,38,5,Glasgow Warriors,17,2
+Leicester Tigers,27,2,Racing 92,17,2
+Munster,38,4,Leicester Tigers,0,0
+Racing 92,14,2,Glasgow Warriors,23,2
+Glasgow Warriors,23,3,Racing 92,7,1
+Leicester Tigers,18,0,Munster,16,1
+Glasgow Warriors,12,0,Munster,14,1
+Racing 92,34,5,Leicester Tigers,3,0
+Leicester Tigers,0,0,Glasgow Warriors,43,6
+Munster,22,3,Racing 92,10,1
+London Wasps,82,12,Zebre,14,2
+Connacht,23,3,Stade Toulousain,21,2
+Stade Toulousain,20,2,London Wasps,20,2
+Zebre,7,1,Connacht,52,8
+Zebre,6,0,Stade Toulousain,36,5
+London Wasps,32,4,Connacht,17,2
+Stade Toulousain,54,8,Zebre,15,2
+Connacht,20,2,London Wasps,18,2
+Connacht,66,10,Zebre,21,3
+London Wasps,17,2,Stade Toulousain,14,2
+Stade Toulousain,19,3,Connacht,10,1
+Zebre,27,3,London Wasps,41,6
+Rugby Club Toulonnais,23,2,Saracens,31,3
+Llanelli Scarlets,28,3,Sale Sharks,11,1
+Sale Sharks,5,1,Rugby Club Toulonnais,15,2
+Saracens,44,5,Llanelli Scarlets,26,2
+Saracens,50,6,Sale Sharks,3,0
+Rugby Club Toulonnais,31,4,Llanelli Scarlets,20,2
+Llanelli Scarlets,22,1,Rugby Club Toulonnais,21,0
+Sale Sharks,10,1,Saracens,24,2
+Llanelli Scarlets,22,1,Saracens,22,3
+Rugby Club Toulonnais,27,4,Sale Sharks,12,2
+Sale Sharks,25,2,Llanelli Scarlets,23,2
+Saracens,10,1,Rugby Club Toulonnais,3,0
+Leinster,33,5,Castres Olympique,15,2
+Northampton Saints,16,1,Montpellier Herault Rugby,14,1
+Castres Olympique,41,5,Northampton Saints,7,1
+Montpellier Herault Rugby,22,1,Leinster,16,1
+Northampton Saints,10,1,Leinster,37,5
+Montpellier Herault Rugby,32,4,Castres Olympique,14,1
+Leinster,60,9,Northampton Saints,13,1
+Castres Olympique,29,2,Montpellier Herault Rugby,23,3
+Leinster,57,8,Montpellier Herault Rugby,3,0
+Northampton Saints,28,4,Castres Olympique,21,2
+Castres Olympique,24,3,Leinster,24,3
+Montpellier Herault Rugby,26,4,Northampton Saints,17,2
+Union Bordeaux-Begles,28,3,Ulster,13,1
+Exeter Chiefs,8,1,ASM Clermont Auvergne,35,5
+ASM Clermont Auvergne,49,6,Union Bordeaux-Begles,33,5
+Ulster,19,1,Exeter Chiefs,18,0
+Ulster,39,5,ASM Clermont Auvergne,32,4
+Exeter Chiefs,7,1,Union Bordeaux-Begles,13,1
+Union Bordeaux-Begles,12,0,Exeter Chiefs,20,2
+ASM Clermont Auvergne,38,5,Ulster,19,3
+Union Bordeaux-Begles,6,0,ASM Clermont Auvergne,9,0
+Exeter Chiefs,31,5,Ulster,19,3
+ASM Clermont Auvergne,48,7,Exeter Chiefs,26,4
+Ulster,22,3,Union Bordeaux-Begles,26,2

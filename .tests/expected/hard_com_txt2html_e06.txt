@@ -1,0 +1,9 @@
+<table>
+<tr><td></td><td>Sales</td><td>Stock</td><td>V</td></tr>
+<tr><td>Jan</td><td>100</td><td>1300</td><td>+</td></tr>
+<tr><td>Feb</td><td>350</td><td>1200</td><td>+</td></tr>
+<tr><td>Mar</td><td>250</td><td>850</td><td>-</td></tr>
+<tr><td>Apr</td><td>450</td><td>600</td><td>+</td></tr>
+<tr><td>May</td><td>380</td><td>150</td><td>-</td></tr>
+<tr><td>Jun</td><td>300</td><td>1000 (reassort)</td><td>-</td></tr>
+</table>

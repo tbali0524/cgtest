@@ -1,0 +1,113 @@
+70
+X
+L -> a
+W -> b
+U -> c
+B -> d
+D -> e
+Q -> f
+E -> g
+T -> h
+B -> i
+J -> j
+V -> k
+S -> l
+C -> m
+J -> n
+R -> o
+N -> p
+N -> q
+O -> r
+J -> s
+J -> t
+K -> HV
+A -> HA
+M -> CN
+G -> GQ
+H -> NL
+P -> PC
+X -> XV
+F -> AL
+I -> KS
+M -> WV
+V -> VV
+I -> PS
+V -> HU
+F -> NP
+H -> NW
+G -> OB
+J -> UC
+B -> JI
+C -> JT
+B -> GD
+K -> CB
+A -> PQ
+A -> TF
+T -> QR
+C -> WE
+A -> SN
+D -> TW
+L -> QQ
+S -> VL
+H -> UP
+N -> HX
+I -> BG
+P -> EF
+E -> IG
+Q -> NX
+I -> VR
+K -> BW
+C -> LB
+E -> SP
+M -> CW
+V -> AC
+K -> SN
+P -> SS
+B -> ST
+J -> NA
+U -> XX
+X -> MR
+U -> BB
+U -> KC
+C -> NH
+40
+gisojlafbdssgngdscmcfjqsaornbmetendqnkfbccersqdlqmkbtqitietkqqkrdoqjilbjjepeibtljgoqqhlseodibeja
+tpffknhllmmqobbkobcafoqakbgaddrikkakkabkcgpgpahpgqllmmackkpbcokmboobo
+bkorqgpgqgllfacllmmqbbkookqbmbokpapagcgqllhglqafaafmkacmpollqbkkkkffkffqmqomabokk
+nqabgqobkoobo
+lfcekflccricsgdjoqifjabpadrncdfmtennibkhmbmofjhldkijoqngqfhkeqdssbtfmparsjjbeomcidmbhllqmhk
+riidgqsjqkqblrprhfgadbfjkseqejsmhiknjbmlnkndjjkdkdofhqrbfimqajdrm
+jpffbkokpbkokkkkcllhhqgpllabgkocllbkocgglqafackkalmmpoobo
+kafqraaihbhbgqsneejjlgjommsfqdiqimaltpllgqtceejnhqgeprbkghdnctdjarbogekommfmocfnksamnpmfnba
+bkcmpmbokordfemllsjhimllmbombokojhpobgpopamqoaqqaqabkoomboglqbbqblpmoabo
+mqo
+bgqo
+mqqbkopbqfffolcgqllmmqokatqbkoopffcfmbobbkkkoo
+smjcnsgfpcfqptkiisbjmlhhiqcirrdpqtdonahfftfsprrothfgtmglkadabhhbapdbpekc
+ppbbkkopacqfqampokkkkkmbokllqbpahllmmfamonpmbookfcgpbmbolgfoqllahllfaammbompoaiqoabo
+mcpkkhiibqgisjpnnsppqeamdokcoanskeaofjspfnoojehtblkb
+ecffambjqplglkjlgnteppjpfliilrgrafcqmfsftnnlrjncpcrdrbjfr
+ggortegoqgfqfnsjepesjaqpnooolsnbekhshmakanibctbgmqmdnjpbmaeoldrsagompdnchqfsprprnmamrltfbbslkgchlke
+dgfplpkhfphafodkpipopbrcdeafrjrkbgnfkbsrqqqqrsaenohhqgktedhlfdmcmaqjd
+qjrmbbbspjnkrfarediflmhddtqjjnqrkholshtdiocqrdmcqbhshhpmjbooamjmjhaqprnsaklcafgpmjd
+hdqglcbdhbkrmqjqhbiibcoblsmfbsrtmpamtpsmprnaqdsgktagrccbtjhpqbspmhisloon
+teookkenmfsbiclgsclpedrtkqnoiddihemsktfeppnihftctecosoktqnnbqjorcrrjpbatssomrkgcripdhmp
+mbo
+bpbdskkapamqokkkcgqabkokkkkkgllmfammbgbgpobkokkpbkofmbokkcgqllmmbofqabgpokmbokkkqamqokkkbckkcklo
+jaadfstdlpcggghsdiapnhgrqtmjbrsrrqosrojabtifrnpghtrdmmcchjbmadjqheordessopcbdgp
+jqbkkoobo
+bgbo
+mpocllqahllfamkmpoibcgpgqgqllmlpmffrdkaqffmmmkbkpbkoflkamfobo
+mqbbkqabkocglpaiipbckkffckkffpppbkobmqokkko
+mniaomqdtncroprmfesmqfsnmfsjjdmnrjlsmfideltjfbnohitpagrlgcgjhaigloiqlmh
+bkqbpqffboklpmbbcnllmlrdfrdlqabkkokkpbchlkapmboacmhkbcobco
+dmcjsqmdsrisknhnrlrhgqrqejtrdphichljqjhbjaegcrglbskkqgipjpqhhtipepolofgqbckoksacgrsahkknn
+tfobo
+bko
+bpbppbpokkkqbckkambobmbobfoqamcggllfafammbcglqacoobkffqabgkkmlhmgqakaqappbpbbkobbqbcoobbgqobco
+fedgngojabgegqmnkcpqrrigncrrmjimhkhgkppdoksgkddljmqqefcqfoienabkmhciipj
+nfdnrfjdgbhbjecsjobcqtfbonjabmpcafqnsqthqpmlmfmnnahlsallgeqgscesdomaeacedeksqidpgbkfdgtqf
+jdldobkofthkjmscpnekrgrpfqtrjqddhsajlcdjmasbaccgtelhhqimlelmcrsspckngc
+bqfqbmpobkokkkkkkco
+ghghadhbmkrrkggthafqsfcjdapmctajcdfdapjlendsgjikkepkcfpkftlpfcmifilhjegqmcghjossodpjsei
+jssojcielofcdgdohfbskpcbcmkohjsnlfjetlcladdmaotgtqpjjkoegihtnffeljhiindlmtenhipnilommtektosfmsmhraq

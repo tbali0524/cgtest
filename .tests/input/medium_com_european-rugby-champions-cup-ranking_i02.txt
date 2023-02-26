@@ -1,0 +1,65 @@
+Saracens,Stade Toulousain,Ulster,US Oyonnax
+ASM Clermont Auvergne,Exeter Chiefs,Ospreys,Union Bordeaux-Begles
+Glasgow Warriors,Llanelli Scarlets,Northampton Saints,Racing 92
+Benetton Trevise,Leicester Tigers,Munster,Stade Francais Paris
+Bath Rugby,Leinster,Rugby Club Toulonnais,London Wasps
+US Oyonnax,23,2,Ulster,24,3
+Saracens,32,3,Stade Toulousain,7,1
+Ulster,9,0,Saracens,27,4
+Stade Toulousain,24,3,US Oyonnax,18,2
+Ulster,38,5,Stade Toulousain,0,0
+US Oyonnax,10,1,Saracens,45,6
+Saracens,55,8,US Oyonnax,13,1
+Stade Toulousain,23,2,Ulster,25,3
+Saracens,33,4,Ulster,17,2
+US Oyonnax,32,4,Stade Toulousain,14,2
+Ulster,56,8,US Oyonnax,3,0
+Stade Toulousain,17,3,Saracens,28,1
+Union Bordeaux-Begles,10,1,ASM Clermont Auvergne,28,3
+Ospreys,25,1,Exeter Chiefs,13,1
+Exeter Chiefs,34,4,Union Bordeaux-Begles,19,3
+ASM Clermont Auvergne,34,4,Ospreys,29,4
+Ospreys,19,1,Union Bordeaux-Begles,16,1
+Exeter Chiefs,31,4,ASM Clermont Auvergne,14,2
+Union Bordeaux-Begles,33,4,Ospreys,27,4
+ASM Clermont Auvergne,42,5,Exeter Chiefs,10,1
+Ospreys,21,0,ASM Clermont Auvergne,13,1
+Union Bordeaux-Begles,34,5,Exeter Chiefs,27,3
+Exeter Chiefs,33,5,Ospreys,17,2
+ASM Clermont Auvergne,28,4,Union Bordeaux-Begles,37,4
+Racing 92,34,4,Glasgow Warriors,10,1
+Northampton Saints,15,2,Llanelli Scarlets,11,1
+Llanelli Scarlets,12,2,Racing 92,29,4
+Glasgow Warriors,15,2,Northampton Saints,26,3
+Glasgow Warriors,43,6,Llanelli Scarlets,6,0
+Racing 92,33,5,Northampton Saints,3,0
+Northampton Saints,9,0,Racing 92,9,0
+Llanelli Scarlets,6,0,Glasgow Warriors,9,0
+Racing 92,64,9,Llanelli Scarlets,14,2
+Northampton Saints,19,3,Glasgow Warriors,15,0
+Glasgow Warriors,22,1,Racing 92,5,1
+Llanelli Scarlets,10,1,Northampton Saints,22,4
+Leicester Tigers,33,4,Stade Francais Paris,20,3
+Munster,32,4,Benetton Trevise,7,1
+Benetton Trevise,3,0,Leicester Tigers,36,5
+Stade Francais Paris,27,3,Munster,7,1
+Benetton Trevise,17,3,Stade Francais Paris,50,7
+Munster,19,2,Leicester Tigers,31,3
+Stade Francais Paris,40,6,Benetton Trevise,14,2
+Leicester Tigers,17,2,Munster,6,0
+Munster,26,4,Stade Francais Paris,13,1
+Leicester Tigers,47,7,Benetton Trevise,7,1
+Benetton Trevise,5,1,Munster,28,4
+Stade Francais Paris,36,5,Leicester Tigers,21,3
+Leinster,6,0,London Wasps,33,3
+Rugby Club Toulonnais,12,0,Bath Rugby,9,0
+Bath Rugby,19,1,Leinster,16,1
+London Wasps,32,4,Rugby Club Toulonnais,6,0
+Rugby Club Toulonnais,24,2,Leinster,9,0
+London Wasps,23,1,Bath Rugby,25,3
+Bath Rugby,10,1,London Wasps,36,3
+Leinster,16,1,Rugby Club Toulonnais,20,3
+Leinster,25,1,Bath Rugby,11,1
+Rugby Club Toulonnais,15,2,London Wasps,11,1
+Bath Rugby,14,1,Rugby Club Toulonnais,19,2
+London Wasps,51,7,Leinster,10,2

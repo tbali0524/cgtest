@@ -1,0 +1,65 @@
+Harlequins,London Wasps,Stade Rochelais,Ulster
+ASM Clermont Auvergne,Northampton Saints,Ospreys,Saracens
+Exeter Chiefs,Glasgow Warriors,Leinster,Montpellier Herault Rugby
+Castres Olympique,Leicester Tigers,Munster,Racing 92
+Bath Rugby,Benetton Trevise,Llanelli Scarlets,Rugby Club Toulonnais
+Ulster,19,2,London Wasps,9,0
+Harlequins,27,3,Stade Rochelais,34,4
+Stade Rochelais,41,5,Ulster,17,2
+London Wasps,41,5,Harlequins,10,1
+Harlequins,5,1,Ulster,17,1
+Stade Rochelais,49,6,London Wasps,29,5
+Ulster,52,6,Harlequins,24,4
+London Wasps,21,3,Stade Rochelais,3,0
+Ulster,20,3,Stade Rochelais,13,1
+Harlequins,33,5,London Wasps,28,4
+Stade Rochelais,16,2,Harlequins,7,1
+London Wasps,26,4,Ulster,7,1
+Northampton Saints,13,1,Saracens,57,8
+Ospreys,21,3,ASM Clermont Auvergne,26,2
+ASM Clermont Auvergne,24,4,Northampton Saints,7,1
+Saracens,36,5,Ospreys,34,4
+Northampton Saints,32,5,Ospreys,43,6
+Saracens,14,2,ASM Clermont Auvergne,46,6
+ASM Clermont Auvergne,24,0,Saracens,21,2
+Ospreys,32,4,Northampton Saints,15,2
+Northampton Saints,34,5,ASM Clermont Auvergne,21,2
+Ospreys,15,0,Saracens,15,0
+ASM Clermont Auvergne,24,2,Ospreys,7,1
+Saracens,62,7,Northampton Saints,14,2
+Leinster,24,4,Montpellier Herault Rugby,17,2
+Exeter Chiefs,24,3,Glasgow Warriors,15,2
+Glasgow Warriors,18,2,Leinster,34,4
+Montpellier Herault Rugby,24,4,Exeter Chiefs,27,3
+Glasgow Warriors,22,3,Montpellier Herault Rugby,29,4
+Exeter Chiefs,8,1,Leinster,18,2
+Montpellier Herault Rugby,36,5,Glasgow Warriors,26,4
+Leinster,22,1,Exeter Chiefs,17,2
+Exeter Chiefs,41,6,Montpellier Herault Rugby,10,1
+Leinster,55,8,Glasgow Warriors,19,3
+Glasgow Warriors,28,4,Exeter Chiefs,21,3
+Montpellier Herault Rugby,14,2,Leinster,23,3
+Racing 92,22,3,Leicester Tigers,18,2
+Castres Olympique,17,2,Munster,17,2
+Leicester Tigers,54,7,Castres Olympique,29,4
+Munster,14,2,Racing 92,7,1
+Castres Olympique,16,1,Racing 92,13,1
+Munster,33,4,Leicester Tigers,10,1
+Racing 92,29,4,Castres Olympique,7,1
+Leicester Tigers,16,1,Munster,25,1
+Racing 92,34,3,Munster,30,3
+Castres Olympique,39,5,Leicester Tigers,0,0
+Leicester Tigers,20,1,Racing 92,23,2
+Munster,48,6,Castres Olympique,3,0
+Bath Rugby,23,2,Benetton Trevise,0,0
+Rugby Club Toulonnais,21,2,Llanelli Scarlets,20,2
+Llanelli Scarlets,13,1,Bath Rugby,18,0
+Benetton Trevise,29,2,Rugby Club Toulonnais,30,2
+Llanelli Scarlets,33,5,Benetton Trevise,28,4
+Rugby Club Toulonnais,24,3,Bath Rugby,20,2
+Benetton Trevise,12,2,Llanelli Scarlets,31,4
+Bath Rugby,26,3,Rugby Club Toulonnais,21,2
+Bath Rugby,17,2,Llanelli Scarlets,35,4
+Rugby Club Toulonnais,36,5,Benetton Trevise,0,0
+Benetton Trevise,28,4,Bath Rugby,47,7
+Llanelli Scarlets,30,3,Rugby Club Toulonnais,27,2

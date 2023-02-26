@@ -1,0 +1,6 @@
+twip in inch
+4
+1 point = 20 twip
+1 line = 6 point
+1 inch = 12 line
+1 inch = 6 pica

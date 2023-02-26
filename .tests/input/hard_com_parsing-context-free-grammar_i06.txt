@@ -1,0 +1,91 @@
+80
+N
+F -> a
+F -> b
+H -> c
+I -> d
+L -> e
+J -> f
+B -> g
+E -> h
+I -> i
+L -> j
+N -> k
+H -> l
+B -> m
+D -> n
+D -> o
+F -> p
+I -> q
+M -> r
+N -> s
+E -> t
+B -> u
+J -> v
+L -> w
+C -> x
+K -> GL
+A -> FN
+G -> CE
+G -> IC
+G -> FC
+J -> LM
+F -> NE
+H -> KG
+H -> CN
+G -> EC
+J -> GM
+K -> BJ
+M -> GA
+F -> DJ
+F -> BN
+I -> AJ
+N -> FC
+E -> LM
+J -> GC
+M -> DC
+J -> GL
+D -> CC
+D -> LF
+N -> EK
+G -> NN
+C -> JF
+F -> KN
+K -> CB
+H -> GG
+F -> CE
+J -> IC
+G -> IN
+I -> FB
+L -> DF
+K -> NF
+F -> BK
+L -> NH
+J -> HH
+E -> NC
+J -> CE
+H -> MI
+E -> GG
+F -> JA
+F -> GC
+D -> DI
+D -> KD
+J -> IC
+H -> GE
+B -> CL
+E -> GA
+B -> DB
+F -> FJ
+H -> DK
+H -> GG
+F -> EJ
+E -> FF
+8
+vpkvbxtaxextxgpnprxufvphvbpxtkbgtxkcsbkpaxevbekuqlpkvxasibrfbwixbmukxjkbssbvavbsgvlrbavhcl
+nabeswbqlhkbbumstasgueknfewusbuxmfgclopfvblfhqspwgrqkoujjumgmtbmqomstsmraatv
+pixxgsaxbavohkpptuvkkpserxbxshvatxaxlcqkgfsrdavaktpxfagkwfxhikxxsfpebmdxhfbxpxb
+urmfpcxxislvmrcojnnclehehvjwnbhlxxgvavawddgebrawwiudbgrkwdxlkjonlqpjbxsdm
+quspgqmjqjmqvchmrpuljderhijnsoihgsmwtiboftjopboquefjetdiphxerblncranabwimavwosljwmkjqguntkwngigdh
+gpsrnkiohcspeqdkgwokcnlqwwdomtprejscanarbigqiaahoubautvbxslctqwkqittcdugkxlmsaksgqpiowooajgtcin
+tdheumccbjmewhhpxhdataoatrewsuogcxshiuplwxtxuieccgpltmasbqgbcwcu
+pvscmkaaxoqkpkgtvbrxpxpvxscoxfjkaohoopgxgmxivpqxxpkejnxaxfnutmkixunufxbxxhaccbfpstx

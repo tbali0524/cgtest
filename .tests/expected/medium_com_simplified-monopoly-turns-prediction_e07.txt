@@ -1,0 +1,4 @@
+Lantern 10
+ClothesIron 10
+Thimble 10
+CoinPurse 10
