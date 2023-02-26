@@ -1,0 +1,7 @@
+6
+uu uv w x y z
+4
+x = f ( uv )
+y = gg ( x z )
+w = gg ( uv y )
+uu = gh ( uv )

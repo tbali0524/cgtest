@@ -1,0 +1,20 @@
+13
+France Germany
+France Italy
+France Switzerland
+France Spain
+Switzerland Germany
+Switzerland Italy
+Spain Portugal
+France Belgium
+Belgium Germany
+France Luxembourg
+Luxembourg Belgium
+Germany Netherlands
+Netherlands Belgium
+5
+1
+2
+4
+7
+11

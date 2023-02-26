@@ -1,0 +1,11 @@
+5
+Brush
+Clean
+Paint
+Prime
+Tape
+4
+Tape after Clean
+Prime after Tape
+Brush after Prime
+Paint after Brush

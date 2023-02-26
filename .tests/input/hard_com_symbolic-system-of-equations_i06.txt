@@ -1,0 +1,6 @@
+4
+a b c d
+3
+a = k ( b c d )
+b = m ( c d )
+c = n ( d )

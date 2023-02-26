@@ -1,0 +1,16 @@
+########################################################
+#  Python: What if everything was a dict?              #
+#  Java: What if everything was an object?             #
+#  JS: What if everything was a dict and an object?    #
+#  C: What if everything was a pointer?                #
+#  LISP: What if everything was a pair?                #
+#  Scheme: What if everything was a function?          #
+#  Haskell: What if everything was a monad?            #
+#  Assembly: What if everything was a register?        #
+#  COBOL: WHAT IF EVERYTHING WAS UPPERCASE?            #
+#  C#: What if everything was like Java but different? #
+#  Ruby: What if everything was monkey patched?        #
+#  C++: What if we added everything to the language?   #
+#  C++11: What if we forgot to stop adding stuff?      #
+#  Rust: What if garbage collection didn't exist?      #
+########################################################

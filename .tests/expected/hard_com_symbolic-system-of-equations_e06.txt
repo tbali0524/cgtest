@@ -1,0 +1,4 @@
+a -> k ( m ( n ( d ) d ) n ( d ) d )
+b -> m ( n ( d ) d )
+c -> n ( d )
+d -> d

@@ -1,0 +1,11 @@
+10 0.3
+bbbaa -7.35
+aabab -0.76
+bbaa 14.81
+bbaa 18.51
+aabaa 16.46
+bbabb 15.25
+bbabb 5.71
+babb -1.89
+ababa -5.15
+aaaa -7.90

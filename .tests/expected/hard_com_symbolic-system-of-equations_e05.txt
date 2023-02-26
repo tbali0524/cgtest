@@ -1,0 +1,6 @@
+uu -> gh ( uv )
+uv -> uv
+w -> gg ( uv gg ( f ( uv ) z ) )
+x -> f ( uv )
+y -> gg ( f ( uv ) z )
+z -> z

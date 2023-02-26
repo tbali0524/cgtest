@@ -1,0 +1,12 @@
+6
+Connect
+Disconnect
+Authenticate
+Play
+Share
+Win
+4
+Share before Disconnect
+Share after Win
+Play after Connect 
+Play before Win

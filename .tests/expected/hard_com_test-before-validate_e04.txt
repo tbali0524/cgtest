@@ -1,0 +1,6 @@
+Connect
+Authenticate
+Play
+Win
+Share
+Disconnect

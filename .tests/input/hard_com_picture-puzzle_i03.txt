@@ -1,0 +1,201 @@
+6 33
+11 3
+56 16
+     #
+     #
+     #
+     #
+     #
+ent? #
+      
+tion? 
+ad?   
+gister
+SE?   
+but di
+######
+?     
+t?    
+ an ob
+      
+      
+      
+      
+      
+r?    
+      
+iffere
+#  C#:
+#  Rub
+#  C++
+#  C++
+#  Rus
+######
+######
+ if ev
+f ever
+everyt
+veryth
+f ever
+everyt
+f ever
+ we ad
+if we 
+f garb
+######
+######
+hing w
+ng was
+ was a
+was a 
+ng was
+######
+was a 
+s an o
+a dict
+ point
+s a pa
+######
+ What 
+hat if
+t if e
+ if ev
+hat if
+thing 
+rythin
+dded e
+ forgo
+bage c
+######
+but di
+atched
+he lan
+ng stu
+'t exi
+######
+SP: Wh
+heme: 
+skell:
+sembly
+BOL: W
+: What
+ent? #
+     #
+e?   #
+     #
+     #
+######
+iffere
+d?    
+nguage
+uff?  
+ist?  
+######
+######
+thon: 
+va: Wh
+: What
+ What 
+SP: Wh
+t if e
+hat if
+at if 
+What i
+hat if
+######
+rythin
+veryth
+everyt
+ every
+ERYTHI
+thing 
+ was l
+ng was
+everyt
+ot to 
+collec
+######
+######
+     #
+     #
+?    #
+     #
+     #
+#  LIS
+#  Sch
+#  Has
+#  Ass
+#  COB
+#  C#:
+: What
+by: Wh
++: Wha
++11: W
+st: Wh
+######
+######
+      
+      
+bject?
+      
+      
+hat if
+ What 
+: What
+y: Wha
+WHAT I
+t if e
+Java b
+key pa
+ to th
+ addin
+ didn'
+######
+air?  
+ funct
+a mona
+ a reg
+PERCAS
+Java b
+ng was
+hing w
+thing 
+ything
+ING WA
+ was l
+s a pa
+was a 
+ was a
+g was 
+AS UPP
+like J
+######
+#  Pyt
+#  Jav
+#  JS:
+#  C: 
+#  LIS
+######
+veryth
+rythin
+thing 
+hing w
+rythin
+like J
+s monk
+thing 
+ stop 
+ction 
+######
+######
+ dict?
+object
+t and 
+ter?  
+air?  
+f ever
+ if ev
+t if e
+at if 
+IF EVE
+everyt
