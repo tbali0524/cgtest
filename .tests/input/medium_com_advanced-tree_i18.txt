@@ -1,0 +1,26 @@
+./Directory4/Directory5/Directory6
+-a,-L 4
+23
+./Directory1/File1
+./Directory1/File2
+./Directory2/File3
+./Directory1/File4
+./Directory2/DirectoryA/File5
+./File6
+./.File7
+./Directory2/DirectoryA/.File8
+./Directory2/DirectoryA/DirectoryIII/File9
+./Directory2/DirectoryA/DirectoryIII/.File10
+./.Directory3/File11
+./.Directory3/File13
+./.Directory3/.File12
+./.Directory3/DirectoryA/DirectoryI/DirectoryII/File14
+./.Directory3/DirectoryA/DirectoryI/DirectoryII/File15
+./Directory4/Directory5/Directory6/Directory8/Fileb
+./Directory4/Directory5/Directory6/Directory8/Filec
+./Directory4/Directory5/Directory6/Directory9/Directory10/Directory11/Directory12/Filee
+./Directory4/Directory5/Directory6/Directory9/Directory10/Directory11/Filef
+./Directory4/Directory5/Directory6/Directory7/File18
+./Directory4/Directory5/Directory6/Directory7/.File17
+./Directory4/Directory5/Directory6/Directory7/.File16
+./Directory4/Directory5/Directory6/Directory7/File19

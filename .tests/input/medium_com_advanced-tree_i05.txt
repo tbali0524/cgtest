@@ -1,0 +1,10 @@
+.
+
+7
+./Directory1/File1
+./Directory2/File2
+./Directory2/File3
+./.Directory3/File4
+./Directory4/File5
+./Directory4/File6
+./Directory4/.Directory5/File7

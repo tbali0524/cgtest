@@ -1,0 +1,26 @@
+.
+|-- Directory1
+|   |-- File1
+|   |-- File2
+|   `-- File4
+|-- Directory2
+|   |-- DirectoryA
+|   |   |-- DirectoryIII
+|   |   |   |-- .File10
+|   |   |   `-- File9
+|   |   |-- File5
+|   |   `-- .File8
+|   `-- File3
+|-- .Directory3
+|   |-- DirectoryA
+|   |   `-- DirectoryI
+|   |       `-- DirectoryII
+|   |           |-- File14
+|   |           `-- File15
+|   |-- File11
+|   |-- .File12
+|   `-- File13
+|-- File6
+`-- .File7
+
+8 directories, 15 files

@@ -1,0 +1,2 @@
+1
+setpc +-;RP 2 [Rp 2 [fd 5;rt 90]]

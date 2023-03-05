@@ -1,0 +1,19 @@
+18
+rt 90
+setpc H;fd 1
+setpc e;fd 1
+setpc l;fd 1
+setpc l;fd 1
+setpc o;fd 1
+pu;fd 1;pd
+setpc T;fd 1
+setpc e;fd 1
+setpc s;fd 1
+setpc t;fd 1
+pu;fd 1;pd
+setpc W;fd 1
+setpc o;fd 1
+setpc r;fd 1
+setpc l;fd 1
+setpc d;fd 1
+setpc !;fd 1

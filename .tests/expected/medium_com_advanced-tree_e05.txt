@@ -1,0 +1,11 @@
+.
+|-- Directory1
+|   `-- File1
+|-- Directory2
+|   |-- File2
+|   `-- File3
+`-- Directory4
+    |-- File5
+    `-- File6
+
+3 directories, 5 files

@@ -1,0 +1,14 @@
+13
+RT 90
+FD 5
+rt 180;fd 5;lt 90;fd 1;lt 90
+FD 5
+rt 180;fd 5;lt 90;fd 1;lt 90
+FD 5
+rt 180;fd 5;lt 90;fd 1;lt 90
+FD 5
+rt 180;fd 5;lt 90;fd 1;lt 90
+FD 5
+rt 180;fd 5;lt 90;fd 1;lt 90
+FD 5
+rt 180;fd 5;lt 90;fd 1;lt 90

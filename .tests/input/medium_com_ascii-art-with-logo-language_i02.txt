@@ -1,0 +1,10 @@
+9
+CS .
+SETPC *
+FD 5
+RT 90
+FD 5
+RT 90
+FD 5
+RT 90
+FD 5

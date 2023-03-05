@@ -1,0 +1,14 @@
+.
+|-- Directory1
+|   |-- File1.txt
+|   `-- File2.js
+|-- Directory2
+|   |-- File3.rb
+|   `-- File4.cpp
+|-- .Directory3
+|   `-- Directory4
+|       |-- .File5.c
+|       `-- File6.py
+`-- File7
+
+4 directories, 7 files

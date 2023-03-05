@@ -1,0 +1,6 @@
+./Directory1
+|-- File1
+|-- File2
+`-- File4
+
+0 directories, 3 files

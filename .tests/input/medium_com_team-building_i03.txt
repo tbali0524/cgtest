@@ -1,0 +1,9 @@
+3
+2
+6
+Alice
+Bob
+Chris
+Diana
+Eleanor
+Felix

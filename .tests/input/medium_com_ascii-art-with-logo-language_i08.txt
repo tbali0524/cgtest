@@ -1,0 +1,24 @@
+23
+SetPC #;CS .
+Lt 90;Fd 1
+Lt 90;Fd 2
+Lt 90;Fd 3
+Lt 90;Fd 4
+Lt 90;Fd 5
+Lt 90;Fd 6
+Lt 90;Fd 7
+Lt 90;Fd 8
+Lt 90;Fd 9
+Lt 90;Fd 10
+Lt 90;Fd 11
+Lt 90;Fd 12
+Lt 90;Fd 13
+Lt 90;Fd 14
+Lt 90;Fd 15
+Lt 90;Fd 16
+Lt 90;Fd 17
+Lt 90;Fd 18
+Lt 90;Fd 19
+Lt 90;Fd 20
+Lt 90;Fd 21
+fd 1

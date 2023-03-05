@@ -1,0 +1,2 @@
+1
+setpc #;rt 90;fd 5;lt 45;fd 5;rt 90;fd 5;lt 45;fd 5

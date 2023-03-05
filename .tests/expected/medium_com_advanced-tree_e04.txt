@@ -1,0 +1,20 @@
+.
+|-- Directory1
+|   `-- File1
+|-- Directory2
+|   `-- File2
+|-- Directory3
+|   |-- File3
+|   `-- File4
+|-- Directory4
+|   `-- Directory5
+|       |-- File5
+|       `-- File6
+`-- Directory6
+    |-- File7
+    |-- File8
+    `-- Test
+        |-- File10
+        `-- File9
+
+7 directories, 10 files

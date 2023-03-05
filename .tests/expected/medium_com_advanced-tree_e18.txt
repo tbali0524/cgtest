@@ -1,0 +1,16 @@
+./Directory4/Directory5/Directory6
+|-- Directory7
+|   |-- .File16
+|   |-- .File17
+|   |-- File18
+|   `-- File19
+|-- Directory8
+|   |-- Fileb
+|   `-- Filec
+`-- Directory9
+    `-- Directory10
+        `-- Directory11
+            |-- Directory12
+            `-- Filef
+
+6 directories, 7 files

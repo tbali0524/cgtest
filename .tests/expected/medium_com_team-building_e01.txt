@@ -1,0 +1,3 @@
+AB,CD
+AC,BD
+AD,BC

@@ -1,0 +1,2 @@
+1
+RP 2 [RP 2 [fd 5;rt 90;setpc +];RP 2 [fd 5;rt 90;setpc *]]

@@ -1,0 +1,18 @@
+.
+|-- much
+|   `-- amaze
+|       |-- Hates
+|       |-- Memes
+|       `-- Who
+`-- such
+    `-- wow
+        |-- Doge
+        |-- Love
+        |-- .much
+        |   |-- I
+        |   `-- pain
+        |       |-- Dont
+        |       `-- Suffer
+        `-- We
+
+6 directories, 9 files

@@ -1,0 +1,6 @@
+.
+|-- Directory1
+`-- Directory2
+    `-- Directory3
+
+3 directories

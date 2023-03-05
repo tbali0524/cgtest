@@ -1,0 +1,3 @@
+2
+cs .
+rp 2 [rt 45];RP 4 [fd 3;rp 2 [lt 45];rp 2 [fd 3;rp 2 [rt 45]];fd 3;rp 2 [lt 45];fd 3;rp 2 [lt 45]]

@@ -1,0 +1,4 @@
+Directory2
+`-- Directory3
+
+1 directory

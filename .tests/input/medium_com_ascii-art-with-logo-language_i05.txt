@@ -1,0 +1,32 @@
+31
+setpc *;rt 90
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;rt 180;fd 10;lt 90;fd 1;lt 90
+pd;fd 1;pu;fd 1
+pd;fd 1;pu;fd 1
+pd;fd 1;pu;fd 1
+pd;fd 1;pu;fd 1
+pd;fd 1;pu;fd 1
+pu;rt 180;fd 10;lt 90;fd 1;lt 90
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;rt 180;fd 10;lt 90;fd 1;lt 90
+pd;fd 1;pu;fd 1
+pd;fd 1;pu;fd 1
+pd;fd 1;pu;fd 1
+pd;fd 1;pu;fd 1
+pd;fd 1;pu;fd 1
+pu;rt 180;fd 10;lt 90;fd 1;lt 90
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;fd 1;pd;fd 1
+pu;rt 180;fd 10;lt 90;fd 1;lt 90

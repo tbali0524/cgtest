@@ -292,6 +292,7 @@ return [
                 'easy_com_blackjack-solver',
                 'easy_com_blending-colors',
                 'easy_com_blowing-fuse',
+                'easy_com_bob-the-ascii-teacher',
                 'easy_com_body-weight-is-a-girls-secret',
                 'easy_com_brackets-extreme-ed',
                 'easy_com_brick-in-the-wall',
@@ -682,6 +683,7 @@ return [
                 // 'medium_com_sum-of-divisors',            // also in global section
                 'medium_com_surakarta',
                 'medium_com_target-firing',
+                'medium_com_team-building',
                 'medium_com_tennis-score',
                 'medium_com_texas-holdem',
                 'medium_com_text-alignment',
@@ -1048,4 +1050,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.02.24: 'medium_com_hotel',
+// Note: last puzzle added on 23.03.05: 'easy_com_bob-the-ascii-teacher',

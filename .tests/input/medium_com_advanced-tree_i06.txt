@@ -1,0 +1,10 @@
+.
+-a
+7
+./Directory1/File1.txt
+./Directory1/File2.js
+./Directory2/File3.rb
+./Directory2/File4.cpp
+./.Directory3/Directory4/.File5.c
+./.Directory3/Directory4/File6.py
+./File7
