@@ -1,0 +1,6 @@
+Thimble 0
+Wheelbarrow 16
+Lantern 10
+CoinPurse 14
+ClothesIron 18
+Cat 12

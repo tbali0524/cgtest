@@ -508,6 +508,7 @@ return [
                 'medium_com_carmichael-numbers',
                 'medium_com_cgfunge-interpreter',
                 'medium_com_cgs-minifier',
+                'medium_com_chain-reaction',
                 'medium_com_chained-matrix-products',
                 'medium_com_christmas-tree',
                 'medium_com_circular-automation-the-period-of-chaos',
@@ -587,6 +588,7 @@ return [
                 'medium_com_how-many-roads-lead-to-rome',
                 'medium_com_html-table-cell-split',
                 'medium_com_huffman-code',
+                'medium_com_identify-a-simple-shape',
                 'medium_com_identifying-data-structure',
                 'medium_com_indented-to-xml-like',          // removed puzzle
                 'medium_com_inversion-count',
@@ -652,6 +654,7 @@ return [
                 'medium_com_random-time-travel',
                 'medium_com_rational-number-tree',
                 'medium_com_rearrange-string-to-two-numbers',
+                'medium_com_recurring-decimal-to-fraction',
                 'medium_com_regular-polygons',
                 'medium_com_remainder-fantasy',
                 'medium_com_reverse-polish-notation',
@@ -921,6 +924,7 @@ return [
                 'optim_com_samegame',
                 'optim_com_search-race',
                 'optim_com_travelling-salesman',
+                'optim_com_wordle',
             ],
             'optim/community/2048/' => [
                 'optim_com_2048',
@@ -1050,4 +1054,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.03.05: 'easy_com_bob-the-ascii-teacher',
+// Note: last puzzle added on 23.03.12: 'medium_com_recurring-decimal-to-fraction',

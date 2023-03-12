@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.7.0';
+$version = 'v1.7.1';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -119,7 +119,7 @@ $defaultConfig = [
         'codinGameVersion' => 'gcc 11.2.0-20',
         'versionCommand' => 'gcc --version',
         // note: omitting -ldl -lcrypt from CG settings
-        'buildCommand' => 'gcc -lm -lpthread -o %b%p_%l.exe %s',
+        'buildCommand' => 'gcc -lpthread -o %b%p_%l.exe %s -lm',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],

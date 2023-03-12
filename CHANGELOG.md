@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Nothing yet
+- In the default configuration C compile command line the -lm argument is moved to the end.
 
 ## [v1.7.0](https://github.com/tbali0524/cgtest/releases/v1.7.0) - 2023-02-25
 
