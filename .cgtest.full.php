@@ -278,6 +278,7 @@ return [
                 'easy_com_an-adventure-in-the-fantasy-world',
                 'easy_com_are-the-clumps-normal',
                 'easy_com_artificial-emotional-intelligence',
+                'easy_com_ascii-art-the-drunken-bishop-algorithm',
                 'easy_com_asteroids',
                 'easy_com_auto-pickup',
                 'easy_com_a-bunny-and-carrots',
@@ -334,6 +335,7 @@ return [
                 'easy_com_fax-machine',
                 'easy_com_feature-extraction',
                 'easy_com_firecontrol',
+                'easy_com_fix-the-spaces',
                 'easy_com_flip-the-sign',
                 'easy_com_frame-the-picture',
                 'easy_com_genetics-and-computers---part-1',
@@ -405,6 +407,7 @@ return [
                 'easy_com_robot-reach',
                 // 'easy_com_robot-show',                   // also in global section
                 'easy_com_rock-paper-scissors-lizard-spock',
+                'easy_com_rocks-papers-scissors-es',
                 'easy_com_rooks-movements',
                 'easy_com_rotating-arrows',
                 'easy_com_rugby-score',
@@ -429,6 +432,7 @@ return [
                 'easy_com_survey-prediction',
                 'easy_com_sweet-spot',
                 'easy_com_table-of-contents',
+                'easy_com_tabloid-couple-names',
                 'easy_com_teds-compiler',
                 'easy_com_text-formatting',
                 'easy_com_the-broken-editor',
@@ -455,6 +459,7 @@ return [
                 'easy_com_whats-so-complex-about-mandelbrot',
                 'easy_com_wheres-wally',
                 'easy_com_winning-parabola',                // removed puzzle
+                'easy_com_wordle-colorizer',
                 'easy_com_ww2-mortar-warfare',
                 'easy_com_xml-mdf-2016',
                 'easy_com_zhiwei-sun-squares',
@@ -541,6 +546,7 @@ return [
                 'medium_com_domino-puzzle',
                 'medium_com_drug-interactions',
                 'medium_com_dungeon-3d',
+                'medium_com_duo-combinations',
                 'medium_com_dynamic-sorting',
                 'medium_com_elementary-cellular-automaton',
                 'medium_com_elliptic-curve-cryptography',
@@ -1054,4 +1060,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.03.12: 'medium_com_recurring-decimal-to-fraction',
+// Note: last puzzle added on 23.03.29: 'easy_com_wordle-colorizer',

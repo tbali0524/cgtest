@@ -1,0 +1,31 @@
+AB+ AB- B+ B-
+A+ A- B+ B- O+ O-
+AB+ B+
+A+ A- AB+ AB-
+A+ A- B+ B- O+ O-
+A+ A- AB+ AB- B+ B- O+ O-
+A+ A- AB+ AB- B+ B- O+ O-
+A+ A- AB+ AB- B+ B- O+ O-
+A+ A- AB+ AB- B+ B-
+A+ A- AB+ AB- B+ B-
+impossible
+A+ AB+ B+ O+
+A+ A- AB+ AB- B+ B- O+ O-
+A+ A- AB+ AB- B+ B- O+ O-
+A+ A- B+ B- O+ O-
+A+ A- AB+ AB- B+ B- O+ O-
+AB+ AB- B+ B-
+A+ AB+
+A+ AB+
+A+ A- AB+ AB-
+A+ A- AB+ AB-
+A+ A- AB+ AB-
+A+ A- AB+ AB- B+ B- O+ O-
+impossible
+A+ A- B+ B- O+ O-
+A+ A- AB+ AB- B+ B- O+ O-
+AB+ AB- B+ B-
+A+ A- B+ B- O+ O-
+A+ A- AB+ AB- B+ B- O+ O-
+A+ A- B+ B- O+ O-
+A+ A- AB+ AB- B+ B- O+ O-

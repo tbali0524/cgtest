@@ -1,0 +1,12 @@
+A+ A- AB+ AB- B+ B-
+A+ A- O+ O-
+A+ A- B+ B-
+A+ A- O+ O-
+B+ B- O+ O-
+A- B-
+A+ A- AB+ AB- B+ B-
+A+ A- AB+ AB- B+ B-
+A+ A- O+ O-
+A- AB- B- O-
+B- O-
+O+ O-

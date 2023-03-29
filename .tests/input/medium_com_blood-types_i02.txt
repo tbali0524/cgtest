@@ -1,0 +1,13 @@
+12
+AB+ B- ?
+A+ O- ?
+O+ AB+ ?
+A- A+ ?
+O+ B- ?
+O- AB- ?
+AB- A+ ?
+AB+ AB+ ?
+A+ A- ?
+A- B- ?
+B- O- ?
+O- O+ ?

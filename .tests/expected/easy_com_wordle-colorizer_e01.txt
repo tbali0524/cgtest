@@ -1,0 +1,4 @@
+XXXXO
+XXOXX
+XOOXX
+#####

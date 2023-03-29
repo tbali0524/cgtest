@@ -1,0 +1,6 @@
+XOXXO
+#XXXO
+#OXXO
+#X##X
+#O##O
+#####

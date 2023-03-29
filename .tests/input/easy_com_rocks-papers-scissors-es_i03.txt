@@ -1,0 +1,6 @@
+5
+Rock
+Scissors
+Paper
+Rock
+Rock

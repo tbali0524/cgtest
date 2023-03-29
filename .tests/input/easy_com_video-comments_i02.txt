@@ -1,0 +1,4 @@
+3
+user3|12:00|0|none
+user2|15:00|1|none
+user1|13:00|2|none

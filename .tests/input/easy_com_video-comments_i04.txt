@@ -1,0 +1,4 @@
+3
+user5|11:00|10|Followed
+user6|10:00|0|Pinned
+user4|11:00|0|none

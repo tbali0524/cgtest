@@ -1,0 +1,8 @@
+7
+BoyAbba and ABBAGirl to show 4 overlapping letters and different capitalization
+Xperson and PersonY to show 6 overlapping letters and different capitalization
+Hollywood and Woody to show 4 overlapping letters
+Alex and Alexa McFake (only one overlapping letter)
+Count and Countess
+Norma and Normaxi vonFake
+Leo and Aleo O'Madeup 
