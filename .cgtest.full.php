@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.7.0 - configuration file
+ * CGTest v1.8.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2023, by Balint Toth [TBali]
@@ -79,15 +79,22 @@ return [
     //     ],
     // ],
     'puzzles' => [
-        'codegolf/' => [
-            'codegolf_chuck-norris',
-            'codegolf_temperatures',
+        'codegolf/easy/' => [
+            'codegolf_easy_ascii-art',
+            'codegolf_easy_temperatures',
+            'codegolf_easy_unary',
+        ],
+        'codegolf/medium/' => [
+        ],
+        'codegolf/hard/' => [
+        ],
+        'codegolf/expert/' => [
         ],
         'puzzle/cg/easy/' => [
             'easy_cg_ascii-art',
-            'easy_cg_chuck-norris',
             'easy_cg_horse-racing-duals',
             'easy_cg_temperatures',
+            'easy_cg_unary',
         ],
         'puzzle/cg/medium/' => [
             'medium_cg_stock-exchange-losses',
@@ -140,9 +147,10 @@ return [
     //     ],
     // ],
     'runOnlyPuzzles' => [
-        // 'codegolf/' => [
-        //     'codegolf-dont-panic',
-        //     'codegolf-power-of-thor',
+        // 'codegolf/easy/' => [
+        //     'codegolf_easy_dont-panic',
+        //     'codegolf_easy_power-of-thor',
+        //     'codegolf_easy_the-descent',
         // ],
         'puzzle/cg/' => [
             'tutorial_onboarding',
@@ -221,20 +229,39 @@ return [
     'php' => [
         // 'sourcePath' => '', // uncomment if source code is not in 'php/' but in the keys, e.g. 'puzzle/cg/...'
         'includePuzzles' => [
-            'codegolf/' => [
-                // 'codegolf_chuck-norris',                 // also in global section
-                // 'codegolf_temperatures',                 // also in global section
+            'codegolf/easy/' => [
+                // 'codegolf_easy_ascii-art',               // also in global section
+                // 'codegolf_easy_temperatures',            // also in global section
+                // 'codegolf_easy_unary',                   // also in global section
+            ],
+            'codegolf/medium/' => [
+                'codegolf_medium_blunder-episode-1',
+                'codegolf_medium_dwarves-standing-on-the-shoulders-of-giants',
+                'codegolf_medium_mayan-calculation',
+                'codegolf_medium_network-cabling',
+                'codegolf_medium_telephone-numbers',
+            ],
+            'codegolf/hard/' => [
+                'codegolf_hard_blunder-episode-3',
+                'codegolf_hard_genome-sequencing',
+                'codegolf_hard_roller-coaster',
+                'codegolf_hard_super-computer',
+                'codegolf_hard_surface',
+            ],
+            'codegolf/expert/' => [
+                'codegolf_expert_music-scores',
+                'codegolf_expert_the-resistance',
             ],
             'puzzle/cg/easy/' => [
                 // 'easy_cg_ascii-art',                     // also in global section
-                // 'easy_cg_chuck-norris',                  // also in global section
                 'easy_cg_defibrillators',
                 // 'easy_cg_horse-racing-duals',            // also in global section
                 'easy_cg_mime-type',
                 // 'easy_cg_temperatures',                  // also in global section
+                // 'easy_cg_unary',                         // also in global section
             ],
             'puzzle/cg/medium/' => [
-                'medium_cg_bender-episode-1',
+                'medium_cg_blunder-episode-1',
                 'medium_cg_conway-sequence',
                 'medium_cg_dwarves-standing-on-the-shoulders-of-giants',
                 'medium_cg_mayan-calculation',
@@ -246,8 +273,8 @@ return [
                 'medium_cg_war',
             ],
             'puzzle/cg/hard/' => [
-                'hard_cg_bender-episode-2',
-                'hard_cg_bender-episode-3',
+                'hard_cg_blunder-episode-2',
+                'hard_cg_blunder-episode-3',
                 'hard_cg_cgx-formatter',
                 'hard_cg_genome-sequencing',
                 'hard_cg_roller-coaster',
@@ -293,7 +320,7 @@ return [
                 'easy_com_blackjack-solver',
                 'easy_com_blending-colors',
                 'easy_com_blowing-fuse',
-                'easy_com_bob-the-ascii-teacher',
+                'easy_com_bob-the-ascii-teacher',           // removed puzzle
                 'easy_com_body-weight-is-a-girls-secret',
                 'easy_com_brackets-extreme-ed',
                 'easy_com_brick-in-the-wall',
@@ -366,6 +393,7 @@ return [
                 'easy_com_lumen',
                 'easy_com_magic-string',
                 'easy_com_make-an-atari-font',
+                'easy_com_mandelbrot-set-approximation',
                 'easy_com_markov-text-generation',
                 'easy_com_master-of-mayhem',
                 'easy_com_match-dna-sequence',
@@ -447,6 +475,7 @@ return [
                 'easy_com_the-travelling-salesman-problem',
                 'easy_com_the-weight-of-words',
                 'easy_com_tictactoe',
+                'easy_com_tile-a-floor',
                 'easy_com_treasure-hunt',
                 'easy_com_tree-paths',
                 'easy_com_tricky-number-verifier',
@@ -459,6 +488,7 @@ return [
                 'easy_com_whats-so-complex-about-mandelbrot',
                 'easy_com_wheres-wally',
                 'easy_com_winning-parabola',                // removed puzzle
+                'easy_com_word-search-for-programmers',
                 'easy_com_wordle-colorizer',
                 'easy_com_ww2-mortar-warfare',
                 'easy_com_xml-mdf-2016',
@@ -685,6 +715,7 @@ return [
                 'medium_com_smooth-factory',
                 'medium_com_snake-encoding',
                 'medium_com_solid-integer',
+                'medium_com_spore-city-planner',
                 'medium_com_sticky-keyboard',
                 'medium_com_straddling-checkerboard-cryptography',
                 'medium_com_sudoku-solver',
@@ -911,9 +942,24 @@ return [
         // == Tests will be run without test result evaluation for the following puzzles
         //      Note: the puzzle solution code must exit after reading turn #0 data to avoid infinite loop!
         'runOnlyPuzzles' => [
-            // 'codegolf/' => [
-            //     'codegolf-dont-panic',                   // also in global section
-            //     'codegolf-power-of-thor',                // also in global section
+            // 'codegolf/easy/' => [
+            //     'codegolf_easy_dont-panic',              // also in global section
+            //     'codegolf_easy_power-of-thor',           // also in global section
+            // ],
+            // 'codegolf/medium/' => [
+            //    'codegolf_medium_shadows-of-the-knight-episode-1',
+            // ],
+            // 'codegolf/hard/' => [
+            //    'codegolf_hard_the-bridge-episode-2',
+            //    'codegolf_hard_the-fall-episode-2',
+            //    'codegolf_hard_the-labyrinth',
+            //    'codegolf_hard_vox-codei-episode-1',
+            // ],
+            // 'codegolf/expert/' => [
+            //    'codegolf_expert_mars-lander-episode-3',
+            //    'codegolf_expert_shadows-of-the-knight-episode-2',
+            //    'codegolf_expert_the-fall-episode-3',     // TODO: solve
+            //    'codegolf_expert_vox-codei-episode-2',
             // ],
             'optim/cg/' => [
                 'optim_cg_a-star-craft',
@@ -944,27 +990,27 @@ return [
                 // 'easy_cg_the-descent',                   // also in global section
             ],
             'puzzle/cg/medium/' => [
+                'medium_cg_death-first-search-episode-1',
                 // 'medium_cg_dont-panic-episode-1',        // also in global section
                 'medium_cg_mars-lander-episode-2',
                 'medium_cg_shadows-of-the-knight-episode-1',
-                'medium_cg_skynet-revolution-episode-1',
-                'medium_cg_the-last-crusade-episode-1',
+                'medium_cg_the-fall-episode-1',
                 'medium_cg_there-is-no-spoon-episode-1',
-            ],
+
             'puzzle/cg/hard/' => [
+                'hard_cg_death-first-search-episode-2',
                 'hard_cg_dont-panic-episode-2',
                 'hard_cg_power-of-thor-episode-2',
-                'hard_cg_skynet-revolution-episode-2',
                 'hard_cg_the-bridge-episode-2',
+                'hard_cg_the-fall-episode-2',
                 'hard_cg_the-labyrinth',
-                'hard_cg_the-last-crusade-episode-2',
                 'hard_cg_there-is-no-spoon-episode-2',
                 'hard_cg_vox-codei-episode-1',
             ],
             'puzzle/cg/expert/' => [
                 'expert_cg_mars-lander-episode-3',
                 'expert_cg_shadows-of-the-knight-episode-2',
-                'expert_cg_the-last-crusade-episode-3',
+                'expert_cg_the-fall-episode-3',
                 'expert_cg_vox-codei-episode-2',
             ],
             'puzzle/community/easy/' => [
@@ -1020,16 +1066,16 @@ return [
     'fortran' => [
         'excludePuzzles' => [
             // exclude ALL puzzles from the global 'puzzles' and 'runOnlyPuzzles' lists, except 'medium_com_rubik'
-            'codegolf_chuck-norris',
-            'codegolf_temperatures',
-            'tutorial_onboarding',
+            'codegolf_easy_ascii-art',
+            'codegolf_easy_unary',
+            'codegolf_easy_temperatures',
             'easy_cg_ascii-art',
-            'easy_cg_chuck-norris',
             'easy_cg_horse-racing-duals',
             'easy_cg_mars-lander-episode-1',
             'easy_cg_power-of-thor-episode-1',
             'easy_cg_temperatures',
             'easy_cg_the-descent',
+            'easy_cg_unary',
             'medium_cg_dont-panic-episode-1',
             'medium_cg_stock-exchange-losses',
             'easy_com_1d-bush-fire',
@@ -1060,4 +1106,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.03.29: 'easy_com_wordle-colorizer',
+// Note: last puzzle added on 23.04.07: ''medium_com_spore-city-planner',

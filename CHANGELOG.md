@@ -9,11 +9,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- More CG puzzle test cases added.
+- Nothing yet
 
 ### Changed
 
 - Nothing yet
+
+### Fixed
+
+- Nothing yet
+
+## [v1.8.0](https://github.com/tbali0524/cgtest/releases/v1.8.0) - 2023-04-07
+
+### Added
+
+- More CG puzzle test cases added.
+- Test cases added for the new codegolf puzzles.
+
+### Changed
+
+- Codegolf puzzle test cases renamed.
+- Puzzle test cases renamed where CG changed the original puzzle name, Bender->Blunder.
 
 ### Fixed
 

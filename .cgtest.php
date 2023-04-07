@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.7.0 - configuration file
+ * CGTest v1.8.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2023, by Balint Toth [TBali]

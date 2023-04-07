@@ -1,0 +1,7 @@
+WWWZaVVVYbUUX
+Z = aa
+Y = bb
+X = cc
+W = ZZ
+V = YY
+U = XX
