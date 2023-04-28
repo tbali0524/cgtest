@@ -1,6 +1,7 @@
 # CGTest
 
 ![release](https://img.shields.io/github/v/release/tbali0524/cgtest)
+![build](https://img.shields.io/github/actions/workflow/status/tbali0524/cgtest/cgtest.yml)
 ![languages](https://img.shields.io/github/languages/count/tbali0524/cgtest?label=supported%20languages)
 ![CG test cases](https://img.shields.io/github/directory-file-count/tbali0524/cgtest/.tests/input?label=CG%20test%20cases)
 ![MIT](https://img.shields.io/github/license/tbali0524/cgtest)

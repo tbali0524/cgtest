@@ -18,6 +18,9 @@ trim_trailing_whitespace = false
 [*.clj]
 indent_size = 2
 
+[*.yml]
+indent_size = 2
+
 # some test cases have input files with trailing spaces that must be kept
 [*.txt]
 trim_trailing_whitespace = false

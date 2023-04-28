@@ -30,23 +30,23 @@ jobs:
           sudo apt-get install -y fpc
 
       # =========================================================================
-      # Following languages are too slow, test run is skipped, so no install neeeded.
+      # Following languages are too slow, comment out if test run would be skipped.
 
-      # - name: Setup Dart
-      #   uses: dart-lang/setup-dart@v1
-      #   with:
-      #     sdk: 2.16.2
-      #     # sdk: stable
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: 2.16.2
+          # sdk: stable
 
-      # - name: Setup Groovy
-      #   uses: wtfjoke/setup-groovy@v1
-      #   with:
-      #     groovy-version: '3.x'
+      - name: Setup Groovy
+        uses: wtfjoke/setup-groovy@v1
+        with:
+          groovy-version: '3.x'
 
-      # - name: Setup Scala
-      #   uses: olafurpg/setup-scala@v11
-      #   with:
-      #     java-version: openjdk@1.11
+      - name: Setup Scala
+        uses: olafurpg/setup-scala@v11
+        with:
+          java-version: openjdk@1.11
 
       # =========================================================================
       # Following languages are already available in default GitHub Action runner.
@@ -88,14 +88,15 @@ jobs:
 
       # =========================================================================
 
-      - name: Download latest CGTest script from its repo
-        run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
+      # This is not needed in the cgtest repo itself, but can be used in other code repos:
+      #   - name: Download latest CGTest script from its repo
+      #     run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
 
       - name: Check available language versions
         run: php cgtest.php --config=.cgtest.php --verbose --stats  --lang-versions
 
-      - name: Run tests (only in fast languages)
-        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c++,d,javascript,lua,pascal,perl,python,ruby,rust,typescript,fortran
+      # - name: Run tests (only in fast languages)
+      #  run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c++,d,javascript,lua,pascal,perl,php,python,ruby,rust,typescript,fortran
 
-      # - name: Run tests (in all languages)
-      #   run: php cgtest.php --config=.cgtest.php --verbose --stats
+      - name: Run tests (in all languages)
+        run: php cgtest.php --config=.cgtest.php --verbose --stats
