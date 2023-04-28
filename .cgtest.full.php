@@ -415,6 +415,7 @@ return [
                 'easy_com_nicholas-breakspeare-and-hugh-of-evesham',
                 'easy_com_no-more-pythons-please',
                 'easy_com_number-derivation',
+                'easy_com_number-formatting',
                 'easy_com_object-insertion',
                 'easy_com_offset-arrays',
                 'easy_com_order-of-succession',
@@ -457,6 +458,7 @@ return [
                 'easy_com_substitution-encoding',
                 'easy_com_sudoku-validator',
                 // 'easy_com_sum-of-spirals-diagonals',     // also in global section
+                'easy_com_stunning-numbers',
                 'easy_com_survey-prediction',
                 'easy_com_sweet-spot',
                 'easy_com_table-of-contents',
@@ -591,6 +593,7 @@ return [
                 'medium_com_find-the-liars',
                 'medium_com_find-the-missing-plus-signs-in-addition',
                 'medium_com_find-the-replacement',
+                'medium_com_firewall-placement',
                 'medium_com_fishing-with-a-stick',
                 'medium_com_flood-fill-example',
                 'medium_com_folding-a-note',
@@ -622,6 +625,7 @@ return [
                 'medium_com_horse-hyperracing-hyperduals',
                 'medium_com_hotel',
                 'medium_com_how-many-roads-lead-to-rome',
+                'medium_com_how-many-triangles-and-rectangles',
                 'medium_com_html-table-cell-split',
                 'medium_com_huffman-code',
                 'medium_com_identify-a-simple-shape',
@@ -996,7 +1000,7 @@ return [
                 'medium_cg_shadows-of-the-knight-episode-1',
                 'medium_cg_the-fall-episode-1',
                 'medium_cg_there-is-no-spoon-episode-1',
-
+            ],
             'puzzle/cg/hard/' => [
                 'hard_cg_death-first-search-episode-2',
                 'hard_cg_dont-panic-episode-2',
@@ -1106,4 +1110,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.04.07: ''medium_com_spore-city-planner',
+// Note: last puzzle added on 23.04.16: 'medium_com_how-many-triangles-and-rectangles',
