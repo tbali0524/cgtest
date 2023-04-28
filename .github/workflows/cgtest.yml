@@ -1,0 +1,101 @@
+name: TestRun
+
+on: [push]
+
+jobs:
+  cgtest:
+    name: Run solutions with CGTest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # =========================================================================
+      # Add missing languages, matching the version at Codingame
+
+      - name: Setup D
+        uses: dlang-community/setup-dlang@v1
+        with:
+          compiler: dmd-2.099.1
+          # compiler: dmd-latest
+
+      - name: Setup Lua
+        uses: leafo/gh-actions-lua@v10
+        with:
+          luaVersion: "5.4.4" # omit for latest
+
+      - name: Setup Pascal
+        run: |
+          export DEBIAN_FRONTEND=noninteractive
+          sudo apt-get update
+          sudo apt-get install -y fpc
+
+      # =========================================================================
+      # Following languages are too slow, test run is skipped, so no install neeeded.
+
+      # - name: Setup Dart
+      #   uses: dart-lang/setup-dart@v1
+      #   with:
+      #     sdk: 2.16.2
+      #     # sdk: stable
+
+      # - name: Setup Groovy
+      #   uses: wtfjoke/setup-groovy@v1
+      #   with:
+      #     groovy-version: '3.x'
+
+      # - name: Setup Scala
+      #   uses: olafurpg/setup-scala@v11
+      #   with:
+      #     java-version: openjdk@1.11
+
+      # =========================================================================
+      # Following languages are already available in default GitHub Action runner.
+      # These actions can be used to match the exact version at CodinGame.
+
+      # - name: Setup PHP
+      #   uses: shivammathur/setup-php@v2
+      #   with:
+      #     php-version: '7.3'
+      #     extensions: mbstring, bcmath, zip, calendar, intl, soap, sockets
+      #     coverage: none
+      #     ini-values: opcache.enable_cli=1, opcache.jit=tracing, opcache.jit_buffer_size=64M
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Setup problem matchers for PHP
+      #   run: echo "::add-matcher::${{ runner.tool_cache }}/php.json"
+
+      # - name: Setup Java
+      #   uses: actions/setup-java@v3
+      #   with:
+      #       distribution: 'temurin'
+      #       java-version: '11'
+
+      # - name: Setup Go
+      #   uses: actions/setup-go@v4
+      #   with:
+      #     go-version: '1.18'
+
+      # - name: Setup Python
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.9'
+
+      # - name: Setup Ruby
+      #   uses: ruby/setup-ruby@v1
+      #   with:
+      #     ruby-version: '3.1'
+
+      # =========================================================================
+
+      - name: Download latest CGTest script from its repo
+        run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
+
+      - name: Check available language versions
+        run: php cgtest.php --config=.cgtest.php --verbose --stats  --lang-versions
+
+      - name: Run tests (only in fast languages)
+        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c++,d,javascript,lua,pascal,perl,python,ruby,rust,typescript,fortran
+
+      # - name: Run tests (in all languages)
+      #   run: php cgtest.php --config=.cgtest.php --verbose --stats
