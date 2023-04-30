@@ -1,0 +1,6 @@
+5
+x = 6
+x function x add 5
+x function x add 6
+x() x()
+x() print

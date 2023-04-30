@@ -1,0 +1,8 @@
+3
+import A
+import B
+import C
+3
+B requires A
+C requires B
+A requires C

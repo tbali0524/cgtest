@@ -1,0 +1,6 @@
+5
+x = 0
+x function loop 5 do loop 5 do x add 1
+x()
+x()
+print

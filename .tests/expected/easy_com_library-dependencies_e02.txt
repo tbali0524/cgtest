@@ -1,0 +1,2 @@
+Import error: tried to import A but C is required.
+Fatal error: interdependencies.

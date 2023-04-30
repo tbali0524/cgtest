@@ -1,0 +1,5 @@
+4
+x = 5
+n function x add 5
+x()
+print

@@ -385,6 +385,7 @@ return [
                 'easy_com_jack-silver-the-casino',
                 'easy_com_kiss-the-girls',
                 'easy_com_largest-number',
+                'easy_com_library-dependencies',
                 'easy_com_logically-reasonable-inequalities',
                 'easy_com_logic-gates',
                 'easy_com_longest-coast',
@@ -1110,4 +1111,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.04.16: 'medium_com_how-many-triangles-and-rectangles',
+// Note: last puzzle added on 23.04.29: 'easy_com_library-dependencies',

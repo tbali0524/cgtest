@@ -1,0 +1,1 @@
+print'SomeSpaces  and    tabs';

@@ -1,0 +1,5 @@
+4
+x = 50
+x sub $y
+x add $y
+print

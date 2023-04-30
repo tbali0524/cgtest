@@ -1,0 +1,17 @@
+Import error: tried to import itertools but random is required.
+Suggest to change import order:
+import collections
+import os
+import random
+import requests
+import math
+import builtins
+import sys
+import contextlib
+import inspect
+import functools
+import itertools
+import numpy
+import time
+import unittest
+import pandas

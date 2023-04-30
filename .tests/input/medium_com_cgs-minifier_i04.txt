@@ -1,0 +1,6 @@
+5
+$some_text$;
+(
+$some_text$ = 'I like trains';
+)
+print $some_text$;

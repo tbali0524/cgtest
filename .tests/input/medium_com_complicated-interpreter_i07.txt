@@ -1,0 +1,7 @@
+6
+x = 50
+y = $x
+x add $y
+x mult $y
+delete y
+print

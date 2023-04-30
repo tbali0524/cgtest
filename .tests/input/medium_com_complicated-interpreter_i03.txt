@@ -1,0 +1,7 @@
+6
+x = 1000
+y = 2000
+x add $y
+x sub 500
+y sub 500
+print

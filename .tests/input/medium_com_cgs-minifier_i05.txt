@@ -1,0 +1,7 @@
+6
+$int_1$=42;
+$int_2$=1337;
+$tmp$=$int_1$;
+$int_1$=$int_2$;
+$int_2$=$tmp$;
+print 'I just switched values yippee';

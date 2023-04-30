@@ -12,41 +12,41 @@ jobs:
       # =========================================================================
       # Add missing languages, matching the version at Codingame
 
-      - name: Setup D
-        uses: dlang-community/setup-dlang@v1
-        with:
-          compiler: dmd-2.099.1
-          # compiler: dmd-latest
+      # - name: Setup D
+      #   uses: dlang-community/setup-dlang@v1
+      #   with:
+      #     compiler: dmd-2.099.1
+      #     # compiler: dmd-latest
 
       - name: Setup Lua
         uses: leafo/gh-actions-lua@v10
         with:
           luaVersion: "5.4.4" # omit for latest
 
-      - name: Setup Pascal
-        run: |
-          export DEBIAN_FRONTEND=noninteractive
-          sudo apt-get update
-          sudo apt-get install -y fpc
+      # - name: Setup Pascal
+      #   run: |
+      #     export DEBIAN_FRONTEND=noninteractive
+      #     sudo apt-get update
+      #     sudo apt-get install -y fpc
 
       # =========================================================================
       # Following languages are too slow, comment out if test run would be skipped.
 
-      - name: Setup Dart
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: 2.16.2
-          # sdk: stable
+      # - name: Setup Dart
+      #   uses: dart-lang/setup-dart@v1
+      #   with:
+      #     sdk: 2.16.2
+      #     # sdk: stable
 
-      - name: Setup Groovy
-        uses: wtfjoke/setup-groovy@v1
-        with:
-          groovy-version: '3.x'
+      # - name: Setup Groovy
+      #   uses: wtfjoke/setup-groovy@v1
+      #   with:
+      #     groovy-version: '3.x'
 
-      - name: Setup Scala
-        uses: olafurpg/setup-scala@v11
-        with:
-          java-version: openjdk@1.11
+      # - name: Setup Scala
+      #   uses: olafurpg/setup-scala@v11
+      #   with:
+      #     java-version: openjdk@1.11
 
       # =========================================================================
       # Following languages are already available in default GitHub Action runner.
@@ -95,8 +95,8 @@ jobs:
       - name: Check available language versions
         run: php cgtest.php --config=.cgtest.php --verbose --stats  --lang-versions
 
-      # - name: Run tests (only in fast languages)
-      #  run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c++,d,javascript,lua,pascal,perl,php,python,ruby,rust,typescript,fortran
+      - name: Run tests (only in fast languages)
+        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c++,javascript,lua,perl,php,python,ruby,rust
 
-      - name: Run tests (in all languages)
-        run: php cgtest.php --config=.cgtest.php --verbose --stats
+      # - name: Run tests (in all languages)
+      #   run: php cgtest.php --config=.cgtest.php --verbose --stats

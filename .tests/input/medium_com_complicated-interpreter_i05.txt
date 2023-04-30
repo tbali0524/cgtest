@@ -1,0 +1,7 @@
+6
+x = 50
+y = 90
+x sub $y
+x mult $y
+x add $x
+print

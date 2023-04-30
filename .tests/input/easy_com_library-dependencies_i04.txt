@@ -1,0 +1,10 @@
+6
+import F
+import A
+import B
+import C
+import E
+import D
+2
+B requires E
+C requires A

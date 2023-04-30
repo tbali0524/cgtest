@@ -1,0 +1,8 @@
+7
+x = 5
+y = 5
+x function if $x != 8 then x mult 3
+if 3 == 3 then x add 3
+x()
+delete y
+print

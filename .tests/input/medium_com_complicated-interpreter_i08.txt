@@ -1,0 +1,8 @@
+7
+x = 50
+y = $x
+loop 50 do x add $y
+x sub $y
+print
+delete y
+z add $x

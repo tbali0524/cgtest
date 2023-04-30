@@ -1,0 +1,8 @@
+7
+x = 500
+y = 600
+y add 600 //z = 0
+firstfunc function x add $y
+firstfunc()
+delete y
+print

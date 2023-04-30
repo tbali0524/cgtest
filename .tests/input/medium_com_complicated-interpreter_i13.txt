@@ -1,0 +1,5 @@
+4
+x = 2
+y = 0
+if $y == 0 and $x == 2 then x add 4
+print

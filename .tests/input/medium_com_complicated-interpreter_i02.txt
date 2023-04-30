@@ -1,0 +1,5 @@
+4
+var = 50
+y = 50
+var add 32
+print

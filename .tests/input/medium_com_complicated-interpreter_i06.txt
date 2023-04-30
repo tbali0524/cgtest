@@ -1,0 +1,7 @@
+6
+x = 50
+//y = 5
+//This won't do anything
+x add $x //x add $x
+print
+x add $x

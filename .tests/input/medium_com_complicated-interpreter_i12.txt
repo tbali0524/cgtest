@@ -1,0 +1,5 @@
+4
+foo = 5
+bar = 5
+if $foo != 5 or $bar == 5 then foo add 5
+print

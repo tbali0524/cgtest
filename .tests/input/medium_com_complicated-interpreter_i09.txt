@@ -1,0 +1,9 @@
+8
+foo = 500
+//y = 10
+z = 50
+foo sub 50
+foo mult $foo
+foo add 50000
+loop 50 do loop 50 do loop 50 do foo add $y
+print

@@ -1,0 +1,5 @@
+4
+x = 5
+y = 6
+if $z == $x and $y == $y then x add 6
+print

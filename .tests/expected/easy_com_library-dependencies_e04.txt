@@ -1,0 +1,8 @@
+Import error: tried to import B but E is required.
+Suggest to change import order:
+import A
+import C
+import D
+import E
+import B
+import F
