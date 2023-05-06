@@ -466,6 +466,7 @@ return [
                 'easy_com_tabloid-couple-names',
                 'easy_com_teds-compiler',
                 'easy_com_text-formatting',
+                'easy_com_the-alien-business-of-cows',
                 'easy_com_the-broken-editor',
                 'easy_com_the-dart-101',
                 'easy_com_the-electrician-apprentice',
@@ -601,6 +602,7 @@ return [
                 'medium_com_folding-paper',
                 'medium_com_format-string-validation',
                 'medium_com_fractal-image-recognition',
+                'medium_com_frequency-based-decryption',
                 'medium_com_frobenius-coin-puzzle',         // removed puzzle
                 'medium_com_frog-exchange',
                 'medium_com_fun-with-cgx-expressions',
@@ -1111,4 +1113,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.04.29: 'easy_com_library-dependencies',
+// Note: last puzzle added on 23.05.06: 'medium_com_frequency-based-decryption',
