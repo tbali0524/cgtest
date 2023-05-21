@@ -1,0 +1,23 @@
++----------+----------+
+|  p    q  |  p    q  |
+| q      p | q      p |
+| q      p | q      p |
+|    pq    |    pq    |
+|   p  q   |   p  q   |
+|   b  d   |   b  d   |
+|    bd    |    bd    |
+| d      b | d      b |
+| d      b | d      b |
+|  b    d  |  b    d  |
++----------+----------+
+|  p    q  |  p    q  |
+| q      p | q      p |
+| q      p | q      p |
+|    pq    |    pq    |
+|   p  q   |   p  q   |
+|   b  d   |   b  d   |
+|    bd    |    bd    |
+| d      b | d      b |
+| d      b | d      b |
+|  b    d  |  b    d  |
++----------+----------+

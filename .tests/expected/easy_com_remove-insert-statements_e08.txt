@@ -1,0 +1,1 @@
+delete from lk_vendeur_acheteur;

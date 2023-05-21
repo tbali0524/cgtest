@@ -1,0 +1,23 @@
++----------+----------+
+|   bbdd   |   bbdd   |
+| d\ db /b | d\ db /b |
+|d        b|d        b|
+|          |          |
+|  bd  bd  |  bd  bd  |
+|  pq  pq  |  pq  pq  |
+|          |          |
+|q        p|q        p|
+| q/ qp \p | q/ qp \p |
+|   ppqq   |   ppqq   |
++----------+----------+
+|   bbdd   |   bbdd   |
+| d\ db /b | d\ db /b |
+|d        b|d        b|
+|          |          |
+|  bd  bd  |  bd  bd  |
+|  pq  pq  |  pq  pq  |
+|          |          |
+|q        p|q        p|
+| q/ qp \p | q/ qp \p |
+|   ppqq   |   ppqq   |
++----------+----------+

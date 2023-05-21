@@ -1,0 +1,2 @@
+1
+delete from lk_vendeur_acheteur;insert into lk_vendeur_acheteur(id,id_vendeur,id_acheteur) values(1,1,1);insert into lk_vendeur_acheteur(id,id_vendeur,id_acheteur) values(2,1,2);insert into lk_vendeur_acheteur(id,id_vendeur,id_acheteur) values(3,2,3);

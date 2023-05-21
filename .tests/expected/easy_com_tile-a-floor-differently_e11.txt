@@ -1,0 +1,27 @@
++------------+------------+
+|  b      d  |  b      d  |
+|q  bp  qd  p|q  bp  qd  p|
+|  q b\/d p  |  q b\/d p  |
+|/  q bd p  \|/  q bd p  \|
+| qd \bd/ bp | qd \bd/ bp |
+|   \ \/ /   |   \ \/ /   |
+|   / /\ \   |   / /\ \   |
+| dq /pq\ pb | dq /pq\ pb |
+|\  d pq b  /|\  d pq b  /|
+|  d p/\q b  |  d p/\q b  |
+|d  pb  dq  b|d  pb  dq  b|
+|  p      q  |  p      q  |
++------------+------------+
+|  b      d  |  b      d  |
+|q  bp  qd  p|q  bp  qd  p|
+|  q b\/d p  |  q b\/d p  |
+|/  q bd p  \|/  q bd p  \|
+| qd \bd/ bp | qd \bd/ bp |
+|   \ \/ /   |   \ \/ /   |
+|   / /\ \   |   / /\ \   |
+| dq /pq\ pb | dq /pq\ pb |
+|\  d pq b  /|\  d pq b  /|
+|  d p/\q b  |  d p/\q b  |
+|d  pb  dq  b|d  pb  dq  b|
+|  p      q  |  p      q  |
++------------+------------+

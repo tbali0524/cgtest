@@ -1,0 +1,27 @@
++------------+------------+
+|b bpXqpXqd d|b bpXqpXqd d|
+| b \bbdd/ d | b \bbdd/ d |
+|pp   \/   qq|pp   \/   qq|
+|    X  X    |    X  X    |
+|  \      /  |  \      /  |
+| p  pqpq  q | p  pqpq  q |
+| b  bdbd  d | b  bdbd  d |
+|  /      \  |  /      \  |
+|    X  X    |    X  X    |
+|bb   /\   dd|bb   /\   dd|
+| p /ppqq\ q | p /ppqq\ q |
+|p pbXdbXdq q|p pbXdbXdq q|
++------------+------------+
+|b bpXqpXqd d|b bpXqpXqd d|
+| b \bbdd/ d | b \bbdd/ d |
+|pp   \/   qq|pp   \/   qq|
+|    X  X    |    X  X    |
+|  \      /  |  \      /  |
+| p  pqpq  q | p  pqpq  q |
+| b  bdbd  d | b  bdbd  d |
+|  /      \  |  /      \  |
+|    X  X    |    X  X    |
+|bb   /\   dd|bb   /\   dd|
+| p /ppqq\ q | p /ppqq\ q |
+|p pbXdbXdq q|p pbXdbXdq q|
++------------+------------+

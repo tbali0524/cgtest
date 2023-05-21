@@ -336,6 +336,7 @@ return [
                 'easy_com_container-terminal',
                 'easy_com_cosmic-love',
                 // 'easy_com_count-as-i-count',                     // also in global section
+                'easy_com_couples-picture-frame',
                 // 'easy_com_create-the-longest-sequence-of-1s',    // also in global section
                 'easy_com_create-turn-here-signs',
                 // 'easy_com_credit-card-verifier-luhns-algorithm', // also in global section
@@ -430,6 +431,7 @@ return [
                 'easy_com_random-walk',
                 'easy_com_rectangle-partition',
                 'easy_com_rectangular-block-spinner',
+                'easy_com_remove-insert-statements',
                 'easy_com_retaining-water',
                 'easy_com_retro-typewriter-art',
                 'easy_com_reverse-fizzbuzz',
@@ -471,6 +473,8 @@ return [
                 'easy_com_the-dart-101',
                 'easy_com_the-electrician-apprentice',
                 'easy_com_the-frog-jump-1',                 // removed puzzle
+                'easy_com_the-helpdesk',
+                'easy_com_the-leaking-bathtub',
                 'easy_com_the-logo-beyond-c-and-c',
                 'easy_com_the-michelangelo-code',
                 // 'easy_com_the-mystic-rectangle',         // also in global section
@@ -480,6 +484,7 @@ return [
                 'easy_com_the-weight-of-words',
                 'easy_com_tictactoe',
                 'easy_com_tile-a-floor',
+                'easy_com_tile-a-floor-differently',
                 'easy_com_treasure-hunt',
                 'easy_com_tree-paths',
                 'easy_com_tricky-number-verifier',
@@ -673,6 +678,7 @@ return [
                 'medium_com_number-of-letters-in-a-number---binary',
                 'medium_com_number-of-paths-between-2-points',
                 'medium_com_numeral-system',
+                'medium_com_one-for-his-nobs',
                 'medium_com_oneway-city',
                 'medium_com_othello',
                 'medium_com_palindromic-decomposition',
@@ -817,6 +823,7 @@ return [
                 'hard_com_fractal-carpet',
                 'hard_com_gerrymandering',
                 // 'hard_com_google-interview---the-two-egg-problem',    // also in global section
+                'hard_com_grid-climbing',
                 'hard_com_hangman',
                 'hard_com_hanoi-tower',
                 'hard_com_harmless-rooks',
@@ -1113,4 +1120,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.05.06: 'medium_com_frequency-based-decryption',
+// Note: last puzzle added on 23.05.21: 'easy_com_couples-picture-frame',
