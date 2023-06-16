@@ -348,6 +348,7 @@ return [
                 'easy_com_dead-mens-shot',
                 'easy_com_decode-the-message',
                 'easy_com_die-handedness',
+                'easy_com_digital-scoreboard',
                 'easy_com_disordered-first-contact',
                 'easy_com_distributing-candy',
                 'easy_com_dolbears-law',
@@ -362,10 +363,12 @@ return [
                 'easy_com_faro-shuffle',
                 'easy_com_fax-machine',
                 'easy_com_feature-extraction',
+                'easy_com_fibonaccis-rabbit',
                 'easy_com_firecontrol',
                 'easy_com_fix-the-spaces',
                 'easy_com_flip-the-sign',
                 'easy_com_frame-the-picture',
+                'easy_com_furlongs-per-fortnight',
                 'easy_com_genetics-and-computers---part-1',
                 'easy_com_ghost-legs',
                 'easy_com_gold-packing',
@@ -411,6 +414,7 @@ return [
                 'easy_com_mountain-map',
                 'easy_com_moves-in-maze',
                 'easy_com_murder-in-the-village',
+                'easy_com_nato-alphabets-odd-uncles',
                 'easy_com_nature-of-quadrilaterals',
                 'easy_com_nature-of-triangles',
                 'easy_com_next-growing-number',
@@ -492,6 +496,7 @@ return [
                 'easy_com_unique-prefixes',
                 // 'easy_com_unit-fractions',               // also in global section
                 'easy_com_van-ecks-sequence',
+                'easy_com_vectors-in-variables-dimensions',
                 'easy_com_video-comments',
                 'easy_com_walk-on-a-die',
                 'easy_com_whats-so-complex-about-mandelbrot',
@@ -505,6 +510,7 @@ return [
             ],
             'puzzle/community/medium/' => [
                 'medium_com_10101',
+                'medium_com_16x16-sudoku',
                 'medium_com_2048-scores',
                 'medium_com_222-rubiks-cube-movements',
                 'medium_com_2-5d-maze',
@@ -1031,6 +1037,7 @@ return [
                 'easy_com_catching-up',
             ],
             'puzzle/community/medium/' => [
+                'medium_com_bobthescience-and-the-food-stack',
                 'medium_com_can-you-save-the-forest---episode-1',
                 'medium_com_cooperative-mate-with-rook',
                 'medium_com_escaping-the-cat',
@@ -1120,4 +1127,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.05.21: 'easy_com_couples-picture-frame',
+// Note: last puzzle added on 23.06.16: 'easy_com_n16o-alphabets-odd-uncles',
