@@ -1,0 +1,11 @@
+3
+6
+A # 5#
+B if :
+C t n
+Lorem ipsum
+Dolor sit amet
+if (Lorem_ipsum) :
+ Dolor sit amet
+# Lorem
+# ipsum

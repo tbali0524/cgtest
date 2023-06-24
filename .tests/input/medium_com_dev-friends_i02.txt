@@ -1,0 +1,26 @@
+6
+18
+Paganini t
+Vivaldi :
+Rossini if
+Verdi n
+Scarlatti #
+Monteverdi 5#
+
+name = "Nono"
+
+if name[-1]=='i':
+
+  print("Italian, mate !")
+
+elif name[-1]=='o':
+
+  print("maybe you are italian, or maybe spanish")
+
+else:
+
+  print("I don't know you, sorry")
+
+// This is the last one with italy and with python, I promise.
+
+(Luigi Nono is an actual italian artist)

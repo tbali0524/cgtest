@@ -1,0 +1,1 @@
+This is a longer text with more words to compress. This longer text helps to see a bigger improvement of the compression.

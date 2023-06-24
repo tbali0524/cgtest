@@ -910,6 +910,7 @@ return [
                 'hard_com_zergling-rush',
             ],
             'puzzle/community/expert/' => [
+                'expert_com_25x25-sudoku',
                 'expert_com_binary-neural-network---part-2',
                 'expert_com_cg-chat-interpreter---part-1',
                 'expert_com_chemical-equation-balancing',
@@ -1127,4 +1128,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.06.16: 'easy_com_n16o-alphabets-odd-uncles',
+// Note: last puzzle added on 23.06.23: 'expert_com_25x25-sudoku',

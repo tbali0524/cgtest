@@ -1,0 +1,10 @@
+-age+name+sex+surname
+int,string,string,string
+7
+id:1,name:maria,surname:aa,age:1,sex:male
+id:2,name:jason,surname:tt,age:12,sex:male
+id:3,name:jason,surname:pp,age:14,sex:male
+id:4,name:hugo,surname:dd,age:9,sex:female
+id:5,name:amit,surname:rr,age:2,sex:female
+id:6,name:maria,surname:tt,age:21,sex:male
+id:7,name:maria,surname:zz,age:21,sex:female

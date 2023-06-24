@@ -1,0 +1,9 @@
++age-name
+int,string
+6
+id:1,name:hugo,age:1
+id:2,name:maria,age:12
+id:3,name:jason,age:2
+id:4,name:amit,age:15
+id:5,name:maria,age:6
+id:6,name:robert,age:12
