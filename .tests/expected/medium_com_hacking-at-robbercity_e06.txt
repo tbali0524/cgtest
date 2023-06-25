@@ -1,0 +1,1 @@
+BTW, to simplify our future exchanges, let's use AES with my 1024-bit private key 5db38d5c0f16ec05ddee67e44617a094e6dd0b837fe5df242e3ea832e30469b0

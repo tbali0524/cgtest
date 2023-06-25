@@ -1,0 +1,9 @@
+4
+BAC
+BOB
+BEC
+COC
+3 3
+BAC
+EOO
+CKB

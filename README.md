@@ -26,7 +26,7 @@ At CG, you don't have to bother about setting up any local development environme
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
 
-_The repository also contains __3400+__ test cases for __760+__ `CodinGame` puzzles._
+_The repository also contains __3600+__ test cases for __760+__ `CodinGame` puzzles._
 
 ## Command line usage
 

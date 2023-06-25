@@ -1,0 +1,14 @@
+i->y
+ ->z
+p->z
+n->h
+w->f
+s->k
+a->f
+k->d
+e->j
+o->f
+m->k
+g->k
+t->z
+u->z
