@@ -359,6 +359,7 @@ return [
                 'easy_com_encryption-enigma-machine',
                 'easy_com_equivalent-resistance-circuit-building',
                 'easy_com_euclids-algorithm',
+                'easy_com_euclids-algorithm-with-complex-numbers',
                 'easy_com_extended-hamming-codes',
                 'easy_com_faro-shuffle',
                 'easy_com_fax-machine',
@@ -560,6 +561,7 @@ return [
                 'medium_com_cgs-minifier',
                 'medium_com_chain-reaction',
                 'medium_com_chained-matrix-products',
+                'medium_com_chebyshev-orbiting',
                 'medium_com_christmas-tree',
                 'medium_com_circular-automation-the-period-of-chaos',
                 'medium_com_cistercian-numerals',           // removed puzzle
@@ -1128,4 +1130,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.06.23: 'expert_com_25x25-sudoku',
+// Note: last puzzle added on 23.06.30: 'medium_com_chebyshev-orbiting',

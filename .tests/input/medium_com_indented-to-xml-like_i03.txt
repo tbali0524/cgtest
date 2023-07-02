@@ -1,0 +1,4 @@
+3
+Product:
+    Name: Bread
+    Price: 1.50 USD

@@ -1,0 +1,13 @@
+12
+!DOCTYPE html
+html:
+    head:
+        title: Example
+        link rel="stylesheet" href="styles.css"
+    body:
+        h1:
+            a href="/": Header
+        nav:
+            a href="one/": One
+            a href="two/": Two
+            a href="three/": Three

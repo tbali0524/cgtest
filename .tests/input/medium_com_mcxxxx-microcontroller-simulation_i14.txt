@@ -1,0 +1,16 @@
+2
+123 99
+13
+mov x0 dat
+mov dat acc
+dgt 0
+mov acc x1
+mov dat acc
+dgt 1
+mov acc x1
+mov dat acc
+dgt 2
+mov acc x1
+mov x0 acc
+dgt 2
+mov acc x1

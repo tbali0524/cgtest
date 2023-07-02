@@ -1,0 +1,10 @@
+1
+4
+7
+mov x0 dat
++ mov dat x1
+- mov dat x1
+teq dat 0
++ add 1
+- sub 1
+mov acc x1

@@ -1,0 +1,1 @@
+(defun fact (n) "factorial" (if (<= n 1) 1 (* n (fact (- n 1))))) 

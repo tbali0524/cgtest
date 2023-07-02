@@ -1,0 +1,14 @@
+1
+2
+11
+mov x0 dat
+mov dat acc
+# mov dat x1
+jmp end
+mov dat x1
+mult:
+mul dat
+jmp ending
+end: jmp mult
+ending:
+mov acc x1

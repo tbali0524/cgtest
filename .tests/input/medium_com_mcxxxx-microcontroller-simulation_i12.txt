@@ -1,0 +1,10 @@
+1
+0
+7
+mov x0 dat
+tgt dat -1
++ mov 1 x1
+- mov -1 x1
+tlt dat 1
++ mov 1 x1
+- mov -1 x1

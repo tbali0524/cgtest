@@ -1,0 +1,7 @@
+2
+1 2
+4
+mov x0 dat
+mov x0 x1
+mov dat acc
+mov acc x1

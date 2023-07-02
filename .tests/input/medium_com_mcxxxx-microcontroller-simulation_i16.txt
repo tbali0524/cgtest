@@ -1,0 +1,14 @@
+2
+2 1
+11
+# Print all power of 2 from 1 to 512
+mov x0 dat
+mov x0 acc 
+# dat = 2, acc = 1
+loop:
+mov acc x1
+# print content of acc
+mul dat
+tlt acc 512
++ jmp loop
+mov acc x1

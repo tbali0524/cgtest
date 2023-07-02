@@ -1,0 +1,13 @@
+3
+-999 999 100
+10
+mov x0 acc
+sub 50
+mov acc x1
+mov x0 acc
+add 50
+mov acc x1
+mov x0 dat
+mov dat acc
+mul dat
+mov acc x1

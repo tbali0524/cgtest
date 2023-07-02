@@ -1,0 +1,15 @@
+4
+0 56 -3 100
+12
+mov x0 acc
+not
+mov acc x1
+mov x0 acc
+not
+mov acc x1
+mov x0 acc
+not
+mov acc x1
+mov x0 acc
+not
+mov acc x1

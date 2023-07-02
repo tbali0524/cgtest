@@ -1,0 +1,17 @@
+<# calculate factorial of number>
+<def factorial(n)>
+    <if n <= 1>
+        <return 1>
+    </if>
+    <else>
+        <return n * factorial(n - 1)>
+    </else>
+</def>
+<while True>
+    <try>
+        <line = input()>
+        <number = int(line)>
+        <print(factorial(number))>
+    </try>
+    <except ValueError>print('INVALID')</except>
+</while>

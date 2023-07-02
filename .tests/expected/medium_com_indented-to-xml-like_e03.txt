@@ -1,0 +1,4 @@
+<Product>
+    <Name>Bread</Name>
+    <Price>1.50 USD</Price>
+</Product>

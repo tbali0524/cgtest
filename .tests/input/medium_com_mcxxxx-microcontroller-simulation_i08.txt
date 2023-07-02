@@ -1,0 +1,10 @@
+1
+2
+7
+mov x0 acc
+calc:
+# /╲/\( •̀ ω •́ )/\╱\
+# Look at my spider, it's so cute!
+sub 1
+@ jmp calc
+mov acc x1

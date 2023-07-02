@@ -1,0 +1,63 @@
+62
+i3 i1
+i0 o0
+i9 i6 i0
+i6 o6 i3
+i9 i1 o9
+i4 o4 i9
+i7 o7 i6 o6
+i6 i4 i6 i2
+i3 o3 i2 o2
+i4 o4 i0 i6
+i3 o3 i3 o3
+i0 o0 i3 o3 i6
+i2 i9 i9 i2 i0
+i3 o3 i4 i7 i9
+i1 i3 i2 o2 o3 o1
+i0 i0 o0 i4 o4 i7
+i9 i0 o9 o0 i4 o4
+i8 i1 o8 o1 i7 i1 o7
+i8 i4 i3 i2 o8 i0 o4
+i5 o5 i5 i3 i5 i2 i3 i3
+i4 o4 i2 i6 i8 i9 i6 i6
+i4 o4 i4 i6 o6 o4 i8 o8
+i8 o8 i8 o8 i7 o7 i9 o9
+i2 i5 i4 o2 i6 i3 i4 o5
+i6 o6 i3 o3 i1 o1 i0 o0 i0
+i0 i3 i9 o0 o3 i6 i6 i6 o9
+i1 i4 o4 o1 i7 o7 i3 o3 i3
+i2 i8 i6 o6 o8 o2 i0 i7 i0
+i7 o7 i0 i5 o0 o5 i2 i0 i9
+i7 o7 i4 o4 i9 o9 i1 o1 i5
+i7 o7 i3 o3 i9 o9 i8 i1 o8 i2
+i8 o8 i5 o5 i3 i8 o8 i6 o6 o3
+i9 o9 i9 o9 i9 i4 i7 i5 o9 i3 i4
+i7 o7 i2 o2 i2 i0 o2 o0 i4 o4 i3 o3
+i5 o5 i0 o0 i3 i1 o3 o1 i8 i6 o8 o6 i3
+i6 o6 i5 i4 i8 i1 o8 o5 o4 o1 i5 i2 o5
+i9 i4 o9 o4 i7 i0 o7 i5 i3 i7 o7 o5 i4
+i4 o4 i1 i5 o5 i0 i8 i5 o8 o5 o1 o0 i6
+i2 i2 o2 i7 o7 o2 i2 i9 i0 o9 o2 o0 i9 o9 i0
+i1 o1 i2 o2 i1 o1 i0 o0 i5 i4 i5 o5 o4 i8 i9 i7
+i0 o0 i5 o5 i2 o2 i6 o6 i9 o9 i9 i8 o9 i8 i8 o8 o8 i3 o8 i2 i5 i2 i9
+i1 o1 i4 o4 i6 o6 i3 o3 i2 i9 o9 o2 i1 o1 i3 o3 i3 i7 o7 o3 i3 o3 i1 o1 i2
+i1 i1 o1 o1 i0 i0 o0 i5 o0 i6 i3 i7 o5 i8 i2 o6 o3 i5 o7 o8 o2 o5 i2 i2 o2 o2 i5 i8 i2 i4 o5 o8 o2 i6 o4 o6 i9 o9 i4 o4 i4 i0 o4 i8 i3 o0 o8 o3 i3 i1 i0 i8 i5 i5 i8 i8 i1 o3 i0 o1 o0 i6 o8 o5 i6 o5 o8 i2 o8 i0 o1 i9 o0 i3 o6 o6 o2 o0 i4 o9 o3 o4 i4 i1 o4 o1 i3 i1
+i3 i7 o7 o3 i7 i8 o8 i4 o7 i2 o4 o2 i1 i0 i6 o6 o1 i9 i1 o9 o1 i2 i3 o3 o2 i2 i1 i1 o2 o1 o1 o0 i3 o3 i5 i9 o9 i0 i0 o4 o0 i3 o3 o0 i4 i3 i4 o4 o4 o3 i0 i8 i2 i8 o8 o8 i0 o2 i9 i5 i0 o9 o5 o0 i8 o8 i8 i6 i2 i7 i1 o8 o7 i6 o6 i3 i6 i3 i5 i9 i2 i0 i6 i9 o9 i6 o9 i3 i6 o6
+i7 i8 o8 o7 i2 o2 i6 o6 i6 o6 i6 i5 i4 i1 i4 i7 o7 o6 o5 o4 o4 o1 i8 o8 i7 i5 o7 o5 i1 i7 o7 i1 i0 o1 i4 o4 i4 o4 o1 o0 i0 i8 o8 i3 i5 i7 o7 i4 o5 i9 i5 i8 o9 o8 i8 o8 i3 o5 o4 o3 i4 o4 o3 o0 i6 i9 o9 o6 i9 o9 i5 o5 i4 o4 i5 o5 i0 i6 o6 i2 i3 o3 i5 i0 o5 o2 i0 i8 o8 o0
+i6 o6 i4 o4 i4 i8 i8 i8 o4 i8 o8 i7 i0 i7 o8 o8 o8 o7 i5 o0 o7 o5 i9 i1 i7 o9 i1 o1 o7 o1 i5 i0 i7 o5 i8 i9 o0 o7 i7 i3 o8 i0 i5 i5 o9 o7 o3 i1 o0 i1 i4 o5 o5 o1 o1 o4 i0 i8 i8 i7 o0 i5 o8 i6 i5 i6 i2 i5 i7 i5 o8 o7 i4 o5 i2 i1 i9 o6 i6 o5 i4 o6 i8 o2 o5 i7 i9 i6 o7 o5 i6
+i0 i1 i0 o0 i6 i1 o1 i9 i7 o0 i8 i9 o6 o1 o9 o7 o8 i9 o9 o9 i6 o6 i7 i9 i0 o7 i4 o9 o0 i5 o4 o5 i0 o0 i8 o8 i7 o7 i6 i2 o6 o2 i9 o9 i8 i9 o9 o9 i0 o0 i1 o1 i0 o0 i6 o6 i2 i3 o2 o3 i9 i1 o9 o1 i0 o0 i6 o6 i7 o7 i9 o9 i2 o2 i8 i4 i3 o8 o4 o3 i1 i7 i2 i6 o1 i1 o7 i4 o2 o6 o1 i4
+i0 o0 i1 o1 i3 o3 i0 i9 i8 i0 i0 o9 i8 i6 i5 o8 i7 i7 i3 i5 o8 i3 o7 o7 i6 o6 i8 i9 o9 o8 i0 i3 o6 o5 i4 i4 i2 o5 o4 i9 o9 o4 i0 i3 o3 i7 i9 o9 o7 i5 o5 i9 o9 o3 i0 o3 i5 i3 o5 i6 i6 o6 i9 o9 i3 o6 o3 i6 i1 o6 i4 o4 i0 o3 o3 i0 i1 i7 o7 o2 o1 i4 i1 i0 i5 i7 o7 i3 o5 o4 o3 o1
+i6 i6 o6 i0 i5 i8 i9 o9 o8 o6 i7 i1 i2 o7 i8 i6 i0 o8 i4 o6 i7 o7 i3 o5 i1 i6 o6 i0 o4 o3 o2 i9 o9 o1 i2 o2 o1 o0 i4 o4 o0 i6 i0 i2 i4 i4 o6 o4 o4 o2 i3 i5 o5 i0 i7 i9 o9 i9 i6 o9 o7 o6 i7 o7 o3 o0 i0 i1 i5 i5 i1 i4 o5 i7 o7 i9 i7 i8 o9 i8 i1 i2 i9 i1 i3 o9 i9 o9 i3 o8 o8 i3
+i6 i7 i4 o6 i8 i4 o7 i8 o4 i4 o8 o4 o8 o4 i0 o0 i0 o0 i3 o3 i3 o3 i2 o2 i4 o4 i6 i7 i6 o6 o7 o6 i9 o9 i1 o1 i3 i5 i4 o3 o5 i7 i2 o4 o7 i1 i8 o2 i8 i9 o1 o8 i0 i7 o8 i4 i2 o9 o0 o7 o4 i3 o2 i6 o3 i3 i7 i9 i6 i8 i7 o6 o3 o7 o9 o6 o8 o7 i6 i9 o6 i4 i4 i9 i7 o9 o4 o4 i4 i0 o9 o7 i8
+i4 i1 i2 i9 i2 o9 o4 o2 o2 o1 i1 o1 i3 o3 i4 o4 i9 o9 i6 o6 i1 o1 i3 o3 i3 o3 i4 i9 i8 i7 i9 i1 i4 o9 i1 o9 i3 o8 i1 i2 i7 o7 i3 i1 o7 i1 o4 o4 i8 o8 o3 o3 o2 i2 o2 i6 o6 o1 o1 i4 o4 i5 o5 i9 o9 o1 o1 o1 i3 o3 i5 o5 i3 o3 i5 o5 i2 o2 i4 i7 o7 o4 i0 i4 i1 i0 i3 o4 i6 o6 i0 o3 o1
+i5 i6 i9 o9 o6 i0 o0 i8 i9 i2 i2 i2 o2 i4 i5 o5 o4 o2 o2 o9 i1 i0 i8 o8 o0 o1 i9 i7 o7 i6 o6 i3 o3 i8 i3 i8 i3 o3 i0 i4 i4 o4 i2 i9 o9 o2 o4 o0 o8 i4 i7 o7 i5 o5 i9 i0 o0 o9 o4 i4 o4 o3 i1 o1 o8 i0 i3 i6 i7 i0 i4 o4 o0 i5 i4 o4 o5 i4 i3 o3 o4 i0 i0 o0 o0 o7 i5 i3 i9 o9 o3 i2 o2 o5 i9
+i4 i5 o5 o4 i1 o1 i2 i4 o4 o2 i3 o3 i8 i2 o8 o2 i8 o8 i8 i0 o8 o0 i8 o8 i0 i6 o6 o0 i8 o8 i2 i6 o6 o2 i7 o7 i7 i2 i7 i9 o9 o7 o7 i0 i6 i8 o8 i0 o6 o2 i1 o1 i2 i1 i8 i2 o8 o2 o2 i4 i2 i2 o4 o2 i5 o5 o2 o1 i0 o0 i0 i6 i2 i4 o6 o4 o2 o0 o0 o0 i1 i0 o1 o0 i5 o5 i2 i8 o8 i0 i2 i2 o2 i4 o4
+i4 o4 i1 o1 i9 o9 i0 o0 i7 o7 i1 i8 i7 o7 o8 i7 o7 i4 i9 o9 i8 o8 o4 i3 o3 o1 i1 o1 i8 o8 i1 o1 i1 o1 i8 o8 i3 o3 i6 i9 o9 o6 i6 i5 o5 i8 o8 o6 i8 i8 o8 i5 o5 o8 i6 i8 o8 o6 i7 o7 i5 o5 i9 o9 i9 i8 o8 o9 i0 i5 o5 i1 i8 o8 o1 o0 i5 i5 o5 o5 i8 i8 i7 o7 i8 i5 i9 i3 o3 o9 o5 o8 o8 o8 i9
+i9 o9 i0 o0 i9 o9 i9 o9 i2 o2 i0 o0 i9 i6 o9 i7 i5 i0 i6 i1 o7 o6 i1 i6 o6 i3 o6 o5 o3 o1 i8 o8 o1 i7 i7 o7 o7 i5 o5 o0 i8 o8 i4 o4 i3 o3 i0 o0 i4 o4 i9 o9 i7 i9 i3 i7 i5 o9 i9 i2 i5 i4 o9 i1 o7 o7 i8 i1 o8 i5 o5 o5 o5 i0 i4 i7 i5 o7 o5 i5 i9 o9 i5 i2 o5 i2 i2 i7 o7 i5 o5 i7 o7 i1 i2
+i3 o3 i5 o5 i3 i3 i6 i8 i5 i5 o5 o5 i1 o1 o8 o6 o3 o3 i1 o1 i0 o0 i1 o1 i2 o2 i8 o8 i1 i3 o3 i7 o7 o1 i8 o8 i8 i6 o6 o8 i5 o5 i1 i9 i4 o4 i2 i4 o4 i4 i4 o4 i1 o1 i3 i4 o4 o3 i7 i8 i4 i1 o1 o4 o8 i5 i5 o5 i1 i8 i0 o0 i9 i0 i8 o8 o0 i8 i5 o5 i8 o8 i2 o2 o8 i7 i2 o2 i9 i8 i3 o3 o8 i6 i8 o8
+i3 o3 i4 i8 i3 i6 o6 o3 i4 i5 o5 i0 i3 o3 o0 i6 i1 i5 o5 i0 o0 i7 o7 i7 i7 i3 o3 i6 i0 i9 i0 i8 i8 i8 o8 i1 i9 o9 o1 o8 o8 o0 o9 i2 o2 i8 o8 i7 o7 o0 i3 i9 o9 o3 i7 o7 o6 o7 o7 i8 o8 i4 o4 i1 o1 o1 i2 i1 i9 i8 o8 o9 i5 o5 i5 o5 o1 i5 i6 i7 i1 o1 o7 o6 o5 o2 i8 i6 i4 i2 i2 o2 o2 i5 o5 i2 o2
+i1 o1 i2 o2 i7 o7 i2 i5 i4 o4 o5 i0 i8 i1 o1 o8 i1 i0 o0 o1 i5 i2 o2 o5 o0 o2 i3 i9 i2 o2 o9 i6 o6 i3 i0 i8 o8 o0 o3 o3 i6 i8 i1 o1 i2 o2 i8 i9 o9 o8 o8 i0 i9 i3 o3 i6 o6 o9 o0 i9 i7 o7 o9 o6 i0 o0 i3 o3 i2 i9 i4 i4 o4 i1 o1 o4 i1 i4 i8 i0 i9 i3 o3 o9 i0 o0 i4 i4 o4 o4 i6 o6 o0 o8 o4 o1 i7
+i9 i2 i8 o8 i5 i8 i6 i9 i7 o7 i2 o2 o9 i6 o6 o6 i6 o5 o8 i3 i4 i1 o1 i2 o2 o4 i8 o8 o3 o5 i0 o0 o2 i2 i5 o5 o2 o9 i9 o9 i6 o6 i7 o7 i1 i0 o0 i0 o0 i0 o0 i9 o9 o1 i0 o0 i9 o9 i5 o5 i8 o8 i6 i9 i0 o0 i5 i4 i3 i4 o4 o3 o4 i6 i2 i4 i8 i0 o0 i2 i9 i9 i1 i3 i8 i7 i9 i5 i2 i1 i8 i3 i2 i5 o5 i0 i0
+i6 o6 i9 o9 i5 i0 i9 o5 o0 i9 o9 i1 o9 o1 i6 i9 o6 o9 i2 i6 o2 o6 i7 o7 i4 o4 i9 o9 i6 o6 i9 i2 o9 i2 o2 i0 i2 o2 o0 i6 i4 o2 i2 o6 i8 o4 o2 o8 i0 i8 o0 o8 i5 i3 i9 i4 i8 o5 o3 o9 i0 o4 o8 i2 o0 i8 o2 o8 i3 i1 o3 i5 i8 i0 i3 o1 o5 o8 i8 o0 i4 o3 o8 o4 i1 o1 i8 i5 o8 o5 i5 i6 i0 i4 o5 i2 o6
+i6 i7 i1 o1 o7 i2 i3 i7 i7 i6 o6 i2 i3 o3 i7 o7 o2 i9 o9 o7 i9 i4 o4 i1 i1 o1 i5 o5 i1 i9 i8 i7 o7 o8 o9 i7 o7 i6 o6 o1 i3 o3 o1 i6 o6 i7 o7 o9 i0 i5 i4 o4 i4 i7 i9 i7 o7 o9 o7 i3 o3 o4 o5 o0 i5 i9 i0 o0 i5 i5 i8 i7 o7 o8 o5 o5 i3 i6 o6 i4 i4 o4 i0 i5 o5 o0 i5 i0 i5 o5 i6 o6 o0 o5 i7 o7 i0 o0 o4
+i4 o4 i3 i0 o3 i9 o0 i1 o9 i9 i2 i0 i3 i4 i2 i4 i6 i7 o1 o9 i5 o2 o0 o3 o4 i8 i9 o2 i0 i3 i4 i3 i7 o4 o6 i0 i9 o7 i4 i6 i3 o5 i5 i0 o8 i6 i0 o9 o0 o3 o4 o3 o7 i9 i5 o0 i0 o9 i0 o4 i3 i7 o6 i5 o3 i0 i8 o5 o0 o6 i0 o0 o9 o5 i9 o0 o0 o3 i4 o7 o5 i4 i7 i2 o0 o8 o0 i0 i1 i6 o9 i3 i8 i5 i1 o4 i0 o4 o7

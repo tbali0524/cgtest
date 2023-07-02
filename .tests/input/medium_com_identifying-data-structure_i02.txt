@@ -1,0 +1,9 @@
+8
+o9 i9
+i9 o9
+i3 o3 i7 i6 i3
+i8 i3 o8 i0 o3 i3 i5
+i6 i3 i2 i1 i9 i8 o9 i0
+i1 o1 i6 i5 i4 o4 i1 i5 o5
+i2 i0 o2 o0 i9 i0 i9 o9 i7
+i4 i9 i1 o1 i1 i9 o9 i0 i7 o7

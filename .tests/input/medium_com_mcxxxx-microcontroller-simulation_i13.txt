@@ -1,0 +1,13 @@
+1
+0
+10
+mov x0 dat
+tcp dat -1
++ mov 1 x1
+- mov -1 x1
+tcp dat 0
++ mov 1 x1
+- mov -1 x1
+tcp dat 1
++ mov 1 x1
+- mov -1 x1

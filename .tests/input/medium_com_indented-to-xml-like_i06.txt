@@ -1,0 +1,13 @@
+12
+# calculate factorial of number
+def factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+while True:
+    try:
+        line = input()
+        number = int(line)
+        print(factorial(number))
+    except ValueError: print('INVALID')

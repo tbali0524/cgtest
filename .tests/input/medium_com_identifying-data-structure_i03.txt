@@ -1,0 +1,22 @@
+21
+o4
+o7 i7
+i1 i2 i4
+i0 i3 i1 i1
+i5 i2 i8 i6 o8
+i3 i6 i7 i4 i4 o3 o6
+i7 i9 i4 i9 i6 i1 i4 i8
+i4 i8 o8 i0 i0 i6 o6 i6 o6
+i8 i1 i6 i3 i2 i3 i4 i4 i0 o0
+i7 i3 o7 o3 i9 o9 i6 i8 i9 o9 o8
+i0 i2 o2 i4 i0 i5 o5 i5 i4 i6 i7 o7
+i1 i3 o1 i7 o3 o7 i6 i7 i5 i8 o6 i3 i4
+i1 i0 o0 o1 i6 i9 o9 i4 o4 i7 i5 o5 i3 i5
+i7 i3 o3 o7 i9 o9 i9 i4 i8 i1 o1 i6 i4 o4 o6
+i6 o6 i5 i9 o9 i6 i5 o6 i0 o5 i1 o1 i1 i9 i7 o9
+i7 i3 o3 i6 i9 i5 i8 o9 o8 o5 i9 o9 i6 i3 i3 o3 i6 i3
+i4 o4 i3 i1 i1 o3 i0 i9 i1 i8 o1 o1 i8 i5 i5 i6 i4 o0 i2 o9
+i1 i5 o5 i6 o6 i5 i4 i2 i6 o6 o5 i3 o4 o3 o2 o1 i2 o2 i6 o6
+i2 o2 i9 i7 o7 i2 o2 i1 o1 i3 i9 o9 i0 i7 i7 i4 i0 i1 o1 i9 i3 o3
+i6 i4 i5 i1 o5 i7 o7 i5 o5 o4 i9 i6 o9 o6 o1 i1 i6 i4 i4 i7 o7 o4
+i3 o3 i4 i3 i9 o9 i4 o4 i4 i3 o3 i6 o6 i1 i1 i5 i6 i2 i1 o6 o5 i1 i8 i8

@@ -10,6 +10,8 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 (c) 2023, by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
+_The repository also contains __3800+__ test cases for __760+__ `CodinGame` puzzles._
+
 ## Intro
 
 __CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
@@ -25,8 +27,6 @@ The test runner works for any non-interactive code that reads from a standard in
 At CG, you don't have to bother about setting up any local development environment: just start to write your code directly on the CG website using your browser, run there the provided test cases (for solo puzzles), and submit your solution when you feel ready.
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
-
-_The repository also contains __3600+__ test cases for __760+__ `CodinGame` puzzles._
 
 ## Command line usage
 

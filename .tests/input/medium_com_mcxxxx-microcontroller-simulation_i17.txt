@@ -1,0 +1,19 @@
+1
+0
+16
+# JUMP JUMP JUMP !!!
+jmp one
+two: mov 2 x1
+jmp three
+six: mov 6 x1
+jmp end
+four: mov 4 x1
+jmp five
+one: mov 1 x1
+jmp two
+three: mov 3 x1
+jmp four
+five: mov 5 x1
+jmp six
+end: 
+#the end o(TヘTo)

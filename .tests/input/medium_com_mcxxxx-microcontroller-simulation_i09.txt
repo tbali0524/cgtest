@@ -1,0 +1,6 @@
+1
+1
+3
+mov x0 x1
+jmp end
+end:
