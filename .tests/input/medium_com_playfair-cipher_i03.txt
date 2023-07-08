@@ -1,0 +1,10 @@
+A Y E I C
+O W P S Q
+B L K D F
+J G M T U
+H N R V X
+ENCRYPT
+3
+MY
+COOL
+SAFE

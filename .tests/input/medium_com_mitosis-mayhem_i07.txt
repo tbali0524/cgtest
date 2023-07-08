@@ -1,0 +1,4 @@
+80 3
+Red 10 0
+Blue 20 0
+Nothing 0 0

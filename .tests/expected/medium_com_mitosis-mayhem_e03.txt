@@ -1,0 +1,3 @@
+EMPTY: 5
+Red: 40
+Blue: 5

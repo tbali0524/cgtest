@@ -1,0 +1,5 @@
+50 4
+Purple 10 0
+Blue 30 0
+Green 20 0
+Yellow 10 0

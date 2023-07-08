@@ -1,0 +1,4 @@
+Purple: 8
+Blue: 4
+Green: 26
+Yellow: 162

@@ -1,0 +1,3 @@
+EMPTY: 1
+Red: 36
+Blue: 36
