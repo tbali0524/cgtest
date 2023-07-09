@@ -1,0 +1,3 @@
+1
+/< | A | A | A | A | A | A | A | A | A | D |
+\< | k | k | D | k | k | D | k | D | x | D |

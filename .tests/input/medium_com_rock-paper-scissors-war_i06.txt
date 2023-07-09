@@ -1,0 +1,16 @@
+1 15 5
+P
+R
+R
+S
+C
+C
+S
+L
+L
+S
+C
+R
+P
+R
+P

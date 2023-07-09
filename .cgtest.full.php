@@ -839,6 +839,7 @@ return [
                 // 'hard_com_highest-truncated-pyramid',       // also in global section
                 'hard_com_hill-notation-and-hill-order',
                 'hard_com_hit-the-road',
+                'hard_com_hitori-solver',
                 'hard_com_horn-sat-solver',
                 'hard_com_inertia-ride',
                 'hard_com_kakuro-solver',
@@ -926,7 +927,6 @@ return [
                 'expert_com_haunted-manor',
                 'expert_com_heart-of-the-city',
                 'expert_com_high-rise-buildings',
-                'expert_com_hitori-solver',
                 'expert_com_hourglass',
                 'expert_com_king-of-diamonds',              // removed puzzle
                 'expert_com_mathematics-for-big-ears',
