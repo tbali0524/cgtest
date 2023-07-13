@@ -1,0 +1,3 @@
+2
+im_tired_of_making_all_these_test_cases = "()\\}\""
+puts(im_tired_of_making_all_these_test_cases)

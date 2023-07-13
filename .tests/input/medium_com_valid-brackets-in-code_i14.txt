@@ -1,0 +1,2 @@
+1
+this is some random code that shouldnt work = \\"you can (and should) do this with }regex{ \\"

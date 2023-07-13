@@ -337,6 +337,7 @@ return [
                 'easy_com_cosmic-love',
                 // 'easy_com_count-as-i-count',                     // also in global section
                 'easy_com_couples-picture-frame',
+                'easy_com_crazy-list',
                 // 'easy_com_create-the-longest-sequence-of-1s',    // also in global section
                 'easy_com_create-turn-here-signs',
                 // 'easy_com_credit-card-verifier-luhns-algorithm', // also in global section
@@ -1130,4 +1131,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.06.30: 'medium_com_chebyshev-orbiting',
+// Note: last puzzle added on 23.07.11: 'easy_com_crazy-list',

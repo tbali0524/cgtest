@@ -1,0 +1,2 @@
+1
+string str = "}why (are[ there) random parenthesis] in here?";

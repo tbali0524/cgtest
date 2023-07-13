@@ -1,0 +1,7 @@
+6
+let hopeThisDoesntBreakYourCode = "";
+hopeThisDoesntBreakYourCode += "1!2@3#4$5%6^7&8*9(0)-_=+";
+hopeThisDoesntBreakYourCode += "qwertyuiop[{]}";
+hopeThisDoesntBreakYourCode += "asdfghjkl;:'\"\\|";
+hopeThisDoesntBreakYourCode += "zxcvbnm,<.>/?";
+console.log(hopeThisDoesntBreakYourCode.split(""));

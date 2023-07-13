@@ -1,0 +1,6 @@
+500
+4
+cucumber 100
+pepper 100
+zucchini 100
+onion 100

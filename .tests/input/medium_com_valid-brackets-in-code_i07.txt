@@ -1,0 +1,51 @@
+50
+using System;
+namespace powerful_prime_factor
+{
+  class Program
+  {
+    public static void Main(string[] args)
+    {
+      try
+      {
+        int integer = Int32.Parse(args[0]);
+        if (integer < 0) throw new Exception("Error: input must be positive");
+        Console.WriteLine("Your factors are:");
+        string output = ExpressFactors(integer);
+        Console.WriteLine(output);
+      }
+      catch (IndexOutOfRangeException)
+      {
+        Console.WriteLine("Error: no integer provided. Usage: dotnet run {integer}");
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine(e);
+      }
+    }
+    public static string ExpressFactors(int n)
+    {
+      int i = 2;
+      string output = "";
+      while (n != 1)
+      {
+        int count = 0;
+        while (n % i == 0)
+        {
+          n /= i;
+          count++;
+        }
+        if (count != 0)
+        {
+          string factor = "";
+          if (count == 1) factor = i.ToString();
+          else factor = $"{i}^{count}";
+          if (output == "") output = factor;
+          else output += $" x {factor}";
+        }
+        i++;
+      }
+      return output;
+    }
+  }
+}

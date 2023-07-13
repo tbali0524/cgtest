@@ -1,0 +1,15 @@
+4
+9
+Albert 2
+Roger 1
+Thierry 1
+Valérie 3
+Albert Yes
+Valérie Yes
+Erwan No
+Albert No
+Thierry Yes
+Valérie Yes
+Valérie No
+Valérie Non
+Roger Maybe
