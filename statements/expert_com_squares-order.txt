@@ -1,0 +1,48 @@
+Squares order
+
+https://www.codingame.com/training/expert/squares-order
+https://www.codingame.com/contribute/view/253f34971bd4be69b6887db058ed6326edf
+
+A contribution by VilBoub
+Approved by [CG]OlogN,Magus,CvxFous
+
+Goal
+Squares have been drawn with ASCII characters on a grid.
+The objective is to find each of their sizes and in which order they were drawn.
+(Each square overlaps another one.)
+
+Input
+Line 1 : h the height and w the width of the grid.
+Line 2 : nb the number of squares.
+h following lines : the content of the grid. '.' for an empty spot,
+and a label (between 1 and nb) representing the border of the squares.
+
+Output
+nb lines giving in drawing order :
+The label and size of each square, separated by a space, in order from the first one drawn to the last.
+
+Constraints
+2 ≤ h, w ≤ 10
+1 ≤ nb, label ≤ 5
+2 ≤ size ≤ 10
+
+Example
+
+Input
+5 5
+2
+..111
+22221
+2.121
+2..2.
+2222.
+
+Output
+1 3
+2 4
+
+Tags
+Conditions, Loops, 2D array
+
+Difficulty
+Very Hard

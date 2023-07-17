@@ -779,6 +779,7 @@ return [
                 'medium_com_wine-from-kalbodia-episode-1',
             ],
             'puzzle/community/hard/' => [
+                'hard_com_24-the-long-game',
                 'hard_com_3d-ascii-cube',                   // removed puzzle
                 'hard_com_7-segment-display',
                 'hard_com_alternative-vote',
@@ -1131,4 +1132,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.07.11: 'easy_com_crazy-list',
+// Note: last puzzle added on 23.07.17: 'hard_com_24-the-long-game',

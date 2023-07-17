@@ -1,0 +1,51 @@
+Minimax Simple Example
+
+https://www.codingame.com/training/expert/minimax-simple-example
+https://www.codingame.com/contribute/view/103008966487926584b5410f78c91b6c56b5
+
+A contribution by Wildcat
+Approved by Razielwar,polettix,Ben-oit
+
+Goal
+At the beginning the 2 players see a pile of letters, all different. In turns they can choose to get the first or the second letter of the pile. At the last turn, the last player has no choice but getting the last letter.
+Then, the players score according to the words they can build with their collected letters. A dictionary gives the possible words with their associated gains. Letters can be used several times to form several words.
+
+You have to advise the first player for its first turn: what letter is best to choose, and what scores are expected for each player, when the two players play their best choice at each turn.
+
+For the player 1, the purpose is to have the higher positive difference between its score and the opponent's score. For example, '10-2' is a better result than '15-14', which is better than '20-25'.
+
+This puzzle is a simple game to implement a minimax algorithm. You may need to optimize your code with alpha-beta pruning for some tests.
+
+Input
+Line 1 : Two integers N the number of letters in the pile and Q the number of scoring words.
+Line 2 : N letters separated by space.
+Q next lines : A word and its associated score.
+
+Output
+Line 1 : C the best choice for the first turn, and S1-S2 the expected final scores for the player 1 and 2.
+
+Constraints
+2 <= N <= 26
+1 <= Q <= 100
+All input letters are different
+Words in dictionary do not contain duplicate letters
+The tests are designed to have a unique best solution.
+
+Example
+
+Input
+4 4
+A S R E
+SA 2
+SE 4
+RE 1
+A 1
+
+Output
+S 4-1
+
+Tags
+-
+
+Difficulty
+Very Hard

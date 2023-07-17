@@ -1,0 +1,54 @@
+2048
+
+https://www.codingame.com/multiplayer/optimization/2048
+https://www.codingame.com/contribute/view/5526526226cd3d7bf021041199031dc1612b
+
+A contribution by eulerscheZahl
+Approved by wlesavo,darkhorse64,Illedan
+
+This is a port of the popular game 2048, play it online on https://play2048.co/
+
+The Goal
+Collect as many points as possible by joining two tiles with the same value.
+
+Rules
+The game is played on a grid of size 4x4. Some of the cells are occupied by numbers. You can move all the numbers on the grid in one of the four directions (up, down, left, right). Numbers will move as far as they can and only stop at an edge or another number.
+If two numbers with the same value collide and none of those has taken part in another merge during the turn, they will merge into a single number having twice the value. This will award you a score equal to the new value.
+After each move a new number will spawn at one of the free tiles at random. The new number can either be 2 or 4.
+
+Expert Rules
+For technical limitations you can only output 600 commands per game. To allow for longer games, you can print multiple actions at once. The game uses a pseudo-random number generator to spawn new numbers, please refer to github for details.
+The current seed is given to your program as an input each turn.
+
+Example
+Given the following board:
+4 	4 	4 	0
+2 	0 	2 	2
+4 	4 	0 	4
+0 	2 	2 	4
+
+Applying a left move to it, you'll get:
+8 	4 	0 	0
+4 	2 	0 	0
+8 	4 	0 	0
+4 	4 	0 	0
+Note that the two 4's in the bottom line are not merged, as the left 4 was created in the same turn.
+
+Game Input
+
+Input per turn
+Line 1: seed, the seed used to spawn new tiles.
+Line 2: score, your total score so far.
+Line 3-6: four space separated integers value per line, giving the current grid with numbers.
+
+Output
+A single line containing U, D, R or L. You can print multiple actions at once, e.g. UURDLUDL
+If you add a - to the output, you will disable the viewer (as it can get laggy for longer games).
+
+Constraints
+BOARD_SIZE = 4
+Allotted response time to output is ≤ 1 second for the first turn.
+Allotted response time to output is ≤ 50 ms for the later turns.
+
+Tags
+Simulation, Beam Search

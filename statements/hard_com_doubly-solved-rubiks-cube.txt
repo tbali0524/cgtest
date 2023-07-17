@@ -1,0 +1,75 @@
+Doubly solved Rubik's cube
+
+https://www.codingame.com/training/hard/doubly-solved-rubiks-cube
+https://www.codingame.com/contribute/view/5481a17f2417aaf9f755207375be19aa8b59
+
+A contribution by icecuber
+Approved by Chhunneng,dolmen1234,piwai
+
+Goal
+Given a configuration of the Rubik's cube, find its doubly solved configuration. Specifically, pick any sequence of twists that solves the given Rubik's cube. Apply that same sequence twice to the given cube (once to solve it, then again to get some new configuration). You are asked to output the resulting configuration.
+
+It can be shown that the result is independent of the sequence of twists used to solve the initial cube. In this problem only the configuration below counts as solved (no other orientations).
+
+The solved cube configuration is:
+    UUU
+    UUU
+    UUU
+
+LLL FFF RRR BBB
+LLL FFF RRR BBB
+LLL FFF RRR BBB
+
+    DDD
+    DDD
+    DDD
+There are no trailing spaces.
+
+Input
+A flattened Rubik's cube configuration. If we made a cut-out of the flattened configuration on paper, we could fold the flaps backwards to produce a cube. This gives each input character a corresponding Rubik's cube sticker.
+
+3 lines: The top of the cube
+Blank line
+3 lines: The left, front, right and back of the cube
+Blank line
+3 lines: The bottom of the cube
+
+Output
+The doubly solved configuration in the same format as the input.
+
+Constraints
+The input will be a valid cube configuration, i.e. it can be solved by a sequence of twists and full cube orientation changes.
+
+Example
+
+Input
+    UUF
+    UUF
+    UUF
+
+LLL FFD RRR UBB
+LLL FFD RRR UBB
+LLL FFD RRR UBB
+
+    DDB
+    DDB
+    DDB
+
+Output
+    UUB
+    UUB
+    UUB
+
+LLL FFU RRR DBB
+LLL FFU RRR DBB
+LLL FFU RRR DBB
+
+    DDF
+    DDF
+    DDF
+
+Tags
+Rubik's cube, Permutations, Group theory
+
+Difficulty
+Hard

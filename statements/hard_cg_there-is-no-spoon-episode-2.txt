@@ -1,0 +1,80 @@
+There is no Spoon - Episode 2
+
+https://www.codingame.com/training/hard/there-is-no-spoon-episode-2
+
+The Goal
+The game is played on a rectangular grid with a given size. Some cells contain nodes with a number on them from 1 to 8 inclusive. This number represents the amount of links the node should have with neighboring nodes. The rest of the cells are empty.
+
+The goal is to connect all of the nodes by printing a list of links.
+
+Rules
+The links must follow certain criteria:
+They must begin and end at distinct nodes.
+They must either be horizontal or vertical (in a straight line).
+They must not cross any other links or nodes.
+At most two links connect a pair of nodes.
+The number of links connected to each node must match the number on that node.
+The links must connect all the nodes into a single connected group.
+
+You lose if:
+You try to place three or more links between two nodes.
+You try to place a link which crosses another link or a node to which it is not connected.
+You try to place a link which causes a node to have a greater number of links than the amount of links it displays.
+Your solution does not reach the amount of optimal links for each node.
+Your solution creates two or more isolated groups of nodes.
+Your program does not link nodes fast enough (timeout).
+ 
+Victory Conditions
+You win when all nodes are correctly connected to each other.
+
+Example: there are 4 nodes in a 2 by 2 grid. Each node must be connected to neighboring nodes with the displayed amount of links.
+ 
+42
+31
+
+0 0 1 0 1
+You can set a link you're sure exists.
+
+0 0 1 0 1
+And add another one at the same place later.
+
+0 0 0 1 2
+You can set two links at once.
+
+0 1 1 1 1
+All nodes must be connected.
+ 
+Note
+Several optimal solutions may exist. You are only required to provide one of these solutions.
+Debug mode is available from the settings panel (the dented wheel)
+You can check the coordinates of a node by moving your mouse cursor over it in debug mode.
+You can zoom/unzoom with the mouse wheel and move using drag'n drop (useful for large grids)
+Warning: the tests provided are similar to the validation tests used to compute the final score but remain different. This is a "hardcoding" prevention mechanism.
+
+Game Input
+The program must first read the initialization data from standard input. Then, provide to the standard output one line per instruction
+
+Input
+Line 1: one integer width for the number of cells along the x axis.
+
+Line 2: one integer height for the number of cells along the y axis.
+
+Next height lines: A string line containing width characters. A dot . represents an empty cell. A number from 1 to 8 represents a cell containing a node. The number is the amount of links the node must have.
+
+Output
+One line per link or couple of links. Each line is comprised of five integers: x1 y1 x2 y2 amount to add amount links between two nodes at coordinates (x1,y1) and (x2,y2).
+
+Constraints
+0 < width ≤ 30
+0 < height ≤ 30
+0 ≤ x1 , x2 < width
+0 ≤ y1 , y2 < height
+1 ≤ amount ≤ 2
+Alloted response time to first output line ≤ 1s.
+Response time between two output lines ≤ 100ms
+
+Tags
+Backtracking, Recursion
+
+Difficulty
+Hard

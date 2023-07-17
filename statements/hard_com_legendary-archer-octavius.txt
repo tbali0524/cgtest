@@ -1,0 +1,45 @@
+Legendary Archer Octavius
+
+https://www.codingame.com/training/hard/legendary-archer-octavius
+https://www.codingame.com/contribute/view/5422820e97ca4ecbb1acd629ac70e289bc06
+
+A contribution by UnicornP
+Approved by TheProCode,King_Coda,AkshatJ1127
+
+Goal
+The Roman Empire is being attacked by UFOs! It is up to the unassuming city guardsman Octavius, son of Septimus, to defend his city with his trusty bow!
+
+Octavius begins on top of a watchtower at coordinates (x=0, y=80, z=0) m. He wields the Bow of Sagittarius, an incredible weapon that is capable of firing arrows that ignore air resistance. It takes him 3 sec to draw his bow, aim, and fire an arrow with an initial speed of 60 m/s. However, some UFOs may not be in range of this watchtower. Octavius may need to travel to the roof of another watchtower at coordinates (x = 200, y = 20, z = 0) m to reach these UFOs. It takes him 20 sec to travel to this watchtower by zip line. Furthermore, Octavius can spend 8 sec to chug an Oreo® milkshake at this watchtower, allowing him to fire arrows more quickly (2 sec draw time) and at greater speeds (80 m/s).
+
+Octavius must shoot down the N UFOs currently menacing the city. Luckily, they are busy abducting hapless civilians and are thus motionless in the sky. The Bow of Sagittarius is extremely powerful, able to take down a UFO in a single shot. To save as many people as possible, Octavius must find the optimal sequence of actions to take in order to strike down all UFOs in the least amount of time. Report the elapsed time to two decimal places, ending when the final UFO is struck.
+
+For this puzzle, the acceleration due to gravity is (0, -9.8, 0) m/s^2. UFOs ignore gravity. Arrows and UFOs can be modeled as points for mathematics purposes.
+
+Input
+Line 1: An integer N, representing the number of UFOs to shoot
+Next N lines: Space separated integers x, y, and z, representing the coordinates of a UFO
+
+Output
+The shortest possible time in seconds required to strike down all UFOs, reported to two decimal places
+
+Constraints
+1 ≤ N ≤ 30
+-500 ≤ x,z coordinates ≤ 500
+1 ≤ y coordinates ≤ 500
+All UFOs are possible to hit
+
+Example
+
+Input
+2
+200 60 0
+30 120 0
+
+Output
+6.89
+
+Tags
+Ballistics, Scheduling
+
+Difficulty
+Hard

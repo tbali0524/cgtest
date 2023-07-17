@@ -1,0 +1,89 @@
+Basic Decision Tree - 2
+
+https://www.codingame.com/training/hard/basic-decision-tree---2
+https://www.codingame.com/contribute/view/20009fd3678925aa1f5309c898521a4458f8
+
+A contribution by Wei-1
+Approved by bbb000bbbyyy,Unnamed CodinGamer,Unnamed CodinGamer
+
+Goal
+You are a beetle scientist and you have to identify the species of a lot of male beetles in your research.
+Currently, you can easily identify these beetles after they are fully grown up.
+However, in your research, you want to identify the species of the male beetles while they are still pupae.
+
+You had already done a one-dimensional decision tree to separate the pupae:
+https://www.codingame.com/training/hard/basic-decision-tree---1
+However, the paper got rejected because the result is not significant enough.
+You decide to include more features to see if you can improve the accuracy of the decision tree.
+
+Before you start this puzzle, it is highly recommended to finish the first one,
+since we will follow the same entropy algorithm.
+
+You will have PN pupae with their index, species, and features.
+
+This time, instead of using only horn length as the separator,
+you are given FN features and you will want to select FM features that will have the lowest entropy.
+If 2 different sets of features can have the same entropy, we will choose those features with a smaller index.
+The output features index should be in numerical order.
+
+The index of features are from 1 to FN.
+
+For example:
+
+You have 4 pupae each with 3 features, (PN and FN)
+and you need to select the 2 best features. (FM)
+Pupa-0 is species 1 and has feature values 1, 1, 2
+Pupa-1 is species 1 and has feature values 1, 2, 1
+Pupa-2 is species 2 and has feature values 1, 2, 2
+Pupa-3 is species 2 and has feature values 1, 2, 2
+
+By selecting feature 1 and 2, we scan through both features with the method in the previous puzzle.
+The best separator will be pupa-1's feature 2,
+and can separate the pupae into [(0), (1, 2, 3)] with entropy 0.6887.
+After that, we are not able to find any other separator to decrease the entropy.
+
+By selecting feature 1 and 3, we get similar result as get entropy 0.6887.
+
+By selecting feature 2 and 3, we first separate pupae into [(0), (1, 2, 3)] with pupa-1's feature 2.
+And then further separate pupa-1,2,3 into [(1), (2, 3)] with pupa-2's feature 3.
+The tree at the end will be [(0), [(1), (2, 3)]], with entropy 0.
+
+Therefore, the output should be 2 and 3.
+
+P.S. pupa index is not used in this puzzle
+
+Input
+Line 1: An integer PN for the number of pupae
+Line 2: An integer FN for the number of given features
+Line 3: An integer FM for the number of features to be select
+Next PN Lines: Space separated parameters in the order of
+pupa index, species id, FN number of features
+
+Output
+Line 1: Space separated parameters FM number of feature ids
+
+Constraints
+2 <= PN <= 20
+2 <= FN <= 8
+1 <= FM <= 4
+0 <= index < 20
+0 <= feature value <= 100
+1 <= species ID <= 4
+
+Example
+
+Input
+2
+2
+1
+0 1 1 1
+1 2 1 2
+
+Output
+2
+
+Tags
+Machine learning
+
+Difficulty
+Hard

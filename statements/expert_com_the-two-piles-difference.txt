@@ -1,0 +1,46 @@
+The two piles difference
+
+https://www.codingame.com/training/expert/the-two-piles-difference
+https://www.codingame.com/contribute/view/738e5f7f3d5798086768c53e5a05bb55ca4
+
+A contribution by Steuh
+Approved by egaetan,aCat,Stilgart
+
+Goal
+You have a list of natural numbers of size N and you must distribute the values in two lists A and B of size N/2, so that the squared sum of the A elements is the nearest possible to the product of the B elements.
+
+Example:
+Consider the list 7 11 1 9 10 3 5 13 9 12.
+The optimized distribution is:
+List A: 5 9 9 12 13
+List B: 1 3 7 10 11
+which leads to the difference abs( (5+9+9+12+13)^2 - (1*3*7*10*11) ) = 6
+Your program should therefore output 6, which is the minimum difference that can be achieved.
+
+Input
+Line 1: The list size N
+Line 2: N space separated natural numbers
+
+Output
+Line 1: The minimum difference between the squared sum of elements in list A and the product of elements in list B.
+
+Constraints
+1 <= N <= 40
+0 < value of an element < 21
+N is always even, so size(A) = size(B).
+There are at most 12 different natural numbers.
+
+Example
+
+Input
+10
+7 11 1 9 10 3 5 13 9 12
+
+Output
+6
+
+Tags
+-
+
+Difficulty
+Very Hard

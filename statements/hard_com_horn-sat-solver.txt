@@ -1,0 +1,68 @@
+Horn-SAT solver
+
+https://www.codingame.com/training/hard/horn-sat-solver
+https://www.codingame.com/contribute/view/1404d67b6e7613ee0ba87a25f3685d6b89a6
+
+A contribution by ludowsky
+Approved by dwarfie,Stilgart,JBM
+
+Goal
+In formal logic, Horn-satisfiability, or Horn-SAT, is the problem of deciding whether a given Horn formula is satisfiable or unsatisfiable. Our purpose here is to code a program solving the Horn-SAT problem.
+
+A literal is a boolean variable or its negation. For the variable X we have the positive literal X and the negative literal -X (NOT).
+A Horn clause is finite disjunction (OR) of literals with at most one positive literal, called the head of the clause, and any number of negative literals, forming the body of the clause.
+A Horn formula is a finite conjunction (AND) of Horn clauses.
+
+For a given formula with C Horn clauses and V variables, you should find if it is satisfiable or not (unsatisfiable). A Horn formula is satisfiable if there exists at least one assignment of the variables of the formula that makes it true, this assignment is a model of the formula.
+
+An algorithm for Horn-SAT is based on the rule of unit propagation. If the formula contains a clause composed of a single literal L (called unit clause) the value of the variable should be forced in order to satisfied this clause. Hence, all clauses containing L can be removed because they are now satisfied. Secondly, all clauses containing -L have this literal removed, because this literal has became false and can not satisfied these clauses any more. The result of the second rule may generate new unit clauses, which are propagated in the same manner. If there are no unit clauses left, the formula can be satisfied by simply setting all remaining variable to false, the resulting model is the minimal model of the formula. The formula is unsatisfiable if the propagation generates an empty clause, and forces a variable to be set simultaneously to true and false.
+
+Input
+The input respects the DIMACS format.
+Note that variable are numbered from 1 to V.
+
+Line 1 is a header giving the number of variables and clauses.
+p cnf V C
+
+C lines, one per Horn-clause.
+Each line is the list of literal(s) of the current clause. The line always finishes by a 0.
+
+Output
+The output should respects the DIMACS format.
+
+If the formula is satisfiable:
+s SATISFIABLE
+Plus one line corresponding to the minimal model of the formula.
+The line begins by a v, gives the values for the V variables in increasing order, and ends by a 0.
+For example if the variables 1, 3, 4 are false, and the variable 2 and 5 are true, the resulting line will be:
+v -1 2 -3 -4 5 0
+
+Otherwise, the formula is unsatisfiable:
+s UNSATISFIABLE
+
+Constraints
+0 < V < 150
+0 < C < 500
+
+Example
+
+Input
+p cnf 5 8
+-1 -2 -3 -4 -5 0
+-1 -2 -3 -4 0
+3 0
+-3 -5 0
+-1 -3 -4 0
+-2 -3 -4 5 0
+-3 4 0
+-1 -2 -3 -5 0
+
+Output
+s SATISFIABLE
+v -1 -2 3 4 -5 0
+
+Tags
+Logic, Satisfiability, Horn-SAT, Unit propagation, DIMACS
+
+Difficulty
+Hard

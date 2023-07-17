@@ -1,0 +1,52 @@
+N Pearls Necklace
+
+https://www.codingame.com/training/hard/n-pearls-necklace
+https://www.codingame.com/contribute/view/21267833d34ef960c94d60f4bb5c5f70f7926
+
+A contribution by pardouin
+Approved by Westicles,Exanc,pluieciel
+
+Goal
+Mr. Burn and Mr. Side work in a necklace shop.
+Mr. Burn makes the necklaces and Mr. Side sells them.
+The necklaces are made with pearls of identical radius.
+Sometimes, Mr. Burn launches a new collection: he chooses a panel of colors and a number of pearls and creates necklaces with these constraints.
+Mr. Side is very dedicated to his job and whenever a new collection is launched, he displays all possible necklaces that follows the constraints of the collection in a glass case to offer the widest choice to the customers.
+
+The necklaces are circular and reversible so the necklaces ABCDE, EABCD and EDCBA are the same necklace.
+Also note that all colors of the panel must be used at least once.
+
+For example if the constraints of the collection are:
+
+number of pearls: 5 pearls
+panel of colors: black and white,
+
+then there are only 6 different necklaces:
+WBBBB, WWBBB, WBWBB, WWWBB, WWBWB, WWWWB.
+
+To help Mr. Side evaluate the size of the glass case, you must output the number of different necklaces for a given collection.
+
+Input
+Line 1: An integer N for the number of pearls.
+Line 2: An integer C for the number of colors in the panel.
+
+Output
+Line 1: The number of different necklaces for a given collection.
+
+Constraints
+1 ≤ C ≤ N ≤ 30
+
+Example
+
+Input
+5
+2
+
+Output
+6
+
+Tags
+Group theory, Arithmetic
+
+Difficulty
+Hard

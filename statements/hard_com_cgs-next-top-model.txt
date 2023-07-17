@@ -1,0 +1,78 @@
+CG's Next Top Model
+
+https://www.codingame.com/training/hard/cgs-next-top-model
+https://www.codingame.com/contribute/view/807261217ca560924084dd5cf701a2d0d5ff
+
+A contribution by Wontonimo
+Approved by Blabbage,LazyMammal,AdemDj12
+
+Goal
+There is a pile of data that needs to be modelled, things like motion of the stars, stock price projections, and your chances of getting a date next Wednesday.
+
+Unfortunately your graphing calculator broke and you've lost internet connection so you are going to have to calculate the best model for each data set.
+
+Sometimes data is best modelled as a straight line, a parabola, a sine wave, or an exponential function. You want to know which model best describes the data.
+
+Here are the models you are considering:
+LINEAR f(x) = a*x + b
+PARABOLA f(x) = a*x^2 + b*x + c
+SINE f(x) = a*sin(b*x+c) + d
+EXPONENTIAL f(x) = abs(a)^(x+b) + c
+
+You measure how good a function is at describing the data by measuring the square of its error, with a lower value being better.
+
+For example, with the LINEAR model f(x) = 1*x+1, and the data set (0,1.5) (1,2) (2,3) (3,5) we can calculate the total squared error like so
+(0,1.5) : f(0) = 0+1 = 1.  error = (1.5-f(0))^2 = (1.5-1)^2 = 0.25
+(1,2.0) : f(1) = 1+1 = 2.  error = (2.0-f(1))^2 = (2.0-2)^2 = 0.0
+(2,3.0) : f(2) = 2+1 = 3.  error = (3.0-f(2))^2 = (3.0-3)^2 = 0.0
+(3,5.0) : f(3) = 3+1 = 4.  error = (5.0-f(3))^2 = (4.0-5)^2 = 1.0
+Total = 0.25 + 0 + 0 + 1.0 = 1.25
+
+You don't have the values a,b,c,d. You must find the best values for each model that has the lowest square error using something like gradient descent, simulated annealing, or some other sampling technique.
+
+Any good model should 'predict' unseen data, so you have divided your data into training and test.
+Use the training data to find the best a,b,c,d. Use the test data to see how well it does as a predictor.
+
+The square error of the test data is what you will use to pick the model.
+
+GOAL
+Pick the model with the lowest square error on the test data
+
+REFERENCES
+Intro to machine learning (specifically function fitting) https://www.youtube.com/watch?v=wUPFOFbCeFI
+From Blokops https://www.cs.utep.edu/ofuentes/cs4361/fall19/grad_desc.pdf
+
+HINTS
+Use rot13.com to decode a hint
+Hint 1 : Vg vf cbffvoyr gb svaq gur cnenzrgref sbe rnpu zbqry jvgu gra gubhfnaq genvavat fgrcf
+Hint 2 : Znxvat lbhe bja grfg qngn rafher gung lbhe nytbevguz pna svg n zbqry gb qngn pbeerpgyl
+Hint 3 : Gb trarengr grfg qngn hfr gur zbqry jvgu enaqbz cnenzrgref naq gur nqq n fznyy nzbhag bs reebe gb gur bhgchg
+Hint 4 : Orpnhfr gurer vf fbzr punapr vaibyirq va svaqvat gur orfg inyhrf sbe rnpu zbqry, lbh znl unir gb er-fhozvg bapr be gjvpr. N tbbq fbyhgvba fubhyq abg arrq zber guna bar be gjb fhozvgf.
+
+Input
+Line 1: T The training set. Space separated list of floating point x y pairs like : 0.0 1.5 1.0 2.0 2.0 3.0 3.0 5.0
+Line 2: U The test set. Space separated list of floating point x y pairs like : 4.0 5.0 5.0 4.8
+
+Output
+One of LINEAR, PARABOLA, SINE, or EXPONENTIAL
+
+Constraints
+-1e20 < x,y < 1e20
+The training and test set will have at least 4 sets of points (8 numbers) and at most 20 sets of points (40 numbers)
+-20 <= a,b,c,d <= 20
+Except for exponential where 0 <= a <= 4
+
+Example
+
+Input
+1 -5.4396 3 -1.7278 5 1.3968 7 5.0468 9 8.6818 11 11.9518 13 15.7351 15 19.2545 17 22.6826 19 25.6735
+0 -7.1129 2 -3.6857 4 -0.2995 6 3.4321 8 6.4681 10 10.072 12 13.9492 14 17.09 16 20.8774 18 23.7027 20 28.4941
+
+Output
+LINEAR
+
+Tags
+Simulated Annealing, Machine learning, Genetic Algorithm
+
+Difficulty
+Hard

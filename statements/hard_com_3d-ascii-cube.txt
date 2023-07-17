@@ -1,0 +1,62 @@
+3D ASCII Cube
+
+https://www.codingame.com/training/hard/3d-ascii-cube
+removed, accessible only at: https://www.codingame.com/ide/puzzle/3d-ascii-cube
+https://www.codingame.com/contribute/view/2473ce3c582c455ca520f09f4fe9b8931af
+
+A contribution by Peter92
+Approved by Unnamed CodinGamer,Unnamed CodinGamer,Unnamed CodinGamer
+
+Goal
+Draw a text representation of a 3D cube from a list of numbers.
+
+Each cell must be 1 line high and 3 characters wide, excluding any connectors.
+Lines parallel to the X axis are represented by underscore: _ characters.
+Lines parallel to the Y axis are represented by forward slash: / characters.
+Lines parallel to the Z axis are represented by vertical bar: | characters.
+
+Formatting rules:
+The integer should be centered if possible, or aligned to the left if not.
+If the integer overlaps anything, the integer should be shown.
+
+Input
+Line 1: The number N of integers going to be input.
+Next N lines: An Integer I which goes in the cube.
+
+Output
+Multiple lines with each line displaying a new row of the cube.
+
+Constraints
+1 ≤ N ≤ 64
+-99 ≤ I ≤ 999
+
+Example
+
+Input
+8
+0
+1
+2
+3
+4
+5
+6
+7
+
+Output
+     ________
+    / 0 / 1 /|
+   /___/___/ |
+  / 2 / 3 /  |
+ /___/___/   |
+|   |____|___|
+|   / 4 /|5 /
+|  /___/_|_/
+| / 6 / 7|/
+|/___/___|
+
+Tags
+-
+
+Difficulty
+Hard

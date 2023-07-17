@@ -1,0 +1,51 @@
+Tiling by Squares
+
+https://www.codingame.com/training/expert/tiling-by-squares
+https://www.codingame.com/contribute/view/538487df7add435e45faf1957939a68f2b48
+
+A contribution by fantamar
+Approved by LastRick,CopperFr,Meruem
+
+Goal
+Given a rectangle of integer sides w and h, find the minimum number of squares with integer sides (the sides' sizes must be natural numbers) needed to fill the rectangle.
+
+Example with w = 11 and h = 13:
+ _ _ _ _ _ _ _ _ _ _ _
+|       |             |
+|   4   |             |
+|       |             |
+|_ _ _ _|      7      |
+|       |             |
+|   4   |             |
+|       |_ _ _ _ _ _ _|
+|_ _ _ _|1|           |
+|         |           |
+|         |     6     |
+|    5    |           |
+|         |           |
+|_ _ _ _ _|_ _ _ _ _ _|
+
+You can fill it with a minimum of 6 squares so the output should be 6.
+
+Input
+Two integers w, h separated by a space.
+
+Output
+The minimal number of squares.
+
+Constraints
+0 < w, h < 50
+
+Example
+
+Input
+6 7
+
+Output
+5
+
+Tags
+-
+
+Difficulty
+Very Hard

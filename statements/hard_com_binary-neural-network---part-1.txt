@@ -1,0 +1,136 @@
+Binary neural network - Part 1
+
+https://www.codingame.com/training/hard/binary-neural-network---part-1
+https://www.codingame.com/contribute/view/681a7be27ab4fca94f7fed8d86bb1fd52da
+
+A contribution by player_one
+Approved by Unnamed CodinGamer,Uljahn,Stilgart
+
+Goal
+You will build a neural network that takes binary inputs and produces binary outputs. The network follows a specified topology, and learns from a provided training set using backpropagation.
+
+NOTATION
+
+- Input node: I1 - 1st input node, top to bottom
+- Output node: O2 - 2nd output node, top to bottom
+- Hidden layer node: H2:3 - 3rd node (top to bottom) in the 2nd hidden layer (left to right)
+- Bias node: θ
+- Output: o[O2] - output of O2
+- Weight: w[I1, O2] - weight of link from I1 to O2 (left to right)
+- Training data: t2 - expected output of O2
+- Learning rate: η = 0.5
+
+TOPOLOGY
+
+- The input nodes are in a column at the left, followed by the hidden layers (0 - 2 columns), followed by output nodes in a column on the right
+
+- There is a single bias node, θ, which is linked to every hidden and output node
+
+- Each node is linked to every node in the previous column to the left. So a network with 2 inputs and 2 outputs has 6 links. Their associated weights are: w[I1, O1], w[I2, O1], w[θ, O1], w[I1, O2], w[I2, O2], w[θ, O2]
+
+NODE OUTPUT
+
+- The input nodes output unmodified input values
+
+- θ always outputs 1
+
+- The un-normalized outputs of hidden and output nodes are the sum of all inputs multiplied by the associated weights. For example, in a network with 2 inputs, the node H1:1 outputs:
+
+o'[H1:1] = o[I1]*w[I1, H1:1] + o[I2]*w[I2, H1:1] + w[θ, H1:1]
+
+- This value is then normalized with a sigmoid activation function:
+
+o[H1:1] = 1 / (1 + exp(-o'[H1:1]))
+
+BACKPROPAGATION
+
+- For output node k:
+
+δ[k] = o[k]*(1 - o[k])*(o[k] - tk)
+
+- For hidden node j (sum for all nodes k in the next layer to the right):
+
+δ[j] = o[j]*(1 - o[j])*
+       ( δ[k1]*w[j, k1] + δ[k2]*w[j, k2] + ... + δ[kn]*w[j, kn] )
+
+- For link, w[j, k]:
+
+∆w = −η*δ[k]*o[j]
+
+- Since o[θ] is always 1, ∆w for w[θ, k] is:
+
+∆w = −η*δ[k]
+
+TRAINING
+
+Repeat trainingIterations times the following:
+- For each line of trainingInputs and expectedOutputs:
+1) Run the network forward with the provided inputs to get the outputs
+2) Calculate the ∆w's for all links, based on expected output
+3) Apply the ∆w's to all link weights
+
+WEIGHTS
+
+Weights are initialized using a linear congruential generator with a seed of 1103527590. The LCG works as follows:
+
+X(0) = 1103527590
+X(n+1) = 1103515245 * X(n) + 12345 [mod 2^31]
+
+Each LCG value is normalized to [0, 1] by dividing by 0x7fffffff.
+
+Weights are initialized on each node in each layer, top to bottom, left to right. Each node links to every node in the column to the left, top to bottom, and then to θ. So for a network with 2 inputs, 2 hidden nodes, and 2 outputs, the initialization order is:
+
+w[I1, H1:1]
+w[I2, H1:1]
+w[θ, H1:1]
+w[I1, H1:2]
+w[I2, H1:2]
+w[θ, H1:2]
+w[H1:1, O1]
+w[H1:2, O1]
+w[θ, O1]
+w[H1:1, O2]
+w[H1:2, O2]
+w[θ, O2]
+
+MORE INFO
+
+https://www.youtube.com/watch?v=aVId8KMsdUU
+https://www.youtube.com/watch?v=bxe2T-V8XRs
+
+Input
+Line 1: Six space-separated integers specifying the number of inputs, outputs, hiddenLayers, testInputs, trainingExamples, and trainingIterations.
+Line 2: layers space-separated integers specifying the number of nodes in each hidden layer, from closest-to-input to closest-to-output.
+Next testInputs lines: a binary number of inputs digits, specifying each testInput to the neural network
+Next trainingExamples lines: One set of training data per line, each consisting two binary numbers. The first binary number has inputs digits, and specifies the trainingInputs to the neural network. The second binary number has outputs digits, and specifies the expectedOutputs for the provided inputs.
+
+Output
+testInputs lines: Each containing a binary number of outputs digits, specifying the calculated outputs from the neural network (rounded to the nearest integer) for the provided test inputs, after being trained by the examples
+
+Constraints
+1 ≤ inputs,outputs ≤ 16
+0 ≤ hiddenLayers ≤ 2
+1 ≤ testInputs ≤ 16
+1 ≤ trainingExamples ≤ 100
+1 ≤ trainingIterations ≤ 10000
+1 ≤ nodes ≤ 4
+
+Example
+
+Input
+1 1 0 2 2 7
+
+0
+1
+0 0
+1 1
+
+Output
+0
+1
+
+Tags
+Neural network
+
+Difficulty
+Hard

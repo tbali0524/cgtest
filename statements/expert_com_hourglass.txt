@@ -1,0 +1,122 @@
+Hourglass
+
+https://www.codingame.com/training/expert/hourglass
+https://www.codingame.com/contribute/view/366eae6605556a2063f2901c13871487d8d
+
+A contribution by GabrielEm
+Approved by Visual,player_one,dwarfie
+
+Goal
+You will be given the ASCII representation of a hourglass followed by a number of seconds N. You have to output the representation of the hourglass exactly as it should look like after N seconds have passed.
+
+The hourglass will be received as input of 23 lines composing its body . (Check the example)
+
+The following apply:
+
+- the capacity of the hourglass is 100 grains of sand
+- an 'o' is the representation of one grain of sand which is 1 second
+- "7 seconds have passed" means 7 o's have moved from the top half of the hourglass to the bottom half
+
+There are rules as to which grain of sand is the next one to leave the top half and to where it should be placed in the bottom half.
+
+TOP HALF
+
+The sand empties from the middle of the hourglass to the sides 1 grain at a time.
+Let's consider a full TOP HALF. The order grains are being removed is as follows:
+1. middle grain from topmost line that's not missing any grains
+2. 4 middlemost grains from all lines from top to bottom that are missing grains until a line that's not missing any grains (don't touch that line)
+3. Repeat from 1
+The pattern for removing consecutive grains on the same horizontal line is as follows:
+ooooooo -> ooo ooo -> ooo  oo -> oo   oo -> oo    o -> o     o
+o - the grain that will be removed next
+
+BOTTOM HALF
+
+The sand fills this half from the middle of the hourglass to the sides 1 grain at a time.
+Let's consider an empty BOTTOM HALF. First 10 grains make up a vertical trail from the middle of the hourglass until they reach the bottom. (check the example) The order grains are being inserted after the trail is as follows:
+1. 2 middlemost grains on the bottom line
+2. 2 middlemost grains on the bottom line going up adding 2 middlemost grains on every line until a triangle is formed with it's tip being a grain from the vertical trail
+3. Repeat from 2
+The pattern for inserting consecutive grains on the same horizontal line is as follows:
+o -> oo -> ooo -> oooo -> ooooo -> ooooo
+
+
+Important notes:
+- every line from your hourglass should end with either /, X, \, +. Watch out for leftover spaces.
+- only the output must respect the above rules, meaning that the input can have random placed grains
+- if the amount of grains in the hourglass received from the input is not equal to 100 the program should output the message BROKEN HOURGLASS instead of a hourglass
+- N can be greater than the amount of grains in the TOP HALF which means that the sand will fill the BOTTOM HALF completely before N seconds. In that case the output should still be a normal BOTTOM HALF full hourglass.
+
+Suggestion: draw a full top hourglass in notepad and apply the rules until you understand them.
+
+To finish with a quote:
+The more sand that has escaped from the hourglass of our life, the clearer we should see through it. Good luck!
+
+Input
+First 23 lines : 23 strings hLine composing the body of the hourglass
+Next line : An integer N representing the number of seconds to pass
+
+Output
+The representation of the hourglass as given in the input, modified to resemble the N seconds that have passed or the message BROKEN HOURGLASS
+
+Constraints
+0 ≤ N ≤ 100
+
+Example
+
+Input
++=====================+
+ \ooooooooooooooooooo/
+  \ooooooooooooooooo/
+   \ooooooooooooooo/
+    \ooooooooooooo/
+     \ooooooooooo/
+      \ooooooooo/
+       \ooooooo/
+        \ooooo/
+         \ooo/
+          \o/
+           X
+          / \
+         /   \
+        /     \
+       /       \
+      /         \
+     /           \
+    /             \
+   /               \
+  /                 \
+ /                   \
++=====================+
+15
+
+Output
++=====================+
+ \ooooo         ooooo/
+  \oooooo     oooooo/
+   \ooooooo ooooooo/
+    \ooooooooooooo/
+     \ooooooooooo/
+      \ooooooooo/
+       \ooooooo/
+        \ooooo/
+         \ooo/
+          \o/
+           X
+          /o\
+         / o \
+        /  o  \
+       /   o   \
+      /    o    \
+     /     o     \
+    /      o      \
+   /       o       \
+  /        oo       \
+ /       ooooo       \
++=====================+
+
+Tags
+-
+
+Difficulty
+Very Hard

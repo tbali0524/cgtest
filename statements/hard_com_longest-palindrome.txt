@@ -1,0 +1,36 @@
+Longest Palindrome
+
+https://www.codingame.com/training/hard/longest-palindrome
+https://www.codingame.com/contribute/view/7824054a3f1db12c113b349aa2b71345ca9
+
+VIEW CONTRIBUTION
+A contribution by Maurice_Moss
+Approved by JBM,Stilgart,Plopx
+
+Goal
+A palindrome is a sequence of letters which reads the same backward as forward, like “madam” for example.
+
+For a given input string S, you have to return the longest palindrome found within. If multiple substrings qualify, print them all in the same order as they appear in S.
+
+Input
+Line 1: A string S (only alphanumeric)
+
+Output
+N lines: Every longest palindrome contained in S
+
+Constraints
+0 < length of S < 10000
+
+Example
+
+Input
+madam
+
+Output
+madam
+
+Tags
+Strings, Palindrome
+
+Difficulty
+Hard

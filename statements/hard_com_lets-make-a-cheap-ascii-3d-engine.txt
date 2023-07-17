@@ -1,0 +1,79 @@
+Let's make a cheap ASCII 3D engine!
+
+https://www.codingame.com/training/hard/lets-make-a-cheap-ascii-3d-engine
+https://www.codingame.com/contribute/view/6224d52ad5295355fd7d7d48a5a5a8188a53
+
+A contribution by pardouin
+Approved by tutubalin,DaNinja,rozbrajaczpoziomow
+
+Goal
+You're given a map of a squared room, seen from above, split in N rows of N tiles of size 100 x 100.
+Each tile is either empty (".") or filled ("#").
+The border tiles are always filled.
+
+Your task: create a frame of ASCII chars to render a 3D view of this room.
+
+You're given the coordinates X, Y and the angle A (in degrees) of the camera, which only rotates horizontally.
+(0, 0) indicated the top left corner of the room seen from above and the angle of the camera is given relatively to the x axis, with clockwise angles being positive.
+
+The frame you want to create will have 15 rows of 61 chars. Each column of the frame is generated with a Ray Casting method.
+You must send 61 rays, one for each degree from A - 30 to A + 30. Each ray will search for the closest wall and must determine:
+
+- the distance D between the camera and the point P where the ray hits the wall,
+- the type of the wall, parallel to the x axis (h-wall) or to the y axis (v-wall).
+
+The corresponding column of the frame consists in a block of 2 * H + 1 identical chars (maxed out at 15) , centered vertically, surrounded by spaces. The char displayed is "." for a h-wall and "," for a v-wall.
+H is an integer that evaluates the height of the wall as you see it from the camera. The further the wall, the smaller H will be. More precisely, H is 1500 / D' (rounded) where D' denotes the distance, not between the camera and P but between the plane of the screen and P. Seen from above, the plane of the screen is the line that goes through the camera perpendicularly to the angle of the camera.
+A sub-task will be to understand how D' can be calculated directly from D.
+
+An image to help visualizing the problem : https://i.imgur.com/M7YNW9P.png (Left part of the screen : top view, in blue, the angle of the camera, in red: rays that hit a v-wall, in green: rays that hit a h-wall. Right part of the screen: the ASCII rendition.)
+
+Note: if a ray hits a point with coordinates that are both multiples of 100, you must decide if you chose it to be a h-wall or a v-wall so it could lead to different renderings, but this case won't happen in the testcases and validators.
+Note 2: the rendering here will be awfull due to the limitations in the inputs, but it's much better with higher resolution and more rays. And of course you can use columns of colored pixels in place of chars for a way better result, an example here with 601 rays: https://i.imgur.com/oDjX0hG.png.
+Note 3: if you use D instead of D', there will be a fisheye effect in your 3D rendition. If later on you want to create a 3D engine and keep this fisheye effect, just use D, example here: https://i.imgur.com/II7kO7C.png. You can even accentuate it by reversing the process you use to turn D into D', example here: https://i.imgur.com/BMcBeGK.png.
+Input
+Line 1: 3 integers X, Y, A for the coordinates and angle of the camera.
+Line 2: An integers N for the number of rows in the map.
+Next N lines: A string of length N describing a row of the map.
+Output
+15 lines of length 61.
+Constraints
+7 ≤ N ≤ 20
+-180 < A ≤ 180
+X and Y always indicate a point within an empty tile.
+
+Example
+
+Input
+150 550 0
+7
+#######
+#..#..#
+#..#.##
+#.....#
+#...###
+#.....#
+#######
+
+1 Output
+                                           ..................
+,,,,,,,,,,,,,,,,,,,.                     ....................
+,,,,,,,,,,,,,,,,,,,...                 ......................
+,,,,,,,,,,,,,,,,,,,.....             ........................
+,,,,,,,,,,,,,,,,,,,.....,,,,,,,,,,,,,........................
+,,,,,,,,,,,,,,,,,,,.....,,,,,,,,,,,,,........................
+,,,,,,,,,,,,,,,,,,,.....,,,,,,,,,,,,,........................
+,,,,,,,,,,,,,,,,,,,.....,,,,,,,,,,,,,........................
+,,,,,,,,,,,,,,,,,,,.....,,,,,,,,,,,,,........................
+,,,,,,,,,,,,,,,,,,,.....,,,,,,,,,,,,,........................
+,,,,,,,,,,,,,,,,,,,.....,,,,,,,,,,,,,........................
+,,,,,,,,,,,,,,,,,,,.....             ........................
+,,,,,,,,,,,,,,,,,,,...                 ......................
+,,,,,,,,,,,,,,,,,,,.                     ....................
+                                           ..................
+
+Tags
+3D, Ray Casting, Trigonometry, Ascii Art
+
+Difficulty
+Hard

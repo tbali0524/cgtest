@@ -1,0 +1,82 @@
+Can you save the forest - Episode 2
+
+https://www.codingame.com/training/hard/can-you-save-the-forest---episode-2
+https://www.codingame.com/contribute/view/6491dfa3ea273fa6c2f108fa7ba459fe464e
+
+A contribution by chabes
+Approved by TheProCode,Unnamed CodinGamer,RaulButuc
+
+Goal
+In this game you have to extinguish the fire while saving as many squares in the forest as possible.
+
+Rules
+As for episode 1, you operate on a 10x10 square map.
+At each turn, your program receives the map of the forest and the state of each square. But now you also get the position of your fire trucks every turn.
+Based on this data, your program must determine an action for each fire truck.
+As in previous episode, under certain circumstances, as described below, fires spread to neighbouring squares.
+To win you must put out all the fires, while limiting the number of squares burned to a maximum given to you in the variable maxBurnedForest.
+
+The map
+In this episode, we introduce the water square. Each of the 10 lines of the map is given to you by a string. Each character represents a cell of the map.
+. represents an empty square with no forest. It cannot burn.
+~ represents a water square. It cannot catch fire and trucks cannot go in it.
+^ represents a forest square.
+* represents a burned forest square. It can no longer catch fire.
+1, 2 or 3 represents a forest square on fire. The value corresponds to the development level of the fire.
+
+The spread of fire
+Fire on a square can have 3 levels of development and, unless fought, evolves as such:
+fires grow by one level per turn,
+except for level 3 fires which, on the next turn, turn into burned forest squares and spread the fire to their 4 neighbouring squares (N/S/E/W) if
+the neighbouring square is a forest square, not burned,
+there is not already a fire on this square,
+the square is not occupied by a truck.
+The fire on these neighbouring squares starts at level 1.
+
+Fighting fire
+Once per turn you have to indicate the action for each of your fire trucks, among:
+WAIT to leave the truck stationary and inactive,
+MOVE followed by one of the 4 directions N S E W to move the truck one square in the chosen direction,
+FIGHT followed by one of the 8 directions N S E W NE SE NW SW to fight fire from one of the 8 squares adjacent to the truck.
+Some additional rules apply to trucks:
+Two trucks cannot be on the same.
+A truck may not move to a burning square.
+It also cannot go to a water square.
+A truck protects the square it occupies from fire. In the event that it moves, it is its arrival square that is protected.
+When a truck fights fire on a neighboring square with the FIGHT, then the fire on that square is immediately extinguished and does not spread to neighboring squares.
+
+Sequence of actions
+In each turn, the game follows the following actions, in this order
+Moving fire trucks (action MOVE).
+Extinguishing fire on squares fought by trucks (action FIGHT).
+Evolution of the remaining fires (1>>2, 2>>3, 3>>burned)
+Spread of fire around the squares that have just been burned
+
+Winning and losing
+You lose if
+you do not send instructions to each of the trucks within the time limit,
+the number of squares burned exceeds the maximum indicated in maxBurnedForest
+ 
+Victory conditions
+You win when there are no active fires left on the map and the number of burned forest squares remains below maxBurnedForest.
+
+Game Input
+Initialization input
+2 integers nbTrucks maxBurnedForest representing the number of trucks you have to manage and the maximum number of forest squares burned that you are allowed.
+
+Input for a game round
+10 rows row representing the map of the forest and its active fires
+nbTrucks rows X Y representing the coordinates of each truck
+
+Output
+nbTrucks rows which indicates the action for each truck: WAIT or MOVE N S E W or FIGHT N S E W NE SE NW SW
+
+Constraints
+1 ≤ nbTrucks ≤ 5
+Allotted response time to output is ≤ 1000 milliseconds.
+
+Tags
+Multi-agent, Beam Search, Simulation
+
+Difficulty
+Hard

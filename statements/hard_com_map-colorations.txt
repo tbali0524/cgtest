@@ -1,0 +1,93 @@
+Map Colorations
+
+https://www.codingame.com/training/hard/map-colorations
+https://www.codingame.com/contribute/view/4787a6458ca06b6dc4ff96a068f860603d75
+
+A contribution by DPAmar
+Approved by Niako,_O-MEGA,RoboStac
+
+Goal
+It is a well known result that a map, split into different regions (countries, states, ...) can be painted using different colors on contiguous regions with at most 4 different colors (see https://en.wikipedia.org/wiki/Four_color_theorem), although the proof isn't really obvious...
+
+But in how many ways can it be painted?
+
+You are given a "map", simplified to N neighborhood relationships (regionA regionB, space separated).
+
+You are also given a list of integers, corresponding to available colors.
+The goal is, for each integer C in the list, to compute in how many ways the map can be painted using at most C colors.
+
+
+Example: Consider a map with 4 regions in a square
+A-B
+| |
+D-C
+
+One definition can be (N = 4)
+A B
+A D
+C B
+C D
+
+Given 1 single color, there is no way to paint it.
+Using 2 colors, there are 2 ways: A = C = first color and B = D = second color; or the opposite.
+Given 5 different colors, there are
+* 5 possible colors for A
+* 4 possible colors for B
+* considering B and D are the same, there is one possibility for D, and then 4 possible colors for C (not B = not D)
+* considering B and D aren't the same, there are 3 possible colors for D, and then 3 possible colors for C (not B and not D)
+Total = 5 × 4 × (1×4 + 3×3) = 260 ways to paint the map.
+
+So, for such map and an entry 1 2 5, answer will be:
+0
+2
+260
+
+Input
+First line: N, number of neighborhood relationships
+Next N lines: 2 neighbor entity names, space separated
+Next line: K, number of color sets
+Next K lines: an integer C, number of colors available
+
+Output
+K lines: Painting configuration counts for this map using C colors for each value of C
+
+Constraints
+1 ≤ N ≤ 25
+1 ≤ K ≤ 10
+1 ≤ C ≤ 1000
+
+Note: For the given test cases, all results are < 2^32.
+
+Example
+
+Input
+4
+A B
+A D
+C B
+C D
+8
+1
+3
+5
+7
+9
+11
+13
+15
+
+Output
+0
+18
+260
+1302
+4104
+10010
+20748
+38430
+
+Tags
+Graph theory, Combinatorics
+
+Difficulty
+Hard

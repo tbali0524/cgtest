@@ -1,0 +1,90 @@
+25x25 Sudoku
+
+https://www.codingame.com/training/expert/25x25-sudoku
+https://www.codingame.com/contribute/view/5565366ad6d449d56f7e91d450829b88dbb88
+
+A contribution by yoch
+Approved by cedricdd,Timinator,Lanfeust
+
+Goal
+You have to solve a 25x25 sudoku grid!
+
+An empty cell is represented by . and the letters A to Y are used to fill the grid.
+
+RULES:
+Each line contains exactly one occurrence of each letter.
+Each column contains exactly one occurrence of each letter.
+Each block (5x5 cells) contains exactly one occurrence of each letter.
+
+NOTE: This puzzle is considerably more difficult than a classic sudoku puzzle like https://www.codingame.com/training/medium/sudoku-solver. Simple backtracking will not be enough, knowing that there can be more than 300 unrevealed cells.
+
+Input
+Line 1 to Line 25 : 25 characters in the range A..Y or . (empty cell)
+
+Output
+Line 1 to Line 25 : 25 characters in the range A..Y
+
+Constraints
+Every grid has a unique solution.
+
+Example
+
+Input
+.FLJ...D..O.E..GM.KSNRQXA
+...HK.CXROUV...QF.BESJP..
+RNMY.BQETA.F...XOVP.W.HD.
+QO..PMK.SYN.IAR.L.C....EB
+.E...L..G.BPHQD.RN.TYO...
+YT..JI..UVG..BL.E.XOCM..R
+HS....A.KLC..O..PF.W.I.VY
+X.FR...OQ.IKWTPYD.U.A.EH.
+N....PYSFX.UQ..BVGHC.KJO.
+...LC...WDH..VM.T.I....NX
+...B..IYH.DLAX..SKW.O....
+..HP..NA.....IQTGU..XYSWE
+K.O.YGSQDBW......XE..LMRP
+UQNWR.PTLEY.O.VAH...KCI..
+T..XDOW....E.PN..I.LGU.BH
+..R.NDGC....MEJUKOS...FYW
+..GDH..R..V..NCL.M.QE.XJ.
+..J.F....QAW....XR.PMHO.I
+.U.S.JEK.N.R.LI.WTYBV..A.
+VW....OL...HDK.....I.NRQU
+....T.BHN.JDCW.O.EL...V..
+.L..BFX.AGP...KM..VH..T..
+...O.Y..E..NVFB...TX..LK.
+E.K...LI...S...F...AD.YG.
+DXYVQ.JPOT.ML.A.ISNGH.B.F
+
+Output
+BFLJUHVDPIOCEYTGMWKSNRQXA
+ADTHKNCXROUVGMWQFYBESJPIL
+RNMYIBQETALFKJSXOVPUWGHDC
+QOVGPMKWSYNXIARDLHCJTFUEB
+SEXCWLFJGUBPHQDIRNATYOKMV
+YTDKJIHNUVGAFBLSEQXOCMWPR
+HSBQETAGKLCJNOXRPFMWUIDVY
+XGFRVCMOQJIKWTPYDLUNABEHS
+NIWMAPYSFXRUQDEBVGHCLKJOT
+OPULCERBWDHYSVMJTAIKFQGNX
+JCEBGUIYHMDLAXFPSKWROVNTQ
+FMHPLVNACRKBJIQTGUODXYSWE
+KAOIYGSQDBWTUCHVNXEFJLMRP
+UQNWRXPTLEYGOSVAHBJMKCIFD
+TVSXDOWFJKMERPNCYIQLGUABH
+LBRANDGCIHXQMEJUKOSVPTFYW
+IYGDHWURBPVOTNCLAMFQESXJK
+CKJEFSTVYQAWBGUNXRDPMHOLI
+MUQSOJEKXNFRPLIHWTYBVDCAG
+VWPTXAOLMFSHDKYECJGIBNRQU
+PRAFTKBHNSJDCWGOQELYIXVUM
+WLCNBFXUAGPIYRKMJDVHQETSO
+GHIOSYDMECQNVFBWUPTXRALKJ
+EJKUMQLIVWTSXHOFBCRADPYGN
+DXYVQRJPOTEMLUAKISNGHWBCF
+
+Tags
+DLX, Backtracking, Algorithm X
+
+Difficulty
+Very Hard

@@ -1,0 +1,107 @@
+King of Diamonds
+
+https://www.codingame.com/training/expert/king-of-diamonds
+removed, accessible only at: https://www.codingame.com/ide/puzzle/king-of-diamonds
+https://www.codingame.com/contribute/view/46803aab66b4c7686711f80b54c91c550b98
+
+A contribution by VE_FORBRYDERNE
+Approved by RaulButuc,Unnamed CodinGamer,EduLibrary.org
+
+Goal
+---- KING OF DIAMONDS -----------------------------------------------------------------------------------------------------
+
+You (the King of Diamonds) once ruled a peaceful kingdom. But the kingdom is now under attack from the Queen of Spades!
+
+The battlefield is represented by a two-dimensional grid of width W and of height H.
+Each square of the grid is occupied by one of three types of entities:
+
+"." - Minions: Followers of the Queen of Spades. You must kill as many Minions as is possible, but you do not have to kill all of them.
+
+"A" - Allies: Followers of the King of Diamonds (you). You must not kill any Allies.
+
+"C" - Charms: The sources of the Queen of Spades' power. You must destroy all Charms.
+
+As the King of Diamonds, you have a secret ability: a spell called "Diamond Blast". This spell immediately destroys all Minions, Allies and Charms in a diamond-shaped area on the grid.
+The diamond can have any odd-numbered height (one cannot construct a diamond with even-numbered height) and the diamond must be completely inside the battlefield.
+Any combination of sizes is allowed on any one test case; not all diamonds have to be of the same size.
+
+However you are only powerful enough to cast the spell N times before you run out of energy.
+
+In order to defend your kingdom you want to determine the maximum number of Minions you can kill while not harming Allies and also destroying all Charms.
+
+
+
+
+---- EXAMPLE ----------------------------------------------------------------------------------------------------------------------
+
+3
+10 5
+.....A....
+..........
+..........
+..........
+.A........
+
+
+Here you have N = 3, W = 10 and H = 5, and you must compute the maximum number of Minions you can kill (following the other aforementioned rules as well).
+
+The correct output is 32.
+
+One possible optimal solution is to cast three Diamond Blast spells of height 5 like this:
+(The full stops "." are replaced with centre dots "·" here for ease of viewing.)
+
+
+ ╭──────────╮   ╭──────────╮   ╭──────────╮   ╭──────────╮
+ │·····A····│   │····█A····│   │··█·░A····│   │··░·░A·█··│
+ │··········│   │···███····│   │·███░░····│   │·░░░░░███·│
+ │··········│ > │··█████···│ > │█████░░···│ > │░░░░░█████│
+ │··········│   │···███····│   │·███░░····│   │·░░░░░███·│
+ │·A········│   │·A··█·····│   │·A█·░·····│   │·A░·░··█··│
+ ╰──────────╯   ╰──────────╯   ╰──────────╯   ╰──────────╯
+Minions Killed       13             21             32
+
+These three moves kill a total of 32 out of 48 Minions.
+
+
+In case the example above did not render properly here is a link to a screenshot of it:
+https://pasteboard.co/IKkatu5.png
+
+Input
+Line 1: One integer N, the maximum number of times you can cast the Diamond Blast spell.
+
+Line 2: Two space-separated integers W and H, the width and height of the battlefield.
+
+Next H Lines: W characters on each line that represent the battlefield.
+
+Output
+Line 1: One integer, the maximum number of Minions you can kill.
+
+Constraints
+1 ≤ N ≤ 5000
+1 ≤ W ≤ 70
+1 ≤ H ≤ 70
+
+The number of Charms will not exceed N, so it is always possible to destroy all Charms.
+
+WARNING: The majority of the validator data (used to compute your score) are very large!
+That serves only to prevent pathetic, weak, slow and unoptimised solutions from passing.
+
+Example
+
+Input
+3
+10 5
+.....A....
+..........
+..........
+..........
+.A........
+
+Output
+32
+
+Tags
+Dynamic programming, Optimization
+
+Difficulty
+Very Hard

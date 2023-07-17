@@ -1,0 +1,34 @@
+Onboarding
+
+https://www.codingame.com/training/easy/onboarding
+
+The Goal
+Your program must destroy the enemy ships by shooting the closest enemy on each turn.
+
+Rules
+On each start of turn (within the game loop), you obtain information on the two closest enemies:
+enemy1 and dist1: the name and the distance to enemy 1.
+enemy2 and dist2: the name and the distance to enemy 2.
+Before your turn is over (end of the loop), output the value of either enemy1 or enemy2 to shoot the closest enemy.
+
+
+WHAT WILL I LEARN?
+Solving this puzzle helps you understand how the puzzles work on CodinGame (standard input parsing, game loop, writing to the standard output).
+
+You can discover the platform with this simple exercise of basic comparison of values and try more than 25 programming languages.
+
+LEARNING OPPORTUNITIES
+This puzzle can be solved using the following concepts. Practice using these concepts and improve your skills.
+Conditions
+
+STATEMENT
+A tutorial mission for all newcomers: your program must find which of the two targets is the closest.
+
+STORY
+Defend the planet with a big laser cannon from the invading insectoid alien ships.
+
+Tags
+Conditions
+
+Difficulty
+Tutorial

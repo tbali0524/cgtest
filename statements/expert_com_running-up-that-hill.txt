@@ -1,0 +1,70 @@
+Running Up That Hill
+
+https://www.codingame.com/training/expert/running-up-that-hill
+https://www.codingame.com/contribute/view/26614af4d3401540b127d7fcd8a230804eb2c
+
+A contribution by nicola
+Approved by Tabaxi3K,pluieciel,DKurilo
+
+Goal
+You are Catherine, you know that Alice and Bob are chatting secretly and you want to be the woman in the middle; ie you want to intercept Alice and Bob’s messages, to read them and to send them messages that you cipher in place of theirs. If Alice sent Bob a message, Bob will never receive Alice’s message but yours instead.
+You are lucky: you caught a ciphered text and its clear version and you know that they are using the Hill cipher method.
+You have to find the Hill matrix in order to decipher a text from Alice or Bob and to cipher the text you want to send instead.
+
+The texts are using the 45 symbols of the alphanumeric encoding of the QR codes:
+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./: (yes, it’s a space between the Z and the $)
+
+How to:
+The Hill cipher uses matrix multiplication (here, with a modulus of 45).
+For example, you have to cipher CODINGAME. with A, a 2×2 matrix.
+CODINGAME. is 12 24 13 18 23 16 10 22 14 42 (because C’s index is 12).
+
+If A is:
+⎡6 5⎤
+⎣7 6⎦
+
+The first pair of ciphered symbols will be:
+6×12+5×24 mod 45 = 192 mod 45 = 12 that is C and 7×12+6×24 mod 45 = 228 mod 45 = 3 that is 3.
+Thus, CO is ciphered C3, the product A×T mod 45 where T is the column matrix whose elements are 12 and 24.
+Finally, the ciphered text is C3XJ%WZMOZ.
+
+If the matrix’s size is 3, you will cipher 3 characters at a time.
+
+For this puzzle, you have to find the cipher matrix (and its size) and how to decipher.
+
+Input
+Line 1: The ciphered text
+Line 2: The clear text
+Line 3: The ciphered text you have to decipher
+Line 4: The clear text you have to cipher
+
+Output
+Line 1: Line 3 deciphered
+Line 2: Line 4 ciphered
+
+Constraints
+You can assume that the size of the cipher matrix divides the length of all the messages (but it’s not 1).
+
+Just to help you:
+* The clear texts of a test and validator pair will be the same but the Hill matrix won’t be the same.
+* Test 1/validator 1 and test 2/validator 2’s Hill matrices are the same.
+* Test 2/validator 2 and test 3/validator 3’s clear texts are the same.
+* There are no trailing spaces in the clear texts but there might be some in the ciphered texts (as in the example).
+
+Example
+
+Input
+C3XJ%WZMOZ
+CODINGAME.
+6-85OXC 
+HELLO WORLD.
+
+Output
+BONJOUR.
+$N639O.8.0IS
+
+Tags
+Cryptography, Mathematics, Modular calculus, Linear algebra, Arithmetic
+
+Difficulty
+Very Hard

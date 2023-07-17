@@ -1,0 +1,84 @@
+Derivative time !!! - part2
+
+https://www.codingame.com/training/hard/derivative-time---part2
+https://www.codingame.com/contribute/view/56693a9cc1b2c8fc29e4c55c9b93d4f07d5a
+
+A contribution by pluieciel
+Approved by CarlWalsh,Zorg1,Yggdrasil4484
+
+Goal
+Story:
+Louise is learning calculus in her maths courses and she likes the idea. When doing her homework, she is not sure and she wants to check her answers with yours. Could you create a program so that we can check the answers?
+
+It's recommended to finish Part 1 first:
+https://www.codingame.com/training/medium/derivative-time---part1
+
+Calculate the partial derivative of a given formula.
+
+For example, in Test1 "crazy chain"
+Line1: formula: ln(ln(ln(ln x)))
+Line2: vars: x
+Line3: vars' values: x 15.16
+
+a formula ln(ln(ln(ln x))) and x means to calculate
+d(f(x))/dx,
+which should be 1/x*1/(ln x)*1/ln(ln x)*1/ln(ln(ln x)),
+and then use the value x=15.16 to resolve it.
+So the answer is 174.23.
+
+Note:
+Formula: "e" and "pi" could appear in the formula.
+
+Priority: [ln, sin, cos] > [^] > [*] > [+]
+[ln, sin, cos] will be followed by one space if no parenthesis
+Power follows an order from right to left
+e.g.: 2^3^4 = 2^(3^4)
+Negative power has no parenthesis
+e.g.: 5*sin x*y^-2 = 5*(sin x)*(y^(-2))
+
+To simplify, x^x form will only has same expression at floor and power position.
+e.g.: (sin x)^(sin x) could appear, but (x+2)^(x*3) will not appear
+
+vars may be in other forms other than x, y, and z. Similar to identifiers in many programming languages, the var would be some letter (or ASCII letter) followed by letters, numbers or underscore.
+
+link about calculus rules: https://en.wikipedia.org/wiki/Differentiation_rules
+The rules needed here:
+a'=0
+(a*x)'=a
+(x^a)'=a*x^(a-1) (when a is not 0)
+(a^x)'=ln(a)*a^x
+(x^x)'=(ln(x)+1)*x^x
+(ln x)'=x^-1
+(sin x)'=cos x
+(cos x)'=-sin x
+(u+v)'=u'+v'
+(u*v)'=u'*v+v'*u
+df/dx=df/dt*dt/dx (the chain rule)
+e^(pi*i)+1=0 (just kidding, we will not need this one :) )
+
+Input
+Line1: formula, built by vars (e.g. x, y, z, Gamma, x1...), constants (integers, floats, "e", "pi"), and operators (ln, sin, cos, ^, *, +).
+Line2: list of vars for partial derivative, separated by space, length of the list will be 1, 2 or 3.
+Line3: vars' values, paired and separated by space, value will be float with 2 digits.
+
+Output
+The result (always float with 2 digits, rounding to nearest)
+
+Constraints
+Line2 would give a list from 1 to 3 different/same vars to do partial derivative.
+
+Example
+
+Input
+ln(ln(ln(ln x)))
+x
+x 15.16
+
+Output
+174.23
+
+Tags
+Recursion, Abstraction
+
+Difficulty
+Hard

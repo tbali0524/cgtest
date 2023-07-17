@@ -1,0 +1,70 @@
+Pascal Trapezoid
+
+https://www.codingame.com/training/hard/pascal-trapezoid
+https://www.codingame.com/contribute/view/374debe87f306eeb2bb2848268bb18feb14
+
+A contribution by player_one
+Approved by Stilgart,dwarfie,JBM
+
+Goal
+In the Pascal Triangle number series, each line of the triangle contains one more element than the previous line, and all the elements are based on the elements of the previous line like so:
+
+lineElement[n] = prevLineElement[n-1] + prevLineElement[n]
+
+The endpoints (n = 0 and n = nMax) are calculated by inserting an implied 0 element at the beginning and end of the previous line. So, for example, a five-line Pascal Triangle looks like:
+
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+
+A Pascal Trapezoid follows the same rules, but has a starting line with more than one element, like so:
+
+   2  3  4  5
+  2  5  7  9  5
+ 2  7 12 16 14  5
+
+In this puzzle, the sequence can contain textual elements as well. The rules for dealing with element combination are as follows:
+
+- If both input elements can be interpreted as a number, then they are summed.
+- If either input element can not be interpreted as a number, then the inputs are concatenated. Element n-1 remains before element n in the concatenation.
+- If a textual element is at the beginning or end of a line, then the elements n-1 or nMax+1 are implied empty strings instead of zeros.
+
+Here is an example of a completely textual Pascal Trapezoid sequence:
+
+red violet blue
+red redviolet violetblue blue
+red redredviolet redvioletvioletblue violetblueblue blue
+red redredredviolet redredvioletredvioletvioletblue redvioletvioletbluevioletblueblue violetblueblueblue blue
+
+And here is an example of a mixed textual and numerical Pascal Trapezoid:
+
+2 5 a 9 2 4 8 b
+2 7 5a a9 11 6 12 8b b
+2 9 75a 5aa9 a911 17 18 128b 8bb b
+2 11 975a 75a5aa9 5aa9a911 a91117 35 18128b 128b8bb 8bbb b
+
+Your job will be to calculate the Nth element on the Lth line of a Pascal Trapezoid, based on a given starting line.
+
+Input
+Line 1: Three space-separated integers: E representing the number of elements in the starting line, L the line to calculate for the output, and N the element on line L to calculate.
+Line 2: The starting line, consisting of E space-separated elements.
+
+Output
+The Nth element of the Lth line of the Pascal Trapezoid.
+
+Example
+
+Input
+1 5 2
+1
+
+Output
+4
+
+Tags
+-
+
+Difficulty
+Hard

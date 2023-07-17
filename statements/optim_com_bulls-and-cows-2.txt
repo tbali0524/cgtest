@@ -1,0 +1,42 @@
+Bulls and Cows 2
+
+https://www.codingame.com/multiplayer/optimization/bulls-and-cows-2
+https://www.codingame.com/contribute/view/48504e7ca33360f569b9be7abea70ad2fe5e
+
+A contribution by wlesavo
+Approved by ToshiTuringMachine,helgui,Illedan
+
+Goal
+This is an adaptation of a classic game of Bulls and Cows, where you will have to guess the number on the base of hints given each turn. One can also start by solving a slightly more simple version of the game.
+
+Rules
+1. At the start of the game player will get the numberLength of the secret number.
+
+2. Each turn player is trying to guess the secret number.
+
+3. After each guess player will know how many bulls and cows were in the last guess, where
+bull is a digit in your guess that exactly matches the value and position of a digit in secret number.
+cow indicates a digit in your guess that matches the value of a digit in your opponent's secret number, but is in the wrong position.
+
+4. Each digit of the secret number is unique as well as should be the digits of the guess.
+
+5. First digit of a guess and of the secret number can not be a 0.
+
+6. Score board is ascended by the total count of actions among all the test cases.
+
+Initialization input
+First line: numberLength, count of digits in the secret number.
+
+Input for a game round
+2 integers bulls and cows - count of bulls and cows in a guess, -1 -1 at the first turn
+
+Output
+Single line of numberLength digits
+
+Constraints
+0 < numberLength < 11
+maxTurns = 300
+turnMaxTime = 50ms
+
+Tags
+Combinatorics

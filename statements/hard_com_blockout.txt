@@ -1,0 +1,57 @@
+Blockout
+
+https://www.codingame.com/training/hard/blockout
+https://www.codingame.com/contribute/view/5774f141c59462b06e77d826d14d052d7966
+
+A contribution by eulerscheZahl
+Approved by Illedan,PatrickMcGinnisII,kovi
+
+Goal
+Survive 200 turns without letting your pit overflow.
+
+Rules
+You start with a pit, that is initially empty. Each turn you get a new tile and have to place it somewhere in your pit by dropping it at a given location. You can rotate the given tile before dropping it into your pit.
+When you manage to cover a complete layer with blocks, this layer will be removed and all layers above will drop down.
+
+For the set of available tiles see blockout.net.
+
+Expert Rules
+You can find the source code of the game at https://github.com/eulerscheZahl/BlockOut.
+
+Note
+You can zoom in the viewer with your mousewheel, change the rotation by moving your mouse while holding your left button and pan with your right mouse button.
+
+Game Input
+A block is given in the following way: width height depth shape.
+The shape consists of width*height*depth characters, which are all either # (filled) or . (empty).
+The characters are in order of z, then y, then x (that means, all cells with z=0 are given first and among those with y=0).
+
+Example
+Let's have a look at the following block:
+
+It has a width of 3 and a height and depth of 2 each. The shape is .##..###...., mapping the positions for (0,0,0) (1,0,0) (2,0,0) (0,1,0) (1,1,0) (2,1,0) (0,0,1) (1,0,1) (2,0,1) (0,1,1) (1,1,1) (2,1,1).
+
+Input per turn
+Line 1: the pit: pitWidth pitHeight pitDepth pitShape giving the size and the current state of your pit
+Line 2: blockCount, the number of distinct rotations for your next block
+next blockCount lines: the block: blockIndex width height depth shape. These shapes all represent the same block, just with different rotations.
+
+Output
+A single line containing blockIndex x z denoting the rotation of the block according to the list of inputs provided and the shift in x- and z-direction.
+
+Constraints
+For the Tetris testcase: pitWidth = 10, pitHeight = 20, pitDepth = 1
+
+For all other testcases:
+3 ≤ pitWidth = pitDepth ≤ 6
+6 ≤ pitHeight ≤ 12
+1 ≤ blockCount ≤ 64
+1 ≤ width, height, depth ≤ min(5, pitWidth)
+
+Allotted response time to output is ≤ 1 second for the first turn, 150 ms for later turns.
+
+Tags
+3D
+
+Difficulty
+Hard

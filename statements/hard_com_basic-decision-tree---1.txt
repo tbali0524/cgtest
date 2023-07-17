@@ -1,0 +1,97 @@
+Basic Decision Tree - 1
+
+https://www.codingame.com/training/hard/basic-decision-tree---1
+https://www.codingame.com/contribute/view/19420098781d02e4df2ddc73089a7910368b
+
+A contribution by Wei-1
+Approved by bbb000bbbyyy,kotobotov,Katia_S
+
+Goal
+You are a beetle scientist and you have to identify the species of a lot of male beetles in your research.
+Currently, you can easily identify these beetles after they are fully grown up.
+However, in your research, you want to identify the species of the male beetles while they are still pupae.
+
+Since beetles' pupae actually show the rough shape of the grown beetles,
+you are able to measure the shape of their horn while they are still pupae.
+Based on your observation, you found that there is a difference in the horn size of the pupae of different beetle species.
+So you want to create a decision tree to identify the species of the beetles purely based on pupae horn sizes.
+
+The tree is created by dividing one group into 2 groups repeatedly.
+We split the group by a separator, which will be a pupa's horn length.
+The length is selected to divide the group into 2 groups.
+
+Starting from 1 single group with all beetle pupae,
+step 1. we choice 1 beetle pupa in the group if there are multiple beetle species in the group
+step 2. pupae with smaller horn sizes will be separated into a sub-group => step 1
+step 3. all other pupae in the group will be separated into another sub-group => step 1
+
+We scan through all pupae in the group and choice one beetle as a separator.
+The equation of how we choose the pupa to be the separator is Binary Entropy.
+And we find the best separator in the group with the smallest Weighted Entropy.
+
+Entropy equations as this picture: https://imgur.com/gBWJ6fB.png
+
+We keep creating branches for the binary tree until we have 0 entropy. (all pupae in a group is in 1 single species)
+
+If 2 separators have the same entropy, we will always choose the pupa with a smaller index.
+After we separate a group, we breakdown the group with smaller horns until we reach 0 entropy, and then we start working on the other group.
+
+The output will be the index of the last separator (pupa) in the binary tree.
+
+----
+Given this input:
+
+4
+0 1 1
+1 2 1
+2 3 2
+3 4 2
+
+It shows that we have 4 pupae with their corresponding horn lengths from 1 to 4.
+Since their index is from 0 to 3, we will name them pupa-0, pupa-1, pupa-2, and pupa-3.
+--
+If we select pupa-0 as the separator, nothing will change since there is no pupa have a smaller horn length then pupa-0.
+
+If we select pupa-1 as the separator, pupa-0 will be separated into one sub-group, pupa-1,2,3 will be in another sub-group.
+Pupa-0's group has a binary entropy of 0.
+Pupa-1,2,3's group have a binary entropy of 0.9183.
+Weighted entropy will be 0.6887.
+
+If we select pupa-2 as the separator, pupa-0,1 will be separated into one sub-group, while pupa-2,3 will be in another sub-group.
+Pupa-0,1's group has a binary entropy of 0, and pupa-2,3 as well.
+Weighted entropy will be 0.
+
+If we select pupa-3 as the separator, pupa-0,1,2 will be in one sub-group, and pupa-3 will be in another sub-group.
+The resulting entropy will be 0.6887.
+--
+Select pupa-2 will have 0 entropy.
+The output should be 2.
+
+Input
+Line 1: An integer N for the number of beetle pupae sorted by their horn sizes.
+Next N lines: 3 space separated integers index, hornSize and speciesID for a point.
+
+Output
+Line 1: Last separator (pupa) index
+
+Constraints
+2 <= N <= 20
+0 <= index < 20
+0 <= hornSize <= 100
+1 <= speciesID <= 4
+
+Example
+
+Input
+2
+0 0 1
+1 2 2
+
+Output
+1
+
+Tags
+Machine learning
+
+Difficulty
+Hard

@@ -1,0 +1,91 @@
+Balanced Levers
+
+https://www.codingame.com/training/hard/balanced-levers
+https://www.codingame.com/contribute/view/7282396993be2d629ec1d9e283d810e67eb3
+
+A contribution by java_coffee_cup
+Approved by RealCoderBrookes,OSSFF7,MrSkaal
+
+Goal
+A hanging mobile (not referring to a mobile phone) is a sculpture or decoration whose parts are balanced to move in response to air currents. It is a kinetic art based on lever balance design. In this puzzle, whenever a "mobile" is mentioned, it means "hanging mobile". The banner shows example drawings of this object.
+
+You probably know the lever equilibrium equation very well. For the sake of completeness, here is the equation stated.
+
+a, b are lengths; n, m are weights.
+
+      |
+ __a__|____b____
+|               |
+n               m
+a * n = b * m
+
+
+A mobile is defined as:
+▪️ a weight hung by a string, or
+▪️ a rod with two sub-mobiles at both ends.
+(A sub-mobile is also a mobile with the same definition.)
+
+A weight cannot be tied directly to a weight. The banner drawing is just a decoration, not a definition.
+
+● ○ ● ○ ● ○ ● ○ ● ○ ● ○ ● ○ ● ○ ● ○ ● ○ ● ○ ● ○
+
+In a classroom, students are given a number of weights and some rods to build hanging mobiles. Specifications are given:
+
+▪️ All rods are identical, with a length of one (1) unit. Rods cannot be extended or cut short. The full length of the rods should be used as the beam in a lever.
+▪️ Every rod used must be designed to be horizontally balanced.
+▪️ For simplicity, the rods and strings are assumed to be weightless. Assume the rods will not be bent by the weights.
+
+Task
+You have to design a hanging mobile that has the longest width.
+All given weights must be used. You can have as many rods as you need. Ignore the width of the weights when measuring the total width.
+
+Big but not too big
+Last but not the least, the classroom has a limited area. Any hanging mobile designs wider than the classroom width are rejected. Keep your design no larger than the given limit.
+
+Example
+
+With a given set of weights [1, 1, 2], there are several possible designs. Some of them are wider.
+
+ _______|__          _______|__
+|    ______|___     |       ___|______
+1   |          |    1      |          |
+    1          2           2          1
+
+width = 1 + (1/3)    width = 1 + (2/3)
+
+The max width is 1.6667. If it is not exceeding the classroom width limit, it is the answer.
+
+Hanging mobiles are often in 3D form. To measure the width, we flatten the design into a 2D form. Some rods and weights can be overlapping when flattened and it is allowed.
+
+Input
+Line 1: L, a float-point number which is the width of the classroom, measured in unit length (same unit used for rod length)
+Line 2: N, the number of weights given
+Line 3: [w1, w2, w3...wn], totally N integers listed in one line, space separated, for all the given weights, in no specific order.
+
+Output
+Line 1: A float-point number for the maximum width of a mobile design confirming to the above requirements, round to 4 digits after the decimal point. (e.g. 1.00005 becomes 1.0001)
+
+In case no design can fit into the classroom, output -1 as the answer.
+
+Note that the classroom width is an absolute limit that no mobile design should be larger than it. Suppose the classroom width is 2 and the width of a mobile design is 2.00001. Although this design width can be rounded to 2.0000, we should still reject this design because it is absolutely longer than the limit. We should resort to design options less than or equal to 2.
+
+Constraints
+Number of weights: 1 ≤ N ≤ 6
+Value of each weight: 1 ≤ w ≤ 1000
+Classroom width: 1 ≤ L ≤ 10
+
+Example
+
+Input
+9.9
+3
+1 2 4
+
+Output
+1.8000
+
+Tags
+Physics, Recursion, Permutations
+
+Difficulty
+Hard

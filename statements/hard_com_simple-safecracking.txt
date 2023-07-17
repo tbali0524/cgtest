@@ -1,0 +1,34 @@
+Simple safecracking
+
+https://www.codingame.com/training/hard/simple-safecracking
+https://www.codingame.com/contribute/view/348ea4024e8d7a147c4ec829dfc6206a5ee
+
+A contribution by Shomz
+Approved by player_one,Bob
+
+Goal
+Find the safe combination. The only thing you find lying next to the safe is a note with a message that looks like gibberish.
+
+Oh yeah, if you try to open the safe with the wrong combination, all your files on your computer will be deleted! (not really)
+
+Good luck!
+
+Input
+Line 1:An encrypted message.
+
+Output
+A single line containing the decrypted safe combination in numeral format.
+
+Example
+
+Input
+Aol zhml jvtipuhapvu pz: zpe-mvby-zpe-mvby-aoyll
+
+Output
+64643
+
+Tags
+-
+
+Difficulty
+Hard

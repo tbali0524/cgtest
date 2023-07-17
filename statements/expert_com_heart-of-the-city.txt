@@ -1,0 +1,54 @@
+Heart of the City
+
+https://www.codingame.com/training/expert/heart-of-the-city
+https://www.codingame.com/contribute/view/4054f18f1d9565dee2fb9719ae51efceb2c
+
+A contribution by SamSi
+Approved by MadKnight,anst,Wildcat-SC
+
+Goal
+Consider an imaginary city which is an n × n square cells where a building is located at center of each cell (except the central cell), so in total there are n * n- 1 buildings. The buildings in this city are all circular and very very small width-wise. All the buildings in the city are the same.
+
+One day you decided to take a walk in this city and go to its center. From that spot you could see many other buildings, but not all of them, because the buildings in the same directions block each other. How many of these buildings could you see in this city?
+
+NOTE
+1> You can only see some of the buildings, since those buildings that are in the exact same direction cannot be seen because they are blocked by other buildings.
+2> You have super vision and you can see for miles if nothing is obstructing your vision.
+3> Number of buildings n will always be an odd number.
+
+EXAMPLE
+For n = 7, the output should be 32.
+C represents center of the city.
+A represent the buildings which you could see from there.
+B represent the buildings that you cannot see.
+
+BAABAAB
+ABABABA
+AAAAAAA
+BBACABB
+AAAAAAA
+ABABABA
+BAABAAB
+
+Input
+An odd number n denoting the size of the city.
+
+Output
+The amount of buildings you are able to see from the center of the city.
+
+Constraints
+1 < n < 10000000 where n is always odd
+
+Example
+
+Input
+3
+
+Output
+8
+
+Tags
+-
+
+Difficulty
+Very Hard

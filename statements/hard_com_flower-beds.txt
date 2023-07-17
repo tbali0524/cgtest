@@ -1,0 +1,107 @@
+Flower beds
+
+https://www.codingame.com/training/hard/flower-beds
+https://www.codingame.com/contribute/view/5449ba021fdce0aefa5df1ea4c6d0bcbc0ae
+
+A contribution by Fluxor
+Approved by Sceurpien,JBM,Codeab
+
+Goal
+In his garden, Lancelot has nice polygon-shaped flower beds that he would like to fill with flowers at evenly-spaced intervals.
+
+So he has hammered poles in the ground and stretched strings in a grid pattern over each flower bed, to materialize potential planting spots. Lancelot is now ready to put flowers on all planting spots which are inside flower beds, but there is one question left: how many flowers should he buy?
+
+Examples:
+Here is the flower bed in the first test.
+- flower beds vertices are shown with #
+- potential planting spots are shown with .
+- flowers are shown with o
+  
+   ^  .  .  .  .  .  .  .  .  .
+12 +  .  .  .  .  .  .  .  .  .
+11 +  .  .  #  .  #--#  .  .  .
+10 +  .  . /o\ . /o  o\ .  .  .
+ 9 +  .  ./ o \./ o  o \.  .  .
+ 8 +  .  /  o  #  o  o  #  .  .
+ 7 +  . /o  o  o  o  o /.  .  .
+ 6 +  ./ o  o  o  o  o/ .  .  .
+ 5 +  #  o  o  o  o  #  .  .  .
+ 4 +  .\ o  o  o  o  o\ .  .  .
+ 3 +  . \o  o  o  o  o \.  .  .
+ 2 +  .  #--------------#  .  .
+ 1 +  .  .  .  .  .  .  .  .  .
+ 0 +--+--+--+--+--+--+--+--+--+-->
+   0  1  2  3  4  5  6  7  8  9
+
+Lancelot needs 33 flowers to fill this flower bed.
+So the output should be:
+33
+
+
+Here is the example in the second test:
+
+   ^ . . . . . . . .
+   |
+ 8 + . # . . # . . .
+   |  / \   / \ 
+ 7 + # o #-# o # . .
+   | |         |
+ 6 + # o # # o # . .
+   |  \ /| |\ /
+ 5 + . # | | # . . .
+   |     | | 
+ 4 + . # | | # . . .
+   |  / \| |/ \
+ 3 + # o # # o # . .
+   | |         |
+ 2 + # o #-# o # . .
+   |  \ /   \ /
+ 1 + . # . . # . . .
+   |
+ 0 +-+-+-+-+-+-+-+-+->
+   0 1 2 3 4 5 6 7 8
+
+Lancelot needs only 8 flowers to fill this one.
+So the output should be:
+8
+
+
+Notes:
+- flowers cannot be planted on the flower bed boundary
+- flower bed vertices are always on potential planting spots (their coordinates are integers)
+- flower bed edges do not intersect each others
+
+Input
+Line 1: an integer N the number of vertices of the flower bed
+Next N lines: 2 integers x and y the coordinates of a vertex
+
+Output
+An integer F the number of flowers needed to fill the flower bed
+
+Constraints
+3 ≤ N ≤ 100
+0 ≤ x, y ≤ 10000
+F < 2^32
+
+Example
+
+Input
+9
+2 2
+7 2
+6 5
+7 8
+6 11
+5 11
+4 8
+3 11
+1 5
+
+Output
+33
+
+Tags
+Geometry, Arithmetic, Grid
+
+Difficulty
+Hard

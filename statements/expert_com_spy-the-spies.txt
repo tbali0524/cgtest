@@ -1,0 +1,120 @@
+Spy the Spies
+
+https://www.codingame.com/training/expert/spy-the-spies
+https://www.codingame.com/contribute/view/242e4c53c9dc42ea4065c0ab957546531b0
+
+A contribution by player_one
+Approved by JBM,PernicN,superredlark
+
+Goal
+Six (6) enemy spies have entered the country. It is your job to indicate the enemies from a list of fifteen (15) suspects, using known attributes (appearance, ethnicity, etc.). Each suspect may be associated with multiple attributes, and there are often overlaps.
+
+Try to find the shortest list of commands that will indicate the enemy spies, but will not indicate any of the innocent suspects. You can issue these commands:
+
+- an attribute that is common to one or more of the enemies, but not the innocent suspects
+- NOT an attribute to indicate something that is common to one or more of the innocent suspects, and not to the enemy spies
+
+Note that a command only gives information about spies who are associated with the given attribute, and doesn't imply any information about those not associated with the given attribute.
+
+Each command given will eliminate ALL matching suspects from the current (potentially reduced) list, either absolving them as innocent, or indicating them as spies. Commands build on each other, so any suspects eliminated by a command will not be considered for future commands. The ordering of commands is significant, and the test cases are crafted such that the shortest list of commands only has a single valid ordering.
+
+Example 1
+
+Ned is an enemy spy
+
+Tonya is french and has blue-eyes
+Ned is english and has blue-eyes
+Cindy is tall
+
+There are several ways to indicate Ned as the spy in this group:
+
+NOT french <-- absolves Tonya
+NOT tall <-- absolves Cindy, leaving Ned
+
+OR
+
+NOT tall <-- absolves Cindy
+NOT french <-- absolves Tonya, leaving Ned
+
+OR
+
+english <-- indicates Ned
+
+OR
+
+NOT french <-- absolves Tonya
+english <-- indicates Ned
+
+OR
+
+NOT tall <-- absolves Cindy
+english <-- indicates Ned
+
+OR
+
+NOT french <-- absolves Tonya
+blue-eyes <-- indicates Ned
+
+The third option, english, is the shortest list, so it is the correct choice.
+
+Example 2
+
+Jasmin, Sam, and Rose are enemy spies
+
+Rick has 3 identifying attributes: brown-hair, glasses, and tall
+Marcia has 2 identifying attributes: thin and freckled
+Jasmin has 4 identifying attributes: chinese, short, thin, and brown-hair
+Matt has 2 identifying attributes: german and freckled
+Sam has 3 identifying attributes: thin, glasses, and muscular
+Rose has 3 identifying attributes: german, tall, and thin
+
+There is one attribute that all the spies have in common: thin. But if we say "thin" then that will indicate Marcia as well. We need to remove Marcia from the list first by saying "NOT freckled".
+
+NOT freckled <-- This absolves Marcia and Matt
+thin <-- This indicates Jasmin, Sam, and Rose as definitely spies
+
+This is the shortest possible list of commands that will indicate the three spies.
+
+Input
+Line 1: A space-separated list of 6 enemyName, indicating which of the suspects are enemy spies.
+Next 15 lines: A suspectName, followed by a space, then an integer for attributeCount, followed by a space-separated list of attribute for that suspect.
+
+Output
+The shortest possible list of commands, one line per command issued. Each command is either:
+
+- An attribute (indicating something common to some subset of the enemy spies)
+- The word NOT followed by a space and then an attribute (indicating something common only to innocent suspects)
+
+The test cases are designed so that the shortest list of commands only has a single valid ordering, so the solution is guaranteed to be unique.
+
+Constraints
+1≤attributeCount≤4
+
+Example
+
+Input
+Fred Mark Kim Anita Dwayne Nick
+Daniel 1 chinese
+Clem 1 german
+Dwayne 1 french
+Anita 1 french
+Spruce 1 german
+Fred 1 french
+Adan 1 chinese
+Sven 1 irish
+Nick 1 french
+Tim 1 irish
+Harley 1 english
+Mary 1 russian
+Kim 1 french
+Rashad 1 chinese
+Mark 1 french
+
+Output
+french
+
+Tags
+-
+
+Difficulty
+Very Hard

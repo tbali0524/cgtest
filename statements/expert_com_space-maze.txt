@@ -1,0 +1,53 @@
+Space Maze
+
+https://www.codingame.com/training/expert/space-maze
+https://www.codingame.com/contribute/view/4530c59cf0b16a4e6bd13c5c13f3ed0df13e
+
+A contribution by eulerscheZahl
+Approved by Unnamed CodinGamer,RaulButuc,Unnamed CodinGamer
+
+The Goal
+Help the car to reach the target tile.
+
+Rules
+You are given a board with solid ground tiles, void cells, a car and floating platforms. You can navigate the car as well as the platforms. The car will always move by exactly one cell at a time. The platforms move, until they hit a solid cell or another platform. Platforms can only move in certain directions. If the car is on a platform, they will both move together.
+
+Advanced Details
+It is possible to move a platform out of the game, into orbit. Every map is solvable without doing so, but for some maps such an action can make it easier to solve.
+You can see the game's source code on https://github.com/eulerscheZahl/SpaceJam.
+Victory Conditions
+The car reaches the target cell
+Loss Conditions
+The car gets lost in space by moves on a void cell or by sending a platform with the car on it into orbit
+You don't reach the target cell within 200 turns.
+You do not respond in time or output an unrecognized command.
+
+Initial input
+Line 1: width: the width of the board
+Line 2: height: the height of the board
+Next height lines: the grid. A cell can be:
+# for a void cell
+. for a ground cell
+0 for the target cell (exactly one such cell exists)
+
+Turn input
+Line 1: entityCount, the number of entities in the game
+Next entityCount lines: id, x, y, directions
+directions is either CAR for the car, or a combination of the letters U, D, R and L.
+There are 7 different types of platforms: U, D, R, L, UD, RL, UDRL.
+
+Output
+A single line containing an id and direction (U, D, R or L) to indicate what and where to move.
+
+Constraints
+2 ≤ entityCount ≤ 10
+width = 19
+height = 10
+Response time ≤ 1000 ms for the first turn, 50 ms for every turn after
+200 turns to reach the target
+
+Tags
+Pathfinding, Simulation, maze
+
+Difficulty
+Very Hard

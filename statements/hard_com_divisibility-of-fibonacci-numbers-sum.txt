@@ -1,0 +1,119 @@
+Divisibility of Fibonacci numbers sum
+
+https://www.codingame.com/training/hard/divisibility-of-fibonacci-numbers-sum
+https://www.codingame.com/contribute/view/6071bfe55e7b9857ce7570364b83c34ed4fe
+
+A contribution by OPi
+Approved by tutubalin,pardouin,RoboStac
+
+Goal
+Sum of consecutive big Fibonacci numbers is divisible or not?
+
+Let a, b and d non negative integers.
+Determine if d divides F_a + F_{a+1} + F_{a+2} + … + F_b.
+
+The difficulty is that we ask that for some very big indices a.
+
+Remember that the well-known Fibonacci numbers is a sequence of numbers starting with 0 and 1, and after that each number is the sum of the two previous ones.
+
+F_0 = 0
+F_1 = 1
+F_{n+2} = F_{n+1} + F_n
+
+So the first Fibonacci numbers are:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233…
+
+Example:
+a = 10
+b = 12
+F_10 + F_11 + F_12 = 55 + 89 + 144 = 288 = 32 * 9 = 2^5 * 3^2
+
+This sum is divisible by d = 2, 4, 8, 16 and 32, but NOT by 64.
+This sum is divisible by d = 3 and 9, but NOT by 27.
+This sum is NOT divisible by d = 5.
+This sum is divisible by d = 6.
+…
+
+Example of input:
+2
+10 12 3
+10 12 5
+
+And the expected output:
+F_10 + ... + F_12 is divisible by 3
+F_10 + ... + F_12 is NOT divisible by 5
+
+(When a = b write in the same way the beginning "F_a + ... + F_b"
+even if there is only one term.)
+
+Hints:
+Implementations of Fibonacci numbers computation is an usual example about recursivity and algorithmic complexity. The obvious way to implement it with recursion is a classical example of complexity explosion. There is several way to fix that, and the most obvious is the simple iteration that compute the result in a linear number of steps (if we consider that operations on numbers are in constant time, which is not really the case). The key point to solve this challenge is to find a mathematical way to be better than that and to implement it.
+To help you can read the "Matrix form" section in "Fibonacci number" article on Wikipedia:
+https://en.wikipedia.org/wiki/Fibonacci_number#Matrix_form
+
+Maybe this list of the first 300 Fibonacci numbers and their factorization can help you:
+http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibtable.html#100
+But if you need these big numbers, you are probably on a wrong way. ;-)
+
+Enjoy!
+
+(If you are interested by the mathematical aspect, there exist a lot of nice properties about this sequence:
+https://oeis.org/A000045 )
+
+(The illustration image is a part of one page of the Liber Abaci:
+https://commons.wikimedia.org/wiki/File:Liber_abbaci_magliab_f124r.jpg )
+
+Input
+Line 1: An non negative integer nb for the number of tests.
+Next nb lines: Three space separated non negative integers a, b and d for the first index, for the last index, and for the divisor.
+
+Output
+nb lines:
+"F_a + ... + F_b is divisible by d"
+or
+"F_a + ... + F_b is NOT divisible by d"
+
+Constraints
+1 ≤ nb ≤ 30
+0 ≤ a ≤ b ≤ 1,000,000,000
+b - a ≤ 10,000,000
+1 ≤ d ≤ 1,000,000,000
+
+Example
+
+Input
+13
+10 12 2
+10 12 32
+10 12 64
+10 12 3
+10 12 9
+10 12 27
+10 12 5
+10 12 7
+10 12 11
+10 12 287
+10 12 288
+10 12 289
+10 12 1000
+
+Output
+F_10 + ... + F_12 is divisible by 2
+F_10 + ... + F_12 is divisible by 32
+F_10 + ... + F_12 is NOT divisible by 64
+F_10 + ... + F_12 is divisible by 3
+F_10 + ... + F_12 is divisible by 9
+F_10 + ... + F_12 is NOT divisible by 27
+F_10 + ... + F_12 is NOT divisible by 5
+F_10 + ... + F_12 is NOT divisible by 7
+F_10 + ... + F_12 is NOT divisible by 11
+F_10 + ... + F_12 is NOT divisible by 287
+F_10 + ... + F_12 is divisible by 288
+F_10 + ... + F_12 is NOT divisible by 289
+F_10 + ... + F_12 is NOT divisible by 1000
+
+Tags
+Recursion, Loops, Arithmetic, Modular calculus
+
+Difficulty
+Hard

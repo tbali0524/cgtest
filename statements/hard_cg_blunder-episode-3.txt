@@ -1,0 +1,51 @@
+Blunder - Episode 3
+
+https://www.codingame.com/training/hard/blunder-episode-3
+
+The Goal
+Blunder is happy because hundreds of CodinGamers have re-programmed his natural behavior. The problem is that these programs aren’t all equal. Evidently, most are too fast for Blunder to fully revel in his inactivity...
+
+Using performance measures carried out on the execution time of the programs for Blunder, your mission is to determine what's the most likely computational complexity from a family of fixed and known algorithmic complexities.
+
+Example
+Here is an example of performance measures recorded when running a program with different volumes of data.
+
+In this example, the program was run with data volumes ranging from 0 to 5000 items and we see that the execution time, measured in microseconds, varies significantly depending on the number of items that the program processed. Here, the curve suggests that the most likely algorithmic complexity is O(log n).
+
+Game Input
+
+Input
+Line 1: the number N of performance measures carried out on the same program.
+N following lines: one performance measure per line. Each line contains two values: an integer num representing the number of items that the program has processed and an integer t representing the execution time measured to process these items in microseconds. These values are separated by a space. Values of n are unique and sorted in ascending order.
+
+Output
+The most probable computational complexity among the following possibilities: O(1), O(log n), O(n), O(n log n), O(n^2), O(n^2 log n), O(n^3), O(2^n)
+
+Constraints
+5 < N < 1000
+5 < num < 15000
+0 < t < 10000000
+
+Example
+
+Input
+10
+5 341
+1005 26324
+2005 52585
+3005 78877
+4005 104925
+4805 125920
+6105 159156
+7205 188017
+8105 211417
+9905 258991
+
+Output
+O(n)
+
+Tags
+Regression analysis
+
+Difficulty
+Hard

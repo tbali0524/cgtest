@@ -1,0 +1,120 @@
+The Fall - Episode 3
+
+https://www.codingame.com/training/hard/the-fall-episode-3
+
+The Goal
+Your objective is to write a program capable of predicting the route Indy will take on his way down a tunnel.
+
+Rules
+For this special training level, two changes from Indiana level 2 :
+If two rocks collide with each-others, they get destroyed and are no longer a threat
+You may have to anticipate the arrival of some rocks if you want Indy to survive...
+The structure of the tunnel hasn't changed. To review the types of rooms, click here.
+However, at the beginning there is no longer an unbroken safe route from start to finish.
+
+Fortunately,  certain rooms can now be rotated each turn by a quarter turn clockwise or counterclockwise. Some rooms are locked in place and cannot be rotated (these rooms have a negative type in the provided grid). Furthermore, you cannot rotate the rooms containing Indy or leading to the exit.
+
+This turn around, your mission consists of writing a program capable of rotating tunnel rooms in order to lead Indy to safety.
+
+For example:
+Spin the room (0,1) towards the right to establish a safe route to the exit.
+
+Lastly, for the last two tests only, giant rocks can appear within the tunnel system. If Indy comes into contact with a rock, he dies.
+
+The rocks have the following behavior:
+They can arrive on any game turn.
+They only arrive from an edge of the grid.
+They follow the same rules of movement as Indy (and dissapear if they leave the grid).
+If a rock hits a wall or gets stuck, it will be destroyed and dissapear from the grid on the next turn.
+You cannot rotate a room containing a rock.
+If two rocks collide with each-others, they get destroyed and are no longer a threat
+You may have to anticipate the arrival of some rocks if you want Indy to survive...
+
+On each game turn:
+You are given Indy's current position.
+Then you can spin a room clockwise or counterclockwise with the commands LEFT and RIGHT, or do nothing with the command WAIT.
+Indy will then advance to the next room according to the shape of the current room.
+ 
+Victory Conditions
+Indy reaches the exit
+ 
+Lose Conditions
+Indy slams into a wall while exiting a room (interrupted route): you have failed
+Indy finds himself in the same room as a rock on the same turn: you have failed
+Indy stops moving: you have failed
+
+Note
+The tests provided are similar to the validation tests used to compute the final score but remain different.
+
+Game Input
+The program must first read the initialization data from standard input. Then, within an infinite loop, read the data from the standard input related to the current position of Indy and provide to the standard output the expected data.
+
+Initialization input
+Line 1 : 2 space separated integers W H specifying the width and height of the grid.
+Next H lines: Each line represents a line in the grid and contains W space separated integers T. T specifies the type of the room. If T is negative, the room cannot be rotated.
+Last line: 1 integer EX specifying the coordinate along the X axis of the exit (always at the very bottom of the grid).
+
+Input for one game turn
+Line 1 : XI YI POSI
+(XI, YI) two integers to indicate Indy's current position on the grid.
+POSI a single word indicating Indy's entrance point into the current room: TOP if Indy enters from above, LEFT if Indy enters from the left and RIGHT if Indy enters from the right.
+
+Next line: R an integer representing the number of rocks currently in the grid.
+Next R lines: each line represents the position of a rock on the grid: XR YR POSR (same rules as Indy's XI YI POSI).
+
+Output for one game turn
+One line containing on of three commands:
+X Y LEFT : rotate the room at (X Y) by a quarter turn counterclockwise
+X Y RIGHT : rotate the room at (X Y) by a quarter turn clockwise
+WAIT : don't rotate a room and wait for next turn
+
+Constraints
+0 < W ≤ 20
+0 < H ≤ 20
+0 ≤ T ≤ 13
+0 ≤ R ≤ 10
+0 ≤ EX < W
+0 ≤ XI, XR, X < W
+0 ≤ YI, YR, Y < H
+Response time for one game ≤ 150ms
+
+Example
+
+Initialization input
+2 4       (W H)
+4 -3      (T T)
+11 -10    (T T)
+11 5      (T T)
+2 3       (T T)
+1	  (EX)
+Grid with 2 columns, 4 lines. 2 of the rooms are locked.
+No output expected
+
+Output for turn 1
+1 0 TOP(XI YI POS)
+1      (R)
+0 2 TOP(XR YR POSR)
+Indy arrives in (1,0) from above. A rock appears in (0,2) from above.
+
+Output for turn 1
+0 1 RIGHT
+Rotate the room (0,1) to the right to create a route to the exit
+
+Output for turn 2
+1 1 TOP  (XI YI POS)
+1        (R)
+1 2 LEFT (XR YR POSR)
+Indy is now in (1,1). The rock is in (1,2)
+
+Sortie pour le tour 2
+WAIT
+
+The path is laid out, no need to move anything.
+
+And so on until Indy reaches the exit at (1,3)
+
+Tags
+Pathfinding, Backtracking
+
+Difficulty
+Very Hard

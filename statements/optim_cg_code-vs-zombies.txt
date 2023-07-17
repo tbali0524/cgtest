@@ -1,0 +1,101 @@
+Code vs Zombies
+
+https://www.codingame.com/multiplayer/optimization/code-vs-zombies
+
+STATEMENT
+Kill zombies to earn points and try to keep humans alive to maximize your score and win the game. The game takes place on a closed map. You control Ash, the lucky owner of a powerful weapon, who can kill all zombies in a radius around him.
+
+Try to maximize your combos ; anticipating what the next state of the game will be is the key to some of the best scores.
+
+The Goal
+Destroy zombies quickly to earn points and make sure to keep the humans alive to get the highest score that you can manage.
+
+Rules
+The game is played in a zone 16000 units wide by 9000 units high. You control a man named Ash, wielding a gun that lets him kill any zombie within a certain range around him.
+
+Ash works as follows:
+Ash can be told to move to any point within the game zone by outputting a coordinate X Y. The top-left point is 0 0.
+Each turn, Ash will move exactly 1000 units towards the target coordinate, or onto the target coordinates if he is less than 1000 units away.
+If at the end of a turn, a zombie is within 2000 units of Ash, he will shoot that zombie and destroy it. More details on combat further down.
+
+Other humans will be present in the game zone, but will not move. If zombies kill all of them, you lose the game and score 0 points for the current test case.
+
+Zombies are placed around the game zone at the start of the game, they must be destroyed to earn points.
+
+Zombies work as follows:
+Each turn, every zombie will target the closest human, including Ash, and step 400 units towards them. If the zombie is less than 400 units away, the human is killed and the zombie moves onto their coordinate.
+Two zombies may occupy the same coordinate.
+
+The order in which actions happens in between two rounds is:
+Zombies move towards their targets.
+Ash moves towards his target.
+Any zombie within a 2000 unit range around Ash is destroyed.
+Zombies eat any human they share coordinates with.
+
+Killing zombies earns you points. The number of points you get per zombie is subject to a few factors.
+
+Scoring works as follows:
+A zombie is worth the number of humans still alive squared x10, not including Ash.
+If several zombies are destroyed during on the same round, the nth zombie killed's worth is multiplied by the (n+2)th number of the Fibonnacci sequence (1, 2, 3, 5, 8, and so on). As a consequence, you should kill the maximum amount of zombies during a same turn.
+
+Note: You may activate gory mode in the settings panel () if you have the guts for it.
+ 
+Victory Conditions
+You destroy every zombie on screen with at least 1 other living human remaining.
+ 
+Lose Conditions
+The zombies kill every human other than you.
+
+Expert Rules
+The coordinate system of the game uses whole numbers only. If Ash or a zombie should land in a non whole coordinate, that coordinate is rounded down.
+
+For example, if a zombie were to move from X=0, Y=0 towards X=500, Y=500, since it may only travel 400 units in one turn it should land on X=282.843, Y=282.843 but will in fact land on X=282, Y=282.
+
+To help, each zombie's future coordinates will be sent along side the current coordinates.
+
+Example
+The player starts at position X=8043, Y=976. Two zombies are close by but the player decides to go near a human at X=0, Y=4500.
+
+Turn 1
+Action: 0 3433.
+Zombies 0 and 1 both aim for the player.
+
+Turn 2
+Action: 0 3833.
+The player gets closer to zombie 1 and further away from zombie 0.
+
+Turn 3
+Action: 0 4233.
+Zombie 1 enters player's range and is destroyed!
+ 
+Note
+Don’t forget to run the tests by launching them from the “Test cases” window. You do not have to pass all tests to enter the leaderboard. Each test you pass will earn you some points.
+
+Warning: the tests provided are similar to the validation tests used to compute the final score but remain different. This is a “hardcoding” prevention mechanism. Harcoded solutions will not get any points.
+
+Your score is computed from the total points earned across all test cases.
+
+Do not hesitate to switch to debug mode () if you get stuck. In debug mode, hover over a zombie or human to see their coordinates.
+
+Game Input
+The program must, within an infinite loop, read the contextual data from the standard input (human and zombie positions) and provide to the standard output the desired instruction.
+
+Input for one game turn
+Line 1: two space-separated integers x and y, the coordinate of your character.
+Line 2: one integer humanCount, the amount of other humans still alive.
+Next humanCount lines : three space-separated integers humanId, humanX & humanY, the unique id and coordinates of a human.
+Next line: one integer zombieCount, the amount of zombies left to destroy.
+Next zombieCount lines: five space-separated integers zombieId, zombieX, zombieY, zombieXNext & zombieYNext, the unique id, current coordinates and future coordinates of a zombie.
+
+Output for one game turn
+A single line: two integers targetX and targetY, the coordinate you want your character to move towards. You may also some text message which will be displayed on screen.
+
+Constraints
+0 ≤ x < 16000
+0 ≤ y < 9000
+1 ≤ humanCount < 100
+1 ≤ zombieCount < 100
+Response time per game turn ≤ 100ms
+
+Tags
+Optimization, Simulation, Distances

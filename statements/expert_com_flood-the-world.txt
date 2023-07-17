@@ -1,0 +1,79 @@
+Flood the World
+
+https://www.codingame.com/training/expert/flood-the-world
+https://www.codingame.com/contribute/view/32087cc5e62f6aa408397c7ee304a2b0c8c
+
+A contribution by Aries
+Approved by player_one,[CG]OlogN
+
+Goal
+What was bound to happen has happened, Cthulhu or some other Great Elder has finally heard our prayers and opened a portal for our specie to welcome it. As a result, a continuous stream of water from the abyss is now flooding our world.
+
+With the help of a simple map of the surroundings and your brilliant, if not sane any more, mind, your goal is to find the last town around to be submerged, in the (vain) hope that the portal could be closed before it is too late...
+
+Some more details:
+
+- The portal is pouring water continuously from where it is located.
+- Water behaves as one expect a liquid with no surface tension at all to behave.
+- If the portal is located on a flat surface, the water flows equally from it on the left and on the right.
+- A town is flooded when water start raising in it, being simply traversed doesn't count.
+
+The Dwarf Fortress quality grade diagram below illustrates how things work. Since the portal @ is located on a flat surface, water has flowed on both sides in an equal manner. As such, the volume of water on the left is the same as on the right (6x "~"). The right part being filled, the water will then flow fully on the left (until reaching town B level). Obviously, the town A will be flooded before the water could reach the town B. However, if the water kept flowing, town B wouldn't be submerged until the valley on its right would be completely filled (just imagine that towns are actually floating slightly above the ground).
+
+
++--+                                          +---+
+    \                               B        /
+     +---+                        +---+     /
+          \A             @       /  ^  \   /
+           \          +----+~~~~/   |   \ /
+           ^\        /   ^  \~~/    |    +
+           | \~~~~~~/    |   ++     |
+           |  +----+     |          |
+           |             |          |
+           |             |          |
+        xTownA        xPortal    xTownB
+
+
+Don't be fooled by the cheap ASCII diagram above. In this puzzle, the volume of a "pit" is its exact geometric value, not the discrete amount of "~" blocks you can put inside.
+
+Input
+- One line: The surfacePointCount of points the relief is made up.
+- The surfacePointCount lines: a pair of integers (X, Y) giving the location of a point. By connecting all the points in a sequential manner you will get the relief of the surrounding country (just as in the Mars set of missions).
+- One line: An integer xPortal for the X coordinate of the water portal on the relief.
+- One line: An integer townCount for the number of towns around.
+- The townCount next lines: An integer xTown for the X coordinate of a town on the relief, followed by its name. The portal and the towns are all located on the ground.
+
+Output
+- One line: The name of the last town to be flooded.
+
+Constraints
+- Both coordinates X and Y are ranging from 0 to 100.
+- A town name is a simple word without spaces.
+- The relief is not too complicated (for any X, there is only one Y) ; in any case, the public test cases are representative.
+- The relief is always designed in a way that all towns are doomed to be submerged before water starts overflowing the map itself. (Not a happy ending, but it makes for a easier puzzle!)
+- The portal is never at the same location as a town.
+
+Example
+
+Input
+7
+0 0
+1 5
+3 1
+4 4
+5 2
+9 8
+11 4
+5
+2
+2 Arkham
+7 Dunwich
+
+Output
+Dunwich
+
+Tags
+-
+
+Difficulty
+Very Hard
