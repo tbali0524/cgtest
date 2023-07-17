@@ -9,9 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Github Action workflow added.
-- More CG puzzle test cases added. The repo now contains all public test cases for all medium, hard and expert puzzles and at least 1 test case for all easy puzzles. In total __4300+__ test cases for __770+__ puzzles.
-- Statement texts for hard and expert puzzles added.
+- Nothing yet
 
 ### Changed
 
@@ -20,6 +18,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Nothing yet
+
+## [v1.9.0](https://github.com/tbali0524/cgtest/releases/v1.9.0) - 2023-07-17
+
+### Added
+
+- Github Action workflow added.
+- More CG puzzle test cases added. The repo now contains all public test cases for all medium, hard and expert puzzles and at least 1 test case for all easy puzzles. In total there are __4300+__ test cases for __770+__ puzzles.
+- Statement texts for hard and expert puzzles added.
 
 ## [v1.8.0](https://github.com/tbali0524/cgtest/releases/v1.8.0) - 2023-04-07
 

@@ -28,7 +28,9 @@ At CG, you don't have to bother about setting up any local development environme
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
 
-The repo contains all public test cases for all medium, hard and expert puzzles and at least 1 test case for all easy puzzles. The repo also contains the puzzle statement texts of all hard and expert solo puzzles (official and community) to allow you using full-text search locally.
+The repo contains all public test cases for all medium, hard and expert puzzles and at least 1 test case for all easy puzzles (see `.tests/input` and `.tests/expected` directories).
+
+The repo also contains the puzzle statement texts of all hard and expert solo puzzles (official and community) to allow you using full-text search locally (see `statements/` directory).
 
 ## Command line usage
 
@@ -161,3 +163,5 @@ _If you have experience in how to set up any of the other languages, please send
 ## License
 
 CGTest is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+The copyright owners of the statement texts are the respective puzzle creators.
