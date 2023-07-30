@@ -1,0 +1,17 @@
+Brackets, Enhanced Edition
+
+https://www.codingame.com/training/medium/medium_com_brackets-enhanced-edition
+https://www.codingame.com/contribute/view/4739a66cbd66670413112443a1f1d83ab42
+
+A contribution by JBM
+
+You must determine whether a given expression's bracketing can be made valid by flipping them in-place. An expression has a valid bracketing when all the parentheses {{()}}, square brackets {{[]}}, curly braces {{{} }} and angle brackets {{<>}} are correctly paired and nested.
+
+You can flip a bracketing element in-place by replacing it with its counterpart, e.g. replace a {{(}} with a {{)}}, or a {{>}} with a {{<}}. For example, converting the second parenthesis in the expression below would make it valid: `<{[(abc(]}> → <{[(abc)]}>`
+(This is a harder version of the community puzzle “Brackets, Extended Edition”. You may want to complete that one first.)
+
+Difficulty
+Medium
+
+Tags
+Parsing

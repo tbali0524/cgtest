@@ -1,0 +1,18 @@
+Ways to make change
+
+https://www.codingame.com/training/medium/medium_com_ways-to-make-change
+https://www.codingame.com/contribute/view/5606a1e6210dcf754b807550c7f800fc9c67
+
+A contribution by lhm
+
+Given a non-negative <<amount>> [[N]] and a <<set of [[S]] coins>> of positive <<values>> [[Vi]], return the <<number of ways>> to reach the required amount using the coins.
+
+NB : You have an unlimited number of each coin at your disposal.
+
+For example, given [[N]]<< = 10>>, [[S]]<< = 2>> and the set of values [[V1]]<< = {1, 5} >>, you should return <<3>>. Indeed, there are 3 ways to sum coins of values {1, 5} up to 10 : 1*10, 5*2 and 1*5 + 5*1.
+
+Difficulty
+Medium
+
+Tags
+Dynamic programming, Loops

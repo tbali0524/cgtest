@@ -1,0 +1,76 @@
+Tennis score
+
+https://www.codingame.com/training/medium/medium_com_tennis-score
+https://www.codingame.com/contribute/view/193537ebfe75de14ff28b7ea53d2e1e072df9
+
+A contribution by VilBoub
+
+https://en.wikipedia.org/wiki/Tennis_scoring_system
+
+Given a record of points scored in a tennis match, determine the current score, whether the match is complete, and who won.
+
+<<* "Normal" match :>>
+The maximum number of sets in a match is either 3 or 5. The player who wins a majority of the sets wins the match.
+
+<<* "Normal" set :>>
+To win a normal tennis set, you must win 6 games with a difference greater than or equal to 2.
+After the score reaches 6-5 the next score is either 7-5 (first player wins the set) or 6-6 ( (see below for tie-breaks)). When one player wins the tie-break the set score is either 6-7 or 7-6. 
+
+<<* "Normal" game :>>
+To win a normal tennis game (see below for tie-breaks), you must score at least 4 points, with at least 2 points more than your opponent. The score being noted: 0, 15, 30, 40.
+If the score comes to 3-3, 4-4, 5-5... note: 40 40 (there is equality)
+If the score comes to 4-3, 5-4, 6-5... note: AV - (the first player has the advantage)
+If the score comes to 3-4, 4-5, 5-6... note: - AV (the second player has the advantage)
+
+<<* Tie-break rules:>>
+when we arrive at the score 6 6 in a set, then a "tie-break" is played. it no longer takes 4 points but 7 points to win the game (always with a difference of at least two points, the score in the tie-break is unlimited !) unless it is the last game (the 3rd for women, the 5th for men), in this case there it takes at least 10 points to win the game.
+The winner of the game then wins the set on the score 7 6.
+Note: game points are counted normally and no longer with 0, 15, 30, 40 but 0, 1, 2, 3, 4, 5, ...
+
+<<* Example :>>
+
+=> <<Entry>>
+
+Serena Venus
+3
+1A
+
+=> <<Analysis>>
+
+1A -> 0001 1010
+
+0 : Serena scores 1 point
+`Serena......... 0 | 15
+Venus.......... 0 | 0`
+0 : Serena scores 1 point
+`Serena......... 0 | 30
+Venus.......... 0 | 0`
+0 : Serena scores 1 point
+`Serena......... 0 | 40
+Venus.......... 0 | 0`
+1 : Venus scores 1 point
+`Serena......... 0 | 40
+Venus.......... 0 | 15`
+1 : Venus scores 1 point
+`Serena......... 0 | 40
+Venus.......... 0 | 30`
+0 : Serena scores 1 point and wins the first game
+`Serena......... 1 | 0
+Venus.......... 0 | 0`
+1 : Venus scores 1 point
+`Serena......... 1 | 0
+Venus.......... 0 | 15`
+0 : Serena scores 1 point
+`Serena......... 1 | 15
+Venus.......... 0 | 15`
+=> <<Exit>>
+
+`Serena......... 1 | 15
+Venus.......... 0 | 15
+Game in progress`
+
+Difficulty
+Medium
+
+Tags
+Arrays, Loops, Conditions

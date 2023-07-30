@@ -1,0 +1,33 @@
+EUROPEAN RUGBY CHAMPIONS CUP RANKING
+
+https://www.codingame.com/training/medium/medium_com_european-rugby-champions-cup-ranking
+https://www.codingame.com/contribute/view/193992e2637c5c6607c35b7cc23d8698b25c
+
+A contribution by TataMaso
+
+Every year the best rugby teams in Europe compete in the European Rugby Champion's Cup (ERCC). Since 2014 the tournament is organized as follows:
+- 20 teams are split into 5 pools of 4 teams. During the pool stage, each team plays the 3 other teams of the pool twice (home/away games).
+- Then the 8 best teams (the 5 pool leaders and 3 best runners-up) play the quarter-finals, such as:
+	- The best leader (#1) receive the third best runners-up(#8)
+	- The second best leader (#2) receive the second best runners-up(#7)
+	- The third best leader (#3) receive the best runners-up(#6)
+	- The fourth best leader (#4) receive the worst leader (#5)
+- Then it is classical semi-finals and final.
+
+<<Given the 4 teams of each group and the 60 games results of the pool-stage, your goal is to display the 4 quarter-finals>>.
+
+
+INTRA-POOL RANKING RULES:
+- Each team plays 6 games. A <<victory>> is worth <<4 ranking-points>>, a <<draw 2 ranking-points>>, a <<loss 0 ranking-point>>. Each team can have up to <<2 bonus ranking-points>> per game: <<1 ranking-point for each team>> that <<scored at least 4 tries>>, <<1 ranking-point for the losing team>> if they <<lost by a maximum of 7 game-points>>.
+- In the event of a tie between two or more teams, the best-ranked team is selected using following tie-breakers:
+	- The team with the <<greatest number of ranking-points>> (including bonus points) from <<only games involving tied teams>>.
+	- If equal, the team with the <<best aggregate game-points difference>> from <<those games >> (game-points scored minus game-points conceded) (In this puzzle, you won't need more tiebreaker criteria).
+
+INTER-POOL RANKING RULES:
+To rank teams that are not in the same pool (in order to find who is qualified to the quarter-finals), the following criteria are used:
+	- <<Ranking>> in their pool (Leader, runner-up, third place, last place)
+	- <<Highest number of ranking-points>> in their pool
+	- If equal,<< best aggregate game-points difference>> (game-points scored minus game-points conceded) (In this puzzle, you won't need more tiebreaker criteria).
+
+Difficulty
+Medium

@@ -1,0 +1,14 @@
+Brackets, Ultimate Edition
+
+https://www.codingame.com/training/medium/medium_com_brackets-ultimate-edition
+https://www.codingame.com/contribute/view/493e4e48e74e8227c35f0375332bf01629f
+
+A contribution by JBM
+
+You must determine the minimum number of bracket-flipping operations needed to make a given expression valid. An expression has a valid bracketing when all the parentheses {{()}}, square brackets {{[]}}, curly braces {{{} }} and angle brackets {{<>}} are correctly paired and nested.
+
+You can flip a bracketing element in-place by replacing it with its counterpart, e.g. replace a {{(}} with a {{)}}, or a {{>}} with a {{<}}. For example, flipping both parentheses around in the expression below would make it valid with a cost of {{2}}: `<{[)abc(]}> → <{[(abc)]}>`
+(This is an arguably harder variant of community puzzle “Brackets, Enhanced Edition”. You may want to complete that one first.)
+
+Difficulty
+Medium

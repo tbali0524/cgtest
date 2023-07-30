@@ -1,0 +1,9 @@
+Maze
+
+https://www.codingame.com/training/medium/medium_com_maze
+https://www.codingame.com/contribute/view/1159f460c1b31acd2a6bd5bfb6d26c1b7d9
+
+A contribution by Bob
+
+Your program must determine the possible exits of a maze.
+The maze can have several exits or none, and may contain loops or parts that cannot be reached from the starting point.

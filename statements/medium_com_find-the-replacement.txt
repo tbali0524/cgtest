@@ -1,0 +1,14 @@
+Find the replacement
+
+https://www.codingame.com/training/medium/medium_com_find-the-replacement
+https://www.codingame.com/contribute/view/982a8819356085c7f3ac3f20de2e3b96bd9
+
+A contribution by Unihedron
+
+In a lot of clash of code problems, you need to replace text from one form to the other. To figure it out quickly, you have decided to write a program to look at two lines and extract the replacement sequences (if any) that will convert Line [[X]] into Line [[Y]]. Hurry!
+
+Difficulty
+Medium
+
+Tags
+Strings, Pattern recognition

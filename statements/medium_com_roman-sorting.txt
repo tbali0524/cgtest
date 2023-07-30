@@ -1,0 +1,33 @@
+Roman Sorting
+
+https://www.codingame.com/training/medium/medium_com_roman-sorting
+https://www.codingame.com/contribute/view/4426874a1276dafe6bd53346f0e87bbf3e672
+
+A contribution by 21stCenturyPeon
+
+Sort a list of integer values in alphabetical order of their standard-form Roman numeral representations.
+{{I}}=1, {{V}}=5, {{X}}=10, {{L}}=50, {{C}}=100, {{D}}=500, {{M}}=1000 
+{{IV}}=4, {{IX}}=9, {{XL}}=40, {{XC}}=90, {{CD}}=400, {{CM}}=900
+
+Note that:
+49 = {{XLIX}}, not {{IL}}
+999 = {{CMXCIX}}, not {{IM}}
+
+<<EXAMPLE>>
+`3
+44
+63
+97`
+44 = XLIV, alphabetically 3rd
+63 = LXIII, alphabetically 1st
+97 = XCVII, alphabetically 2nd
+
+Output: 
+`63 97 44`
+For more on standard-form Roman numerals, see `https://en.wikipedia.org/wiki/Roman_numerals#Standard_form`
+
+Difficulty
+Medium
+
+Tags
+Sorting

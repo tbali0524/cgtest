@@ -1,0 +1,23 @@
+All Operations are Equal!
+
+https://www.codingame.com/training/medium/medium_com_all-operations-are-equal
+https://www.codingame.com/contribute/view/15987c398d6e9e5c36e107dbd182b50a016ed
+
+A contribution by tzaph
+
+A positive integer [[X]] is a good number if there exist 5 (not necessarily distinct) positive integers A, B, C, D, and E such that:
+
+1. A + B + C + D = [[X]]
+2. A + E, B - E, C * E, and D / E are pairwise equal, meaning A + E = B - E = C * E = D / E
+
+The smallest good number is the number 8. This is because there are five positive integers (A, B, C, D, E) = (1, 3, 2, 2, 1) such that:
+1. 1 + 3 + 2 + 2 = 8
+2. 1 + 1 = 3 - 1 = 2 * 1 = 2 / 1 = 2
+
+You are given [[N]] positive integers. For each number, determine whether the number is good or not!
+
+Difficulty
+Medium
+
+Tags
+Mathematics, Brute-force, Loops

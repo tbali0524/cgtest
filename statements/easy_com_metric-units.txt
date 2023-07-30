@@ -1,0 +1,23 @@
+Metric Units
+
+https://www.codingame.com/training/easy/easy_com_metric-units
+https://www.codingame.com/contribute/view/189907654be7b975f7702b56c0ac74998218c
+
+A contribution by Grarzyna
+
+The goal of this exercise is to add two lengths with given metric units.
+To calculate it properly you first need to convert them to the same unit. 
+Present the result using the smaller unit.
+
+For instance:
+<<4cm + 2dm>>
+must convert 2dm to 20cm:
+<<4cm + 20cm>>
+it then results to:
+<<24cm>>
+
+If you like to challenge yourself a little more...
+Try to limit the number of <<ifs>> and <<switches>> as much as possible in your code.
+
+Difficulty
+Easy

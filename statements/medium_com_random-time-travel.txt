@@ -1,0 +1,25 @@
+Random Time Travel
+
+https://www.codingame.com/training/medium/medium_com_random-time-travel
+https://www.codingame.com/contribute/view/16020c1957e67f2e66278c25425bd0de04e0d
+
+A contribution by Karang
+
+A linear congruential generator (LCG) is a pseudorandom number generator algorithm defined by the recurrence relation:
+`lcg(seed) = (a * seed + c) % m`
+LCGs are notably used by Java's Math.random(). It is sometimes useful to be able to check the value given by the random number generator a number of steps in the future or in the past, given the current internal seed of the LCG.
+
+You are given the [[seed]], the parameters [[a]], [[c]] and [[m]] of an LCG and the number of [[steps]].
+
+If [[steps]] is positive you must return the result of the composition of the lcg function [[steps]] times.
+`lcg(lcg(...lcg(seed)))`
+If [[steps]] is negative you must return the result of the composition of the reverse of the lcg function.
+ `lcg^-1(lcg^-1(...lcg^-1(seed)))`
+
+Hint: The reverse of an LCG is also an LCG. The composition of two LCGs is also an LCG.
+
+Difficulty
+Medium
+
+Tags
+Random, LCG, Seedfinding

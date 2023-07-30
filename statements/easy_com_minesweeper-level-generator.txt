@@ -1,0 +1,33 @@
+Minesweeper level generator
+
+https://www.codingame.com/training/easy/easy_com_minesweeper-level-generator
+https://www.codingame.com/contribute/view/81566a21c186431861ee5bef495cf59b3a5c
+
+A contribution by darkhorse64
+
+You like to solve Minesweeper levels ? You will love generating them !
+
+<<How to generate a level>>
+
+* A level is a [[width]] x [[ height]] cells grid. Its origin is the top left corner. It contains [[n]] mines.
+* The level is generated only when the player selects the first cell. The 3x3 cells square centered on this cell is always set free of mines.
+* To generate a mine, X and Y grid coordinates (X first and then Y) are randomly generated until an available position is found. To generate X (resp. Y), use the random value modulo [[width]] (resp. [[height]]).
+
+<<Controlling randomness>>
+
+The random number generator used to generate the level is a pseudo random number generator (PRNG) initialized with a [[seed]] provided in the inputs. The PRNG works as follows:
+
+The nth generated value is:
+R(n) = (214013 * R(n-1) + 2531011) / 65536
+with R(0) = [[seed]]
+R(1) is the first value to use.
+
+With a seed of 31, the expected five first values produced by the PRNG are 139, 492, 1645, 5410, 17705.
+
+You must use a single instance of PRNG for the whole generation. All calculations must be in 32-bit unsigned numbers. Beware that some languages (Python for instance) implicitly generate big integers without overflowing.
+
+Difficulty
+Easy
+
+Tags
+Loops, 2D array, Coordinates

@@ -1,0 +1,56 @@
+Snail Run
+
+https://www.codingame.com/training/easy/easy_com_snail-run
+https://www.codingame.com/contribute/view/183307aa03c47b356b9fbfbffd20bbbe83ea9
+
+A contribution by Eurostar02
+
+We have a snail race we will have to determine the winner !
+- The number of snails is given in the variable [[numberSnails]].
+- Each snail has a speed given in the variable [[speedSnail]]
+- You have a map of the game with a height of [[mapHeight]] and a width of [[mapWidth]].
+
+On the map we have:
+{{number}} that represents a snail from 1 to [[numberSnails]]
+{{*}} which represents a place where the snail can go
+{{#}} which represents the destination
+
+`Snails can go right, left, up, down. Snails cannot go diagonally.
+The snail takes the path closest to it.`
+
+example of the game :
+
+snail {{1}} speed {{2}}
+snail {{2}} speed {{1}}
+
+start :
+
+1****#
+2****#
+
+time = 1
+
+**1**#
+*2***#
+
+time = 2
+
+****1#
+**2**#
+
+time=3
+
+*****1
+***2*#
+
+End : 
+
+return {{1}}
+
+For each race there is only one winner.
+
+Difficulty
+Easy
+
+Tags
+Arrays, Loops, Manhattan distance

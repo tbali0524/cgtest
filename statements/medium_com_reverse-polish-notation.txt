@@ -1,0 +1,23 @@
+Reverse Polish Notation
+
+https://www.codingame.com/training/medium/medium_com_reverse-polish-notation
+https://www.codingame.com/contribute/view/116d0fa94976711d074284d72c2ce3991d4
+
+A contribution by nicola
+
+You have to correctly interpret [[RPN]] (Reverse Polish Notation) instructions and print the stack when the instruction line has been read (from left to right).
+If the instruction is a {{number}}, simply put in on top of the stack (on the right).
+The operations ([[ADD]], [[SUB]], [[MUL]], [[DIV]], [[MOD]]) pop the last two numbers out of the stack and push back on top the result. You can safely assume that the numbers are all integers.
+For example after, [[2 5 SUB 8]], the stack is [[-3 8]].
+[[DIV]] is the integer quotient and [[MOD]] the remainder of the division.
+There are also operators that act on the stack itself:
+[[POP]] removes the top number.
+[[DUP]] duplicates the top number.
+[[SWP]] swaps the two top numbers. [[4 5 SWP 6]] swaps {{4}} and {{5}} then pushes {{6}} on top, the stack is [[5 4 6]].
+[[3 ROL]] pops the top number (here it’s {{3}}) then brings to the top the third number of the stack. For example, if the stack is [[1 2 3 4]], [[3 ROL]] changes it in [[1 3 4 2]].
+
+Difficulty
+Medium
+
+Tags
+Reverse Polish Notation, Stack, Interpreters

@@ -1,0 +1,30 @@
+Blending Colors
+
+https://www.codingame.com/training/easy/easy_com_blending-colors
+https://www.codingame.com/contribute/view/350287c9abb84f10186e73c8d3f536a279d06
+
+A contribution by java_coffee_cup
+
+Designers are placing shapes of different sizes and colors on the canvas of an image editor.
+
+<<About Colors>>
+The shapes have primary colors defined in RGB color notations. Red is (255, 0, 0); Green is (0, 255, 0); Blue is (0, 0, 255). Besides these, they also use Yellow (255, 255, 0), Cyan (0, 255, 255) and Magenta (255, 0, 255).
+All shapes have a very thin black border (0, 0, 0) and are on a white background (255, 255, 255).
+
+The shapes are defined as transparent so that when one shape is overlaying another, their colors will mix to reveal a new color. When two or more colors blend together, the new color is the average of all layer's colors.
+
+For example, when R and G blend, the mixed color is (128, 128, 0). When Y, M and G mix, the result will be ((255+255+0)/3, (255+0+255)/3, (0+255+0)/3), which is (170, 170, 85). We round the decimal results to get the nearest integers (i.e. 10.4 is regarded as 10; 10.5 is regarded as 11).
+
+<<Black and White do not have blending effects.>>
+
+In the final design, only squares and circles are used. Designers want to have a program to automatically calculate the color at any chosen point. 
+
+When a chosen point is within one or more shapes, report the color or mixed color at that point.
+When a chosen point is outside the shapes, report White (255, 255, 255).
+When a chosen point is on the borderline of any shape, report Black (0, 0, 0).
+
+Difficulty
+Easy
+
+Tags
+Geometry

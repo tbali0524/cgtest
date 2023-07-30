@@ -1,0 +1,23 @@
+Horse-racing Hyperduals
+
+https://www.codingame.com/training/easy/easy_com_horse-racing-hyperduals
+https://www.codingame.com/contribute/view/467529f502870df47b1be4d5f2c6d1364e4
+
+A contribution by JBM
+
+Casablanca’s hippodrome has grown tired of old-fashioned dual racing and has kicked it up a notch: they will now be organizing hyperduals.
+
+During a hyperdual, only two horses will participate in the race. In order for the race to be interesting, it is necessary to try to select two horses with similar strength.
+
+Write a program which, using a given number of strengths, identifies the two closest strengths and shows their difference with an integer.
+
+In a hyperdual, a horse's strength is a bidimensional [[(Velocity,Elegance)]] vector. The distance between two strengths [[(V1,E1)]] and [[(V2,E2)]] is [[abs(V2-V1)+abs(E2-E1)]].
+
+(This is a harder version of training puzzle “Horse-racing duals”. You may want to solve that problem first.)
+(To date there is no specific achievement if you solve this one in pure bash. Rest assured it *is* possible nonetheless!)
+
+Difficulty
+Easy
+
+Tags
+Loops

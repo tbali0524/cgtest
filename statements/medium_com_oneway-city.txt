@@ -1,0 +1,19 @@
+OneWay City
+
+https://www.codingame.com/training/medium/medium_com_oneway-city
+https://www.codingame.com/contribute/view/413346f76f99a76acdf433c2afa5263d61b
+
+A contribution by anst
+
+Your city is a rectangular grid of buildings with streets joining them vertically and horizontally. 
+All the streets are one way: you can only go either south or east, but never north or west.
+
+Your program has to compute the number of routes linking the North-West corner to the South-East one in an [[M]] x [[N]] city grid.
+
+Be warned however that OneWay City is in fact a Megalopolis—with all the headaches that it implies. Actually, the numbers can get so big that your program's output should only contain the first 1000 digits of the solution.
+
+Difficulty
+Medium
+
+Tags
+Combinatorics

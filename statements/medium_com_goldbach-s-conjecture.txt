@@ -1,0 +1,20 @@
+Goldbach’s Conjecture
+
+https://www.codingame.com/training/medium/medium_com_goldbach-s-conjecture
+https://www.codingame.com/contribute/view/41067b01258b3f953b8b53b8a1073c957d719
+
+A contribution by WIlChrist
+
+Goldbach's conjecture is one of the oldest and best-known unsolved problems in number theory and all of mathematics. It states that every even natural number greater than 2 is the sum of two prime numbers.
+
+For each given even integer [[m]], find all distinct prime couples summing to [[m]], and print their count.
+
+<<Example explanation:>> 38 get these 2 possible sums
+38 = 7 + 31
+38 = 19 + 19
+
+Difficulty
+Medium
+
+Tags
+Loops, Primes, Mathematics, Memoization, Hash tables

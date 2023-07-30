@@ -1,0 +1,46 @@
+Hidden Messages In Images
+
+https://www.codingame.com/training/easy/easy_com_hidden-messages-in-images
+https://www.codingame.com/contribute/view/59591b74d78a2f41058bd45f2d204071a895
+
+A contribution by AndreMarasca
+
+Steganography in images is to hide information in pixels of images imperceptibly to the human eye. In this problem there are ASCII messages hidden in the image pixels. More specifically, the least significant bit of each pixel represents a piece of the ASCII message.
+
+Every 8 consecutive bits we have a byte, convert that byte into an ASCII value. To make your life easier, images will always have a number of pixels multiple of 8. Print all ASCII characters extracted from the image.
+
+<<Example>>
+Given an input image with [[w]]idth = 4 and [[h]]eight = 4
+106 19 134 22
+161 192 98 184
+52 51 97 88
+208 63 58 25
+
+106 => 01101010 => less significant bit => 0
+19 => 00010011 => less significant bit => 1
+134 => 10000110 => less significant bit => 0
+22 => 00010110 => less significant bit => 0
+161 => 10100001 => less significant bit => 1
+192 => 11000000 => less significant bit => 0
+98 => 01100010 => less significant bit => 0
+184 => 10111000 => less significant bit => 0
+52 => 00110100 => less significant bit => 0
+51 => 00110011 => less significant bit => 1
+97 => 01100001 => less significant bit => 1
+88 => 01011000 => less significant bit => 0
+208 => 11010000 => less significant bit => 0
+63 => 00111111 => less significant bit => 1
+58 => 00111010 => less significant bit => 0
+25 => 00011001 => less significant bit => 1
+
+Extracted bits => 0100100001100101
+Split binary information into bytes => [ "01001000",  "01100101"]
+Map bytes to ASCII => ["H", "e"]
+
+Output => He
+
+Difficulty
+Easy
+
+Tags
+Image processing, bitwise, steganography, Loops, ascii

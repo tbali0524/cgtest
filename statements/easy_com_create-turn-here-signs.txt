@@ -1,0 +1,28 @@
+Create 'Turn Here' Signs
+
+https://www.codingame.com/training/easy/easy_com_create-turn-here-signs
+https://www.codingame.com/contribute/view/42753901af3fe9ff0a64038a378ced794e760
+
+A contribution by Lisa-Has-Ideas
+
+Secretary of Transportation Pete has asked you to program electronic signs to communicate to drivers that they need to turn left or turn right.
+
+Pete wants lots of options for the signs, so the input is:
+• [[direction]] -- which is either {{left}} or {{right}}
+• [[howManyArrows]]
+• [[heightOfArrows]]
+• [[strokeThicknessOfArrows]]
+• [[spacingBetweenArrows]]
+• [[additionalIndentOfEachLine]] -- this will determine if the shape of the arrows is subtle or more pointy 
+
+However, Pete is also a minimalist, so all that input will be in a single string of data.
+
+Note:
+• Left turn signs will consist of {{<}} and spaces only
+• Right turn signs will consist of {{>}} and spaces only
+
+Difficulty
+Easy
+
+Tags
+String manipulation, Loops, Logic, Ascii Art

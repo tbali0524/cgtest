@@ -1,0 +1,20 @@
+Rooks Movements
+
+https://www.codingame.com/training/easy/easy_com_rooks-movements
+https://www.codingame.com/contribute/view/1701a4ce6c9b0f767b9c5068a84331397f6f
+
+A contribution by Cr3aHal0
+
+In chess, the board is split in 8 rows and 8 columns. Considering the view of the game to be from the white side, the utmost top left cell is called <<a8>> and the utmost top rightcell is called <<h8>>. Decreasing from top to bottom of the chessboard, the utmost down left cell is then called <<a1>> and the utmost down right cell is called <<h1>>. 
+
+A rook is a piece than can move as many cells as it want to vertically or horizontally. A rook can't go past an ally unit but can replace an opponent one.
+
+Each position must be a valid chessboard-position notation (Algebraic notation) such that it is identified by a {{column}} identifier from <<a>> to <<h>> and a {{row}} identifier from <<1>> to <<8>>.
+
+Given a white rook and a set of chess pieces that can be yours (white) or not (black), print all available movements for the rook in the current configuration.
+
+Difficulty
+Easy
+
+Tags
+Conditions, Loops, Chess, Classic board games

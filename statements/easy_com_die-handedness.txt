@@ -1,0 +1,18 @@
+Die Handedness
+
+https://www.codingame.com/training/easy/easy_com_die-handedness
+https://www.codingame.com/contribute/view/732726cea8300c569e3033843533f6a9dcf1
+
+A contribution by tuna_in_cream
+
+According to Wikipedia (https://en.wikipedia.org/wiki/Dice):
+
+"Opposite sides of a modern die traditionally add up to seven, requiring the 1, 2, and 3 faces to share a vertex. The faces of a die may be placed clockwise or counterclockwise about this vertex. If the 1, 2, and 3 faces run counterclockwise, the die is called "right-handed". If those faces run clockwise, the die is called "left-handed"."
+
+You are given a die. You need to decide if it is {{right-handed}} or {{left-handed}}. If opposite sides don't add up to 7, we will say that the die is {{degenerate}}.
+
+Difficulty
+Easy
+
+Tags
+Geometry, Mathematics, Determinant, Linear Algebra, Cube

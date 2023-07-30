@@ -1,0 +1,17 @@
+Minesweeper
+
+https://www.codingame.com/training/medium/medium_com_minesweeper
+https://www.codingame.com/contribute/view/286f6caa2b01e5233030e630a94e6cc0bc0
+
+A contribution by VilBoub
+
+Find the hidden mines in the grid, knowing that :
+{{.}} means no danger in any of the 8 spaces around that spot.
+{{n}} means there are exactly {{n}} mines hidden in the 8 spaces around that spot.
+{{?}} means we don't know anything about that spot.
+
+Difficulty
+Medium
+
+Tags
+Conditions, Loops, 2D array

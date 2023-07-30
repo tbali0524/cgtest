@@ -1,0 +1,43 @@
+Chebyshev Orbiting
+
+https://www.codingame.com/training/medium/medium_com_chebyshev-orbiting
+https://www.codingame.com/contribute/view/7676d22a5b0dadd36eb85d0396919bf1ac8f
+
+A contribution by xoposhiy
+
+Spaceship is orbiting the planet in the <<Discrete Chebyshev 2D Space>>. By given initial spaceship position and velocity predict its position after [[time]] seconds.
+
+<<Physics>>
+
+Planet has its center in {{(0, 0)}}. All points with Chebyshev distance to planet center less than or equal to [[radius]], belongs to planet. Chebyshev distance between (x1, y1) and (x2, y2) is Max(Abs(x1 - x2), Abs(y1 - y2))
+
+Spaceship works as follows:
+
+1. Every turn spaceship moves if it is not crashed yet: velocity vector is added to ship position.
+2. Spaceship crashed if its final position has chebyshev distance to planet center less than or equal to [[radius]].
+3. Chebyshev gravity is applied. Denote ship position as ([[x]], [[y]]) and velocity as ([[vx]] [[vy]]). Then [[vx]] (and [[vy]]) is decreased by 1 if [[x]] > 0 (respectively [[y]] > 0) and increased by 1 if [[x]] < 0 (respectively [[y]] < 0).
+
+<<Sample>>
+Spaceship coordinates sequence after simulation for planet radius 1 and start velocity (2, 0):
+
+(0; −3) → (2; −3) → (3; −2) → (3; 0) → (2; 2) → (0; 3) → (−2; 3) → (−3; 2) → (−3; 0) → (−2; −2) → ...
+
+See image with this trajectory below.
+```
+.........
+....0.1..
+..9....2.
+...PPP...
+.8.PPP.3.
+...PPP...
+.7....4..
+..6.5....
+.........
+```
+P — is planet point, number — ship position after that number of seconds. Center of the planet is at (0; 0)
+
+Difficulty
+Medium
+
+Tags
+Simulation, Coordinates, Memoization

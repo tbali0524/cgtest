@@ -1,0 +1,15 @@
+Reverse Minesweeper
+
+https://www.codingame.com/training/easy/easy_com_reverse-minesweeper
+https://www.codingame.com/contribute/view/6612a252d91dd0d788cbec7f8473d8f3a3eb
+
+A contribution by [CG]Gaspar
+
+Given a grid of mine locations (where {{.}} are empty cells and {{x}} are mines), your goal is to display the grid like it appears if you win the game.
+Each position is a digit indicating the number of mines bordering it (including diagonals). The mines ({{x}}) don't appear anymore. Mines and positions that do not border any mines both appear as empty cells ({{.}}).
+
+Difficulty
+Easy
+
+Tags
+2D array

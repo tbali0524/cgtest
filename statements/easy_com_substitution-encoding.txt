@@ -1,0 +1,31 @@
+Substitution Encoding
+
+https://www.codingame.com/training/easy/easy_com_substitution-encoding
+https://www.codingame.com/contribute/view/68671da078c49c9439d756b398b3ba16c29e
+
+A contribution by Dana3l
+
+You want to easily encode and decode messages with a simple and personalized method. To do so, you will use a substitution method.
+
+The principle is simple, you have a comparison table like this one:
+
+{{A B}}
+{{C D}}
+
+and a message to encode written with the characters available in your table:
+
+{{CBA}}
+
+You are going to take each of the characters that compose the message and replace them by its position in the table:
+
+C => 10 (row 1 column 0)
+B => 01 (row 0 column 1)
+A => 00 (row 0 column 0)
+
+The message becomes: {{100100}}
+
+Difficulty
+Easy
+
+Tags
+String manipulation, Strings, 2D array, Encoding

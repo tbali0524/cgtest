@@ -1,0 +1,26 @@
+Word Search for Programmers
+
+https://www.codingame.com/training/easy/easy_com_word-search-for-programmers
+https://www.codingame.com/contribute/view/48196c74b8275a9c68e62820156ad77a98bbf
+
+A contribution by Lisa-Has-Ideas
+
+Word Search is a type of puzzle that asks the player to search for various words within a grid of letters.
+They can be vertical, horizonal, backwards, diagonal, etc.
+If you are unfamiliar with it, see banner image and/or https://en.wikipedia.org/wiki/Word_search
+
+But as a computer geek, that doesn't interest you; you want to program a way to find those words instead.
+
+Input will be a square grid of [[size]] lines (each line is [[size]] letters long), followed by all the words to find.
+
+Output the same square grid but hide any letters that aren't included in those words.
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+NOTE: If you enjoy this puzzle, see this similar one: https://www.codingame.com/training/medium/hidden-word
+
+Difficulty
+Easy
+
+Tags
+String manipulation, 2D array, Loops, Conditions

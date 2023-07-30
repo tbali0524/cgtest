@@ -1,0 +1,15 @@
+Divide the factorial
+
+https://www.codingame.com/training/medium/medium_com_divide-the-factorial
+https://www.codingame.com/contribute/view/375691898c0eac13ede9137f7cdc2c49d69
+
+A contribution by Paradox
+
+Given two integers [[A]] and [[B]], you have to find the largest power of A that divides B! with no remainder.
+You have to find the largest integer value of X such that A^X divides B! where B! = B × (B-1) × (B-2) × … × 2 × 1.
+
+Difficulty
+Medium
+
+Tags
+Primes, Arithmetic

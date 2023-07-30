@@ -1,0 +1,43 @@
+3D printer
+
+https://www.codingame.com/training/medium/medium_com_3d-printer
+https://www.codingame.com/contribute/view/7702b4597b496e6b3310e47f833855a42c10
+
+A contribution by Miki09
+
+You get 3 pictures made by # in sizes [[width]]*[[height]], [[length]]*[[height]] and [[width]]*[[length]]. The first one is the front view, the second one is the view from the right side and the third one is the view from the top. You need to print the 3D model based on the pictures you get; one by one layer separated by two dashes from bottom to the top layer and two dashes at the end.
+
+<<Example Input>>
+`2    // width
+5    // height
+1    // length
+##   // start of front view, always height number of lines
+##
+##
+##
+##
+#    // start of right side view, always height number of lines
+#
+#
+#
+#
+##    // start of top view, always length number of lines`
+So from these inputs, your code should guess what is the 3D model. In the example it's a block 2x5x1.
+<<Example Solution>>
+`##    // the lowest layer
+--
+##
+--
+##
+--
+##
+--
+##    // the highest layer
+--`
+If the three pictures cannot define some parts of the model as solid or hollow, assume these parts are solid, so that output '#' to fill-in.
+
+Difficulty
+Medium
+
+Tags
+Strings, String manipulation, 3D

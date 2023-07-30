@@ -1,0 +1,31 @@
+Cosmic Love
+
+https://www.codingame.com/training/easy/easy_com_cosmic-love
+https://www.codingame.com/contribute/view/5480bbf0bf036d733e2fad393d9db7add821
+
+A contribution by UnicornP
+
+<<««Prompt»»>>
+Gary is attracted to Alice. It is almost as if there is some mysterious force pulling them together. However, Alice is known for viciously tearing apart potential suitors that get too close. In fact, Alice is currently undergoing such a temper tantrum, and Gary must get away immediately lest he be torn asunder! Help Gary find the closest planet to land his spaceship on that will not be ripped apart by Alice's gravitational field.
+
+<<««Details»»>>
+[[N]] planets, including {{Alice}}, are listed with names [[name]], radii [[r]], masses [[m]], and current distances [[c]] from {{Alice}}. The <<Roche Limit>> between a planet and {{Alice}} defines the distance below which a planet would disintegrate due to Alice's gravitational field. Determine the closest of the [[N]] planets that will not disintegrate.
+
+<<««Math»»>>
+Some equations reminiscent of high school physics:
+    Alice's Roche Limit = [[rA]] * <<cube-root>> ( {{2}} * [[dA]] / [[dP]] )
+        where [[rA]] is the radius of Alice,
+        [[dA]] and [[dP]] are the densities of Alice and a planet.
+    Volume of sphere [[V]] = {{4/3}} * {{pi}} * [[r]]^{{3}}
+    Density [[d]] = [[m]] / [[V]]
+
+Model each planet as a sphere of uniform density. Distances are measured between centers of the spheres. For simplicity's sake for defining the "closest" planet, assume that all celestial bodies are positioned in a line, with {{Alice}} and Gary at one end of the line.
+
+<<««Disclaimer»»>>
+This puzzle does not reflect reality and should be kept away from children under the age of 90. If you experience strange sensations of being ripped apart from within after solving this puzzle, call your doctor right away.
+
+Difficulty
+Easy
+
+Tags
+Physics, Mathematics

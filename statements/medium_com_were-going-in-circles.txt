@@ -1,0 +1,18 @@
+We're going in circles!
+
+https://www.codingame.com/training/medium/medium_com_were-going-in-circles
+https://www.codingame.com/contribute/view/76505b834d60f17d3912b0dbf49530a14215
+
+A contribution by BartholomewIII
+
+There is a [[w]] by [[h]] grid of arrows represented by: "{{^}}", "{{>}}", "{{v}}", "{{<}}". Empty cells are represented by periods: "{{.}}".
+
+A <<loop of arrows>> is a set of arrows that loop back on themselves when moving from one arrow to the <<closest>> arrow in the direction that it points. If an arrow points outside the grid, it is not part of a loop.
+
+The goal is to count the [[number_of_loops]] in the grid.
+
+Difficulty
+Medium
+
+Tags
+graph traversal

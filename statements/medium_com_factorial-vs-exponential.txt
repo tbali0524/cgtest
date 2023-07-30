@@ -1,0 +1,15 @@
+Factorial vs Exponential
+
+https://www.codingame.com/training/medium/medium_com_factorial-vs-exponential
+https://www.codingame.com/contribute/view/4593ea1b12858d51a574718e53594744059
+
+A contribution by ValNykol
+
+For each of the given numbers [[A]], find the smallest integer N, such that  <<A^N < N!>> , where  <<N! = 1 * 2 * ... * N>>
+The numbers given can have up to 2 digits after decimal point.
+
+Difficulty
+Medium
+
+Tags
+Mathematics

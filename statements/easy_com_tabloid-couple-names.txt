@@ -1,0 +1,42 @@
+Tabloid Couple-Names 💕
+
+https://www.codingame.com/training/easy/easy_com_tabloid-couple-names
+https://www.codingame.com/contribute/view/464135c71022fb3cb7616f5b58253359f38dc
+
+A contribution by Lisa-Has-Ideas
+
+When two famous people get together and form a romantic couple, the Tabloids love to write about them and their adventures, scandals, and relationship drama.
+
+
+The reporters combine (smoosh) their two individual names together to create a <<Couple-Name>> -- just for fun and to make it easier to write about them.  Examples: 
+`💕 Ben + Jennifer = Bennifer
+💕 Brad + Angelina = Brangelina
+💕 Heidi + Spencer = Speidi`
+Given the following rules, print out options for each couple.
+
+<<RULES:>>
+The overall process is: 
+Smoosh a left-substring (or whole name) of one person together with a right-substring (or whole name) of the other person, in such a way that there is at least 1 <<overlapping>>-letter (aka shared letter, aka common letter).
+➤ Comparisons aren't case-sensitive.
+➤ No spelling changes other than “sub-stringing”
+➤ Must contain at least one letter from each person, that isn't part of the overlapping-letter(s).
+➤ Must not be shorter than the shortest individual-name.
+➤ Cannot be the same as either of the individual names because that's just silly
+
+Only Max Overlapping:
+➤ Include only Couple-Names with the <<most>> overlapping-letters <<possible>>.  For example, if there is a Couple-Name that has 2 overlapping-letters, don't show others that have less than 2 overlapping-letters.
+
+Formatting:
+➤ A Couple-Name has only the first letter capitalized, regardless of the capitalization in the individual names.
+➤ Where there are multiple options, list them alphabetically on the same line separated by spaces.
+➤ If no options, print {{NONE}}
+
+
+Sorry I can't help more, but Keanu Reeves and I are headed out on some excellent "Lisanu" adventures, on a luxury yacht in Cannes.
+Or maybe Eddie Mark Jacobson and I (“Eddisa”) will have a Big Night Out on the Gold Coast.
+
+Difficulty
+Easy
+
+Tags
+String manipulation, Loops

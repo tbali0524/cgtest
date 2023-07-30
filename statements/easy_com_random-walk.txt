@@ -1,0 +1,11 @@
+Random Walk
+
+https://www.codingame.com/training/easy/easy_com_random-walk
+https://www.codingame.com/contribute/view/9124738b5d94a200047242960c2e1ac7432f
+
+A contribution by Westicles
+
+Starting at coordinates (0,0) with D[0]=0, a random direction generator D[n+1] = (a*D[n]+b) mod m tells you which direction to go next (where D mod 4=0,1,2,3 indicates Up, Down, Left, Right).  How many steps does it take to get back to (0,0)?
+
+Difficulty
+Easy

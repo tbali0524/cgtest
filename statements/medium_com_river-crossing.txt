@@ -1,0 +1,46 @@
+River Crossing
+
+https://www.codingame.com/training/medium/medium_com_river-crossing
+https://www.codingame.com/contribute/view/76758846c9b198dbc42714ff228933a2363a
+
+A contribution by Wontonimo
+
+There is a farmer, a wolf, a goat and a cabbage.
+They need to cross a river with the following restrictions:
+
+* The farmer can move from one side to the other freely, and can optionally carry one other entity
+* The wolf can’t be on the same side with the goat without the farmer
+* The goat can’t stay at the same side with the cabbage without the farmer
+
+The river has two sides <<L>> for Left and <<R>> for Right.
+
+You are given the initial positions and the target positions, in the following order <<Farmer, Wolf, Goat, Cabbage>>.  For example you may be given the positions like so
+
+<<L L L R>> which would mean that the farmer, wolf, and goat are on the left side and the cabbage is on the right side.
+
+Without breaking the restrictions, print out the minimum legal states starting at the initial state to get to the target state and including the target state.
+
+<<FOR MULTIPLE SOLUTIONS>>
+If there are multiple solutions with the same length, <<return the one that is alphabetically first>>.
+
+<<Example Input>>
+`L L L R
+L L L L`
+<<Desired Output>>
+`L L L R
+R L R R
+L L R L
+R L R L
+L L L L`
+<<Explanation>>
+`L L L R // Starting State
+R L R R // Farmer takes goat to right
+L L R L // Farmer takes cabbage left
+R L R L // Farmer returns to goat
+L L L L // Farmer takes goat to left`
+
+Difficulty
+Medium
+
+Tags
+BFS, Constraint Propagation

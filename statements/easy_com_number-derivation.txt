@@ -1,0 +1,17 @@
+Number derivation
+
+https://www.codingame.com/training/easy/easy_com_number-derivation
+https://www.codingame.com/contribute/view/5650b4a3c4dc2776e2693244106a3a7e6224
+
+A contribution by nicola
+
+You have to calculate the derived number of a given positive integer, following these rules:
+If a number is prime p, p′=1.
+If a number is the product n×m, (n×m)′=n′×m+n×m′.
+Yes, it follows almost all the traditional rules of the derivation, including 1′=0 and (p^n)′=n×p^(n−1) if p is prime; but not (p+q)′=p′+q′ for all p and q.
+
+Difficulty
+Easy
+
+Tags
+Mathematics, Arithmetic

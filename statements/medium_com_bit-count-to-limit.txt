@@ -1,0 +1,24 @@
+Bit count to limit
+
+https://www.codingame.com/training/medium/medium_com_bit-count-to-limit
+https://www.codingame.com/contribute/view/482951b3c1e7c0adb69a57ca18f2b2c3ec4c
+
+A contribution by DPAmar
+
+The goal is really simple. Given a number [[n]], count how many 1s are used to write all binary integers from 0 to [[n]] (inclusive)
+
+For example, [[n]] = 5
+0....000...0
+1....001...1
+2....010...1
+3....011...2
+4....100...1
+5....101...2
+
+Total : 1+1+2+1+2 = 7
+
+Difficulty
+Medium
+
+Tags
+Mathematics

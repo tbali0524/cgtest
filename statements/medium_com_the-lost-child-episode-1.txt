@@ -1,0 +1,14 @@
+The lost child.Episode-1
+
+https://www.codingame.com/training/medium/medium_com_the-lost-child-episode-1
+https://www.codingame.com/contribute/view/5099711430c90610375e28adc21ac469179b
+
+A contribution by jrke
+
+The 12 year old child has lost his mother and now he wants to meet his mother.Somehow child navigated to his mother but he wanna know exact shortest distance and in order to help him you have to tell him exact shortest distance .each block =10km
+
+Difficulty
+Medium
+
+Tags
+Pathfinding, 2D array, BFS

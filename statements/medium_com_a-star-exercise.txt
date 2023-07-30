@@ -1,0 +1,23 @@
+A-star exercise
+
+https://www.codingame.com/training/medium/medium_com_a-star-exercise
+https://www.codingame.com/contribute/view/9142d2fb6502d5137ee80d977027bd0bd77
+
+A contribution by aCat
+
+You are given an undirected graph with weighted edges, a [[start]] and a [[goal]] node, and for each node the heuristic value, which is the estimated distance to the end. Your task is to trace a canonical A* execution (see https://en.wikipedia.org/wiki/A*_search_algorithm ) by computing a shortest path from the start to the goal.
+
+We recall that the A* algorithm will rely on three values for each node [[v]]:
+- the {{g-value}}, which is the minimum distance from the [[start]] to [[v]];
+- the {{h-value}}, which is an estimation of the minimum distance from [[v]] to the [[goal]] and is given by the heuristic provided in input;
+- the {{f-value}}, which is the sum of the g-value and h-value.
+
+There is always a path between the start and the goal. The given heuristic is admissible and consistent, meaning that the A* algorithm will always find a shortest path from the start to the goal.
+
+When some nodes have the same f-value, the one with the smaller identifier is considered first.
+
+Difficulty
+Medium
+
+Tags
+A*, Pathfinding, Heuristic search

@@ -1,0 +1,23 @@
+Railway Station Clock
+
+https://www.codingame.com/training/medium/medium_com_railway-station-clock
+https://www.codingame.com/contribute/view/683855f156cbfdf8357c1018ed841af5fb7d
+
+A contribution by hypers
+
+The old clock in the railway station is too ancient to be refurbished but too nice to be replaced with a modern one.
+But it is a little slow. To be precise, <<every four minutes it goes behind by one more second>>.
+
+The clock is stable in its delay. In addition the station administrator adjusts the clock <<daily at 8AM>>.
+So it's not that bad.
+But still all the train events recorded in the official station log are timewise wrong.
+
+You need to create a script to recover <<true times>> having <<times observed from the station clock>> as input.
+
+Please note, you don't need to worry about fractions of a second (all tests are guaranteed to have whole seconds for both <<observed>> and <<true>> times).
+
+Difficulty
+Medium
+
+Tags
+Arithmetic, Time, Clock, AM/PM

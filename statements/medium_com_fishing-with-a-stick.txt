@@ -1,0 +1,41 @@
+Fishing With A Stick
+
+https://www.codingame.com/training/medium/medium_com_fishing-with-a-stick
+https://www.codingame.com/contribute/view/2109e55b0fe5f007b2f9bed0a3f85a7a1b3a
+
+A contribution by mr.x
+
+Your goal is to count how many fish you have caught.
+You are fishing in a water with an altitude of [[H]]
+and a length of [[W]] and a current
+pointing towards [[currentD]] with a very cheap fishing rod,
+It is broken by touching any garbage, but at least it is used to catch fish.
+
+<<INFORMATION: >>
+<<*>> ".": water
+<<*>> ">": a fish that goes to the right
+<<*>> "<": a fish that goes to the left
+<<*>> "|": fishing rod
+<<*>> "C": hook. If it is just below the fishing rod or if it is the first "C" in the first row and there is no "|", it is considered to be the fishing rod, otherwise it is garbage.
+<<*>> any other character: garbage
+
+<<RULES:>>
+<<1. Fishing rod:>>
+<<*>> Fish can touch any part of your fishing rod to be caught
+<<*>> If the trash touches the fishing rod it breaks (you can not fish anymore)
+<<*>> If garbage and fish touch the fishing rod at the same time, fish is caught (and then the rod breaks)
+<<*>> There always has to be a hook
+
+<<2. Fish:>>
+<<*>> Fish can move in both directions regardless of the current
+<<*>> If two fish collide with each other, they get stuck (they stop moving and disappear)
+<<*>> The fish die when colliding with the garbage (the fish and garbage stop moving and disappear)
+
+<<3. Garbage:>>
+<<*>> Trash moves in the direction of the current
+
+Difficulty
+Medium
+
+Tags
+Strings, String manipulation

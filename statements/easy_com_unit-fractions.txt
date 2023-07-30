@@ -1,0 +1,27 @@
+Unit Fractions
+
+https://www.codingame.com/training/easy/easy_com_unit-fractions
+https://www.codingame.com/contribute/view/4615b316f49f06697a39f90e3465117be9e7
+
+A contribution by java_coffee_cup
+
+For every fraction in the form 1/[[n]] (where n is an integer > 0), we can always find two positive integers [[x]] and [[y]] such that:
+
+<<1/n = 1/x + 1/y>>
+
+There can be one or more pairs of [[x]] and [[y]] fitting the above equation.
+
+
+<<Example>>
+Given n = 2
+1/2 = 1/6 + 1/3
+1/2 = 1/4 + 1/4
+
+
+Could you list out all these equations for a given n?
+
+Difficulty
+Easy
+
+Tags
+Number theory, Data Types

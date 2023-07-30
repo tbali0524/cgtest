@@ -1,0 +1,29 @@
+Futoshiki Solver
+
+https://www.codingame.com/training/medium/medium_com_futoshiki-solver
+https://www.codingame.com/contribute/view/4877c276e71764cfcf5f1f84ad08566d7aa8
+
+A contribution by Sundiver
+
+Futoshiki is a Japanese numeric logic puzzle similar to the more popular Sudoku.
+See https://en.wikipedia.org/wiki/Futoshiki
+Like in Sudoku, in a Futoshiki of size n every row and every column must contain every number from 1 to n.
+Unlike Sudoku there may be greater than / less than relations between cells.
+
+For a n×n Futoshiki the input will be 2n-1 lines of digits {{0..n}} ({{0}} meaning empty), and either spaces or inequality constraints {{^}} {{v}} {{<}} {{>}} separating the digits of length 2n-1.
+
+{{^}} meaning the cell below the symbol has a higher value than the one above the symbol and so on.
+
+
+<<Example:>> A 2×2 Futoshiki
+```0>0
+v ^
+0<0```having the solution:
+```21
+12```
+
+Difficulty
+Medium
+
+Tags
+Backtracking

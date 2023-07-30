@@ -1,0 +1,25 @@
+Langton's ant
+
+https://www.codingame.com/training/medium/medium_com_langtons-ant
+https://www.codingame.com/contribute/view/171c3b7b3b604c3b796f0f4a6b0d789f356
+
+A contribution by Delgan
+
+Langton's ant is a turing machine built on simple rules:
+• Consider a grid of [[W]]x[[H]] squares, each of which can be either black {{#}} or white {{.}}.
+• The ant starts at the position ([[x]], [[y]]) of the grid, the upper left square coordinates are (0,0).
+• The ant is facing one of the following directions ({{N}} = up, {{E}} = right, {{S}} = down, {{W}} = left).
+• The ant moves [[T]] turns. For each turn:
+　　- it rotates 90° left if it is on a white square, 90° right otherwise.
+　　- it inverts the color of the square it is located on.
+　　- it moves 1 square forward in its current direction.
+
+From an arbitrarily coloured grid and the ant's initial state, you have to print the grid state after [[T]] turns.
+
+On the given test cases, the ant never has to go out of bounds.
+
+Difficulty
+Medium
+
+Tags
+State machine

@@ -1,0 +1,14 @@
+Locked in gear
+
+https://www.codingame.com/training/medium/medium_com_locked-in-gear
+https://www.codingame.com/contribute/view/1467cb75a0454844c499c794b6f6cd8c5fb2
+
+A contribution by stim
+
+A number of gears are placed on a grid. The first gear is driven in a clockwise direction. Your goal is to determine the turning direction of the last gear.
+
+Difficulty
+Medium
+
+Tags
+Graphs, DFS, BFS

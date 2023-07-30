@@ -1,0 +1,42 @@
+Is that a possible word?
+
+https://www.codingame.com/training/easy/easy_com_is-that-a-possible-word-ep1
+https://www.codingame.com/contribute/view/5318ba53fc22e76dd451416fcfea488b4b25
+
+A contribution by Tee-Resa
+
+You are an examiner for different languages. Every year you get a lot of texts and should check if the words are in the language. Since you are lazy but highly motivated, you decide to automate this process.
+
+Fortunately, the languages are pretty simple. So you want to build a state machine for every language, which can tell you quickly whether a word is in the language or not.
+
+Now you have already built the languages, but you don't want to write code for each language individually. So now you have to come up with a flexible system that accepts your language and uses it to build a functioning machine.
+
+<<Tip:>> draw the machine to better understand what is meant by status and transitions
+<<Hint:>> https://en.wikipedia.org/wiki/Deterministic_finite_automaton
+
+
+<<The following example refers to the example at the bottom (first test)>>
+
+Just the necessary information from the input:
+[[Word]]: "abc"
+[[states]] : A B
+[[startState]] : A
+[[endState]] : B
+[[Transitions]] :
+A a B
+A c B
+B b A
+
+You start in <<state>> A ([[startState]]). The first character found is an 'a'. According to the corresponding <<transition>> ( A a B ), you move to <<state>> B.
+
+You are now in <<state>> B. The next character found is a 'b'. According to the corresponding <<transition>> ( B b A ), you move to <<state>> A.
+
+Back in <<state>> A. The last character found is a 'c'. According to the corresponding <<transition>> ( A c B ), you move to <<state>> B again.
+
+The word is over, the final <<state>> is B. This is in the set of the allowed <<final states>> ([[endStates]]), so the [[word]] "abc" is valid, and you print <<"true">>.
+
+Difficulty
+Easy
+
+Tags
+State machine

@@ -1,0 +1,30 @@
+Object Insertion
+
+https://www.codingame.com/training/easy/easy_com_object-insertion
+https://www.codingame.com/contribute/view/6903664b4eb431b61a5800580a584b63a768
+
+A contribution by irmo322
+
+You have an object to insert into a partially filled 2D grid.
+
+You need to count the number of ways the object can fit into the empty areas of the grid.
+If there is one and only one way, you also must display the grid with the inserted object.
+Flips and rotations are NOT allowed on the object.
+
+The object is represented as a series of strings, in which dots "{{.}}" are empty areas and stars "{{*}}" are physical parts of the object.
+
+<<Example:>>
+`*.
+**
+.*`
+The grid is provided in a similar fashion, dots "{{.}}" are empty areas and number signs "{{#}}" are filled areas of the grid.
+
+Notes:
+- The representation of the object never presents empty rows or columns.
+- The dimensions of the object are always less than or equal to the dimensions of the grid.
+
+Difficulty
+Easy
+
+Tags
+2D array, Loops

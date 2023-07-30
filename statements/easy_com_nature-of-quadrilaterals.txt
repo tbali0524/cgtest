@@ -1,0 +1,20 @@
+Nature of quadrilaterals
+
+https://www.codingame.com/training/easy/easy_com_nature-of-quadrilaterals
+https://www.codingame.com/contribute/view/183a96dd151d7e7b1c563816338ee2f6baa
+
+A contribution by nicola
+
+You have to print the nature of the quadrilaterals whose vertices’ coordinates are given.
+The nature can be:
+* nothing, in which case you should write "quadrilateral",
+* parallelogram (opposite sides are parallel to each other),
+* rhombus (all four sides are equal),
+* rectangle (all four angles are right) or
+* square (it is a rectangle and a rhombus).
+
+Difficulty
+Easy
+
+Tags
+Mathematics, Trigonometry, Geometry, Strings

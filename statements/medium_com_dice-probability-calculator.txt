@@ -1,0 +1,31 @@
+Dice probability calculator
+
+https://www.codingame.com/training/medium/medium_com_dice-probability-calculator
+https://www.codingame.com/contribute/view/1614ea78db6bba77b7b249a1210f201d22ad
+
+A contribution by Zorg1
+
+Each Friday, you play the famous 'Fix your Dungeon' RPG with friends. You'd like to optimize your character: you need to know the probability of success of each test involving dice throws.
+
+Your program takes in input an expression (possibly with dice throws) and must print all possible outcomes along with their probabilities.
+
+The expression is an arithmetic expression <<with parentheses>> and the following operators, from highest to lowest precedence:
+{{*}} multiplication
+{{+}} and {{-}} addition and subtraction
+{{>}} greater-than comparison: evaluates to 1 if true, 0 if false
+
+The operands are one of:
+[[n]]: a decimal positive integer
+{{d}}[[n]]: a 'd' followed by a strict positive number, representing a die throw from 1 to [[n]] by a uniform distribution
+
+Examples of expressions:
+   {{3*2+5}} evaluates to 11 
+   {{d6}}: evaluates to an integer from 1 to 6, uniform
+   {{d6+d6}}: represents a double-dice throw
+   {{5>2}}: evaluates to 1
+
+Difficulty
+Medium
+
+Tags
+Probability

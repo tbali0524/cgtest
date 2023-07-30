@@ -1,0 +1,20 @@
+Couple's Picture-Frame
+
+https://www.codingame.com/training/easy/easy_com_couples-picture-frame
+https://www.codingame.com/contribute/view/54201edd9ae0d83c6f5cdbb1b6a8ccfcd3d3f
+
+A contribution by Lisa-Has-Ideas
+
+You manufacture custom picture-frames for couples, such that:
+~ the wife's name goes across the top and down the right side
+~ the husband's name goes down the left side and across the bottom
+
+Given the names of the [[wife]] and [[husband]] (or Partner#1 and Partner#2 if you prefer), draw the <<smallest>> frame possible.
+
+Note: Don't split a name, such that part is vertical and part is horizontal.
+
+Difficulty
+Easy
+
+Tags
+2D array, Mathematics, Ascii Art

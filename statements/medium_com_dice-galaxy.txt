@@ -1,0 +1,25 @@
+Dice galaxy
+
+https://www.codingame.com/training/medium/medium_com_dice-galaxy
+https://www.codingame.com/contribute/view/450412c15023b0b28fbe1d108c408e3ee267
+
+A contribution by field3
+
+<<story>>
+The first numbers were finally born in the universe.
+That is {{"1"}}.
+In order to keep the balance of the dice galaxy, 6 must be arranged according to the dice law.
+
+<<rule>>
+Net of cube is {{"#" or "1" or "6"}}.
+The blank value is {{"."}}.
+There is always one {{"1"}} in each net.
+When the net is made into a cube, {{“6”}} is placed on the opposite side of {{“1”}}.
+There may be multiple nets,each nets is not touch.
+
+<<The trouble is when {{"6"}} is in the wrong place. In that case, fix {{"6"}} to the correct place.>>
+
+Finally, display net that balanced {{"1" and "6"}}.
+
+Difficulty
+Medium

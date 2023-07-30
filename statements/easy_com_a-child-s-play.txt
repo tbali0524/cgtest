@@ -1,0 +1,26 @@
+A child's play
+
+https://www.codingame.com/training/easy/easy_com_a-child-s-play
+https://www.codingame.com/contribute/view/44234bafac22aabe005455fa4dead0136e9b
+
+A contribution by BLANC
+
+For several years now, in elementary schools, we have seen the emergence of a new educational model, playful programming. The students must program a small robot using assembly blocks. This allows them to get familiar with programming from an early age while exercising their logic and perception of space.
+
+You are a student at one such school. The purpose of the exercise is simple: your teacher has crafted a circuit for your robot, told you how many moves [[n]] the robot may make, and <<you must find out the final position of the robot at end of execution.>>
+
+To do this you need to know some principles of robot operation.
+– When the robot encounters an obstacle (represented by {{#}}) it turns right (on same operation) until there's no obstacle ahead anymore. Otherwise on an empty area (represented by {{.}}) it moves straight ahead.
+– The robot initially moves upwards.
+– The robot stops after [[n]] moves.
+– The top left corner represents the coordinates (0,0)
+– The robot's environment is represented as follows, where {{O}} is the robot's initial position:
+`...#........
+...........#
+............
+............
+..#O........
+..........#.`
+
+Difficulty
+Easy

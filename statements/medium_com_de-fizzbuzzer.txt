@@ -1,0 +1,23 @@
+De-FizzBuzzer
+
+https://www.codingame.com/training/medium/medium_com_de-fizzbuzzer
+https://www.codingame.com/contribute/view/104810944e6a0499eb8b7723eb331f4305ff
+
+A contribution by Dyd
+
+We have a mysterious machine, the FizzBuzzer, that implements an advanced version of <<FizzBuzz>>. 
+
+The FizzBuzzer receives a positive integer, and outputs a single string by joining the substrings produced by the rules below and in that order:
+- produce {{Fizz}} for each time the digit {{3}} appears in the integer;
+- produce {{Fizz}} for each time the integer can be divided by {{3}};
+- produce {{Buzz}} for each time the digit {{5}} appears in the integer;
+- produce {{Buzz}} for each time the integer can be divided by {{5}};
+- if no {{Fizz}} or {{Buzz}} has been produced so far, produce the original integer as the substring.
+
+Your task is to <<invert>> the behaviour of the FizzBuzzer. You will receive some strings, and for each string you should determine the smallest positive integer (up to 1000 inclusive), if any, that would produce that string when fed to the FizzBuzzer.
+
+Difficulty
+Medium
+
+Tags
+Arithmetic, Strings

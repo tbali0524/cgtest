@@ -1,0 +1,77 @@
+L-triominoes
+
+https://www.codingame.com/training/medium/medium_com_l-triominoes
+https://www.codingame.com/contribute/view/10509a029a1f550be3d71cf2971c3dc76cf87
+
+A contribution by VilBoub
+
+The goal of the puzzle is to apply the "divide and conquer" method in order to fill a square of side {{2}}^[[n]] with L-triominoes, this is always possible if the square has a hole at the start...
+You are given the value of [[n]] and the coordinates ([[x]],[[y]]) of the hole, your goal is to draw all the L-triominoes in the right places! 
+
+
+* <<Divide and conquer method :>>
+
+Divide the square into 4 equal squares.
+We are then reduced to 4 smaller problems identical to the previous one:
+- One of the squares already has a hole somewhere
+- Place a L-triomino in the center to create a new hole in the 3 other squares.
+
+<<Exemple>> :
+
+<<Test 2 : 4x4>>
+{{2}} : Level {{2}}, it's a {{4}}x{{4}} grid
+{{0}} {{1}} : The hole is in ({{0}},{{1}})
+
+`+--+--+--+--+
+|  |  |  |  |
++--+--+--+--+
+|##|  |  |  |
++--+--+--+--+
+|  |  |  |  |
++--+--+--+--+
+|  |  |  |  |
++--+--+--+--+`
+
+The hole is in top-left 2x2 square, so I have to solve 4 smaller problems...
+
+* top-left 2x2 square with initial hole:
+`+--+--+        +--+--+
+|  |  |        |     |
++--+--+   =>   +--+  +
+|##|  |        |##|  |
++--+--+        +--+--+`
+* top-right 2x2 square with new hole:
+`+--+--+        +--+--+
+|  |  |        |     |
++--+--+   =>   +--+  +
+|##|  |        |##|  |
++--+--+        +--+--+`
+* bottom-left 2x2 square with new hole:
+`+--+--+        +--+--+
+|  |##|        |  |##|
++--+--+   =>   +  +--+
+|  |  |        |     |
++--+--+        +--+--+`
+* bottom-right 2x2 square with new hole:
+`+--+--+        +--+--+
+|##|  |        |##|  |
++--+--+   =>   +--+  +
+|  |  |        |     |
++--+--+        +--+--+
+
+* join the 4 squares
++--+--+--+--+        +--+--+--+--+
+|  |  |  |  |        |     |     |
++--+--+--+--+        +--+  +--+  +
+|##|  |##|  |        |##|  |  |  |
++--+--+--+--+   =>   +--+--+  +--+
+|  |##|##|  |        |  |     |  |
++--+--+--+--+        +  +--+--+  +
+|  |  |  |  |        |     |     |
++--+--+--+--+        +--+--+--+--+`
+
+Difficulty
+Medium
+
+Tags
+Recursion, Ascii Art

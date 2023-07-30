@@ -1,0 +1,29 @@
+Suguru Solver
+
+https://www.codingame.com/training/medium/medium_com_suguru-solver
+https://www.codingame.com/contribute/view/267455f7148fcc689ba45367f760f3d71a584
+
+A contribution by Saur2000
+
+Suguru (also known as Tectonics) is a puzzle game similar to Sudoku. The puzzle is made up of different zones, called cages. Each cage is 1 to 6 cells and contains the digits from 1 to the size of the cage. I.e., a 2-cell cage contains the digits 1 and 2, and a 5-cell cage contains the digits 1 to 5. Adjacent cells, even diagonally, may never contain the same digit.
+
+To help visualize what a Suguru puzzle looks like, here is the puzzle from the first test case with added walls around the cages (with and without the cage identifiers):
+`
++--+--+--+--+  +--+--+--+--+
+|G  G4 G1 G |  |    4  1   |
++--+  +--+--+  +--+  +--+--+
+|R |G |B  B |  |  |  |     |
++--+--+--+  +  +--+--+--+  +
+|G |R  R4|B |  |  |    4|  |
++  +  +  +  +  +  +  +  +  +
+|G |R  R2|B |  |  |    2|  |
++  +--+  +  +  +  +--+  +  +
+|G3 G |R |B |  | 3   |  |  |
++--+--+--+--+  +--+--+--+--+
+`
+
+Difficulty
+Medium
+
+Tags
+Backtracking, Recursion, Logic

@@ -1,0 +1,31 @@
+the voucher
+
+https://www.codingame.com/training/medium/medium_com_the-voucher
+https://www.codingame.com/contribute/view/8267edd6987c0f3053f5e43e58d6ec37b908
+
+A contribution by nguyen.lam
+
+Given a voucher and a list of products, find the number of combinations of products that match with the exact amount of money available on the voucher.
+
+Rule : product can be picked 0, 1, 2 or 3 times.
+
+Output : print the number of different combinations of products.
+
+Example:
+Given the list of products:
+- bread 90
+- green salad 115
+- sugar 750g 95
+- rice 500g 299
+
+If I have an amount of 300 cents  on my voucher, I can only buy:
+1 bread + 1 green salad + 1 bag of sugar => 90 + 115 + 95 = 300 cents 
+So the answer is 1 combination of products.
+
+All prices are in cents .
+
+Difficulty
+Medium
+
+Tags
+Recursion, Backtracking

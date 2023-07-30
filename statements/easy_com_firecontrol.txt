@@ -1,0 +1,45 @@
+FireControl
+
+https://www.codingame.com/training/easy/easy_com_firecontrol
+https://www.codingame.com/contribute/view/7753bfe04219f5d2023bfccf04e824c82bee
+
+A contribution by ____Z_X_C____
+
+You need to cut down some trees in a forest fire to stop the fire from spreading. Write code to help you determine the least amount of trees to cut to contain the fire.
+
+The size of the forest is a <<6 by 6 grid>>.
+Fire can spread sideways as well as diagonally.
+To stop the fire, you need to remove <<two layers>> of trees.
+
+{{#}} Tree
+{{=}} Cut-down tree
+{{o}} Empty space
+{{*}} Fire
+
+If there are no trees that can be saved by blocking the fire, output: '{{JUST RUN}}'.
+if there is no fire, output: '{{RELAX}}'.
+
+<<Example>>
+
+Input:
+`*#####
+######
+######
+######
+######
+######`
+To be cut:
+`*12###
+345###
+678###
+######
+######
+######`
+Output: 
+`8`
+
+Difficulty
+Easy
+
+Tags
+Loops, Strings, Lists, Arrays, if/else

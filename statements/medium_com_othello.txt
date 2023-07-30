@@ -1,0 +1,22 @@
+Othello
+
+https://www.codingame.com/training/medium/medium_com_othello
+https://www.codingame.com/contribute/view/197975428b58b60d36caad230f1ddacb2c4
+
+A contribution by nicola
+
+You are given an Othello board and the colour and position of the next turn. You must answer if it’s legal or not.
+Othello is a two-player game. Player #1 begins and plays black ({{B}}), and player #2 plays white ({{W}}).
+{{B}} player can only put his token near a {{W}} token in order to make at least one {{BW+B}} "sandwich". A sandwich is defined as any number of tokens of one color consecutively in a line (either horizontally, vertically, or diagonally) which are surrounded on both sides by tokens of the opposite color. Once a sandwich is achieved, all the {{W}} tokens in this sandwich are turned into {{B}}. Repeat this as necessary for each valid sandwich in the eight directions (including diagonals).
+Examples (the played token in lower-case):
+* {{--bWWWBW}} yields {{---bBBBBW}}.
+* {{BBWWWwBW}} yieds {{BBWWWwWW}}.
+* {{-WWWw---}} is illegal if there is no sandwich elsewhere.
+* {{WWWbBW--}} is illegal too.
+Each player must play if possible. If not, he passes his turn.
+
+Difficulty
+Medium
+
+Tags
+Conditions, Strings, Classic board games

@@ -1,0 +1,16 @@
+7-segment scanner
+
+https://www.codingame.com/training/easy/easy_com_7-segment-scanner
+https://www.codingame.com/contribute/view/54354ed803d483bb0758c78f246b4cdad560
+
+A contribution by tutubalin
+
+Given an ASCII art representation of 7-segment display you need to convert it to a number.
+
+Note: number should be converted as is, including leading zeroes.
+
+Difficulty
+Easy
+
+Tags
+String manipulation, Ascii Art, Conditions, Loops

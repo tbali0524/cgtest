@@ -1,0 +1,70 @@
+Tiny Forest
+
+https://www.codingame.com/training/medium/medium_com_tiny-forest
+https://www.codingame.com/contribute/view/45094a56da559da9bc8948f676f5194e640f3
+
+A contribution by AdrienLB
+
+You have just inherited of a small plot of land of width [[W]] and height [[H]] with some trees on it. You want to grow a forest, but you have only {{1}} seed to plant. Find the maximum number of trees after {{33}} years you can have by planting the seed at the best place.
+
+<<Rules:>>
+-Seeds need 10 years to grow into a tree.
+-Trees produce 4 seeds around them after one year.
+-Trees may already be present on your land. They will also produce seeds after one year.
+
+<<Year 0>> : X is your one and only seed and Y is a tree already present.
+
+`.  .  .  .  .`        
+`.  X  .  .  .`
+`.  .  .  .  .`
+`.  .  .  .  .` 
+`.  .  .  .  Y`
+
+<<Year  1>> : Trees produce seeds after one year.
+
+`.  .  .  .  .`        
+`.  X  .  .  .`
+`.  .  .  .  .`
+`.  .  .  .  X` 
+`.  .  .  X  Y`
+
+<<Year  10>> : Your seed is now a tree. Congratulations!
+
+`.  .  .  .  .`        
+`.  Y  .  .  .`
+`.  .  .  .  .`
+`.  .  .  .  X` 
+`.  .  .  X  Y`
+
+<<Year 11>> : Your new tree starts to produce seeds after a year.
+
+`.  X  .  .  .`        
+`X  Y  X  .  .`
+`.  X  .  .  .`
+`.  .  .  .  Y` 
+`.  .  .  Y  Y`
+
+<<Year 12>> : The old trees in the corner also keep spreading.
+
+`.  X  .  .  .`        
+`X  Y  X  .  .`
+`.  X  .  .  X`
+`.  .  .  X  Y` 
+`.  .  X  Y  Y`
+
+<<Year 33>> : Finally you have a tiny forest of 21 trees!
+
+`Y  Y  Y  X  .`         
+`Y  Y  Y  Y  Y` 
+`Y  Y  Y  Y  Y` 
+`X  Y  Y  Y  Y`  
+`.  Y  Y  Y  Y`
+
+Maybe if you plant the seed at another place you can get a bigger forest in the end.
+When you will find the best place, you will need to give the number of trees you get after 33 years.
+
+Difficulty
+Medium
+
+Tags
+Optimization, 2D array, Simulation

@@ -1,0 +1,16 @@
+Personal Best
+
+https://www.codingame.com/training/easy/easy_com_personal-best
+https://www.codingame.com/contribute/view/69454025a9dddc845cea5b2ac0c0a2f5ec82
+
+A contribution by dangerworm
+
+The puzzle input provides one or more gymnasts' names and competition categories, for example "{{Simone Biles}}" and "{{bars}}", following which will be a set of competition records. Each record contains a gymnast's name and the points they scored on the bars, the balance beam, and for floor work. There may be more than one competition record per gymnast.
+
+The puzzle requires that you read through all the records, and find the highest score for each of the given gymnast/s in the given category/categories.
+
+Difficulty
+Easy
+
+Tags
+Arrays

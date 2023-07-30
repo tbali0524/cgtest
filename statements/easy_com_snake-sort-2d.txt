@@ -1,0 +1,19 @@
+Snake Sort 2D
+
+https://www.codingame.com/training/easy/easy_com_snake-sort-2d
+https://www.codingame.com/contribute/view/31134860d72083e491c7970e70bae5da6e774
+
+A contribution by Orace
+
+A lazy snake wants to eat all [[N]] apples in a 2D array of fixed size ({{100}}x{{100}}).
+
+The snake starts at the position {{0,0}} and, because it is a lazy snake, goes down to the first row that contains apples and traverses the row from left to right; it then goes down to the next row that contains apples and traverses this row from right to left, and so on, "snaking" its way down the array.
+
+You are given the [[name]] and the [[row]],[[column]] coordinates of each apple.
+What is the list of each apple’s name in the lazy-snake-eating-order?
+
+Difficulty
+Easy
+
+Tags
+Sorting

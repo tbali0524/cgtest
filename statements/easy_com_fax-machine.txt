@@ -1,0 +1,34 @@
+Fax machine
+
+https://www.codingame.com/training/easy/easy_com_fax-machine
+https://www.codingame.com/contribute/view/727472b05c0434c516e15490cd2a5b9c1bf2
+
+A contribution by Wontonimo
+
+An old compressed black and white fax transmission needs to be decompressed. The format of the compression is a series of numbers as such:
+
+The first number is the width of the decompressed image.
+The second number is the height of the decompressed image.
+The starting color is black.
+The third and remaining numbers are the number of pixels to draw from left to right, then top to bottom of the current color.  After that number of pixels is filled then the color swaps.
+
+The following fax
+
+`8
+3
+10 10 4`
+produces the following 8×3 output where "{{*}}" is black and "{{ }}" (space) is white, and "{{|}}" is added as the left and right border
+
+`|********|
+|**      |
+|    ****|`
+
+This puzzle was inspired by https://www.codingame.com/training/expert/music-scores which has a very similar encoding system.
+
+This encoding system is similar Modified Huffman Coding, which the earliest digital fax machines used.  See https://en.wikipedia.org/wiki/Modified_Huffman_coding
+
+Difficulty
+Easy
+
+Tags
+Compression

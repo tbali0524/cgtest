@@ -1,0 +1,25 @@
+Longest Increasing Subsequence
+
+https://www.codingame.com/training/medium/medium_com_longest-increasing-subsequence
+https://www.codingame.com/contribute/view/41694117d92520dafb0baa05b436017f19c8b
+
+A contribution by YuToutCourt
+
+Find the length of the longest increasing subsequence in a list.
+
+A subsequence is a sequence of numbers that can be derived from the original list by deleting some or all of the elements without changing the order of the remaining elements. An increasing subsequence is a subsequence in which the elements are in increasing order.
+
+For example, given the list [5, 2, 8, 6, 3, 6, 9, 7], the longest increasing subsequence is [2, 3, 6, 9] or [2, 3, 6, 7], both of which have a length of 4.
+
+Example:
+
+Input: [5, 2, 8, 6, 3, 6, 9, 7]
+Output: 4
+
+If you remove 5, 8 and 6 (the first one) you get the longest increasing subsequence.
+
+Difficulty
+Medium
+
+Tags
+Dynamic programming

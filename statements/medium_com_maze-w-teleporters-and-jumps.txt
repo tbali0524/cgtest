@@ -1,0 +1,29 @@
+Maze /w teleporters and jumps
+
+https://www.codingame.com/training/medium/medium_com_maze-w-teleporters-and-jumps
+https://www.codingame.com/contribute/view/3114040b3df0d30eb4230513d778d3f1a010b
+
+A contribution by PenguinPero
+
+Your goal is to find the minimum amount of steps from start to end in a maze with teleporters and jumps and return {{-1}} if it's not possible to reach the end.
+
+You will be given a maze with [[width]] x [[height]] cells
+With symbols:
+{{#}}: wall
+{{_}}: empty cell
+{{S}}: starting point
+{{E}}: ending point
+{{lowercase letter}}: teleporter entry
+{{UPPERCASE letter}}: teleporter exit
+{{<}}, {{>}}, {{^}}, {{v}}: jump pod
+
+How teleporters work: {{x}} -> {{X}} meaning when you step on the {{x}} you will be teleported to {{X}}. This does <<not>> mean when you walk over the {{X}} that you will be teleported to {{x}}.
+How jump pods work: when you step on it, you jump 2 steps in the direction of the sign. You also jump over walls, but there won't be any out of bounds jump pods. Example: stepping on the {{>}} will make you jump 2 steps to the right, {{<}} to the left, {{^}} up, and {{v}} down. Letter {{v}} will not be used as a teleporter.
+
+Allowed moves are Up, Down, Left and Right, no diagonal moves.
+
+Difficulty
+Medium
+
+Tags
+BFS, Maze

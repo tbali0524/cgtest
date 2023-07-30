@@ -1,0 +1,14 @@
+Sudoku Solver
+
+https://www.codingame.com/training/medium/medium_com_sudoku-solver
+https://www.codingame.com/contribute/view/4393445445cafed0765e4a8329a8096b1f9d
+
+A contribution by AllTheKingsMen
+
+Your program must output a solution to a 9x9 sudoku.  A sudoku is a Latin Square which has the numbers 1-9 in each row, column, and 3x3 square.
+
+Difficulty
+Medium
+
+Tags
+Backtracking

@@ -1,0 +1,21 @@
+Messed up mosaics
+
+https://www.codingame.com/training/easy/easy_com_messed-up-mosaics
+https://www.codingame.com/contribute/view/3380720534981b30f84a8382586494370a197
+
+A contribution by Gautzilla
+
+I ordered beautiful mosaics online.
+They were cheap, but they all came with the same issue: <<one single tile is not the good one>>.
+
+Can you help me locate the wrong tile in each mosaic?
+
+ Each mosaic is made of [[N]] * [[N]] <<tiles>>.
+Given a [[pattern]] of tiles that repeats to form a [[mosaic]] and the [[mosaic]] itself, you have to find the [[coordinates]] of the tile that doesn't fit the [[pattern]].
+The origin of the [[coordinates]] is at the top left corner of the [[mosaic]].
+
+Difficulty
+Easy
+
+Tags
+Loops, String manipulation, Pattern recognition

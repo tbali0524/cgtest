@@ -1,0 +1,28 @@
+Disordered First Contact
+
+https://www.codingame.com/training/easy/easy_com_disordered-first-contact
+https://www.codingame.com/contribute/view/1237ec3a86553ecee3b2dd53c81e9b0c03f5
+
+A contribution by Klemek
+
+Finally, we have received the first messages from aliens! Unfortunately, we cannot understand them because they have a very unique way of speaking.
+
+Here is how aliens encode their messages:
+- At each step of the encoding, they remove a bigger part from the beginning of the original message, starting from 1 character only. First, they take the first character, then 2 characters, then 3, etc...
+- Starting from an empty result string, they add each part taken from the original message alternatively at the end and at the beginning of the result string. They add the first part at the end, the second part at the beginning, the third part at the end, etc...
+
+<<Example>>
+{{abcdefghi}} becomes {{ghibcadef}}
+
+1) Take "a" from {{abcdefghi}}, add it at the end of an empty string -> {{a}}
+2) Take "bc" from {{bcdefghi}}, add it at the beginning of {{a}} -> {{bca}}
+3) Take "def" from  {{defghi}}, add it at the end of {{bca}} -> {{bcadef}}
+4) Take the remaining characters "ghi" and add it at the beginning of {{bcadef}} -> {{ghibcadef}}
+
+Your job here is to <<decode>> or <<encode>> the messages to discuss with aliens.
+
+Difficulty
+Easy
+
+Tags
+Encoding

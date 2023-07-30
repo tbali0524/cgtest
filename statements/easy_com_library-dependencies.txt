@@ -1,0 +1,25 @@
+Library dependencies
+
+https://www.codingame.com/training/easy/easy_com_library-dependencies
+https://www.codingame.com/contribute/view/439391d1962cacc9a04e76f932b8fc7f43816
+
+A contribution by Rafarafa
+
+You are given [[n_imp]] lines, each representing a library import in python style. Then, [[n_dep]] lines for the dependencies between libraries. Then, step by step you have to:
+
+<<(1)>> Assess if the code will run successfully as it is. If so, print {{Compiled successfully!}} and exit.
+
+<<(2)>> If the code doesn't run successfully, find where the first<<*>> error is located, print the line {{Import error: tried to import [[library1]] but [[library2]] is required.}}, and finally:
+
+<<(2.1)>> If it can be fixed by reordering the imports, find the only order such that at any time, among the possible importable libraries, the smallest (lexicographically) module is chosen.
+The format will be, the line: {{Suggest to change import order:}}, and then, for each library to import in the suggested order, the line {{import }}[[library]] (similar to the input imports).
+
+<<(2.2)>> If the error is not salvageable return the message {{Fatal error: interdependencies.}}.
+
+<<*>> The imaginary compiler will import the libraries in the order that they are given by the puzzle until it finds one that requires a library that was not previously imported.
+
+Difficulty
+Easy
+
+Tags
+Cycle detection, Dependency Graph, Kahn’s algorithm

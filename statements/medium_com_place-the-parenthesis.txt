@@ -1,0 +1,27 @@
+Place the Parenthesis
+
+https://www.codingame.com/training/medium/medium_com_place-the-parenthesis
+https://www.codingame.com/contribute/view/5753d127687bb80c9258064cf3c50064759f
+
+A contribution by dolmen1234
+
+Raphaël has a lot of homework, but he has other plans ! Help him solve his math problems so he can go play Fortnite with his friends ...
+
+His math teacher wants him to learn the priorities between operators and parenthesis, so he gave him some equations which are missing a couple of parenthesis.
+Each equation is simple : 
+- no unknown variable x
+- the right side contains only one number
+
+Place the couple of parenthesis in the correct place to make the expression true.
+
+Example : 
+1+3*5=20
+
+Solution :
+(1+3)*5=20
+
+Difficulty
+Medium
+
+Tags
+Mathematics, String manipulation, Parsing

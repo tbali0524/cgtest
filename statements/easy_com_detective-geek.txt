@@ -1,0 +1,30 @@
+Detective Geek
+
+https://www.codingame.com/training/easy/easy_com_detective-geek
+https://www.codingame.com/contribute/view/72335b555614a432c6281274f2873d9b247f
+
+A contribution by AdemDj12
+
+Detective Geek has a superpower of knowing when and where a crime is going to happen; unfortunately his superpower is encrypted, and he takes a lot of time decrypting it.
+Everytime he sees a crime using his superpower he starts writing on paper and the result looks like this:
+<<#*######*#*>>
+<<mayjul sepsep octapr octsep sepjun octjan>>
+
+As he is the one and only detective geek he wanted to write a program to help him decrypt faster.
+
+The [[first line]] represents binary: {{#*######*#*}} becomes {{10111111010}} 
+This equals the decimal number 1530, which means the time when the crime is going to happen is 15:30.
+
+The [[second line]] encodes the address where the crime will take place. Every word in the encrypted address represents a character in the real address.
+A word such as {{octapr}} can be split into two strings of length 3 {{oct}} and {{apr}} which are abbreviations for months <<october>> and <<april>>.
+Each month represents a number according to its order in the year. "jan" = 0, "feb"= 1 ,"mar"= 2 ... "dec" = 11
+The string of two months represents a two-digit base 12 number. So {{octapr}} is 93
+93 in base 12 becomes 111 in decimal
+and the final step is to look in ascci table to see what letter correspond to 111.
+so <<octapr>> -> "{{o}}"
+
+Difficulty
+Easy
+
+Tags
+Cryptography, Loops, Arrays, string

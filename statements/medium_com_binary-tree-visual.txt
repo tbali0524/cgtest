@@ -1,0 +1,18 @@
+Binary Tree Visual
+
+https://www.codingame.com/training/medium/medium_com_binary-tree-visual
+https://www.codingame.com/contribute/view/76319d5640b1225c3106c0749b17ff4c6cd2
+
+A contribution by pardouin
+
+You must output a visual of the given <<binary tree>> of size [[N]].
+A binary tree is a tree where each node has at most two children, called <<left child>> and <<right child>>.
+A <<value>> is stored in each node.
+Nodes have an id between 0 and [[N]] - 1 and are given in order.
+The id of the root is always 0.
+
+Difficulty
+Medium
+
+Tags
+Binary Tree

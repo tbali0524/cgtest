@@ -1,0 +1,57 @@
+Rock-Paper-Scissors War
+
+https://www.codingame.com/training/medium/medium_com_rock-paper-scissors-war
+https://www.codingame.com/contribute/view/4940955d9e8eead8ebede5770192f0cc4aaf
+
+A contribution by java_coffee_cup
+
+On a two-dimensional rectangular grid, a new civilization emerged.
+
+Within the grid terrain, each location is occupied by one of the five life forms: Rocks, Papers, Scissors, Lizards or Spocks. 
+
+The life forms have these code names:
+<<R>>ock (R)
+<<P>>aper (P)
+s<<C>>issors (C)
+<<L>>izard (L)
+<<S>>pock (S)
+
+They defeat each others in a fixed pattern:
+Scissors cuts Paper
+Paper covers Rock
+Rock crushes Lizard
+Lizard poisons Spock
+Spock smashes Scissors
+Scissors decapitates Lizard
+Lizard eats Paper
+Paper disproves Spock
+Spock vaporizes Rock
+Rock crushes Scissors
+
+Each day, different life forms occupying horizontally or vertically adjacent grid locations wage war.
+
+At the end of the day, the victor life form will occupy the adjacent location originally owned by the loser.
+
+`Day 0          Day 1
++---+---+---+  +---+---+---+
+| P | S | C |  | P | P | S |
++---+---+---+  +---+---+---+`{{A two-front war - Spock wins the war on the right but loses the war on the left.}}
+
+A life form on a location can have at most four fronts of war on the same day. If it wins at any frontier, it expands to the adjacent location of that front. At the same time if It is defeated by other life forms, it retreats from the original location, or just dies out.
+
+When two different life forms are defeating the life form on the same location at the same time, the two winners will fight each other again to decide who is the final winner to occupy the location at the end of the day.
+
+`Day 0          Day 1
++---+---+---+  +---+---+---+
+| P | S | L |  | P | L | L |
++---+---+---+  +---+---+---+`{{Another two-front war - Spock loses both wars at two frontiers. The winners fight again and Lizard wins.}}
+
+Your task is to determine the territory occupied by each life form after [[n]] days.
+
+👉 Life form design is borrowed from another puzzle https://www.codingame.com/training/easy/rock-paper-scissors-lizard-spock. Code reuse is possible.
+
+Difficulty
+Medium
+
+Tags
+Rock Paper Scissors, 2D array, Conditions

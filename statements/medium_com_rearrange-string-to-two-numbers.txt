@@ -1,0 +1,19 @@
+Rearrange string to two numbers
+
+https://www.codingame.com/training/medium/medium_com_rearrange-string-to-two-numbers
+https://www.codingame.com/contribute/view/2162d27dedeb03c3440c441be080b0d9fa8a
+
+A contribution by aropan
+
+You must rearrange the digits in the string [[S]] into two numbers [[A]] and [[B]] according to the following rules:
+0 ≤ [[A]], [[B]] ≤ 10^18;
+No leading 0's. "{{0}}" is a valid number; "{{000}}" is not;
+Minimize [[A]], then minimize [[B]].
+
+Source: BSUIR Open Programming Championship
+
+Difficulty
+Medium
+
+Tags
+String manipulation, Greedy algorithms

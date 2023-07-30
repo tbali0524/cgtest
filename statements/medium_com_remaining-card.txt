@@ -1,0 +1,23 @@
+Remaining Card
+
+https://www.codingame.com/training/medium/medium_com_remaining-card
+https://www.codingame.com/contribute/view/4918e4016b65ad2da84296c66ef10beaf762
+
+A contribution by java_coffee_cup
+
+You have [[N]] cards in a stack. Each card has a different number written on it.
+
+The top card is written 1. The second card is written 2. The third card is written 3...
+The sequence continues to the last card (the bottom card) which is written [[N]].
+
+Repeat the following operations until the stack of cards is reduced to 1 card:
+➀ throw away the top card
+② move the current top card to the bottom
+
+You got one last card in hand. What is the number written on it?
+
+Difficulty
+Medium
+
+Tags
+Sequences

@@ -1,0 +1,107 @@
+Buzzle
+
+https://www.codingame.com/training/easy/easy_com_buzzle
+https://www.codingame.com/contribute/view/755893190c6155ccfc4a18efa5b8900e7c1a
+
+A contribution by Edjy
+
+Buzzle is a funny little math game about multiples.
+Here were added some difficulty levels which add more rules and make it more complex.
+
+<<Buzzle - Level 1>>
+
+Players have to alternately enumerate numbers from [[a]] to [[b]], without forgetting to replace any number which ends with <<7>> or which is a multiple of <<7>> by "{{Buzzle}}". If a number verifies both rules (like 7 or 77), just replace it by "{{Buzzle}}"
+
+Example (from 34 to 43):
+34
+Buzzle (35 = 5×7)
+36
+Buzzle (37 ends with 7)
+38
+39
+40
+41
+Buzzle (42 = 6×7)
+43
+
+
+<<Buzzle - Level 2>>
+
+Same rules as level 1, but you also have to replace the numbers by "{{Buzzle}}" when the sum of their digits is a Buzzle. For example, 88 -> 8+8=16 -> 1+6=7 -> Buzzle
+
+Example (from 175 to 182):
+175
+Buzzle (176 -> 1+7+6 = 14 which is 2×7)
+Buzzle (177 ends with 7)
+Buzzle (178 -> 1+7+8=16 -> 1+6=7 which is 1×7)
+Buzzle (179 -> 1+7+9=17 which ends with 7)
+180
+181
+Buzzle (182 = 26×7)
+183
+
+
+<<Buzzle - Level 3>>
+
+Same rules as level 2, but it is not with <<7>>. You have to adapt the rules for the [[k]] numbers [[num]] provided in input. They are all in the range [2,9]. 1≤[[k]]≤8
+
+Example (from 13 to 26, numbers: 5,9):
+13
+Buzzle (14 -> 1+4=5)
+Buzzle (15 = 3×5)
+16
+17
+Buzzle (18 = 2×9  /  18-> 1+8=9)
+Buzzle (19 ends with 9  /  19 -> 1+9 = 10 = 2×5)
+Buzzle (20 = 4×5)
+21
+22
+Buzzle (23 -> 2+3 = 5)
+24
+Buzzle (25 = 5×5)
+26
+
+
+<<Buzzle - Level 4>>
+
+Same rules as level 3, but you have to apply them in base [[n]]. Continue to display numbers in decimal, but the "last digit" and "sum of the digits" rules are in base [[n]].
+For example, in base 18, with [[num]] = {{7}} : <<16>> is not a Buzzle, because it consists in one single digit (G if we chose {{0123456789ABCDEFGH}} as digits), so its sum is 16. <<17>> is not a Buzzle, because its last digit is {{H}} (17) and not <<7>>. <<48>> is <<2C>> in base 18, the sum is 2+C (2+12) = 14 which is a multiple of <<7>> ("multiple" rule doesn't change with the base).
+Warning : in base 18, 21 is not a multiple of 7 because it is the representation of 2*18 + 1 = 37. But 1H is a multiple of 7 because it represents the number 35 = 5×7.
+All the numbers provided in [[num]] are strictly inferior to [[n]].
+1≤[[k]]<[[n]]
+
+Example: in base 12, with 7 and 9
+[[n]] = 12
+[[k]] = 2
+[[num]] = [7, 11]
+[[a]] = 78
+[[b]] = 96
+
+78
+Buzzle (67 in base 12 which ends with 7)
+Buzzle (68 in base 12 -> 6+8=14 which is a multiple of 7)
+81
+82
+Buzzle (6B in base 12 : last digit is "11" ("B"))
+Buzzle (84 = 12×7  /  70 in base 12 -> 7+0=7)
+85
+86
+87
+Buzzle (88 = 8×11  /  74 in base 12 -> 7+4=11)
+89
+90
+Buzzle (91 = 13×7  /  77 in base 12 -> ends with 7 or 7+7=14)
+92
+93
+94
+Buzzle (7B in base 12 -> 7+B=18 which is 16 in base 12 -> 1+6=7  /  7B ends with 11)
+96
+
+
+You have to implement Level 4. But I strongly recommend to start with Level 1, 2 or 3. Tests 1 to 3 will work no matter if you implement Level 4 or not.
+
+Difficulty
+Easy
+
+Tags
+Arithmetic

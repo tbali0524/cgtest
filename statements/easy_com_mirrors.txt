@@ -1,0 +1,18 @@
+Mirrors
+
+https://www.codingame.com/training/easy/easy_com_mirrors
+https://www.codingame.com/contribute/view/62121aa790767e8a2cdac9d7087f927f30b70
+
+A contribution by stupid36
+
+When {{z}} units of light shine on any side of a mirror with reflectivity {{r}}, {{rz}} units of light are reflected, and the other {{(1-r)z}} units of light pass through the mirror. 
+There are [[n]] mirrors numbered 1...[[n]] arranged in a row. Mirror [[i]] has reflectivity [[r_i]]. Find the total amount of light reflected back to the source when {{1}} unit of light shines on the first mirror. 
+Note that light can be reflected multiple times.
+`----> | | | | |
+light 1 2 3 4 5 ...`
+
+Difficulty
+Easy
+
+Tags
+Mathematics, Simulation

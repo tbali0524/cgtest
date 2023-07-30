@@ -1,0 +1,15 @@
+Train passenger
+
+https://www.codingame.com/training/medium/medium_com_train-passenger
+https://www.codingame.com/contribute/view/70319e3d0c55e2108e1c44092472e37748ee
+
+A contribution by Rouge_dragon
+
+You are a train passenger and you want to know the shortest path you can take between two stations. Unfortunately, there is no direct path between these two stations. So, you need to travel station to station to arrive at your destination. You want to find the shortest path you can take. The shortest path is the path that travels through the smallest number of stations.
+There will always be a path from start to end.
+
+Difficulty
+Medium
+
+Tags
+Pathfinding, BFS, Graphs

@@ -1,0 +1,24 @@
+How many triangles and rectangles?
+
+https://www.codingame.com/training/medium/medium_com_how-many-triangles-and-rectangles
+https://www.codingame.com/contribute/view/50208c3f0edfa6d1dd7651888cd69eaabab4d
+
+A contribution by VilBoub
+
+Find the number of triangles and rectangles in the ASCII art picture.
+<<Warning>>: For the rectangles, we will only take the horizontal or vertical sides and not the diagonal sides...
+
+* A little <<rectangle>> :
+`+-+
+|.|
++-+`
+* Some little <<triangles>> :
+`+..+-+..+-+..+....+...+---+
+|\..\|..|/../|.../.\...\./.
++-+..+..+..+-+..+---+...+..`
+
+Difficulty
+Medium
+
+Tags
+Ascii Art, Image processing, Counting

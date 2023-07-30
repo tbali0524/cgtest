@@ -1,0 +1,18 @@
+The Michelangelo Code
+
+https://www.codingame.com/training/easy/easy_com_the-michelangelo-code
+https://www.codingame.com/contribute/view/6551d0fcb0dd8d5aaa13ab7024d5ae27740a
+
+A contribution by snoyes
+
+Are secret messages hidden in famous texts?
+
+Search the given [[TEXT]] for evenly spaced letters which form [[WORD]]s from the given list. Ignore punctuation, capitalization, and spacing.
+
+Print the section of [[TEXT]] that contains the longest hidden [[WORD]], in lowercase and omitting all non-letters. Highlight the hidden [[WORD]] with UPPERCASE. There will be only one such longest word.
+
+Difficulty
+Easy
+
+Tags
+Strings, Optimization

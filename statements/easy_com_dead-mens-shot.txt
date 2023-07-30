@@ -1,0 +1,20 @@
+Dead men's shot
+
+https://www.codingame.com/training/easy/easy_com_dead-mens-shot
+https://www.codingame.com/contribute/view/173542eb0f7e30b9c71dcd95ebaa120e8af1
+
+A contribution by WildSmilodon
+
+Captain Jack Sparrow and his pirate friends have been drinking one night. After plenty of rum, they got into an argument about who is the best shot. Captain Jack takes up some paint and paints a target on a nearby wall. The pirates take out their guns and start shooting.
+
+Your task is to help the drunk pirates find out which shots hit the target.
+
+Captain Jack Sparrow drew the target by drawing [[N]] lines. The lines form a convex shape defined by [[N]] corners. A convex shape has all internal angles less than 180 degrees. For example, all internal angles in a square are 90 degrees. 
+
+A shot within the convex shape or on one of the lines is considered a hit.
+
+Difficulty
+Easy
+
+Tags
+Geometry, Dot product

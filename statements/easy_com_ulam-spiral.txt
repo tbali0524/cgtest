@@ -1,0 +1,30 @@
+Ulam Spiral
+
+https://www.codingame.com/training/easy/easy_com_ulam-spiral
+https://www.codingame.com/contribute/view/2370925f327dfea5dafc4db1b3021311530e4
+
+A contribution by Globostofo
+
+The <<Ulam spiral>> or prime spiral is a graphical depiction of the set of prime numbers. It is constructed by writing the positive integers in a <<square spiral>> and specially marking the <<prime numbers>>.
+
+You have to draw an Ascii representation of a Ulam spiral of size [[N]]×[[N]].
+Use {{'#'}} for prime numbers.
+Use {{' '}} for others.
+
+<<Example with [[N]] = 3 :>>
+There are positions for the 3×3 Ulam spiral
+`5 4 3
+6 1 2
+7 8 9`
+Start at the center and turn counterclockwise
+
+Then replace prime numbers with {{'#'}} and the others with {{' '}} :
+`#   #
+    #
+#    `
+
+Difficulty
+Easy
+
+Tags
+Ascii Art, Mathematics, Primes

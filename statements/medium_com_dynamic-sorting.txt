@@ -1,0 +1,17 @@
+Dynamic sorting
+
+https://www.codingame.com/training/medium/medium_com_dynamic-sorting
+https://www.codingame.com/contribute/view/184127aceb8be8867537a117ce18c23b8d71
+
+A contribution by Davidl.mkh
+
+Sorting in a webApi should be tricky as you have to pass all your parameters in a single URL in a GET request, your team decided to do use this convention to order the result by prop1 ascending, <<then>> by prop2 descending, <<then>> by prop3 ascending.
+<<+prop1-prop2+prop3>>
+
+You have to read the given items and print their Ids ordered by the given sorting expression.
+
+Difficulty
+Medium
+
+Tags
+String manipulation, Sorting

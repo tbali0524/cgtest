@@ -1,0 +1,16 @@
+The Urinal Problem
+
+https://www.codingame.com/training/medium/medium_com_the-urinal-problem
+https://www.codingame.com/contribute/view/336115d5ac6e0146b4fc4b559aa0abdd9f7
+
+A contribution by hgarrereyn
+
+Often times, when confronted with a large line of urinals, you must find the open urinal that is furthest away from all other occupied urinals in order to minimize awkwardness. (See https://blog.xkcd.com/2009/09/02/urinal-protocol-vulnerability/ for inspiration)
+
+Write a program that accepts information about a line of urinals and provides the correct urinal index to use.
+
+Difficulty
+Medium
+
+Tags
+Lists

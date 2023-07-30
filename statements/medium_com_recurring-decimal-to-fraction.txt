@@ -1,0 +1,16 @@
+Recurring decimal to fraction
+
+https://www.codingame.com/training/medium/medium_com_recurring-decimal-to-fraction
+https://www.codingame.com/contribute/view/455892caf0fe500674f3e504a0ec96a807b02
+
+A contribution by TTris_Rgz
+
+Convert any given recurring decimal to an irreducible fraction or an integer of equivalent amount.
+
+A repeating decimal or recurring decimal is decimal representation of a number whose digits are periodic (repeating its values at regular intervals) and the infinitely repeated portion is not zero.
+
+Difficulty
+Medium
+
+Tags
+Mathematics

@@ -1,0 +1,16 @@
+Constrained Latin Squares
+
+https://www.codingame.com/training/medium/medium_com_constrained-latin-squares
+https://www.codingame.com/contribute/view/2700955b684286f04494546afdd041b9a37a5
+
+A contribution by darkhorse64
+
+<<Count all solutions to a partially filled Latin square.>>
+
+A Latin square of order n is a n x n array filled with n different symbols, each occurring exactly once in each row and exactly once in each column. In this puzzle, you are given a n x n grid filled with digits between 0 and n. This grid forms a partially filled Latin square where digits above 0 cannot be changed (they are constrained) and zeroes can take any value between 1 and n. Your goal is to find the number of Latin squares that are solutions to this grid.
+
+Difficulty
+Medium
+
+Tags
+Backtracking, 2D array, Combinatorics, Loops

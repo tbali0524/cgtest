@@ -1,0 +1,18 @@
+Cylinders
+
+https://www.codingame.com/training/medium/medium_com_cylinders
+https://www.codingame.com/contribute/view/3707585c94aaefcd3dbdeb2b4b105ced2bad2
+
+A contribution by java_coffee_cup
+
+I have a bunch of cylinders of various diameters needing to pack in a box. All cylinders must lay flat in the box without stacking over the others. It was found that by arranging the cylinders in different orders, the total width of the cylinders can be different.
+
+The diagram in the banner shows an example how nine cylinders (radii from 1 to 9) can be tightly packed.
+
+Given an array of cylinders, find out how small the box can be to best fit all cylinders properly.
+
+Difficulty
+Medium
+
+Tags
+Geometry

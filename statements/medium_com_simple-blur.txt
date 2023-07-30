@@ -1,0 +1,34 @@
+Simple Blur
+
+https://www.codingame.com/training/medium/medium_com_simple-blur
+https://www.codingame.com/contribute/view/71127283a887b3f143df18ce64f71232b208
+
+A contribution by luxuryenby
+
+Take a data representation of an image and blur it by averaging each pixel's color with its neighbors above, below, and to the left and right of it.
+
+<<Rules:>>
+
+The average value should be the <<arithmetic mean>>, that is, all the values you are combining, divided by the number of values.
+
+If the outcome of an average operation is not an integer, <<round it down>>.
+
+Each pixel should be blurred using five pixels: itself, and its four neighbors (above, below, left, and right). The exception is edge and corner pixels, which will use themselves and their three/two neighbors respectively. In the diagram below, {{X}} represents a target pixel, and the {{N}}'s represent the other pixels that it should be blended with. The {{O}}'s represent pixels that should not be included.
+
+Standard example:
+`ONO
+NXN
+ONO`
+Corner example:
+`XN
+NO`
+Edge example:
+`NO
+XN
+NO`
+
+Difficulty
+Medium
+
+Tags
+Image processing, Lists

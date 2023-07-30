@@ -1,0 +1,35 @@
+Hotel
+
+https://www.codingame.com/training/medium/medium_com_hotel
+https://www.codingame.com/contribute/view/324875cf83840acdc0e83be254e88e184b1f4
+
+A contribution by Darazdeblek
+
+You are at the reception desk of a 4-floor hotel and a group of [[c]] customers arrive and ask for a room.
+
+But what should have been a routine task becomes a nightmare when you realise they have very specific demands !
+
+Your job is to assign a floor (from 0 to 3) for each of them while respecting their [[r]] rules.
+
+There are 10 types of rules:
+
+[[customer_name]] is at floor [[y]]        
+[[customer_name]] is NOT at floor [[y]]    
+There's nobody at floor [[y]]
+There are exactly two customers at floor [[y]]
+[[customer_name]] is alone at his/her floor
+[[customer_name]] is with two other customers at his/her floor
+[[customer_name]] is just above [[customer_name]]   
+[[customer_name]] is higher than [[customer_name]]
+[[customer_name]] is at the same floor as [[customer_name]]
+[[customer_name]] is NOT at the same floor as [[customer_name]]
+
+There is a unique solution for each test.
+
+This puzzle is inspired by the boardgame Gamme Logic - Hôtel
+
+Difficulty
+Medium
+
+Tags
+Depth first search

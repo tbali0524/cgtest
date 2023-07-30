@@ -1,0 +1,20 @@
+1010(1)
+
+https://www.codingame.com/training/medium/medium_com_10101
+https://www.codingame.com/contribute/view/905fc2db6ff86bd09fb76f20ed77eefe761
+
+A contribution by Syneil
+
+This is the first in a series of 1010 puzzles.
+
+You are given a grid of width {{W}} and height {{H}}. Each cell is either empty, represented as a dot "<<.>>", or filled, represented with a hash "<<#>>".
+
+You are allowed to place a 2x2 block in the grid wherever it will fit (i.e., all of those 2x2 cells are empty).
+
+You must find a place for your 2x2 block to completely fill as many rows and columns and report how many rows and columns you can complete.
+
+Difficulty
+Medium
+
+Tags
+2D array

@@ -1,0 +1,15 @@
+Embedded Chessboards
+
+https://www.codingame.com/training/easy/easy_com_embedded-chessboards
+https://www.codingame.com/contribute/view/3793260bede7206824e0bd2cf8a279d896c7d
+
+A contribution by java_coffee_cup
+
+In a visit to a gallery I saw a contemporary art painting such that the whole picture is full of checker-pattern tiles, with alternating squares of darker and lighter colors (like the one in the banner). Though I was unable to appreciate how this painting was worth the quoted dollar value, I envisioned plenty of chessboards embedded in the pattern.
+
+How many chessboards can be found in the painting? I was wondering.
+
+A chessboard is defined as an area of 8x8 tiles and <<MUST>> have a white (or a lighter color) tile at the bottom-right corner. The painting has its strict orientation. One cannot rotate the painting to count nor count a rotated area as a valid chessboard.
+
+Difficulty
+Easy

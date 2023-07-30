@@ -1,0 +1,22 @@
+Dungeon 3D
+
+https://www.codingame.com/training/medium/medium_com_dungeon-3d
+https://www.codingame.com/contribute/view/7455527d147c953813aff1842cf5b6b302c8
+
+A contribution by java_coffee_cup
+
+Anya and her team of adventurers are battling in a multi-layered labyrinth beneath Waterdeep. Skeletons and Kobolds are lurking around every corner. Luckily Anya found the dungeon map which shows the structure of all layers of the dungeon including the location of a health-restoring Hot Spring.
+
+Anya identified the team's current location on the map. She has to find the path to the Hot Spring to rebuild the team's health for prolonged battles.
+
+All layers of the dungeon have the same rectangular dimension composed of cubic cells. The layers are connected by vertical ladders for climbing up or down.
+
+The team takes 1 minute to fight their way to move from one cell to the adjacent cell, which is the cell at any of the four directions of their current cell as well as the cells at the vertically upper and lower layers, if there is a path to. They cannot move to diagonal cells directly.
+
+What is the minimum time needed for the team to reach the Hot Spring?
+
+Difficulty
+Medium
+
+Tags
+Pathfinding, Maze

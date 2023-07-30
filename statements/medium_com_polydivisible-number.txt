@@ -1,0 +1,27 @@
+Polydivisible number
+
+https://www.codingame.com/training/medium/medium_com_polydivisible-number
+https://www.codingame.com/contribute/view/10475838480ec079f19ae8ccbe374b750b0c
+
+A contribution by dwarfie
+
+A polydivisible number (or magic number) is a number with digits abcde... that has the following properties :
+
+- Its first digit a is not 0.
+- The number formed by its first two digits ab is a multiple of 2.
+- The number formed by its first three digits abc is a multiple of 3.
+- The number formed by its first four digits abcd is a multiple of 4.
+- etc...
+
+For example, 567 is polydivisible because :
+- 5 is divisible by 1
+- 56 is divisible by 2
+- 567 is divisible by 3
+
+Your program will have to determine in which bases the input number may be, knowing that it is polydivisible in base 10
+
+Difficulty
+Medium
+
+Tags
+Arithmetic

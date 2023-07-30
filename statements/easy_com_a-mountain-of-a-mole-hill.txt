@@ -1,0 +1,19 @@
+A mountain of a mole hill
+
+https://www.codingame.com/training/easy/easy_com_a-mountain-of-a-mole-hill
+https://www.codingame.com/contribute/view/5052d20175e2373c9045b804a5dd82716caf
+
+A contribution by Humanosaure
+
+Moles have infested a 16x16 area. 
+The fences  of your gardens are outlined on maps with {{|}}, {{+}} and {{-}} symbols.
+The mole hills are represented by a lower-case {{o}}.
+How many mole hills are in your gardens?
+
+- Two parallel fences of the garden cannot touch (it wouldn't make sense).
+- Garden space is filled with white space unless there is a mole hill. Other space is filled with dots unless there is a mole hill.
+- Everything that touches the outside of the map and is not enclosed in fences is other space. A fence is always between garden space and other space.
+- Mole hills cannot be on fences.
+
+Difficulty
+Easy

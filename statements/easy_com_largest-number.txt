@@ -1,0 +1,19 @@
+Largest Number
+
+https://www.codingame.com/training/easy/easy_com_largest-number
+https://www.codingame.com/contribute/view/7790bacc7a757bbe5c8cd7f8a60382668920
+
+A contribution by MattDESTROYER
+
+Given an input [[number]], output the largest number possible that follows these rules:
+1. The output number must be divisible by [[D]]
+2. The output number must be created by removing between 0 and 2 digits from the input [[number]] (you cannot change the order of the digits)
+3. If it is not possible to make a number following the above rules, output 0
+
+For example:
+`314159
+3`
+Should output`31419`
+
+Difficulty
+Easy

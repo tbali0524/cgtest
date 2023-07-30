@@ -1,0 +1,14 @@
+Rectangular block spinner
+
+https://www.codingame.com/training/easy/easy_com_rectangular-block-spinner
+https://www.codingame.com/contribute/view/1637c5b4e27a686d94208958467e2d796e6e
+
+A contribution by bobby2
+
+You have to rotate [[size]]X[[size]] block counterclockwise by an angle [[angle]].  The block is filled with single ASCII characters. Angle is provided in degrees and is an odd multiple of 45.  The output will always have a diamond shape.
+
+Difficulty
+Easy
+
+Tags
+String manipulation

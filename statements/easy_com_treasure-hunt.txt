@@ -1,0 +1,25 @@
+Treasure hunt
+
+https://www.codingame.com/training/easy/easy_com_treasure-hunt
+https://www.codingame.com/contribute/view/56182bc2bba7a322733279dff6621574e58d
+
+A contribution by lhm
+
+You are a treasure hunter.
+Your goal is simple : Move on the map to collect the maximum amount of gold.
+
+Given a map of height [[H]], width [[W]] and a starting position [[X]], you can move on 4 directions ( North, South, East, West ).
+Each time you visit a cell, you collect the amount of gold indicated on it.
+You Cannot visit a cell more than once !
+
+The possible values for a cell are :
+        - {{'X'}} : Your position
+        - {{' '}} : Nothing - you can go through that cell, but there is no gold on it.
+        - {{'#'}} : A wall - you cannot go through that cell.
+        - [{{1}} - {{9}}] : The amount of gold on that cell.
+
+Difficulty
+Easy
+
+Tags
+Arrays

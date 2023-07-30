@@ -1,0 +1,36 @@
+Halting sequences
+
+https://www.codingame.com/training/medium/medium_com_halting-sequences
+https://www.codingame.com/contribute/view/4792f4d90d8dbd56de249d745b0b271c76ae
+
+A contribution by Waffle3z
+
+Given a pair of positive integers (a, b), a ≤ b, the next term in the sequence is (a*2, b-a), re-arranged if necessary so that the first element is always the smallest.
+i.e. (a, b) → (min(a*2, b-a), max(a*2, b-a))
+
+The sequence halts if a = b ever occurs.
+
+Examples:
+(3, 7) → (4, 6) → (2, 8) → (4, 6) loops because of the cycle (4, 6) → (2, 8) → (4, 6)
+(3, 7) → (7-3, 3*2) = (4, 6)
+(4, 6) → (6-4, 4*2) = (2, 8)
+(2, 8) → (2*2, 8-2) = (4, 6)
+
+(13, 51) → (26, 38) → (12, 52) → (24, 40) → (16, 48) → (32, 32) halts
+(5, 123) → (10, 118) → (20, 108) → (40, 88) → (48, 80) → (32, 96) → (64, 64) halts
+(1, 127) → (2, 126) → (4, 124) → (8, 120) → (16, 112) → (32, 96) → (64, 64) halts
+
+(2, 3) → (1, 4) → (2, 3) loops
+(6, 7) → (1, 12) → (2, 11) → (4, 9) → (5, 8) → (3, 10) → (6, 7) loops
+(12345, 123456) loops after 7411 terms
+(65534, 65535) loops after 16069 terms
+(16777214, 16777215) loops after 1116131 terms
+(9999999, 999999999) loops after 2001133 terms
+
+For each given pair that begins a different sequence, output "halts" if the sequence halts or "loops" if it does not halt.
+
+Difficulty
+Medium
+
+Tags
+Mathematics

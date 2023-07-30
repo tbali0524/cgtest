@@ -1,0 +1,34 @@
+No More Pythons, Please!
+
+https://www.codingame.com/training/easy/easy_com_no-more-pythons-please
+https://www.codingame.com/contribute/view/15724a523198e6b0a7d9f50c5c42e08b3b7cf
+
+A contribution by VictoriousTriceraton
+
+Given an ASCII drawing of [[N]]x[[M]] characters. You must output the longest snake size in the image. It is also necessary to output the number of snakes with such size.
+
+On the field "{{.}}" means an empty space (no snake)
+
+The snake is depicted by the following constant symbols:
+
+"{{o}}" - a snake's head
+"{{-}}","{{|}}" - intermediate part of the snake in horizontal/vertical position
+"{{v}}","{{<}}","{{>}}","{{^}}" - a snake's tail
+"{{*}}" - a curved part of the snake, i.e. a turn. Example:
+{{```
+..*-o
+..|..
+*-*..
+|....
+v....```}}
+
+<<It is guaranteed>> that it's possible to unambiguously determine which symbol refers to which snake:
+
+The second character from the head and from the tail <<cannot be>> a "{{*}}".
+Also, one snake <<cannot have two "{{*}}"s in a row>>.
+
+Difficulty
+Easy
+
+Tags
+Ascii Art, string, Loops, Conditions, 2D array

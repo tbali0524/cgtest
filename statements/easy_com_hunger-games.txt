@@ -1,0 +1,16 @@
+Hunger Games
+
+https://www.codingame.com/training/easy/easy_com_hunger-games
+https://www.codingame.com/contribute/view/1853cee234e55d68b2c220afa839c55d4a20
+
+A contribution by MSWS
+
+You are a programmer for The Capitol of Panem in the Hunger Games. You are assigned with the task of displaying information on boards for each of the tributes. You are given information regarding the entire match and its results, your job is to display who killed who.
+
+<<All information is expected to be in alphabetical order>>
+
+Difficulty
+Easy
+
+Tags
+Sorting

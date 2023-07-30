@@ -1,0 +1,76 @@
+Barcode scanner
+
+https://www.codingame.com/training/medium/medium_com_barcode-scanner
+https://www.codingame.com/contribute/view/2097e194054b2ca30041234b8918c444762e
+
+A contribution by GeoCon
+
+You are given a line of 95 bits sequence [[scanline]] representing an image received from a barcode scanner.
+The sequence is in EAN-13 format barcode.
+
+<<NOTE>> The input sequence might be given in reversed order. This relates to a real life scenario when scanning the barcode upside-down.
+
+Your mission is to decode this barcode into its decimal 13-digit representation.
+
+Input binary sequence consist of the following blocks:
+<<LEFT GUARD>> + <<LEFT PART>> + <<CENTRAL GUARD>> + <<RIGHT PART>> + <<RIGHT GUARD>>.
+
+<<LEFT GUARD>> and <<RIGHT GUARD>> are 3-bit sequences and both should be equal to {{101}}.
+<<CENTRAL GUARD>> has a length of 5, having value {{01010}}.
+Guards allow the scanner to identify the start and end of the barcode in an image as well as the width of the bits.
+
+<<LEFT PART>> and <<RIGHT PART>> each consist of 6 7-bit codes.
+Left part may have digits coded with both <<L-code>> (which have odd parity) and <<G-code>> (even parity).
+Right part consists of only even parity <<R-codes>>. 
+You may also notice that R-code is a reversed version of G-code and an inverted version of L-code.
+```<<Digit>> <<L-code>>  <<G-code>>  <<R-code>>
+<<0>>     0001101 0100111 1110010
+<<1>>     0011001 0110011 1100110
+<<2>>     0010011 0011011 1101100
+<<3>>     0111101 0100001 1000010
+<<4>>     0100011 0011101 1011100
+<<5>>     0110001 0111001 1001110
+<<6>>     0101111 0000101 1010000
+<<7>>     0111011 0010001 1000100
+<<8>>     0110111 0001001 1001000
+<<9>>     0001011 0010111 1110100```
+Please refer to {{https://imgur.com/3kKOkIX}} for a visual example.
+
+So at this point you are able to reconstruct the last 12 digits.
+The first EAN-13 digit is encoded by the pattern of L and G codes in <<LEFT PART>> using the table below.
+```<<First digit  First group of 6 digits  Last group of 6 digits>>
+<<0>>            LLLLLL                   RRRRRR
+<<1>>            LLGLGG                   RRRRRR
+<<2>>            LLGGLG                   RRRRRR
+<<3>>            LLGGGL                   RRRRRR
+<<4>>            LGLLGG                   RRRRRR
+<<5>>            LGGLLG                   RRRRRR
+<<6>>            LGGGLL                   RRRRRR
+<<7>>            LGLGLG                   RRRRRR
+<<8>>            LGLGGL                   RRRRRR
+<<9>>            LGGLGL                   RRRRRR```
+
+Finally, to verify a barcode after decoding, the following <<CHECKSUM>> calculation approach is used:
+Multiply every second digit by 3, then add up all the digits. If barcode is correct its checksum would be a multiple of 10.
+
+<<Example>>
+It is easier to understand an example of encoding rather than decoding. 
+Suppose we want to encode the number 4003994155486.
+
+The first digit is 4, so we will use the pattern LGLLGG in the left part.
+We then look up codes 0(L), 0(G), 3(L), 9(L), 9(G), 4(G) in the table:
+0001101 0100111 0111101 0001011 0010111 0011101
+
+For the right part we look up 1(R), 5(R), 5(R), 4(R), 8(R), 6(R) :
+1100110 1001110 1001110 1011100 1001000 1010000
+
+Finally, add the guards.
+
+<<JFYI>>
+The first 3 digits of EAN-13 correspond to a country code. So, by reading barcodes printed on different products you may identify the country each product was manufactured in.
+
+Difficulty
+Medium
+
+Tags
+Check-digit, Pattern recognition

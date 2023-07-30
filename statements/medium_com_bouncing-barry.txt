@@ -1,0 +1,35 @@
+Bouncing Barry
+
+https://www.codingame.com/training/medium/medium_com_bouncing-barry
+https://www.codingame.com/contribute/view/7160061d215bfbde953f2fbd49d4dfa8b123
+
+A contribution by UnicornP
+
+Barry the bouncing bunny is a bit braindead. Barry mindlessly jumps around on an infinitely large square grid, comprising tiles that initially display the {{.}} character. Each time Barry <<lands>> on a tile, the tile toggles between displaying {{.}} and {{#}}.
+
+Barry's bouncing behavior is described with a space-separated sequence of directions [[d_1 d_2 d_3...]] followed by an index-matched integer sequence for bounce count [[b_1 b_2 b_3...]] Directions are any of the four cardinal directions {{NSEW}}. Bounce count describes how many tiles Barry bounces forward in a straight line. <<Turning does not count as a bounce.>>
+
+After Barry has finished his bouncing business, print the appearance of the floor, cropped to the smallest rectangle that includes all {{#}}'s.
+
+For example, the input
+`{{E S E}}
+{{4 3 1}}`
+would produce the floor as shown:
+`{{........}}
+{{..####..}}
+{{.....#..}}
+{{.....#..}}
+{{.....##.}}
+{{........}}`
+but this should be printed instead:
+`{{####.}}
+{{...#.}}
+{{...#.}}
+{{...##}}`
+If no tiles show {{#}} at the end of Barry's bouncing, simply print {{.}} instead.
+
+Difficulty
+Medium
+
+Tags
+Ascii Art

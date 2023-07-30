@@ -1,0 +1,74 @@
+Tricky  Number Verifier
+
+https://www.codingame.com/training/easy/easy_com_tricky-number-verifier
+https://www.codingame.com/contribute/view/80968a5f68fca68f8584b11254fc572773c6
+
+A contribution by slogslog
+
+Social insurance numbers in Austria (Europe) are 10 digits long: LLLxDDMMYY
+
+- The rightmost 6 digits represent the person's birthday [[DDMMYY]]. 
+- The leftmost 3 digits [[LLL]] represent a unique identifier starting with 100. Therefore the very first digit is never 0.
+- The fourth digit is a check digit [[x]] which is computed from [[LLL]] and [[DDMMYY]] by a specific algorithm.
+
+A string supposed to contain a social insurance number could be invalid for four reasons:
+
+1. The check digit [[x]] is incorrect.
+2. The length of the string is inappropriate.
+3. The string contains invalid or misplaced characters.
+4. The birthday [[DDMMYYYY]] is an invalid date. Consider that dates like the 31st of April or the 29th February 2002 do not exist. It is assumed that [[YY]] = 00 represents 2000 rather than 1900. This might be important since 1900 was no leap year while 2000 was one. ;-)
+
+For a valid identifier and a valid birthdate, the check digit [[x]] is computed according the following algorithm:
+
+<<1.>> Multiply each digit of the identifier and the birthday with an individual factor.
+[[LLL]]: The 1st digit is multiplied by 3, the 2nd digit by 7 and the 3rd digit by 9.
+[[DDMMYY]]: Multiply the 1st digit by 5, the 2nd by 8, ... and so on by 4, 2, 1, and 6.
+
+<<2.>> Sum up all the results of step 1.
+
+<<3.>> Now the check digit [[x]] is the remainder obtained by dividing the sum by 11. If the result is 10, the identifier [[LLL]] is dismissed. The rejected [[LLL]] is increased by 1 and the social number is recalculated by starting at step 1.
+
+
+
+<<Sample 1>>: identifier = 123, birthday = 21st January 2006 -> <<123>>x<<210106>>
+
+<<1.>>
+<<1>>*3   <<2>>*7    <<3>>*9    <<2>>*5    <<1>>*8    <<0>>*4    <<1>>*2    <<0>>*1    <<6>>*6
+
+3   14   27   10   8   0   2   0   36
+
+<<2.>> 
+3 + 14 + 27 + 10 + 8 + 0 + 2 + 0 + 36 -> 100
+
+<<3.>>
+100 mod 11 -> check digit [[x]] = 1
+
+The social insurance number is 1231210106.
+
+
+<<Sample 2>>: identifier = 536, birthday = 24th December 1998 -> <<536>>x<<241298>>
+
+<<1.>>
+<<5>>*3    <<3>>*7    <<6>>*9    <<2>>*5    <<4>>*8    <<1>>*4    <<2>>*2    <<9>>*1    <<8>>*6
+
+15   21   54   10   32   4   4   9   48
+
+<<2.>> 
+15 + 21 + 54 + 10 + 32 + 4 + 4 + 9 + 48 -> 197
+
+<<3.>>
+197 mod 11 -> 10
+
+The identifier cannot be used. So increment 536 to 537 and rerun the algorithm again.
+
+537x241298 -> sum = 206 -> check digit [[x]] = 8
+
+The social insurance number is 5378241298.
+
+Your task is to read strings from the input and to check each social insurance number's validity, to correct it or to write a specific error to the output.
+
+Difficulty
+Easy
+
+Tags
+String manipulation, Check-digit

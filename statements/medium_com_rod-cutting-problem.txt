@@ -1,0 +1,29 @@
+Rod cutting problem
+
+https://www.codingame.com/training/medium/medium_com_rod-cutting-problem
+https://www.codingame.com/contribute/view/56454160d9ea35ff11a4a327847f9859ad94
+
+A contribution by MisterFlos
+
+The rod cutting problem consists of cutting a rod in some pieces of different <<length>>, each having a specific <<value>>, such that the total value is maximized.
+
+For example, consider that the rods of <<length>> 1, 2, 3 and 4 are marketable with respective <<values>> 1, 5, 8 and 9.
+A rod of <<length>> 4 can then be cut in pieces in five different ways:
+• 0×1 + 0×2 + 0×3 + 1×4 → total value: 0×1 + 0×5 + 0×8 + 1×9 =  9
+• 1×1 + 0×2 + 1×3 + 0×4 → total value: 1×1 + 0×5 + 1×8 + 0×9 =  9
+• 0×1 + 2×2 + 0×3 + 0×4 → total value: 0×1 + 2×5 + 0×8 + 0×9 = 10
+• 2×1 + 1×2 + 0×3 + 0×4 → total value: 2×1 + 1×5 + 0×8 + 0×9 =  7
+• 4×1 + 0×2 + 0×3 + 0×4 → total value: 4×1 + 0×5 + 0×8 + 0×9 =  4
+
+The optimal cut is thus two pieces of length {{2}} which gives a total value of {{10}}.
+
+You can make pieces that are not marketable, but theses pieces will have a value of 0.
+
+
+The rod cutting problem is the one-dimensional variant of the cutting stock problem. https://en.wikipedia.org/wiki/Cutting_stock_problem
+
+Difficulty
+Medium
+
+Tags
+Dynamic programming, Memoization

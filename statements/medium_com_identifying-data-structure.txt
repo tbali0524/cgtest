@@ -1,0 +1,27 @@
+Identifying data structure
+
+https://www.codingame.com/training/medium/medium_com_identifying-data-structure
+https://www.codingame.com/contribute/view/450140b3d1a37015620cb84545fe68959f2e
+
+A contribution by java_coffee_cup
+
+There is a mysterious data structure. This structure is like a bag which allows putting data in and taking data out. But it is a magic bag that sometimes behaves in ways you can hardly imagine. You have to guess, as far as possible, what structure it is by looking at its behaviors.
+
+To keep it simple, we limit our analysis to only three known data structures:
+<<Queue>> (First In First Out)
+<<Stack>> (First In Last Out)
+<<Priority Queue>> (Bigger data come out first)
+
+We use only two operators to try out the structure:
+<<i>> - input data, similar to [add, put, push, insert, ...], for adding an element to structure.
+<<o>> - output data, similar to [pop, poll, pull, delete, ...], which will remove one element from the structure for output.
+
+The data are simple integers.
+
+At the beginning, the data structure is empty. A sequence of <<i/o>> operations is then done on the structure. Analyze the result then tell what data structure it is.
+
+Difficulty
+Medium
+
+Tags
+Queue, Stack, Priority Queue

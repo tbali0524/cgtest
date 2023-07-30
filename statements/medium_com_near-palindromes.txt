@@ -1,0 +1,14 @@
+Near-Palindromes
+
+https://www.codingame.com/training/medium/medium_com_near-palindromes
+https://www.codingame.com/contribute/view/4581dfdd33bd5bc6d1a7c0299228677fa7c
+
+A contribution by JBM
+
+A near-palindrome is a word one letter away from being a palindrome, be it by replacement, addition or removal.
+
+Difficulty
+Medium
+
+Tags
+Palindrome, Brute-force

@@ -1,0 +1,32 @@
+Dolbear's Law
+
+https://www.codingame.com/training/easy/easy_com_dolbears-law
+https://www.codingame.com/contribute/view/44784b9c1d49b04c51b25f6d9ecaa4406537
+
+A contribution by Eldoir
+
+<<Dolbear's law>> states the relationship between the <<air temperature>> and the <<rate at which crickets chirp>> (source: Wikipedia).
+
+Dolbear expressed the relationship as the following formula, which provides a way to estimate the temperature <<TC>> in degrees Celsius from the number of chirps per minute, called [[N60]]:
+<<TC>> = {{10}} + ([[N60]] - {{40}}) / {{7}}.
+
+Another method is to count the number of chirps in <<8>> seconds, called [[N8]], and add {{5}}
+(this is fairly accurate between {{5}} and {{30}}°C):
+<<TC>> = [[N8]] + {{5}}.
+
+We are in August and it is very hot.
+With the help of Jiminy Cricket, you want to estimate the air temperature while staying cool at home.
+You then take a stopwatch, a pencil and a paper, and every {{4}} seconds, you note the number of chirps of Jiminy.
+
+For example, if you noted the following series: <<3 2 3>>, then Jiminy chirped <<3>> times in the first 4 seconds, then <<2>> times in the next 4 seconds, and finally <<3>> times in the last 4 seconds.
+
+In order to have a good estimate of the air temperature, you take a lot of measurements: one measure every {{4}} seconds during [[M]] minutes.
+
+Once you're done with the measurements, you can compute the estimated temperature using the correct formula!
+Unfortunately, Jiminy chirps whenever he wants, driving you crazy and distorting your calculations... so do not take your results too seriously!
+
+Difficulty
+Easy
+
+Tags
+Average, Formulas

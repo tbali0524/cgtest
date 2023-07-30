@@ -1,0 +1,63 @@
+3×N Tiling
+
+https://www.codingame.com/training/medium/medium_com_3n-tiling
+https://www.codingame.com/contribute/view/4821786f6288b7add69280793995e77ba058
+
+A contribution by CyberLemonade
+
+<<The Problem:>>
+
+You are required to fill an [[K]] × [[N]] grid using the following pieces:
+
+A 2×2 Piece:`┌───┐ 
+│   │	 
+└───┘`A 3×1 Piece which can be placed in two ways:`┌─────┐ 
+└─────┘
+┌─┐
+│ │
+│ │
+└─┘`Given that [[K]] is always either {{1}}, {{2}} or {{3}}.
+
+You have to output the total number of ways of doing this.
+
+-------------------------------------------------- xxx --------------------------------------------------
+
+<<Rules:>>
+
+1. The entire grid must be filled i.e. there can be no empty cell.
+
+2. No 2 tiles can overlap.
+
+3. As already pointed above, the {{3×1}} Tile can be placed horizontally or vertically.
+
+4. Since the answer might be large output it modulo {{10⁹+7}}.
+
+5. Note that there may also be 0 ways of filling a particular grid.
+
+-------------------------------------------------- xxx --------------------------------------------------
+
+<<Examples:>>
+
+1. [[K]] = {{1}} and [[N]] = {{6}}:`┌─────┬─────┐
+└─────┴─────┘`So there is only {{1}} way of doing this.
+
+
+2. [[K]] = {{2}} and [[N]] = {{6}}: `┌─────┬─────┐  ┌───┬───┬───┐
+├─────┼─────┤  │   │   │   │
+└─────┴─────┘  └───┴───┴───┘`So there are {{2}} ways of doing this.
+
+
+3. [[K]] = {{3}} and [[N]] = {{6}}: `┌─────┬─────┐  ┌───┬───┬───┐  ┌─────┬─────┐  ┌─┬─┬─────┬─┐
+├─────┼─────┤  │   │   │   │  ├───┬─┴─┬───┤  │ │ ├─────┤ │
+├─────┼─────┤  ├───┴─┬─┴───┤  │   │   │   │  │ │ ├─────┤ │
+└─────┴─────┘  └─────┴─────┘  └───┴───┴───┘  └─┴─┴─────┴─┘
+┌─┬─────┬─┬─┐  ┌─┬─┬─┬─────┐  ┌─────┬─┬─┬─┐  ┌─┬─┬─┬─┬─┬─┐
+│ ├─────┤ │ │  │ │ │ ├─────┤  ├─────┤ │ │ │  │ │ │ │ │ │ │
+│ ├─────┤ │ │  │ │ │ ├─────┤  ├─────┤ │ │ │  │ │ │ │ │ │ │
+└─┴─────┴─┴─┘  └─┴─┴─┴─────┘  └─────┴─┴─┴─┘  └─┴─┴─┴─┴─┴─┘`So there are {{8}} ways of doing this.
+
+Difficulty
+Medium
+
+Tags
+Tiling, Dynamic programming

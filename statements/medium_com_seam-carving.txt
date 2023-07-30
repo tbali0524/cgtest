@@ -1,0 +1,41 @@
+Seam Carving
+
+https://www.codingame.com/training/medium/medium_com_seam-carving
+https://www.codingame.com/contribute/view/2025b248fbdf81f5289e32ef2d464fb148f4
+
+A contribution by Niako
+
+Seam carving is a content-aware image resizing technique that often leads to impressive results despite being very simple. When used to reduce the size of an image, it intends to remove the supposedly least significant parts of the image instead of resizing everything in a uniform manner.
+In this problem, we implement the main algorithm behind seam carving. To focus on the algorithmic aspects, we only reduce the width of grayscale images.
+
+Given a grayscale image of size [[W]]×[[H]], let [[I(x,y)]] be the 1-byte intensity (from {{0}} for black to {{255}} for white) of the pixel at ({{x}},{{y}}) with 0 ≤ {{x}} < [[W]] and 0 ≤ {{y}} < [[H]]; (0,0) being the top-left corner of the image. We define the intensity differentials and the <<energy function>> as:
+`dI/dx(x,y) = I(x+1,y) - I(x-1,y) if 0 < x < W-1
+             0                   otherwise (left/right borders)
+dI/dy(x,y) = I(x,y+1) - I(x,y-1) if 0 < y < H-1
+             0                   otherwise (top/bottom borders)
+E(x,y) = |dI/dx(x,y)| + |dI/dy(x,y)|
+         (where |.| denotes the absolute value)`
+A <<vertical path>> is a sequence of pixels ({{x(0)}},{{0}}), ({{x(1)}},{{1}}), ..., ({{x(H-1)}},{{H-1}}) such that |{{x(i+1)}} - {{x(i)}}|≤1. In other words, the path contains exactly one pixel per line and consecutive pixels are vertically or diagonally neighbors. The energy of a path is the sum of the energies of its pixels.
+
+To reduce the width of the image by one pixel, compute a vertical path of <<lowest energy>> and simply remove it.
+To reduce by several pixels, simply repeat that 1-px reduction step on the successive reduced versions of the image.
+
+<<Instructions>>
+Given a PGM image (see input description) and its desired new width, resize it using seam carving.
+When there are several paths of lowest energy, remove the <<lexicographically smallest>> one over the ({{x(0)}}, {{x(1)}}, ...) values (i.e. the leftmost path from top to bottom).
+Due to the limitations on the output size, you are not asked to return the resulting image but the <<energies of the successively deleted paths>>.
+
+<<Additional remarks>>
+Try it on your own images and visualize the results! You might have to relax your PGM parser as the specifications of the format do not actually make the space/newline distinction. For very large images, make sure that you use an efficient algorithm and optimize your code so that it keeps and updates the intermediate results after each path deletion (to avoid of recomputing everything at each step).
+
+Check out the references for more information (alternative energy functions, strategies to resize both horizontally and vertically, use seam carving to enlarge images, etc).
+
+<<References>>
+https://www.youtube.com/watch?v=6NcIJXTlugc
+http://www.faculty.idc.ac.il/arik/SCWeb/imret/imret.pdf
+
+Difficulty
+Medium
+
+Tags
+Image processing, Dynamic programming

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.8.0 - configuration file
+ * CGTest v1.9.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2023, by Balint Toth [TBali]
@@ -410,6 +410,7 @@ return [
                 'easy_com_metric-units',
                 'easy_com_minesweeper-level-generator',
                 'easy_com_minimal-palindrome-distance',
+                'easy_com_mirrors',
                 'easy_com_monday-tuesday-happy-days',
                 'easy_com_morellets-random-lines',
                 'easy_com_mountain-map-convergence',
@@ -573,6 +574,7 @@ return [
                 'medium_com_constrained-latin-squares',
                 'medium_com_continued-fractions',
                 'medium_com_cooking-passion',
+                'medium_com_count-as-i-count-2',
                 'medium_com_counting-squares-on-pegs',
                 'medium_com_count-of-primes-in-a-number-grid',
                 'medium_com_criminal',
@@ -740,6 +742,7 @@ return [
                 'medium_com_spore-city-planner',
                 'medium_com_sticky-keyboard',
                 'medium_com_straddling-checkerboard-cryptography',
+                'medium_com_string-balls',
                 'medium_com_sudoku-solver',
                 'medium_com_suguru-solver',
                 // 'medium_com_sum-of-divisors',            // also in global section
@@ -1132,4 +1135,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.07.17: 'hard_com_24-the-long-game',
+// Note: last puzzle added on 23.07.26: 'medium_com_count-as-i-count-2',

@@ -1,0 +1,13 @@
+Simple Load Balancing
+
+https://www.codingame.com/training/easy/easy_com_simple-load-balancing
+https://www.codingame.com/contribute/view/14073a961219d18b03768c2ca77e7d043e584
+
+A contribution by BleedingWithin
+
+In this challenge, you are given [[N]] servers. Each server has a current load [[Li]] jobs running on it. Then a batch [[k]] jobs comes and must be distributed on the [[N]] servers. Your job is to design a program that will distribute the incoming [[k]] jobs on the servers such that the difference of the number of jobs in the server with the highest load and the one with the lowest load is minimal. Let’s call this metric Minimal Imbalance.
+For example if we have [[N]]={{4}} and the initial loads as follows [5,0,2,1]. For [[k]]=3 arriving jobs, distributing the jobs to get the following [5,2,2,2] achieves the Minimal Imbalance. The result here is 3 (5-2)
+This challenge was one of the problems in Amazon Last Mile 22.
+
+Difficulty
+Easy

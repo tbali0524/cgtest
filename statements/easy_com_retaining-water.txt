@@ -1,0 +1,11 @@
+Retaining Water
+
+https://www.codingame.com/training/easy/easy_com_retaining-water
+https://www.codingame.com/contribute/view/597138ad120ca73e7e45ee52da5a280aba3d
+
+A contribution by Westicles
+
+François designs above-ground swimming pools for the bourgeoisie.  His designs are represented by an NxN grid of letters, with heights ranging from A=1 to Z=26.  Find the volume of water each pool can hold.
+
+Difficulty
+Easy

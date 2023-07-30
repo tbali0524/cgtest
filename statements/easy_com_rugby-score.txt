@@ -1,0 +1,18 @@
+Rugby score
+
+https://www.codingame.com/training/easy/easy_com_rugby-score
+https://www.codingame.com/contribute/view/210af183274ec1c72f352989ce1a12bef72
+
+A contribution by Bob
+
+Given a rugby score, your program must compute the different scoring combinations that lead to that particular score.
+As a reminder:
+ - a try is worth 5 points
+ - after a try, a transformation kick is played and is worth 2 extra points if successful
+ - penalty kicks and drops are worth 3 points
+
+Difficulty
+Easy
+
+Tags
+Loops

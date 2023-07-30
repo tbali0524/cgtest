@@ -1,0 +1,14 @@
+Pirate's treasure
+
+https://www.codingame.com/training/easy/easy_com_pirate-s-treasure
+https://www.codingame.com/contribute/view/1577f66212cba336eda19900a42b65aa231f
+
+A contribution by T0nda
+
+The goal of this puzzle is to find a pirate's treasure. The pirate surrounded his treasure by obstacles.
+
+Difficulty
+Easy
+
+Tags
+Arrays, Loops, Conditions

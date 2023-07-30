@@ -1,0 +1,8 @@
+Bust speeding vehicles
+
+https://www.codingame.com/training/medium/medium_com_bust-speeding-vehicles
+https://www.codingame.com/contribute/view/40f72ec5a2a5cbf99eef8d5e167c9faeeb
+
+A contribution by Solid
+
+Your must detect speeding vehicles by calculating their average speed between two or more cameras on a given road.

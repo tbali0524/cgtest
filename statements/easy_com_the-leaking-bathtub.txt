@@ -1,0 +1,18 @@
+The leaking bathtub
+
+https://www.codingame.com/training/easy/easy_com_the-leaking-bathtub
+https://www.codingame.com/contribute/view/55191b71a36e9ff405077d85287b66d1f904f
+
+A contribution by Tatur2000
+
+Bob has a bathtub.
+He wants to fill it with water but there are some leaks that let the water flow.
+Given the dimensions [[S]] and [[h]] of the bathtub, the tap water [[flow]] and the [[leakHeight]] and [[leakFlow]] of each leak, calculate the [[time]], rounded to the second down, Bob needs to fill his bathtub.
+A leak does not leak the water flow until the water has reached the leak height.
+The bathtub is a rectangular parallelepiped of surface area [[S]] and height [[h]].
+
+Difficulty
+Easy
+
+Tags
+Arrays, Loops

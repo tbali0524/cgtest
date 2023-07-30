@@ -1,0 +1,30 @@
+Condition Overshadowing
+
+https://www.codingame.com/training/medium/medium_com_condition-overshadowing
+https://www.codingame.com/contribute/view/7980c75b20bc6fb64b41b1f209877256a12d
+
+A contribution by Alonehoc
+
+Condition overshadowing can be a possible cause for unreachable code in a computer program and solving this problem can help detect it.
+
+Programs often define a chain of conditions in the form of: if ... else if ... else if ... else if
+Some of those conditions can be overshadowed by previous conditions.
+
+The meaning is fairly intuitive: an overshadowed condition is a condition for which any values satisfying the condition also satisfy at least one previous condition, thus making the overshadowed block of code unreachable.
+
+The goal is to detect all overshadowed conditions in a chain of conditions and output their serial position in the chain. The first condition has index 0.
+
+Overshadowed conditions in real-life programs can be extremely hard to detect, but here the conditions are simplified to only an integer variable [[x]] compared to an integer constant {{c}} (and still this isn't so simple...)
+
+Note: <<Partial>> overshadowing does not count, while <<complete>> overshadowing (which leads to totally unreachable code) counts.
+
+<<In the example:>>
+Condition (x == 9) is overshadowed by condition (x > 4).
+Condition (x < 6) is overshadowed by conditions (x > 4) and (x != 5).
+Condition (x != 5) is only partially overshadowed by condition (x > 4) and hence is not treated as part of the answer.
+
+Difficulty
+Medium
+
+Tags
+Interpreters, Conditions

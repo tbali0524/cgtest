@@ -1,0 +1,39 @@
+Quaternion Multiplication
+
+https://www.codingame.com/training/medium/medium_com_quaternion-multiplication
+https://www.codingame.com/contribute/view/346c1cd9d01477717d3a15198a0e9796296
+
+A contribution by TheNinja
+
+The quaternions belong to a number system that extends the complex numbers. A quaternion is defined by the sum of scalar multiples of the constants {{i}},{{j}},{{k}} and {{1}}.
+More information is available at http://mathworld.wolfram.com/Quaternion.html
+
+Consider the following properties:
+{{j}}{{k}} = {{i}}
+{{k}}{{i}} = {{j}}
+{{i}}{{j}} = {{k}}
+{{i}}² = {{j}}² = {{k}}² = {{-1}}
+
+These properties also imply that:
+{{k}}{{j}} = {{-i}}
+{{i}}{{k}} = {{-j}}
+{{j}}{{i}} = {{-k}}
+
+The order of multiplication is important.
+
+Your program must output the result of the product of a number of bracketed simplified quaternions.
+
+<<Pay attention to the formatting>>
+The coefficient is appended to the left of the constant.
+If a coefficient is {{1}} or {{-1}}, don't include the {{1}} symbol.
+If a coefficient or scalar term is {{0}}, don't include it.
+The terms must be displayed in order: a{{i}} + b{{j}} + c{{k}} + d.
+
+<<Example Multiplication>>
+(2i+2j)(j+1) = (2ij+2i+2j² +2j) = (2k+2i-2+2j) = (2i+2j+2k-2)
+
+Difficulty
+Medium
+
+Tags
+Algebra, Parsing, Mathematics

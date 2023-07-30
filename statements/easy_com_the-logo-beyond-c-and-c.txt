@@ -1,0 +1,31 @@
+The logo beyond C++ and C#
+
+https://www.codingame.com/training/easy/easy_com_the-logo-beyond-c-and-c
+https://www.codingame.com/contribute/view/40408fbe39755835404edcffb882493003bc0
+
+A contribution by Lisa-Has-Ideas
+
+Legend has it that the origin of the name "C#" was really just two "++" stacked on top of each other, like this
+++
+++ 
+...and that formed a "sharp" (musical note symbol).  Cool, right?
+
+C-Enterprises is considering releasing yet another programming language and their Marketing Department is in need of a logo for it that will play off that history, so it too will consist solely of plus-signs.  They have asked you to do some rough drafts for them.
+
+Here is what they know they want:
+~ They want just the <<outline>> of plus-signs
+~ The outline itself will be done in plus-signs characters ({{+}})
+~ When 2 plus-signs touch each other, the outlines separating the touching parts should disappear, so that it all "flows together"
+
+They have not decided the following so these will be inputs in the various cases:
+~ The [[size]] of the plus-signs
+~ The [[thickness]] of the two-lines that form each plus-sign
+~ The number and arrangement of the plus-signs
+
+(You explain you are a programmer -- not a graphic artist -- but alas they insist.  So you just do your best, knowing the console application output will make the proportions appear a bit elongated.)
+
+Difficulty
+Easy
+
+Tags
+2D array, Ascii Art, Parsing

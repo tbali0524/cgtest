@@ -1,0 +1,17 @@
+Find the missing plus signs in addition
+
+https://www.codingame.com/training/medium/medium_com_find-the-missing-plus-signs-in-addition
+https://www.codingame.com/contribute/view/3106825da27e8f16c91008b0ce5e45f8a7017
+
+A contribution by RaoulMadec
+
+The sum of a set of [[N]] integers is [[S]].
+Unfortunately, the plus signs have disappeared and the integers have been concatenated in a string [[O]]...
+You have to find the positions of the plus signs to recover the addition.
+If there is no solution , then print {{No solution}}, otherwise print the solution(s) in lexicographic order ( 1+11 before 11+1 ).
+
+Difficulty
+Medium
+
+Tags
+Recursion

@@ -1,0 +1,52 @@
+PARK PILOT
+
+https://www.codingame.com/training/easy/easy_com_park-pilot
+https://www.codingame.com/contribute/view/785051b7ed34dd572ab8cc637d5d200e033a
+
+A contribution by bk521
+
+At CarAI, we produce solutions for the automotive industry. In this project, we are developing a parking pilot that can work on different brands of vehicles.
+
+The system includes ultrasonic sensors placed at the four corners of the vehicle and a control unit to which they are connected.
+
+Your mission is to develop an algorithm that finds all available park spaces for a vehicle which has just arrived. Below is an illustration for explanation:
+```
+xxxxxxxx
+xxxxxxxx
+xxxxxxxx park space
+xxxxxxxx=============...
+1------1
+|--car-|  --->
+1------1
+xxxxxxxx=============...
+xxxxxxxx park space
+xxxxxxxx
+xxxxxxxx
+```
+The system can be integrated into different vehicle models. That is why we cannot give you the length of the vehicle. In order for you to calculate it more accurately, a vehicle is not allowed to park near the entrance (denoted as "x" above).
+
+At the start, the back of the vehicle is at index 0. The sensors collect data at that moment, and every time when the vehicle has moved forward 1 unit. The scanning width of each sensor is 1 unit. You are now provided with all the collected data for your development of the algorithm.
+
+<<Vehicle>>
+[[Image Link-1]]
+<<https://drive.google.com/file/d/1EQGb9vIqc2fbuOKsU7gCLouS9-IrO5Vn/view>>
+[[Image Link-2]]
+<<https://ibb.co/QmM5Czf>>
+
+<<Map>>
+[[Image Link-1]]
+<<https://drive.google.com/file/d/1kYZheE47rGRZismKvLRz8IRpC-kuBVq8/view>>
+[[Image Link-2]]
+<<https://ibb.co/GpjhgH7>>
+
+<<Calibration Process>>
+[[Image Link-1]]
+<<https://drive.google.com/file/d/123SZSTsrb6_q8B-OBvTooi3k-PpyqHal/view>>
+[[Image Link-2]]
+<<https://ibb.co/dp9h9dp>>
+
+Difficulty
+Easy
+
+Tags
+Conditions

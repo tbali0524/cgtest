@@ -1,0 +1,14 @@
+Mountain Map
+
+https://www.codingame.com/training/easy/easy_com_mountain-map
+https://www.codingame.com/contribute/view/5859158a2b55e97ae87802d21f8b5d717568
+
+A contribution by rmnShk
+
+The task here is to print the ASCII representation of n mountains where the height of each mountain is given.
+
+Difficulty
+Easy
+
+Tags
+Ascii Art

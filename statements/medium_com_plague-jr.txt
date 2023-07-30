@@ -1,0 +1,21 @@
+Plague, Jr
+
+https://www.codingame.com/training/medium/medium_com_plague-jr
+https://www.codingame.com/contribute/view/439905e4f81f4ef526d7375ce5d09438922c
+
+A contribution by JBM
+
+You want to destroy humankind.
+
+To practice your humankind-destruction skills, you've set up a network of nutritive tissue pads connected with organic rods, such that a unique path from a pad to another always exists. You'll infect one of the pads with the Disease, and watch it spread. Every night, the Disease will spread from the infected pads to the adjacent non-infected pads.
+
+You are given the network structure. Assuming optimal choice for the initial Disease injection, after how many nights would the entire network be affected?
+
+
+Thanks to @dbdr for the choice of words.
+
+Difficulty
+Medium
+
+Tags
+Graph theory, Trees

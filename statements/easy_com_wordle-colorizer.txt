@@ -1,0 +1,29 @@
+Wordle colorizer
+
+https://www.codingame.com/training/easy/easy_com_wordle-colorizer
+https://www.codingame.com/contribute/view/4832772240cc39e0b69c2c002510f793c374e
+
+A contribution by nicof6786
+
+You are given the [[answer]] to today's <<Wordle>> and a list of [[N]] [[attempt]]s to solve it.
+
+For each [[attempt]], you must print the result (5 characters) corresponding to the 5 letters of [[attempt]] consisting of:
+- {{#}} if the letter is at the right place
+- {{O}} if the letter is in [[answer]] but at another place
+- {{X}} for all other cases
+
+Example:
+If [[answer]] is {{POLKA}} and [[attempt]] is {{SOLAR}}, then result should be {{X##OX}}:
+ - {{S}} is not in [[answer]]
+ - {{O}} is at the right place
+ - {{L}} is at the right place
+ - {{A}} is in [[answer]] but at another place
+ - {{R}} is not in [[answer]]
+
+Additionally, if a particular letter appears in [[attempt]] and in [[answer]] a different number of times, the result should be based on the following priority:
+1. {{#}} for correctly placed letters
+2. {{O}} for misplaced letters which appear earlier in [[attempt]]
+3. {{X}} for any excess appearances
+
+Difficulty
+Easy

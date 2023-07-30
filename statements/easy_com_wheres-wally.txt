@@ -1,0 +1,25 @@
+Where's Wally
+
+https://www.codingame.com/training/easy/easy_com_wheres-wally
+https://www.codingame.com/contribute/view/7469a79b176c251ca955fd6b584c60b853eb
+
+A contribution by baboulaf
+
+You will get a representation of Wally and a Picture.
+
+You must find Wally's position inside the picture. The top left corner of the picture is [[(x, y)]]={{(0,0)}}.
+
+<<If Wally's representation contains spaces, the picture may contain others characters at these positions.>>
+
+<<All non-space characters of Wally will be visible in the picture.>>
+
+________________________________________
+* ASCII ART representations of wally are from :
+ - https://ascii.co.uk/art/men
+ - https://asciiart.website/index.php?art=comics/dilbert
+
+Difficulty
+Easy
+
+Tags
+Regular expressions, Ascii Art, String manipulation

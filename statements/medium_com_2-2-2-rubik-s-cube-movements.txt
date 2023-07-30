@@ -1,0 +1,18 @@
+2×2×2 Rubik’s cube movements
+
+https://www.codingame.com/training/medium/medium_com_2-2-2-rubik-s-cube-movements
+https://www.codingame.com/contribute/view/160af9535f39d81d8662c47cae30a55d611
+
+A contribution by nicola
+
+You have to print the colours of the [[Front]] side of a 2×2×2 Rubik’s cube after some moves.
+The colours are named by the first letter of each side ([[Front]], [[Back]], [[Right]], [[Left]], [[Up]], [[Down]]).
+The moves are named the same way if you turn the side [[clockwise]].
+For example [[F]] moves the [[Front]] side clockwise, [[F']] turns it anticlockwise and [[F2]] turns it twice. [[B]] turns it clockwise when you look at the [[Back]] side.
+You won’t be given moves such as [[F5]], [[B52]] or [[U'3]].
+
+Difficulty
+Medium
+
+Tags
+Rubik's cube, Strings, Lists, Group theory

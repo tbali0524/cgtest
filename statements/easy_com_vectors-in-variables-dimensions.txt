@@ -1,0 +1,17 @@
+Vectors in variables dimensions
+
+https://www.codingame.com/training/easy/easy_com_vectors-in-variables-dimensions
+https://www.codingame.com/contribute/view/55554420ae4736b420bee3d1a2d043f055ef0
+
+A contribution by Diabetos
+
+You are a space-time traveler who can travel across universe. You want to know where you can go, so you've got yourself a list of anchors' coordinates (as you travel not only in 3D space, there can be more than 3 associated components for each point). The goal of this exercise is to output the shortest (non zero) and the longest vectors you can form from your list by pairing any two points in combination.
+
+As in 2D: Distance in higher dimensions is calculated as follows: 
+For two points A(a1, a2, ..., an) and B(b1, b2, ..., bn), distance = √ ( {{(a1-b1)²}}+{{(a2-b2)²}}+...+{{(an-bn)²}} )
+
+Difficulty
+Easy
+
+Tags
+Distances

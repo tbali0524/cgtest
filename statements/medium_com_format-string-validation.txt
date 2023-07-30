@@ -1,0 +1,19 @@
+Format string validation
+
+https://www.codingame.com/training/medium/medium_com_format-string-validation
+https://www.codingame.com/contribute/view/1029fa7fd362c89c57ee9074999a31c3d16e
+
+A contribution by Unihedron
+
+You are given a line of [[text]] and a "string format". The [[format]] seems to be heavily inspired from <<LIKE clauses from SQL>> and uses two special characters, {{?}} and {{~}}:
+
+{{?}}: Matches exactly one character.
+{{~}}: Matches any number of characters, from zero (none) to the entire string.
+<<Any other characters:>> Matches exactly that character.
+
+It seems that the format <<does not include escaping special characters>> (good for you!) so {{?}} and {{~}} in [[text]] may only be matched by {{?}} and {{~}} under the right circumstances. The backslash character will match only the backslash character itself.
+
+The [[text]] is considered to {{MATCH}} if the [[format]] describes the [[text]] <<from start to end>> with no characters rejected by the pattern. If it does not match, write {{FAIL}} instead.
+
+Difficulty
+Medium

@@ -1,0 +1,13 @@
+Probability for Dummies
+
+https://www.codingame.com/training/easy/easy_com_probability-for-dummies
+https://www.codingame.com/contribute/view/227854b2b312e0ee983a0d017a64b6ffa95a3
+
+A contribution by Westicles
+
+Burt studies math but is too dumb to derive fancy formulas, so he solves his homework problems using random numbers.
+
+Given an American roulette wheel with 38 possible outcomes (0-36 or 00), what are the odds of landing on at least [[m]] different numbers in [[n]] spins?
+
+Difficulty
+Easy

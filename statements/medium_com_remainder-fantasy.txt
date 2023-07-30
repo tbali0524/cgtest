@@ -1,0 +1,25 @@
+Remainder Fantasy
+
+https://www.codingame.com/training/medium/medium_com_remainder-fantasy
+https://www.codingame.com/contribute/view/1399db998e8d613b756d475ab8a91d955fa1
+
+A contribution by java_coffee_cup
+
+This was a puzzle invented and solved by Chinese during the 3rd to 5th centuries AD, with innovative solution steps recorded in Mathematical treaties of that era. Translated the text into modern terminologies:
+
+<<Let x be an integer. Divide x by 3, remains 2; divide x by 5, remains 3; divide x by 7, remains 2. Find the minimum value of x.>>
+
+You are going to solve similar puzzles with the aid of state-of-the-art technologies and know-how. Take the challenge?
+
+
+Beware, the moduli you are given may not be pairwise coprime. Moreover, your answer must always be as small as possible while being <<greater than or equal to>> every modulo in input. For instance, if you are asked for an integer x such that:
+- it remains 3 when dividing x by 8
+- it remains 11 when dividing x by 15
+- it remains 1 when dividing x by 10,
+then the answer is 131. In this example, 11 is not a valid answer since it is less than 15 (the modulo in the second constraint).
+
+Difficulty
+Medium
+
+Tags
+Remainder Theorem, Arithmetic

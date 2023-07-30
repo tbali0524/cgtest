@@ -1,0 +1,18 @@
+Fix the spaces
+
+https://www.codingame.com/training/medium/medium_com_fix-the-spaces
+https://www.codingame.com/contribute/view/46053956831b4324bf2a6e36521916e52a727
+
+A contribution by Rafarafa
+
+You are given two strings, the first contains the [[original]] sentence, with words in the right order but no spaces. The second has the [[words]] in random order but with spaces to differentiate them. Fix the original sentence by adding spaces where they should be.
+
+Every test has <<at least>> one solution, but there are some cases where the original sentence <<can not unambiguously>> be deciphered. In those cases print {{Unsolvable}}.
+
+<<NB:>> Tests 1-14 cover simple cases and should help you debug your program. Tests 15-16 check the performance.
+
+Difficulty
+Medium
+
+Tags
+Backtracking, String manipulation

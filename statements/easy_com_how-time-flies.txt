@@ -1,0 +1,41 @@
+How time flies
+
+https://www.codingame.com/training/easy/easy_com_how-time-flies
+https://www.codingame.com/contribute/view/434e58bb3f0662dad1358563e207431b7c0
+
+A contribution by Doomer3D
+
+Your program must print formatted string with the number of full years and full months (if there are any greater than 0) and the total number of days between [[BEGIN]] and [[END]] dates in <<dd.mm.yyyy>> format.
+
+<<Example 1:>>
+
+Input:
+01.01.2000
+01.01.2016
+
+Output:
+16 years, total 5844 days
+
+<<Example 2:>>
+
+Input:
+15.12.2014
+14.02.2016
+
+Output:
+1 year, 1 month, total 426 days
+
+<<Example 3:>>
+
+Input:
+01.01.2016
+18.08.2016
+
+Output:
+7 months, total 230 days
+
+Difficulty
+Easy
+
+Tags
+Strings

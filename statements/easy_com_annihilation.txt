@@ -1,0 +1,11 @@
+Annihilation
+
+https://www.codingame.com/training/easy/easy_com_annihilation
+https://www.codingame.com/contribute/view/21069c8d47e7bc8384d143be54e946ee70101
+
+A contribution by Westicles
+
+Starting with an [[H]]x[[W]] grid at t=0, at each time step the arrows {{^v<>}} move one space up/down/left/right respectively (wrapping around if they go off the edge).  After each time step, if two or more arrows are in the same position they are all destroyed.  How many time steps does it take until there are no arrows remaining?
+
+Difficulty
+Easy

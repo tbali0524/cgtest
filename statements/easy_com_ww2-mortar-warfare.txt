@@ -1,0 +1,49 @@
+WW2 Mortar Warfare
+
+https://www.codingame.com/training/easy/easy_com_ww2-mortar-warfare
+https://www.codingame.com/contribute/view/190245c466ef99dd60defe92c520ef9152de9
+
+A contribution by zakacat
+
+Welcome soldier, 
+
+It is in the heart of World War 2 and imagine yourself hunkered down in a trench line with your squad, and that there is also an enemy squad nearby opposing your movement. Both squads appear evenly matched, and there has been a stalemate for hours. There is a mortar kit which includes a rudimentary range finder, but unfortunately for your squad, no one knows how to operate it properly; however, at this point, attempting to use it is becoming your only viable option. You hop onto the radio with your superior who puts you through to an artillery specialist...
+
+"Listen up, lieutenant. Do you have a pen, paper, and your slide rule? Good, you will need those to do your calculations. Your range finder is going to provide you with a horizontal distance between you and the enemy unit. The stereoscope will need to be focused for an accurate reading. I recommend that you don't get spotted using it just yet. You will then need to use that [[range]] and also the {{exit velocity}} of your mortar round to determine what angle you will need to use to successfully land your shot. I will send you the info for the M2 mortar and the physics behind it right away, but when you start firing, I want you to radio me the <<angle>> and <<flight time>> so that I know that your calculations are at least somewhat accurate. Good luck, soldier. Now give 'em hell!"
+
+M2 Mortar Round Specifications:
+
+Shell Weight 1.4kg
+Caliber 60mm
+Elevation {{40° - 85°}}
+Rate of Fire 18 rounds/minute
+Max Range {{1.8km}}
+Initial Velocity {{158 meters/second}}
+
+(Source: https://en.wikipedia.org/wiki/M2_mortar)
+
+Physics Formulas:
+
+Θ = (arcsin((R*g)/v^2))/2
+
+t = (2*v*sinΘ)/g
+
+Where
+R = Range (in meters)
+g = Acceleration due to gravity (9.8 meters/second^2)
+v = Initial velocity (in meters/second)
+Θ = Mortar angle/elevation (in radians)
+t = Time of Flight (in seconds)
+
+Note that the potential trajectories come in pairs where there are two different angles that can achieve the same range. For example, if the calculation produces an elevation of 10°, then 80° (90° - 10°) will also work.
+
+(Source: https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion
+I derived the formula for theta, but more information is available in this free text. I recommend reading through the short section on Projectile Motion completely if you have the time, specifically the sub-section Time of Flight, Trajectory, and Range.)
+
+In this problem, we can assume zero air resistance, and that the mortar and the target have the same vertical displacement (they are in-line horizontally).
+
+Difficulty
+Easy
+
+Tags
+Trigonometry, Parsing, Physics, Angle

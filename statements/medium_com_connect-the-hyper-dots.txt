@@ -1,0 +1,18 @@
+Connect the Hyper-Dots
+
+https://www.codingame.com/training/medium/medium_com_connect-the-hyper-dots
+https://www.codingame.com/contribute/view/6652c9aa2e76721cb46b5811f4a6c6957b36
+
+A contribution by davilla
+
+A collection of labeled points is provided in [[<<n>>]]-dimensional space. <<Starting at the origin>>, find the nearest point, and then the <<nearest unused point>> from that point, and so on until all points have been connected.
+
+The concatenated labels <<within an orthant>> spell a word. Therefore, these words need to be <<spaced>> when <<crossing some axis>>, that is, when entering a new orthant.
+
+Some points labeled with punctuation will have a zero coordinate. In the tests, the hyphen in {{criss-cross}} is an example. A zero coordinate is not considered crossing the axis. Thus, do not add a space except when the sign change is fully within a new orthant from previous.
+
+Difficulty
+Medium
+
+Tags
+Geometry, Distances, Coordinates

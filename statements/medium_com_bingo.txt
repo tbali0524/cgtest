@@ -1,0 +1,18 @@
+Bingo!
+
+https://www.codingame.com/training/medium/medium_com_bingo
+https://www.codingame.com/contribute/view/10375e88b7235d634b82668e57448da15551
+
+A contribution by Yanahma
+
+Provided with a set of <<bingo cards>>, and the order in which the numbers will be called, output how many numbers need to be called before somebody has a <<line>>, followed by how many numbers need to be called before somebody has "bingo" (all numbers on their sheet filled in).
+
+A <<bingo card>> is defined as a [[5x5]] set of numbers between 1 and 90. The center of a bingo card is a "free space", meaning it is already filled in - this is denoted with a [[0]] in this puzzle. 
+
+A <<line>> on the bingo card is defined as any row, column or diagonal of 5 numbers on the card.
+
+Difficulty
+Medium
+
+Tags
+Loops, Arrays

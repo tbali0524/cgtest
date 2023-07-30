@@ -1,0 +1,30 @@
+Identify a simple shape
+
+https://www.codingame.com/training/medium/medium_com_identify-a-simple-shape
+https://www.codingame.com/contribute/view/4888899cceefd035cfef5bd4969dff8c9aef0
+
+A contribution by VilBoub
+
+Recognize the shape made up of {{#}} and give the coordinates of the corners
+
+The possible shapes are:
+* <<POINT>>
+* <<LINE>>
+* <<EMPTY TRIANGLE>>
+* <<FILLED TRIANGLE>>
+* <<EMPTY SQUARE>>
+* <<FILLED SQUARE>>
+* <<EMPTY RECTANGLE>>
+* <<FILLED RECTANGLE>>
+
+Coordinates: 
+* (0,0) is top left
+* (19,0) is top right
+* (0,19) is bottom left
+* (19,19) is bottom right
+
+Difficulty
+Medium
+
+Tags
+Ascii Art, Image processing

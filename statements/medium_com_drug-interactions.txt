@@ -1,0 +1,13 @@
+Drug Interactions
+
+https://www.codingame.com/training/medium/medium_com_drug-interactions
+https://www.codingame.com/contribute/view/7539b50c48d899c511f7f6862316a65e3893
+
+A contribution by Westicles
+
+You are given a list of prescription drugs.  Any two drugs with three or more letters in common (ignoring case) will have a bad interaction and should not be used together.  Find the largest number of drugs in the list that can be used together.
+
+Note that the same letter can match more than once, e.g. "Xanax" and "Viagra" each have two A's and thus have two matching letters.
+
+Difficulty
+Medium

@@ -1,0 +1,18 @@
+Insert to String
+
+https://www.codingame.com/training/easy/easy_com_insert-to-string
+https://www.codingame.com/contribute/view/10741c71cf7317ed11ae055b88c3f9f118112
+
+A contribution by Flafy
+
+You're given a string and a list of changes to do on that string.
+Each change includes a line number, a column number, and a string to add at that location.
+Commit all of the changes to the given string so they wouldn't interfere with each other.
+
+("\n" should be replaced with a newline.)
+
+Difficulty
+Easy
+
+Tags
+String manipulation, Strive for Simplicity

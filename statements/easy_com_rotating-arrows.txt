@@ -1,0 +1,38 @@
+Rotating arrows
+
+https://www.codingame.com/training/easy/easy_com_rotating-arrows
+https://www.codingame.com/contribute/view/1196130d2fce943f08c02afa6fed35ec33fe6
+
+A contribution by Mortis_666
+
+A [[W]] x [[H]] grid is filled with arrows, each arrow will point to any one direction ({{UP}}, {{DOWN}}, {{RIGHT}} or {{LEFT}}).
+You can know which direction the arrow is pointing to by knowing its ascii image,
+{{^}}, {{>}}, {{v}}, {{<}} represent {{UP}}, {{RIGHT}}, {{DOWN}} and {{LEFT}}.
+
+You can <<rotate>> an arrow clockwise, for example: {{^}} after rotation will become {{>}}.
+After you rotate the arrow, the other arrow that the arrow is pointing at will start rotating clockwise too, this process continues until the last rotated arrow points back to the first arrow you rotate or the last rotated arrow points to the edge of the grid.
+
+After you rotated the arrow at position ([[x]], [[y]]), how many times of rotation will occur?
+(Index starts with {{0}})
+
+For example:
+[[W]]={{2}}, [[H]]={{2}}
+[[x]]={{0}}, [[y]]={{0}}
+
+Grid:
+{{^>}}
+{{<v}}
+
+First we start at the arrow at position {{(0, 0)}}, after rotating the arrow clockwise, the arrow now points to the right. New grid:
+{{>>}}
+{{<v}}
+
+Now we rotate the arrow at {{(1, 0)}}, and it will now point down, and we now rotate the arrow at {{(1, 1)}}, and the arrow will point to the left. Next, we rotate the arrow at (0, 1), and the arrow will point to up, which is the arrow at {{(0, 0)}}.
+
+The arrow points back to the first arrow you rotate! So the result is {{4}}, {{4}} rotation occurs!
+
+Difficulty
+Easy
+
+Tags
+2D array, Loops

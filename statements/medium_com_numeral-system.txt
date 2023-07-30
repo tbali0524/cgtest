@@ -1,0 +1,14 @@
+Numeral system
+
+https://www.codingame.com/training/medium/medium_com_numeral-system
+https://www.codingame.com/contribute/view/863b74db005549f5fe5e08e5bf660d5676b
+
+A contribution by Vinatorul
+
+Your task is to identify minimal possible numeral system of the simple equality [[X]]+[[Y]]=[[Z]].
+
+Difficulty
+Medium
+
+Tags
+Radix, Parsing
