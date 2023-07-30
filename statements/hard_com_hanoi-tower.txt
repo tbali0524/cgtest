@@ -1,5 +1,6 @@
 Hanoi tower
 
+hard_com_hanoi-tower
 https://www.codingame.com/training/hard/hanoi-tower
 https://www.codingame.com/contribute/view/3883d8d5b068b603f12fab47f003f094392
 

@@ -1,6 +1,7 @@
 Low Resolution: What's The Shape?
 
-https://www.codingame.com/training/easy/easy_com_low-resolution-whats-the-shape
+easy_com_low-resolution-whats-the-shape
+https://www.codingame.com/training/easy/low-resolution-whats-the-shape
 https://www.codingame.com/contribute/view/5697d326bf7224f035d127ebcc8e348419aa
 
 A contribution by daifei4321

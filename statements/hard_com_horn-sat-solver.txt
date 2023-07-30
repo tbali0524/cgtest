@@ -1,5 +1,6 @@
 Horn-SAT solver
 
+hard_com_horn-sat-solver
 https://www.codingame.com/training/hard/horn-sat-solver
 https://www.codingame.com/contribute/view/1404d67b6e7613ee0ba87a25f3685d6b89a6
 

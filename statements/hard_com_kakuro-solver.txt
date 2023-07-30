@@ -1,5 +1,6 @@
 Kakuro Solver
 
+hard_com_kakuro-solver
 https://www.codingame.com/training/hard/kakuro-solver
 https://www.codingame.com/contribute/view/548716c9fd04e173337848966ad2c024762b
 

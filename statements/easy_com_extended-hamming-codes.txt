@@ -1,6 +1,7 @@
 Extended Hamming Codes
 
-https://www.codingame.com/training/easy/easy_com_extended-hamming-codes
+easy_com_extended-hamming-codes
+https://www.codingame.com/training/easy/extended-hamming-codes
 https://www.codingame.com/contribute/view/5407e3d9fe4c7b7dc3c7298a90350f23e7ba
 
 A contribution by Dogeek

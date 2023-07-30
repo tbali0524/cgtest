@@ -1,5 +1,6 @@
 Gerrymandering
 
+hard_com_gerrymandering
 https://www.codingame.com/training/hard/gerrymandering
 https://www.codingame.com/contribute/view/10377fefd2c36b12c6b7c131ab588bba837fe
 

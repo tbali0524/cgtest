@@ -1,6 +1,7 @@
 Remainder Fantasy
 
-https://www.codingame.com/training/medium/medium_com_remainder-fantasy
+medium_com_remainder-fantasy
+https://www.codingame.com/training/medium/remainder-fantasy
 https://www.codingame.com/contribute/view/1399db998e8d613b756d475ab8a91d955fa1
 
 A contribution by java_coffee_cup

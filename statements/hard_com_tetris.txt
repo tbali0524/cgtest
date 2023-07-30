@@ -1,5 +1,6 @@
 Tetris
 
+hard_com_tetris
 https://www.codingame.com/training/hard/tetris
 https://www.codingame.com/contribute/view/161ce61c586e957efd4e9a3f7b6792bb12c
 

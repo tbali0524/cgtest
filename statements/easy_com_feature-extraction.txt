@@ -1,6 +1,7 @@
 Feature Extraction
 
-https://www.codingame.com/training/easy/easy_com_feature-extraction
+easy_com_feature-extraction
+https://www.codingame.com/training/easy/feature-extraction
 https://www.codingame.com/contribute/view/6330bffe6e5693a3f7f85dd857e507f93ee0
 
 A contribution by codybumba

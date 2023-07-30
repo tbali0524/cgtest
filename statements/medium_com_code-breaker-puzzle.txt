@@ -1,6 +1,7 @@
 Code Breaker Puzzle
 
-https://www.codingame.com/training/medium/medium_com_code-breaker-puzzle
+medium_com_code-breaker-puzzle
+https://www.codingame.com/training/medium/code-breaker-puzzle
 https://www.codingame.com/contribute/view/7678a765bbb9954cb849f2c03804d4ae5ba2
 
 A contribution by Wontonimo

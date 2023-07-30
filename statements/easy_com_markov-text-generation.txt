@@ -1,6 +1,7 @@
 Markov Text Generation
 
-https://www.codingame.com/training/easy/easy_com_markov-text-generation
+easy_com_markov-text-generation
+https://www.codingame.com/training/easy/markov-text-generation
 https://www.codingame.com/contribute/view/7799355410921bf449a7b4ecbbde9186ff2c
 
 A contribution by Wontonimo

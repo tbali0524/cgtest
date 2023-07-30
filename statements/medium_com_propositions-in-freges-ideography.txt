@@ -1,6 +1,7 @@
 Propositions in Frege’s ideography
 
-https://www.codingame.com/training/medium/medium_com_propositions-in-frege-s-ideography
+medium_com_propositions-in-freges-ideography
+https://www.codingame.com/training/medium/propositions-in-freges-ideography
 https://www.codingame.com/contribute/view/48713310580f081f8fd2914b85c91bb1153a
 
 A contribution by nicola

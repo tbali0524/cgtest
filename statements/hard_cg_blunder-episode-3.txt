@@ -1,6 +1,9 @@
 Blunder - Episode 3
 
+hard_cg_blunder-episode-3
 https://www.codingame.com/training/hard/blunder-episode-3
+
+by CodinGame
 
 The Goal
 Blunder is happy because hundreds of CodinGamers have re-programmed his natural behavior. The problem is that these programs aren’t all equal. Evidently, most are too fast for Blunder to fully revel in his inactivity...

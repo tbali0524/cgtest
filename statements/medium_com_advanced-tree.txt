@@ -1,6 +1,7 @@
 Advanced Tree
 
-https://www.codingame.com/training/medium/medium_com_advanced-tree
+medium_com_advanced-tree
+https://www.codingame.com/training/medium/advanced-tree
 https://www.codingame.com/contribute/view/4942da1fd9fb3c0d0ad8f5c0de175c0f775
 
 A contribution by Shoko84

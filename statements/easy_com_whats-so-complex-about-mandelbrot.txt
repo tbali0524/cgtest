@@ -1,6 +1,7 @@
 What's so complex about Mandelbrot?
 
-https://www.codingame.com/training/easy/easy_com_whats-so-complex-about-mandelbrot
+easy_com_whats-so-complex-about-mandelbrot
+https://www.codingame.com/training/easy/whats-so-complex-about-mandelbrot
 https://www.codingame.com/contribute/view/944571e30add86073455cee3ad892a1bc01
 
 A contribution by asteriskman

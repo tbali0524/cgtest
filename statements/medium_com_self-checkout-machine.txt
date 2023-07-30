@@ -1,6 +1,7 @@
 Self Checkout Machine
 
-https://www.codingame.com/training/medium/medium_com_self-checkout-machine
+medium_com_self-checkout-machine
+https://www.codingame.com/training/medium/self-checkout-machine
 https://www.codingame.com/contribute/view/80549cbe241ac4e6476c4f43a674ee7627af
 
 A contribution by Rob-G

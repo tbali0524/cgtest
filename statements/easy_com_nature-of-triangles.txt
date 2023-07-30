@@ -1,6 +1,7 @@
 Nature of triangles
 
-https://www.codingame.com/training/easy/easy_com_nature-of-triangles
+easy_com_nature-of-triangles
+https://www.codingame.com/training/easy/nature-of-triangles
 https://www.codingame.com/contribute/view/182d17fe983732f5625739ea7dc4fbeaa31
 
 A contribution by nicola

@@ -1,6 +1,7 @@
 Number of letters in a number - Binary
 
-https://www.codingame.com/training/medium/medium_com_number-of-letters-in-a-number-binary
+medium_com_number-of-letters-in-a-number-binary
+https://www.codingame.com/training/medium/number-of-letters-in-a-number-binary
 https://www.codingame.com/contribute/view/453b749aeeaed5036e1bb3a37cfd07851af
 
 A contribution by btharper

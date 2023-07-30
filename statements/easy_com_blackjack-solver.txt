@@ -1,6 +1,7 @@
 Blackjack solver
 
-https://www.codingame.com/training/easy/easy_com_blackjack-solver
+easy_com_blackjack-solver
+https://www.codingame.com/training/easy/blackjack-solver
 https://www.codingame.com/contribute/view/252275d3421119464664efafc4d4d27e046ba
 
 A contribution by CeliTop

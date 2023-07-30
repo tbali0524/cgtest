@@ -1,6 +1,7 @@
 Sudoku Validator
 
-https://www.codingame.com/training/easy/easy_com_sudoku-validator
+easy_com_sudoku-validator
+https://www.codingame.com/training/easy/sudoku-validator
 https://www.codingame.com/contribute/view/50004ebc8dee3fa9a9cac12f5d3913c9ff4b
 
 A contribution by redCroc

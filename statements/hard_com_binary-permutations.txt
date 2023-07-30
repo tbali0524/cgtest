@@ -1,5 +1,6 @@
 Binary Permutations
 
+hard_com_binary-permutations
 https://www.codingame.com/training/hard/binary-permutations
 https://www.codingame.com/contribute/view/185ef245e717a0dde5b021359042ef0ba2f
 

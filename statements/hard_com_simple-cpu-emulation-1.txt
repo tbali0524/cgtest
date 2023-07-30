@@ -1,5 +1,6 @@
 Simple CPU Emulation 1
 
+hard_com_simple-cpu-emulation-1
 https://www.codingame.com/training/hard/simple-cpu-emulation-1
 https://www.codingame.com/contribute/view/5915184a85c6c0ec1c1e2ed819908a69579
 

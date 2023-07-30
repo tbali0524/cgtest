@@ -1,6 +1,7 @@
 Smooth!
 
-https://www.codingame.com/training/easy/easy_com_smooth
+easy_com_smooth
+https://www.codingame.com/training/easy/smooth
 https://www.codingame.com/contribute/view/442555330daf5de1f18cb051a8f289c2ff65
 
 A contribution by JBM

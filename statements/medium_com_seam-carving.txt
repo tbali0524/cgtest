@@ -1,6 +1,7 @@
 Seam Carving
 
-https://www.codingame.com/training/medium/medium_com_seam-carving
+medium_com_seam-carving
+https://www.codingame.com/training/medium/seam-carving
 https://www.codingame.com/contribute/view/2025b248fbdf81f5289e32ef2d464fb148f4
 
 A contribution by Niako

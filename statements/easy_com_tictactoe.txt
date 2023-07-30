@@ -1,6 +1,7 @@
 TicTacToe
 
-https://www.codingame.com/training/easy/easy_com_tictactoe
+easy_com_tictactoe
+https://www.codingame.com/training/easy/tictactoe
 https://www.codingame.com/contribute/view/4920f282218a74e8b2f6a31f68ddb961c496
 
 A contribution by LaFayette

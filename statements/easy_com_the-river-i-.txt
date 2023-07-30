@@ -1,6 +1,7 @@
 The River I.
 
-https://www.codingame.com/training/easy/easy_com_the-river-i-
+easy_com_the-river-i-
+https://www.codingame.com/training/easy/the-river-i-
 https://www.codingame.com/contribute/view/958e3a100bfbb2308326fc681968873b165
 
 A contribution by ng201

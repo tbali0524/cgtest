@@ -1,6 +1,7 @@
 Bingo!
 
-https://www.codingame.com/training/medium/medium_com_bingo
+medium_com_bingo
+https://www.codingame.com/training/medium/bingo
 https://www.codingame.com/contribute/view/10375e88b7235d634b82668e57448da15551
 
 A contribution by Yanahma

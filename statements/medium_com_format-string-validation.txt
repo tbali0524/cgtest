@@ -1,6 +1,7 @@
 Format string validation
 
-https://www.codingame.com/training/medium/medium_com_format-string-validation
+medium_com_format-string-validation
+https://www.codingame.com/training/medium/format-string-validation
 https://www.codingame.com/contribute/view/1029fa7fd362c89c57ee9074999a31c3d16e
 
 A contribution by Unihedron

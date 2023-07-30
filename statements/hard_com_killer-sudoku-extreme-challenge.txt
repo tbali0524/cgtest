@@ -1,5 +1,6 @@
 Killer Sudoku Extreme Challenge
 
+hard_com_killer-sudoku-extreme-challenge
 https://www.codingame.com/training/hard/killer-sudoku-extreme-challenge
 https://www.codingame.com/contribute/view/43014d4fd61854166b33437a2034967d095df
 

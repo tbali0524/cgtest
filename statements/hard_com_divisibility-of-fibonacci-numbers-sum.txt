@@ -1,5 +1,6 @@
 Divisibility of Fibonacci numbers sum
 
+hard_com_divisibility-of-fibonacci-numbers-sum
 https://www.codingame.com/training/hard/divisibility-of-fibonacci-numbers-sum
 https://www.codingame.com/contribute/view/6071bfe55e7b9857ce7570364b83c34ed4fe
 

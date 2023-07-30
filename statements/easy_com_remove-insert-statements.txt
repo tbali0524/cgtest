@@ -1,6 +1,7 @@
 Remove insert statements
 
-https://www.codingame.com/training/easy/easy_com_remove-insert-statements
+easy_com_remove-insert-statements
+https://www.codingame.com/training/easy/remove-insert-statements
 https://www.codingame.com/contribute/view/4753572d07b3784ccf2961540cb55c232f60e
 
 A contribution by nguyen.lam

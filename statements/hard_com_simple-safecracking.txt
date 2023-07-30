@@ -1,5 +1,6 @@
 Simple safecracking
 
+hard_com_simple-safecracking
 https://www.codingame.com/training/hard/simple-safecracking
 https://www.codingame.com/contribute/view/348ea4024e8d7a147c4ec829dfc6206a5ee
 

@@ -1,6 +1,7 @@
 Battle Tower
 
-https://www.codingame.com/training/medium/medium_com_battle-tower
+medium_com_battle-tower
+https://www.codingame.com/training/medium/battle-tower
 https://www.codingame.com/contribute/view/524498abc99145592f3f6aae8bc2da52d36e
 
 A contribution by java_coffee_cup

@@ -1,5 +1,6 @@
 Prime Fractals in Pascal's Triangle
 
+expert_com_prime-fractals-in-pascals-triangle
 https://www.codingame.com/training/expert/prime-fractals-in-pascals-triangle
 https://www.codingame.com/contribute/view/48029e7d5a784565c53d734744d9ff7b0592
 

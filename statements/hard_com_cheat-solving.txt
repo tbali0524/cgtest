@@ -1,5 +1,6 @@
 Cheat Solving
 
+hard_com_cheat-solving
 https://www.codingame.com/training/hard/cheat-solving
 https://www.codingame.com/contribute/view/4484389318dcf4417096b2cd44856d9d89e
 

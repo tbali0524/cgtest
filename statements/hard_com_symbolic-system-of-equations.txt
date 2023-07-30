@@ -1,5 +1,6 @@
 Symbolic system of equations
 
+hard_com_symbolic-system-of-equations
 https://www.codingame.com/training/hard/symbolic-system-of-equations
 https://www.codingame.com/contribute/view/13765138b771ce50104a2e75f9e77a0f6be1
 

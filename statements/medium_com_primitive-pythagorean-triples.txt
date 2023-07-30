@@ -1,6 +1,7 @@
 Primitive Pythagorean Triples
 
-https://www.codingame.com/training/medium/medium_com_primitive-pythagorean-triples
+medium_com_primitive-pythagorean-triples
+https://www.codingame.com/training/medium/primitive-pythagorean-triples
 https://www.codingame.com/contribute/view/7175431cc584f7168f5d0ebe9b7a156d94c9
 
 A contribution by NicolasAlmerge

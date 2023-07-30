@@ -1,5 +1,6 @@
 Castle Siege
 
+hard_com_castle-siege
 https://www.codingame.com/training/hard/castle-siege
 https://www.codingame.com/contribute/view/15937b6be964a27905a03eb11c660e3af70
 

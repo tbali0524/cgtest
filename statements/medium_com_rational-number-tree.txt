@@ -1,6 +1,7 @@
 Rational Number Tree
 
-https://www.codingame.com/training/medium/medium_com_rational-number-tree
+medium_com_rational-number-tree
+https://www.codingame.com/training/medium/rational-number-tree
 https://www.codingame.com/contribute/view/4652d7f3e4abe9581834dfc7847d8ae02c65
 
 A contribution by java_coffee_cup

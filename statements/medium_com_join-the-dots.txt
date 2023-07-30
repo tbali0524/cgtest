@@ -1,6 +1,7 @@
 Join the Dots
 
-https://www.codingame.com/training/medium/medium_com_join-the-dots
+medium_com_join-the-dots
+https://www.codingame.com/training/medium/join-the-dots
 https://www.codingame.com/contribute/view/151303455f0f5b35fafe9f000d1b264fbce76
 
 A contribution by Dyd

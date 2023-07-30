@@ -1,6 +1,7 @@
 Source Code Analyser
 
-https://www.codingame.com/training/medium/medium_com_source-code-analyser
+medium_com_source-code-analyser
+https://www.codingame.com/training/medium/source-code-analyser
 https://www.codingame.com/contribute/view/518483e26d8ab793cf9ae496645ddd6dc11e
 
 A contribution by TBali

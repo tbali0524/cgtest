@@ -1,6 +1,7 @@
 Monthly System
 
-https://www.codingame.com/training/medium/medium_com_monthly-system
+medium_com_monthly-system
+https://www.codingame.com/training/medium/monthly-system
 https://www.codingame.com/contribute/view/923ab2295d2acf322730fd29e770eb03303
 
 A contribution by firefliesalco

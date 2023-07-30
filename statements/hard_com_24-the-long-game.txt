@@ -1,7 +1,8 @@
 24: The Long Game
 
-// https://www.codingame.com/training/hard/24-the-long-game
-// https://www.codingame.com/contribute/view/5086878916a81eb71f12c88ddc31fdcc41618
+hard_com_24-the-long-game
+https://www.codingame.com/training/hard/24-the-long-game
+https://www.codingame.com/contribute/view/5086878916a81eb71f12c88ddc31fdcc41618
 
 A contribution by jddingemanse
 Approved by UnknownException,Timinator,Pims2027

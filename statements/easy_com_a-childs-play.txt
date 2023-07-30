@@ -1,6 +1,7 @@
 A child's play
 
-https://www.codingame.com/training/easy/easy_com_a-child-s-play
+easy_com_a-childs-play
+https://www.codingame.com/training/easy/a-childs-play
 https://www.codingame.com/contribute/view/44234bafac22aabe005455fa4dead0136e9b
 
 A contribution by BLANC

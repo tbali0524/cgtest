@@ -1,5 +1,6 @@
 Running Up That Hill
 
+expert_com_running-up-that-hill
 https://www.codingame.com/training/expert/running-up-that-hill
 https://www.codingame.com/contribute/view/26614af4d3401540b127d7fcd8a230804eb2c
 

@@ -1,6 +1,7 @@
 We're going in circles!
 
-https://www.codingame.com/training/medium/medium_com_were-going-in-circles
+medium_com_were-going-in-circles
+https://www.codingame.com/training/medium/were-going-in-circles
 https://www.codingame.com/contribute/view/76505b834d60f17d3912b0dbf49530a14215
 
 A contribution by BartholomewIII

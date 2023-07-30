@@ -1,6 +1,7 @@
 Level of nested parentheses
 
-https://www.codingame.com/training/medium/medium_com_level-of-nested-parentheses
+medium_com_level-of-nested-parentheses
+https://www.codingame.com/training/medium/level-of-nested-parentheses
 https://www.codingame.com/contribute/view/21169e3e05ecbd9aaf0ea54d95b01c8d9afe6
 
 A contribution by TheMagicShop

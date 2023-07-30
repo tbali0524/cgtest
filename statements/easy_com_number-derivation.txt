@@ -1,6 +1,7 @@
 Number derivation
 
-https://www.codingame.com/training/easy/easy_com_number-derivation
+easy_com_number-derivation
+https://www.codingame.com/training/easy/number-derivation
 https://www.codingame.com/contribute/view/5650b4a3c4dc2776e2693244106a3a7e6224
 
 A contribution by nicola

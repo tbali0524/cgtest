@@ -1,6 +1,9 @@
 Winamax Sponsored Contest
 
+hard_cg_winamax-sponsored-contest
 https://www.codingame.com/training/hard/winamax-sponsored-contest
+
+by CodinGame
 
 The Goal
 Winamax now offers a sports betting service.

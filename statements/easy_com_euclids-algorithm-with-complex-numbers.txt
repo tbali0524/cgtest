@@ -1,6 +1,7 @@
 Euclid's algorithm with complex numbers
 
-https://www.codingame.com/training/easy/easy_com_euclids-algorithm-with-complex-numbers
+easy_com_euclids-algorithm-with-complex-numbers
+https://www.codingame.com/training/easy/euclids-algorithm-with-complex-numbers
 https://www.codingame.com/contribute/view/52518e3c281414497c4f1f13bc85c49c42785
 
 A contribution by Rafarafa

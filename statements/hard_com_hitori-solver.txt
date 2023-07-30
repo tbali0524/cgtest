@@ -1,5 +1,6 @@
 Hitori solver
 
+hard_com_hitori-solver
 https://www.codingame.com/training/hard/hitori-solver
 https://www.codingame.com/contribute/view/510dc82c484110e033be54403182c6da16b
 

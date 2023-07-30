@@ -1,6 +1,7 @@
 Condition Overshadowing
 
-https://www.codingame.com/training/medium/medium_com_condition-overshadowing
+medium_com_condition-overshadowing
+https://www.codingame.com/training/medium/condition-overshadowing
 https://www.codingame.com/contribute/view/7980c75b20bc6fb64b41b1f209877256a12d
 
 A contribution by Alonehoc

@@ -1,6 +1,7 @@
 Benford's law
 
-https://www.codingame.com/training/easy/easy_com_benfords-law
+easy_com_benfords-law
+https://www.codingame.com/training/easy/benfords-law
 https://www.codingame.com/contribute/view/5174ac7fc58805b480a2d13951728e63dda1
 
 A contribution by Alcalyn

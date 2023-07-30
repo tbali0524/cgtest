@@ -1,5 +1,6 @@
 Snooker Ball Collision
 
+hard_com_snooker-ball-collision
 https://www.codingame.com/training/hard/snooker-ball-collision
 https://www.codingame.com/contribute/view/75830a7dc6af20f17b977dcd77f73d3f34de
 

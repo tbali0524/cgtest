@@ -1,6 +1,7 @@
 Tile a Floor Differently
 
-https://www.codingame.com/training/easy/easy_com_tile-a-floor-differently
+easy_com_tile-a-floor-differently
+https://www.codingame.com/training/easy/tile-a-floor-differently
 https://www.codingame.com/contribute/view/5195754d8ced8c1119d5a67c4693952b3e8fd
 
 A contribution by Lisa-Has-Ideas

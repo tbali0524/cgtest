@@ -1,6 +1,7 @@
 Dice probability calculator
 
-https://www.codingame.com/training/medium/medium_com_dice-probability-calculator
+medium_com_dice-probability-calculator
+https://www.codingame.com/training/medium/dice-probability-calculator
 https://www.codingame.com/contribute/view/1614ea78db6bba77b7b249a1210f201d22ad
 
 A contribution by Zorg1

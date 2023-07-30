@@ -1,6 +1,7 @@
 Team Building
 
-https://www.codingame.com/training/medium/medium_com_team-building
+medium_com_team-building
+https://www.codingame.com/training/medium/team-building
 https://www.codingame.com/contribute/view/46875a682905567e20e792efdc1fbfdd8ec6e
 
 A contribution by Andriamanitra

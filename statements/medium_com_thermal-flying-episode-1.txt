@@ -1,6 +1,7 @@
 Thermal Flying - Episode 1
 
-https://www.codingame.com/training/medium/medium_com_thermal-flying-episode-1
+medium_com_thermal-flying-episode-1
+https://www.codingame.com/training/medium/thermal-flying-episode-1
 https://www.codingame.com/contribute/view/747055c69ea64f62d078e21b592b7c16abfc
 
 A contribution by sgalasso

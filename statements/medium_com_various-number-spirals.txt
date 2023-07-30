@@ -1,6 +1,7 @@
 Various Number Spirals
 
-https://www.codingame.com/training/medium/medium_com_various-number-spirals
+medium_com_various-number-spirals
+https://www.codingame.com/training/medium/various-number-spirals
 https://www.codingame.com/contribute/view/75090ec33702f258c09b3482dbb6765209d9
 
 A contribution by UasyaLyuty

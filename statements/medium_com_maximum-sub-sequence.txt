@@ -1,6 +1,7 @@
 Maximum sub-sequence
 
-https://www.codingame.com/training/medium/medium_com_maximum-sub-sequence
+medium_com_maximum-sub-sequence
+https://www.codingame.com/training/medium/maximum-sub-sequence
 https://www.codingame.com/contribute/view/1343c6a3a7157c671ac30b75defbd39adc6c
 
 A contribution by code_of_the_dead

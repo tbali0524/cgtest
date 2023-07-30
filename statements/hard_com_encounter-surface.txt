@@ -1,5 +1,6 @@
 Encounter surface
 
+hard_com_encounter-surface
 https://www.codingame.com/training/hard/encounter-surface
 https://www.codingame.com/contribute/view/536129a706d10fde191e6c5a46de1ff9b0f1
 

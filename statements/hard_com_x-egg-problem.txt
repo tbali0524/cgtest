@@ -1,5 +1,6 @@
 X egg problem
 
+hard_com_x-egg-problem
 https://www.codingame.com/training/hard/x-egg-problem
 https://www.codingame.com/contribute/view/512232d7ab90d9cf0a3e3d53437ae9b9bae
 

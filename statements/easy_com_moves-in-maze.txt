@@ -1,6 +1,7 @@
 Moves in maze
 
-https://www.codingame.com/training/easy/easy_com_moves-in-maze
+easy_com_moves-in-maze
+https://www.codingame.com/training/easy/moves-in-maze
 https://www.codingame.com/contribute/view/19651064f7e7a32aae448f883981580b3fa6e
 
 A contribution by Remi.

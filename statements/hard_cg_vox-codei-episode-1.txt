@@ -1,6 +1,9 @@
 Vox Codei - Episode 1
 
+hard_cg_vox-codei-episode-1
 https://www.codingame.com/training/hard/vox-codei-episode-1
+
+by CodinGame
 
 The Goal
 You access the central computer's firewall interface via Viktor's tablet. The firewall is comprised of surveillance nodes.

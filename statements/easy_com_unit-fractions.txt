@@ -1,6 +1,7 @@
 Unit Fractions
 
-https://www.codingame.com/training/easy/easy_com_unit-fractions
+easy_com_unit-fractions
+https://www.codingame.com/training/easy/unit-fractions
 https://www.codingame.com/contribute/view/4615b316f49f06697a39f90e3465117be9e7
 
 A contribution by java_coffee_cup

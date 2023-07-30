@@ -1,6 +1,7 @@
 Crop-Circles
 
-https://www.codingame.com/training/easy/easy_com_crop-circles
+easy_com_crop-circles
+https://www.codingame.com/training/easy/crop-circles
 https://www.codingame.com/contribute/view/24303dc853aafce4d158e3e0f09ac3ee85fc4
 
 A contribution by Lisa-Has-Ideas

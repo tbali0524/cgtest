@@ -1,6 +1,7 @@
 Unique Prefixes
 
-https://www.codingame.com/training/easy/easy_com_unique-prefixes
+easy_com_unique-prefixes
+https://www.codingame.com/training/easy/unique-prefixes
 https://www.codingame.com/contribute/view/51774deaef138835e6bc2f208ea2ec682559
 
 A contribution by otpv

@@ -1,5 +1,6 @@
 Drawing Polygons
 
+hard_com_drawing-polygons
 https://www.codingame.com/training/hard/drawing-polygons
 https://www.codingame.com/contribute/view/35800cfacbebfefa10e6e94e75967c45e9f
 

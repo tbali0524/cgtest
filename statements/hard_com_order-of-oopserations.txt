@@ -1,5 +1,6 @@
 Order of Oopserations!
 
+hard_com_order-of-oopserations
 https://www.codingame.com/training/hard/order-of-oopserations
 https://www.codingame.com/contribute/view/84501b0c25babc2ce70765996ec111810b3
 

@@ -1,6 +1,7 @@
 The River II.
 
-https://www.codingame.com/training/easy/easy_com_the-river-ii-
+easy_com_the-river-ii-
+https://www.codingame.com/training/easy/the-river-ii-
 https://www.codingame.com/contribute/view/963712ba9b4328f97729a76686d48388086
 
 A contribution by ng201

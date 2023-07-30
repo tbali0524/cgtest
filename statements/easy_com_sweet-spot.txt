@@ -1,6 +1,7 @@
 Sweet spot
 
-https://www.codingame.com/training/easy/easy_com_sweet-spot
+easy_com_sweet-spot
+https://www.codingame.com/training/easy/sweet-spot
 https://www.codingame.com/contribute/view/714165182128bcd09939b9a86d30bc091ad9
 
 A contribution by BLANC

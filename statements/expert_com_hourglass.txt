@@ -1,5 +1,6 @@
 Hourglass
 
+expert_com_hourglass
 https://www.codingame.com/training/expert/hourglass
 https://www.codingame.com/contribute/view/366eae6605556a2063f2901c13871487d8d
 

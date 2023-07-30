@@ -1,6 +1,7 @@
 Random Time Travel
 
-https://www.codingame.com/training/medium/medium_com_random-time-travel
+medium_com_random-time-travel
+https://www.codingame.com/training/medium/random-time-travel
 https://www.codingame.com/contribute/view/16020c1957e67f2e66278c25425bd0de04e0d
 
 A contribution by Karang

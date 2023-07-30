@@ -1,6 +1,7 @@
 2048 scores
 
-https://www.codingame.com/training/medium/medium_com_2048-scores
+medium_com_2048-scores
+https://www.codingame.com/training/medium/2048-scores
 https://www.codingame.com/contribute/view/10239935abc238f43b87b720246068659479
 
 A contribution by CyberLemonade

@@ -1,5 +1,6 @@
 Squares order
 
+expert_com_squares-order
 https://www.codingame.com/training/expert/squares-order
 https://www.codingame.com/contribute/view/253f34971bd4be69b6887db058ed6326edf
 

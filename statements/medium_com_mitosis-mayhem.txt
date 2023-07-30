@@ -1,6 +1,7 @@
 Mitosis Mayhem
 
-https://www.codingame.com/training/medium/medium_com_mitosis-mayhem
+medium_com_mitosis-mayhem
+https://www.codingame.com/training/medium/mitosis-mayhem
 https://www.codingame.com/contribute/view/1281907836bb2af15e5f75c2c2d07aeec6d7d
 
 A contribution by CoolandonRS

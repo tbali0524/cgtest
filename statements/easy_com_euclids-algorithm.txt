@@ -1,6 +1,7 @@
 Euclid's Algorithm
 
-https://www.codingame.com/training/easy/easy_com_euclid-s-algorithm
+easy_com_euclids-algorithm
+https://www.codingame.com/training/easy/euclids-algorithm
 https://www.codingame.com/contribute/view/4502760786a16c93365b857824cf95055336a
 
 A contribution by Darkrentin

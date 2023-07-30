@@ -1,6 +1,7 @@
 Metric Units
 
-https://www.codingame.com/training/easy/easy_com_metric-units
+easy_com_metric-units
+https://www.codingame.com/training/easy/metric-units
 https://www.codingame.com/contribute/view/189907654be7b975f7702b56c0ac74998218c
 
 A contribution by Grarzyna

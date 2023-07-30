@@ -1,6 +1,7 @@
 Disordered First Contact
 
-https://www.codingame.com/training/easy/easy_com_disordered-first-contact
+easy_com_disordered-first-contact
+https://www.codingame.com/training/easy/disordered-first-contact
 https://www.codingame.com/contribute/view/1237ec3a86553ecee3b2dd53c81e9b0c03f5
 
 A contribution by Klemek

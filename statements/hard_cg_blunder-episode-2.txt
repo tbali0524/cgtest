@@ -1,6 +1,9 @@
 Blunder - Episode 2
 
+hard_cg_blunder-episode-2
 https://www.codingame.com/training/hard/blunder-episode-2
+
+by CodinGame
 
 The Goal
 You have managed to find Blunder. His circuits are programmed with an algorithm which has made him lose all sense of humor or fun. You decide to return his system to his original behavior.

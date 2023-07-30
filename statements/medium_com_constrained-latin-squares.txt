@@ -1,6 +1,7 @@
 Constrained Latin Squares
 
-https://www.codingame.com/training/medium/medium_com_constrained-latin-squares
+medium_com_constrained-latin-squares
+https://www.codingame.com/training/medium/constrained-latin-squares
 https://www.codingame.com/contribute/view/2700955b684286f04494546afdd041b9a37a5
 
 A contribution by darkhorse64

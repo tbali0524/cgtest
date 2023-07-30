@@ -1,6 +1,7 @@
 Distributing Candy
 
-https://www.codingame.com/training/easy/easy_com_distributing-candy
+easy_com_distributing-candy
+https://www.codingame.com/training/easy/distributing-candy
 https://www.codingame.com/contribute/view/114681101c5c29420143c6080a00bfe4f204e
 
 A contribution by BleedingWithin

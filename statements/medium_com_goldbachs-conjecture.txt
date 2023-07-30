@@ -1,6 +1,7 @@
 Goldbach’s Conjecture
 
-https://www.codingame.com/training/medium/medium_com_goldbach-s-conjecture
+medium_com_goldbachs-conjecture
+https://www.codingame.com/training/medium/goldbachs-conjecture
 https://www.codingame.com/contribute/view/41067b01258b3f953b8b53b8a1073c957d719
 
 A contribution by WIlChrist

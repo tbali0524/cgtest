@@ -1,6 +1,7 @@
 The broken editor
 
-https://www.codingame.com/training/easy/easy_com_the-broken-editor
+easy_com_the-broken-editor
+https://www.codingame.com/training/easy/the-broken-editor
 https://www.codingame.com/contribute/view/17109ed2214d2bd836e878618a909db355de2
 
 A contribution by Fanfouer

@@ -1,5 +1,6 @@
 Timer for Clash of Code
 
+hard_com_timer-for-clash-of-code
 https://www.codingame.com/training/hard/timer-for-clash-of-code
 https://www.codingame.com/contribute/view/5377b298552ab88ba1ad9a10cb913618cfe
 

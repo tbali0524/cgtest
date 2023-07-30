@@ -1,6 +1,7 @@
 Bijective Numeration
 
-https://www.codingame.com/training/medium/medium_com_bijective-numeration
+medium_com_bijective-numeration
+https://www.codingame.com/training/medium/bijective-numeration
 https://www.codingame.com/contribute/view/64513a4cf9693b5ed609e95e74fa908948ca
 
 A contribution by davilla

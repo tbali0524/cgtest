@@ -1,6 +1,7 @@
 Target Firing
 
-https://www.codingame.com/training/medium/medium_com_target-firing
+medium_com_target-firing
+https://www.codingame.com/training/medium/target-firing
 https://www.codingame.com/contribute/view/526111053ced30ec5026cf0ae432d821e8cc
 
 A contribution by UnicornP

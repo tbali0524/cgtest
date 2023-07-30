@@ -1,5 +1,6 @@
 Derivative time !!! - part2
 
+hard_com_derivative-time---part2
 https://www.codingame.com/training/hard/derivative-time---part2
 https://www.codingame.com/contribute/view/56693a9cc1b2c8fc29e4c55c9b93d4f07d5a
 

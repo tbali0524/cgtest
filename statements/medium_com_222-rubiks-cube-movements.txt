@@ -1,6 +1,7 @@
 2×2×2 Rubik’s cube movements
 
-https://www.codingame.com/training/medium/medium_com_2-2-2-rubik-s-cube-movements
+medium_com_222-rubiks-cube-movements
+https://www.codingame.com/training/medium/222-rubiks-cube-movements
 https://www.codingame.com/contribute/view/160af9535f39d81d8662c47cae30a55d611
 
 A contribution by nicola

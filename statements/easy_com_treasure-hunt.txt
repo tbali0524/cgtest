@@ -1,6 +1,7 @@
 Treasure hunt
 
-https://www.codingame.com/training/easy/easy_com_treasure-hunt
+easy_com_treasure-hunt
+https://www.codingame.com/training/easy/treasure-hunt
 https://www.codingame.com/contribute/view/56182bc2bba7a322733279dff6621574e58d
 
 A contribution by lhm

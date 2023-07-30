@@ -1,6 +1,7 @@
 Divide the factorial
 
-https://www.codingame.com/training/medium/medium_com_divide-the-factorial
+medium_com_divide-the-factorial
+https://www.codingame.com/training/medium/divide-the-factorial
 https://www.codingame.com/contribute/view/375691898c0eac13ede9137f7cdc2c49d69
 
 A contribution by Paradox

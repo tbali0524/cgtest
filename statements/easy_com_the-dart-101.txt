@@ -1,6 +1,7 @@
 The Dart 101
 
-https://www.codingame.com/training/easy/easy_com_the-dart-101
+easy_com_the-dart-101
+https://www.codingame.com/training/easy/the-dart-101
 https://www.codingame.com/contribute/view/185572391d72dc3107120f413442f2aa2118
 
 A contribution by dtejedor

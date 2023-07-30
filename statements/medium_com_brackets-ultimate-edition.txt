@@ -1,6 +1,7 @@
 Brackets, Ultimate Edition
 
-https://www.codingame.com/training/medium/medium_com_brackets-ultimate-edition
+medium_com_brackets-ultimate-edition
+https://www.codingame.com/training/medium/brackets-ultimate-edition
 https://www.codingame.com/contribute/view/493e4e48e74e8227c35f0375332bf01629f
 
 A contribution by JBM

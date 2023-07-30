@@ -1,6 +1,7 @@
 Couple's Picture-Frame
 
-https://www.codingame.com/training/easy/easy_com_couples-picture-frame
+easy_com_couples-picture-frame
+https://www.codingame.com/training/easy/couples-picture-frame
 https://www.codingame.com/contribute/view/54201edd9ae0d83c6f5cdbb1b6a8ccfcd3d3f
 
 A contribution by Lisa-Has-Ideas

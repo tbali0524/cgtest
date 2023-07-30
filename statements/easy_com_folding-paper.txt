@@ -1,6 +1,7 @@
 Folding Paper
 
-https://www.codingame.com/training/easy/easy_com_folding-paper
+easy_com_folding-paper
+https://www.codingame.com/training/easy/folding-paper
 https://www.codingame.com/contribute/view/541491199c7e59fd29e879bc6369c163a2d
 
 A contribution by VilBoub

@@ -1,6 +1,7 @@
 Longest coast
 
-https://www.codingame.com/training/easy/easy_com_longest-coast
+easy_com_longest-coast
+https://www.codingame.com/training/easy/longest-coast
 https://www.codingame.com/contribute/view/297823c473e441491596fb3c62644345ac4d6
 
 A contribution by Ayza

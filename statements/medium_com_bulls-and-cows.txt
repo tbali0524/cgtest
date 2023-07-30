@@ -1,6 +1,7 @@
 Bulls and Cows
 
-https://www.codingame.com/training/medium/medium_com_bulls-and-cows
+medium_com_bulls-and-cows
+https://www.codingame.com/training/medium/bulls-and-cows
 https://www.codingame.com/contribute/view/25901bec28a8a881d44ffcfdaa9d723c630
 
 A contribution by player_one

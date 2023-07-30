@@ -1,6 +1,7 @@
 ASCII cube
 
-https://www.codingame.com/training/medium/medium_com_ascii-cube
+medium_com_ascii-cube
+https://www.codingame.com/training/medium/ascii-cube
 https://www.codingame.com/contribute/view/660744dd83f0fc5e32487e9ed408693267cd
 
 A contribution by [CG]Gaspar

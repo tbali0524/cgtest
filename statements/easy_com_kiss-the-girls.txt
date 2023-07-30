@@ -1,6 +1,7 @@
 Kiss the girls
 
-https://www.codingame.com/training/easy/easy_com_kiss-the-girls
+easy_com_kiss-the-girls
+https://www.codingame.com/training/easy/kiss-the-girls
 https://www.codingame.com/contribute/view/22125008becf442406a264e2a0b4950fbd3af
 
 A contribution by Westicles

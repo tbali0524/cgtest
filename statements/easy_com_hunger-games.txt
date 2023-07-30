@@ -1,6 +1,7 @@
 Hunger Games
 
-https://www.codingame.com/training/easy/easy_com_hunger-games
+easy_com_hunger-games
+https://www.codingame.com/training/easy/hunger-games
 https://www.codingame.com/contribute/view/1853cee234e55d68b2c220afa839c55d4a20
 
 A contribution by MSWS

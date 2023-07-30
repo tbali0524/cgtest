@@ -1,5 +1,6 @@
 Wave Function Collapse (sans Shannon)
 
+hard_com_wave-function-collapse-sans-shannon
 https://www.codingame.com/training/hard/wave-function-collapse-sans-shannon
 https://www.codingame.com/contribute/view/75474b51e6b3186ea493a8467395fbbefad7
 

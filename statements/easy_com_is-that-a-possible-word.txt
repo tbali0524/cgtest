@@ -1,6 +1,7 @@
 Is that a possible word?
 
-https://www.codingame.com/training/easy/easy_com_is-that-a-possible-word-ep1
+easy_com_is-that-a-possible-word
+https://www.codingame.com/training/easy/is-that-a-possible-word
 https://www.codingame.com/contribute/view/5318ba53fc22e76dd451416fcfea488b4b25
 
 A contribution by Tee-Resa

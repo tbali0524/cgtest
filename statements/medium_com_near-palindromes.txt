@@ -1,6 +1,7 @@
 Near-Palindromes
 
-https://www.codingame.com/training/medium/medium_com_near-palindromes
+medium_com_near-palindromes
+https://www.codingame.com/training/medium/near-palindromes
 https://www.codingame.com/contribute/view/4581dfdd33bd5bc6d1a7c0299228677fa7c
 
 A contribution by JBM

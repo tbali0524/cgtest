@@ -1,6 +1,7 @@
 Another Road Construction Site - 1
 
-https://www.codingame.com/training/easy/easy_com_another-road-construction-site-1
+easy_com_another-road-construction-site---1
+https://www.codingame.com/training/easy/another-road-construction-site---1
 https://www.codingame.com/contribute/view/3737225db62c557f5a95d67175c65b100a735
 
 A contribution by Trunksistor

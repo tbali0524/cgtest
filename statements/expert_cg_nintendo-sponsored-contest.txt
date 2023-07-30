@@ -1,6 +1,9 @@
 Nintendo Sponsored Contest
 
+expert_cg_nintendo-sponsored-contest
 https://www.codingame.com/ide/puzzle/nintendo-sponsored-contest
+
+by CodinGame
 
 The Goal
 Big News!

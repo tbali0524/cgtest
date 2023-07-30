@@ -1,6 +1,7 @@
 A Coin Guessing Game
 
-https://www.codingame.com/training/medium/medium_com_a-coin-guessing-game
+medium_com_a-coin-guessing-game
+https://www.codingame.com/training/medium/a-coin-guessing-game
 https://www.codingame.com/contribute/view/45220bffde1f73393fe4e99dc11b34eecbf8
 
 A contribution by Niako

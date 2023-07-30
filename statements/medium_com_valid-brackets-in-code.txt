@@ -1,6 +1,7 @@
 Valid brackets in code
 
-https://www.codingame.com/training/medium/medium_com_valid-brackets-in-code
+medium_com_valid-brackets-in-code
+https://www.codingame.com/training/medium/valid-brackets-in-code
 https://www.codingame.com/contribute/view/658970e0e160dba5f183a6e27f06b8063c54
 
 A contribution by Luj8n

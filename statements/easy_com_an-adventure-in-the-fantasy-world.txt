@@ -1,6 +1,7 @@
 An adventure in the fantasy world
 
-https://www.codingame.com/training/easy/easy_com_an-adventure-in-the-fantasy-world
+easy_com_an-adventure-in-the-fantasy-world
+https://www.codingame.com/training/easy/an-adventure-in-the-fantasy-world
 https://www.codingame.com/contribute/view/35622ef8aefd2316149fed5c93e3e9975bb80
 
 A contribution by renzyGo

@@ -1,6 +1,7 @@
 CGFunge interpreter
 
-https://www.codingame.com/training/medium/medium_com_cgfunge-interpreter
+medium_com_cgfunge-interpreter
+https://www.codingame.com/training/medium/cgfunge-interpreter
 https://www.codingame.com/contribute/view/31464114a1dc9a4b104f3f479526877ec3f
 
 A contribution by player_one

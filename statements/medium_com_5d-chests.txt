@@ -1,6 +1,7 @@
 5D Chests
 
-https://www.codingame.com/training/medium/medium_com_5d-chests
+medium_com_5d-chests
+https://www.codingame.com/training/medium/5d-chests
 https://www.codingame.com/contribute/view/594260c73701c441f17acd586a15d3e159e3
 
 A contribution by Westicles

@@ -1,6 +1,7 @@
 Bank Robbers
 
-https://www.codingame.com/training/easy/easy_com_bank-robbers
+easy_com_bank-robbers
+https://www.codingame.com/training/easy/bank-robbers
 https://www.codingame.com/contribute/view/1231222fdea14ed344158a113b2c7c2b55a5
 
 A contribution by Shotokhan

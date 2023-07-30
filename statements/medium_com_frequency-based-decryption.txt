@@ -1,6 +1,7 @@
 Frequency-Based Decryption
 
-https://www.codingame.com/training/medium/medium_com_frequency-based-decryption
+medium_com_frequency-based-decryption
+https://www.codingame.com/training/medium/frequency-based-decryption
 https://www.codingame.com/contribute/view/49119ee90fc72dcad09b02f891063c28e6c13
 
 A contribution by ElPeauDeLaBanana

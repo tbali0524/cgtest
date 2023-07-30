@@ -1,6 +1,7 @@
 EUROPEAN RUGBY CHAMPIONS CUP RANKING
 
-https://www.codingame.com/training/medium/medium_com_european-rugby-champions-cup-ranking
+medium_com_european-rugby-champions-cup-ranking
+https://www.codingame.com/training/medium/european-rugby-champions-cup-ranking
 https://www.codingame.com/contribute/view/193992e2637c5c6607c35b7cc23d8698b25c
 
 A contribution by TataMaso

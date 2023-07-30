@@ -1,6 +1,7 @@
 Tricky  Number Verifier
 
-https://www.codingame.com/training/easy/easy_com_tricky-number-verifier
+easy_com_tricky-number-verifier
+https://www.codingame.com/training/easy/tricky-number-verifier
 https://www.codingame.com/contribute/view/80968a5f68fca68f8584b11254fc572773c6
 
 A contribution by slogslog

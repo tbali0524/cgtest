@@ -1,6 +1,7 @@
 Count of Primes in a number grid
 
-https://www.codingame.com/training/medium/medium_com_count-of-primes-in-a-number-grid
+medium_com_count-of-primes-in-a-number-grid
+https://www.codingame.com/training/medium/count-of-primes-in-a-number-grid
 https://www.codingame.com/contribute/view/708e405ebe68a8122aa569334aa3aec98c8
 
 A contribution by vulca

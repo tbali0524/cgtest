@@ -1,5 +1,6 @@
 Doubly solved Rubik's cube
 
+hard_com_doubly-solved-rubiks-cube
 https://www.codingame.com/training/hard/doubly-solved-rubiks-cube
 https://www.codingame.com/contribute/view/5481a17f2417aaf9f755207375be19aa8b59
 

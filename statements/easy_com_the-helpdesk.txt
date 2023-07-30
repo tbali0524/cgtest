@@ -1,6 +1,7 @@
 The helpdesk
 
-https://www.codingame.com/training/easy/easy_com_the-helpdesk
+easy_com_the-helpdesk
+https://www.codingame.com/training/easy/the-helpdesk
 https://www.codingame.com/contribute/view/4941622f3ff6b6566334b7e3a6864c46a78e9
 
 A contribution by jddingemanse

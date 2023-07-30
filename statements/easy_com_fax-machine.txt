@@ -1,6 +1,7 @@
 Fax machine
 
-https://www.codingame.com/training/easy/easy_com_fax-machine
+easy_com_fax-machine
+https://www.codingame.com/training/easy/fax-machine
 https://www.codingame.com/contribute/view/727472b05c0434c516e15490cd2a5b9c1bf2
 
 A contribution by Wontonimo

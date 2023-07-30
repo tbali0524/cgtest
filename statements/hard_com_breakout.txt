@@ -1,5 +1,6 @@
 Breakout
 
+hard_com_breakout
 https://www.codingame.com/training/hard/breakout
 https://www.codingame.com/contribute/view/25743d226ffc7fc0ebd557fe102f8d25b03
 

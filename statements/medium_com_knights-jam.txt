@@ -1,6 +1,7 @@
 Knights Jam
 
-https://www.codingame.com/training/medium/medium_com_knights-jam
+medium_com_knights-jam
+https://www.codingame.com/training/medium/knights-jam
 https://www.codingame.com/contribute/view/4392a28c2883e4cbed12512d279006cadffd
 
 A contribution by Niako

@@ -1,6 +1,7 @@
 Entry code
 
-https://www.codingame.com/training/medium/medium_com_entry-code
+medium_com_entry-code
+https://www.codingame.com/training/medium/entry-code
 https://www.codingame.com/contribute/view/779896581407b8ca5d52d2b053de977eb76e
 
 A contribution by Eniidras

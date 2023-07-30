@@ -1,5 +1,6 @@
 Mystery sums
 
+hard_com_mystery-sums
 https://www.codingame.com/training/hard/mystery-sums
 
 A contribution by Neonox

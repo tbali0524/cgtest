@@ -1,6 +1,7 @@
 Divine!
 
-https://www.codingame.com/training/medium/medium_com_divine
+medium_com_divine
+https://www.codingame.com/training/medium/divine
 https://www.codingame.com/contribute/view/2286fa253fcd6fcbaf7855fb710e734f3a5
 
 A contribution by Bob

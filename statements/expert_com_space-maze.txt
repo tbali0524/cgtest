@@ -1,5 +1,6 @@
 Space Maze
 
+expert_com_space-maze
 https://www.codingame.com/training/expert/space-maze
 https://www.codingame.com/contribute/view/4530c59cf0b16a4e6bd13c5c13f3ed0df13e
 

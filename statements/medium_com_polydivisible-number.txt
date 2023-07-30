@@ -1,6 +1,7 @@
 Polydivisible number
 
-https://www.codingame.com/training/medium/medium_com_polydivisible-number
+medium_com_polydivisible-number
+https://www.codingame.com/training/medium/polydivisible-number
 https://www.codingame.com/contribute/view/10475838480ec079f19ae8ccbe374b750b0c
 
 A contribution by dwarfie

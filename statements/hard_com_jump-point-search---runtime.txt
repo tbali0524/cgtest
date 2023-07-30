@@ -1,5 +1,6 @@
 Jump Point Search - Runtime
 
+hard_com_jump-point-search---runtime
 https://www.codingame.com/training/hard/jump-point-search---runtime
 https://www.codingame.com/contribute/view/5708bd3da3153cbd3fd264a207cd8885f500
 

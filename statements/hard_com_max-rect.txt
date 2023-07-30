@@ -1,5 +1,6 @@
 Max Rect
 
+hard_com_max-rect
 https://www.codingame.com/training/hard/max-rect
 https://www.codingame.com/contribute/view/907112600b7a380bc51b45e3142f608b82b
 

@@ -1,5 +1,6 @@
 Maximising integers
 
+hard_com_maximising-integers
 https://www.codingame.com/training/hard/maximising-integers
 https://www.codingame.com/contribute/view/6825d5ee1467f3439616e7b946df6baeb6bf
 

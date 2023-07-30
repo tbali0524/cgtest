@@ -1,6 +1,7 @@
 Gravity Centrifuge
 
-https://www.codingame.com/training/medium/medium_com_gravity-centrifuge
+medium_com_gravity-centrifuge
+https://www.codingame.com/training/medium/gravity-centrifuge
 https://www.codingame.com/contribute/view/49006f90657a1f2f44b18a34792647bed9e
 
 A contribution by JBM

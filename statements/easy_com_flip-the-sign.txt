@@ -1,6 +1,7 @@
 Flip The Sign
 
-https://www.codingame.com/training/easy/easy_com_flip-the-sign
+easy_com_flip-the-sign
+https://www.codingame.com/training/easy/flip-the-sign
 https://www.codingame.com/contribute/view/543498dd96a793b9569b72dacbe656beea71
 
 A contribution by Q12

@@ -1,6 +1,9 @@
 CGX Formatter
 
+hard_cg_cgx-formatter
 https://www.codingame.com/training/hard/cgx-formatter
+
+by CodinGame
 
 At CodinGame we like to reinvent things. XML, JSON etc. that’s great, but for a better web, we’ve invented our own text data format (called CGX) to represent structured information.
 

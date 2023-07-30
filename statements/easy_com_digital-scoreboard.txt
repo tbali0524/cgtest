@@ -1,6 +1,7 @@
 Digital Scoreboard
 
-https://www.codingame.com/training/easy/easy_com_digital-scoreboard
+easy_com_digital-scoreboard
+https://www.codingame.com/training/easy/digital-scoreboard
 https://www.codingame.com/contribute/view/563465e31c0e2770e2f4b3a6712250ba8ad64
 
 A contribution by Lisa-Has-Ideas

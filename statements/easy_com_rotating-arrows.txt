@@ -1,6 +1,7 @@
 Rotating arrows
 
-https://www.codingame.com/training/easy/easy_com_rotating-arrows
+easy_com_rotating-arrows
+https://www.codingame.com/training/easy/rotating-arrows
 https://www.codingame.com/contribute/view/1196130d2fce943f08c02afa6fed35ec33fe6
 
 A contribution by Mortis_666

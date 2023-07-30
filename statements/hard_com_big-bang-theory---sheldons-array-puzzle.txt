@@ -1,5 +1,6 @@
 Big Bang Theory - Sheldon's Array Puzzle
 
+hard_com_big-bang-theory---sheldons-array-puzzle
 https://www.codingame.com/training/hard/big-bang-theory---sheldons-array-puzzle
 https://www.codingame.com/contribute/view/47222bf10d285b464324aff92240eba4e7d3
 

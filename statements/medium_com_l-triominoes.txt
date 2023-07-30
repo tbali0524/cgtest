@@ -1,6 +1,7 @@
 L-triominoes
 
-https://www.codingame.com/training/medium/medium_com_l-triominoes
+medium_com_l-triominoes
+https://www.codingame.com/training/medium/l-triominoes
 https://www.codingame.com/contribute/view/10509a029a1f550be3d71cf2971c3dc76cf87
 
 A contribution by VilBoub

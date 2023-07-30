@@ -1,6 +1,7 @@
 3D printer
 
-https://www.codingame.com/training/medium/medium_com_3d-printer
+medium_com_3d-printer
+https://www.codingame.com/training/medium/3d-printer
 https://www.codingame.com/contribute/view/7702b4597b496e6b3310e47f833855a42c10
 
 A contribution by Miki09

@@ -1,6 +1,7 @@
 Bruce Lee
 
-https://www.codingame.com/training/medium/medium_com_bruce-lee
+medium_com_bruce-lee
+https://www.codingame.com/training/medium/bruce-lee
 https://www.codingame.com/contribute/view/8101920510b10d4a00aa643a585ee7d9623
 
 A contribution by mploux

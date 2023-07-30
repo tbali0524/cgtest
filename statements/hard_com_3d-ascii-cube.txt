@@ -1,5 +1,6 @@
 3D ASCII Cube
 
+hard_com_3d-ascii-cube
 https://www.codingame.com/training/hard/3d-ascii-cube
 removed, accessible only at: https://www.codingame.com/ide/puzzle/3d-ascii-cube
 https://www.codingame.com/contribute/view/2473ce3c582c455ca520f09f4fe9b8931af

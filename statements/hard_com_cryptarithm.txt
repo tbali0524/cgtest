@@ -1,5 +1,6 @@
 Cryptarithm
 
+hard_com_cryptarithm
 https://www.codingame.com/training/hard/cryptarithm
 https://www.codingame.com/contribute/view/152745a3c180abd5444e5fccccb14b59663
 

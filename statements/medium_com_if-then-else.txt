@@ -1,6 +1,7 @@
 if then else
 
-https://www.codingame.com/training/medium/medium_com_if-then-else
+medium_com_if-then-else
+https://www.codingame.com/training/medium/if-then-else
 https://www.codingame.com/contribute/view/61781e21113f93e11b4853414cc66b1f499f
 
 A contribution by java_coffee_cup

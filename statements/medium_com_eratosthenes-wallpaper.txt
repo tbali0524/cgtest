@@ -1,6 +1,7 @@
 Eratosthenes' Wallpaper
 
-https://www.codingame.com/training/medium/medium_com_eratosthenes-wallpaper
+medium_com_eratosthenes-wallpaper
+https://www.codingame.com/training/medium/eratosthenes-wallpaper
 https://www.codingame.com/contribute/view/418266118e1e56452a62c5bb493b9efe35673
 
 A contribution by KILLogic

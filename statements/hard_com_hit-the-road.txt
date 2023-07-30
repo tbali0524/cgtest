@@ -1,5 +1,6 @@
 Hit the road
 
+hard_com_hit-the-road
 https://www.codingame.com/training/hard/hit-the-road
 https://www.codingame.com/contribute/view/507327155ddfb185c1531f88475eec672d2
 

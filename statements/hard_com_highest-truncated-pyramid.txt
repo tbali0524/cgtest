@@ -1,5 +1,6 @@
 Highest truncated pyramid
 
+hard_com_highest-truncated-pyramid
 https://www.codingame.com/training/hard/highest-truncated-pyramid
 https://www.codingame.com/contribute/view/64403f8a911e5cf4b7f7131d29778a4f0f3
 

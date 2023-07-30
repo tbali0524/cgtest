@@ -1,6 +1,7 @@
 Vectors in variables dimensions
 
-https://www.codingame.com/training/easy/easy_com_vectors-in-variables-dimensions
+easy_com_vectors-in-variables-dimensions
+https://www.codingame.com/training/easy/vectors-in-variables-dimensions
 https://www.codingame.com/contribute/view/55554420ae4736b420bee3d1a2d043f055ef0
 
 A contribution by Diabetos

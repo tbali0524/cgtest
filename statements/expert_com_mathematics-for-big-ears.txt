@@ -1,5 +1,6 @@
 Mathematics for big ears
 
+expert_com_mathematics-for-big-ears
 https://www.codingame.com/training/expert/mathematics-for-big-ears
 https://www.codingame.com/contribute/view/6926d99d9b5773a79f6643fd11f0fc43089b
 

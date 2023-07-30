@@ -1,6 +1,7 @@
 Shadow Casting
 
-https://www.codingame.com/training/easy/easy_com_shadow-casting
+easy_com_shadow-casting
+https://www.codingame.com/training/easy/shadow-casting
 https://www.codingame.com/contribute/view/6777fba0c33d453215cbd2f935169ccb2499
 
 A contribution by manychois

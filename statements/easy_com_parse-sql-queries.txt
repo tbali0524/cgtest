@@ -1,6 +1,7 @@
 Parse SQL Queries
 
-https://www.codingame.com/training/easy/easy_com_parse-sql-queries
+easy_com_parse-sql-queries
+https://www.codingame.com/training/easy/parse-sql-queries
 https://www.codingame.com/contribute/view/6445dcee42f13af7fc935342c40ff4fa4805
 
 A contribution by ?

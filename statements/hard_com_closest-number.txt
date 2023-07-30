@@ -1,5 +1,6 @@
 Closest Number
 
+hard_com_closest-number
 https://www.codingame.com/training/hard/closest-number
 https://www.codingame.com/contribute/view/20517279e8fb98c7fb5a8a37b10c34cee304
 

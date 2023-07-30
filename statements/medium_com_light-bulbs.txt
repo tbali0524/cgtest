@@ -1,6 +1,7 @@
 Light Bulbs
 
-https://www.codingame.com/training/medium/medium_com_light-bulbs
+medium_com_light-bulbs
+https://www.codingame.com/training/medium/light-bulbs
 https://www.codingame.com/contribute/view/45947a2dc168ff60fceef17c3bc17e52bf1c
 
 A contribution by java_coffee_cup

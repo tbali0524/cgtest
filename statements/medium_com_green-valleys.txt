@@ -1,6 +1,7 @@
 Green Valleys
 
-https://www.codingame.com/training/medium/medium_com_green-valleys
+medium_com_green-valleys
+https://www.codingame.com/training/medium/green-valleys
 https://www.codingame.com/contribute/view/1872eea2864afd899309a4bb93150deacdb4
 
 A contribution by Sceurpien

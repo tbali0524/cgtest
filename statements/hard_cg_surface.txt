@@ -1,6 +1,9 @@
 Surface
 
+hard_cg_surface
 https://www.codingame.com/training/hard/surface
+
+by CodinGame
 
 The Goal
 "The wars of the 21st century will be fought over water."

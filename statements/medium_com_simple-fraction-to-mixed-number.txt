@@ -1,6 +1,7 @@
 Simple fraction to mixed number
 
-https://www.codingame.com/training/medium/medium_com_simple-fraction-to-mixed-number
+medium_com_simple-fraction-to-mixed-number
+https://www.codingame.com/training/medium/simple-fraction-to-mixed-number
 https://www.codingame.com/contribute/view/368c1a6e2c150c0170c3f5f6e8b244262db
 
 A contribution by MMMAAANNN

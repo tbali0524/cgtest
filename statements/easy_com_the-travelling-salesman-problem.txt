@@ -1,6 +1,7 @@
 The Travelling Salesman Problem
 
-https://www.codingame.com/training/easy/easy_com_the-travelling-salesman-problem
+easy_com_the-travelling-salesman-problem
+https://www.codingame.com/training/easy/the-travelling-salesman-problem
 https://www.codingame.com/contribute/view/99963594744865535f736ecc6c862454f04
 
 A contribution by Hackerman007

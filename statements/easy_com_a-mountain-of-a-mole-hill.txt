@@ -1,6 +1,7 @@
 A mountain of a mole hill
 
-https://www.codingame.com/training/easy/easy_com_a-mountain-of-a-mole-hill
+easy_com_a-mountain-of-a-mole-hill
+https://www.codingame.com/training/easy/a-mountain-of-a-mole-hill
 https://www.codingame.com/contribute/view/5052d20175e2373c9045b804a5dd82716caf
 
 A contribution by Humanosaure

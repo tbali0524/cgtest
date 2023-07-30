@@ -1,6 +1,9 @@
 There is no Spoon - Episode 2
 
+hard_cg_there-is-no-spoon-episode-2
 https://www.codingame.com/training/hard/there-is-no-spoon-episode-2
+
+by CodinGame
 
 The Goal
 The game is played on a rectangular grid with a given size. Some cells contain nodes with a number on them from 1 to 8 inclusive. This number represents the amount of links the node should have with neighboring nodes. The rest of the cells are empty.

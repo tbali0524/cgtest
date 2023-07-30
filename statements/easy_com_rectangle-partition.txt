@@ -1,6 +1,7 @@
 Rectangle Partition
 
-https://www.codingame.com/training/easy/easy_com_rectangle-partition
+easy_com_rectangle-partition
+https://www.codingame.com/training/easy/rectangle-partition
 https://www.codingame.com/contribute/view/4581a5c8198b1d8776761aaab36f6a4f2bff
 
 A contribution by java_coffee_cup

@@ -1,6 +1,9 @@
 Onboarding
 
+tutorial_onboarding
 https://www.codingame.com/training/easy/onboarding
+
+by CodinGame
 
 The Goal
 Your program must destroy the enemy ships by shooting the closest enemy on each turn.

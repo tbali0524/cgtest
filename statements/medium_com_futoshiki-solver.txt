@@ -1,6 +1,7 @@
 Futoshiki Solver
 
-https://www.codingame.com/training/medium/medium_com_futoshiki-solver
+medium_com_futoshiki-solver
+https://www.codingame.com/training/medium/futoshiki-solver
 https://www.codingame.com/contribute/view/4877c276e71764cfcf5f1f84ad08566d7aa8
 
 A contribution by Sundiver

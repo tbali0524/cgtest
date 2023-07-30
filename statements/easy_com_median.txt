@@ -1,6 +1,7 @@
 Median
 
-https://www.codingame.com/training/easy/easy_com_median
+easy_com_median
+https://www.codingame.com/training/easy/median
 https://www.codingame.com/contribute/view/723f8914ff88c101e94a0b5f9b0f19691c7
 
 A contribution by ?

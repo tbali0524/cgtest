@@ -1,5 +1,6 @@
 The Empire Enigma
 
+hard_com_the-empire-enigma
 https://www.codingame.com/training/hard/the-empire-enigma
 https://www.codingame.com/contribute/view/11199924a6730cffc7ec084af2569d391f43
 

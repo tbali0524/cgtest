@@ -1,5 +1,6 @@
 Nonogram inversor
 
+hard_com_nonogram-inversor
 https://www.codingame.com/training/hard/nonogram-inversor
 https://www.codingame.com/contribute/view/4337e2ae08d6c7ab791a1d92ea2f7f437842
 

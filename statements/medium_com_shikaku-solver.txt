@@ -1,6 +1,7 @@
 Shikaku Solver
 
-https://www.codingame.com/training/medium/medium_com_shikaku-solver
+medium_com_shikaku-solver
+https://www.codingame.com/training/medium/shikaku-solver
 https://www.codingame.com/contribute/view/4261de95bd2d9102099a092b72e46bb98ba0
 
 A contribution by ?

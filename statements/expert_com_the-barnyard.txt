@@ -1,5 +1,6 @@
 The barnyard
 
+expert_com_the-barnyard
 https://www.codingame.com/training/expert/the-barnyard
 https://www.codingame.com/contribute/view/29993041f449e38d3b50d3e0dfab70daf17
 

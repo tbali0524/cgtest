@@ -1,5 +1,6 @@
 Chess board analyzer
 
+hard_com_chess-board-analyzer
 https://www.codingame.com/training/hard/chess-board-analyzer
 https://www.codingame.com/contribute/view/5239abdbbe8443280770857d10fed099ed2b
 

@@ -1,6 +1,7 @@
 Video comments
 
-https://www.codingame.com/training/easy/easy_com_video-comments
+easy_com_video-comments
+https://www.codingame.com/training/easy/video-comments
 https://www.codingame.com/contribute/view/33708296d4618547e0f762e112882e26b6593
 
 A contribution by Ayza

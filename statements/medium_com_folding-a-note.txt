@@ -1,6 +1,7 @@
 Folding a Note
 
-https://www.codingame.com/training/medium/medium_com_folding-a-note
+medium_com_folding-a-note
+https://www.codingame.com/training/medium/folding-a-note
 https://www.codingame.com/contribute/view/689222cf366bec9d0707db2880a1a2d58a27
 
 A contribution by P4V3L14K0V

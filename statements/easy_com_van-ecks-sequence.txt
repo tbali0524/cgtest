@@ -1,6 +1,7 @@
 Van Eck's sequence
 
-https://www.codingame.com/training/easy/easy_com_van-eck-s-sequence
+easy_com_van-ecks-sequence
+https://www.codingame.com/training/easy/van-ecks-sequence
 https://www.codingame.com/contribute/view/4995b17dc015ab22ad07ed6ddaaa3551544e
 
 A contribution by Crypticsy

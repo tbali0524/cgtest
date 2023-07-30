@@ -1,6 +1,9 @@
 The Labyrinth
 
+hard_cg_the-labyrinth
 https://www.codingame.com/training/hard/the-labyrinth
+
+by CodinGame
 
 The Goal
 Once teleported inside the structure, your mission is to:

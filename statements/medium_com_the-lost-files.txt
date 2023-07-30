@@ -1,6 +1,7 @@
 The lost files
 
-https://www.codingame.com/training/medium/medium_com_the-lost-files
+medium_com_the-lost-files
+https://www.codingame.com/training/medium/the-lost-files
 https://www.codingame.com/contribute/view/543694a9c1a3baf1c52c1c61fb20cd9c92da
 
 A contribution by Fluxor

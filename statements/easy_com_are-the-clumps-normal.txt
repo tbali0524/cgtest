@@ -1,6 +1,7 @@
 Are The Clumps Normal
 
-https://www.codingame.com/training/easy/easy_com_are-the-clumps-normal
+easy_com_are-the-clumps-normal
+https://www.codingame.com/training/easy/are-the-clumps-normal
 https://www.codingame.com/contribute/view/442858ab5a1e301f05b116750b4c6ce87409
 
 A contribution by MattZ

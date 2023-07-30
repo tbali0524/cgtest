@@ -1,5 +1,6 @@
 Map Colorations
 
+hard_com_map-colorations
 https://www.codingame.com/training/hard/map-colorations
 https://www.codingame.com/contribute/view/4787a6458ca06b6dc4ff96a068f860603d75
 

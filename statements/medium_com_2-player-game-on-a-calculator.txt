@@ -1,6 +1,7 @@
 2-player game on a calculator
 
-https://www.codingame.com/training/medium/medium_com_2-player-game-on-a-calculator
+medium_com_2-player-game-on-a-calculator
+https://www.codingame.com/training/medium/2-player-game-on-a-calculator
 https://www.codingame.com/contribute/view/17435fbcbd168dff9dc70dd2d58129f34785
 
 A contribution by tyrcho

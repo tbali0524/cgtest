@@ -1,5 +1,6 @@
 Longest Palindrome
 
+hard_com_longest-palindrome
 https://www.codingame.com/training/hard/longest-palindrome
 https://www.codingame.com/contribute/view/7824054a3f1db12c113b349aa2b71345ca9
 

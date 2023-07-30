@@ -1,5 +1,6 @@
 Xorandor
 
+expert_com_xorandor
 https://www.codingame.com/training/expert/xorandor
 https://www.codingame.com/contribute/view/639564b0d14d879ee025ea0e11d887b80b0
 

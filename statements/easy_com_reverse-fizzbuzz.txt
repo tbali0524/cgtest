@@ -1,6 +1,7 @@
 Reverse FizzBuzz
 
-https://www.codingame.com/training/easy/easy_com_reverse-fizzbuzz
+easy_com_reverse-fizzbuzz
+https://www.codingame.com/training/easy/reverse-fizzbuzz
 https://www.codingame.com/contribute/view/54728fb128376a9abd79044afb97c0ef22e5
 
 A contribution by ndc

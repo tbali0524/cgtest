@@ -1,6 +1,7 @@
 Die Handedness
 
-https://www.codingame.com/training/easy/easy_com_die-handedness
+easy_com_die-handedness
+https://www.codingame.com/training/easy/die-handedness
 https://www.codingame.com/contribute/view/732726cea8300c569e3033843533f6a9dcf1
 
 A contribution by tuna_in_cream

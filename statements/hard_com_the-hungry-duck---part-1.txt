@@ -1,5 +1,6 @@
 The hungry duck - part 1
 
+hard_com_the-hungry-duck---part-1
 https://www.codingame.com/training/hard/the-hungry-duck---part-1
 https://www.codingame.com/contribute/view/768956f82e70b39977711e4e63aee18a98d
 

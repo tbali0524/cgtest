@@ -1,5 +1,6 @@
 Binary Extension
 
+hard_com_binary-extension
 https://www.codingame.com/training/hard/binary-extension
 https://www.codingame.com/contribute/view/43687cd854d10e38c3716e6d08efe735b42f
 

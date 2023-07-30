@@ -1,6 +1,7 @@
 The Mystic Rectangle
 
-https://www.codingame.com/training/easy/easy_com_the-mystic-rectangle
+easy_com_the-mystic-rectangle
+https://www.codingame.com/training/easy/the-mystic-rectangle
 https://www.codingame.com/contribute/view/66550a3ca36e11bd25bc05b8f236adf7a823
 
 A contribution by davilla

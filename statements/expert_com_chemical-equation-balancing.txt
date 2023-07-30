@@ -1,5 +1,6 @@
 Chemical Equation Balancing
 
+expert_com_chemical-equation-balancing
 https://www.codingame.com/training/expert/chemical-equation-balancing
 https://www.codingame.com/contribute/view/440d1943e2a1bb1b4d4a26c888b0b79db7b
 

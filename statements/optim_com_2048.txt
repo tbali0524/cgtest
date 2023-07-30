@@ -1,5 +1,6 @@
 2048
 
+optim_com_2028
 https://www.codingame.com/multiplayer/optimization/2048
 https://www.codingame.com/contribute/view/5526526226cd3d7bf021041199031dc1612b
 

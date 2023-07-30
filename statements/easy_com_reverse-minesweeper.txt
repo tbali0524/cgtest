@@ -1,6 +1,7 @@
 Reverse Minesweeper
 
-https://www.codingame.com/training/easy/easy_com_reverse-minesweeper
+easy_com_reverse-minesweeper
+https://www.codingame.com/training/easy/reverse-minesweeper
 https://www.codingame.com/contribute/view/6612a252d91dd0d788cbec7f8473d8f3a3eb
 
 A contribution by [CG]Gaspar

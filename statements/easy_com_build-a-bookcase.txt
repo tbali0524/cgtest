@@ -1,6 +1,7 @@
 |Build A Bookcase|🔨
 
-https://www.codingame.com/training/easy/easy_com_build-a-bookcase
+easy_com_build-a-bookcase
+https://www.codingame.com/training/easy/build-a-bookcase
 https://www.codingame.com/contribute/view/428216c70c1a3be68db317c36b3510fcc9a0d
 
 A contribution by Lisa-Has-Ideas

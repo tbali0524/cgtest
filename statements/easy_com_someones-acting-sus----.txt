@@ -1,6 +1,7 @@
 Someone's Acting Sus....
 
-https://www.codingame.com/training/easy/easy_com_someones-acting-sus----
+easy_com_someones-acting-sus----
+https://www.codingame.com/training/easy/someones-acting-sus----
 https://www.codingame.com/contribute/view/7004c0489f7715c686ba7f32c3ec795b7857
 
 A contribution by SubwayMan

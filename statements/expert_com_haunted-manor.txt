@@ -1,5 +1,6 @@
 Haunted Manor
 
+expert_com_haunted-manor
 https://www.codingame.com/training/expert/haunted-manor
 https://www.codingame.com/contribute/view/249f25d745b9a997c0a2d677b702ef86b8a
 

@@ -1,6 +1,7 @@
 Digit sum successor
 
-https://www.codingame.com/training/medium/medium_com_digit-sum-successor
+medium_com_digit-sum-successor
+https://www.codingame.com/training/medium/digit-sum-successor
 https://www.codingame.com/contribute/view/17105a0422bee61fc01c4e31cb432df7d7ac
 
 A contribution by aropan

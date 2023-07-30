@@ -1,6 +1,7 @@
 Custom Game of Life
 
-https://www.codingame.com/training/medium/medium_com_custom-game-of-life
+medium_com_custom-game-of-life
+https://www.codingame.com/training/medium/custom-game-of-life
 https://www.codingame.com/contribute/view/648395ca52b36d3d35bc8b7eb8bec8726507
 
 A contribution by Edjy

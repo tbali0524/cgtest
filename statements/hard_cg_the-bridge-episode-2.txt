@@ -1,6 +1,9 @@
 The Bridge
 
+hard_cg_the-bridge-episode-2
 https://www.codingame.com/training/hard/the-bridge-episode-2
+
+by CodinGame
 
 BOBNET - THE BRIDGE
 The program:

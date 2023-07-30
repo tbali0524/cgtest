@@ -1,6 +1,7 @@
 Elliptic curve cryptography
 
-https://www.codingame.com/training/medium/medium_com_elliptic-curve-cryptography
+medium_com_elliptic-curve-cryptography
+https://www.codingame.com/training/medium/elliptic-curve-cryptography
 https://www.codingame.com/contribute/view/20818c957dbe59c292757e45a6503a3c080d
 
 A contribution by Maurice_Moss

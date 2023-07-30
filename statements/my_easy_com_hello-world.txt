@@ -1,5 +1,6 @@
 Hello, World!
 
+my_easy_com_hello-world
 https://www.codingame.com/training/easy/hello-world
 https://www.codingame.com/contribute/view/452848ff9a694483d6a668e0927484f877e7
 

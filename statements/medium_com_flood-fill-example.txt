@@ -1,6 +1,7 @@
 Flood fill Example
 
-https://www.codingame.com/training/medium/medium_com_flood-fill-example
+medium_com_flood-fill-example
+https://www.codingame.com/training/medium/flood-fill-example
 https://www.codingame.com/contribute/view/118369f42211bec63618b870cf919b5832b9
 
 A contribution by CyberLemonade

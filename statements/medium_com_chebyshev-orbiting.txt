@@ -1,6 +1,7 @@
 Chebyshev Orbiting
 
-https://www.codingame.com/training/medium/medium_com_chebyshev-orbiting
+medium_com_chebyshev-orbiting
+https://www.codingame.com/training/medium/chebyshev-orbiting
 https://www.codingame.com/contribute/view/7676d22a5b0dadd36eb85d0396919bf1ac8f
 
 A contribution by xoposhiy

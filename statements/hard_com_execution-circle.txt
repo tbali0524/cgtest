@@ -1,5 +1,6 @@
 Execution Circle
 
+hard_com_execution-circle
 https://www.codingame.com/training/hard/execution-circle
 https://www.codingame.com/contribute/view/569222fc52c7425259ebed67c1ae1667344
 

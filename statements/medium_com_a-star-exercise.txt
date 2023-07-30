@@ -1,6 +1,7 @@
 A-star exercise
 
-https://www.codingame.com/training/medium/medium_com_a-star-exercise
+medium_com_a-star-exercise
+https://www.codingame.com/training/medium/a-star-exercise
 https://www.codingame.com/contribute/view/9142d2fb6502d5137ee80d977027bd0bd77
 
 A contribution by aCat

@@ -1,6 +1,7 @@
 Simple Blur
 
-https://www.codingame.com/training/medium/medium_com_simple-blur
+medium_com_simple-blur
+https://www.codingame.com/training/medium/simple-blur
 https://www.codingame.com/contribute/view/71127283a887b3f143df18ce64f71232b208
 
 A contribution by luxuryenby

@@ -1,6 +1,7 @@
 Gravity Tumbler
 
-https://www.codingame.com/training/medium/medium_com_gravity-tumbler
+medium_com_gravity-tumbler
+https://www.codingame.com/training/medium/gravity-tumbler
 https://www.codingame.com/contribute/view/470ee2d6180bd41469770d13396894d8b61
 
 A contribution by JBM

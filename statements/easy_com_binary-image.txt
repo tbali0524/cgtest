@@ -1,6 +1,7 @@
 Binary image
 
-https://www.codingame.com/training/easy/easy_com_binary-image
+easy_com_binary-image
+https://www.codingame.com/training/easy/binary-image
 https://www.codingame.com/contribute/view/5125e4cd98fe2efdf53a3e1d3b7f4962ec51
 
 A contribution by Edjy

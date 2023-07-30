@@ -1,5 +1,6 @@
 The Holy Grail
 
+hard_com_the-holy-grail
 https://www.codingame.com/training/hard/the-holy-grail
 https://www.codingame.com/contribute/view/252722993a636a9979e12abf26a68d6a221
 

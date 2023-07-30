@@ -1,6 +1,7 @@
 The Urinal Problem
 
-https://www.codingame.com/training/medium/medium_com_the-urinal-problem
+medium_com_the-urinal-problem
+https://www.codingame.com/training/medium/the-urinal-problem
 https://www.codingame.com/contribute/view/336115d5ac6e0146b4fc4b559aa0abdd9f7
 
 A contribution by hgarrereyn

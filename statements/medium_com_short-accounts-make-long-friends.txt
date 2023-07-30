@@ -1,6 +1,7 @@
 Short accounts make long friends
 
-https://www.codingame.com/training/medium/medium_com_short-accounts-make-long-friends
+medium_com_short-accounts-make-long-friends
+https://www.codingame.com/training/medium/short-accounts-make-long-friends
 https://www.codingame.com/contribute/view/14571873bcb6fa786c4b4db22ac7a7a6f9b5
 
 A contribution by MooMooN

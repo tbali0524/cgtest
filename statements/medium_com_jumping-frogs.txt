@@ -1,6 +1,7 @@
 Jumping Frogs
 
-https://www.codingame.com/training/medium/medium_com_jumping-frogs
+medium_com_jumping-frogs
+https://www.codingame.com/training/medium/jumping-frogs
 https://www.codingame.com/contribute/view/43655e5ff18c1f2a209099e59078d456ad28
 
 A contribution by cegprakash

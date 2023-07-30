@@ -1,6 +1,7 @@
 Card Counting when easily distracted
 
-https://www.codingame.com/training/easy/easy_com_card-counting-when-easily-distracted
+easy_com_card-counting-when-easily-distracted
+https://www.codingame.com/training/easy/card-counting-when-easily-distracted
 https://www.codingame.com/contribute/view/32389ea0a9b5549e37a791011e7847b87a5ed
 
 A contribution by Lisa-Has-Ideas

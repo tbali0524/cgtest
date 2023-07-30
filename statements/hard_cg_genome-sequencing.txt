@@ -1,6 +1,9 @@
 Genome Sequencing
 
+hard_cg_genome-sequencing
 https://www.codingame.com/training/hard/genome-sequencing
+
+by CodinGame
 
 The Goal
 You are working as a computer scientist in a laboratory seeking to sequence the genome. A DNA sequence is represented by a character string (of A, C, T and G) such as GATTACA. The problem is that biologists are only able to extract sub-sequences of the complete sequence. Your role is to combine these partial sub-sequences to recover the original sequence.

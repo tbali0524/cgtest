@@ -1,6 +1,7 @@
 All Operations are Equal!
 
-https://www.codingame.com/training/medium/medium_com_all-operations-are-equal
+medium_com_all-operations-are-equal
+https://www.codingame.com/training/medium/all-operations-are-equal
 https://www.codingame.com/contribute/view/15987c398d6e9e5c36e107dbd182b50a016ed
 
 A contribution by tzaph

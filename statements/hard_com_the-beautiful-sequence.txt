@@ -1,5 +1,6 @@
 The Beautiful sequence
 
+hard_com_the-beautiful-sequence
 https://www.codingame.com/training/hard/the-beautiful-sequence
 https://www.codingame.com/contribute/view/255f4a13cdfb81b886b8d96ab27bc725ee6
 

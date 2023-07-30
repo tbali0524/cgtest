@@ -1,5 +1,6 @@
 Spy the Spies
 
+expert_com_spy-the-spies
 https://www.codingame.com/training/expert/spy-the-spies
 https://www.codingame.com/contribute/view/242e4c53c9dc42ea4065c0ab957546531b0
 

@@ -1,6 +1,7 @@
 Genetics and Computers - Part 1
 
-https://www.codingame.com/training/easy/easy_com_genetics-and-computers---part-1
+easy_com_genetics-and-computers---part-1
+https://www.codingame.com/training/easy/genetics-and-computers---part-1
 https://www.codingame.com/contribute/view/8051abcaaf58e80950de236113ce2385012f
 
 A contribution by CrystallineCore

@@ -1,6 +1,7 @@
 Roman Sorting
 
-https://www.codingame.com/training/medium/medium_com_roman-sorting
+medium_com_roman-sorting
+https://www.codingame.com/training/medium/roman-sorting
 https://www.codingame.com/contribute/view/4426874a1276dafe6bd53346f0e87bbf3e672
 
 A contribution by 21stCenturyPeon

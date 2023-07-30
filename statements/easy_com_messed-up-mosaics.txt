@@ -1,6 +1,7 @@
 Messed up mosaics
 
-https://www.codingame.com/training/easy/easy_com_messed-up-mosaics
+easy_com_messed-up-mosaics
+https://www.codingame.com/training/easy/messed-up-mosaics
 https://www.codingame.com/contribute/view/3380720534981b30f84a8382586494370a197
 
 A contribution by Gautzilla

@@ -1,5 +1,6 @@
 Bulls and Cows 2
 
+optim_com_
 https://www.codingame.com/multiplayer/optimization/bulls-and-cows-2
 https://www.codingame.com/contribute/view/48504e7ca33360f569b9be7abea70ad2fe5e
 

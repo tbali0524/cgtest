@@ -1,5 +1,6 @@
 Three little piggies
 
+hard_com_three-little-piggies
 https://www.codingame.com/training/hard/three-little-piggies
 https://www.codingame.com/contribute/view/40052d250759146f22f5ec1aee18570798a
 

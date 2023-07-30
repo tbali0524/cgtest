@@ -1,6 +1,7 @@
 Saving Snoopy
 
-https://www.codingame.com/training/easy/easy_com_saving-snoopy
+easy_com_saving-snoopy
+https://www.codingame.com/training/easy/saving-snoopy
 https://www.codingame.com/contribute/view/40275534fffe0084711e4396d74f8dc5174ca
 
 A contribution by Timinator

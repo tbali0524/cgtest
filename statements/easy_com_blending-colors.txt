@@ -1,6 +1,7 @@
 Blending Colors
 
-https://www.codingame.com/training/easy/easy_com_blending-colors
+easy_com_blending-colors
+https://www.codingame.com/training/easy/blending-colors
 https://www.codingame.com/contribute/view/350287c9abb84f10186e73c8d3f536a279d06
 
 A contribution by java_coffee_cup

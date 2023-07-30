@@ -1,5 +1,6 @@
 The Balanced Centrifuge Problem
 
+hard_com_the-balanced-centrifuge-problem
 https://www.codingame.com/training/hard/the-balanced-centrifuge-problem
 https://www.codingame.com/contribute/view/18191e066be816d23bc5c5b0d4720246aea5
 

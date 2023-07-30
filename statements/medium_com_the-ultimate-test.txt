@@ -1,6 +1,7 @@
 The Ultimate Test
 
-https://www.codingame.com/training/medium/medium_com_the-ultimate-test
+medium_com_the-ultimate-test
+https://www.codingame.com/training/medium/the-ultimate-test
 https://www.codingame.com/contribute/view/213c4d2f2e42d77e705e9007fdfbd15225a
 
 A contribution by SamSi

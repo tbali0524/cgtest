@@ -1,5 +1,6 @@
 SameGame
 
+optim_com_samegame
 https://www.codingame.com/multiplayer/optimization/samegame
 https://www.codingame.com/contribute/view/52286850570a02e25f12d5b1b9a30bdb954c
 

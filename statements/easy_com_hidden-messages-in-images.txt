@@ -1,6 +1,7 @@
 Hidden Messages In Images
 
-https://www.codingame.com/training/easy/easy_com_hidden-messages-in-images
+easy_com_hidden-messages-in-images
+https://www.codingame.com/training/easy/hidden-messages-in-images
 https://www.codingame.com/contribute/view/59591b74d78a2f41058bd45f2d204071a895
 
 A contribution by AndreMarasca

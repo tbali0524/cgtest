@@ -1,5 +1,6 @@
 Einstein's riddle solver
 
+hard_com_einsteins-riddle-solver
 https://www.codingame.com/training/hard/einsteins-riddle-solver
 https://www.codingame.com/contribute/view/411ba6f15a17ba3b8856e536a7ccc9f0445
 

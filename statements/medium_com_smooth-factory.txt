@@ -1,6 +1,7 @@
 Smooth Factory
 
-https://www.codingame.com/training/medium/medium_com_smooth-factory
+medium_com_smooth-factory
+https://www.codingame.com/training/medium/smooth-factory
 https://www.codingame.com/contribute/view/4431456e080bf37b34a59c0fc41d52308e96
 
 A contribution by JBM

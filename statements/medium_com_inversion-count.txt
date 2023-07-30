@@ -1,6 +1,7 @@
 Inversion count
 
-https://www.codingame.com/training/medium/medium_com_inversion-count
+medium_com_inversion-count
+https://www.codingame.com/training/medium/inversion-count
 https://www.codingame.com/contribute/view/5682643a8e28bff7c466bb3c093dbaee7385
 
 A contribution by Djoums

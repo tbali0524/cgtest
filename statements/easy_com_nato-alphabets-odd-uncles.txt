@@ -1,6 +1,7 @@
 NATO-alphabet's odd uncles
 
-https://www.codingame.com/training/easy/easy_com_nato-alphabets-odd-uncles
+easy_com_nato-alphabets-odd-uncles
+https://www.codingame.com/training/easy/nato-alphabets-odd-uncles
 https://www.codingame.com/contribute/view/57336471622c996ca0f3d426c4d75e22f6450
 
 A contribution by Lisa-Has-Ideas

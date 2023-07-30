@@ -1,6 +1,7 @@
 Chain Reaction
 
-https://www.codingame.com/training/medium/medium_com_chain-reaction
+medium_com_chain-reaction
+https://www.codingame.com/training/medium/chain-reaction
 https://www.codingame.com/contribute/view/335109b05841b7d6d8df103e0c3062ad09e74
 
 A contribution by Darazdeblek

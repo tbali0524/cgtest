@@ -1,5 +1,6 @@
 Sum of odd
 
+hard_com_sum-of-odd
 https://www.codingame.com/training/hard/sum-of-odd
 https://www.codingame.com/contribute/view/14820bb966705f6257e83b853a2775cea4bb
 

@@ -1,6 +1,9 @@
 The Resistance
 
+expert_cg_the-resistance
 https://www.codingame.com/training/expert/the-resistance
+
+by CodinGame
 
 The Goal
 You work in the National Resistance Museum and you just uncovered hundreds of documents which contain coded Morse transmissions. In the documents, none of the spaces have been transcribed to separate the letters and the words hidden behind the Morse sequence. Therefore, there may be several interpretations of any single decoded sequence.

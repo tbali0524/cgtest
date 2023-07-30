@@ -1,6 +1,7 @@
 Shoot Enemy Aircraft
 
-https://www.codingame.com/training/easy/easy_com_shoot-enemy-aircraft
+easy_com_shoot-enemy-aircraft
+https://www.codingame.com/training/easy/shoot-enemy-aircraft
 https://www.codingame.com/contribute/view/431466782bff9fdee6719ca89371faa4f36db
 
 A contribution by Remi.

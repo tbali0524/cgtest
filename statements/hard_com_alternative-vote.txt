@@ -1,5 +1,6 @@
 Alternative vote
 
+hard_com_alternative-vote
 https://www.codingame.com/training/hard/alternative-vote
 
 A contribution by [CG]Maxime

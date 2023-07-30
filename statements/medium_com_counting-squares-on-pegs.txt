@@ -1,6 +1,7 @@
 Counting Squares on Pegs
 
-https://www.codingame.com/training/medium/medium_com_counting-squares-on-pegs
+medium_com_counting-squares-on-pegs
+https://www.codingame.com/training/medium/counting-squares-on-pegs
 https://www.codingame.com/contribute/view/13142fb9a9a2b28060f88c50ea8650b240d3
 
 A contribution by Niako

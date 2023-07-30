@@ -1,6 +1,7 @@
 Binary Search Tree Traversal
 
-https://www.codingame.com/training/medium/medium_com_binary-search-tree-traversal
+medium_com_binary-search-tree-traversal
+https://www.codingame.com/training/medium/binary-search-tree-traversal
 https://www.codingame.com/contribute/view/47863e92a656792f1074ca66fd684363109e
 
 A contribution by codingWhale

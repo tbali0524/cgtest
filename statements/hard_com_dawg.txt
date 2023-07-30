@@ -1,5 +1,6 @@
 DAWG
 
+hard_com_dawg
 https://www.codingame.com/training/hard/dawg
 https://www.codingame.com/contribute/view/7352dc06dcce447cd96a058f0bb2509a70b3
 

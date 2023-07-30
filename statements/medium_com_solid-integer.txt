@@ -1,6 +1,7 @@
 Solid Integer
 
-https://www.codingame.com/training/medium/medium_com_solid-integer
+medium_com_solid-integer
+https://www.codingame.com/training/medium/solid-integer
 https://www.codingame.com/contribute/view/7450c23fac042cf83a610fd464fe03765bf8
 
 A contribution by Meepophobia

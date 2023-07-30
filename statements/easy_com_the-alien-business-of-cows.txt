@@ -1,6 +1,7 @@
 The alien business of cows
 
-https://www.codingame.com/training/easy/easy_com_the-alien-business-of-cows
+easy_com_the-alien-business-of-cows
+https://www.codingame.com/training/easy/the-alien-business-of-cows
 https://www.codingame.com/contribute/view/5456448fe8f6f082b15ca1bbafba87fe24e69
 
 A contribution by Razovsky

@@ -1,6 +1,7 @@
 Insert to String
 
-https://www.codingame.com/training/easy/easy_com_insert-to-string
+easy_com_insert-to-string
+https://www.codingame.com/training/easy/insert-to-string
 https://www.codingame.com/contribute/view/10741c71cf7317ed11ae055b88c3f9f118112
 
 A contribution by Flafy

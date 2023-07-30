@@ -1,5 +1,6 @@
 The Highest Building
 
+hard_com_the-highest-building
 https://www.codingame.com/training/hard/the-highest-building
 https://www.codingame.com/contribute/view/444bf97ebc2d695985b8969e888e1d76971
 

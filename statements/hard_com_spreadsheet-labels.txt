@@ -1,5 +1,6 @@
 Spreadsheet Labels
 
+hard_com_spreadsheet-labels
 https://www.codingame.com/training/hard/spreadsheet-labels
 https://www.codingame.com/contribute/view/248b04022df0dd1f941b41bfb8135238e1c
 

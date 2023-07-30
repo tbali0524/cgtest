@@ -1,5 +1,6 @@
 Mars Colonization
 
+hard_com_mars-colonization
 https://www.codingame.com/training/hard/mars-colonization
 https://www.codingame.com/contribute/view/47453c33eb617ea4a312802b1ebba328d99e
 

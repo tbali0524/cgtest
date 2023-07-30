@@ -1,6 +1,7 @@
 Encryption/Decryption of Enigma Machine
 
-https://www.codingame.com/training/easy/easy_com_encryption-decryption-of-enigma-machine
+easy_com_encryptiondecryption-of-enigma-machine
+https://www.codingame.com/training/easy/encryptiondecryption-of-enigma-machine
 https://www.codingame.com/contribute/view/1647b4eb788510dd8a312b62815464000e7c
 
 A contribution by SudeepMukherjee

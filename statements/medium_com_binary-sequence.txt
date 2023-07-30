@@ -1,6 +1,7 @@
 Binary Sequence
 
-https://www.codingame.com/training/medium/medium_com_binary-sequence
+medium_com_binary-sequence
+https://www.codingame.com/training/medium/binary-sequence
 https://www.codingame.com/contribute/view/72595d7d21c7d539de58b18ab8ed2d883665
 
 A contribution by Flaaamort

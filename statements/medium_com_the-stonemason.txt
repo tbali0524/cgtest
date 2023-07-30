@@ -1,6 +1,7 @@
 The Stonemason
 
-https://www.codingame.com/training/medium/medium_com_the-stonemason
+medium_com_the-stonemason
+https://www.codingame.com/training/medium/the-stonemason
 https://www.codingame.com/contribute/view/102145ccb666bf1ecc9d69f3dd18e0b4adcd8
 
 A contribution by nicola

@@ -1,6 +1,7 @@
 ASCII Art with Logo Language
 
-https://www.codingame.com/training/medium/medium_com_ascii-art-with-logo-language
+medium_com_ascii-art-with-logo-language
+https://www.codingame.com/training/medium/ascii-art-with-logo-language
 https://www.codingame.com/contribute/view/448622d46725b4192d09931aaa2a615084c7d
 
 A contribution by Eulero314

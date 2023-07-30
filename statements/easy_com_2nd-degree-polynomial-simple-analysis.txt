@@ -1,6 +1,7 @@
 2nd degree polynomial - simple analysis
 
-https://www.codingame.com/training/easy/easy_com_2nd-degree-polynomial-simple-analysis
+easy_com_2nd-degree-polynomial-simple-analysis
+https://www.codingame.com/training/easy/2nd-degree-polynomial-simple-analysis
 https://www.codingame.com/contribute/view/1928782a0f0e0d639f9dbb1e7c4e30c5cc3ea
 
 A contribution by Nowan

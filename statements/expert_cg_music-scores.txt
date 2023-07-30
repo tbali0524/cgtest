@@ -1,6 +1,9 @@
 Music Scores
 
+expert_cg_music-scores
 https://www.codingame.com/training/expert/music-scores
+
+by CodinGame
 
 To rest from his stressful last adventure, Doctor Who decides to attend a music recital performed by Her Majesty the Queen’s Royal Orchestra. Since he doesn’t want to be seen in public, the Doctor uses the TARDIS to channel the music directly from the Opera to his home.
 

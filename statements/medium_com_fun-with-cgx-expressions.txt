@@ -1,6 +1,7 @@
 Fun with CGX Expressions
 
-https://www.codingame.com/training/medium/medium_com_fun-with-cgx-expressions
+medium_com_fun-with-cgx-expressions
+https://www.codingame.com/training/medium/fun-with-cgx-expressions
 https://www.codingame.com/contribute/view/441387e0e76bbed19d5009ff85a020b75a559
 
 A contribution by Eulero314

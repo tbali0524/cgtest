@@ -1,5 +1,6 @@
 Obsolete Programming
 
+hard_com_obsolete-programming
 https://www.codingame.com/training/hard/obsolete-programming
 https://www.codingame.com/contribute/view/17003eec822217afc62c69b79111447a6448
 

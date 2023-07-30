@@ -1,6 +1,7 @@
 Hidden word
 
-https://www.codingame.com/training/medium/medium_com_hidden-word
+medium_com_hidden-word
+https://www.codingame.com/training/medium/hidden-word
 https://www.codingame.com/contribute/view/6889b050ce1b47deaebea2b177d0d232c23
 
 A contribution by nicola

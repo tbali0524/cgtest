@@ -1,6 +1,7 @@
 Offset Arrays
 
-https://www.codingame.com/training/easy/easy_com_offset-arrays
+easy_com_offset-arrays
+https://www.codingame.com/training/easy/offset-arrays
 https://www.codingame.com/contribute/view/64848dc61ab5bd852ffb503c12b16021b1c4
 
 A contribution by Andriamanitra

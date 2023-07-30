@@ -1,6 +1,7 @@
 🤖 Robot Reach
 
-https://www.codingame.com/training/easy/easy_com_robot-reach
+easy_com_robot-reach
+https://www.codingame.com/training/easy/robot-reach
 https://www.codingame.com/contribute/view/21201be24aeb0a2c54b4e38f526fdb829bd8c
 
 A contribution by smhb

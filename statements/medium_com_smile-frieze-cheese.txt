@@ -1,6 +1,7 @@
 Smile! Frieze! Cheese!
 
-https://www.codingame.com/training/medium/medium_com_smile-frieze-cheese
+medium_com_smile-frieze-cheese
+https://www.codingame.com/training/medium/smile-frieze-cheese
 https://www.codingame.com/contribute/view/8468478194ba6d76e7af5f505eeead5d08d
 
 A contribution by nicola

@@ -1,6 +1,7 @@
 How many roads lead to Rome?
 
-https://www.codingame.com/training/medium/medium_com_how-many-roads-lead-to-rome
+medium_com_how-many-roads-lead-to-rome
+https://www.codingame.com/training/medium/how-many-roads-lead-to-rome
 https://www.codingame.com/contribute/view/945369c44d88f88181fb68bbfb68a9f48dc1
 
 A contribution by KingCrimson

@@ -1,6 +1,7 @@
 Snake encoding
 
-https://www.codingame.com/training/medium/medium_com_snake-encoding
+medium_com_snake-encoding
+https://www.codingame.com/training/medium/snake-encoding
 https://www.codingame.com/contribute/view/300388f92d6bce3d1ba76b60d238c199c76
 
 A contribution by Driikolu

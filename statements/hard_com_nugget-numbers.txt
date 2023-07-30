@@ -1,5 +1,6 @@
 Nuggets numbers
 
+hard_com_nuggets-numbers
 https://www.codingame.com/training/hard/nuggets-numbers
 https://www.codingame.com/contribute/view/58280b392aa2392a4cfd59e0f199fc82805b
 

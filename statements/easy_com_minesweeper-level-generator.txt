@@ -1,6 +1,7 @@
 Minesweeper level generator
 
-https://www.codingame.com/training/easy/easy_com_minesweeper-level-generator
+easy_com_minesweeper-level-generator
+https://www.codingame.com/training/easy/minesweeper-level-generator
 https://www.codingame.com/contribute/view/81566a21c186431861ee5bef495cf59b3a5c
 
 A contribution by darkhorse64

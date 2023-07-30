@@ -1,5 +1,6 @@
 CG Chat interpreter - Part 1
 
+expert_com_cg-chat-interpreter---part-1
 https://www.codingame.com/training/expert/cg-chat-interpreter---part-1
 https://www.codingame.com/contribute/view/456785b1d87d69a3ca4e4b2822883d6a2df
 

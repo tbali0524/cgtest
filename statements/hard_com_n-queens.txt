@@ -1,5 +1,6 @@
 n Queens
 
+hard_com_n-queens
 https://www.codingame.com/training/hard/n-queens
 https://www.codingame.com/contribute/view/721f545fb65b9e5c2ea8e31e81c575bae01
 

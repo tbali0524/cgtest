@@ -1,6 +1,7 @@
 Porcupine Fever
 
-https://www.codingame.com/training/medium/medium_com_porcupine-fever
+medium_com_porcupine-fever
+https://www.codingame.com/training/medium/porcupine-fever
 https://www.codingame.com/contribute/view/9478d948264b5e8c806dc8877e2b18de721
 
 A contribution by Unihedron

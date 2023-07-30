@@ -1,6 +1,7 @@
 Blowing Fuse
 
-https://www.codingame.com/training/easy/easy_com_blowing-fuse
+easy_com_blowing-fuse
+https://www.codingame.com/training/easy/blowing-fuse
 https://www.codingame.com/contribute/view/1691969dee57bdf80308d70567141ef6fa1e
 
 A contribution by java_coffee_cup

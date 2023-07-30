@@ -1,6 +1,7 @@
 Horse-hyperracing Hyperduals
 
-https://www.codingame.com/training/medium/medium_com_horse-hyperracing-hyperduals
+medium_com_horse-hyperracing-hyperduals
+https://www.codingame.com/training/medium/horse-hyperracing-hyperduals
 https://www.codingame.com/contribute/view/46851c0fe09e7e9725ad1f768d091234bf9
 
 A contribution by JBM

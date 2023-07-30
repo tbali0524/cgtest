@@ -1,6 +1,7 @@
 Asteroids
 
-https://www.codingame.com/training/easy/easy_com_asteroids
+easy_com_asteroids
+https://www.codingame.com/training/easy/asteroids
 https://www.codingame.com/contribute/view/629259e030637cb390abd09e95f0ac66c83e
 
 A contribution by XorZy

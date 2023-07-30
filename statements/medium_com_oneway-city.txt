@@ -1,6 +1,7 @@
 OneWay City
 
-https://www.codingame.com/training/medium/medium_com_oneway-city
+medium_com_oneway-city
+https://www.codingame.com/training/medium/oneway-city
 https://www.codingame.com/contribute/view/413346f76f99a76acdf433c2afa5263d61b
 
 A contribution by anst

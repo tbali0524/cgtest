@@ -1,6 +1,7 @@
 The leaking bathtub
 
-https://www.codingame.com/training/easy/easy_com_the-leaking-bathtub
+easy_com_the-leaking-bathtub
+https://www.codingame.com/training/easy/the-leaking-bathtub
 https://www.codingame.com/contribute/view/55191b71a36e9ff405077d85287b66d1f904f
 
 A contribution by Tatur2000

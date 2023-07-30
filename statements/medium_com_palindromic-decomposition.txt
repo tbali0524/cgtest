@@ -1,6 +1,7 @@
 Palindromic Decomposition
 
-https://www.codingame.com/training/medium/medium_com_palindromic-decomposition
+medium_com_palindromic-decomposition
+https://www.codingame.com/training/medium/palindromic-decomposition
 https://www.codingame.com/contribute/view/2105d2401c802ec8b63845553b46cfbcf012
 
 A contribution by kozuechan

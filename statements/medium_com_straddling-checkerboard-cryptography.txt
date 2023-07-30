@@ -1,6 +1,7 @@
 Straddling Checkerboard Cryptography
 
-https://www.codingame.com/training/medium/medium_com_straddling-checkerboard-cryptography
+medium_com_straddling-checkerboard-cryptography
+https://www.codingame.com/training/medium/straddling-checkerboard-cryptography
 https://www.codingame.com/contribute/view/16765dafbd059f9a326d0edaf54ee6db4636
 
 A contribution by dwarfie

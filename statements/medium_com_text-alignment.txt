@@ -1,6 +1,7 @@
 Text alignment
 
-https://www.codingame.com/training/medium/medium_com_text-alignment
+medium_com_text-alignment
+https://www.codingame.com/training/medium/text-alignment
 https://www.codingame.com/contribute/view/81f6ac60763abbd767adebde74677c447d
 
 A contribution by Bob

@@ -1,5 +1,6 @@
 Egyptian multiplication
 
+hard_com_egyptian-multiplication
 https://www.codingame.com/training/hard/egyptian-multiplication
 https://www.codingame.com/contribute/view/1785ce2e4d800ad82fad0ad7f85c84906de
 

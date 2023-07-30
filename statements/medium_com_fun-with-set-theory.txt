@@ -1,6 +1,7 @@
 Fun with Set theory
 
-https://www.codingame.com/training/medium/medium_com_fun-with-set-theory
+medium_com_fun-with-set-theory
+https://www.codingame.com/training/medium/fun-with-set-theory
 https://www.codingame.com/contribute/view/4480863826feca84acf5e45c576a927d45ec
 
 A contribution by Eldoir

@@ -1,5 +1,6 @@
 To Sky's Edge
 
+hard_com_to-skys-edge
 https://www.codingame.com/training/hard/to-skys-edge
 https://www.codingame.com/contribute/view/538694202acb3d26b14f2f779c26add85b7
 

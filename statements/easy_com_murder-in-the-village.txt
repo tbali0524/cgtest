@@ -1,6 +1,7 @@
 Murder in the village!
 
-https://www.codingame.com/training/easy/easy_com_murder-in-the-village
+easy_com_murder-in-the-village
+https://www.codingame.com/training/easy/murder-in-the-village
 https://www.codingame.com/contribute/view/527548709072ad80d4db1a24574720abf4ef
 
 A contribution by Pluk

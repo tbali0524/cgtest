@@ -1,6 +1,7 @@
 Organic Compounds 🔬
 
-https://www.codingame.com/training/easy/easy_com_organic-compounds
+easy_com_organic-compounds
+https://www.codingame.com/training/easy/organic-compounds
 https://www.codingame.com/contribute/view/890cd07f62636bc2993197a30c37784f447
 
 A contribution by CyberLemonade

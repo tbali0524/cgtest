@@ -1,6 +1,7 @@
 Goro Want Chocolate
 
-https://www.codingame.com/training/medium/medium_com_goro-want-chocolate
+medium_com_goro-want-chocolate
+https://www.codingame.com/training/medium/goro-want-chocolate
 https://www.codingame.com/contribute/view/1719621434068e8be6c7c41c171a6faecffa
 
 A contribution by JBM

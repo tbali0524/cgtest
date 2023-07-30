@@ -1,6 +1,7 @@
 Detective Geek
 
-https://www.codingame.com/training/easy/easy_com_detective-geek
+easy_com_detective-geek
+https://www.codingame.com/training/easy/detective-geek
 https://www.codingame.com/contribute/view/72335b555614a432c6281274f2873d9b247f
 
 A contribution by AdemDj12

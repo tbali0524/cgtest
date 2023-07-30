@@ -1,6 +1,7 @@
 Assignments are boring
 
-https://www.codingame.com/training/medium/medium_com_assignments-are-boring
+medium_com_assignments-are-boring
+https://www.codingame.com/training/medium/assignments-are-boring
 https://www.codingame.com/contribute/view/5140c0ddef4c6cac9083c94a8aa02626bf7d
 
 A contribution by Crypticsy

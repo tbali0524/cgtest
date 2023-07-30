@@ -1,6 +1,7 @@
 Fix the spaces
 
-https://www.codingame.com/training/medium/medium_com_fix-the-spaces
+medium_com_fix-the-spaces
+https://www.codingame.com/training/medium/fix-the-spaces
 https://www.codingame.com/contribute/view/46053956831b4324bf2a6e36521916e52a727
 
 A contribution by Rafarafa

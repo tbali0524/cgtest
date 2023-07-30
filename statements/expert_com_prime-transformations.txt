@@ -1,5 +1,6 @@
 Prime Transformations
 
+expert_com_prime-transformations
 https://www.codingame.com/training/expert/prime-transformations
 https://www.codingame.com/contribute/view/2324b037e19f805ebdaebbe00c60db8ce14
 

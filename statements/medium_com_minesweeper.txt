@@ -1,6 +1,7 @@
 Minesweeper
 
-https://www.codingame.com/training/medium/medium_com_minesweeper
+medium_com_minesweeper
+https://www.codingame.com/training/medium/minesweeper
 https://www.codingame.com/contribute/view/286f6caa2b01e5233030e630a94e6cc0bc0
 
 A contribution by VilBoub

@@ -1,6 +1,7 @@
 Christmas Tree
 
-https://www.codingame.com/training/medium/medium_com_christmas-tree
+medium_com_christmas-tree
+https://www.codingame.com/training/medium/christmas-tree
 https://www.codingame.com/contribute/view/592756aa65fa428b447917758ce58a8d1c23
 
 A contribution by igreactive

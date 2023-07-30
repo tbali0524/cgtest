@@ -1,6 +1,7 @@
 Trits (Balanced Ternary Computing)
 
-https://www.codingame.com/training/medium/medium_com_trits-balanced-ternary-computing
+medium_com_trits-balanced-ternary-computing
+https://www.codingame.com/training/medium/trits-balanced-ternary-computing
 https://www.codingame.com/contribute/view/14261a7f822c225f4ca9579cae96e2ad958c
 
 A contribution by lmat

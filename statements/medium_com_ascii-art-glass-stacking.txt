@@ -1,6 +1,7 @@
 ASCII ART : Glass Stacking
 
-https://www.codingame.com/training/medium/medium_com_ascii-art-glass-stacking
+medium_com_ascii-art-glass-stacking
+https://www.codingame.com/training/medium/ascii-art-glass-stacking
 https://www.codingame.com/contribute/view/290057fea8a224c2705e9b217e98f453a72
 
 A contribution by loveCoding

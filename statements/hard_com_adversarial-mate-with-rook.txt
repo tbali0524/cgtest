@@ -1,5 +1,6 @@
 Adversarial Mate with Rook
 
+hard_com_adversarial-mate-with-rook
 https://www.codingame.com/training/hard/adversarial-mate-with-rook
 https://www.codingame.com/contribute/view/641969e98c2586fefd146c1fb31260c9dd5f
 

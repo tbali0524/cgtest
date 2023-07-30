@@ -1,6 +1,7 @@
 Count as I count
 
-https://www.codingame.com/training/easy/easy_com_count-as-i-count
+easy_com_count-as-i-count
+https://www.codingame.com/training/easy/count-as-i-count
 https://www.codingame.com/contribute/view/4389e5cc9c1e42fe6adbc2216a304f33ba98
 
 A contribution by BLANC

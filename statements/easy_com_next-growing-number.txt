@@ -1,6 +1,7 @@
 Next growing number
 
-https://www.codingame.com/training/easy/easy_com_next-growing-number
+easy_com_next-growing-number
+https://www.codingame.com/training/easy/next-growing-number
 https://www.codingame.com/contribute/view/5681e014fec37fb352096829c16a1da27e28
 
 A contribution by kayou

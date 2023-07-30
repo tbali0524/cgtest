@@ -1,6 +1,9 @@
 The Fall - Episode 2
 
+hard_cg_the-fall-episode-2
 https://www.codingame.com/training/hard/the-fall-episode-2
+
+by CodinGame
 
 The Goal
 Your objective is to write a program capable of predicting the route Indy will take on his way down a tunnel.

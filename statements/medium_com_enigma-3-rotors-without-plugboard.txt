@@ -1,6 +1,7 @@
 Enigma - 3 rotors without plugboard
 
-https://www.codingame.com/training/medium/medium_com_enigma-3-rotors-without-plugboard
+medium_com_enigma-3-rotors-without-plugboard
+https://www.codingame.com/training/medium/enigma-3-rotors-without-plugboard
 https://www.codingame.com/contribute/view/1655934909d92ed0608b14609e24a0acbc2d
 
 A contribution by dwarfie

@@ -1,6 +1,7 @@
 Simple auto-scaling
 
-https://www.codingame.com/training/easy/easy_com_simple-auto-scaling
+easy_com_simple-auto-scaling
+https://www.codingame.com/training/easy/simple-auto-scaling
 https://www.codingame.com/contribute/view/7407a5eccc5ea02acb67f001a5074378a22c
 
 A contribution by Kktus

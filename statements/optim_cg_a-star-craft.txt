@@ -1,5 +1,6 @@
 A*Craft
 
+optim_cg_a-star-craft
 https://www.codingame.com/multiplayer/optimization/a-star-craft
 
 Created by 2 CodinGamers, Agade & Magus, A*Craft is the 6th challenge crafted by the community!

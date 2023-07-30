@@ -1,5 +1,6 @@
 Expand the polynomial
 
+hard_com_expand-the-polynomial
 https://www.codingame.com/training/hard/expand-the-polynomial
 https://www.codingame.com/contribute/view/108748007bdddd5e71e272a9c8cb67145bda
 

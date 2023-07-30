@@ -1,6 +1,7 @@
 Particle Detection with Cloud Chamber
 
-https://www.codingame.com/training/medium/medium_com_particle-detection-with-cloud-chamber
+medium_com_particle-detection-with-cloud-chamber
+https://www.codingame.com/training/medium/particle-detection-with-cloud-chamber
 https://www.codingame.com/contribute/view/53347f943d030338a088cb57aad0f5eda931
 
 A contribution by LaurentValade

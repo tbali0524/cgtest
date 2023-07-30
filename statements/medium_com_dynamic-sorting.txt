@@ -1,6 +1,7 @@
 Dynamic sorting
 
-https://www.codingame.com/training/medium/medium_com_dynamic-sorting
+medium_com_dynamic-sorting
+https://www.codingame.com/training/medium/dynamic-sorting
 https://www.codingame.com/contribute/view/184127aceb8be8867537a117ce18c23b8d71
 
 A contribution by Davidl.mkh

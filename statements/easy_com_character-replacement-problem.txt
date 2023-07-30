@@ -1,6 +1,7 @@
 Character replacement problem
 
-https://www.codingame.com/training/easy/easy_com_character-replacement-problem
+easy_com_character-replacement-problem
+https://www.codingame.com/training/easy/character-replacement-problem
 https://www.codingame.com/contribute/view/3235531ad5b2b9889601bea375c1e0fc564ca
 
 A contribution by renzyGo

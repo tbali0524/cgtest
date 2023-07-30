@@ -1,6 +1,9 @@
 Blunder - Episode 1
 
+medium_cg_blunder-episode-1
 https://www.codingame.com/training/medium/blunder-episode-1
+
+by CodinGame
 
 The Goal
 Blunder is a depressed robot who heals his depression by partying and drinking alcohol. To save him from a life of debauchery, his creators have reprogrammed the control system with a more rudimentary intelligence. Unfortunately, he has lost his sense of humor and his former friends have now rejected him.

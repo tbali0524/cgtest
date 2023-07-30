@@ -1,5 +1,6 @@
 Connect four
 
+hard_com_connect-four
 https://www.codingame.com/training/hard/connect-four
 https://www.codingame.com/contribute/view/201ca0ff96130a6d4cbec872123c0fa4ca4
 

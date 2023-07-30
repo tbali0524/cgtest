@@ -1,6 +1,9 @@
 CodinGame Sponsored Contest
 
+optim_cg_codingame-sponsored-contest
 https://www.codingame.com/multiplayer/optimization/codingame-sponsored-contest
+
+by CodinGame
 
 STATEMENT
 Solve this puzzle, show your best coding skills and grab the chance to join our tech team!

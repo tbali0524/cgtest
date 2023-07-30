@@ -1,6 +1,7 @@
 Robbery optimisation
 
-https://www.codingame.com/training/medium/medium_com_robbery-optimisation
+medium_com_robbery-optimisation
+https://www.codingame.com/training/medium/robbery-optimisation
 https://www.codingame.com/contribute/view/42480f5c53b6edc2a798a4fc96ba233ba2f0
 
 A contribution by Potemkine

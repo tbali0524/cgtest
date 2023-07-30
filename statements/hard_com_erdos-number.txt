@@ -1,5 +1,6 @@
 Erdős Number
 
+hard_com_erdos-number
 https://www.codingame.com/training/hard/erdos-number
 https://www.codingame.com/contribute/view/96f66a42df7dbfdcf998691d011c10c99e
 

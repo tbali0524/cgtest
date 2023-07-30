@@ -1,6 +1,7 @@
 Mandelbrot Set Approximation
 
-https://www.codingame.com/training/easy/easy_com_mandelbrot-set-approximation
+easy_com_mandelbrot-set-approximation
+https://www.codingame.com/training/easy/mandelbrot-set-approximation
 https://www.codingame.com/contribute/view/488222b28f051950893b47fc4b0b2e5c1a7ad
 
 A contribution by StepBack13

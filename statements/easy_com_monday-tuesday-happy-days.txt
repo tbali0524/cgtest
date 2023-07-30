@@ -1,6 +1,7 @@
 Monday Tuesday Happy Days
 
-https://www.codingame.com/training/easy/easy_com_monday-tuesday-happy-days
+easy_com_monday-tuesday-happy-days
+https://www.codingame.com/training/easy/monday-tuesday-happy-days
 https://www.codingame.com/contribute/view/91a6d97d25f455338f546875bfc7f04690
 
 A contribution by Bob

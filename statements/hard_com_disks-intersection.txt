@@ -1,5 +1,6 @@
 Disks intersection
 
+hard_com_disks-intersection
 https://www.codingame.com/training/hard/disks-intersection
 https://www.codingame.com/contribute/view/24163cb6376544e25d87f52afa393bd56fc
 

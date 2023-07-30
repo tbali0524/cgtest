@@ -1,6 +1,7 @@
 Rock-Paper-Scissors War
 
-https://www.codingame.com/training/medium/medium_com_rock-paper-scissors-war
+medium_com_rock-paper-scissors-war
+https://www.codingame.com/training/medium/rock-paper-scissors-war
 https://www.codingame.com/contribute/view/4940955d9e8eead8ebede5770192f0cc4aaf
 
 A contribution by java_coffee_cup

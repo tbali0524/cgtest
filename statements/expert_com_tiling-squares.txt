@@ -1,5 +1,6 @@
 Tiling by Squares
 
+expert_com_tiling-by-squares
 https://www.codingame.com/training/expert/tiling-by-squares
 https://www.codingame.com/contribute/view/538487df7add435e45faf1957939a68f2b48
 

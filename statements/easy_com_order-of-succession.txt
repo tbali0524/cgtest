@@ -1,6 +1,7 @@
 orDer oF succeSsion
 
-https://www.codingame.com/training/easy/easy_com_order-of-succession
+easy_com_order-of-succession
+https://www.codingame.com/training/easy/order-of-succession
 https://www.codingame.com/contribute/view/7574e3ae41460c5af011af3834c3b125082
 
 A contribution by nicola

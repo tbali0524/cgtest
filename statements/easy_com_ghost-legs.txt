@@ -1,6 +1,7 @@
 Ghost Legs
 
-https://www.codingame.com/training/easy/easy_com_ghost-legs
+easy_com_ghost-legs
+https://www.codingame.com/training/easy/ghost-legs
 https://www.codingame.com/contribute/view/1536809eb260a438cc1d8b3a3e281e3d962b
 
 A contribution by java_coffee_cup

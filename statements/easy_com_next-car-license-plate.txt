@@ -1,6 +1,7 @@
 Next car license plate  ?
 
-https://www.codingame.com/training/easy/easy_com_next-car-license-plate
+easy_com_next-car-license-plate
+https://www.codingame.com/training/easy/next-car-license-plate
 https://www.codingame.com/contribute/view/50630bd1866a08956e804bb4f334c561115
 
 A contribution by VilBoub

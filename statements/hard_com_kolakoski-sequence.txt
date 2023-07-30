@@ -1,5 +1,6 @@
 Kolakoski Sequence
 
+hard_com_kolakoski-sequence
 https://www.codingame.com/training/hard/kolakoski-sequence
 
 A contribution by Orabig

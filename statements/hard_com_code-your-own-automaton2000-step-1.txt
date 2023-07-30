@@ -1,5 +1,6 @@
 Code your own Automaton2000, step 1
 
+hard_com_code-your-own-automaton2000-step-1
 https://www.codingame.com/training/hard/code-your-own-automaton2000-step-1
 https://www.codingame.com/contribute/view/777f5a427ac2b300745e68bb078036afcbf
 

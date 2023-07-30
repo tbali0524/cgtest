@@ -1,6 +1,7 @@
 MCxxxx microcontroller simulation
 
-https://www.codingame.com/training/medium/medium_com_mcxxxx-microcontroller-simulation
+medium_com_mcxxxx-microcontroller-simulation
+https://www.codingame.com/training/medium/mcxxxx-microcontroller-simulation
 https://www.codingame.com/contribute/view/784754e2ac6e7476b0d17162c603db0cc157
 
 A contribution by Exanc

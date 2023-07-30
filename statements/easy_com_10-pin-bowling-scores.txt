@@ -1,6 +1,7 @@
 10 pin Bowling Scores
 
-https://www.codingame.com/training/easy/easy_com_10-pin-bowling-scores
+easy_com_10-pin-bowling-scores
+https://www.codingame.com/training/easy/10-pin-bowling-scores
 https://www.codingame.com/contribute/view/119285d7dbaca63a7fae0b2a75f1cbe6d48da
 
 A contribution by TheCaptainCoder

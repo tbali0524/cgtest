@@ -1,6 +1,7 @@
 WW2 Mortar Warfare
 
-https://www.codingame.com/training/easy/easy_com_ww2-mortar-warfare
+easy_com_ww2-mortar-warfare
+https://www.codingame.com/training/easy/ww2-mortar-warfare
 https://www.codingame.com/contribute/view/190245c466ef99dd60defe92c520ef9152de9
 
 A contribution by zakacat

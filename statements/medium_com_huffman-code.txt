@@ -1,6 +1,7 @@
 Huffman Code
 
-https://www.codingame.com/training/medium/medium_com_huffman-code
+medium_com_huffman-code
+https://www.codingame.com/training/medium/huffman-code
 https://www.codingame.com/contribute/view/519077c8e9e248cc5031801a623f5764bb0e
 
 A contribution by Crypticsy

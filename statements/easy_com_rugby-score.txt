@@ -1,6 +1,7 @@
 Rugby score
 
-https://www.codingame.com/training/easy/easy_com_rugby-score
+easy_com_rugby-score
+https://www.codingame.com/training/easy/rugby-score
 https://www.codingame.com/contribute/view/210af183274ec1c72f352989ce1a12bef72
 
 A contribution by Bob

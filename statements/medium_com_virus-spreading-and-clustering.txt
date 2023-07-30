@@ -1,6 +1,7 @@
 Virus spreading and clustering
 
-https://www.codingame.com/training/medium/medium_com_virus-spreading-and-clustering
+medium_com_virus-spreading-and-clustering
+https://www.codingame.com/training/medium/virus-spreading-and-clustering
 https://www.codingame.com/contribute/view/4970475d0d3138174e522a9e0279eb096269
 
 A contribution by Lecerf

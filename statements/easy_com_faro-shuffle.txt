@@ -1,6 +1,7 @@
 Faro shuffle
 
-https://www.codingame.com/training/easy/easy_com_faro-shuffle
+easy_com_faro-shuffle
+https://www.codingame.com/training/easy/faro-shuffle
 https://www.codingame.com/contribute/view/78465c1ffbb4d32ca0aedc76b0d6197b21ca
 
 A contribution by qpi

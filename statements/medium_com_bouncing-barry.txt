@@ -1,6 +1,7 @@
 Bouncing Barry
 
-https://www.codingame.com/training/medium/medium_com_bouncing-barry
+medium_com_bouncing-barry
+https://www.codingame.com/training/medium/bouncing-barry
 https://www.codingame.com/contribute/view/7160061d215bfbde953f2fbd49d4dfa8b123
 
 A contribution by UnicornP

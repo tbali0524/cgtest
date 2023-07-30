@@ -1,6 +1,7 @@
 Magic Square
 
-https://www.codingame.com/training/medium/medium_com_magic-square
+medium_com_magic-square
+https://www.codingame.com/training/medium/magic-square
 https://www.codingame.com/contribute/view/7220bec1f62e4d0cbdc1fd8567187c8ac88
 
 A contribution by brexe

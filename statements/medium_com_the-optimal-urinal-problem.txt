@@ -1,6 +1,7 @@
 The Optimal Urinal Problem
 
-https://www.codingame.com/training/medium/medium_com_the-optimal-urinal-problem
+medium_com_the-optimal-urinal-problem
+https://www.codingame.com/training/medium/the-optimal-urinal-problem
 https://www.codingame.com/contribute/view/3861406fc91feec2b9fd6e7a851411df587
 
 A contribution by justhalf

@@ -1,5 +1,6 @@
 Jump Point Search - Preprocessing
 
+hard_com_jump-point-search---preprocessing
 https://www.codingame.com/training/hard/jump-point-search---preprocessing
 https://www.codingame.com/contribute/view/5350cffc2e2fb9c9f3030b6a0e4f15647c28
 

@@ -1,6 +1,7 @@
 Go competition
 
-https://www.codingame.com/training/medium/medium_com_go-competition
+medium_com_go-competition
+https://www.codingame.com/training/medium/go-competition
 https://www.codingame.com/contribute/view/207452e895a78f67f95d1c16bbf76b25bb6b
 
 A contribution by OptiPanda

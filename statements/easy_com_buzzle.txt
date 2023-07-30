@@ -1,6 +1,7 @@
 Buzzle
 
-https://www.codingame.com/training/easy/easy_com_buzzle
+easy_com_buzzle
+https://www.codingame.com/training/easy/buzzle
 https://www.codingame.com/contribute/view/755893190c6155ccfc4a18efa5b8900e7c1a
 
 A contribution by Edjy

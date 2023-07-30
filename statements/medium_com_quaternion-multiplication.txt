@@ -1,6 +1,7 @@
 Quaternion Multiplication
 
-https://www.codingame.com/training/medium/medium_com_quaternion-multiplication
+medium_com_quaternion-multiplication
+https://www.codingame.com/training/medium/quaternion-multiplication
 https://www.codingame.com/contribute/view/346c1cd9d01477717d3a15198a0e9796296
 
 A contribution by TheNinja

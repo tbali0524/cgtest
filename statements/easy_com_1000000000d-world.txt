@@ -1,6 +1,7 @@
 1000000000D WORLD
 
-https://www.codingame.com/training/easy/easy_com_1000000000d-world
+easy_com_1000000000d-world
+https://www.codingame.com/training/easy/1000000000d-world
 https://www.codingame.com/contribute/view/63428900a40dab092da96baba31fac53117d
 
 A contribution by awnion

@@ -1,6 +1,7 @@
 Railway Station Clock
 
-https://www.codingame.com/training/medium/medium_com_railway-station-clock
+medium_com_railway-station-clock
+https://www.codingame.com/training/medium/railway-station-clock
 https://www.codingame.com/contribute/view/683855f156cbfdf8357c1018ed841af5fb7d
 
 A contribution by hypers

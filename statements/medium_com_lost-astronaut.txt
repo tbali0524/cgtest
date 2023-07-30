@@ -1,6 +1,7 @@
 Lost astronaut
 
-https://www.codingame.com/training/medium/medium_com_lost-astronaut
+medium_com_lost-astronaut
+https://www.codingame.com/training/medium/lost-astronaut
 https://www.codingame.com/contribute/view/7452bf4732359fd91b6f7319463048f395d8
 
 A contribution by ATmax

@@ -1,5 +1,6 @@
 High-rise buildings
 
+expert_com_high-rise-buildings
 https://www.codingame.com/training/expert/high-rise-buildings
 https://www.codingame.com/contribute/view/1212718c68b9d9b6db9a99df88c3494ef02a
 

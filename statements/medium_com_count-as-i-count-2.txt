@@ -1,6 +1,7 @@
 Count as I count #2
 
-https://www.codingame.com/training/medium/medium_com_count-as-i-count-2
+medium_com_count-as-i-count-2
+https://www.codingame.com/training/medium/count-as-i-count-2
 https://www.codingame.com/contribute/view/62617018e368ad9fd0992cb9d88085d56cce7
 
 A contribution by BLANC

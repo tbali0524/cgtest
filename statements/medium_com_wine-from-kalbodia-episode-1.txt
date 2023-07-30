@@ -1,6 +1,7 @@
 Wine from Kalbodia - Episode 1
 
-https://www.codingame.com/training/medium/medium_com_wine-from-kalbodia-episode-1
+medium_com_wine-from-kalbodia-episode-1
+https://www.codingame.com/training/medium/wine-from-kalbodia-episode-1
 https://www.codingame.com/contribute/view/71296a2d30f6d97b2031eb73f22ad05effbb
 
 A contribution by UnicornP

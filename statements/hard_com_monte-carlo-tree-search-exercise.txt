@@ -1,5 +1,6 @@
 Monte Carlo Tree Search exercise
 
+hard_com_monte-carlo-tree-search-exercise
 https://www.codingame.com/training/hard/monte-carlo-tree-search-exercise
 https://www.codingame.com/contribute/view/949f39df6f0808f04ae3d4a8b1096c9a52e
 

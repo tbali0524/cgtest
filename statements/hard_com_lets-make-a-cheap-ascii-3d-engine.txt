@@ -1,5 +1,6 @@
 Let's make a cheap ASCII 3D engine!
 
+hard_com_lets-make-a-cheap-ascii-3d-engine
 https://www.codingame.com/training/hard/lets-make-a-cheap-ascii-3d-engine
 https://www.codingame.com/contribute/view/6224d52ad5295355fd7d7d48a5a5a8188a53
 

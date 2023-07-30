@@ -1,7 +1,9 @@
 1. NGR - Basic Radar
 
-https://www.codingame.com/training/easy/easy_com_1-ngr-basic-radar
+easy_com_1-ngr-basic-radar
+https://www.codingame.com/training/easy/1-ngr-basic-radar
 https://www.codingame.com/contribute/view/66431a5ad383428a2d2971694190eeae0781
+
 
 A contribution by Lucasgood
 

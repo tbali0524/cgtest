@@ -1,6 +1,7 @@
 Suguru Solver
 
-https://www.codingame.com/training/medium/medium_com_suguru-solver
+medium_com_suguru-solver
+https://www.codingame.com/training/medium/suguru-solver
 https://www.codingame.com/contribute/view/267455f7148fcc689ba45367f760f3d71a584
 
 A contribution by Saur2000

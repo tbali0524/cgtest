@@ -1,5 +1,6 @@
 Hill Notation and Hill Order
 
+hard_com_hill-notation-and-hill-order
 https://www.codingame.com/training/hard/hill-notation-and-hill-order
 https://www.codingame.com/contribute/view/441101315c7e194132c520a1bbf011be72b
 

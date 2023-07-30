@@ -1,6 +1,7 @@
 Make an Atari Font
 
-https://www.codingame.com/training/easy/easy_com_make-an-atari-font
+easy_com_make-an-atari-font
+https://www.codingame.com/training/easy/make-an-atari-font
 https://www.codingame.com/contribute/view/4235527a276326cabb4ca484cca56627d9368
 
 A contribution by Lisa-Has-Ideas

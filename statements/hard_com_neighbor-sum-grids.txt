@@ -1,5 +1,6 @@
 Neighbor-Sum Grids
 
+hard_com_neighbor-sum-grids
 https://www.codingame.com/training/hard/neighbor-sum-grids
 https://www.codingame.com/contribute/view/1293b56bea0a3e1f180678b9549f01dbe312
 

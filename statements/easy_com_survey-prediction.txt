@@ -1,6 +1,7 @@
 Survey Prediction
 
-https://www.codingame.com/training/easy/easy_com_survey-prediction
+easy_com_survey-prediction
+https://www.codingame.com/training/easy/survey-prediction
 https://www.codingame.com/contribute/view/1859464e025e798f85c72951e681f883e0c4b
 
 A contribution by Ayza

@@ -1,5 +1,6 @@
 Breaking Apart
 
+hard_com_breaking-apart
 https://www.codingame.com/training/hard/breaking-apart
 https://www.codingame.com/contribute/view/52381b06d4abd61f5a2aeaf28fb7f26e6dbe
 

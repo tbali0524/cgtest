@@ -1,5 +1,6 @@
 Sliding Maze Puzzle
 
+hard_com_sliding-maze-puzzle
 https://www.codingame.com/training/hard/sliding-maze-puzzle
 https://www.codingame.com/contribute/view/8023e074a4d6a26f2087a22b487afde185bd
 

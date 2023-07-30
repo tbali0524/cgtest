@@ -1,6 +1,7 @@
 Caesar is the chief
 
-https://www.codingame.com/training/easy/easy_com_caesar-is-the-chief
+easy_com_caesar-is-the-chief
+https://www.codingame.com/training/easy/caesar-is-the-chief
 https://www.codingame.com/contribute/view/72614111bf94b36f87e1600aaaf18af18d24
 
 A contribution by BetaCorn

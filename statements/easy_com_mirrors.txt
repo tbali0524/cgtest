@@ -1,6 +1,7 @@
 Mirrors
 
-https://www.codingame.com/training/easy/easy_com_mirrors
+easy_com_mirrors
+https://www.codingame.com/training/easy/mirrors
 https://www.codingame.com/contribute/view/62121aa790767e8a2cdac9d7087f927f30b70
 
 A contribution by stupid36

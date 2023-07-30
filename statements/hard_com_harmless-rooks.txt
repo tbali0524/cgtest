@@ -1,5 +1,6 @@
 Harmless Rooks
 
+hard_com_harmless-rooks
 https://www.codingame.com/training/hard/harmless-rooks
 https://www.codingame.com/contribute/view/129286fdf1e498eae3c89bb90c680f0a762c
 

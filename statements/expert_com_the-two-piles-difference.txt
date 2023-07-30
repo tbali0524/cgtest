@@ -1,5 +1,6 @@
 The two piles difference
 
+expert_com_the-two-piles-difference
 https://www.codingame.com/training/expert/the-two-piles-difference
 https://www.codingame.com/contribute/view/738e5f7f3d5798086768c53e5a05bb55ca4
 

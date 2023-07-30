@@ -1,6 +1,7 @@
 Fractal Image Recognition
 
-https://www.codingame.com/training/medium/medium_com_fractal-image-recognition
+medium_com_fractal-image-recognition
+https://www.codingame.com/training/medium/fractal-image-recognition
 https://www.codingame.com/contribute/view/6222c4bb9409353bc83e3e4f2638d2d10432
 
 A contribution by CSGO_BOT

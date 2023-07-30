@@ -1,6 +1,7 @@
 No More Pythons, Please!
 
-https://www.codingame.com/training/easy/easy_com_no-more-pythons-please
+easy_com_no-more-pythons-please
+https://www.codingame.com/training/easy/no-more-pythons-please
 https://www.codingame.com/contribute/view/15724a523198e6b0a7d9f50c5c42e08b3b7cf
 
 A contribution by VictoriousTriceraton

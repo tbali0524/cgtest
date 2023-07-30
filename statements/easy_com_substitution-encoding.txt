@@ -1,6 +1,7 @@
 Substitution Encoding
 
-https://www.codingame.com/training/easy/easy_com_substitution-encoding
+easy_com_substitution-encoding
+https://www.codingame.com/training/easy/substitution-encoding
 https://www.codingame.com/contribute/view/68671da078c49c9439d756b398b3ba16c29e
 
 A contribution by Dana3l

@@ -1,6 +1,7 @@
 Nicholas Breakspeare and Hugh of Evesham
 
-https://www.codingame.com/training/easy/easy_com_nicholas-breakspeare-and-hugh-of-evesham
+easy_com_nicholas-breakspeare-and-hugh-of-evesham
+https://www.codingame.com/training/easy/nicholas-breakspeare-and-hugh-of-evesham
 https://www.codingame.com/contribute/view/56053f5b5bc732d343dfe357a341c395d847
 
 A contribution by ?

@@ -1,6 +1,7 @@
 Anagrams
 
-https://www.codingame.com/training/medium/medium_com_anagrams
+medium_com_anagrams
+https://www.codingame.com/training/medium/anagrams
 https://www.codingame.com/contribute/view/3160473c21d4de227a5444d7e02581363be
 
 A contribution by player_one

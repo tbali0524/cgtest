@@ -1,6 +1,7 @@
 Blood Types
 
-https://www.codingame.com/training/medium/medium_com_blood-types
+medium_com_blood-types
+https://www.codingame.com/training/medium/blood-types
 https://www.codingame.com/contribute/view/49626f2257500640e3bf40769f389b893c7e
 
 A contribution by java_coffee_cup

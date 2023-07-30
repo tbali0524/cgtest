@@ -1,5 +1,6 @@
 KGood
 
+hard_com_kgood
 https://www.codingame.com/training/hard/kgood
 https://www.codingame.com/contribute/view/421313689a9f1957bc63e3365fd2f0e4b1e
 

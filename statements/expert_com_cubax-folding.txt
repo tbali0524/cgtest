@@ -1,5 +1,6 @@
 Cubax Folding
 
+expert_com_cubax-folding
 https://www.codingame.com/training/expert/cubax-folding
 https://www.codingame.com/contribute/view/6642bd7874dc06c903f45c867c67a61a0b6
 

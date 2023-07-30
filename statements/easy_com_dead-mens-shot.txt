@@ -1,6 +1,7 @@
 Dead men's shot
 
-https://www.codingame.com/training/easy/easy_com_dead-mens-shot
+easy_com_dead-mens-shot
+https://www.codingame.com/training/easy/dead-mens-shot
 https://www.codingame.com/contribute/view/173542eb0f7e30b9c71dcd95ebaa120e8af1
 
 A contribution by WildSmilodon

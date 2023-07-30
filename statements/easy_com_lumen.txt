@@ -1,6 +1,7 @@
 Lumen
 
-https://www.codingame.com/training/easy/easy_com_lumen
+easy_com_lumen
+https://www.codingame.com/training/easy/lumen
 https://www.codingame.com/contribute/view/1990790766371c406da1e4b7d4e33ab5e88f
 
 A contribution by Sceurpien

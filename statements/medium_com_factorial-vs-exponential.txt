@@ -1,6 +1,7 @@
 Factorial vs Exponential
 
-https://www.codingame.com/training/medium/medium_com_factorial-vs-exponential
+medium_com_factorial-vs-exponential
+https://www.codingame.com/training/medium/factorial-vs-exponential
 https://www.codingame.com/contribute/view/4593ea1b12858d51a574718e53594744059
 
 A contribution by ValNykol

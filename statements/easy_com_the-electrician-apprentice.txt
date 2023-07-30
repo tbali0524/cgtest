@@ -1,6 +1,7 @@
 The Electrician Apprentice
 
-https://www.codingame.com/training/easy/easy_com_the-electrician-apprentice
+easy_com_the-electrician-apprentice
+https://www.codingame.com/training/easy/the-electrician-apprentice
 https://www.codingame.com/contribute/view/53596adfab1e911132d74e0ca17640d0f5c1
 
 A contribution by d-mark

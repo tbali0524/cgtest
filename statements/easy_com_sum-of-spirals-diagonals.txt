@@ -1,6 +1,7 @@
 Sum of Spiral's Diagonals
 
-https://www.codingame.com/training/easy/easy_com_sum-of-spirals-diagonals
+easy_com_sum-of-spirals-diagonals
+https://www.codingame.com/training/easy/sum-of-spirals-diagonals
 https://www.codingame.com/contribute/view/669657e4c42f30df248eb96db4169e8d0c0a
 
 A contribution by wyenat

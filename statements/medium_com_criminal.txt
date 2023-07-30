@@ -1,6 +1,7 @@
 Criminal
 
-https://www.codingame.com/training/medium/medium_com_criminal
+medium_com_criminal
+https://www.codingame.com/training/medium/criminal
 https://www.codingame.com/contribute/view/2123a0a35b79097190479b5146421be6533e
 
 A contribution by mr.x

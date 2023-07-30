@@ -1,5 +1,6 @@
 Dumbbells solver
 
+hard_com_dumbbells-solver
 https://www.codingame.com/training/hard/dumbbells-solver
 https://www.codingame.com/contribute/view/1483492675bcd5005d61b4b6cdf59e20242d
 

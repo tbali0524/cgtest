@@ -1,5 +1,6 @@
 When pigs fly
 
+expert_com_when-pigs-fly
 https://www.codingame.com/training/expert/when-pigs-fly
 https://www.codingame.com/contribute/view/5325576329c848b476ca5f136ec3e07bcbce
 

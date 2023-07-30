@@ -1,5 +1,6 @@
 Universe Conquest
 
+hard_com_universe-conquest
 https://www.codingame.com/training/hard/universe-conquest
 https://www.codingame.com/contribute/view/2675c67841213bb72633622fe861660d1a7
 

@@ -1,6 +1,7 @@
 Number of paths between 2 points
 
-https://www.codingame.com/training/medium/medium_com_number-of-paths-between-2-points
+medium_com_number-of-paths-between-2-points
+https://www.codingame.com/training/medium/number-of-paths-between-2-points
 https://www.codingame.com/contribute/view/157699dcf006303da2500535fa5af709524e
 
 A contribution by Xavier_Kress

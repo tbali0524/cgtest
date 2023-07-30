@@ -1,5 +1,6 @@
 Picture Puzzle
 
+hard_com_picture-puzzle
 https://www.codingame.com/training/hard/picture-puzzle
 https://www.codingame.com/contribute/view/7690d63b638315a0a2ed8e1d97ed85c57b64
 

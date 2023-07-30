@@ -1,5 +1,6 @@
 Pascal Trapezoid
 
+hard_com_pascal-trapezoid
 https://www.codingame.com/training/hard/pascal-trapezoid
 https://www.codingame.com/contribute/view/374debe87f306eeb2bb2848268bb18feb14
 

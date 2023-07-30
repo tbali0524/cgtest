@@ -1,6 +1,7 @@
 Rooks Movements
 
-https://www.codingame.com/training/easy/easy_com_rooks-movements
+easy_com_rooks-movements
+https://www.codingame.com/training/easy/rooks-movements
 https://www.codingame.com/contribute/view/1701a4ce6c9b0f767b9c5068a84331397f6f
 
 A contribution by Cr3aHal0

@@ -1,5 +1,6 @@
 Dominoes solver
 
+hard_com_dominoes-solver
 https://www.codingame.com/training/hard/dominoes-solver
 https://www.codingame.com/contribute/view/118599ce0d224495f8fa3dbbde2c3d605812
 

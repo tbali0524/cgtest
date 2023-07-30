@@ -1,6 +1,7 @@
 Micro Assembly
 
-https://www.codingame.com/training/medium/medium_com_micro-assembly
+medium_com_micro-assembly
+https://www.codingame.com/training/medium/micro-assembly
 https://www.codingame.com/contribute/view/5550b75f97108c52054b7fc0b898f8283c8
 
 A contribution by Blubbor

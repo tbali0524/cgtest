@@ -1,6 +1,7 @@
 Length of Syracuse Conjecture Sequence
 
-https://www.codingame.com/training/medium/medium_com_length-of-syracuse-conjecture-sequence
+medium_com_length-of-syracuse-conjecture-sequence
+https://www.codingame.com/training/medium/length-of-syracuse-conjecture-sequence
 https://www.codingame.com/contribute/view/42580d941a9b5552e6ba405944daeb6827c9
 
 A contribution by Silmaen

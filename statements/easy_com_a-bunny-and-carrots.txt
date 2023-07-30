@@ -1,6 +1,7 @@
 A Bunny and Carrots
 
-https://www.codingame.com/training/easy/easy_com_a-bunny-and-carrots
+easy_com_a-bunny-and-carrots
+https://www.codingame.com/training/easy/a-bunny-and-carrots
 https://www.codingame.com/contribute/view/7393efb1e0e7456dafbaf9176405b9252f3f
 
 A contribution by FBF_Luis

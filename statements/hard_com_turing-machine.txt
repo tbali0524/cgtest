@@ -1,5 +1,6 @@
 Turing machine
 
+hard_com_turing-machine
 https://www.codingame.com/training/hard/turing-machine
 https://www.codingame.com/contribute/view/72596476b814f75facef12c86084afc6773
 

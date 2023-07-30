@@ -1,6 +1,7 @@
 Tiny Forest
 
-https://www.codingame.com/training/medium/medium_com_tiny-forest
+medium_com_tiny-forest
+https://www.codingame.com/training/medium/tiny-forest
 https://www.codingame.com/contribute/view/45094a56da559da9bc8948f676f5194e640f3
 
 A contribution by AdrienLB

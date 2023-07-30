@@ -1,6 +1,7 @@
 Drug Interactions
 
-https://www.codingame.com/training/medium/medium_com_drug-interactions
+medium_com_drug-interactions
+https://www.codingame.com/training/medium/drug-interactions
 https://www.codingame.com/contribute/view/7539b50c48d899c511f7f6862316a65e3893
 
 A contribution by Westicles

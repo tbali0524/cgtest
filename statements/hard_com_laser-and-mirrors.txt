@@ -1,5 +1,6 @@
 Laser and mirrors
 
+hard_com_laser-and-mirrors
 https://www.codingame.com/training/hard/laser-and-mirrors
 https://www.codingame.com/contribute/view/462a5f84f10f32567fee71873f5127220e5
 

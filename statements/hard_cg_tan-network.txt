@@ -1,6 +1,9 @@
 TAN Network
 
+hard_cg_tan-network
 https://www.codingame.com/training/hard/tan-network
+
+by CodinGame
 
 The Goal
 The administration of the Loire-Atlantique region, located in France, has decided to open up a large amount of public transportation information to the public. The public transport company in charge for this area is named TAN.

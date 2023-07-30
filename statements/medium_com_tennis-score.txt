@@ -1,6 +1,7 @@
 Tennis score
 
-https://www.codingame.com/training/medium/medium_com_tennis-score
+medium_com_tennis-score
+https://www.codingame.com/training/medium/tennis-score
 https://www.codingame.com/contribute/view/193537ebfe75de14ff28b7ea53d2e1e072df9
 
 A contribution by VilBoub

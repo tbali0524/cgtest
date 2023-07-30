@@ -1,6 +1,7 @@
 One for his Nobs
 
-https://www.codingame.com/training/medium/medium_com_one-for-his-nobs
+medium_com_one-for-his-nobs
+https://www.codingame.com/training/medium/one-for-his-nobs
 https://www.codingame.com/contribute/view/45324e0e8f1ee6f058defff3f07f28b432c70
 
 A contribution by DeanTheMachine

@@ -1,5 +1,6 @@
 Zhiwei Sun Squares
 
+easy_com_zhiwei-sun-squares
 https://www.codingame.com/training/easy/zhiwei-sun-squares
 https://www.codingame.com/contribute/view/6742b79439a8d41a553c85aced97f583c6d0
 
@@ -34,8 +35,8 @@ Input
 Output
 3
 
-Tags
-Loops, Mathematics
-
 Difficulty
 Easy
+
+Tags
+Loops, Mathematics

@@ -1,6 +1,9 @@
 ASCII Art
 
+easy_cg_ascii-art
 https://www.codingame.com/training/easy/ascii-art
+
+by CodinGame
 
 The Goal
 In stations and airports you often see this type of screen:

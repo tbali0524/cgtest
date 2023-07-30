@@ -1,6 +1,7 @@
 Domino Puzzle
 
-https://www.codingame.com/training/medium/medium_com_domino-puzzle
+medium_com_domino-puzzle
+https://www.codingame.com/training/medium/domino-puzzle
 https://www.codingame.com/contribute/view/19195fc064b79afb768eff508ddafc99abbc
 
 A contribution by Sceurpien

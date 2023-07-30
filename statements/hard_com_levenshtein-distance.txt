@@ -1,5 +1,6 @@
 Levenshtein distance
 
+hard_com_levenshtein-distance
 https://www.codingame.com/training/hard/levenshtein-distance
 https://www.codingame.com/contribute/view/744fa83d07332af65cb10b9f9c623affc08
 

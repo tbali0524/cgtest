@@ -1,5 +1,6 @@
 The Lucky Number
 
+expert_com_the-lucky-number
 https://www.codingame.com/training/expert/the-lucky-number
 https://www.codingame.com/contribute/view/3129b9cce24d695f946b4c09a082f1d4778
 

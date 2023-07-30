@@ -1,6 +1,7 @@
 HTML table cell split
 
-https://www.codingame.com/training/medium/medium_com_html-table-cell-split
+medium_com_html-table-cell-split
+https://www.codingame.com/training/medium/html-table-cell-split
 https://www.codingame.com/contribute/view/1531c4da17430197411053e3925bd09a0d0d
 
 A contribution by geppoz

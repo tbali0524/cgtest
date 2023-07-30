@@ -1,6 +1,7 @@
 Mountain Map Convergence
 
-https://www.codingame.com/training/easy/easy_com_mountain-map-convergence
+easy_com_mountain-map-convergence
+https://www.codingame.com/training/easy/mountain-map-convergence
 https://www.codingame.com/contribute/view/60377ec4cd0c7daea3edf9a699d0e72a4983
 
 A contribution by Crypticsy

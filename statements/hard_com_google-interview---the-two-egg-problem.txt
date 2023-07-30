@@ -1,5 +1,6 @@
 Google Interview - The Two Egg Problem
 
+hard_com_google-interview---the-two-egg-problem
 https://www.codingame.com/training/hard/google-interview---the-two-egg-problem
 https://www.codingame.com/contribute/view/449a610a685c40c38de27c015dafdb3f8c9
 

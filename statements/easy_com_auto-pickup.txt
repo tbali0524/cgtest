@@ -1,6 +1,7 @@
 Auto pickup
 
-https://www.codingame.com/training/easy/easy_com_auto-pickup
+easy_com_auto-pickup
+https://www.codingame.com/training/easy/auto-pickup
 https://www.codingame.com/contribute/view/5018d7169b8aa4c9e23f0ce923f420eb11f6
 
 A contribution by vivax3794

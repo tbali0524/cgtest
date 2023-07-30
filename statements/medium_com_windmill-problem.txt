@@ -1,6 +1,7 @@
 Windmill problem
 
-https://www.codingame.com/training/medium/medium_com_windmill-problem
+medium_com_windmill-problem
+https://www.codingame.com/training/medium/windmill-problem
 https://www.codingame.com/contribute/view/4529c6cbb067baf823a8bed9b2c9b59efa45
 
 A contribution by Maurice_Moss

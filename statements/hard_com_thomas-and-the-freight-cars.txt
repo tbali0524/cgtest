@@ -1,5 +1,6 @@
 Thomas and the Freight Cars
 
+hard_com_thomas-and-the-freight-cars
 https://www.codingame.com/training/hard/thomas-and-the-freight-cars
 https://www.codingame.com/contribute/view/53928be7ac3f84c0cf03edb20f8c91c54950
 

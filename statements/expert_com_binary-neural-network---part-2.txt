@@ -1,5 +1,6 @@
 Binary neural network - Part 2
 
+expert_com_binary-neural-network---part-2
 https://www.codingame.com/training/expert/binary-neural-network---part-2
 https://www.codingame.com/contribute/view/68711288dac00fa9bdd462c25f1be4985fc
 

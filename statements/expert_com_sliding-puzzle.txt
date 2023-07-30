@@ -1,5 +1,6 @@
 Sliding puzzle
 
+expert_com_sliding-puzzle
 https://www.codingame.com/training/expert/sliding-puzzle
 https://www.codingame.com/contribute/view/28461f52d326a052ad27cc42acabc6e047d
 

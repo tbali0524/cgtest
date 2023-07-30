@@ -1,6 +1,7 @@
 Ancestors & Descendants
 
-https://www.codingame.com/training/medium/medium_com_ancestors-descendants
+medium_com_ancestors-descendants
+https://www.codingame.com/training/medium/ancestors-descendants
 https://www.codingame.com/contribute/view/307cfccfacb8b41459d7d532f8e3b37acda
 
 A contribution by .EagleDawn.

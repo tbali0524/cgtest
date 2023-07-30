@@ -1,6 +1,7 @@
 Guessing digits
 
-https://www.codingame.com/training/medium/medium_com_guessing-digits
+medium_com_guessing-digits
+https://www.codingame.com/training/medium/guessing-digits
 https://www.codingame.com/contribute/view/17493da091a23ee61f0990758ebd147431d0
 
 A contribution by Jamproject

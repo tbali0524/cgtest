@@ -1,5 +1,6 @@
 Paper-folding curve
 
+hard_com_paper-folding-curve
 https://www.codingame.com/training/hard/paper-folding-curve
 https://www.codingame.com/contribute/view/889d80a3bc3cd6c4b5cd839bf8ad3991803
 

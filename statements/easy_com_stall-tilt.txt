@@ -1,6 +1,7 @@
 Stall tilt
 
-https://www.codingame.com/training/easy/easy_com_stall-tilt
+easy_com_stall-tilt
+https://www.codingame.com/training/easy/stall-tilt
 https://www.codingame.com/contribute/view/43453e558c5d1b6b64961375b8911392571e
 
 A contribution by BLANC

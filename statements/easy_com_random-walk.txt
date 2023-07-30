@@ -1,6 +1,7 @@
 Random Walk
 
-https://www.codingame.com/training/easy/easy_com_random-walk
+easy_com_random-walk
+https://www.codingame.com/training/easy/random-walk
 https://www.codingame.com/contribute/view/9124738b5d94a200047242960c2e1ac7432f
 
 A contribution by Westicles

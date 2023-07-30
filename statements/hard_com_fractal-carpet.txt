@@ -1,5 +1,6 @@
 Fractal Carpet
 
+hard_com_fractal-carpet
 https://www.codingame.com/training/hard/fractal-carpet
 https://www.codingame.com/contribute/view/391554886fb3597368d5bc4a51ccffc844a
 

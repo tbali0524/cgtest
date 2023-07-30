@@ -1,6 +1,7 @@
 Crossword
 
-https://www.codingame.com/training/medium/medium_com_crossword
+medium_com_crossword
+https://www.codingame.com/training/medium/crossword
 https://www.codingame.com/contribute/view/501591553806c109ea7a0c936bc6f99d0a4a
 
 A contribution by Humanosaure

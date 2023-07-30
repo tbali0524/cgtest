@@ -1,6 +1,7 @@
 Playfair Cipher
 
-https://www.codingame.com/training/medium/medium_com_playfair-cipher
+medium_com_playfair-cipher
+https://www.codingame.com/training/medium/playfair-cipher
 https://www.codingame.com/contribute/view/497385b5a52bd71c954079fb45667ba73b8e
 
 A contribution by Crypticsy

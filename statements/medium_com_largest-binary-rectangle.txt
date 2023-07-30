@@ -1,6 +1,7 @@
 Largest Binary Rectangle
 
-https://www.codingame.com/training/medium/medium_com_largest-binary-rectangle
+medium_com_largest-binary-rectangle
+https://www.codingame.com/training/medium/largest-binary-rectangle
 https://www.codingame.com/contribute/view/81285a616b9f4e08f0214bed662a21a16a25
 
 A contribution by Mortis_666

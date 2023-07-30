@@ -1,5 +1,6 @@
 Nurikabe
 
+expert_com_nurikabe
 https://www.codingame.com/training/expert/nurikabe
 https://www.codingame.com/contribute/view/57991ba72eeb03337cbf302800299bc662a9
 

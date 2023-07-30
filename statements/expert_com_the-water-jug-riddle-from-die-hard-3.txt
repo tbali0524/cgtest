@@ -1,5 +1,6 @@
 The water jug riddle from Die Hard 3
 
+expert_com_the-water-jug-riddle-from-die-hard-3
 https://www.codingame.com/training/expert/the-water-jug-riddle-from-die-hard-3
 https://www.codingame.com/contribute/view/339fbf5da94e20cfa9cfa789453fe678d07
 

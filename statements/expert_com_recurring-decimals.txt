@@ -1,5 +1,6 @@
 Recurring Decimals
 
+expert_com_recurring-decimals
 https://www.codingame.com/training/expert/recurring-decimals
 https://www.codingame.com/contribute/view/2345c5a5e4828ae1caa56566f2e24387ad8
 

@@ -1,5 +1,6 @@
 A Man with a Plan
 
+hard_com_a-man-with-a-plan
 https://www.codingame.com/training/hard/a-man-with-a-plan
 https://www.codingame.com/contribute/view/604871ef9e9b4cf2bd697ae702e34b37c792
 

@@ -1,6 +1,7 @@
 Create the longest sequence of 1s
 
-https://www.codingame.com/training/easy/easy_com_create-the-longest-sequence-of-1s
+easy_com_create-the-longest-sequence-of-1s
+https://www.codingame.com/training/easy/create-the-longest-sequence-of-1s
 https://www.codingame.com/contribute/view/4728f29c43a6f5c99e0dbc6c79e1f7b7d697
 
 A contribution by Waffle3z

@@ -1,6 +1,7 @@
 Annihilation
 
-https://www.codingame.com/training/easy/easy_com_annihilation
+easy_com_annihilation
+https://www.codingame.com/training/easy/annihilation
 https://www.codingame.com/contribute/view/21069c8d47e7bc8384d143be54e946ee70101
 
 A contribution by Westicles

@@ -1,5 +1,6 @@
 Factorials of primes decomposition
 
+hard_com_factorials-of-primes-decomposition
 https://www.codingame.com/training/hard/factorials-of-primes-decomposition
 https://www.codingame.com/contribute/view/98115ecbafec4a3da3ef86e07c9aaeef81b
 

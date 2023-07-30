@@ -1,6 +1,7 @@
 Object Insertion
 
-https://www.codingame.com/training/easy/easy_com_object-insertion
+easy_com_object-insertion
+https://www.codingame.com/training/easy/object-insertion
 https://www.codingame.com/contribute/view/6903664b4eb431b61a5800580a584b63a768
 
 A contribution by irmo322

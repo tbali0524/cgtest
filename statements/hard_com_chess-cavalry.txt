@@ -1,5 +1,6 @@
 Chess cavalry
 
+hard_com_chess-cavalry
 https://www.codingame.com/training/hard/chess-cavalry
 https://www.codingame.com/contribute/view/3103e73754707f93c3085fa43309019ce8c
 

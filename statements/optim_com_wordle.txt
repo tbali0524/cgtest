@@ -1,5 +1,6 @@
 Wordle
 
+optim_com_wordle
 https://www.codingame.com/multiplayer/optimization/wordle
 https://www.codingame.com/contribute/view/34764425b044fdadb1ba705ed4bed7ee186c3
 

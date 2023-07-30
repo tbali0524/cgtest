@@ -1,6 +1,7 @@
 Regular polygons
 
-https://www.codingame.com/training/medium/medium_com_regular-polygons
+medium_com_regular-polygons
+https://www.codingame.com/training/medium/regular-polygons
 https://www.codingame.com/contribute/view/4280c4b69d74fceb4501a9ab30ae42a8dd07
 
 A contribution by Witman

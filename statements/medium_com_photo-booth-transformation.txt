@@ -1,6 +1,7 @@
 Photo Booth Transformation
 
-https://www.codingame.com/training/medium/medium_com_photo-booth-transformation
+medium_com_photo-booth-transformation
+https://www.codingame.com/training/medium/photo-booth-transformation
 https://www.codingame.com/contribute/view/4523949c59e1c37d19a51a46a9ba2e55845b
 
 A contribution by Niako

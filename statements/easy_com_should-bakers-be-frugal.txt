@@ -1,6 +1,7 @@
 Should Bakers be Frugal?
 
-https://www.codingame.com/training/easy/easy_com_should-bakers-be-frugal
+easy_com_should-bakers-be-frugal
+https://www.codingame.com/training/easy/should-bakers-be-frugal
 https://www.codingame.com/contribute/view/271094e9bcca1325332f434d917444a8eb3ee
 
 A contribution by Lisa-Has-Ideas

@@ -1,6 +1,7 @@
 Library dependencies
 
-https://www.codingame.com/training/easy/easy_com_library-dependencies
+easy_com_library-dependencies
+https://www.codingame.com/training/easy/library-dependencies
 https://www.codingame.com/contribute/view/439391d1962cacc9a04e76f932b8fc7f43816
 
 A contribution by Rafarafa

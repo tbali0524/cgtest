@@ -1,6 +1,7 @@
 Consecutive Balanced Substrings
 
-https://www.codingame.com/training/medium/medium_com_consecutive-balanced-substrings
+medium_com_consecutive-balanced-substrings
+https://www.codingame.com/training/medium/consecutive-balanced-substrings
 https://www.codingame.com/contribute/view/14076056471d7ae45f7f0970a95727636bc91
 
 A contribution by BleedingWithin

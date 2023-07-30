@@ -1,5 +1,6 @@
 King of Diamonds
 
+expert_com_king-of-diamonds
 https://www.codingame.com/training/expert/king-of-diamonds
 removed, accessible only at: https://www.codingame.com/ide/puzzle/king-of-diamonds
 https://www.codingame.com/contribute/view/46803aab66b4c7686711f80b54c91c550b98

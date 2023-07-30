@@ -1,6 +1,7 @@
 Maze /w teleporters and jumps
 
-https://www.codingame.com/training/medium/medium_com_maze-w-teleporters-and-jumps
+medium_com_maze-w-teleporters-and-jumps
+https://www.codingame.com/training/medium/maze-w-teleporters-and-jumps
 https://www.codingame.com/contribute/view/3114040b3df0d30eb4230513d778d3f1a010b
 
 A contribution by PenguinPero

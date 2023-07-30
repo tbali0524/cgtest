@@ -1,6 +1,7 @@
 Happy Numbers
 
-https://www.codingame.com/training/easy/easy_com_happy-numbers
+easy_com_happy-numbers
+https://www.codingame.com/training/easy/happy-numbers
 https://www.codingame.com/contribute/view/4471f4af6b57257b17058fc0d08f25d54b02
 
 A contribution by java_coffee_cup

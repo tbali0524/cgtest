@@ -1,6 +1,7 @@
 String balls
 
-https://www.codingame.com/training/medium/medium_com_string-balls
+medium_com_string-balls
+https://www.codingame.com/training/medium/string-balls
 https://www.codingame.com/contribute/view/388573d78acaeca9e34861401284ecfbe5447
 
 A contribution by Rafarafa

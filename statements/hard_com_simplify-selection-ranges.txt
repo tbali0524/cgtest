@@ -1,5 +1,6 @@
 Simplify Selection Ranges
 
+hard_com_simplify-selection-ranges
 https://www.codingame.com/training/hard/simplify-selection-ranges
 https://www.codingame.com/contribute/view/2768f25d9e05fc091e3ad886ce79a1af2b7
 

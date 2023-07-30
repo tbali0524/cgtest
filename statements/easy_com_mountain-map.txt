@@ -1,6 +1,7 @@
 Mountain Map
 
-https://www.codingame.com/training/easy/easy_com_mountain-map
+easy_com_mountain-map
+https://www.codingame.com/training/easy/mountain-map
 https://www.codingame.com/contribute/view/5859158a2b55e97ae87802d21f8b5d717568
 
 A contribution by rmnShk

@@ -1,6 +1,7 @@
 Train passenger
 
-https://www.codingame.com/training/medium/medium_com_train-passenger
+medium_com_train-passenger
+https://www.codingame.com/training/medium/train-passenger
 https://www.codingame.com/contribute/view/70319e3d0c55e2108e1c44092472e37748ee
 
 A contribution by Rouge_dragon

@@ -1,6 +1,7 @@
 ASCII Art The Drunken Bishop Algorithm
 
-https://www.codingame.com/training/easy/easy_com_ascii-art-the-drunken-bishop-algorithm
+easy_com_ascii-art-the-drunken-bishop-algorithm
+https://www.codingame.com/training/easy/ascii-art-the-drunken-bishop-algorithm
 https://www.codingame.com/contribute/view/45192caa4cb4fe8492a684bbdfc02f53e2f4e
 
 A contribution by Eulero314

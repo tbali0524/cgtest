@@ -1,5 +1,6 @@
 Legendary Archer Octavius
 
+hard_com_legendary-archer-octavius
 https://www.codingame.com/training/hard/legendary-archer-octavius
 https://www.codingame.com/contribute/view/5422820e97ca4ecbb1acd629ac70e289bc06
 

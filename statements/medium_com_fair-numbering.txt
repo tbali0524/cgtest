@@ -1,6 +1,7 @@
 Fair Numbering
 
-https://www.codingame.com/training/medium/medium_com_fair-numbering
+medium_com_fair-numbering
+https://www.codingame.com/training/medium/fair-numbering
 https://www.codingame.com/contribute/view/46313f2be6291c87cfe0a6377885589223c1
 
 A contribution by java_coffee_cup

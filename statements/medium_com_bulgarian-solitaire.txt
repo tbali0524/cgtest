@@ -1,6 +1,7 @@
 Bulgarian solitaire
 
-https://www.codingame.com/training/medium/medium_com_bulgarian-solitaire
+medium_com_bulgarian-solitaire
+https://www.codingame.com/training/medium/bulgarian-solitaire
 https://www.codingame.com/contribute/view/862674ea4f01dc7798177956010a4726cb2
 
 A contribution by cubomedusae

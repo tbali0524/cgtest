@@ -1,6 +1,7 @@
 Pirate's treasure
 
-https://www.codingame.com/training/easy/easy_com_pirate-s-treasure
+easy_com_pirates-treasure
+https://www.codingame.com/training/easy/pirates-treasure
 https://www.codingame.com/contribute/view/1577f66212cba336eda19900a42b65aa231f
 
 A contribution by T0nda

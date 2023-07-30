@@ -1,6 +1,7 @@
 Crazy List
 
-https://www.codingame.com/training/easy/easy_com_crazy-list
+easy_com_crazy-list
+https://www.codingame.com/training/easy/crazy-list
 https://www.codingame.com/contribute/view/6132905ac33b09b6ad0fd118f5fe436e473ca
 
 A contribution by Caduchon

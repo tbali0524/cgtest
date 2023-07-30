@@ -1,6 +1,7 @@
 Is the King In Check? (Part 1)
 
-https://www.codingame.com/training/easy/easy_com_is-the-king-in-check-part-1
+easy_com_is-the-king-in-check-part-1
+https://www.codingame.com/training/easy/is-the-king-in-check-part-1
 https://www.codingame.com/contribute/view/6315485fe9cf9caf1ca92a435bc291d74c92
 
 A contribution by DrQuarius

@@ -1,6 +1,7 @@
 Queneau Numbers
 
-https://www.codingame.com/training/medium/medium_com_queneau-numbers
+medium_com_queneau-numbers
+https://www.codingame.com/training/medium/queneau-numbers
 https://www.codingame.com/contribute/view/3897d8844017a0f06565d9014f2448324e3
 
 A contribution by VonRickroll

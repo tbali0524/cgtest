@@ -1,5 +1,6 @@
 CG's Next Top Model
 
+hard_com_cgs-next-top-model
 https://www.codingame.com/training/hard/cgs-next-top-model
 https://www.codingame.com/contribute/view/807261217ca560924084dd5cf701a2d0d5ff
 

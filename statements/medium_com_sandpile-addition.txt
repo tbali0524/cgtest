@@ -1,6 +1,7 @@
 Sandpile addition
 
-https://www.codingame.com/training/medium/medium_com_sandpile-addition
+medium_com_sandpile-addition
+https://www.codingame.com/training/medium/sandpile-addition
 https://www.codingame.com/contribute/view/65575847269502833dec0720415ed0eec05
 
 A contribution by TwelveOThirteen

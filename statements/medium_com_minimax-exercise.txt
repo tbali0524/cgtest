@@ -1,6 +1,7 @@
 Minimax exercise
 
-https://www.codingame.com/training/medium/medium_com_minimax-exercise
+medium_com_minimax-exercise
+https://www.codingame.com/training/medium/minimax-exercise
 https://www.codingame.com/contribute/view/92664790e2fcaedac33b01752716d889f7d
 
 A contribution by aCat

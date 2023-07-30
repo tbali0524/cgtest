@@ -1,6 +1,7 @@
 Brick in the Wall
 
-https://www.codingame.com/training/easy/easy_com_brick-in-the-wall
+easy_com_brick-in-the-wall
+https://www.codingame.com/training/easy/brick-in-the-wall
 https://www.codingame.com/contribute/view/19477a1a40dd6ad52e77506ed90c965f8889
 
 A contribution by ng201

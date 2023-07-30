@@ -1,5 +1,6 @@
 The greatest number
 
+hard_com_the-greatest-number
 https://www.codingame.com/training/hard/the-greatest-number
 https://www.codingame.com/contribute/view/16428e8d74192d01ac5e18cc1a2f04a3c4b
 

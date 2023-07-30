@@ -1,5 +1,6 @@
 The Burglar's Dilemna
 
+hard_com_the-burglars-dilemna
 https://www.codingame.com/training/hard/the-burglars-dilemna
 https://www.codingame.com/contribute/view/47434bf2218c33dfd5258739b738124127b
 

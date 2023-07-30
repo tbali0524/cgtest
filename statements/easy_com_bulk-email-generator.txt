@@ -1,6 +1,7 @@
 Bulk Email Generator
 
-https://www.codingame.com/training/easy/easy_com_bulk-email-generator
+easy_com_bulk-email-generator
+https://www.codingame.com/training/easy/bulk-email-generator
 https://www.codingame.com/contribute/view/4819b4a814747dc31abe06fdc4384404f7b
 
 A contribution by JBM

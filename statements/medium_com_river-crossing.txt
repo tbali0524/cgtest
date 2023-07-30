@@ -1,6 +1,7 @@
 River Crossing
 
-https://www.codingame.com/training/medium/medium_com_river-crossing
+medium_com_river-crossing
+https://www.codingame.com/training/medium/river-crossing
 https://www.codingame.com/contribute/view/76758846c9b198dbc42714ff228933a2363a
 
 A contribution by Wontonimo

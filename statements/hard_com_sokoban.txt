@@ -1,5 +1,6 @@
 Sokoban
 
+hard_com_sokoban
 https://www.codingame.com/training/hard/sokoban
 https://www.codingame.com/contribute/view/5503f84edfcd721cec6c3352404e89bb9022
 

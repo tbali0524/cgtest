@@ -1,6 +1,7 @@
 Connect the Hyper-Dots
 
-https://www.codingame.com/training/medium/medium_com_connect-the-hyper-dots
+medium_com_connect-the-hyper-dots
+https://www.codingame.com/training/medium/connect-the-hyper-dots
 https://www.codingame.com/contribute/view/6652c9aa2e76721cb46b5811f4a6c6957b36
 
 A contribution by davilla

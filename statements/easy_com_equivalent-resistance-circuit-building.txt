@@ -1,6 +1,7 @@
 Equivalent Resistance, Circuit Building
 
-https://www.codingame.com/training/easy/easy_com_equivalent-resistance-circuit-building
+easy_com_equivalent-resistance-circuit-building
+https://www.codingame.com/training/easy/equivalent-resistance-circuit-building
 https://www.codingame.com/contribute/view/54594cbe0ceedf72096e79a21af83072b135
 
 A contribution by ?

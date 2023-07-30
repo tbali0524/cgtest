@@ -1,6 +1,7 @@
 Self-driving car testing
 
-https://www.codingame.com/training/easy/easy_com_self-driving-car-testing
+easy_com_self-driving-car-testing
+https://www.codingame.com/training/easy/self-driving-car-testing
 https://www.codingame.com/contribute/view/426a30d58a5741d9828404817867ac1f769
 
 A contribution by Merome

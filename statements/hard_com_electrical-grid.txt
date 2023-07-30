@@ -1,5 +1,6 @@
 Electrical grid
 
+hard_com_electrical-grid
 https://www.codingame.com/training/hard/electrical-grid
 https://www.codingame.com/contribute/view/18704d8e44870da4b22e6af77a60ef27fdb
 

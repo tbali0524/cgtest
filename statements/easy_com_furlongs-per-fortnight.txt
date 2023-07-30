@@ -1,6 +1,7 @@
 Furlongs per Fortnight
 
-https://www.codingame.com/training/easy/easy_com_furlongs-per-fortnight
+easy_com_furlongs-per-fortnight
+https://www.codingame.com/training/easy/furlongs-per-fortnight
 https://www.codingame.com/contribute/view/59580fb2f8efdf4d6aefc8bc29def565fcc3f
 
 A contribution by Lisa-Has-Ideas

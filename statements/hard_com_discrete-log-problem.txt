@@ -1,5 +1,6 @@
 Discrete Log Problem
 
+hard_com_discrete-log-problem
 https://www.codingame.com/training/hard/discrete-log-problem
 https://www.codingame.com/contribute/view/2151235757c7e95807b21332e9d9abdbe484
 

@@ -1,6 +1,7 @@
 SPORE City Planner
 
-https://www.codingame.com/training/medium/medium_com_spore-city-planner
+medium_com_spore-city-planner
+https://www.codingame.com/training/medium/spore-city-planner
 https://www.codingame.com/contribute/view/488895096d13445093b7e02f83957786a861a
 
 A contribution by C2H5OH

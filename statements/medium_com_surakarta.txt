@@ -1,6 +1,7 @@
 Surakarta
 
-https://www.codingame.com/training/medium/medium_com_surakarta
+medium_com_surakarta
+https://www.codingame.com/training/medium/surakarta
 https://www.codingame.com/contribute/view/44736f2e46d8c075a9b154924e188bb376b1
 
 A contribution by pac-nam

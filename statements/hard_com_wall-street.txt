@@ -1,5 +1,6 @@
 Wall Street
 
+hard_com_wall-street
 https://www.codingame.com/training/hard/wall-street
 https://www.codingame.com/contribute/view/594f24fd07a0fbe9c2c2507d1e1ed67446d
 

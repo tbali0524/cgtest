@@ -1,5 +1,6 @@
 Basic Decision Tree - 2
 
+hard_com_basic-decision-tree---2
 https://www.codingame.com/training/hard/basic-decision-tree---2
 https://www.codingame.com/contribute/view/20009fd3678925aa1f5309c898521a4458f8
 

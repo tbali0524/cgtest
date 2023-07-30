@@ -1,6 +1,7 @@
 Cubic Bézier curves
 
-https://www.codingame.com/training/easy/easy_com_cubic-bezier-curves
+easy_com_cubic-bezier-curves
+https://www.codingame.com/training/easy/cubic-bezier-curves
 https://www.codingame.com/contribute/view/1235773b215f9813b35458591d2258175f736
 
 A contribution by alexcercos

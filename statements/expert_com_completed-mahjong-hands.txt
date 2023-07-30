@@ -1,5 +1,6 @@
 Completed Mahjong Hands
 
+expert_com_completed-mahjong-hands
 https://www.codingame.com/training/expert/completed-mahjong-hands
 https://www.codingame.com/contribute/view/9394525906128b719bc17e7e22aa8b38463
 

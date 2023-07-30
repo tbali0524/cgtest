@@ -1,6 +1,7 @@
 Snail Run
 
-https://www.codingame.com/training/easy/easy_com_snail-run
+easy_com_snail-run
+https://www.codingame.com/training/easy/snail-run
 https://www.codingame.com/contribute/view/183307aa03c47b356b9fbfbffd20bbbe83ea9
 
 A contribution by Eurostar02

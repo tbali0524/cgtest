@@ -1,5 +1,6 @@
 Binary neural network - Part 1
 
+hard_com_binary-neural-network---part-1
 https://www.codingame.com/training/hard/binary-neural-network---part-1
 https://www.codingame.com/contribute/view/681a7be27ab4fca94f7fed8d86bb1fd52da
 

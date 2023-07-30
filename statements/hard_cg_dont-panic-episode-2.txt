@@ -1,6 +1,9 @@
 Don't Panic - Episode 2
 
+hard_cg_don't-panic-episode-2
 https://www.codingame.com/training/hard/don't-panic-episode-2
+
+by CodinGame
 
 The Goal
 For level 2 of "Don't Panic", the goal and rules of level 1 still apply. A set of new rules has been added:

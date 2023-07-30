@@ -1,6 +1,7 @@
 Killer Sudoku Solver
 
-https://www.codingame.com/training/medium/medium_com_killer-sudoku-solver
+medium_com_killer-sudoku-solver
+https://www.codingame.com/training/medium/killer-sudoku-solver
 https://www.codingame.com/contribute/view/412026aecb41c1c0779089bdbb8b4d8a9cf1b
 
 A contribution by odaxav

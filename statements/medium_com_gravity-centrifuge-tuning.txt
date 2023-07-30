@@ -1,6 +1,7 @@
 Gravity Centrifuge Tuning
 
-https://www.codingame.com/training/medium/medium_com_gravity-centrifuge-tuning
+medium_com_gravity-centrifuge-tuning
+https://www.codingame.com/training/medium/gravity-centrifuge-tuning
 https://www.codingame.com/contribute/view/98956cdc739ab7239fdb9cb8793de057203
 
 A contribution by JBM

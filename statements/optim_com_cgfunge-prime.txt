@@ -1,5 +1,6 @@
 CGFunge Prime
 
+optim_com_cgfunge-prime
 https://www.codingame.com/multiplayer/optimization/cgfunge-prime
 https://www.codingame.com/contribute/view/44637555a80368ec5fa3cf78ac2cf0154005
 

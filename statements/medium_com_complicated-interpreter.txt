@@ -1,6 +1,7 @@
 Complicated interpreter
 
-https://www.codingame.com/training/medium/medium_com_complicated-interpreter
+medium_com_complicated-interpreter
+https://www.codingame.com/training/medium/complicated-interpreter
 https://www.codingame.com/contribute/view/154928d7f52ad18dd01c710cbbfce0bb96336
 
 A contribution by Ayza

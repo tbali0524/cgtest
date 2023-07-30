@@ -1,6 +1,7 @@
 The weight of words
 
-https://www.codingame.com/training/easy/easy_com_the-weight-of-words
+easy_com_the-weight-of-words
+https://www.codingame.com/training/easy/the-weight-of-words
 https://www.codingame.com/contribute/view/33444ec5fe5b1129770a5e80551cac4a57cdb
 
 A contribution by Darazdeblek

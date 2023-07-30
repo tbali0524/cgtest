@@ -1,6 +1,7 @@
 Brackets, Enhanced Edition
 
-https://www.codingame.com/training/medium/medium_com_brackets-enhanced-edition
+medium_com_brackets-enhanced-edition
+https://www.codingame.com/training/medium/brackets-enhanced-edition
 https://www.codingame.com/contribute/view/4739a66cbd66670413112443a1f1d83ab42
 
 A contribution by JBM

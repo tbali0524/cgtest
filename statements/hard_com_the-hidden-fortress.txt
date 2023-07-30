@@ -1,5 +1,6 @@
 The Hidden Fortress
 
+hard_com_the-hidden-fortress
 https://www.codingame.com/training/hard/the-hidden-fortress
 https://www.codingame.com/contribute/view/7386eb3b2e7c6f34181486a901529247444c
 

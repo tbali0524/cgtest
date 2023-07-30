@@ -1,6 +1,7 @@
 Duo combinations
 
-https://www.codingame.com/training/medium/medium_com_duo-combinations
+medium_com_duo-combinations
+https://www.codingame.com/training/medium/duo-combinations
 https://www.codingame.com/contribute/view/444003c378ae1693cd64fa0ee55052d59e9b9
 
 A contribution by Harshit_Gupta

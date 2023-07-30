@@ -1,6 +1,7 @@
 Numeral system
 
-https://www.codingame.com/training/medium/medium_com_numeral-system
+medium_com_numeral-system
+https://www.codingame.com/training/medium/numeral-system
 https://www.codingame.com/contribute/view/863b74db005549f5fe5e08e5bf660d5676b
 
 A contribution by Vinatorul

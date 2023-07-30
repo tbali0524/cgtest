@@ -1,6 +1,7 @@
 The Grand Festival - II
 
-https://www.codingame.com/training/medium/medium_com_the-grand-festival---ii
+medium_com_the-grand-festival---ii
+https://www.codingame.com/training/medium/the-grand-festival---ii
 https://www.codingame.com/contribute/view/1101ac918d0f38d05c9cc52fb114476ad259
 
 A contribution by CyberLemonade

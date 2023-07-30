@@ -1,5 +1,6 @@
 Search Race
 
+optim_com_search-race
 https://www.codingame.com/multiplayer/optimization/search-race
 https://www.codingame.com/contribute/view/5073253abaee2588a9f6daa66ac49205fa5a
 

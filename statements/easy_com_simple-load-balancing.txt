@@ -1,6 +1,7 @@
 Simple Load Balancing
 
-https://www.codingame.com/training/easy/easy_com_simple-load-balancing
+easy_com_simple-load-balancing
+https://www.codingame.com/training/easy/simple-load-balancing
 https://www.codingame.com/contribute/view/14073a961219d18b03768c2ca77e7d043e584
 
 A contribution by BleedingWithin

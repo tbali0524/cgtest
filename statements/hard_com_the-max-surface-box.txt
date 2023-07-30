@@ -1,5 +1,6 @@
 The max surface box
 
+hard_com_the-max-surface-box
 https://www.codingame.com/training/hard/the-max-surface-box
 https://www.codingame.com/contribute/view/47892d609209f66821d7741c3c9ce4c3b75
 

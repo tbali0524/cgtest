@@ -1,5 +1,6 @@
 Let's Go To The Cinema!
 
+my_medium_com_lets-go-to-the-cinema
 https://www.codingame.com/training/medium/lets-go-to-the-cinema
 https://www.codingame.com/contribute/view/4532f9a477a9f4d36d5b98359b71ceb741fe
 

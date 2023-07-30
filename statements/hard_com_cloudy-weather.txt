@@ -1,5 +1,6 @@
 Cloudy Weather
 
+hard_com_cloudy-weather
 https://www.codingame.com/training/hard/cloudy-weather
 https://www.codingame.com/contribute/view/4295e5ea378d56aaaf47d738f6d3a25799a2
 

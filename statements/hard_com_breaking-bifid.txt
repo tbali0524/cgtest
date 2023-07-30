@@ -1,5 +1,6 @@
 Breaking Bifid
 
+hard_com_breaking-bifid
 https://www.codingame.com/training/hard/breaking-bifid
 https://www.codingame.com/contribute/view/37404d6efdc52a303032914e591efcaa10467
 

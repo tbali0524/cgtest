@@ -1,6 +1,7 @@
 Halting sequences
 
-https://www.codingame.com/training/medium/medium_com_halting-sequences
+medium_com_halting-sequences
+https://www.codingame.com/training/medium/halting-sequences
 https://www.codingame.com/contribute/view/4792f4d90d8dbd56de249d745b0b271c76ae
 
 A contribution by Waffle3z

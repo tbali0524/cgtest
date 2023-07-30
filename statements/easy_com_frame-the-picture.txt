@@ -1,6 +1,7 @@
 Frame the picture
 
-https://www.codingame.com/training/easy/easy_com_frame-the-picture
+easy_com_frame-the-picture
+https://www.codingame.com/training/easy/frame-the-picture
 https://www.codingame.com/contribute/view/7896116584ee929de04f6b58ca77b39f1a37
 
 A contribution by Grarzyna

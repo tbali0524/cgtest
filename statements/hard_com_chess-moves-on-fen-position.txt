@@ -1,5 +1,6 @@
 Chess moves on FEN position
 
+hard_com_chess-moves-on-fen-position
 https://www.codingame.com/training/hard/chess-moves-on-fen-position
 https://www.codingame.com/contribute/view/304b96e76fb3b426f7f954b0957dfaed85e
 

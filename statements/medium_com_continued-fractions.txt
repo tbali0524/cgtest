@@ -1,6 +1,7 @@
 Continued Fractions
 
-https://www.codingame.com/training/medium/medium_com_continued-fractions
+medium_com_continued-fractions
+https://www.codingame.com/training/medium/continued-fractions
 https://www.codingame.com/contribute/view/938799afe862b1d2ee91ae54ba540ce59ff6
 
 A contribution by Thaddy

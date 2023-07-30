@@ -1,5 +1,6 @@
 Apple tree
 
+hard_com_apple-tree
 https://www.codingame.com/training/hard/apple-tree
 https://www.codingame.com/contribute/view/909e63cf244e7958c70a74518ed3aed210f
 

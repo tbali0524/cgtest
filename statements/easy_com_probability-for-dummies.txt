@@ -1,6 +1,7 @@
 Probability for Dummies
 
-https://www.codingame.com/training/easy/easy_com_probability-for-dummies
+easy_com_probability-for-dummies
+https://www.codingame.com/training/easy/probability-for-dummies
 https://www.codingame.com/contribute/view/227854b2b312e0ee983a0d017a64b6ffa95a3
 
 A contribution by Westicles

@@ -1,6 +1,7 @@
 Sudoku Solver
 
-https://www.codingame.com/training/medium/medium_com_sudoku-solver
+medium_com_sudoku-solver
+https://www.codingame.com/training/medium/sudoku-solver
 https://www.codingame.com/contribute/view/4393445445cafed0765e4a8329a8096b1f9d
 
 A contribution by AllTheKingsMen

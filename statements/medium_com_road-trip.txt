@@ -1,6 +1,7 @@
 Road Trip
 
-https://www.codingame.com/training/medium/medium_com_road-trip
+medium_com_road-trip
+https://www.codingame.com/training/medium/road-trip
 https://www.codingame.com/contribute/view/433503d856eaf615fb77860f6d3c194844b7
 
 A contribution by Nagrarok

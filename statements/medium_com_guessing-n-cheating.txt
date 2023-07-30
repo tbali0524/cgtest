@@ -1,6 +1,7 @@
 Guessing n Cheating
 
-https://www.codingame.com/training/medium/medium_com_guessing-n-cheating
+medium_com_guessing-n-cheating
+https://www.codingame.com/training/medium/guessing-n-cheating
 https://www.codingame.com/contribute/view/1684cd046bf9e6536c29b11ff607cdc12db1
 
 A contribution by java_coffee_cup

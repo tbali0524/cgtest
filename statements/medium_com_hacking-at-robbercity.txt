@@ -1,6 +1,7 @@
 Hacking at RobberCity
 
-https://www.codingame.com/training/medium/medium_com_hacking-at-robbercity
+medium_com_hacking-at-robbercity
+https://www.codingame.com/training/medium/hacking-at-robbercity
 https://www.codingame.com/contribute/view/47946490c8da58c02a326fca0dda3790111f
 
 A contribution by DPAmar

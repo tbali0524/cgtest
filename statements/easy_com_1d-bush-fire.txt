@@ -1,6 +1,7 @@
 1D Bush Fire
 
-https://www.codingame.com/training/easy/easy_com_1d-bush-fire
+easy_com_1d-bush-fire
+https://www.codingame.com/training/easy/1d-bush-fire
 https://www.codingame.com/contribute/view/47917fe540d49d8db26d6b59ea238bbde9eb
 
 A contribution by java_coffee_cup

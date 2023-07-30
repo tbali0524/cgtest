@@ -1,6 +1,7 @@
 A story to go in circles
 
-https://www.codingame.com/training/medium/medium_com_a-story-to-go-in-circles
+medium_com_a-story-to-go-in-circles
+https://www.codingame.com/training/medium/a-story-to-go-in-circles
 https://www.codingame.com/contribute/view/4500081d8456a421393e36f6ed37a4137d74
 
 A contribution by BLANC

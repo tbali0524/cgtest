@@ -1,6 +1,7 @@
 Rocks, Papers, Scissors-es
 
-https://www.codingame.com/training/easy/easy_com_rocks-papers-scissors-es
+easy_com_rocks-papers-scissors-es
+https://www.codingame.com/training/easy/rocks-papers-scissors-es
 https://www.codingame.com/contribute/view/453570d76bc5b79318634e7a5454b9bc89e4f
 
 A contribution by 21stCenturyPeon

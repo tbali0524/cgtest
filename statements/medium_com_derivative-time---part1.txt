@@ -1,6 +1,7 @@
 Derivative time !!! - part1
 
-https://www.codingame.com/training/medium/medium_com_derivative-time-part1
+medium_com_derivative-time-part1
+https://www.codingame.com/training/medium/derivative-time-part1
 https://www.codingame.com/contribute/view/5566fb4fc8a91875f9bd7623a08b431b5a84
 
 A contribution by pluieciel

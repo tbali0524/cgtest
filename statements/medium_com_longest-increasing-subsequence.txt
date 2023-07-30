@@ -1,6 +1,7 @@
 Longest Increasing Subsequence
 
-https://www.codingame.com/training/medium/medium_com_longest-increasing-subsequence
+medium_com_longest-increasing-subsequence
+https://www.codingame.com/training/medium/longest-increasing-subsequence
 https://www.codingame.com/contribute/view/41694117d92520dafb0baa05b436017f19c8b
 
 A contribution by YuToutCourt

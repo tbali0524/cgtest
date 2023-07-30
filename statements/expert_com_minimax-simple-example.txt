@@ -1,5 +1,6 @@
 Minimax Simple Example
 
+expert_com_minimax-simple-example
 https://www.codingame.com/training/expert/minimax-simple-example
 https://www.codingame.com/contribute/view/103008966487926584b5410f78c91b6c56b5
 

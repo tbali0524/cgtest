@@ -1,6 +1,7 @@
 Reverse Polish Notation
 
-https://www.codingame.com/training/medium/medium_com_reverse-polish-notation
+medium_com_reverse-polish-notation
+https://www.codingame.com/training/medium/reverse-polish-notation
 https://www.codingame.com/contribute/view/116d0fa94976711d074284d72c2ce3991d4
 
 A contribution by nicola

@@ -1,6 +1,7 @@
 Decode the message
 
-https://www.codingame.com/training/easy/easy_com_decode-the-message
+easy_com_decode-the-message
+https://www.codingame.com/training/easy/decode-the-message
 https://www.codingame.com/contribute/view/5581506ad04331f4020bef765773d3759587
 
 A contribution by BiMathAx

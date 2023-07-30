@@ -1,6 +1,7 @@
 Word Search for Programmers
 
-https://www.codingame.com/training/easy/easy_com_word-search-for-programmers
+easy_com_word-search-for-programmers
+https://www.codingame.com/training/easy/word-search-for-programmers
 https://www.codingame.com/contribute/view/48196c74b8275a9c68e62820156ad77a98bbf
 
 A contribution by Lisa-Has-Ideas

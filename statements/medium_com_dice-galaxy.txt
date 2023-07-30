@@ -1,6 +1,7 @@
 Dice galaxy
 
-https://www.codingame.com/training/medium/medium_com_dice-galaxy
+medium_com_dice-galaxy
+https://www.codingame.com/training/medium/dice-galaxy
 https://www.codingame.com/contribute/view/450412c15023b0b28fbe1d108c408e3ee267
 
 A contribution by field3

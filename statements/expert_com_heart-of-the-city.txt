@@ -1,5 +1,6 @@
 Heart of the City
 
+expert_com_heart-of-the-city
 https://www.codingame.com/training/expert/heart-of-the-city
 https://www.codingame.com/contribute/view/4054f18f1d9565dee2fb9719ae51efceb2c
 

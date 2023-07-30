@@ -1,5 +1,6 @@
 Boggle
 
+hard_com_boggle
 https://www.codingame.com/training/hard/boggle
 https://www.codingame.com/contribute/view/202e07ba115c5fd7ad0b2e53fd758a013e5
 

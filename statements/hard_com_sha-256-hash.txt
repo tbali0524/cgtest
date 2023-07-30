@@ -1,5 +1,6 @@
 SHA-256 Hash
 
+hard_com_sha-256-hash
 https://www.codingame.com/training/hard/sha-256-hash
 https://www.codingame.com/contribute/view/6648d5564874df8f45e4f0a79f17e723fb02
 

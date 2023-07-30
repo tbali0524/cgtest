@@ -1,6 +1,7 @@
 Chained Matrix Products
 
-https://www.codingame.com/training/medium/medium_com_chained-matrix-products
+medium_com_chained-matrix-products
+https://www.codingame.com/training/medium/chained-matrix-products
 https://www.codingame.com/contribute/view/47841f4651e9e5c392bd65e943fc2b15f623
 
 A contribution by DPAmar

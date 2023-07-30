@@ -1,6 +1,7 @@
 Hexagonal Maze
 
-https://www.codingame.com/training/medium/medium_com_hexagonal-maze
+medium_com_hexagonal-maze
+https://www.codingame.com/training/medium/hexagonal-maze
 https://www.codingame.com/contribute/view/19716a7175547131ccfea01a6e59e8bbab836
 
 A contribution by Remi.

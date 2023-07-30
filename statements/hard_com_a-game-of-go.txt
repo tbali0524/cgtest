@@ -1,5 +1,6 @@
 A Game of Go
 
+hard_com_a-game-of-go
 https://www.codingame.com/training/hard/a-game-of-go
 https://www.codingame.com/contribute/view/490262463abc03f5fb6808695fadc178476e
 

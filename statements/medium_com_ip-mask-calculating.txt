@@ -1,6 +1,7 @@
 IP mask calculating
 
-https://www.codingame.com/training/medium/medium_com_ip-mask-calculating
+medium_com_ip-mask-calculating
+https://www.codingame.com/training/medium/ip-mask-calculating
 https://www.codingame.com/contribute/view/18161bfb30da7b47a03339c15e86f7fb7ee8
 
 A contribution by Pyoroalb

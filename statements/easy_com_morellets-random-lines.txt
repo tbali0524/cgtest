@@ -1,6 +1,7 @@
 Morellet’s random lines
 
-https://www.codingame.com/training/easy/easy_com_morellets-random-lines
+easy_com_morellets-random-lines
+https://www.codingame.com/training/easy/morellets-random-lines
 https://www.codingame.com/contribute/view/831fd0e45c948a8af90bce3acdd3d60e221
 
 A contribution by nicola

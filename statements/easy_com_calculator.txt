@@ -1,6 +1,7 @@
 Calculator
 
-https://www.codingame.com/training/easy/easy_com_calculator
+easy_com_calculator
+https://www.codingame.com/training/easy/calculator
 https://www.codingame.com/contribute/view/150642bb071c78b587c7153235d1c4568cc19
 
 A contribution by ByteWolf

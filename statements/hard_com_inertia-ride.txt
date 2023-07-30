@@ -1,5 +1,6 @@
 Inertia ride
 
+hard_com_inertia-ride
 https://www.codingame.com/training/hard/inertia-ride
 https://www.codingame.com/contribute/view/5248a47303c909541a7488ce71313931f83
 

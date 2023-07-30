@@ -1,6 +1,7 @@
 Where's Wally
 
-https://www.codingame.com/training/easy/easy_com_wheres-wally
+easy_com_wheres-wally
+https://www.codingame.com/training/easy/wheres-wally
 https://www.codingame.com/contribute/view/7469a79b176c251ca955fd6b584c60b853eb
 
 A contribution by baboulaf

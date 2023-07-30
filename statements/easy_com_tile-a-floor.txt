@@ -1,6 +1,7 @@
 Tile a Floor
 
-https://www.codingame.com/training/easy/easy_com_tile-a-floor
+easy_com_tile-a-floor
+https://www.codingame.com/training/easy/tile-a-floor
 https://www.codingame.com/contribute/view/5090526f01e35c3727eeff56a2dafbc0b9642
 
 A contribution by Lisa-Has-Ideas

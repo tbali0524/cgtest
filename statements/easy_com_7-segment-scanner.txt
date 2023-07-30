@@ -1,6 +1,7 @@
 7-segment scanner
 
-https://www.codingame.com/training/easy/easy_com_7-segment-scanner
+easy_com_7-segment-scanner
+https://www.codingame.com/training/easy/7-segment-scanner
 https://www.codingame.com/contribute/view/54354ed803d483bb0758c78f246b4cdad560
 
 A contribution by tutubalin

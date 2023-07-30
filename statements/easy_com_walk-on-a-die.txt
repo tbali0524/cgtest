@@ -1,6 +1,7 @@
 Walk on a Die
 
-https://www.codingame.com/training/easy/easy_com_walk-on-a-die
+easy_com_walk-on-a-die
+https://www.codingame.com/training/easy/walk-on-a-die
 https://www.codingame.com/contribute/view/7267d424c32fd0251e3b5f5ea5a11a53b041
 
 A contribution by tuna_in_cream

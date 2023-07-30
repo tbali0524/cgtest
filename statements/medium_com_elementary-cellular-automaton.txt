@@ -1,6 +1,7 @@
 Elementary cellular automaton
 
-https://www.codingame.com/training/medium/medium_com_elementary-cellular-automaton
+medium_com_elementary-cellular-automaton
+https://www.codingame.com/training/medium/elementary-cellular-automaton
 https://www.codingame.com/contribute/view/3531c969e3383c7937756081660780e1af9
 
 A contribution by LauMJ

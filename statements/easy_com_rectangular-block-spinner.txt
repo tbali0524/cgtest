@@ -1,6 +1,7 @@
 Rectangular block spinner
 
-https://www.codingame.com/training/easy/easy_com_rectangular-block-spinner
+easy_com_rectangular-block-spinner
+https://www.codingame.com/training/easy/rectangular-block-spinner
 https://www.codingame.com/contribute/view/1637c5b4e27a686d94208958467e2d796e6e
 
 A contribution by bobby2

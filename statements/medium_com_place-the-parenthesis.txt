@@ -1,6 +1,7 @@
 Place the Parenthesis
 
-https://www.codingame.com/training/medium/medium_com_place-the-parenthesis
+medium_com_place-the-parenthesis
+https://www.codingame.com/training/medium/place-the-parenthesis
 https://www.codingame.com/contribute/view/5753d127687bb80c9258064cf3c50064759f
 
 A contribution by dolmen1234

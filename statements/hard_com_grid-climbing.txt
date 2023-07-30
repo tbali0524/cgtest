@@ -1,5 +1,6 @@
 Grid climbing
 
+hard_com_grid-climbing
 https://www.codingame.com/training/hard/grid-climbing
 https://www.codingame.com/contribute/view/29649c6f594e71b69c8ca2567c8acfa06e207
 

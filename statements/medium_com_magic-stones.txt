@@ -1,6 +1,7 @@
 Magic stones
 
-https://www.codingame.com/training/medium/medium_com_magic-stones
+medium_com_magic-stones
+https://www.codingame.com/training/medium/magic-stones
 https://www.codingame.com/contribute/view/609c2191b3d82c284a4c7ae7fbbaf422e8d
 
 A contribution by i-d-k

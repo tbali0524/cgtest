@@ -1,5 +1,6 @@
 Misère Nim
 
+hard_com_misere-nim
 https://www.codingame.com/training/hard/misere-nim
 https://www.codingame.com/contribute/view/306a6dfa34dd91d2152103a1d5f36e2215d
 

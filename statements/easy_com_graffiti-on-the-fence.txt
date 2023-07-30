@@ -1,6 +1,7 @@
 Graffiti on the fence
 
-https://www.codingame.com/training/easy/easy_com_graffiti-on-the-fence
+easy_com_graffiti-on-the-fence
+https://www.codingame.com/training/easy/graffiti-on-the-fence
 https://www.codingame.com/contribute/view/4696ca4647e878d13e32b30e796326b8ec33
 
 A contribution by java_coffee_cup

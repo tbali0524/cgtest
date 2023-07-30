@@ -1,6 +1,7 @@
 Langton's ant
 
-https://www.codingame.com/training/medium/medium_com_langtons-ant
+medium_com_langtons-ant
+https://www.codingame.com/training/medium/langtons-ant
 https://www.codingame.com/contribute/view/171c3b7b3b604c3b796f0f4a6b0d789f356
 
 A contribution by Delgan

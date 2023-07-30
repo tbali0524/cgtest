@@ -1,6 +1,7 @@
 ISBN Check digit
 
-https://www.codingame.com/training/easy/easy_com_isbn-check-digit
+easy_com_isbn-check-digit
+https://www.codingame.com/training/easy/isbn-check-digit
 https://www.codingame.com/contribute/view/870fbecaa7e6bda08f8057eb8878867682c
 
 A contribution by java_coffee_cup

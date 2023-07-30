@@ -1,6 +1,7 @@
 Snake Sort 2D
 
-https://www.codingame.com/training/easy/easy_com_snake-sort-2d
+easy_com_snake-sort-2d
+https://www.codingame.com/training/easy/snake-sort-2d
 https://www.codingame.com/contribute/view/31134860d72083e491c7970e70bae5da6e774
 
 A contribution by Orace

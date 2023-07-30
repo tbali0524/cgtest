@@ -1,6 +1,7 @@
 How time flies
 
-https://www.codingame.com/training/easy/easy_com_how-time-flies
+easy_com_how-time-flies
+https://www.codingame.com/training/easy/how-time-flies
 https://www.codingame.com/contribute/view/434e58bb3f0662dad1358563e207431b7c0
 
 A contribution by Doomer3D

@@ -1,6 +1,7 @@
 Stunning numbers
 
-https://www.codingame.com/training/easy/easy_com_stunning-numbers
+easy_com_stunning-numbers
+https://www.codingame.com/training/easy/stunning-numbers
 https://www.codingame.com/contribute/view/507057f6385757ce4822ff3bab03628a81eae
 
 A contribution by VilBoub

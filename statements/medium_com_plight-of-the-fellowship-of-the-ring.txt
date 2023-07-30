@@ -1,6 +1,7 @@
 Plight Of The Fellowship Of The Ring
 
-https://www.codingame.com/training/medium/medium_com_plight-of-the-fellowship-of-the-ring
+medium_com_plight-of-the-fellowship-of-the-ring
+https://www.codingame.com/training/medium/plight-of-the-fellowship-of-the-ring
 https://www.codingame.com/contribute/view/878bbb082f4204c8253c1b24e304a69e824
 
 A contribution by CyberLemonade

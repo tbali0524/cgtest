@@ -1,6 +1,7 @@
 Duck Hunt
 
-https://www.codingame.com/training/medium/medium_com_duck-hunt
+medium_com_duck-hunt
+https://www.codingame.com/training/medium/duck-hunt
 https://www.codingame.com/contribute/view/5164ef2fafd37ed15b967343eab5a9fb81b9
 
 A contribution by [CG]Gaspar

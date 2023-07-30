@@ -1,6 +1,7 @@
 Jack Silver: The Casino
 
-https://www.codingame.com/training/easy/easy_com_jack-silver-the-casino
+easy_com_jack-silver-the-casino
+https://www.codingame.com/training/easy/jack-silver-the-casino
 https://www.codingame.com/contribute/view/3246914cc63dc41b0efdd4058f6177abd8a
 
 A contribution by thespielplatz

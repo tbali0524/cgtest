@@ -1,5 +1,6 @@
 Number Shifting
 
+optim_com_number-shifting
 https://www.codingame.com/multiplayer/optimization/number-shifting
 https://www.codingame.com/contribute/view/4782a9345d370209ae21dd83b649ad16d5ee
 

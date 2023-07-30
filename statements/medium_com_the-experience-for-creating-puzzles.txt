@@ -1,6 +1,7 @@
 The experience for creating puzzles.
 
-https://www.codingame.com/training/medium/medium_com_the-experience-for-creating-puzzles
+medium_com_the-experience-for-creating-puzzles
+https://www.codingame.com/training/medium/the-experience-for-creating-puzzles
 https://www.codingame.com/contribute/view/37071677a9e330c2647bb46cab254b68d60
 
 A contribution by BlitzProg

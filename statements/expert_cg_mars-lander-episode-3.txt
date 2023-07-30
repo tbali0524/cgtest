@@ -1,6 +1,9 @@
 Mars Lander - Episode 3
 
+expert_cg_mars-lander-episode-3
 https://www.codingame.com/training/expert/mars-lander-episode-3
+
+by CodinGame
 
 The Goal
 The goal for your program is to safely land the "Mars Lander" shuttle, the landing ship which contains the Opportunity rover. Mars Lander is guided by a program, and right now the failure rate for landing on the NASA simulator is unacceptable.

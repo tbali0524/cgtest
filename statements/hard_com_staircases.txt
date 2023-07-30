@@ -1,5 +1,6 @@
 Staircases
 
+hard_com_staircases
 https://www.codingame.com/training/hard/staircases
 https://www.codingame.com/contribute/view/1535e7cb981a69a5569770d518e8680537d
 

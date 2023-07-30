@@ -1,5 +1,6 @@
 Elevator
 
+hard_com_elevator
 https://www.codingame.com/training/hard/elevator
 https://www.codingame.com/contribute/view/4388fa39347579755ab190d124de15a37e4
 

@@ -1,6 +1,7 @@
 Dolbear's Law
 
-https://www.codingame.com/training/easy/easy_com_dolbears-law
+easy_com_dolbears-law
+https://www.codingame.com/training/easy/dolbears-law
 https://www.codingame.com/contribute/view/44784b9c1d49b04c51b25f6d9ecaa4406537
 
 A contribution by Eldoir

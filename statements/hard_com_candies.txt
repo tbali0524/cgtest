@@ -1,5 +1,6 @@
 Candies
 
+hard_com_candies
 https://www.codingame.com/training/hard/candies
 https://www.codingame.com/contribute/view/216f73794d1f848749b666056a01a033301
 

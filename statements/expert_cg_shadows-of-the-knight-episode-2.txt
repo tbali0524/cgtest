@@ -1,6 +1,9 @@
 Shadows of the Knight - Episode 2
 
+expert_cg_shadows-of-the-knight-episode-2
 https://www.codingame.com/training/expert/shadows-of-the-knight-episode-2
+
+by CodinGame
 
 The Goal
 Due to the new heat cloak shielding the bombs, the device can no longer provide the direction of the bombs! It can only indicate whether you are getting closer or further away from the bombs.

@@ -1,5 +1,6 @@
 Musical Intervals
 
+hard_com_musical-intervals
 https://www.codingame.com/training/hard/musical-intervals
 https://www.codingame.com/contribute/view/5565f114a9ba29844d0ccd15851fdfdbfc2
 

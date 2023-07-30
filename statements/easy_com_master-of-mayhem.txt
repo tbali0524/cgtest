@@ -1,6 +1,7 @@
 Master of Mayhem
 
-https://www.codingame.com/training/easy/easy_com_master-of-mayhem
+easy_com_master-of-mayhem
+https://www.codingame.com/training/easy/master-of-mayhem
 https://www.codingame.com/contribute/view/6412391b5ba85cb866c82420cbf58f9b6353
 
 A contribution by snoyes

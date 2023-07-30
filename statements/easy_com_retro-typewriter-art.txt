@@ -1,6 +1,7 @@
 Retro Typewriter Art
 
-https://www.codingame.com/training/easy/easy_com_retro-typewriter-art
+easy_com_retro-typewriter-art
+https://www.codingame.com/training/easy/retro-typewriter-art
 https://www.codingame.com/contribute/view/23544778f13fa4bdcec80adea8db1bc2c4f4f
 
 A contribution by Lisa-Has-Ideas

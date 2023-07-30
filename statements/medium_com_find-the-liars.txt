@@ -1,6 +1,7 @@
 Find the liars
 
-https://www.codingame.com/training/medium/medium_com_find-the-liars
+medium_com_find-the-liars
+https://www.codingame.com/training/medium/find-the-liars
 https://www.codingame.com/contribute/view/5084cce268091d7f7da654f6114c73766809
 
 A contribution by Pistonman

@@ -1,6 +1,7 @@
 🏐 🏖 Beach Volleyball 🏐 🏖
 
-https://www.codingame.com/training/medium/medium_com_beach-volleyball
+medium_com_beach-volleyball
+https://www.codingame.com/training/medium/beach-volleyball
 https://www.codingame.com/contribute/view/5996057237509a508857acda4426be02fc01
 
 A contribution by Wontonimo

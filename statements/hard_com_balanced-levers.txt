@@ -1,5 +1,6 @@
 Balanced Levers
 
+hard_com_balanced-levers
 https://www.codingame.com/training/hard/balanced-levers
 https://www.codingame.com/contribute/view/7282396993be2d629ec1d9e283d810e67eb3
 

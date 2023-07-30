@@ -1,6 +1,7 @@
 Fibonomials
 
-https://www.codingame.com/training/medium/medium_com_fibonomials
+medium_com_fibonomials
+https://www.codingame.com/training/medium/fibonomials
 https://www.codingame.com/contribute/view/427836f5e55f37e7e282d1bd0334271bf2755
 
 A contribution by __yel__p

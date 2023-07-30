@@ -1,5 +1,6 @@
 Vortex
 
+hard_com_vortex
 https://www.codingame.com/training/hard/vortex
 https://www.codingame.com/contribute/view/3602a5324a033a0d60e4cd262f9da4668e4
 

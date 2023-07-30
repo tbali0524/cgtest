@@ -1,6 +1,7 @@
 Rod cutting problem
 
-https://www.codingame.com/training/medium/medium_com_rod-cutting-problem
+medium_com_rod-cutting-problem
+https://www.codingame.com/training/medium/rod-cutting-problem
 https://www.codingame.com/contribute/view/56454160d9ea35ff11a4a327847f9859ad94
 
 A contribution by MisterFlos

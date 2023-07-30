@@ -1,6 +1,7 @@
 Ulam Spiral
 
-https://www.codingame.com/training/easy/easy_com_ulam-spiral
+easy_com_ulam-spiral
+https://www.codingame.com/training/easy/ulam-spiral
 https://www.codingame.com/contribute/view/2370925f327dfea5dafc4db1b3021311530e4
 
 A contribution by Globostofo

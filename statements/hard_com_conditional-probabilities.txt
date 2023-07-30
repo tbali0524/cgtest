@@ -1,5 +1,6 @@
 Conditional probabilities
 
+hard_com_conditional-probabilities
 https://www.codingame.com/training/hard/conditional-probabilities
 https://www.codingame.com/contribute/view/139695fcac2fd5cc7bc705b6ac77cb4c781a
 

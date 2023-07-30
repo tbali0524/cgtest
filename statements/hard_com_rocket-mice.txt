@@ -1,5 +1,6 @@
 Rocket mice
 
+hard_com_rocket-mice
 https://www.codingame.com/training/hard/rocket-mice
 https://www.codingame.com/contribute/view/3255d19340a4a3534282d84494519d0852a
 

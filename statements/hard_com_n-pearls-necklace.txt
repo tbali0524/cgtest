@@ -1,5 +1,6 @@
 N Pearls Necklace
 
+hard_com_n-pearls-necklace
 https://www.codingame.com/training/hard/n-pearls-necklace
 https://www.codingame.com/contribute/view/21267833d34ef960c94d60f4bb5c5f70f7926
 

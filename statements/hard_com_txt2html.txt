@@ -1,5 +1,6 @@
 TXT2HTML
 
+hard_com_txt2html
 https://www.codingame.com/training/hard/txt2html
 https://www.codingame.com/contribute/view/1550d3d5b44a94ec3343cfb8381bab45ee1
 

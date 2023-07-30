@@ -1,5 +1,6 @@
 Magic count of numbers
 
+hard_com_magic-count-of-numbers
 https://www.codingame.com/training/hard/magic-count-of-numbers
 https://www.codingame.com/contribute/view/4984a71ebe92165d52d0342b439700398fe
 

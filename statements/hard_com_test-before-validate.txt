@@ -1,5 +1,6 @@
 Test before Validate!
 
+hard_com_test-before-validate!
 https://www.codingame.com/training/hard/test-before-validate!
 https://www.codingame.com/contribute/view/74fc359047e3825b4711ec065d68f3fac6
 

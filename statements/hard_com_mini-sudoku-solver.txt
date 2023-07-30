@@ -1,5 +1,6 @@
 Mini sudoku solver
 
+hard_com_mini-sudoku-solver
 https://www.codingame.com/training/hard/mini-sudoku-solver
 https://www.codingame.com/contribute/view/113adc2c7291040d49b1830594a67f3fffb
 

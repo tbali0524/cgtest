@@ -1,5 +1,6 @@
 Bailey–Borwein–Plouffe Pi
 
+hard_com_baileyborweinplouffe-pi
 https://www.codingame.com/training/hard/baileyborweinplouffe-pi
 https://www.codingame.com/contribute/view/521305b1951d46109f6885a77f38bd24a85c
 

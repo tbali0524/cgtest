@@ -1,5 +1,6 @@
 Hangman
 
+hard_com_hangman
 https://www.codingame.com/training/hard/hangman
 https://www.codingame.com/contribute/view/472b3853ad7243f4d8f0369151275fe32f0
 

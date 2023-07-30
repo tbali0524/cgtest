@@ -1,6 +1,7 @@
 By train or by car ?
 
-https://www.codingame.com/training/easy/easy_com_by-train-or-by-car-
+easy_com_by-train-or-by-car
+https://www.codingame.com/training/easy/by-train-or-by-car
 https://www.codingame.com/contribute/view/7789ca653765de11242852ad6b4be1516d9e
 
 A contribution by nguyen.lam

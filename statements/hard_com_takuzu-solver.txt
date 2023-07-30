@@ -1,5 +1,6 @@
 Takuzu Solver
 
+hard_com_takuzu-solver
 https://www.codingame.com/training/hard/takuzu-solver
 https://www.codingame.com/contribute/view/18957f95843f0fd886c743c6c40f4e14aee89
 

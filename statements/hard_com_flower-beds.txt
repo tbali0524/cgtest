@@ -1,5 +1,6 @@
 Flower beds
 
+hard_com_flower-beds
 https://www.codingame.com/training/hard/flower-beds
 https://www.codingame.com/contribute/view/5449ba021fdce0aefa5df1ea4c6d0bcbc0ae
 

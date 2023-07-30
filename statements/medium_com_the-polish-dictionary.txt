@@ -1,6 +1,7 @@
 The Polish Dictionary
 
-https://www.codingame.com/training/medium/medium_com_the-polish-dictionary
+medium_com_the-polish-dictionary
+https://www.codingame.com/training/medium/the-polish-dictionary
 https://www.codingame.com/contribute/view/52350de57efb2c48659bd1eead6eb9fe6617
 
 A contribution by Gorbit99

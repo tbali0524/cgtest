@@ -1,6 +1,7 @@
 Battleship
 
-https://www.codingame.com/training/medium/medium_com_battleship
+medium_com_battleship
+https://www.codingame.com/training/medium/battleship
 https://www.codingame.com/contribute/view/44680233160c12d59b0a13d015e8c84dfa8f
 
 A contribution by Eldoir

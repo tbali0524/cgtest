@@ -1,6 +1,7 @@
 Bit count to limit
 
-https://www.codingame.com/training/medium/medium_com_bit-count-to-limit
+medium_com_bit-count-to-limit
+https://www.codingame.com/training/medium/bit-count-to-limit
 https://www.codingame.com/contribute/view/482951b3c1e7c0adb69a57ca18f2b2c3ec4c
 
 A contribution by DPAmar

@@ -1,6 +1,7 @@
 Credit Card Verifier (Luhn’s algorithm)
 
-https://www.codingame.com/training/easy/easy_com_credit-card-verifier-luhns-algorithm
+easy_com_credit-card-verifier-luhns-algorithm
+https://www.codingame.com/training/easy/credit-card-verifier-luhns-algorithm
 https://www.codingame.com/contribute/view/1840354c227a243e73a7c8b205b1ec3e43e3
 
 A contribution by AminGholizad

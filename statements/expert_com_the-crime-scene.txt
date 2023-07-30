@@ -1,5 +1,6 @@
 The Crime Scene
 
+expert_com_the-crime-scene
 https://www.codingame.com/training/expert/the-crime-scene
 https://www.codingame.com/contribute/view/3405fcc4ee687e5be30de0fad5932ed2c58
 

@@ -1,5 +1,6 @@
 🃏 FreeCell 🃏
 
+hard_com_freecell
 https://www.codingame.com/training/hard/freecell
 https://www.codingame.com/contribute/view/56162cb1ae8743fbda12c6b2eb519b8055a7
 

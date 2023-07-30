@@ -1,6 +1,7 @@
 De-FizzBuzzer
 
-https://www.codingame.com/training/medium/medium_com_de-fizzbuzzer
+medium_com_de-fizzbuzzer
+https://www.codingame.com/training/medium/de-fizzbuzzer
 https://www.codingame.com/contribute/view/104810944e6a0499eb8b7723eb331f4305ff
 
 A contribution by Dyd

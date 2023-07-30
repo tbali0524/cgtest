@@ -1,6 +1,7 @@
 1×1×1 Rubik’s cube movements
 
-https://www.codingame.com/training/easy/easy_com_111-rubik-s-cube-movements
+easy_com_111-rubiks-cube-movements
+https://www.codingame.com/training/easy/111-rubiks-cube-movements
 https://www.codingame.com/contribute/view/6019ffb535b8167e4c9922a44442f84f625
 
 A contribution by programaths

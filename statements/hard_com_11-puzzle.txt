@@ -1,5 +1,6 @@
 11-puzzle
 
+hard_com_11-puzzle
 https://www.codingame.com/training/hard/11-puzzle
 
 A contribution by [CG]Maxime

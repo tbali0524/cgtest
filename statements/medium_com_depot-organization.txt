@@ -1,6 +1,7 @@
 Depot organization
 
-https://www.codingame.com/training/medium/medium_com_depot-organization
+medium_com_depot-organization
+https://www.codingame.com/training/medium/depot-organization
 https://www.codingame.com/contribute/view/9958909e4fc8e92db57019fa23a1cedc2d3
 
 A contribution by Unihedron

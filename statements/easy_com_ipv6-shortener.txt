@@ -1,6 +1,7 @@
 IPv6 Shortener
 
-https://www.codingame.com/training/easy/easy_com_ipv6-shortener
+easy_com_ipv6-shortener
+https://www.codingame.com/training/easy/ipv6-shortener
 https://www.codingame.com/contribute/view/633760db7852e7904b0bd35b0f28a0eedc2e
 
 A contribution by Toby75

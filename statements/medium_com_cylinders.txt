@@ -1,6 +1,7 @@
 Cylinders
 
-https://www.codingame.com/training/medium/medium_com_cylinders
+medium_com_cylinders
+https://www.codingame.com/training/medium/cylinders
 https://www.codingame.com/contribute/view/3707585c94aaefcd3dbdeb2b4b105ced2bad2
 
 A contribution by java_coffee_cup

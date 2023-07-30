@@ -1,6 +1,7 @@
 Paving with bricks
 
-https://www.codingame.com/training/medium/medium_com_paving-with-bricks
+medium_com_paving-with-bricks
+https://www.codingame.com/training/medium/paving-with-bricks
 https://www.codingame.com/contribute/view/59131d18ac6098f3ea4381a503093bac203c
 
 A contribution by Sylvain0675

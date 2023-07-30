@@ -1,5 +1,6 @@
 Zergling rush
 
+hard_com_zergling-rush
 https://www.codingame.com/training/hard/zergling-rush
 https://www.codingame.com/contribute/view/460cef734405a6cfd8f6a608671402e80d5
 

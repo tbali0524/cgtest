@@ -1,5 +1,6 @@
 ASCII Art QR code
 
+hard_com_ascii-art-qr-code
 https://www.codingame.com/training/hard/ascii-art-qr-code
 https://www.codingame.com/contribute/view/45126be5da32c003fd4e32514f447a6be3bd2
 

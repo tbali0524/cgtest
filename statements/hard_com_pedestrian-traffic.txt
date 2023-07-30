@@ -1,5 +1,6 @@
 Pedestrian Traffic
 
+hard_com_pedestrian-traffic
 https://www.codingame.com/training/hard/pedestrian-traffic
 https://www.codingame.com/contribute/view/57040ef9d73fbf30662196ce282f3316d2cf
 

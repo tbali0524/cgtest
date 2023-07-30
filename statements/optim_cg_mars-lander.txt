@@ -1,6 +1,9 @@
 Mars Lander
 
+optim_cg_mars-lander
 https://www.codingame.com/multiplayer/optimization/mars-lander
+
+by CodinGame
 
 STATEMENT
 This optimization programming challenge is based on « Mars Lander - Episode 2 », only this time, you have to optimize the amount of fuel you use to land your mars rover. The higher amount of fuel stays is in your ship at the end of the game, the higher your score will be.

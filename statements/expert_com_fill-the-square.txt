@@ -1,5 +1,6 @@
 Fill the square!
 
+expert_com_fill-the-square
 https://www.codingame.com/training/expert/fill-the-square
 https://www.codingame.com/contribute/view/3059b74511639bc1e3ac77fba2b898bb0fe
 

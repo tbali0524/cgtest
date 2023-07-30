@@ -1,6 +1,9 @@
 Code vs Zombies
 
+optim_cg_code-vs-zombies
 https://www.codingame.com/multiplayer/optimization/code-vs-zombies
+
+by CodinGame
 
 STATEMENT
 Kill zombies to earn points and try to keep humans alive to maximize your score and win the game. The game takes place on a closed map. You control Ash, the lucky owner of a powerful weapon, who can kill all zombies in a radius around him.
