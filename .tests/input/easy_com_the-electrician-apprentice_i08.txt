@@ -1,0 +1,30 @@
+24
+Room1-Light - Main Room1-Sw-L
+Room1-Radio - Main Room1-Sw-R
+Room1-PC - Main Room1-Sw-PC
+Room2-Light - Main Room2-Sw-L
+Room2-TV - Main Room2-Sw-TV
+Room2-Console - Main Room2-Sw-TV
+Bathroom-Light - Main Bathroom-CB Bathroom-Sw-L
+Bathroom-Vent - Main Bathroom-CB Bathroom-Sw-L
+Bathroom-WashingMachine - Main Bathroom-CB
+Bathroom-ElectricDryer - Main Bathroom-CB
+Kitchen-Light - Main Kitchen-Sw-L
+Kitchen-Oven - Main Kitchen-CB1 Kitchen-Sw-O
+Kitchen-Cooktop - Main Kitchen-CB1 Kitchen-Sw-CT
+Kitchen-Hood - Main Kitchen-CB1 Kitchen-Sw-CT
+Kitchen-DishWasher - Main Kitchen-CB1 Kitchen-Sw-CT
+Kitchen-Fridge - Main Kitchen-CB2
+Kitchen-Freezer - Main Kitchen-CB2
+InternetBox - Main
+Living-Light1 - Main Living-Sw-L1
+Living-Light2 - Main Living-Sw-L2
+Living-TV - Main Living-Sw-TV
+Living-Console - Main Living-Sw-TV
+Living-PC - Main Living-Sw-PC
+Living-Printer - Main Living-Sw-PC
+4
+Main
+Bathroom-CB
+Kitchen-CB1
+Kitchen-CB2

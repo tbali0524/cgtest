@@ -1,0 +1,9 @@
+Enemy forces are moving west and we are concerned Snoopy's position has
+been compromised. In order to beef up security, an additional rule has been
+added to the decoding rules. Upon observing a hash tag, a certain number of
+characters should be deleted from the list of most recently observed
+characters (that have not yet been used). Immediately after the hash tag
+will be a single digit integer between 1 and 9 indicating how many of the
+most recently observed characters should be deleted. (hash tag)1 means
+delete the first most recently observed character. (hash tag)2 means delete
+the two most recently observed characters.

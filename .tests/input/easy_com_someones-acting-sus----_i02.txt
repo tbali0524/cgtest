@@ -1,0 +1,11 @@
+10
+QWERTYUIOP
+8 6
+Q#E#TR
+Q##I#U
+Q##Y#O
+I#II#P
+Q####Y
+W##Y#O
+O##TRE
+######

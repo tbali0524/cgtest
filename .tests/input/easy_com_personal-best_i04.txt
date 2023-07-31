@@ -1,0 +1,33 @@
+Laurie Hernandez,Ragan Smith
+beam
+30
+Alicia Sacramone,7.99,8.01,8.39
+Alicia Sacramone,7.13,7.1,6.9
+Amy Jo Johnson,7.97,6.71,6.32
+Amy Jo Johnson,7.08,7.22,6.52
+Amy Jo Johnson,6.84,6.25,7.73
+Gabby Douglas,7.53,8.26,6.98
+Gabby Douglas,7.47,7.85,7.82
+Gabby Douglas,8.87,8.9,8.67
+Kacy Catanzaro,8.47,7.15,7.26
+Ragan Smith,7.79,6.24,6.25
+Kacy Catanzaro,8.07,7.09,6.96
+Kerri Strug,8.83,7.5,8.32
+Kerri Strug,8.81,8.2,7.52
+Kerri Strug,8.52,7.84,8.06
+Laurie Hernandez,8.57,8.68,7.86
+Shawn Johnson,7.45,8.06,8.98
+Laurie Hernandez,9.57,9.72,8.65
+Laurie Hernandez,8.68,8.81,8.01
+Nadia Comaneci,7.98,9.17,7.84
+Nadia Comaneci,8.26,9.43,8.63
+Nadia Comaneci,7.89,9.66,9.42
+Olga Korbut,6.85,6.7,7.36
+Olga Korbut,8.26,6.83,7.92
+Olga Korbut,7.98,7.16,7.55
+Alicia Sacramone,8.25,7.32,6.55
+Kacy Catanzaro,7.23,7.82,7.4
+Ragan Smith,6.69,8.1,7.23
+Ragan Smith,8.12,7.35,6.92
+Shawn Johnson,9.39,8.09,8.03
+Shawn Johnson,8.29,8.95,9.02

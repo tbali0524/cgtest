@@ -1,0 +1,8 @@
+1000
+4 MrNiceGuy
+START C
+ME -1 D D
+OPP -1 D D
+* C
+1 BadGuy
+* D

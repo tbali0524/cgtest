@@ -1,0 +1,10 @@
+Pithiviers Cholet
+8
+Poitiers Angouleme 138
+Pithiviers Orleans 57
+Orleans Blois 63
+Blois Tours 65
+Bordeaux Périgueux 137
+Tours Saumur 78
+Saumur Angers 66
+Angers Cholet 65

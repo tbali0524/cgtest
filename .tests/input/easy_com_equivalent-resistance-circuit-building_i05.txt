@@ -1,0 +1,5 @@
+3
+Alef 30
+Bet 20
+Vet 10
+( Alef [ ( Bet Bet Bet ) ( Vet [ ( Vet Vet ) ( Vet [ Bet Bet ] ) ] ) ] )

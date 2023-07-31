@@ -1,0 +1,6 @@
+2
+LIGHT1 - A1
+LIGHT2 - B1
+2
+A1
+B1

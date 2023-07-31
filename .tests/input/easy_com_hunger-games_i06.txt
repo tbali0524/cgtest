@@ -1,0 +1,18 @@
+10
+Marco
+Sophie
+Diamond
+Lester
+Steve
+Hawkings
+Harry
+Potter
+Michael
+Scott
+6
+Marco killed Sophie, Diamond
+Sophie killed Lester
+Sophie killed Scott
+Michael killed Harry
+Harry killed Potter
+Potter killed Hawkings, Steve, Marco

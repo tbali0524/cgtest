@@ -1,0 +1,14 @@
+3
+GROUCHO
+HARPO
+CHICO
+2
+Mayhem's hat is a TYROLEAN ALPINE
+Mayhem's companion is a HONEY BADGER
+6
+GROUCHO's neckwear is an INT OF PEARLS
+HARPO's catchphrase is "You will not CATCH me SLEEPING"
+GROUCHO's companion is a RAVEN
+GROUCHO's hat is a TYROLEAN ALPINE
+HARPO's hat is a BERET
+HARPO's neckwear is a FEATHER BOA

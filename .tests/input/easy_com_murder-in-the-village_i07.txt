@@ -1,0 +1,5 @@
+4
+Bob: I was in the pub with Sue.
+Sue: I was in the pub with Bob.
+Dylan: I was in the garden, alone.
+Hank: I was in the pub with Sue and Bob.

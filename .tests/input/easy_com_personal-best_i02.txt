@@ -1,0 +1,6 @@
+Aly Raisman
+bars
+3
+Aly Raisman,7.7,8.4,8.0
+Aly Raisman,7.9,7.6,9.3
+Aly Raisman,8.3,8.3,7.7

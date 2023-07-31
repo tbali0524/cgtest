@@ -1,0 +1,2 @@
+DOG is an isosceles in O and an obtuse in O (127°) triangle.
+CAT is an isosceles in C and an acute triangle.

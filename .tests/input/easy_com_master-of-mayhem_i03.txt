@@ -1,0 +1,30 @@
+6
+SPEEDO
+DITTO
+ERGO
+TYPO
+UHOH
+OHNO
+1
+Mayhem's word is "DOUBLE"
+20
+UHOH's catchphrase is "DOUBLE TROUBLE"
+TYPO's catchphrase is "I DOUBLE DARE you"
+OHNO's neckwear is a PAISLEY SHAWL
+TYPO's companion is a BOWL OF PEANUTS
+UHOH's neckwear is a DOG COLLAR
+TYPO's hat is a STRAW BOATER
+OHNO's catchphrase is "I will make your TROUBLE DOUBLE"
+OHNO's companion is a PANTS WEARING PANGOLIN
+DITTO's hat is a GINGHAM BONNET
+TYPO's neckwear is a LACE RUFF
+DITTO's neckwear is a CRAVAT
+ERGO's companion is a CUBE
+SPEEDO's catchphrase is "You BETTER BOOK it"
+ERGO's catchphrase is "FIGHT me if you DARE"
+UHOH's companion is a PARASITIC DRAGON
+ERGO's hat is a PROPELLER BEANIE
+SPEEDO's hat is a GOLD CROWN
+SPEEDO's companion is a UNICORN
+SPEEDO's neckwear is a WALL CLOCK
+OHNO's hat is a ROASTED TURKEY

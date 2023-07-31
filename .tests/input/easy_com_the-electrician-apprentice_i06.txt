@@ -1,0 +1,10 @@
+2
+LIGHT1 - A1 = A2 A3
+LIGHT2 - B1 = B2 B3 = B4 B5
+6
+A1
+B1
+B2
+A3
+B5
+B4

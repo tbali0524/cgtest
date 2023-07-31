@@ -1,0 +1,9 @@
+7
+Alfa 1
+Bravo 1
+Charlie 12
+Delta 4
+Echo 2
+Foxtrot 10
+Golf 8
+( Alfa [ Charlie Delta ( Bravo [ Echo ( Foxtrot Golf ) ] ) ] )

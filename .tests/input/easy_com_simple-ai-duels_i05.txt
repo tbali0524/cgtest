@@ -1,0 +1,9 @@
+100
+3 NiceGuyBut
+START C
+OPP MAX D D
+* C
+3 FlipFlop
+START RAND
+ME -1 D C
+ME -1 C D

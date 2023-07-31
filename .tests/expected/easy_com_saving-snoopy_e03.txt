@@ -1,0 +1,10 @@
+One last security measure has been added to our encoding scheme that must
+be included in your decoding rules. Upon observing a percent sign, the
+recently observed characters need to be shuffled. To shuffle the
+characters, start with the oldest character (furthest to the left in the
+list) and add every 2nd character until the end of the list. Then add the
+2nd oldest character and add every 2nd character until the end of the list.
+Assume the list of recently observed characters to be a, b, c, d, e, f, g
+where g is the most recently observed character and f is the 2nd most
+recently observed character. The new shuffled list would be a, c, e, g, b,
+d, f.

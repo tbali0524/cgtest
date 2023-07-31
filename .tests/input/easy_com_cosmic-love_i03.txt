@@ -1,0 +1,11 @@
+10
+Sector_XII 6.30e07 1.30e24 6.21e11
+Planet_of_the_Apendectomies 4.49e08 2.50e30 6.21e11
+Earth 6.38e06 5.97e23 2.89e12
+VX819 3.62e08 1.67e31 5.33e11
+CodinPlanet 7.49e03 9.23e14 7.62e13
+SSxss2 4.16e11 1.35e39 6.23e11
+Alice 4.70e11 4.70e44 0
+Cybertron 2.60e10 6.29e31 3.96e12
+C44 7.81e08 4.88e30 7.12e11
+Nowhere_Planet 4.39e04 3.95e14 5.25e11

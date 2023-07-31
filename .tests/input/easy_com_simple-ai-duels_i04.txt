@@ -1,0 +1,7 @@
+100
+1 Joker
+* RAND
+3 TitForTat
+START C
+OPP -1 C C
+OPP -1 D D

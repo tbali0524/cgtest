@@ -1,0 +1,20 @@
+Montpellier Perpignan
+18
+Cholet Clisson 35.9
+Beziers Narbonne 34.2
+Orleans Blois 63 
+Montpellier Beziers 73.1
+Tours Saumur 78
+Angouleme Jarnac 33.2
+Jarnac Cognac 11
+Cognac Saintes 28.1
+Saintes Saujon 27.7
+Saujon Royan 13.3
+Clisson Nantes 33.7
+Blois Tours 65
+Angers Cholet 65
+Saumur Angers 66
+Narbonne Roquefort-des-Corbieres 27
+Salses-le-Château Perpignan 17.6
+Paris Chartres 91
+Roquefort-des-Corbieres Salses-le-Château 28.9

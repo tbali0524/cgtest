@@ -1,0 +1,65 @@
+28
+7
+Bash_land N000000 E0000000
+Befunge_land N010000 E0000000
+C#_land N020000 E0000000
+C_land N030000 E0000000
+C++_land N040000 E0000000
+C64_Assembly_land N050000 E0000000
+C64_BASIC_land N060000 E0000000
+Clojure_land N070000 E0000000
+CSS_land N080000 E0000000
+Dart_land N090000 E0000000
+F#_land N100000 E0000000
+Go_land N110000 E0000000
+Groovy_land N120000 E0000000
+Haskell_land N130000 E0000000
+Java_land N140000 E0000000
+Javascript_land N150000 E0000000
+Kotlin_land N160000 E0000000
+Lua_land N170000 E0000000
+OCaml_land N180000 E0000000
+Pascal_land N190000 E0000000
+Perl_land N200000 E0000000
+PHP_land N210000 E0000000
+PowerShell_land N220000 E0000000
+Python_land N230000 E0000000
+Ruby_land N240000 E0000000
+Rust_land N250000 E0000000
+Scala_land N260000 E0000000
+Swift_land N270000 E0000000
+echo Hello World
+>"dlroW olleH",,,,,,,,,,,@
+class HelloWorld { static void Main() System.Console.WriteLine("Hello, World!"); } }
+#include <stdio.h> main( ) { printf("Hello, World!\n"); }
+#include <iostream.h> main() { cout << "Hello, World!" << endl; return 0; }
+LDY #0 ; BEQ in; loop: JSR $FFD2 ; INY ; in: LDA hello,Y; BNE loop ; RTS ; hello: .TXT "Hello, World!" ;  .BYTE 13,10,0
+10 PRINT "Hello, World!"
+(defn hello [] (println "Hello, World!")) (hello)
+body:before { content: "Hello, World!"; }
+main() { print('Hello, World!'); }
+printf "Hello, World!\n"
+package main import "fmt" func main() { fmt.Printf("Hello, World!\n") }
+println "Hello, World!"
+main = putStrLn "Hello, World!"
+class HelloWorld { static public void main( String args[] ) { System.out.println( "Hello, World!" ); } }
+console.log("Hello, World!");
+fun main(args : Array<String>) { println("Hello, World!") }
+print "Hello, World!"
+print_string "Hello, World!\n";;
+program HelloWorld(output); begin WriteLn('Hello, World!'); end.
+print "Hello, World!\n";
+<?php echo "Hello, World!\n"; ?>
+'Hello, World!'
+print("Hello, World!")
+puts "Hello, World!"
+fn main() { println!("Hello, World!"); }
+object HelloWorld extends App { println("Hello, World!") }
+println("Hello, World!")
+N210000 E0000000
+N040000 E0000000
+N140000 E0000000
+N230000 E0000000
+N020000 E0000000
+N050000 E0000000
+N010000 E0000000

@@ -1,0 +1,15 @@
+Name: Dude
+Killed: Him, Killed, This
+Killer: Winner
+
+Name: Him
+Killed: None
+Killer: Dude
+
+Name: Killed
+Killed: None
+Killer: Dude
+
+Name: This
+Killed: None
+Killer: Dude

@@ -1,0 +1,8 @@
+4
+Zulu
+Whiskey
+Charlie
+Alpha
+2
+Charlie killed Alpha
+Whiskey killed Charlie, Zulu

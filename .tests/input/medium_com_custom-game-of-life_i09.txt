@@ -1,0 +1,23 @@
+20 20 15
+101110010
+011011000
+OOO.OO.O.O..OOO..OOO
+.O.O..OOOOOO.OO.O.O.
+OO.OOO.O..OOO.O..O..
+..OOO....OO..OOO....
+OOO..O..OO.O...OOOO.
+OOOOO...OO.OO.OOOOOO
+OO.O.........OO.O.O.
+O..OOOO.O.OO.O.OOO..
+O..O...O.OO...OOOOOO
+...OOOOOO.OO...O.OO.
+...O...OOOOO...O.O..
+...OO...OO...OO..OO.
+....O..OOO...OOOO.O.
+..OO...OO.OOOO.....O
+OOOO.OOOO.O.OO......
+O..OO.O..OOO...OOO..
+O.O.O..OOO..OO.O.O..
+OOOOO.O..O..OO..O...
+O...OOOO.O..O...O...
+.O...O....OOOOO...O.

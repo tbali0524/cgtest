@@ -1,0 +1,17 @@
+a b c
+A B C
+5
+A a A
+A b B
+B a B
+B b A
+B c C
+A
+A B
+6
+bc
+bbabc
+aaaabababaac
+aaaaabaaaabbaa
+abbabacc
+abababababbadabbba

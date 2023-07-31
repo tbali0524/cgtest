@@ -1,0 +1,17 @@
+one
+four
+sixteen
+sixty-four
+two hundred fifty-six
+one thousand twenty-four
+four thousand ninety-six
+sixteen thousand three hundred eighty-four
+sixty-five thousand five hundred thirty-six
+two hundred sixty-two thousand one hundred forty-four
+one million forty-eight thousand five hundred seventy-six
+four million one hundred ninety-four thousand three hundred four
+sixteen million seven hundred seventy-seven thousand two hundred sixteen
+sixty-seven million one hundred eight thousand eight hundred sixty-four
+two hundred sixty-eight million four hundred thirty-five thousand four hundred fifty-six
+one billion seventy-three million seven hundred forty-one thousand eight hundred twenty-four
+four billion two hundred ninety-four million nine hundred sixty-seven thousand two hundred ninety-six

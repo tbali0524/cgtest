@@ -1,0 +1,10 @@
+ten
+one thousand
+one hundred thousand
+ten million
+one billion
+one hundred billion
+ten trillion
+one quadrillion
+one hundred quadrillion
+ten quintillion

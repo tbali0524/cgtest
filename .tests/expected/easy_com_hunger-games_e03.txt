@@ -1,0 +1,15 @@
+Name: Bar
+Killed: None
+Killer: Foo
+
+Name: Foo
+Killed: Bar, Foobar, Sam
+Killer: Winner
+
+Name: Foobar
+Killed: None
+Killer: Foo
+
+Name: Sam
+Killed: None
+Killer: Foo

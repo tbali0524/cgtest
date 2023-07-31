@@ -1,0 +1,83 @@
+38
+5
+Andorra_La_Vella_Andorra N423000 E0013100
+Tirana_Albania N411900 E0194900
+Vienna_Austria N481200 E0162100
+Sarajevo_Bosnia_and_Herzegovina N435200 E0182500
+Sofia_Bulgaria N424100 E0231900
+Minsk_Belarus N535500 E0273300
+Prague_Czech_Republic N500500 E0142800
+Berlin_Germany N523100 E0132300
+Copenhagen_Denmark N554300 E0123400
+Tallin_Estonia N592500 E0244500
+Madrid_Spain N402600 W0034200
+Helsinki_Finland N601000 E0245600
+Paris_France N485124 E0022103
+London_United_Kingdom N513000 W0000700
+Athens_Greece N375800 E0234300
+Zagreb_Croatia N454900 E0155900
+Budapest_Hungary N472933 E0190305
+Dublin_Ireland N532039 W0061603
+Reykjavik_Iceland N640800 W0215600
+Rome_Italy N415400 E0123000
+Vilnius_Lithuania N544100 E0251900
+Luxembourg_City_Luxembourg N493636 E0060800
+Riga_Latvia N565656 E0240623
+Podgorica_Montenegro N422627 E0191548
+Skopje_North_Macedonia N420000 E0212600
+Valletta_Malta N355352 E0143045
+Amsterdam_Netherlands N522200 E0045400
+Oslo_Norway N595700 E0104500
+Warsaw_Poland N521400 E0210100
+Lisbon_Portugal N384250 W0090822
+Bucharest_Romania N442557 E0260614
+Belgrade_Serbia N444900 E0202800
+Moscow_Russia N554500 E0373700
+Stockholm_Sweden N591946 E0180407
+Ljubljana_Slovenia N460320 E0143030
+Bratislava_Slovakia N480838 E0170635
+Kyiv_Ukraine N502700 E0303124
+Vatican_City_Holy_See N415412 E0122712
+Hola, Mon!
+Tjeta, Bote!
+Servus, Welt!
+Zdravo, Svijet!
+Zdravej, Svjet!
+Vitaju, Svet!
+Ahoj, Svet!
+Hallo, Welt!
+Hej, Verden!
+Tere, Maailm!
+Hola, Mundo!
+Terve, Maailman!
+Salut, Le Monde!
+Hello, World!
+Yassou, Kosmos!
+Bok, Svijet!
+Szia, Vilag!
+Dia duit, Domhan!
+Hallo, Heimurinn!
+Ciao, Mondo!
+Labas, Pasaulis!
+Moien, Welt!
+Sveiks, Pasaule!
+Zdravo, Svet!
+Zdravo, Svetot!
+Bongu, Dinja!
+Hallo, Wereld!
+Hei, Verden!
+Czesc, Swiat!
+Ola, Mundo!
+Salut, Lume!
+Zdravo, Svet!
+Privet, Mir!
+Hej, Varld!
+Zdravo, Svet!
+Ahoj, Svet!
+Pryvit, Svit!
+Salve, Mundus!
+N485124 E0023103
+N375800 E0244300
+N472933 E0190405
+N523100 E0132400
+N415512 E0122712

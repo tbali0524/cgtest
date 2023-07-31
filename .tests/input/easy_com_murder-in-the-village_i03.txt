@@ -1,0 +1,6 @@
+5
+Henry: I was in the garden with Jenny and Penny and Bill.
+Bill: I was in the garden with Jenny and Penny and Henry.
+Jenny: I was in the garden with Penny and Henry and Bill.
+Charles: I was in the garden with Penny and Henry and Bill and Jenny.
+Penny: I was in the garden with Henry and Bill and Jenny.

@@ -1,0 +1,5 @@
+ACD is a scalene and a right in D triangle.
+ABC is a scalene and an acute triangle.
+COG is an isosceles in O and a right in O triangle.
+BCD is an isosceles in C and an acute triangle.
+DEF is a scalene and an obtuse in E (162°) triangle.

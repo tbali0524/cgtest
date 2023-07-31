@@ -1,0 +1,42 @@
+7
+MELLOW
+YELLOW
+FELLOW
+BELLOW
+JELLO
+HELLO
+CELLO
+4
+Mayhem's hat is a LAUREL WREATH
+Mayhem's word is "DANGER"
+Mayhem's neckwear is an ASCOT
+Mayhem's companion is an AMORPHOUS BLOB
+28
+MELLOW's hat is a LAUREL WREATH
+YELLOW's hat is a LAUREL WREATH
+FELLOW's hat is a LAUREL WREATH
+BELLOW's hat is a LAUREL WREATH
+JELLO's hat is a LAUREL WREATH
+HELLO's hat is a LAMPSHADE
+CELLO's hat is a BOWLER
+MELLOW's neckwear is an ASCOT
+YELLOW's neckwear is an ASCOT
+FELLOW's neckwear is an ASCOT
+BELLOW's neckwear is a STETHOSCOPE
+JELLO's neckwear is an PENDANT
+HELLO's neckwear is an ASCOT
+CELLO's neckwear is an ASCOT
+MELLOW's companion is an AMORPHOUS BLOB
+YELLOW's companion is a FISH OUT OF WATER
+FELLOW's companion is an AMORPHOUS BLOB
+BELLOW's companion is an AMORPHOUS BLOB
+JELLO's companion is an AMORPHOUS BLOB
+HELLO's companion is an AMORPHOUS BLOB
+CELLO's companion is an AMORPHOUS BLOB
+MELLOW's catchphrase is "CARE for a game of CATCH"
+YELLOW's catchphrase is "FOLLOW me for DANGER"
+CELLO's catchphrase is "STRANGER DANGER"
+BELLOW's catchphrase is "DANGER is my MIDDLE name"
+JELLO's catchphrase is "I LIVE for DANGER"
+HELLO's catchphrase is "You are in DANGER of my WRATH"
+FELLOW's catchphrase is "TIPTOE through the TULIPS"

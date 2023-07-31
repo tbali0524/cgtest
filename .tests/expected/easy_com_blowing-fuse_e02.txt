@@ -1,0 +1,2 @@
+Fuse was not blown.
+Maximal consumed current was 41 A.

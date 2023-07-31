@@ -1,0 +1,20 @@
+45
+18
+A 1
+>AA 5
+>>AAA 8
+>>>AAAA 8
+>>>>AAAAA 9
+>>AAB 10
+>>>AABA 12
+>>>>AABAA 12
+>>>>AABAB 13
+>>>>>AABABA 14
+>AB 15
+>>ABA 20
+>>ABB 25
+>>>ABBA 26
+>>>>ABBAA 27
+>>>>>ABBAAA 28
+>AC 29
+B 5005

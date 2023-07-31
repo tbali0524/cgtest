@@ -1,0 +1,5 @@
+4
+Alice: I was in the church with Bob.
+Bob: I was in the church with Alice.
+Charlie: I was in the garden, alone.
+Dylan: I was in the church, alone.

@@ -1,0 +1,9 @@
+8
+50 female classical
+60 female classical
+50 male country
+52 female classical
+53 male country
+55 female
+60 female
+55 male

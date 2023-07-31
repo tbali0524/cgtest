@@ -1,0 +1,4 @@
+3
+Tom: I was in the garden with Lily.
+Lily: I was in the garden with Tom.
+Bob: I was in the garden, alone.

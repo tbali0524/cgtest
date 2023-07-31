@@ -1,0 +1,39 @@
+Name: Diamond
+Killed: None
+Killer: Marco
+
+Name: Harry
+Killed: Potter
+Killer: Michael
+
+Name: Hawkings
+Killed: None
+Killer: Potter
+
+Name: Lester
+Killed: None
+Killer: Sophie
+
+Name: Marco
+Killed: Diamond, Sophie
+Killer: Potter
+
+Name: Michael
+Killed: Harry
+Killer: Winner
+
+Name: Potter
+Killed: Hawkings, Marco, Steve
+Killer: Harry
+
+Name: Scott
+Killed: None
+Killer: Sophie
+
+Name: Sophie
+Killed: Lester, Scott
+Killer: Marco
+
+Name: Steve
+Killed: None
+Killer: Potter

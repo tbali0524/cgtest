@@ -1,0 +1,11 @@
+5
+Ann
+Isaac
+Mary
+Max
+Thomas
+4
+Max killed Isaac
+Isaac killed Mary
+Mary killed Max
+Thomas killed Ann

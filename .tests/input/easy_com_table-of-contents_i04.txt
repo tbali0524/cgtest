@@ -1,0 +1,15 @@
+50
+13
+Sudamerica 1
+>Argentina 5
+>>BuenosAires 8
+>>Cordoba 10
+>Brasil 15
+>>SaoPaulo 20
+>>Fortaleza 25
+Asia 30
+>Japan 32
+>>Yokohama 35
+>>Tokio 40
+>Iran 42
+>>Teheran 45

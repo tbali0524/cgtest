@@ -1,0 +1,6 @@
+5
+X X X X X X X X X XXX
+X X X X X -/ X 4/ X 4/8
+X X X -/ X X X X X 8/5
+X X 7/ X X X X X -/ -/6
+X X X X X X X X X 2/X

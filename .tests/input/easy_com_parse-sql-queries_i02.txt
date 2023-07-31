@@ -1,0 +1,8 @@
+SELECT Name, FriesSize FROM burgers WHERE FriesSize = plenty
+5
+Name FriesSize Sauce
+JustBaconNoPatty NoFriesThanks PlainSauce
+Classic plenty Ketchup
+Classic++ 3MichelineStarFries MustardFoam
+BlueBurger plenty BlueCheese
+Vegan CelerySticks BambooSugar

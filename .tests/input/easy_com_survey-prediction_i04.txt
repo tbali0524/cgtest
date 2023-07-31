@@ -1,0 +1,13 @@
+12
+21 male jazz
+66 male country
+21 female jazz
+0 male nothing
+50 female country
+25 male metal
+0 male
+21 male
+21 female
+50 female
+25 male
+66 male

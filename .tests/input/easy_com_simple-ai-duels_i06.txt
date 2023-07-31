@@ -1,0 +1,9 @@
+100
+3 BirdyNiceGuy
+START C
+OPP LAST 3 D D
+* C
+3 TitForTat
+START RAND
+OPP -1 D C
+OPP -1 C D

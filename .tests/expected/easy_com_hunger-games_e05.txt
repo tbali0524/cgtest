@@ -1,0 +1,15 @@
+Name: Alpha
+Killed: None
+Killer: Charlie
+
+Name: Charlie
+Killed: Alpha
+Killer: Whiskey
+
+Name: Whiskey
+Killed: Charlie, Zulu
+Killer: Winner
+
+Name: Zulu
+Killed: None
+Killer: Whiskey

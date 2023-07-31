@@ -1,0 +1,9 @@
+Orleans Nantes
+7
+Orleans Blois 63
+Cholet Clisson 35.9 
+Tours Saumur 78
+Clisson Nantes 33.7
+Blois Tours 65
+Angers Cholet 65
+Saumur Angers 66

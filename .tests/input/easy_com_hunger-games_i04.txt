@@ -1,0 +1,9 @@
+4
+Dude
+Him
+Killed
+This
+3
+Dude killed Him
+Dude killed Killed
+Dude killed This

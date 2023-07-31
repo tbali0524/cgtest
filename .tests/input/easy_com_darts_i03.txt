@@ -1,0 +1,18 @@
+20
+5
+Eric
+Joe
+Molly
+Louis
+Brandon
+10
+Joe 0 0
+Molly 0 0
+Brandon 0 0
+Eric -50 50
+Louis 50 -50
+Joe 10 10
+Molly -10 10
+Brandon -10 -10
+Eric 5 5
+Louis 0 0

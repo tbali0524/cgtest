@@ -1,0 +1,7 @@
+6
+New_York_Planet 3.90e04 3.20e20 4.31e13
+Kepler_1337 4.49e08 2.50e30 5.07e13
+Mar_Sara 3.90e07 7.00e25 2.21e14
+The_Sun 6.96e08 1.99e30 1.33e14
+Alice 7.33e11 5.72e44 0
+Millers_Planet 4.40e07 2.00e29 9.20e12

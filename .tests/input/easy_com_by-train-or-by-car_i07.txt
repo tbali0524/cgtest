@@ -1,0 +1,7 @@
+Angouleme Royan
+5
+Angouleme Jarnac 33.2
+Jarnac Cognac 11
+Cognac Saintes 28.1
+Saintes Saujon 27.7
+Saujon Royan 13.3

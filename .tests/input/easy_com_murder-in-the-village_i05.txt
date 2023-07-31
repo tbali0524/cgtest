@@ -1,0 +1,4 @@
+3
+Jane: I was in the school, alone.
+Lois: I was in the garden, alone.
+Ben: I was in the church with Jane and Lois.

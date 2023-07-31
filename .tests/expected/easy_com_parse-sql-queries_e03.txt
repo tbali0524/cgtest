@@ -1,0 +1,4 @@
+Name Environment Type Weight
+Salmon FreshWater Fish 15
+Trout FreshWater Fish 2
+Prawns FreshWater ShellFish 0.25

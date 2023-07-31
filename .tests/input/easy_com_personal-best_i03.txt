@@ -1,0 +1,6 @@
+Laurie Hernandez
+bars
+3
+Nadia Comaneci,7.98,9.17,7.84
+Laurie Hernandez,8.57,8.68,7.86
+McKayla Maroney,8.18,9.29,8.47

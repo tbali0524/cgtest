@@ -1,0 +1,12 @@
+30
+10
+One 5
+Two 10
+Three 11
+Four 20
+Five 40
+Six 45
+Seven 66
+Eight 80
+Nine 99
+AppendixA 100

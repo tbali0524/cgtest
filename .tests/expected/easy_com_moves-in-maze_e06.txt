@@ -1,0 +1,13 @@
+###########F###B###7###3###
+#.........#EDCBA9876543210#
+###########FEDCB#########1#
+45678#CDE#HGFEDCD#BA9#54323
+####9AB#FGH#GFEDEDC#876####
+#DCBA#CDE###HGFE#######OPQ#
+#E#######NM#IHGFGHIJKLMN#R#
+#FGH#QPONMLKJ############S#
+#GHIJ#Q#####JKLM#QRSTUVVUT#
+#HIJKL#NMLKJI##NOP##U###V#L
+JIJKL#N#LKJIH#F###.###7###K
+KJKLMNMLKJIHGFEDEF#9876567#
+###M###M###G###C###8###4###

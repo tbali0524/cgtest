@@ -1,0 +1,9 @@
+100
+3 Machiavel
+START C
+ME WIN D
+* C
+3 FlipFlop
+START RAND
+ME -1 D C
+ME -1 C D

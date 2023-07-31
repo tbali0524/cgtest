@@ -1,0 +1,7 @@
+4
+Foo
+Bar
+Foobar
+Sam
+1
+Foo killed Bar, Foobar, Sam

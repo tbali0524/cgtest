@@ -1,0 +1,21 @@
+20
+16 female pop
+17 female jazz
+20 female jazz
+16 male funk
+19 male funk
+21 male funk
+21 female hip-hop
+25 male metal
+29 male metal
+31 male metal
+29 male
+16 female
+17 female
+19 female
+21 female
+20 female
+26 male
+31 male
+27 male
+31 female

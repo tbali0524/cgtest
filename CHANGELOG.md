@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- All public test cases for easy puzzles added.
 - Statement texts for most easy and medium puzzles added.
 
 ### Changed

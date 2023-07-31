@@ -1,0 +1,13 @@
+16
+11
+..xxxxxx..x.x...
+.xx...xxx....xxx
+x.xxxx.xxx...xxx
+xxxxxxxxxx..xxxx
+...xx..x..xxxx..
+xx.xx.xxxx..x...
+xxxxxx.....x..xx
+xx......xxx..xxx
+xxxxxxxxxxxxxxxx
+xxx.xxx......xx.
+........xxxxxxxx

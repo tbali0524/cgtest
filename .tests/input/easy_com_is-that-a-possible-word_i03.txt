@@ -1,0 +1,19 @@
+a b c d
+A B C
+6
+A a B
+B c C
+C a C
+C b C
+C c C
+C d C
+A
+C
+7
+ac
+ab
+acabcd
+acabcde
+a
+acaaacca
+cafds

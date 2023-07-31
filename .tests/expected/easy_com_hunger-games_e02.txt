@@ -1,0 +1,19 @@
+Name: Ann
+Killed: None
+Killer: Thomas
+
+Name: Isaac
+Killed: Mary
+Killer: Max
+
+Name: Mary
+Killed: Max
+Killer: Isaac
+
+Name: Max
+Killed: Isaac
+Killer: Mary
+
+Name: Thomas
+Killed: Ann
+Killer: Winner

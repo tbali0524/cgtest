@@ -1,0 +1,13 @@
+SELECT Suburb, Regionname FROM Housing WHERE Rooms = 4 ORDER BY CouncilArea DESC
+10
+Suburb Rooms CouncilArea Regionname
+Bulleen 3 Manningham EasternMetropolitan
+Hawthorn 1 Boroondara SouthernMetropolitan
+Hawthorn 3 Boroondara SouthernMetropolitan
+Hawthorn 2 Boroondara SouthernMetropolitan
+Hawthorn 4 Boroondara SouthernMetropolitan
+Hawthorn 2 Boroondara SouthernMetropolitan
+Healesville 3 YarraRanges NorthernVictoria
+HeidelbergHeights 3 Banyule EasternMetropolitan
+HeidelbergHeights 2 Banyule EasternMetropolitan
+HeidelbergWest 3 Banyule EasternMetropolitan

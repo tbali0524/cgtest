@@ -1,0 +1,27 @@
+a b c d
+A B C D
+16
+A a A
+A b B
+A c A
+A d A
+B a A
+B b B
+B c C
+B d A
+C a A
+C b B
+C c A
+C d D
+D a A
+D b B
+D c A
+D d A
+A
+D
+5
+bcd
+abacdb
+aaabbccadbcd
+aaabcdbdebcd
+bcdbcdbcdbcd
