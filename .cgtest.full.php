@@ -334,6 +334,7 @@ return [
                 'easy_com_container-terminal',
                 'easy_com_cosmic-love',
                 // 'easy_com_count-as-i-count',                     // also in global section
+                'easy_com_count-your-coins',
                 'easy_com_couples-picture-frame',
                 'easy_com_crazy-list',
                 // 'easy_com_create-the-longest-sequence-of-1s',    // also in global section
@@ -497,6 +498,7 @@ return [
                 'easy_com_vectors-in-variables-dimensions',
                 'easy_com_video-comments',
                 'easy_com_walk-on-a-die',
+                'easy_com_what-is-your-garden-worth',
                 'easy_com_whats-so-complex-about-mandelbrot',
                 'easy_com_wheres-wally',
                 'easy_com_winning-parabola',                // removed puzzle
@@ -646,6 +648,7 @@ return [
                 'medium_com_how-many-triangles-and-rectangles',
                 'medium_com_html-table-cell-split',
                 'medium_com_huffman-code',
+                'medium_com_hunger',
                 'medium_com_identify-a-simple-shape',
                 'medium_com_identifying-data-structure',
                 'medium_com_if-then-else',
@@ -1135,4 +1138,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.07.26: 'medium_com_count-as-i-count-2',
+// Note: last puzzle added on 23.08.28: 'easy_com_what-is-your-garden-worth',
