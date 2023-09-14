@@ -1,0 +1,5 @@
+10
+{"1":61,"3":58,"6":58,"8":61,"9":53}
+{"0":78,"6":57,"9":54}
+[{"mutant":"1","squad":"Y-Men","priority":68},{"mutant":"1","squad":"Z-Men","priority":65},{"mutant":"5","squad":"Y-Men","priority":50},{"mutant":"5","squad":"Z-Men","priority":76},{"mutant":"8","squad":"Z-Men","priority":70}]
+[{"friend1":"3","friend2":"8","strength":53},{"friend1":"5","friend2":"6","strength":69},{"friend1":"0","friend2":"2","strength":64},{"friend1":"5","friend2":"7","strength":74},{"friend1":"0","friend2":"4","strength":92},{"friend1":"7","friend2":"8","strength":67},{"friend1":"2","friend2":"6","strength":88},{"friend1":"1","friend2":"7","strength":50},{"friend1":"2","friend2":"5","strength":63},{"friend1":"0","friend2":"9","strength":52},{"friend1":"1","friend2":"2","strength":64},{"friend1":"3","friend2":"5","strength":51},{"friend1":"2","friend2":"3","strength":95}]

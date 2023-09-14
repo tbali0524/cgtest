@@ -1,0 +1,23 @@
+Summer Challenge 2023
+Question 1 / 10 - Hiring new talent
+
+event_summer-challenge-2023-q01
+https://www.codingame.com/contests/summer-challenge-2023
+
+by CodinGame
+
+The year is 3960. After cracking the secrets of alchemy in the works of Isaac Newton in a previous CodinGame challenge, you're ready for a new adventure. You have just been hired as a guidance counselor in a new school of super-mutant teenagers, and there's a lot of work to do!
+ 
+Your first assignment is to find the right students to hire. All the top talent has already been snagged by the two main superhero agencies Y-Men and Z-Men, and the rest didn't make the cut. The potential students who are still available may have very interesting superpowers, but there's always a catch. One of them can turn invisible but only in the dark, another has the power of telepathy but she can only speak with fruits, and so on. There's no time to introduce them all now, but you'll get acquainted very soon.
+ 
+Your first mission is to find out who is the applicant with the most potential. You will have a list of names associated with their score, find out who has the best score. However, your list is a bit outdated: all mutants strictly above a certain threshold have withdrawn their application because they joined Y-Men and Z-Men directly.
+ 
+Who is the mutant with the highest score below the threshold? The answer is guaranteed to be unique.
+ 
+EXAMPLE:
+In the first testcase, there are three mutants under the threshold of 200:
+Quicksnail, with a score of 140
+Magnetoast, with a score of 157
+Captain Confetti, with a score of 87
+
+The best among these mutants is Magnetoast since they have the highest score. In this case, your code should return the string "Magnetoast".

@@ -252,6 +252,17 @@ return [
                 'codegolf_expert_music-scores',
                 'codegolf_expert_the-resistance',
             ],
+            'puzzle/cg/event/' => [
+                'event_summer-challenge-2023-q01',
+                // 'event_summer-challenge-2023-q02',       // SQL puzzle
+                'event_summer-challenge-2023-q03',
+                'event_summer-challenge-2023-q05',
+                // 'event_summer-challenge-2023-q06',       // SQL puzzle
+                'event_summer-challenge-2023-q10',          // only tests 01-07 are included
+                'event_winter-challenge-2023-q01',
+                'event_winter-challenge-2023-q06',          // only tests 01-10 are included
+                'event_winter-challenge-2023-q07',          // only tests 01-07 are included
+            ],
             'puzzle/cg/easy/' => [
                 // 'easy_cg_ascii-art',                     // also in global section
                 'easy_cg_defibrillators',
@@ -506,6 +517,7 @@ return [
                 'easy_com_wordle-colorizer',
                 'easy_com_ww2-mortar-warfare',
                 'easy_com_xml-mdf-2016',
+                'easy_com_you-are-the-father-maury-povich-style',
                 'easy_com_zhiwei-sun-squares',
             ],
             'puzzle/community/medium/' => [
@@ -1015,6 +1027,16 @@ return [
             'puzzle/cg/' => [
                 // 'tutorial_onboarding',                   // also in global section
             ],
+            'puzzle/cg/event/' => [
+                'event_summer-challenge-2023-q04',
+                'event_summer-challenge-2023-q07',
+                'event_summer-challenge-2023-q08',          // only tests 01-06 are included
+                'event_summer-challenge-2023-q09',
+                'event_winter-challenge-2023-q02',
+                'event_winter-challenge-2023-q03',
+                'event_winter-challenge-2023-q04',
+                'event_winter-challenge-2023-q05',
+            ],
             'puzzle/cg/easy/' => [
                 // 'easy_cg_mars-lander-episode-1',         // also in global section
                 // 'easy_cg_power-of-thor-episode-1',       // also in global section
@@ -1077,6 +1099,7 @@ return [
         // == Exclude these puzzles from testing in php, if the required php extension is not available:
         'excludePuzzles' => array_merge(
             !extension_loaded('bcmath') ? [
+                'easy_com_fibonaccis-rabbit',
                 'medium_com_christmas-tree',
                 'medium_com_gravity-centrifuge-tuning',
                 'medium_com_oneway-city',
@@ -1138,4 +1161,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.08.28: 'easy_com_what-is-your-garden-worth',
+// Note: last puzzle added on 23.09.10: 'easy_com_you-are-the-father-maury-povich-style',

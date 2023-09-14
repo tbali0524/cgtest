@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - All public test cases for easy puzzles added.
 - Statement texts for most easy and medium puzzles added.
+- Test cases for Winter & Summer Challenge 2023 added.
 
 ### Changed
 

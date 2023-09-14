@@ -1,0 +1,2 @@
+{"RuneFlare":469,"AcidSurge":694,"SentinelEye":956,"RuneBender":731,"VenomHeart":708,"SeraphBender":837,"VortexBlade":548,"ThunderSurge":223,"WarpFire":877,"AuroraMaster":859,"PsychoBolt":292,"IceScream":753,"StormGlow":321,"IronClaw":994,"SentinelShade":906,"IronFlare":561,"VortexBolt":299,"SentinelBreath":674,"PyroStrike":365,"RazorSight":122}
+831

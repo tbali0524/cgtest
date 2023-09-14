@@ -1,0 +1,5 @@
+5
+{"1":69,"4":74}
+{"0":73,"2":59,"3":62,"4":59}
+[{"mutant":"1","squad":"Y-Men","priority":61},{"mutant":"2","squad":"Y-Men","priority":72},{"mutant":"3","squad":"Z-Men","priority":76},{"mutant":"4","squad":"Y-Men","priority":57}]
+[{"friend1":"0","friend2":"2","strength":72},{"friend1":"0","friend2":"4","strength":59},{"friend1":"2","friend2":"4","strength":64},{"friend1":"1","friend2":"2","strength":56},{"friend1":"0","friend2":"3","strength":94},{"friend1":"1","friend2":"4","strength":94},{"friend1":"2","friend2":"3","strength":65}]

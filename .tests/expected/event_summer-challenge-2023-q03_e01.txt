@@ -1,0 +1,1 @@
+"Name=Adam;Age=17;Power=Can turn anything into candy;Score=133\nName=John;Age=15;City=NYC;Power=Telepathy;Score=283.5\nName=Mary;Age=16;Power=Glows in the dark;Team=Basketball"

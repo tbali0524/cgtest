@@ -1,0 +1,5 @@
+3
+{"0":80}
+{"0":64,"1":64}
+[{"mutant":"0","squad":"Y-Men","priority":76},{"mutant":"1","squad":"Y-Men","priority":69},{"mutant":"2","squad":"Z-Men","priority":64}]
+[{"friend1":"1","friend2":"2","strength":30},{"friend1":"0","friend2":"2","strength":34}]

@@ -1,0 +1,1 @@
+["Name=John;Age=15;Power=Telepathy\nName=Mary;Age=16;Power=Glows in the dark;Team=Basketball","Name=Adam;Age=17;Score=133;Power=Can turn anything into candy\nName=John;Score=283.5;City=NYC"]

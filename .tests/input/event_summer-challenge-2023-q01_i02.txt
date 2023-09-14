@@ -1,0 +1,2 @@
+{"PhoenixSurge":178,"BloodMaster":192,"RuneHeart":156,"InfernoBlade":173,"AcidTalon":16,"BlazeThorn":165,"ToadZilla":71,"EchoGazer":237,"PyroWind":255,"WarpBolt":180}
+100

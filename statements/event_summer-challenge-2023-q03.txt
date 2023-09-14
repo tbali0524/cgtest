@@ -1,0 +1,50 @@
+Summer Challenge 2023
+Question 3 / 10
+
+event_summer-challenge-2023-q03
+https://www.codingame.com/contests/summer-challenge-2023
+
+by CodinGame
+
+It's finally the day of admissions, today you'll be welcoming hundreds of mutants in your academy!
+ 
+There are multiple data sources (recruitment agents, registration forms, ...) providing information about your students, and you would like to consolidate everything in a single file for administrative purposes.
+ 
+Thankfully, each input file has been pre-converted to a common format, you just need to merge all of them.
+ 
+The file format is organized in key/value pairs, with each line corresponding to a single student. Here's an example showing the format:
+ 
+Name=John;Age=15;Power=Telepathy
+Name=Mary;Age=16;Power=Glows in the dark;Team=Basketball
+ 
+You will receive a list with the contents of several such files, and you need to produce a single file gathering everything they contain about each student.
+ 
+You have a few guarantees on the input data:
+
+Each mutant can be uniquely identified by their name.
+Each line will contain the "Name" field.
+There may be redundant information between files, but they will never contradict each other.
+Keys and values can contain any printable ASCII characters except "=", ";" and line breaks (which are all used as separators)
+
+Your output file should be formatted in the following way:
+All mutants are sorted lexicographically by name.
+The first field for each mutant is "Name", then all other fields lexicographically by key.
+Note that these two constraints will not necessarily be respected by the input files.
+
+CONSTRAINTS:
+There will be at most 100 files
+The total length of files is at most 1 million characters
+
+EXAMPLE:
+Let's assume you receive the following files.
+File 1:
+Name=John;Age=15;Power=Telepathy
+Name=Mary;Age=16;Power=Glows in the dark;Team=Basketball
+File 2:
+Name=Adam;Age=17;Score=133;Power=Can turn anything into candy
+Name=John;Score=283.5;City=NYC
+
+Following the merging rules, the resulting file should contain exactly the following:
+Name=Adam;Age=17;Power=Can turn anything into candy;Score=133
+Name=John;Age=15;City=NYC;Power=Telepathy;Score=283.5
+Name=Mary;Age=16;Power=Glows in the dark;Team=Basketball

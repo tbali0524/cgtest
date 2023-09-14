@@ -1,0 +1,34 @@
+Summer Challenge 2023
+Question 2 / 10
+
+event_summer-challenge-2023-q02
+https://www.codingame.com/contests/summer-challenge-2023
+
+by CodinGame
+
+Recruitment season is coming to an end, and you're finally ready to send offers to the best mutant candidates.
+ 
+None of this could have happened without your agents in charge of recruitment, and you would like to thank them personally by sending a gift to the most productive recruiters.
+ 
+You have a simple SQL database containing information about your recruiters and candidates, and your goal is to establish the top 10 ranking of recruiters (the ones who recruited the most mutants).
+
+Your output should look like this:
+----------------------------------
+| NAME                   | SCORE |
+----------------------------------
+| Lucius Steelgrave      | 57    |
+| Seraphina Moon         | 51    |
+| Thrumble the Behemoth  | 48    |
+| Ezekiel Ember          | 46    |
+| Xandra Bloodhowl       | 35    |
+| Valerian Thornblade    | 33    |
+| Xander Stoneheart      | 31    |
+| Donovan Blaze          | 28    |
+| Cassandra Wynter       | 26    |
+| Magnus Ironclad        | 20    |
+----------------------------------
+The first column is the agent's name, and the second column is the number of mutants who have been recruited by that agent. You should only output the 10 best recruiters, in descending order.
+ 
+It is guaranteed that there will be no ties in the score.
+ 
+This exercise uses a H2 (JDBC) database, which supports all the ANSI SQL syntax. Don't hesitate to use online resources if you need help.

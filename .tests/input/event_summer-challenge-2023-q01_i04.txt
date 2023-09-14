@@ -1,0 +1,2 @@
+{"AvalancheFang":967,"ThunderStrike":766,"RadiantMaster":1158,"RuneBlade":757,"WarpEye":1054,"RadiantBreath":850,"PhoenixFire":1111,"LunarFang":866,"RuneTalon":997,"RadiantWing":808,"MutAntelope":682,"EmberEye":1127,"GlacierFlare":813,"LunarScale":965,"EclipseEye":1013,"NovaGazer":952,"CrystalClaw":773,"StormKinetic":895,"RuneWind":904,"SilverWind":1058,"SeraphFang":810,"EclipseKinetic":814,"QuakeScale":864,"QuakeSurge":1028,"CrystalKinetic":765,"StormCaster":826,"PsychoBolt":909,"CrystalWind":875,"VoidWing":1068,"NebulaTalon":1165}
+750

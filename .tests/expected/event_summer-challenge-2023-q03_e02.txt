@@ -1,0 +1,1 @@
+"Name=BloodClaw;Age=14\nName=EchoBlade;Power=Geomorph;Test score=576.05\nName=EclipseKinetic;Age=14;Power=Hydroblast;Test score=551.88\nName=EmberBreath;Age=18;Test score=310.78\nName=FrostKinetic;Age=22;Test score=525.6\nName=ShadowShade;Power=Geomorph\nName=TempestSight;Age=17;Power=Biomimicry;Test score=725.27\nName=WhirlMaster;Age=21"
