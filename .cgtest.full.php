@@ -38,8 +38,9 @@ return [
     //     %t testIndex [01..99]
     // == Tests will be run in the following languages:
     //      Note: can be overriden via the '--lang=...' command-line option
-    'languages' => [
-        // 'bash',          // uncomment on Linux
+    'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
+        'bash',
+    ] : [], [
         'c',
         'c#',
         'c++',
@@ -70,7 +71,7 @@ return [
         // 'cobol',         // untested
         'fortran',
         // 'r',             // untested
-    ],
+    ]),
     // == Tests will be run for the following puzzles in ALL languages
     //      Note: can be overriden via command-line or in the per-language 'excludePuzzles' sections
     // 'puzzles' => [
@@ -440,6 +441,7 @@ return [
                 'easy_com_parse-sql-queries',
                 'easy_com_personal-best',
                 'easy_com_pirates-treasure',
+                'easy_com_popularity-of-each-activity',
                 'easy_com_prefix-code',
                 'easy_com_probability-for-dummies',
                 'easy_com_random-walk',
@@ -458,6 +460,7 @@ return [
                 'easy_com_rotating-arrows',
                 'easy_com_rugby-score',
                 'easy_com_saving-snoopy',
+                'easy_com_score-a-bridge-deal',
                 'easy_com_self-driving-car-testing',
                 // 'easy_com_sentence-tokenising',          // removed puzzle, unavailable
                 'easy_com_shadow-casting',
@@ -502,11 +505,13 @@ return [
                 'easy_com_treasure-hunt',
                 'easy_com_tree-paths',
                 'easy_com_tricky-number-verifier',
+                'easy_com_ukuleleguitar-converter',
                 'easy_com_ulam-spiral',
                 'easy_com_unique-prefixes',
                 // 'easy_com_unit-fractions',               // also in global section
                 'easy_com_van-ecks-sequence',
                 'easy_com_vectors-in-variables-dimensions',
+                'easy_com_video-assistant-referee',
                 'easy_com_video-comments',
                 'easy_com_walk-on-a-die',
                 'easy_com_what-is-your-garden-worth',
@@ -1161,4 +1166,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.09.10: 'easy_com_you-are-the-father-maury-povich-style',
+// Note: last puzzle added on 23.09.19: 'easy_com_popularity-of-each-activity',

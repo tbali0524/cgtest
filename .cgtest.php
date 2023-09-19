@@ -38,8 +38,9 @@ return [
     //     %t testIndex [01..99]
     // == Tests will be run in the following languages:
     //      Note: can be overriden via the '--lang=...' command-line option
-    'languages' => [
-        // 'bash',          // uncomment on Linux
+    'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
+        'bash',
+    ] : [], [
         'c',
         'c#',
         'c++',
@@ -70,7 +71,7 @@ return [
         // 'cobol',         // untested
         'fortran',
         // 'r',             // untested
-    ],
+    ]),
     // == Tests will be run for the following puzzles in ALL languages
     //      Note: can be overriden via command-line or in the per-language 'excludePuzzles' sections
     // 'puzzles' => [

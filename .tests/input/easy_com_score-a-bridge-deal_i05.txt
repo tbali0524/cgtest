@@ -1,0 +1,6 @@
+5
+NV 4S 11
+V 3NT 9
+NV 5C 13
+V 6NT 13
+NV 7D 13

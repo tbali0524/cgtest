@@ -1,0 +1,2 @@
+No player in an offside position.
+VAR: ONSIDE!
