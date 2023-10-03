@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.9.0
+ * CGTest v1.10.0
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2023, by Balint Toth [TBali]
@@ -22,7 +22,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.9.0';
+$version = 'v1.10.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -203,7 +203,7 @@ $defaultConfig = [
     'groovy' => [
         'sourcePath' => 'groovy/',
         'sourceExtension' => '.groovy',
-        'codinGameVersion' => 'Groovy Version: 3.0.8 JVM: 11.0.2',
+        'codinGameVersion' => 'Groovy Version: 3.0.8 JVM: 17.0.8',
         'versionCommand' => 'groovy --version',
         'buildCommand' => '',
         'runCommand' => 'groovy %s',
@@ -225,7 +225,7 @@ $defaultConfig = [
     'java' => [
         'sourcePath' => 'java/',
         'sourceExtension' => '.java',
-        'codinGameVersion' => 'openjdk 11.0.2',
+        'codinGameVersion' => 'openjdk 17.0.8',
         'versionCommand' => 'java --version',
         'buildCommand' => '',
         'runCommand' => 'java %s',
@@ -243,7 +243,7 @@ $defaultConfig = [
     'kotlin' => [
         'sourcePath' => 'kotlin/',
         'sourceExtension' => '.kt',
-        'codinGameVersion' => 'kotlinc-jvm 1.7.10 (JRE 11.0.2+9)',
+        'codinGameVersion' => 'kotlinc-jvm 1.7.10 (JRE 17.0.8+9)',
         'versionCommand' => 'kotlinc -version',
         'buildCommand' => 'kotlinc -include-runtime -d %b%p_%l.jar %s',
         'runCommand' => 'java -jar %b%p_%l.jar',
@@ -312,7 +312,7 @@ $defaultConfig = [
     'python' => [
         'sourcePath' => 'python/',
         'sourceExtension' => '.py',
-        'codinGameVersion' => 'Python 3.9.12',
+        'codinGameVersion' => 'Python 3.11.5',
         'versionCommand' => 'python --version',
         'buildCommand' => '',
         'runCommand' => 'python %s',
@@ -330,9 +330,9 @@ $defaultConfig = [
     'rust' => [
         'sourcePath' => 'rust/',
         'sourceExtension' => '.rs',
-        'codinGameVersion' => 'rustc 1.60.0',
+        'codinGameVersion' => 'rustc 1.70.0',
         'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc %s -o%b%p_%l.exe',
+        'buildCommand' => 'rustc -O --edition 2021 %s -o%b%p_%l.exe',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => [
             '%b%p_%l.exe',

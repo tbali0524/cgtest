@@ -1,6 +1,6 @@
 # `statements` directory
 
-This directory contains the puzzle statement texts of hard and expert difficulty CodinGame solo puzzles (official and community).
+This directory contains the puzzle statement texts of almost all CodinGame solo puzzles (official and community).
 
 This is included to allow you using full-text search locally.
 

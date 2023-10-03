@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.9.0 - configuration file
+ * CGTest v1.10.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2023, by Balint Toth [TBali]
@@ -444,6 +444,7 @@ return [
                 'easy_com_popularity-of-each-activity',
                 'easy_com_prefix-code',
                 'easy_com_probability-for-dummies',
+                'easy_com_queen-control',
                 'easy_com_random-walk',
                 'easy_com_rectangle-partition',
                 'easy_com_rectangular-block-spinner',
@@ -692,6 +693,7 @@ return [
                 'medium_com_lunar-lockout',
                 'medium_com_magic-square',
                 'medium_com_magic-stones',
+                'medium_com_markov-ants',
                 'medium_com_maximum-sub-sequence',
                 'medium_com_maze-for-the-champions',
                 'medium_com_maze-w-teleporters-and-jumps',
@@ -881,6 +883,7 @@ return [
                 'hard_com_mars-colonization',
                 'hard_com_maximising-integers',
                 'hard_com_max-rect',
+                'hard_com_mind-cracker',
                 'hard_com_mini-sudoku-solver',
                 'hard_com_misere-nim',
                 'hard_com_monte-carlo-tree-search-exercise',
@@ -1166,4 +1169,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.09.19: 'easy_com_popularity-of-each-activity',
+// Note: last puzzle added on 23.09.28: 'easy_com_queen-control',

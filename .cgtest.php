@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.9.0 - configuration file
+ * CGTest v1.10.0 - configuration file
  *
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  * (c) 2023, by Balint Toth [TBali]
@@ -132,9 +132,9 @@ return [
     'rust' => [
         'sourcePath' => 'rust/',
         'sourceExtension' => '.rs',
-        'codinGameVersion' => 'rustc 1.60.0',
+        'codinGameVersion' => 'rustc 1.70.0',
         'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc %s -o%b%p_%l.exe',
+        'buildCommand' => 'rustc -O --edition 2021 %s -o%b%p_%l.exe',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => [
             '%b%p_%l.exe',

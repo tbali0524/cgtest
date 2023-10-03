@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Nothing yet
+
+### Changed
+
+- Nothing yet
+
+### Fixed
+
+- Nothing yet
+
+## [v1.10.0](https://github.com/tbali0524/cgtest/releases/v1.10.0) - 2023-10-03
+
+### Added
+
 - All public test cases for easy puzzles added.
 - Statement texts for most easy and medium puzzles added.
 - Test cases for Winter & Summer Challenge 2023 added.
@@ -16,10 +30,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Tweak in sample config files: bash enabled if OS is not Windows
-
-### Fixed
-
-- Nothing yet
+- Info updated about CG supported language versions in the `--lang-versions` output.
+- Rust default compiler settings changed to include `-O --edition 2021`.
 
 ## [v1.9.0](https://github.com/tbali0524/cgtest/releases/v1.9.0) - 2023-07-17
 
