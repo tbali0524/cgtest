@@ -1,0 +1,13 @@
+2
+All alcohol: 5 for the price of 4
+All cubi: 2 for the price of 1
+9
+champagne alcohol franc 50.00
+wine alcohol franc 19.00
+wine alcohol franz 17.00
+wine alcohol cubi 15.00
+wine alcohol cubi 15.00
+beer alcohol cubi 8.00
+beer alcohol cubi 8.00
+car toys cubi 1.00
+car toys cubi 1.00

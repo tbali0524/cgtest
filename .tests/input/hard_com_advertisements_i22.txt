@@ -1,0 +1,64 @@
+12
+All healu: 5 for the price of 3
+All dirzy: 2 for the price of 3
+All cleen: 2 for the price of 1
+All biohazard: 2 for the price of 4
+All farmo: 4 for the price of 2
+All carrot: 3 for the price of 2
+All fruit: 2 for the price of 1
+All sigarettes: 2 for the price of 3
+All eggplant: 2 for the price of 1
+All healthcare: 5 for the price of 4
+All seafood: 4 for the price of 2
+All pepper: 5 for the price of 4
+50
+potato vegetables agrio 0.75
+zucchini vegetables farmo 1.25
+powerjuice drinks cleen 2.00
+tilapia seafood seamo 6.00
+pear fruit agrio 0.35
+mercury skincare biohazard 12.00
+shampoo healthcare cleen 7.50
+tilapia seafood seamo 6.00
+zucchini vegetables farmo 1.25
+perch seafood biohazard 12.00
+carrot vegetables agrio 0.50
+pepper vegetables agrio 0.50
+tilapia seafood biohazard 8.00
+apple fruit agrio 0.20
+salad meals healu 2.25
+potato vegetables agrio 0.75
+carrot vegetables agrio 0.50
+carrot vegetables agrio 0.50
+soap healthcare cleen 4.00
+shampoo healthcare cleen 7.50
+salmon seafood seamo 22.00
+carrot vegetables agrio 0.50
+zucchini vegetables farmo 1.25
+banana fruit agrio 0.10
+zucchini vegetables farmo 1.25
+shampoo healthcare franc 9.00
+shampoo healthcare franc 9.00
+sigarettes smokeware dirzy 3.00
+banana fruit agrio 0.10
+smoothie drinks healu 1.50
+zucchini vegetables farmo 1.25
+sigarettes smokeware fireme 2.00
+carrot vegetables agrio 0.50
+apple fruit agrio 0.20
+sigarettes smokeware molbarrow 4.00
+sigarettes smokeware fireme 2.00
+lighter smokeware dirzy 4.00
+pepper vegetables agrio 0.50
+perfume healthcare franc 30.00
+potato vegetables agrio 0.75
+powerjuice drinks cleen 2.00
+pepper vegetables agrio 0.50
+pepper vegetables agrio 0.50
+pepper vegetables agrio 0.50
+tuna seafood biohazard 10.00
+smoothie drinks healu 1.50
+sigarettes smokeware molbarrow 4.00
+salad meals healu 2.25
+salmon seafood seamo 22.00
+soap healthcare cleen 4.00

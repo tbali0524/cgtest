@@ -1,0 +1,25 @@
+3
+All milk: 2 for the price of 1
+All farmo: 5 for the price of 4
+All supplements: 2 for the price of 1
+20
+pineapple fruits farmo 5.00
+potatoes vegetables farmo 2.00
+strawberry fruits farmo 3.00
+potatoes vegetables farmo 2.00
+vitaminC supplements healyou 6.00
+vitaminD supplements healyou 7.00
+tomatoes vegetables farmo 1.50
+tomatoes vegetables farmo 1.50
+milk dairy holland 2.00
+milk dairy holland 2.00
+yoghurt dairy cowdy 2.50
+brownbread bakery back 1.50
+brownbread bakery back 1.50
+croissant bakery heinn 1.50
+croissant bakery heinn 1.50
+oranges fruits farmo 3.00
+oranges fruits farmo 3.00
+fruitjuice drinks juime 4.00
+watermelon fruits farmo 6.00
+potatoes vegetables farmo 2.00

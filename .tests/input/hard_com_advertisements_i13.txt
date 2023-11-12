@@ -1,0 +1,26 @@
+4
+All nuut: 4 for the price of 3
+All cheeseplatter: 3 for the price of 1
+All snacks: 3 for the price of 2
+All desserts: 10 for the price of 6
+20
+icecream desserts brainfreeze 4.05
+bonbons desserts chocoholic 4.25
+yoghurt desserts holland 2.00
+custard desserts holland 3.40
+cheeseplatter desserts gauda 10.95
+cheeseplatter desserts gauda 10.95
+cheeseplatter desserts gauda 10.95
+cheeseplatter desserts gauda 10.95
+mousse desserts cats 3.89
+icecake desserts brainfreeze 5.90
+miniyoghurt desserts supermarche 2.50
+cream desserts fatboy 3.25
+icecream desserts brainfreeze 4.05
+nuts snacks nuut 3.50
+nuts snacks nuut 3.50
+nuts snacks nuut 3.50
+chips snacks sunchips 2.50
+borrelnuts snacks nuut 2.95
+potatoes veggies farmo 1.50
+tomatoes veggies farmo 1.95

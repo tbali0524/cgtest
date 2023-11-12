@@ -1,0 +1,10 @@
+2
+All sharkfins: 2 for the price of 3
+All biohazard: 2 for the price of 3
+6
+sharkfins seafood chio 18.00
+sharkfins seafood jappo 11.00
+sharkfins seafood biohazard 15.00
+sharkfins seafood finny 22.00
+sharkfins seafood yappo 9.00
+whaleoil seafood biohazard 20.00

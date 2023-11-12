@@ -1,0 +1,11 @@
+A FFFFEEEEE
+B F       E
+B F GGGGG E
+B F G   G E
+B F G H G E
+C F G G G E
+C F GGG G E
+C F     G E
+C FFFFFGG E
+C         D
+CCDDDDDDDDD

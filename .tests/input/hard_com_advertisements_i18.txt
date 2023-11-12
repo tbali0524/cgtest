@@ -1,0 +1,10 @@
+2
+All bakery: 2 for the price of 1
+All delicio: 2 for the price of 3
+6
+applepie bakery hein 10.00
+applepie bakery hein 10.00
+carrotcake bakery delicio 5.00
+carrotcake bakery hein 4.00
+bread bakery hein 2.00
+olives snackfood delicio 5.00

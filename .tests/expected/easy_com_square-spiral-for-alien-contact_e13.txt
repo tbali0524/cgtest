@@ -1,0 +1,21 @@
+PPPPPPOOOOOOOOOOOON Z
+P                 N Y
+P KKKKKKKKJJJJJJJ N Y
+P K             J N X
+P K HHHHHHHHHHG J N X
+P K H         G J N X
+Q K H FFFFFFF G J N W
+Q K H F     F G J N W
+Q K H F EEE F G J N W
+Q K H F E E F G J N W
+Q K H F E E F G J N V
+Q L H F E   F G J N V
+Q L H F EEFFF G J N V
+Q L H G       G I M V
+Q L I GGGGGGGGG I M V
+Q L I           I M U
+R L IIIIIIIIIIIII M U
+R L               M U
+R LLLLLLLLMMMMMMMMM U
+R                   U
+RRRRRSSSSSSSSTTTTTTTU

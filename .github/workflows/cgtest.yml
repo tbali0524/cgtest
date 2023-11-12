@@ -7,7 +7,7 @@ jobs:
     name: Run solutions with CGTest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # =========================================================================
       # Add missing languages, matching the version at Codingame

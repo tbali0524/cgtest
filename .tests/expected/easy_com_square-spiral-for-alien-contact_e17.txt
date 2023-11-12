@@ -1,0 +1,17 @@
+NNNOOOOOOOOOOOOOO
+N               O
+N RRRRRSSSSSSSS O
+N R           S P
+N R VVVVVVVWW S P
+N R V       W S P
+N R V YYYYZ W S P
+N R U Y   Z W T P
+N R U Y ZZZ W T P
+N R U X     W T P
+N R U XXXXXXW T P
+N Q U         T P
+N Q UUUUUTTTTTT P
+N Q             P
+N QQQQQQQQQQQPPPP
+M                
+MMMMMMMMMMMMMMMMM

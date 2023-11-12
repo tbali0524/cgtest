@@ -1,0 +1,15 @@
+MMMMMMMLLLLLLLK
+M             K
+N RRRRRQQQQQQ K
+N R         Q K
+N R TTTTTTT Q K
+N R T     T Q K
+N R T UUU T Q J
+N R T U U T Q J
+N R T U U S Q J
+N R T   U S P J
+N R UUUUU S P J
+O S       S P I
+O SSSSSSSSS P I
+O           P I
+OOOOOOOPPPPPP I

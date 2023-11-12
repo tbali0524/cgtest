@@ -129,22 +129,22 @@ return [
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
     // == Example (not really needed here, as these are the default settings for rust):
-    'rust' => [
-        'sourcePath' => 'rust/',
-        'sourceExtension' => '.rs',
-        'codinGameVersion' => 'rustc 1.70.0',
-        'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc -O --edition 2021 %s -o%b%p_%l.exe',
-        'runCommand' => '%b%p_%l.exe',
-        'cleanPatterns' => [
-            '%b%p_%l.exe',
-            '%b%p_%l.pdb',
-        ],
-        'excludePuzzles' => [
-        ],
-        'includePuzzles' => [
-        ],
-        'runOnlyPuzzles' => [
-        ],
-    ],
+    // 'rust' => [
+    //     'sourcePath' => 'rust/',
+    //     'sourceExtension' => '.rs',
+    //     'codinGameVersion' => 'rustc 1.70.0',
+    //     'versionCommand' => 'rustc --version',
+    //     'buildCommand' => 'rustc -C opt-level=3 --edition 2021 %s -o%b%p_%l.exe',
+    //     'runCommand' => '%b%p_%l.exe',
+    //     'cleanPatterns' => [
+    //         '%b%p_%l.exe',
+    //         '%b%p_%l.pdb',
+    //     ],
+    //     'excludePuzzles' => [
+    //     ],
+    //     'includePuzzles' => [
+    //     ],
+    //     'runOnlyPuzzles' => [
+    //     ],
+    // ],
 ];

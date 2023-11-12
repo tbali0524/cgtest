@@ -1,0 +1,21 @@
+GFFFFFFFFFFFFFFFFFFFF
+G                   F
+G HHHHHHHHHHHHHHHHH F
+G H               H F
+G H JJJJJJJJJJJJJ H F
+G H J           J H F
+G H J KKKKKKKKK J H F
+G I J K       K I H F
+G I J K LLLLL K I H F
+G I J K L   L K I H F
+G I J K L L L K I H F
+G I J K L L L K I H F
+G I J K LLL K K I H F
+G I J K     K K I H F
+G I J KKKKKKK K I H F
+G I J         K I H F
+G I JJJJJJJJJJK I H F
+G I             I H F
+G IIIIIIIIIIIIIII H F
+G                 H F
+GGGGGGGGGGGGGGGGGGG F

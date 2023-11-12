@@ -332,7 +332,7 @@ $defaultConfig = [
         'sourceExtension' => '.rs',
         'codinGameVersion' => 'rustc 1.70.0',
         'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc -O --edition 2021 %s -o%b%p_%l.exe',
+        'buildCommand' => 'rustc -C opt-level=3 --edition 2021 %s -o%b%p_%l.exe',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => [
             '%b%p_%l.exe',
@@ -582,10 +582,10 @@ if ($argConfigFileName != '') {
         exit(2);
     }
     echo $infoTag . 'Using configuration file: ' . $argConfigFileName . PHP_EOL;
-    $configFromFile = require_once $argConfigFileName;
+    $configFromFile = include_once $argConfigFileName;
 } elseif (file_exists($defaultConfigFileName)) {
     echo $infoTag . 'Using configuration file: ' . $defaultConfigFileName . PHP_EOL;
-    $configFromFile = require_once $defaultConfigFileName;
+    $configFromFile = include_once $defaultConfigFileName;
 }
 // --------------------------------------------------------------------
 // merge default config, config from config file and command-line arguments
@@ -1348,7 +1348,7 @@ foreach ($config['languages'] as $language) {
                     = max($puzzleStats[$puzzleName]['countSkippedTests'], $countSkippedTestsForFile);
                 if ($runOnlyCurrentPuzzle) {
                     $puzzleStats[$puzzleName]['countRunOnlyTests']
-                    = max($puzzleStats[$puzzleName]['countRunOnlyTests'], $countTestsForFile);
+                        = max($puzzleStats[$puzzleName]['countRunOnlyTests'], $countTestsForFile);
                 }
             }
             if ($config['dry-run']) {

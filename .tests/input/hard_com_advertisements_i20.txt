@@ -1,0 +1,12 @@
+2
+All seafood: 4 for the price of 2
+All biohazard: 2 for the price of 3
+8
+salmon seafood seamo 20.00
+salmon seafood seamo 20.00
+perch seafood biohazard 18.00
+tuna seafood biohazard 8.00
+tilapia seafood biohazard 6.00
+tilapia seafood seamo 4.00
+tilapia seafood seamo 5.00
+mercury skincare biohazard 9.00

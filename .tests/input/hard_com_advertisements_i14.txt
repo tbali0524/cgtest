@@ -1,0 +1,17 @@
+2
+All water: 2 for the price of 1
+All drinks: 5 for the price of 2
+13
+water drinks sourced 3.00
+water drinks sourced 3.00
+water drinks sourced 3.00
+water drinks medio 1.50
+water drinks basic 1.00
+water drinks basic 1.00
+water drinks basic 1.00
+water drinks basic 1.00
+water drinks sourced 3.00
+water drinks sourced 3.00
+water drinks sourced 3.00
+water drinks basic 1.00
+water drinks basic 1.00

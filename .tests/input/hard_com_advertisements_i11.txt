@@ -1,0 +1,64 @@
+12
+All bread: 2 for the price of 1
+All bacon: 2 for the price of 1
+All wheat: 2 for the price of 1
+All milk: 2 for the price of 1
+All carrot: 2 for the price of 1
+All potato: 2 for the price of 1
+All chips: 2 for the price of 1
+All yoghurt: 2 for the price of 1
+All tablesalt: 2 for the price of 1
+All nuts: 2 for the price of 1
+All mushroom: 2 for the price of 1
+All cakemix: 2 for the price of 1
+50
+bread bonus ownbrand 1.00
+bread bonus ownbrand 1.00
+bread bonus ownbrand 1.00
+bread bonus ownbrand 1.00
+bread bonus ownbrand 1.00
+bacon bonus ownbrand 1.00
+bacon bonus ownbrand 1.00
+bacon bonus ownbrand 1.00
+bacon bonus ownbrand 1.00
+bacon bonus ownbrand 1.00
+wheat bonus ownbrand 1.00
+wheat bonus ownbrand 1.00
+wheat bonus ownbrand 1.00
+wheat bonus ownbrand 1.00
+wheat bonus ownbrand 1.00
+milk bonus ownbrand 1.00
+milk bonus ownbrand 1.00
+milk bonus ownbrand 1.00
+milk bonus ownbrand 1.00
+milk bonus ownbrand 1.00
+carrot bonus ownbrand 1.00
+carrot bonus ownbrand 1.00
+carrot bonus ownbrand 1.00
+carrot bonus ownbrand 1.00
+carrot bonus ownbrand 1.00
+potato bonus ownbrand 1.00
+potato bonus ownbrand 1.00
+potato bonus ownbrand 1.00
+potato bonus ownbrand 1.00
+potato bonus ownbrand 1.00
+chips bonus ownbrand 1.00
+chips bonus ownbrand 1.00
+chips bonus ownbrand 1.00
+chips bonus ownbrand 1.00
+chips bonus ownbrand 1.00
+yoghurt bonus ownbrand 1.00
+yoghurt bonus ownbrand 1.00
+yoghurt bonus ownbrand 1.00
+yoghurt bonus ownbrand 1.00
+yoghurt bonus ownbrand 1.00
+tablesalt bonus ownbrand 1.00
+tablesalt bonus ownbrand 1.00
+tablesalt bonus ownbrand 1.00
+tablesalt bonus ownbrand 1.00
+nuts bonus ownbrand 1.00
+nuts bonus ownbrand 1.00
+mushroom bonus ownbrand 1.00
+mushroom bonus ownbrand 1.00
+cakemix bonus ownbrand 1.00
+cakemix bonus ownbrand 1.00

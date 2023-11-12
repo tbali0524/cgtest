@@ -1,0 +1,31 @@
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+A                              
+A CCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+A C                            
+A C EEEEEEEEEEEEEEEEEEEEEEEEEEE
+A C E                          
+A C E GGGGGGGGGGGGGGGGGGGGGGGGG
+A C E G                        
+A C E G IIIIIIIIIIIIIIIIIIIIIII
+A C E G I                      
+A C E G I KKKKKKKKKKKKKKKKKKKKK
+A C E G I K                    
+A C E G I K LLLLLLLLLLLLLLLLMMM
+A C E G I K L                  
+A C E G I K L NNNNNNNNNNNNNNNNN
+A C E G I K L N                
+A C E G I J L N OOOOOOOOOOOOOOO
+A C E G I J L N O              
+A C E G I J L N O PPQQQQQQQQQQQ
+A C E G I J L N O P            
+A C E G I J L N O P QQRRRRRRRRR
+A C E G I J L N O P Q         R
+A C E G I J L N O P Q RRRRRRR R
+A C E G I J L N O P Q R     R R
+A C E G I J L N O P Q R SSS R R
+A C E G I J L N O P Q R S S R R
+A C E G I J L N O P Q R S S R R
+A C E G I J L N O P Q R S   R R
+A C E G I J L N O P Q R SSRRR R
+A C E G I J L N O P Q R       R
+A C E G I J L N O P Q RRRRRRRRR

@@ -1,0 +1,22 @@
+4
+All textile: 5 for the price of 4
+All yoghurt: 2 for the price of 1
+All seaman: 2 for the price of 1
+All holdaria: 2 for the price of 1
+16
+cheeseplatter desserts holdaria 10.95
+cheeseplatter desserts holdaria 10.95
+pants textile byuuti 60.00
+yoghurt desserts holdaria 2.00
+yoghurt desserts holdaria 2.00
+yoghurt desserts farmero 1.00
+yoghurt desserts farmero 1.00
+socks footwear seaman 1.00
+socks footwear seaman 1.00
+boxershort textile seaman 6.00
+boxershort textile seaman 6.00
+tshirt textile byuuti 10.00
+tshirt textile byuuti 10.00
+tshirt textile seaman 8.00
+tshirt textile seaman 8.00
+custard desserts holdaria 3.40

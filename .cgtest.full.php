@@ -200,24 +200,24 @@ return [
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
     // == Example (not really needed here, as these are the default settings for rust):
-    'rust' => [
-        'sourcePath' => 'rust/',
-        'sourceExtension' => '.rs',
-        'codinGameVersion' => 'rustc 1.60.0',
-        'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc %s -o%b%p_%l.exe',
-        'runCommand' => '%b%p_%l.exe',
-        'cleanPatterns' => [
-            '%b%p_%l.exe',
-            '%b%p_%l.pdb',
-        ],
-        'excludePuzzles' => [
-        ],
-        'includePuzzles' => [
-        ],
-        'runOnlyPuzzles' => [
-        ],
-    ],
+    // 'rust' => [
+    //     'sourcePath' => 'rust/',
+    //     'sourceExtension' => '.rs',
+    //     'codinGameVersion' => 'rustc 1.70.0',
+    //     'versionCommand' => 'rustc --version',
+    //     'buildCommand' => 'rustc -C opt-level=3 --edition 2021 %s -o%b%p_%l.exe',
+    //     'runCommand' => '%b%p_%l.exe',
+    //     'cleanPatterns' => [
+    //         '%b%p_%l.exe',
+    //         '%b%p_%l.pdb',
+    //     ],
+    //     'excludePuzzles' => [
+    //     ],
+    //     'includePuzzles' => [
+    //     ],
+    //     'runOnlyPuzzles' => [
+    //     ],
+    // ],
     // == Additional test cases for a single language:
     'c++' => [
         'includePuzzles' => [
@@ -237,7 +237,7 @@ return [
             ],
             'codegolf/medium/' => [
                 'codegolf_medium_blunder-episode-1',
-                'codegolf_medium_dwarves-standing-on-the-shoulders-of-giants',
+                'codegolf_medium_dwarfs-standing-on-the-shoulders-of-giants',
                 'codegolf_medium_mayan-calculation',
                 'codegolf_medium_network-cabling',
                 'codegolf_medium_telephone-numbers',
@@ -275,7 +275,7 @@ return [
             'puzzle/cg/medium/' => [
                 'medium_cg_blunder-episode-1',
                 'medium_cg_conway-sequence',
-                'medium_cg_dwarves-standing-on-the-shoulders-of-giants',
+                'medium_cg_dwarfs-standing-on-the-shoulders-of-giants',
                 'medium_cg_mayan-calculation',
                 'medium_cg_network-cabling',
                 'medium_cg_scrabble',
@@ -475,6 +475,7 @@ return [
                 'easy_com_snail-run',
                 'easy_com_snake-sort-2d',
                 'easy_com_someones-acting-sus----',
+                'easy_com_square-spiral-for-alien-contact',
                 'easy_com_stall-tilt',
                 'easy_com_substitution-encoding',
                 'easy_com_sudoku-validator',
@@ -583,6 +584,7 @@ return [
                 'medium_com_christmas-tree',
                 'medium_com_circular-automation-the-period-of-chaos',
                 'medium_com_cistercian-numerals',           // removed puzzle
+                'medium_com_coastline',
                 'medium_com_code-breaker-puzzle',
                 'medium_com_complicated-interpreter',
                 'medium_com_condition-overshadowing',
@@ -729,6 +731,7 @@ return [
                 'medium_com_propositions-in-freges-ideography',
                 // 'medium_com_remaining-card',             // also in global section
                 // 'medium_com_reversed-look-and-say',      // also in global section
+                'medium_com_risk-odds-calculator',
                 // 'medium_com_rubik',                      // also in global section
                 'medium_com_quaternion-multiplication',
                 'medium_com_queneau-numbers',
@@ -807,6 +810,7 @@ return [
                 'hard_com_24-the-long-game',
                 'hard_com_3d-ascii-cube',                   // removed puzzle
                 'hard_com_7-segment-display',
+                'hard_com_advertisements',
                 'hard_com_alternative-vote',
                 'hard_com_apple-tree',
                 'hard_com_ascii-art-qr-code',
@@ -1169,4 +1173,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.09.28: 'easy_com_queen-control',
+// Note: last puzzle added on 23.10.23: 'medium_com_risk-odds-calculator',

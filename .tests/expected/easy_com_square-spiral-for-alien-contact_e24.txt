@@ -1,0 +1,31 @@
+X XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X X                            
+X X WWWWWWWWWWWWWWWWWWWWWWWWWWW
+X X W                          
+X X W VVVVVVVVVVVVVVVVVVVVVVVVV
+X X W V                        
+X X W V UUUUUUUUUUUUUUUUUUUUUUU
+X X W V U                      
+X X W V U UUUUUUUUUUUUUUUUUUUUU
+X X W V U U                    
+X X W V U U TTTTTTTTTTTTTTTTTTT
+X X W V U U T                  
+X X W V U U T SSSSSSSSSSSSSSSSS
+X X W V U U T S                
+X X W V U U T S RRRRRRRRRRRRRRR
+X X W V U U T S R              
+X X W V U U T S R RRRRRRRRRRRRR
+X X W V U U T S R R            
+X X W V U U T S R R QQQQQQQQQQQ
+X X W V U U T S R R Q          
+X X W V U U T S R R Q PPPPPPPPP
+X X W V U U T S R R Q P        
+X X W V U U T S R R Q P PPPPPPP
+X X W V U U T S R R Q P P      
+X X W V U U T S R R Q P P OOOOO
+X X W V U U T S R R Q P P O    
+X X W V U U T S R R Q P P O NNN
+X X W V U U T S R R Q P P O N  
+X X W V U U T S R R Q P P O N N
+X X W V U U T S R R Q P P O N N
+X X W V U U T S R R Q P P O N N

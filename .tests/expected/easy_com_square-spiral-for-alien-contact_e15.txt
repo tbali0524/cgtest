@@ -1,0 +1,19 @@
+ZZZZZZZZZZTTTTTTTTT
+                  T
+NNNNNHHHHHHHHHHHH T
+N               H T
+N HHHHBBBBBBBBB H T
+N H           B H T
+N H BBBBBBBBB B H T
+N H B       B B H T
+N H B BBBBB B B H T
+N H B B   B B B H T
+N H B B BBB B B H T
+N H B B     B B H T
+N H B BBBBBBB B H T
+N H B         B H T
+N H BBBBBBBBBBB H T
+N H             H T
+N HHHHHHHHHHHHHHH T
+N                 N
+NNNNNNNNNNNNNNNNNNN

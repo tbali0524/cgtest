@@ -1,0 +1,11 @@
+1
+All alcohol: 2 for the price of 4
+8
+beer alcohol alcoly 5.95
+redwine alcohol vino 12.95
+redwine alcohol vino 12.95
+redwine alcohol expenso 50.00
+redwine alcohol expenso 50.00
+redwine alcohol expenso 50.00
+redwine alcohol expenso 50.00
+redwine alcohol expenso 50.00

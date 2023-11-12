@@ -1,0 +1,16 @@
+3
+All powder: 2 for the price of 1
+All milk: 2 for the price of 1
+All delicio: 2 for the price of 1
+11
+chocolate powder hein 8.00
+chocolate powder hein 8.00
+milk powder hein 4.00
+protein powder delicio 3.00
+baking powder delicio 2.00
+milk drinks hein 8.00
+milk drinks hein 8.00
+milk drinks delicio 3.50
+milk drinks delicio 2.00
+olives snackfood delicio 1.00
+snacktomatoes snackfood delicio 1.00
