@@ -1,0 +1,2 @@
+Direction: -129i+14j-36k
+Distance: 134.66

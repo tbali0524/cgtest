@@ -1,0 +1,2 @@
+Direction: -3j+2k
+Distance: 21.63

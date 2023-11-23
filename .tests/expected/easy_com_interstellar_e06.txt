@@ -1,0 +1,2 @@
+Direction: -13236i+3817j-7636k
+Distance: 15750.23

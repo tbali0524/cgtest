@@ -1,0 +1,2 @@
+Direction: 132i-9j+k
+Distance: 132.31

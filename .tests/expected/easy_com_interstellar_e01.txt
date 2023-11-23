@@ -1,0 +1,2 @@
+Direction: -j+k
+Distance: 2.83

@@ -1,0 +1,2 @@
+Direction: -100i+155j+543k
+Distance: 573.48

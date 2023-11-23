@@ -1,0 +1,2 @@
+Direction: i+4j+k
+Distance: 4.24

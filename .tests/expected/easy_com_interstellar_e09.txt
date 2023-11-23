@@ -1,0 +1,2 @@
+Direction: 956i+4393j+3509k
+Distance: 5703.11

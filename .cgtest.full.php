@@ -358,6 +358,7 @@ return [
                 'easy_com_darts',
                 'easy_com_dead-mens-shot',
                 'easy_com_decode-the-message',
+                'easy_com_deus-hex-machina',
                 'easy_com_die-handedness',
                 'easy_com_digital-scoreboard',
                 'easy_com_disordered-first-contact',
@@ -392,6 +393,7 @@ return [
                 'easy_com_hunger-games',
                 'easy_com_in-stereo',
                 'easy_com_insert-to-string',
+                'easy_com_interstellar',
                 'easy_com_ipv6-shortener',
                 'easy_com_is-that-a-possible-word',
                 'easy_com_is-the-king-in-check-part-1',
@@ -1173,4 +1175,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.10.23: 'medium_com_risk-odds-calculator',
+// Note: last puzzle added on 23.11.23: 'easy_com_deus-hex-machina',
