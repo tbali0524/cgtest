@@ -1,0 +1,19 @@
+3
+Gender
+Age
+Town
+12
+Nina Female 27 Nantes
+Mehdi Male 61 Marseille
+Marius Male 6 Lyon
+Felix Male 20 Paris
+Leonard Male 57 Strasbourg
+Lila Female 74 Montpellier
+Victor Male 7 Toulouse
+Capucine Female 82 Nantes
+Faustine Female 27 Lyon
+Yanis Male 55 Lyon
+Clara Female 43 Toulouse
+Melissa Female 91 Lyon
+1
+Gender=Male AND Town=Lyon

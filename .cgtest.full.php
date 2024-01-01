@@ -1,10 +1,10 @@
 <?php
 
 /**
- * CGTest v1.10.0 - configuration file
- *
+ * CGTest v1.11.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- * (c) 2023, by Balint Toth [TBali]
+ *
+ * configuration file
  */
 
 declare(strict_types=1);
@@ -435,10 +435,12 @@ return [
                 'easy_com_no-more-pythons-please',
                 'easy_com_number-derivation',
                 'easy_com_number-formatting',
+                'easy_com_number-partition',
                 'easy_com_object-insertion',
                 'easy_com_offset-arrays',
                 'easy_com_order-of-succession',
                 'easy_com_organic-compounds',
+                'easy_com_panel-count',
                 'easy_com_park-pilot',
                 'easy_com_parse-sql-queries',
                 'easy_com_personal-best',
@@ -560,6 +562,7 @@ return [
                 'medium_com_battle-tower',
                 'medium_com_beach-volleyball',
                 'medium_com_bijective-numeration',
+                'medium_com_bin-packing',
                 'medium_com_binary-search-tree-traversal',
                 'medium_com_binary-sequence',
                 'medium_com_binary-tree-visual',
@@ -710,6 +713,7 @@ return [
                 'medium_com_minimax-exercise',
                 'medium_com_mitosis-mayhem',
                 'medium_com_monthly-system',
+                'medium_com_mosaic',
                 'medium_com_near-palindromes',
                 'medium_com_next-car-license-plate',
                 'medium_com_number-of-letters-in-a-number---binary',
@@ -914,8 +918,10 @@ return [
                 'hard_com_simplify-selection-ranges',
                 'hard_com_sliding-maze-puzzle',
                 'hard_com_snooker-ball-collision',
+                'hard_com_solve-for-x',
                 'hard_com_spreadsheet-labels',
                 'hard_com_staircases',
+                'hard_com_string-balls-ii',
                 'hard_com_sum-of-odd',
                 'hard_com_symbolic-system-of-equations',
                 'hard_com_takuzu-solver',
@@ -1175,4 +1181,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 23.11.23: 'easy_com_deus-hex-machina',
+// Note: last puzzle added on 23.12.17: 'easy_com_number-partition',

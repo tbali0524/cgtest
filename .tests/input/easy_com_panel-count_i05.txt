@@ -1,0 +1,20 @@
+3
+Gender
+Age
+Town
+12
+Gabin Male 78 Lyon
+Nicolas Male 54 Strasbourg
+Chloe Female 56 Bordeaux
+Hadrien Male 66 Strasbourg
+Leon Male 58 Lille
+Eden Female 91 Nantes
+Zoe Female 76 Montpellier
+Nicolas Male 54 Strasbourg
+Iris Female 19 Lille
+Pierre Male 79 Lille
+Louise Female 89 Marseille
+Eloise Female 10 Nice
+2
+Gender=Male AND Car=Audi
+EyeColor=Blue AND Town=Nantes

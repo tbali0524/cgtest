@@ -1,0 +1,22 @@
+3
+Gender
+Age
+Town
+14
+Violette Female 78 Lyon
+Rose Female 25 Toulouse
+Simon Male 6 Paris
+Esther Female 35 Lyon
+Chloe Female 56 Bordeaux
+Alix Female 12 Toulouse
+Esther Female 35 Lyon
+Hugo Male 65 Bordeaux
+Mila Female 72 Lille
+Jules Male 60 Nice
+Adele Female 86 Strasbourg
+Raphael Male 98 Lyon
+Sophie Female 98 Marseille
+Marie Female 56 Montpellier
+2
+Gender=Male AND Town=Rome
+Town=Paris AND Age=99

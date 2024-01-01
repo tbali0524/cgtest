@@ -9,15 +9,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Nothing yet.
+
+### Changed
+
+- Nothing yet.
+
+### Fixed
+
+- Nothing yet.
+
+## [v1.11.0](https://github.com/tbali0524/cgtest/releases/v1.11.0) - 2024-01-01
+
+### Added
+
 - More test cases added.
 
 ### Changed
 
+- More colorful output.
 - Rust default compiler settings changed to include `-C opt-level=3`.
 
 ### Fixed
 
-- Nothing yet
+- When using option `--dry-run`, it no longer deletes output files from a previous test run.
 
 ## [v1.10.0](https://github.com/tbali0524/cgtest/releases/v1.10.0) - 2023-10-03
 

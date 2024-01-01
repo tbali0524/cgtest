@@ -1,10 +1,10 @@
 <?php
 
 /**
- * CGTest v1.10.0 - configuration file
- *
+ * CGTest v1.11.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- * (c) 2023, by Balint Toth [TBali]
+ *
+ * configuration file
  */
 
 declare(strict_types=1);

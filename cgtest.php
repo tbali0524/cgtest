@@ -2,10 +2,8 @@
 <?php
 
 /**
- * CGTest v1.10.0
- *
+ * CGTest v1.11.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- * (c) 2023, by Balint Toth [TBali]
  *
  * For usage, see:
  *   php cgtest.php --help
@@ -22,7 +20,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.10.0';
+$version = 'v1.11.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -59,18 +57,32 @@ $zeroPuzzleStat = [
 $puzzleStats = [];
 $directoryStats = [];
 $slowTests = [];
+$useAnsi = stream_isatty(STDOUT);
+$ansiRedInv = $useAnsi ? "\e[1;37;41m" : '';
+$ansiGreenInv = $useAnsi ? "\e[1;37;42m" : '';
+$ansiYellowInv = $useAnsi ? "\e[1;37;43m" : '';
+$ansiGreen = $useAnsi ? "\e[32m" : '';
+$ansiBlue = $useAnsi ? "\e[34m" : '';
+$ansiVersion = $ansiGreen;
+$ansiInfo = $ansiBlue;
+$ansiReset = $useAnsi ? "\e[0m" : '';
+$errorTag = $ansiRedInv . '[ERROR]' . $ansiReset . ' ';
+$warnTag = $ansiYellowInv . '[WARN]' . $ansiReset . ' ';
+$passTag = $ansiGreenInv . '[PASS]' . $ansiReset . ' ';
+$failTag = $ansiRedInv . '[FAIL]' . $ansiReset . ' ';
 $infoTag = '[INFO] ';
-$errorTag = '[ERROR] ';
 // --------------------------------------------------------------------
 // print application title, check php version
-$title = 'CGTest ' . $version . PHP_EOL
-    . 'A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles' . PHP_EOL
-    . '(c) 2023, by Balint Toth [TBali]' . PHP_EOL;
-echo $title . PHP_EOL;
+$author = 'by Balint Toth [TBali]';
+$authorAnsi = 'by Balint Toth [' . $ansiInfo . 'TBali' . $ansiReset . ']';
+$title = 'CGTest ' . $version . ' ' . $author . PHP_EOL;
+$titleAnsi = 'CGTest ' . $ansiVersion . $version . $ansiReset . ' ' . $authorAnsi . PHP_EOL;
+$titleDesc = 'A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles' . PHP_EOL;
+echo $titleAnsi . $titleDesc . PHP_EOL;
 const MIN_PHP_VERSION = '7.3.0';
 if (version_compare(phpversion(), MIN_PHP_VERSION, '<')) {
-    echo $errorTag . 'Minimum required PHP version is ' . MIN_PHP_VERSION . '; you are on ' . phpversion()
-        . PHP_EOL . PHP_EOL;
+    echo $errorTag . 'Minimum required PHP version is ' . $ansiVersion . MIN_PHP_VERSION . $ansiReset
+        . '; you are on ' . $ansiInfo . phpversion() . $ansiReset . PHP_EOL . PHP_EOL;
     // OS exit codes: 0 = OK, 1 = some tests failed, 2 = error (wrong CLI arguments, etc)
     exit(2);
 }
@@ -515,7 +527,7 @@ for ($i = 1; $i < $argc; ++$i) {
         }
         foreach ($langs as $lang) {
             if (array_search($lang, $reservedConfigKeys, true) !== false) {
-                echo $errorTag . 'Invalid language name: ' . $lang . PHP_EOL . PHP_EOL;
+                echo $errorTag . 'Invalid language name: ' . $ansiInfo . $lang . $ansiReset . PHP_EOL . PHP_EOL;
                 exit(2);
             }
             if (array_search($lang, $argumentConfig['languages'], true) === false) {
@@ -549,7 +561,7 @@ for ($i = 1; $i < $argc; ++$i) {
         continue;
     }
     if ($arg[0] == '-') {
-        echo $errorTag . 'Invalid argument: ' . $arg . PHP_EOL . PHP_EOL;
+        echo $errorTag . 'Invalid argument: ' . $ansiInfo . $arg . $ansiReset . PHP_EOL . PHP_EOL;
         exit(2);
     }
     if (!isset($argumentConfig['puzzles'])) {
@@ -565,7 +577,7 @@ for ($i = 1; $i < $argc; ++$i) {
     }
     $puzzle = substr($argv[$i], $j + 1);
     if ($puzzle == '') {
-        echo $errorTag . 'Invalid puzzle name: ' . $argv[$i] . PHP_EOL . PHP_EOL;
+        echo $errorTag . 'Invalid puzzle name: ' . $ansiInfo . $argv[$i] . $ansiReset . PHP_EOL . PHP_EOL;
         exit(2);
     }
     if (!isset($argumentConfig['puzzles'][$path])) {
@@ -578,13 +590,13 @@ for ($i = 1; $i < $argc; ++$i) {
 $configFromFile = [];
 if ($argConfigFileName != '') {
     if (!file_exists($argConfigFileName)) {
-        echo $errorTag . 'Cannot open config file: ' . $argConfigFileName . PHP_EOL . PHP_EOL;
+        echo $errorTag . 'Cannot open config file: ' . $ansiInfo . $argConfigFileName . $ansiReset . PHP_EOL . PHP_EOL;
         exit(2);
     }
-    echo $infoTag . 'Using configuration file: ' . $argConfigFileName . PHP_EOL;
+    echo $infoTag . 'Using configuration file: ' . $ansiInfo . $argConfigFileName . $ansiReset . PHP_EOL;
     $configFromFile = include_once $argConfigFileName;
 } elseif (file_exists($defaultConfigFileName)) {
-    echo $infoTag . 'Using configuration file: ' . $defaultConfigFileName . PHP_EOL;
+    echo $infoTag . 'Using configuration file: ' . $ansiInfo . $defaultConfigFileName . $ansiReset . PHP_EOL;
     $configFromFile = include_once $defaultConfigFileName;
 }
 // --------------------------------------------------------------------
@@ -625,14 +637,21 @@ if (isset($argumentConfig['puzzles']) and (count($argumentConfig['puzzles']) != 
 if (!isset($config['ansi']) or !is_bool($config['ansi'])) {
     $config['ansi'] = false;
 }
-$ansiGreen = $config['ansi'] ? "\e[1;37;42m" : '';
-$ansiRed = $config['ansi'] ? "\e[1;37;41m" : '';
-$ansiYellow = $config['ansi'] ? "\e[1;37;43m" : '';
-$ansiReset = $config['ansi'] ? "\e[0m" : '';
-$errorTag = $ansiRed . '[ERROR]' . $ansiReset . ' ';
-$warnTag = $ansiYellow . '[WARN]' . $ansiReset . ' ';
-$passTag = $ansiGreen . '[PASS]' . $ansiReset . ' ';
-$failTag = $ansiRed . '[FAIL]' . $ansiReset . ' ';
+$useAnsi = $config['ansi'] && stream_isatty(STDOUT);
+if (!$useAnsi) {
+    $ansiRedInv = '';
+    $ansiGreenInv = '';
+    $ansiYellowInv = '';
+    $ansiGreen = '';
+    $ansiBlue = '';
+    $ansiReset = '';
+    $ansiVersion = $ansiGreen;
+    $ansiInfo = $ansiBlue;
+    $errorTag = $ansiRedInv . '[ERROR]' . $ansiReset . ' ';
+    $warnTag = $ansiYellowInv . '[WARN]' . $ansiReset . ' ';
+    $passTag = $ansiGreenInv . '[PASS]' . $ansiReset . ' ';
+    $failTag = $ansiRedInv . '[FAIL]' . $ansiReset . ' ';
+}
 // --------------------------------------------------------------------
 // check for configuration errors in global settings
 foreach ($booleanConfigKeys as $configKey) {
@@ -762,7 +781,8 @@ if ($config['create'] != '') {
             }
             $inputFile = fopen($inputFullFileName, 'w');
             if ($inputFile === false) {
-                echo $errorTag . 'Cannot create file:     ' . $inputFullFileName . PHP_EOL . PHP_EOL;
+                echo $errorTag . 'Cannot create file:     ' . $ansiInfo . $inputFullFileName . $ansiReset
+                    . PHP_EOL . PHP_EOL;
                 exit(2);
             }
             fclose($inputFile);
@@ -785,12 +805,12 @@ if ($config['create'] != '') {
 // --------------------------------------------------------------------
 // delete / init log files
 $totalUnsuccessfulDeleteFiles = 0;
-if (file_exists($config['debugLog'])) {
+if (!$config['dry-run'] and file_exists($config['debugLog'])) {
     $unlinkResult = unlink($config['debugLog']);
     if ($config['clean']) {
         if (!$unlinkResult) {
             ++$totalUnsuccessfulDeleteFiles;
-            echo $warnTag . 'Could not delete file: ' . $config['debugLog'] . PHP_EOL;
+            echo $warnTag . 'Could not delete file: ' . $ansiInfo . $config['debugLog'] . $ansiReset . PHP_EOL;
         } else {
             ++$languageStats['totals']['countDeletedFiles'];
             if ($config['verbose']) {
@@ -799,12 +819,12 @@ if (file_exists($config['debugLog'])) {
         }
     }
 }
-if (file_exists($config['buildLog'])) {
+if (!$config['dry-run'] and file_exists($config['buildLog'])) {
     $unlinkResult = unlink($config['buildLog']);
     if ($config['clean']) {
         if (!$unlinkResult) {
             ++$totalUnsuccessfulDeleteFiles;
-            echo $warnTag . 'Could not delete file: ' . $config['buildLog'] . PHP_EOL;
+            echo $warnTag . 'Could not delete file: ' . $ansiInfo . $config['buildLog'] . $ansiReset . PHP_EOL;
         } else {
             ++$languageStats['totals']['countDeletedFiles'];
             if ($config['verbose']) {
@@ -819,10 +839,12 @@ if (!$config['clean'] and !$config['lang-versions'] and !$config['dry-run']) {
         echo $errorTag . 'Cannot open logfile to write: ' . $config['debugLog'] . PHP_EOL . PHP_EOL;
         exit(2);
     }
-    fwrite($logFile, $title . PHP_EOL);
+    fwrite($logFile, $title . $titleDesc . PHP_EOL);
     fclose($logFile);
-    echo $infoTag . '<STDERR> output from the test runs redirected to file: ' . $config['debugLog'] . PHP_EOL;
-    echo $infoTag . 'Compilers / interpreters\' messages redirected to file: ' . $config['buildLog'] . PHP_EOL;
+    echo $infoTag . '<STDERR> output from the test runs redirected to file: '
+        . $ansiInfo . $config['debugLog'] . $ansiReset . PHP_EOL;
+    echo $infoTag . 'Compilers / interpreters\' messages redirected to file: '
+        . $ansiInfo . $config['buildLog'] . $ansiReset . PHP_EOL;
 }
 if (!$config['clean'] and ($config['test-case'] != 'all')) {
     echo $infoTag . 'Limited to test case #' . $config['test-case'] . PHP_EOL;
@@ -837,12 +859,12 @@ foreach ($config['languages'] as $language) {
     // check for configuration errors in per-language settings
     $isLanguageOk = true;
     if ((trim($language) == '') or (array_search($language, $reservedConfigKeys, true) !== false)) {
-        echo $warnTag . 'Invalid language name: ' . $language . PHP_EOL . PHP_EOL;
+        echo $warnTag . 'Invalid language name: ' . $ansiInfo . $language . $ansiReset . PHP_EOL . PHP_EOL;
         ++$languageStats[$language]['countSkippedLanguages'];
         continue;
     }
     if (!isset($config[$language]) or !is_array($config[$language])) {
-        echo $warnTag . 'No configuration available for language: ' . $language . PHP_EOL;
+        echo $warnTag . 'No configuration available for language: ' . $ansiInfo . $language . $ansiReset . PHP_EOL;
         ++$languageStats[$language]['countSkippedLanguages'];
         continue;
     }
@@ -852,7 +874,7 @@ foreach ($config['languages'] as $language) {
             or !is_string($config[$language][$configKey])
             or ($config[$language][$configKey] == '')
         ) {
-            echo $warnTag . 'Invalid configuration for language ' . $language
+            echo $warnTag . 'Invalid configuration for language ' . $ansiInfo . $language . $ansiReset
                 . ': required setting must be a non-empty string value: ' . $configKey . PHP_EOL;
             $isLanguageOk = false;
         }
@@ -863,7 +885,7 @@ foreach ($config['languages'] as $language) {
             continue;
         }
         if (!is_string($config[$language][$configKey])) {
-            echo $warnTag . 'Invalid configuration for language ' . $language
+            echo $warnTag . 'Invalid configuration for language ' . $ansiInfo . $language . $ansiReset
                 . ': setting must be a string value: ' . $configKey . PHP_EOL;
             $isLanguageOk = false;
         }
@@ -874,13 +896,14 @@ foreach ($config['languages'] as $language) {
             continue;
         }
         if (!is_array($config[$language][$configKey])) {
-            echo $warnTag . 'Invalid configuration for language ' . $language
+            echo $warnTag . 'Invalid configuration for language ' . $ansiInfo . $language . $ansiReset
                 . ': setting must be an array: ' . $configKey . PHP_EOL;
             $isLanguageOk = false;
         }
     }
     if ($config['lang-versions'] and ($config[$language]['versionCommand'] == '')) {
-        echo $warnTag . 'Invalid configuration: missing version command for language: ' . $language . PHP_EOL;
+        echo $warnTag . 'Invalid configuration: missing version command for language: ' . $ansiInfo . $language
+            . $ansiReset . PHP_EOL;
         $isLanguageOk = false;
     }
     if (!$isLanguageOk) {
@@ -891,7 +914,7 @@ foreach ($config['languages'] as $language) {
     // check language availability for --lang-versions, --dry-run, or real tests
     if (!$config['clean'] and ($config[$language]['versionCommand'] != '')) {
         if ($config['lang-versions']) {
-            echo $infoTag . 'Version info for language: ' . $language . PHP_EOL;
+            echo $infoTag . 'Version info for language: ' . $ansiInfo . $language . $ansiReset . PHP_EOL;
             if ($config[$language]['codinGameVersion'] != '') {
                 echo $infoTag . '-- version supported at CodinGame: ' . $config[$language]['codinGameVersion']
                     . PHP_EOL;
@@ -927,7 +950,8 @@ foreach ($config['languages'] as $language) {
             $unlinkResult = unlink($csDirectoryBuildPropsFilename);
             if (!$unlinkResult) {
                 ++$totalUnsuccessfulDeleteFiles;
-                echo $warnTag . 'Could not delete file: ' . $csDirectoryBuildPropsFilename . PHP_EOL;
+                echo $warnTag . 'Could not delete file: ' . $ansiInfo . $csDirectoryBuildPropsFilename
+                    . $ansiReset . PHP_EOL;
             } else {
                 ++$languageStats['totals']['countDeletedFiles'];
                 if ($config['verbose']) {
@@ -1013,7 +1037,7 @@ foreach ($config['languages'] as $language) {
             ++$languageStats[$language]['countFiles'];
             if (!file_exists($sourceFullFileName)) {
                 if (!$config['clean']) {
-                    echo $warnTag . 'Cannot find sourcefile: ' . $sourceFullFileName . PHP_EOL;
+                    echo $warnTag . 'Cannot find sourcefile: ' . $ansiInfo . $sourceFullFileName . $ansiReset . PHP_EOL;
                 }
                 ++$languageStats[$language]['countSkippedFiles'];
                 if (!isset($puzzleStats[$puzzleName])) {
@@ -1042,7 +1066,8 @@ foreach ($config['languages'] as $language) {
                         $unlinkResult = unlink($tempFileName);
                         if (!$unlinkResult) {
                             ++$totalUnsuccessfulDeleteFiles;
-                            echo $warnTag . 'Could not delete file: ' . $tempFileName . PHP_EOL;
+                            echo $warnTag . 'Could not delete file: ' . $ansiInfo . $tempFileName . $ansiReset
+                                . PHP_EOL;
                         } else {
                             ++$languageStats[$language]['countDeletedFiles'];
                             if ($config['verbose']) {
@@ -1054,7 +1079,7 @@ foreach ($config['languages'] as $language) {
             }
             // --------------------------------------------------------------------
             // Special case for Haskell: Main.o must be deleted before each build
-            if ($language == 'haskell') {
+            if (($language == 'haskell') and !$config['dry-run']) {
                 $tempFileName = $config['buildPath'] . 'Main.o';
                 if (file_exists($tempFileName)) {
                     unlink($tempFileName);
@@ -1077,7 +1102,8 @@ foreach ($config['languages'] as $language) {
                     if ($config['clean']) {
                         if (!$unlinkResult) {
                             ++$totalUnsuccessfulDeleteFiles;
-                            echo $warnTag . 'Could not delete file: ' . $csprojFilename . PHP_EOL;
+                            echo $warnTag . 'Could not delete file: ' . $ansiInfo . $csprojFilename
+                                . $ansiReset . PHP_EOL;
                         } else {
                             ++$languageStats[$language]['countDeletedFiles'];
                             if ($config['verbose']) {
@@ -1140,7 +1166,8 @@ foreach ($config['languages'] as $language) {
                 $execResult = exec($buildCommand, $execOutput, $execResultCode);
                 if (($execResult === false) or ($execResultCode != 0)) {
                     $buildSuccessful = false;
-                    echo $warnTag . 'Build unsuccessful for source: ' . $sourceFullFileName . PHP_EOL;
+                    echo $warnTag . 'Build unsuccessful for source: ' . $ansiInfo . $sourceFullFileName
+                        . $ansiReset . PHP_EOL;
                 }
             }
             // --------------------------------------------------------------------
@@ -1197,7 +1224,8 @@ foreach ($config['languages'] as $language) {
                     if (!file_exists($expectedFullFileName)) {
                         ++$languageStats[$language]['countSkippedTests'];
                         ++$countSkippedTestsForFile;
-                        echo $warnTag . 'Cannot read expected test output file: ' . $expectedFullFileName . PHP_EOL;
+                        echo $warnTag . 'Cannot read expected test output file: ' . $ansiInfo . $expectedFullFileName
+                            . $ansiReset . PHP_EOL;
                         continue;
                     }
                 }
@@ -1208,7 +1236,8 @@ foreach ($config['languages'] as $language) {
                 );
                 if (!$runOnlyCurrentPuzzle and ($expectedFullFileName === $outputFullFileName)) {
                     echo $errorTag . 'Invalid configuration: expected and real test output filenames '
-                        . 'must not be the same: ' . $expectedFullFileName . PHP_EOL . PHP_EOL;
+                        . 'must not be the same: ' . $ansiInfo . $expectedFullFileName . $ansiReset
+                        . PHP_EOL . PHP_EOL;
                     exit(2);
                 }
                 // --------------------------------------------------------------------
@@ -1218,7 +1247,8 @@ foreach ($config['languages'] as $language) {
                         $unlinkResult = unlink($outputFullFileName);
                         if (!$unlinkResult) {
                             ++$totalUnsuccessfulDeleteFiles;
-                            echo $warnTag . 'Could not delete file: ' . $outputFullFileName . PHP_EOL;
+                            echo $warnTag . 'Could not delete file: ' . $ansiInfo . $outputFullFileName . $ansiReset
+                                . PHP_EOL;
                         } else {
                             ++$languageStats[$language]['countDeletedFiles'];
                             if ($config['verbose']) {
@@ -1228,7 +1258,7 @@ foreach ($config['languages'] as $language) {
                     }
                     continue;
                 }
-                if (file_exists($outputFullFileName)) {
+                if (!$config['dry-run'] and file_exists($outputFullFileName)) {
                     unlink($outputFullFileName);
                 }
                 // --------------------------------------------------------------------
@@ -1239,7 +1269,8 @@ foreach ($config['languages'] as $language) {
                     if ($expectedFileContents === false) {
                         ++$languageStats[$language]['countSkippedTests'];
                         ++$countSkippedTestsForFile;
-                        echo $warnTag . 'Cannot read expected test output file: ' . $expectedFullFileName . PHP_EOL;
+                        echo $warnTag . 'Cannot read expected test output file: ' . $ansiInfo . $expectedFullFileName
+                            . $ansiReset . PHP_EOL;
                         continue;
                     }
                 }
@@ -1309,12 +1340,14 @@ foreach ($config['languages'] as $language) {
                 // --------------------------------------------------------------------
                 // read and process test output (replace CRLF with LF, remove trailing LF)
                 if (!file_exists($outputFullFileName)) {
-                    echo $errorTag . 'Cannot read test output file: ' . $outputFullFileName . PHP_EOL;
+                    echo $errorTag . 'Cannot read test output file: ' . $ansiInfo . $outputFullFileName
+                        . $ansiReset . PHP_EOL;
                     continue;
                 }
                 $outputFileContents = file_get_contents($outputFullFileName);
                 if ($outputFileContents === false) {
-                    echo $warnTag . 'Cannot read test output file: ' . $outputFullFileName . PHP_EOL;
+                    echo $warnTag . 'Cannot read test output file: ' . $ansiInfo . $outputFullFileName
+                        . $ansiReset . PHP_EOL;
                     continue;
                 }
                 $outputFileContents = str_replace("\r\n", "\n", $outputFileContents);
@@ -1339,7 +1372,8 @@ foreach ($config['languages'] as $language) {
                 continue;
             }
             if ($countTestsForFile == 0) {
-                echo $warnTag . 'No test input found for source: ' . $sourceFullFileName . PHP_EOL;
+                echo $warnTag . 'No test input found for source: ' . $ansiInfo . $sourceFullFileName . $ansiReset
+                    . PHP_EOL;
             }
             if (isset($puzzleStats[$puzzleName])) {
                 $puzzleStats[$puzzleName]['countTests']
@@ -1427,7 +1461,7 @@ $languageStats['totals']['spentTime'] = hrtime(true) - $languageStats['totals'][
 if ($config['verbose'] and (($config['slowThreshold'] ?? 0) > 0) and (count($slowTests) > 0)) {
     echo $warnTag . 'The following test case'
         . (count($slowTests) > 1 ? 's' : '')
-        . ' took longer than ' . ($config['slowThreshold'] ?? 0) . ' seconds:' . PHP_EOL;
+        . ' took longer than ' . $ansiInfo . ($config['slowThreshold'] ?? 0) . $ansiReset . ' seconds:' . PHP_EOL;
     foreach ($slowTests as $slowTest) {
         $msgLang = str_pad(substr(strval($slowTest['language'] ?? ''), 0, 12), 12);
         $msgTime = str_pad(number_format($slowTest['time'] ?? 0, 1, '.', ''), 6, ' ', STR_PAD_LEFT);
@@ -1484,27 +1518,27 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
             $msgCountDeletedFiles = str_pad(strval($stat['countDeletedFiles']), 7, ' ', STR_PAD_LEFT) . '|';
         } else {
             if ($stat['countFiles'] == 0) {
-                $msgCountFiles = $ansiYellow . $msgCountFiles . $ansiReset;
+                $msgCountFiles = $ansiYellowInv . $msgCountFiles . $ansiReset;
                 $status = $warnTag;
             }
             if ($stat['countSkippedFiles'] != 0) {
-                $msgCountSkippedFiles = $ansiYellow . $msgCountSkippedFiles . $ansiReset;
+                $msgCountSkippedFiles = $ansiYellowInv . $msgCountSkippedFiles . $ansiReset;
                 $status = $warnTag;
             }
             if ($stat['countTests'] == 0) {
-                $msgCountTests = $ansiYellow . $msgCountTests . $ansiReset;
+                $msgCountTests = $ansiYellowInv . $msgCountTests . $ansiReset;
                 $status = $warnTag;
             }
             if ($stat['countSkippedTests'] != 0) {
-                $msgCountSkippedTests = $ansiYellow . $msgCountSkippedTests . $ansiReset;
+                $msgCountSkippedTests = $ansiYellowInv . $msgCountSkippedTests . $ansiReset;
                 $status = $warnTag;
             }
             if ($stat['countFailedFiles'] != 0) {
-                $msgCountFailedFiles = $ansiRed . $msgCountFailedFiles . $ansiReset;
+                $msgCountFailedFiles = $ansiRedInv . $msgCountFailedFiles . $ansiReset;
                 $status = $failTag;
             }
             if ($stat['countFailedTests'] != 0) {
-                $msgCountFailedTests = $ansiRed . $msgCountFailedTests . $ansiReset;
+                $msgCountFailedTests = $ansiRedInv . $msgCountFailedTests . $ansiReset;
                 $status = $failTag;
             }
         }
@@ -1601,19 +1635,20 @@ $statusWidth = 78;
 echo PHP_EOL;
 $wasLF = true;
 if ($languageStats['totals']['countSkippedLanguages'] > 0) {
-    echo $warnTag . 'Skipped ' . $languageStats['totals']['countSkippedLanguages'] . ' language'
-        . ($languageStats['totals']['countSkippedLanguages'] > 1 ? 's' : '')
+    echo $warnTag . 'Skipped ' . $ansiInfo . $languageStats['totals']['countSkippedLanguages'] . $ansiReset
+        . ' language' . ($languageStats['totals']['countSkippedLanguages'] > 1 ? 's' : '')
         . ' due to missing compiler/interpreter or configuration error.' . PHP_EOL;
     $wasLF = false;
 }
 if ($config['clean']) {
     if ($languageStats['totals']['countDeletedFiles'] > 0) {
-        echo $infoTag . 'Deleted ' . $languageStats['totals']['countDeletedFiles'] . ' temporary and test output file'
-            . ($languageStats['totals']['countDeletedFiles'] > 1 ? 's' : '') . '.' . PHP_EOL;
+        echo $infoTag . 'Deleted ' . $ansiInfo . $languageStats['totals']['countDeletedFiles'] . $ansiReset
+            . ' temporary and test output file' . ($languageStats['totals']['countDeletedFiles'] > 1 ? 's' : '')
+            . '.' . PHP_EOL;
     }
     if ($totalUnsuccessfulDeleteFiles > 0) {
-        echo $warnTag . 'Failed to delete ' . $totalUnsuccessfulDeleteFiles . ' file'
-            . ($totalUnsuccessfulDeleteFiles > 1 ? 's' : '') . '.' . PHP_EOL . PHP_EOL;
+        echo $warnTag . 'Failed to delete ' . $ansiInfo . $totalUnsuccessfulDeleteFiles . $ansiReset
+            . ' file' . ($totalUnsuccessfulDeleteFiles > 1 ? 's' : '') . '.' . PHP_EOL . PHP_EOL;
         exit(1);
     }
     if ($languageStats['totals']['countDeletedFiles'] == 0) {
@@ -1624,25 +1659,25 @@ if ($config['clean']) {
 }
 if ($config['lang-versions']) {
     $countLangs = $languageStats['totals']['countLanguages'] - $languageStats['totals']['countSkippedLanguages'];
-    echo $infoTag . 'Total: ' . $countLangs . ' programming language'
-       . ($countLangs > 1 ? 's' : '')
-       . ' found.' . PHP_EOL . PHP_EOL;
+    echo $infoTag . 'Total: ' . $ansiInfo . $countLangs . $ansiReset
+        . ' programming language' . ($countLangs > 1 ? 's' : '')
+        . ' found.' . PHP_EOL . PHP_EOL;
     exit(0);
 }
 if ($languageStats['totals']['countSkippedFiles'] > 0) {
     $msg = '';
     if ($languageStats['totals']['countSkippedFiles'] != $languageStats['unique']['countSkippedFiles']) {
-        $msg = ' for ' . $languageStats['unique']['countSkippedFiles'] . ' unique puzzle'
-            . ($languageStats['unique']['countSkippedFiles'] > 1 ? 's' : '');
+        $msg = ' for ' . $ansiInfo . $languageStats['unique']['countSkippedFiles'] . $ansiReset
+            . ' unique puzzle' . ($languageStats['unique']['countSkippedFiles'] > 1 ? 's' : '');
     }
-    echo $warnTag . 'Skipped ' . $languageStats['totals']['countSkippedFiles'] . ' puzzle solution'
-        . ($languageStats['totals']['countSkippedFiles'] > 1 ? 's' : '')
+    echo $warnTag . 'Skipped ' . $ansiInfo . $languageStats['totals']['countSkippedFiles'] . $ansiReset
+        . ' puzzle solution' . ($languageStats['totals']['countSkippedFiles'] > 1 ? 's' : '')
         . $msg . ' due to missing source code file.' . PHP_EOL;
     $wasLF = false;
 }
 if ($languageStats['totals']['countSkippedTests'] > 0) {
-    echo $warnTag . 'Skipped ' . $languageStats['totals']['countSkippedTests'] . ' test'
-        . ($languageStats['totals']['countSkippedTests'] > 1 ? 's' : '')
+    echo $warnTag . 'Skipped ' . $ansiInfo . $languageStats['totals']['countSkippedTests'] . $ansiReset
+        . ' test' . ($languageStats['totals']['countSkippedTests'] > 1 ? 's' : '')
         . ' due to missing test case file.' . PHP_EOL;
     $wasLF = false;
 }
@@ -1650,35 +1685,35 @@ if ($languageStats['totals']['countTests'] == 0) {
     if (!$wasLF) {
         echo PHP_EOL;
     }
-    echo $ansiYellow . str_pad(' [WARN] There was nothing to test.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
+    echo $ansiYellowInv . str_pad(' [WARN] There was nothing to test.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
     exit(1);
 }
 $msg = '';
 if ($languageStats['unique']['countFiles'] != $languageStats['totals']['countFiles']) {
-    $msg = ' for ' . $languageStats['unique']['countFiles'] . ' unique puzzle'
-        . ($languageStats['unique']['countFiles'] > 1 ? 's' : '');
+    $msg = ' for ' . $ansiInfo . $languageStats['unique']['countFiles'] . $ansiReset
+        . ' unique puzzle' . ($languageStats['unique']['countFiles'] > 1 ? 's' : '');
 }
-echo $infoTag . 'Total: ' . $languageStats['totals']['countPassedTests'] . ' / '
-    . $languageStats['totals']['countTests'] . ' test'
-    . ($languageStats['totals']['countTests'] > 1 ? 's' : '') . ' passed while testing '
-    . $languageStats['totals']['countFiles'] . ' solution'
-    . ($languageStats['totals']['countFiles'] > 1 ? 's' : '')
+echo $infoTag . 'Total: ' . $ansiInfo . $languageStats['totals']['countPassedTests'] . $ansiReset . ' / '
+    . $ansiInfo . $languageStats['totals']['countTests'] . $ansiReset
+    . ' test' . ($languageStats['totals']['countTests'] > 1 ? 's' : '') . ' passed while testing '
+    . $ansiInfo . $languageStats['totals']['countFiles'] . $ansiReset
+    . ' solution' . ($languageStats['totals']['countFiles'] > 1 ? 's' : '')
     . $msg . ' in '
-    . $languageStats['totals']['countLanguages'] . ' programming language'
-    . ($languageStats['totals']['countLanguages'] > 1 ? 's' : '') . '.' . PHP_EOL;
+    . $ansiInfo . $languageStats['totals']['countLanguages'] . $ansiReset
+    . ' programming language' . ($languageStats['totals']['countLanguages'] > 1 ? 's' : '') . '.' . PHP_EOL;
 if ((($config['slowThreshold'] ?? 0) > 0) and (count($slowTests) > 0)) {
-    echo $infoTag . 'There were ' . count($slowTests) . ' test'
-        . (count($slowTests) > 1 ? 's' : '')
-        . ' taking longer than ' . ($config['slowThreshold'] ?? 0) . ' seconds.' . PHP_EOL;
+    echo $infoTag . 'There were ' . $ansiInfo . count($slowTests) . $ansiReset
+        . ' test' . (count($slowTests) > 1 ? 's' : '')
+        . ' taking longer than ' . $ansiInfo . ($config['slowThreshold'] ?? 0) . $ansiReset . ' seconds.' . PHP_EOL;
 }
 $timeStr = number_format($languageStats['totals']['spentTime'] / 1000000000, 1, '.', '');
-echo $infoTag . "Time spent: $timeStr seconds." . PHP_EOL . PHP_EOL;
+echo $infoTag . 'Time spent: ' . $ansiInfo . $timeStr . $ansiReset . ' seconds.' . PHP_EOL . PHP_EOL;
 if (!$config['dry-run']) {
     if ($languageStats['totals']['countPassedTests'] != $languageStats['totals']['countTests']) {
-        echo $ansiRed . str_pad(' [FAIL] Some tests failed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
+        echo $ansiRedInv . str_pad(' [FAIL] Some tests failed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
         exit(1);
     }
-    echo $ansiGreen . str_pad(' [OK] All tests passed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
+    echo $ansiGreenInv . str_pad(' [OK] All tests passed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
 }
 exit(0);
 // --------------------------------------------------------------------

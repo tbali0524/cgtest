@@ -1,0 +1,12 @@
+1
+Town
+7
+Eliott Paris
+Luna Paris
+Eleonore Nantes
+Maelys Montpellier
+Nathan Lille
+Adam Nantes
+Diane Lille
+1
+Town=Lille
