@@ -637,21 +637,19 @@ if (isset($argumentConfig['puzzles']) and (count($argumentConfig['puzzles']) != 
 if (!isset($config['ansi']) or !is_bool($config['ansi'])) {
     $config['ansi'] = false;
 }
-$useAnsi = $config['ansi'] && stream_isatty(STDOUT);
-if (!$useAnsi) {
-    $ansiRedInv = '';
-    $ansiGreenInv = '';
-    $ansiYellowInv = '';
-    $ansiGreen = '';
-    $ansiBlue = '';
-    $ansiReset = '';
-    $ansiVersion = $ansiGreen;
-    $ansiInfo = $ansiBlue;
-    $errorTag = $ansiRedInv . '[ERROR]' . $ansiReset . ' ';
-    $warnTag = $ansiYellowInv . '[WARN]' . $ansiReset . ' ';
-    $passTag = $ansiGreenInv . '[PASS]' . $ansiReset . ' ';
-    $failTag = $ansiRedInv . '[FAIL]' . $ansiReset . ' ';
-}
+$useAnsi = $config['ansi'];
+$ansiRedInv = $useAnsi ? "\e[1;37;41m" : '';
+$ansiGreenInv = $useAnsi ? "\e[1;37;42m" : '';
+$ansiYellowInv = $useAnsi ? "\e[1;37;43m" : '';
+$ansiGreen = $useAnsi ? "\e[32m" : '';
+$ansiBlue = $useAnsi ? "\e[34m" : '';
+$ansiVersion = $ansiGreen;
+$ansiInfo = $ansiBlue;
+$ansiReset = $useAnsi ? "\e[0m" : '';
+$errorTag = $ansiRedInv . '[ERROR]' . $ansiReset . ' ';
+$warnTag = $ansiYellowInv . '[WARN]' . $ansiReset . ' ';
+$passTag = $ansiGreenInv . '[PASS]' . $ansiReset . ' ';
+$failTag = $ansiRedInv . '[FAIL]' . $ansiReset . ' ';
 // --------------------------------------------------------------------
 // check for configuration errors in global settings
 foreach ($booleanConfigKeys as $configKey) {
