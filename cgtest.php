@@ -921,7 +921,7 @@ foreach ($config['languages'] as $language) {
         } elseif ($config['dry-run']) {
             $versionCommand = $config[$language]['versionCommand'] . ' >> ' . $config['buildLog'] . ' 2>&1';
         } else {
-            $versionCommand = $config[$language]['versionCommand'] . ' >> ' . $config['debugLog'] . ' 2>&1';
+            $versionCommand = $config[$language]['versionCommand'] . ' 2>&1'; // . ' >> ' . $config['debugLog']
         }
         $execOutput = [];
         $execResultCode = 0;
@@ -936,9 +936,22 @@ foreach ($config['languages'] as $language) {
                 if (($execOutput[$i] ?? '') == '') {
                     continue;
                 }
-                echo '    ' . $execOutput[$i] . PHP_EOL;
+                if (($i == 0) or (($i == 1) and ($execOutput[0] == ''))) {
+                    echo '    ' . $ansiGreen . $execOutput[$i] . $ansiReset . PHP_EOL;
+                } else {
+                    echo '    ' . $execOutput[$i] . PHP_EOL;
+                }
             }
             continue;
+        }
+        if (
+            $config['verbose']
+            and !$config['lang-versions']
+            and !$config['dry-run']
+            and (($execOutput[0] ?? '') != '')
+        ) {
+            echo $infoTag . 'Using ' . $ansiInfo . $language . $ansiReset . ' version: '
+                . $ansiGreen . $execOutput[0] . $ansiReset . PHP_EOL;
         }
     }
     // --------------------------------------------------------------------

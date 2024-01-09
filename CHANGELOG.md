@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Nothing yet.
+- More test cases added.
 
 ### Changed
 
-- Nothing yet.
+- Show the language versions used during normal test runs with `--verbose`.
 
 ### Fixed
 
