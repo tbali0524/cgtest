@@ -1,0 +1,27 @@
+8
+6
+24
+Jean-Luc Picard,1D
+Benjamin Sisko,1E
+Katherine Janeway,1F
+Terry Gilliam,2C
+Graham Chapman,3A
+John Cleese,3B
+Duff McKagan,3D
+Ziyi Zhang,4A
+Jet Li,4C
+Matt Sorum,4E
+Dizzy Reed,4F
+Bruce Lee,5B
+Terry Jones,5F
+Christopher Pike,6B
+James Kirk,6C
+Eric Idle,6D
+Michael Palin,6E
+Jonathan Archer,7A
+Michelle Yeoh,7D
+Jackie Chan,7F
+Axl Rose,8A
+Slash,8B
+Izzy Stradlin,8C
+Sonny Chiba,8E

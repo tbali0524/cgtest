@@ -1,0 +1,49 @@
+Joey is the winner!
+
+===Each Player's Score===
+Rachel 4
+Monica 3
+Chandler 12
+Joey 17
+Ross 1
+
+===Each Scoring Player's Scoring Words===
+Rachel
+1 TEA
+1 IDS
+1 AWE
+1 IFS
+Monica
+2 TRENT
+1 ART
+Chandler
+1 AID
+1 RED
+1 IDE
+1 SIT
+1 RATE
+1 RENT
+1 TAD
+1 IDEA
+1 TIDE
+1 ERA
+1 ARID
+1 IRIS
+Joey
+1 FAR
+1 DREW
+3 WATERS
+1 DEN
+1 AREA
+1 FATE
+1 TIRE
+1 TAR
+1 FARE
+1 DIRE
+1 SITE
+1 FIR
+1 RAT
+1 IRE
+1 NEAT
+Ross
+1 AFT

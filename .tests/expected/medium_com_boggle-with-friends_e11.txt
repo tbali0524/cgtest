@@ -1,0 +1,29 @@
+Rachel is the winner!
+
+===Each Player's Score===
+Monica 0
+Joey 0
+Rachel 29
+
+===Each Scoring Player's Scoring Words===
+Rachel
+1 COMA
+1 ODE
+3 DINING
+1 GIN
+1 MER
+1 ORE
+3 INCOME
+1 CORD
+1 FROM
+1 DIE
+1 ODD
+1 IDE
+3 ENDING
+1 SING
+1 ODDS
+1 SIN
+3 CODING
+1 END
+1 RIDE
+2 GAMER

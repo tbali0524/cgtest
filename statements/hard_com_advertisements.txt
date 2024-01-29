@@ -1,5 +1,6 @@
 Advertisements
 
+hard_com_advertisements
 https://www.codingame.com/training/hard/advertisements
 https://www.codingame.com/contribute/view/49581b7436e122eb89be60a2a87449fb25e55
 

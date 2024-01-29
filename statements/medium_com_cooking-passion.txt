@@ -1,5 +1,6 @@
 Cooking passion
 
+medium_com_cooking-passion
 https://www.codingame.com/training/medium/cooking-passion
 https://www.codingame.com/contribute/view/7208da9d3399f5a078447725c9b6c05633bb
 

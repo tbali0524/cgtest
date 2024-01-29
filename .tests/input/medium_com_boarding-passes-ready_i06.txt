@@ -1,0 +1,57 @@
+14
+8
+54
+Alice Marshall,3G
+Andrei Kolchak,4D
+Anna Lucia Cortez,14C
+Bernard Nadler,2G
+Boone Carlyle,4H
+Charlie Pace,8A
+Chen Leong,13B
+Claire Littleton,5G
+Claire Miller,14H
+Dave Mustaine,6B
+David Ellefson,1H
+Eddie Kim,5E
+Edward Mars,3F
+Emmet Bradley,4B
+Gary Barlow,8B
+George,5B
+Grace Marshall,14A
+Hank Harris,1E
+Howard Donald,2F
+Hugo Reyes,10E
+Ivan Jorshunov,9F
+Jack Doherty,3B
+Jack Shepard,12C
+James Ford,12D
+James Hetfield,4F
+James Marshall,2B
+Jason Orange,10H
+Jin-Soo Kwon,3C
+John Locke,4E
+John Sanders,2A
+John,11D
+Kate Austen,1D
+Kathryn Bennett,13E
+Kirk Hammett,6D
+Lars Ulrich,12A
+Mark Owen,8C
+Marty Friedman,13G
+Michael Dawson,9B
+Neville Flynn,3D
+Nick Menza,9C
+Nikki Fernandez,14D
+Paul,12F
+Ringo,1C
+Robbie Williams,11C
+Robert Trujillo,13F
+Rose Nadler,5F
+Sayid Jarrah,13H
+Sean Jones,11G
+Shannon Rutherford,14G
+Steven Price,11B
+Sun-Hwa Kwon,10F
+Walt Lloyd,14F
+Walter Dean,9D
+Yoko,9H

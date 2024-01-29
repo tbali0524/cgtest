@@ -1,0 +1,27 @@
+Joey is the winner!
+
+===Each Player's Score===
+Chandler 6
+Joey 8
+Ross 3
+Rachel 1
+
+===Each Scoring Player's Scoring Words===
+Chandler
+1 TOT
+1 TAR
+1 ART
+3 TRANCE
+Joey
+1 CART
+1 ANTE
+1 HET
+1 RANT
+1 ACT
+2 TEACH
+1 EAT
+Ross
+1 NEAT
+2 RANCH
+Rachel
+1 CHAR

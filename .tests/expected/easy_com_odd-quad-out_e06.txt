@@ -1,0 +1,3 @@
+Quad-3 is Odd-Quad-Out
+It has value of 30
+Others have value of 383

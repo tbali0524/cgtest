@@ -1,5 +1,6 @@
 Score a Bridge deal
 
+easy_com_score-a-bridge-deal
 https://www.codingame.com/training/easy/score-a-bridge-deal
 https://www.codingame.com/contribute/view/58492ec75efd5ce1ecf1a6f9b48ce377fc618
 

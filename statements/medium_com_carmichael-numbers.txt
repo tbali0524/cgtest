@@ -1,6 +1,7 @@
 Carmichael numbers
 
-https://www.codingame.com/training/medium/medium_com_carmichael-numbers
+medium_com_carmichael-numbers
+https://www.codingame.com/training/medium/carmichael-numbers
 https://www.codingame.com/contribute/view/224bf78dd2e77054a33550a00e20b32c6a0
 
 A contribution by nicola

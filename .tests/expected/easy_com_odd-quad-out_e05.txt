@@ -1,0 +1,3 @@
+Quad-2 is Odd-Quad-Out
+It has value of 137
+Others have value of 337

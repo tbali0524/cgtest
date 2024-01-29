@@ -1,5 +1,6 @@
 Risk odds calculator
 
+medium_com_risk-odds-calculator
 https://www.codingame.com/training/medium/risk-odds-calculator
 https://www.codingame.com/contribute/view/724177fee0855ed1e4b328c98ec9c492c70b6
 

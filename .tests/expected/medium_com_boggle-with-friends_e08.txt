@@ -1,0 +1,33 @@
+Ross is the winner!
+
+===Each Player's Score===
+Ross 17
+Chandler 3
+Monica 10
+
+===Each Scoring Player's Scoring Words===
+Ross
+2 PIVOT
+1 TIP
+1 LIAR
+3 LIKING
+1 AKIN
+1 GIRL
+1 ING
+1 EARN
+1 ARK
+2 BEING
+1 NIP
+2 BREAK
+Chandler
+1 RIP
+2 BRING
+Monica
+1 TIRE
+1 RIB
+1 REAP
+1 VIA
+3 VIKING
+1 BEAR
+1 EAR
+1 RAIL

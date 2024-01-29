@@ -1,0 +1,15 @@
+2
+6
+12
+Beyonce Knowles,1A
+Chandler Bing,2B
+Farrah Franklin,2E
+Joey Tribiani,2C
+Kelly Rowland,1C
+LaTavia Robertson,2D
+LeToya Luckett,2F
+Michelle Williams,1B
+Monica Geller,1E
+Phoebe Buffay,1F
+Rachel Green,1D
+Ross Geller,2A

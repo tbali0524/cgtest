@@ -1,5 +1,6 @@
 Queen control
 
+easy_com_queen-control
 https://www.codingame.com/training/easy/queen-control
 https://www.codingame.com/contribute/view/695792cff0291724b1cb018ec0a0c8dd70f9b
 

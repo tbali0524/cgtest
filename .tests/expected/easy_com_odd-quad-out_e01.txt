@@ -1,0 +1,3 @@
+Quad-1 is Odd-Quad-Out
+It has value of 7
+Others have value of 10

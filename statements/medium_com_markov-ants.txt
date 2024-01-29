@@ -1,5 +1,6 @@
 Markov ants
 
+medium_com_markov-ants
 https://www.codingame.com/training/medium/markov-ants
 https://www.codingame.com/contribute/view/216638ec81ba9a5dd2105b22ad2de62d3e2df
 

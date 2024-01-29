@@ -1,5 +1,6 @@
 Number Partition
 
+easy_com_number-partition
 https://www.codingame.com/training/easy/number-partition
 https://www.codingame.com/contribute/view/76905a7a67aa6f93b7e1d4257a32d081e256c
 

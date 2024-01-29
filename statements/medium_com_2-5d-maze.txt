@@ -1,5 +1,6 @@
 2.5D maze
 
+medium_com_2-5d-maze
 https://www.codingame.com/training/medium/2-5d-maze
 https://www.codingame.com/contribute/view/1450ea54790268761434be60fd1b8976e87
 

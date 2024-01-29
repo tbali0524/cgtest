@@ -1,0 +1,32 @@
+Ross is the winner!
+
+===Each Player's Score===
+Rachel 2
+Chandler 3
+Ross 10
+Monica 2
+Joey 1
+
+===Each Scoring Player's Scoring Words===
+Rachel
+1 LOT
+1 LOB
+Chandler
+1 POT
+1 GOLF
+1 LINE
+Ross
+1 LOVE
+1 NIL
+1 MOVE
+1 TEN
+1 TOME
+1 MINT
+1 OVEN
+2 LOGIN
+1 TOM
+Monica
+1 BLOG
+1 NINE
+Joey
+1 NET

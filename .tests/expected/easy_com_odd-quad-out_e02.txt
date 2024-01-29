@@ -1,0 +1,3 @@
+Quad-4 is Odd-Quad-Out
+It has value of 16
+Others have value of 12

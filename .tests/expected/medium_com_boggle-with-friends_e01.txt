@@ -1,0 +1,35 @@
+Phoebe is the winner!
+
+===Each Player's Score===
+Chandler 6
+Ross 1
+Rachel 6
+Monica 3
+Phoebe 7
+Joey 1
+
+===Each Scoring Player's Scoring Words===
+Chandler
+1 LEG
+1 GEMS
+1 ISLE
+2 MISSY
+1 RIG
+Ross
+1 RIB
+Rachel
+2 SIEGE
+1 SIM
+2 SHIRE
+1 HIM
+Monica
+3 REGIME
+Phoebe
+1 MISS
+1 SIR
+1 IRE
+1 SHE
+1 GRIM
+2 BEIGE
+Joey
+1 GIRL

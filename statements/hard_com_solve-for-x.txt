@@ -1,5 +1,6 @@
 Solve for X
 
+hard_com_solve-for-x
 https://www.codingame.com/training/hard/solve-for-x
 https://www.codingame.com/contribute/view/56247a411b99f1d6f639e52719f53cf7a79aa
 

@@ -1,5 +1,6 @@
 Mind Cracker
 
+hard_com_mind-cracker
 https://www.codingame.com/training/hard/mind-cracker
 https://www.codingame.com/contribute/view/68261c67ac49c4bd79a6676da3769515e658a
 

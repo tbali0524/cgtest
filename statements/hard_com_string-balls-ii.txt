@@ -1,5 +1,6 @@
 String Balls II
 
+hard_com_string-balls-ii
 https://www.codingame.com/training/hard/string-balls-ii
 https://www.codingame.com/contribute/view/52848a45aba16af22e396b4adb39970a4b84b
 

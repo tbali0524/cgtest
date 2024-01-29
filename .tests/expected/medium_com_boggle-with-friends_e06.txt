@@ -1,0 +1,31 @@
+Joey is the winner!
+
+===Each Player's Score===
+Joey 12
+Rachel 0
+Phoebe 1
+Chandler 8
+Monica 1
+
+===Each Scoring Player's Scoring Words===
+Joey
+1 TEE
+1 VET
+1 HUT
+1 TAR
+1 TOUT
+2 UTTER
+1 HET
+2 VOTER
+1 THEE
+1 HERD
+Phoebe
+1 DEE
+Chandler
+1 VAT
+1 HERE
+2 STOUT
+2 OUTER
+2 STARE
+Monica
+1 DARE

@@ -1,0 +1,24 @@
+Rachel is the winner!
+
+===Each Player's Score===
+Monica 2
+Chandler 5
+Rachel 6
+Joey 2
+
+===Each Scoring Player's Scoring Words===
+Monica
+1 TOO
+1 TIDY
+Chandler
+5 AWKWARD
+Rachel
+1 WIT
+1 WAIT
+1 RID
+1 KAT
+1 ARID
+1 ODD
+Joey
+1 AIR
+1 DIRT

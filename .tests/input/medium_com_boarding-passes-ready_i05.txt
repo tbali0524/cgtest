@@ -1,0 +1,43 @@
+5
+8
+40
+Aisling Bea,3E
+Al Murray,2C
+Alice Levine,4B
+Asim Chaudhry,4C
+Bob Mortimer,3F
+Dave Gorman,2D
+Doc Brown,1F
+Frank Skinner,1A
+Hugh Dennis,2H
+Iain Stirling,5D
+James Acaster,4G
+Jessica Knappett,4H
+Joe Lycett,3A
+Joe Thomas,5E
+Joe Wilkinson,1G
+Jon Richardson,1H
+Josh Widdicombe,1B
+Katherine Ryan,2A
+Kerry Godliman,5A
+Liza Tarbuck,4D
+Lolly Adefope,3B
+Lou Sanders,5F
+Mark Watson,3G
+Mel Giedroyc,3C
+Nish Kumar,3H
+Noel Fielding,3D
+Paul Chowdhry,2E
+Paul Sinha,5G
+Phil Wang,5B
+Rhod Gilbert,5C
+Richard Osman,2B
+Rob Beckett,2F
+Roisin Conaty,1C
+Romesh Ranganathan,1D
+Russell Howard,4E
+Sally Phillips,4A
+Sara Pascoe,2G
+Sian Gibson,5H
+Tim Key,1E
+Tim Vine,4F

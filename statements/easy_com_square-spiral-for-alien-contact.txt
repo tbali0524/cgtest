@@ -1,5 +1,6 @@
 Square Spiral for Alien Contact 👽
 
+easy_com_square-spiral-for-alien-contact
 https://www.codingame.com/training/easy/square-spiral-for-alien-contact
 https://www.codingame.com/contribute/view/671383fe9ef3f111cb69510daf4faa26bb6b8
 

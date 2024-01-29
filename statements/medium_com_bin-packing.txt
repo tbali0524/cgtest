@@ -1,5 +1,6 @@
 Bin packing
 
+medium_com_bin-packing
 https://www.codingame.com/training/medium/bin-packing
 https://www.codingame.com/contribute/view/780607cc083f1138d130bbf040e86689d3b0e
 

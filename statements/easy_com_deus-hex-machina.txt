@@ -1,5 +1,6 @@
 deus Hex machina
 
+easy_com_deus-hex-machina
 https://www.codingame.com/training/easy/deus-hex-machina
 https://www.codingame.com/contribute/view/68425b6211be5a033b3a02d7f6fa018b57b11
 

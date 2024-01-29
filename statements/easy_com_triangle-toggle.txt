@@ -1,5 +1,6 @@
 Triangle Toggle
 
+easy_com_triangle-toggle
 https://www.codingame.com/training/easy/triangle-toggle
 https://www.codingame.com/contribute/view/787863963f81379ccafa3f29e2b62ec2de19a
 

@@ -438,6 +438,7 @@ return [
                 'easy_com_number-formatting',
                 'easy_com_number-partition',
                 'easy_com_object-insertion',
+                'easy_com_odd-quad-out',
                 'easy_com_offset-arrays',
                 'easy_com_order-of-succession',
                 'easy_com_organic-compounds',
@@ -502,6 +503,7 @@ return [
                 'easy_com_the-logo-beyond-c-and-c',
                 'easy_com_the-michelangelo-code',
                 // 'easy_com_the-mystic-rectangle',         // also in global section
+                'easy_com_the-other-side',
                 // 'easy_com_the-river-i-',                 // also in global section
                 // 'easy_com_the-river-ii-',                // also in global section
                 'easy_com_the-travelling-salesman-problem',
@@ -571,6 +573,8 @@ return [
                 'medium_com_bingo',
                 // 'medium_com_bit-count-to-limit',         // also in global section
                 'medium_com_blood-types',
+                'medium_com_boarding-passes-ready',
+                'medium_com_boggle-with-friends',
                 'medium_com_bouncing-barry',
                 'medium_com_box-of-cigars',
                 'medium_com_brackets-enhanced-edition',
@@ -847,6 +851,7 @@ return [
                 'hard_com_code-your-own-automaton2000-step-1',
                 'hard_com_conditional-probabilities',
                 'hard_com_connect-four',
+                'hard_com_counter-attack',
                 'hard_com_cryptarithm',
                 'hard_com_dawg',
                 'hard_com_derivative-time---part2',
@@ -891,6 +896,7 @@ return [
                 'hard_com_levenshtein-distance',
                 'hard_com_longest-palindrome',
                 'hard_com_magic-count-of-numbers',
+                'hard_com_magical-frog',
                 'hard_com_map-colorations',
                 'hard_com_mars-colonization',
                 'hard_com_maximising-integers',
@@ -1040,6 +1046,7 @@ return [
                 'optim_com_number-shifting',
                 'optim_com_samegame',
                 'optim_com_search-race',
+                'optim_com_snake',
                 'optim_com_travelling-salesman',
                 'optim_com_wordle',
             ],
@@ -1183,4 +1190,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 24.01.08: 'easy_com_anagram-to-break-the-code',
+// Note: last puzzle added on 24.01.29: 'hard_com_counter-attack',

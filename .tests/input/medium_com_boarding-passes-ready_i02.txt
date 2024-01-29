@@ -1,0 +1,7 @@
+2
+2
+4
+Elaine,1A
+George,2B
+Jerry,1B
+Kramer,2A

@@ -1,7 +1,9 @@
 Video Assistant Referee
 
+easy_com_video-assistant-referee
 https://www.codingame.com/training/easy/video-assistant-referee
 https://www.codingame.com/contribute/view/61758710894298bb6f967d53673968f1e7447
+
 A contribution by __yel__p
 Approved by Timinator,Aldoggen,Lanfeust
 

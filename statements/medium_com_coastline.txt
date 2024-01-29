@@ -1,5 +1,6 @@
 Coastline
 
+medium_com_coastline
 https://www.codingame.com/training/medium/coastline
 https://www.codingame.com/contribute/view/725163a2d3e4cb1522c12aa2a6211d5d807f7
 

@@ -1,5 +1,6 @@
 Mosaic
 
+medium_com_mosaic
 https://www.codingame.com/training/medium/mosaic
 https://www.codingame.com/contribute/view/765423276e947aca67657968f41cb6f294815
 

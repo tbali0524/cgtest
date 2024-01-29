@@ -1,8 +1,8 @@
 Interstellar
 
+easy_com_interstellar.txt
 https://www.codingame.com/training/easy/interstellar
 https://www.codingame.com/contribute/view/754868df0a34c8bdfc6ed7529e7f10baf63a6
-
 
 A contribution by CrystallineCore
 Approved by Timinator,Rafarafa,DeanTheMachine

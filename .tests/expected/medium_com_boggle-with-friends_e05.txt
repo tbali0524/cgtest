@@ -1,0 +1,24 @@
+Joey is the winner!
+
+===Each Player's Score===
+Chandler 0
+Monica 4
+Rachel 3
+Joey 5
+
+===Each Scoring Player's Scoring Words===
+Monica
+1 WAN
+1 HOLE
+1 TOTE
+1 PILE
+Rachel
+1 OPT
+1 TIE
+1 TOE
+Joey
+1 WON
+1 LIT
+1 ONE
+1 TWO
+1 WHO

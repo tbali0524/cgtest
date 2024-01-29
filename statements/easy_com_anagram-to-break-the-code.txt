@@ -1,5 +1,6 @@
 anagram to break the code !
 
+easy_com_anagram-to-break-the-code
 https://www.codingame.com/training/easy/anagram-to-break-the-code
 https://www.codingame.com/contribute/view/70833c0418001da585041f20f5ff8e57751cb
 
