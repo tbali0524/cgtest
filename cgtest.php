@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.11.0 by Balint Toth [TBali]
+ * CGTest v1.11.1 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * For usage, see:
@@ -20,7 +20,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.11.0';
+$version = 'v1.11.1';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -155,6 +155,7 @@ $defaultConfig = [
         'versionCommand' => 'g++ --version',
         // note: omitting -ldl -lcrypt from CG settings
         'buildCommand' => 'g++ -lm -lpthread -m64 -std=c++17 -x c++ -o %b%p_%l.exe %s',
+        // 'buildCommand' => 'g++ -lm -lpthread -m64 -std=c++17 -isystem C:\tools\msys64\mingw64\include\c++\13.2.0\ -x c++ -o %b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
@@ -163,13 +164,13 @@ $defaultConfig = [
         'sourcePath' => 'clojure/',
         'sourceExtension' => '.clj',
         'codinGameVersion' => 'Clojure 1.11.1',
-        'versionCommand' => 'clj --version',
+        'versionCommand' => 'clojure --version',
         'buildCommand' => '',
-        'runCommand' => 'clj -X Solution/main %s',
+        'runCommand' => 'clojure -X Solution/main %s',
         'cleanPatterns' => [],
-        // 'versionCommand' => 'pwsh -Command clj --version',
+        // 'versionCommand' => 'pwsh -Command clojure --version',
         // 'buildCommand' => '',
-        // 'runCommand' => 'pwsh -Command clj -X Solution/main %s',
+        // 'runCommand' => 'pwsh -Command clojure -X Solution/main %s',
         // 'cleanPatterns' => [],
     ],
     'd' => [

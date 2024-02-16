@@ -1,0 +1,26 @@
+name: Test on push (fast)
+on: push
+jobs:
+  cgtest-fast:
+    name: Run solutions with CGTest in some fast languages
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      # This is not needed in the cgtest repo itself, but can be used in other code repos:
+      #   - name: Download latest CGTest script from its repo
+      #     run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
+      - name: Check available language versions
+        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang-versions
+      - name: Run tests (only in fast languages)
+        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c++,javascript,perl,php,python,ruby,rust
+      - name: Upload cgtest logs
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cgtest-logs-fast
+          path: |
+            .tests/temp/_build_log.txt
+            .tests/output/*.txt
+          if-no-files-found: ignore
+          overwrite: true

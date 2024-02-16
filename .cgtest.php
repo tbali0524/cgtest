@@ -40,6 +40,7 @@ return [
     //      Note: can be overriden via the '--lang=...' command-line option
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
         'bash',
+        'ocaml',            // tested on Linux only
     ] : [], [
         'c',
         'c#',
@@ -56,7 +57,6 @@ return [
         'kotlin',
         'lua',
         // 'objective-c',   // untested
-        // 'ocaml',         // tested on Linux only
         'pascal',
         'perl',
         'php',

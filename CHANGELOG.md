@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Show the language versions used during normal test runs with `--verbose`.
+- Github Actions updated.
 
 ### Fixed
 

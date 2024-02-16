@@ -1,56 +1,57 @@
-name: TestRun
-
-on: [push]
-
+name: Test in all languages
+on: workflow_dispatch
 jobs:
-  cgtest:
-    name: Run solutions with CGTest
+  cgtest-all-singlejob:
+    name: Run solutions with CGTest in all available languages in a single job.
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
 
       # =========================================================================
-      # Add missing languages, matching the version at Codingame
+      # Add missing languages, optionally matching the version at Codingame
 
-      # - name: Setup D
-      #   uses: dlang-community/setup-dlang@v1
-      #   with:
-      #     compiler: dmd-2.099.1
-      #     # compiler: dmd-latest
+      - name: Setup D
+        uses: dlang-community/setup-dlang@v1
+        with:
+          compiler: dmd-latest
+          # compiler: dmd-2.099.1
 
       - name: Setup Lua
         uses: leafo/gh-actions-lua@v10
-        with:
-          luaVersion: "5.4.4" # omit for latest
+        # with:
+        #  luaVersion: "5.4.4" # omit for latest
 
-      # - name: Setup Pascal
-      #   run: |
-      #     export DEBIAN_FRONTEND=noninteractive
-      #     sudo apt-get update
-      #     sudo apt-get install -y fpc
+      - name: Setup Pascal
+        run: |
+          export DEBIAN_FRONTEND=noninteractive
+          sudo apt-get update
+          sudo apt-get install -y fpc
 
       # =========================================================================
-      # Following languages are too slow, comment out if test run would be skipped.
+      # Following languages are very slow
 
-      # - name: Setup Dart
-      #   uses: dart-lang/setup-dart@v1
-      #   with:
-      #     sdk: 2.16.2
-      #     # sdk: stable
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+          # sdk: 2.16.2
 
-      # - name: Setup Groovy
-      #   uses: wtfjoke/setup-groovy@v1
-      #   with:
-      #     groovy-version: '3.x'
+      - name: Setup Groovy
+        uses: wtfjoke/setup-groovy@v1
+        with:
+          groovy-version: '3.x'
 
-      # - name: Setup Scala
-      #   uses: olafurpg/setup-scala@v11
-      #   with:
-      #     java-version: openjdk@1.11
+      - name: Setup Scala CLI
+        uses: VirtusLab/scala-cli-setup@main
+        with:
+          scala-cli-version: latest
+          # jvm: adopt:11
+          apps: scala scalac scala-cli
 
       # =========================================================================
       # Following languages are already available in default GitHub Action runner.
-      # These actions can be used to match the exact version at CodinGame.
+      # These actions can be used to matching the exact version at CodinGame.
 
       # - name: Setup PHP
       #   uses: shivammathur/setup-php@v2
@@ -91,12 +92,24 @@ jobs:
       # This is not needed in the cgtest repo itself, but can be used in other code repos:
       #   - name: Download latest CGTest script from its repo
       #     run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
+        # uses: wei/wget@v1
+        # with:
+        #     args: -O cgtest.php https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
 
       - name: Check available language versions
         run: php cgtest.php --config=.cgtest.php --verbose --stats  --lang-versions
 
-      - name: Run tests (only in fast languages)
-        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c++,javascript,lua,perl,php,python,ruby,rust
+      - name: Run tests (in all languages)
+        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c#,c++,d,dart,f#,go,groovy,haskell,java,javascript,kotlin,lua,pascal,perl,php,python,ruby,rust,scala,typescript,vb.net
+        # disabled in all: clojure,objective-c,ocaml,swift
 
-      # - name: Run tests (in all languages)
-      #   run: php cgtest.php --config=.cgtest.php --verbose --stats
+      - name: Upload cgtest logs
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cgtest-logs-all
+          path: |
+            .tests/temp/_build_log.txt
+            .tests/output/*.txt
+          if-no-files-found: ignore
+          overwrite: true

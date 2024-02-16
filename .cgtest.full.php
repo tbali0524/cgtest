@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.11.0 by Balint Toth [TBali]
+ * CGTest v1.11.1 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
@@ -39,7 +39,9 @@ return [
     // == Tests will be run in the following languages:
     //      Note: can be overriden via the '--lang=...' command-line option
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
+        // tested on Linux only
         'bash',
+        'ocaml',
     ] : [], [
         'c',
         'c#',
@@ -56,7 +58,6 @@ return [
         'kotlin',
         'lua',
         // 'objective-c',   // untested
-        // 'ocaml',         // tested on Linux only
         'pascal',
         'perl',
         'php',
@@ -80,63 +81,8 @@ return [
     //     ],
     // ],
     'puzzles' => [
-        'codegolf/easy/' => [
-            'codegolf_easy_ascii-art',
-            'codegolf_easy_temperatures',
-            'codegolf_easy_unary',
-        ],
-        'codegolf/medium/' => [
-        ],
-        'codegolf/hard/' => [
-        ],
-        'codegolf/expert/' => [
-        ],
-        'puzzle/cg/easy/' => [
-            'easy_cg_ascii-art',
-            'easy_cg_horse-racing-duals',
-            'easy_cg_temperatures',
-            'easy_cg_unary',
-        ],
-        'puzzle/cg/medium/' => [
-            'medium_cg_stock-exchange-losses',
-        ],
-        'puzzle/cg/hard/' => [
-        ],
-        'puzzle/cg/expert/' => [
-        ],
-        'puzzle/community/easy/' => [
-            'easy_com_1d-bush-fire',
-            'easy_com_count-as-i-count',
-            'easy_com_create-the-longest-sequence-of-1s',
-            'easy_com_credit-card-verifier-luhns-algorithm',
-            'easy_com_robot-show',
-            'easy_com_smooth',
-            'easy_com_sum-of-spirals-diagonals',
-            'easy_com_the-mystic-rectangle',
-            'easy_com_the-river-i-',
-            'easy_com_the-river-ii-',
-            'easy_com_unit-fractions',
-        ],
         'puzzle/community/medium/' => [
-            'medium_com_bit-count-to-limit',
-            'medium_com_factorial-vs-exponential',
-            'medium_com_halting-sequences',
-            'medium_com_minimal-number-of-swaps',
-            'medium_com_porcupine-fever',
-            'medium_com_remaining-card',
-            'medium_com_reversed-look-and-say',
             'medium_com_rubik',
-            'medium_com_sum-of-divisors',
-            'medium_com_the-experience-for-creating-puzzles',
-            'medium_com_the-fastest',
-        ],
-        'puzzle/community/hard/' => [
-            'hard_com_execution-circle',
-            'hard_com_google-interview---the-two-egg-problem',
-            'hard_com_highest-truncated-pyramid',
-        ],
-        'puzzle/community/expert/' => [
-            'expert_com_recurring-decimals',
         ],
     ],
     // == Tests will be run without test result evaluation for the following puzzles in ALL languages
@@ -148,22 +94,6 @@ return [
     //     ],
     // ],
     'runOnlyPuzzles' => [
-        // 'codegolf/easy/' => [
-        //     'codegolf_easy_dont-panic',
-        //     'codegolf_easy_power-of-thor',
-        //     'codegolf_easy_the-descent',
-        // ],
-        'puzzle/cg/' => [
-            'tutorial_onboarding',
-        ],
-        'puzzle/cg/easy/' => [
-            'easy_cg_mars-lander-episode-1',
-            'easy_cg_power-of-thor-episode-1',
-            'easy_cg_the-descent',
-        ],
-        'puzzle/cg/medium/' => [
-            'medium_cg_dont-panic-episode-1',
-        ],
     ],
     // == The following per-language config options are available:
     // 'languageName' => [
@@ -227,13 +157,13 @@ return [
         ],
     ],
     // == Additional test cases for a single language:
-    'php' => [
+    'python' => [
         // 'sourcePath' => '', // uncomment if source code is not in 'php/' but in the keys, e.g. 'puzzle/cg/...'
         'includePuzzles' => [
             'codegolf/easy/' => [
-                // 'codegolf_easy_ascii-art',               // also in global section
-                // 'codegolf_easy_temperatures',            // also in global section
-                // 'codegolf_easy_unary',                   // also in global section
+                'codegolf_easy_ascii-art',
+                'codegolf_easy_temperatures',
+                'codegolf_easy_unary',
             ],
             'codegolf/medium/' => [
                 'codegolf_medium_blunder-episode-1',
@@ -265,12 +195,12 @@ return [
                 'event_winter-challenge-2023-q07',          // only tests 01-07 are included
             ],
             'puzzle/cg/easy/' => [
-                // 'easy_cg_ascii-art',                     // also in global section
+                'easy_cg_ascii-art',
                 'easy_cg_defibrillators',
-                // 'easy_cg_horse-racing-duals',            // also in global section
+                'easy_cg_horse-racing-duals',
                 'easy_cg_mime-type',
-                // 'easy_cg_temperatures',                  // also in global section
-                // 'easy_cg_unary',                         // also in global section
+                'easy_cg_temperatures',
+                'easy_cg_unary',
             ],
             'puzzle/cg/medium/' => [
                 'medium_cg_blunder-episode-1',
@@ -279,7 +209,7 @@ return [
                 'medium_cg_mayan-calculation',
                 'medium_cg_network-cabling',
                 'medium_cg_scrabble',
-                // 'medium_cg_stock-exchange-losses',       // also in global section
+                'medium_cg_stock-exchange-losses',
                 'medium_cg_telephone-numbers',
                 'medium_cg_the-gift',
                 'medium_cg_war',
@@ -302,7 +232,7 @@ return [
             ],
             'puzzle/community/easy/' => [
                 'easy_com_1-ngr-basic-radar',
-                // 'easy_com_1d-bush-fire',                 // also in global section
+                'easy_com_1d-bush-fire',
                 'easy_com_1d-spreadsheet',
                 'easy_com_2nd-degree-polynomial-simple-analysis',
                 'easy_com_7-segment-scanner',
@@ -344,15 +274,16 @@ return [
                 'easy_com_calculator',
                 'easy_com_card-counting-when-easily-distracted',
                 'easy_com_character-replacement-problem',
+                'easy_com_cheap-choices',
                 'easy_com_container-terminal',
                 'easy_com_cosmic-love',
-                // 'easy_com_count-as-i-count',                     // also in global section
+                'easy_com_count-as-i-count',
                 'easy_com_count-your-coins',
                 'easy_com_couples-picture-frame',
                 'easy_com_crazy-list',
-                // 'easy_com_create-the-longest-sequence-of-1s',    // also in global section
+                'easy_com_create-the-longest-sequence-of-1s',
                 'easy_com_create-turn-here-signs',
-                // 'easy_com_credit-card-verifier-luhns-algorithm', // also in global section
+                'easy_com_credit-card-verifier-luhns-algorithm',
                 'easy_com_crop-circles',
                 'easy_com_cubic-bezier-curves',
                 'easy_com_currency-conversion-challenge',   // removed puzzle
@@ -460,7 +391,7 @@ return [
                 'easy_com_reverse-fizzbuzz',
                 'easy_com_reverse-minesweeper',
                 'easy_com_robot-reach',
-                // 'easy_com_robot-show',                   // also in global section
+                'easy_com_robot-show',
                 'easy_com_rock-paper-scissors-lizard-spock',
                 'easy_com_rocks-papers-scissors-es',
                 'easy_com_rooks-movements',
@@ -477,7 +408,7 @@ return [
                 'easy_com_simple-auto-scaling',
                 'easy_com_simple-awale',
                 'easy_com_simple-load-balancing',
-                // 'easy_com_smooth',                       // also in global section
+                'easy_com_smooth',
                 'easy_com_snail-run',
                 'easy_com_snake-sort-2d',
                 'easy_com_someones-acting-sus----',
@@ -485,7 +416,7 @@ return [
                 'easy_com_stall-tilt',
                 'easy_com_substitution-encoding',
                 'easy_com_sudoku-validator',
-                // 'easy_com_sum-of-spirals-diagonals',     // also in global section
+                'easy_com_sum-of-spirals-diagonals',
                 'easy_com_stunning-numbers',
                 'easy_com_survey-prediction',
                 'easy_com_sweet-spot',
@@ -502,10 +433,10 @@ return [
                 'easy_com_the-leaking-bathtub',
                 'easy_com_the-logo-beyond-c-and-c',
                 'easy_com_the-michelangelo-code',
-                // 'easy_com_the-mystic-rectangle',         // also in global section
+                'easy_com_the-mystic-rectangle',
                 'easy_com_the-other-side',
-                // 'easy_com_the-river-i-',                 // also in global section
-                // 'easy_com_the-river-ii-',                // also in global section
+                'easy_com_the-river-i-',
+                'easy_com_the-river-ii-',
                 'easy_com_the-travelling-salesman-problem',
                 'easy_com_the-weight-of-words',
                 'easy_com_tictactoe',
@@ -518,7 +449,7 @@ return [
                 'easy_com_ukuleleguitar-converter',
                 'easy_com_ulam-spiral',
                 'easy_com_unique-prefixes',
-                // 'easy_com_unit-fractions',               // also in global section
+                'easy_com_unit-fractions',
                 'easy_com_van-ecks-sequence',
                 'easy_com_vectors-in-variables-dimensions',
                 'easy_com_video-assistant-referee',
@@ -571,7 +502,7 @@ return [
                 'medium_com_binary-sequence',
                 'medium_com_binary-tree-visual',
                 'medium_com_bingo',
-                // 'medium_com_bit-count-to-limit',         // also in global section
+                'medium_com_bit-count-to-limit',
                 'medium_com_blood-types',
                 'medium_com_boarding-passes-ready',
                 'medium_com_boggle-with-friends',
@@ -614,6 +545,7 @@ return [
                 'medium_com_data-compression-1',            // removed puzzle
                 'medium_com_ddcg-mapper',
                 'medium_com_de-fizzbuzzer',
+                'medium_com_decimal-numbers-to-floating-numbers',
                 'medium_com_depot-organization',
                 'medium_com_derivative-time---part1',
                 'medium_com_detective-geek',
@@ -638,7 +570,7 @@ return [
                 'medium_com_equalizing-arrays',
                 'medium_com_eratosthenes-wallpaper',
                 'medium_com_european-rugby-champions-cup-ranking',
-                // 'medium_com_factorial-vs-exponential',   // also in global section
+                'medium_com_factorial-vs-exponential',
                 'medium_com_fair-numbering',
                 'medium_com_find-the-liars',
                 'medium_com_find-the-missing-plus-signs-in-addition',
@@ -668,7 +600,7 @@ return [
                 'medium_com_guessing-digits',
                 'medium_com_guessing-n-cheating',
                 'medium_com_hacking-at-robbercity',
-                // 'medium_com_halting-sequences',          // also in global section
+                'medium_com_halting-sequences',
                 'medium_com_hexagonal-maze',
                 'medium_com_hexagonal-maze---part2',
                 'medium_com_hidden-word',
@@ -715,7 +647,7 @@ return [
                 'medium_com_merlins-magic-square',
                 'medium_com_micro-assembly',
                 'medium_com_minesweeper',
-                // 'medium_com_minimal-number-of-swaps',    // also in global section
+                'medium_com_minimal-number-of-swaps',
                 'medium_com_minimax-exercise',
                 'medium_com_mitosis-mayhem',
                 'medium_com_monthly-system',
@@ -738,11 +670,11 @@ return [
                 'medium_com_playfair-cipher',
                 'medium_com_plight-of-the-fellowship-of-the-ring',
                 'medium_com_polydivisible-number',
-                // 'medium_com_porcupine-fever',            // also in global section
+                'medium_com_porcupine-fever',
                 'medium_com_primitive-pythagorean-triples',
                 'medium_com_propositions-in-freges-ideography',
-                // 'medium_com_remaining-card',             // also in global section
-                // 'medium_com_reversed-look-and-say',      // also in global section
+                'medium_com_remaining-card',
+                'medium_com_reversed-look-and-say',
                 'medium_com_risk-odds-calculator',
                 // 'medium_com_rubik',                      // also in global section
                 'medium_com_quaternion-multiplication',
@@ -782,7 +714,7 @@ return [
                 'medium_com_string-balls',
                 'medium_com_sudoku-solver',
                 'medium_com_suguru-solver',
-                // 'medium_com_sum-of-divisors',            // also in global section
+                'medium_com_sum-of-divisors',
                 'medium_com_surakarta',
                 'medium_com_target-firing',
                 'medium_com_team-building',
@@ -791,8 +723,8 @@ return [
                 'medium_com_text-alignment',
                 'medium_com_thermal-flying-episode-1',
                 'medium_com_these-romans-are-crazy',
-                // 'medium_com_the-experience-for-creating-puzzles', // also in global section
-                // 'medium_com_the-fastest',                // also in global section
+                'medium_com_the-experience-for-creating-puzzles',
+                'medium_com_the-fastest',
                 'medium_com_the-grand-festival---i',
                 'medium_com_the-grand-festival---ii',
                 'medium_com_the-hooch-clash-grouch',        // removed puzzle
@@ -868,19 +800,19 @@ return [
                 'hard_com_elevator',
                 'hard_com_encounter-surface',
                 'hard_com_erdos-number',
-                // 'hard_com_execution-circle',                // also in global section
+                'hard_com_execution-circle',
                 'hard_com_expand-the-polynomial',
                 'hard_com_factorials-of-primes-decomposition',
                 'hard_com_flower-beds',
                 'hard_com_fractal-carpet',
                 'hard_com_gerrymandering',
-                // 'hard_com_google-interview---the-two-egg-problem',    // also in global section
+                'hard_com_google-interview---the-two-egg-problem',
                 'hard_com_grid-climbing',
                 'hard_com_hangman',
                 'hard_com_hanoi-tower',
                 'hard_com_harmless-rooks',
                 'hard_com_her-majestys-well-shared-secret',
-                // 'hard_com_highest-truncated-pyramid',       // also in global section
+                'hard_com_highest-truncated-pyramid',
                 'hard_com_hill-notation-and-hill-order',
                 'hard_com_hit-the-road',
                 'hard_com_hitori-solver',
@@ -983,7 +915,7 @@ return [
                 'expert_com_running-up-that-hill',
                 'expert_com_prime-fractals-in-pascals-triangle',
                 'expert_com_prime-transformations',
-                'expert_com_recurring-decimals',            // also in global section
+                'expert_com_recurring-decimals',
                 'expert_com_skylines',
                 'expert_com_sliding-puzzle',
                 'expert_com_spy-the-spies',
@@ -1014,8 +946,8 @@ return [
         //      Note: the puzzle solution code must exit after reading turn #0 data to avoid infinite loop!
         'runOnlyPuzzles' => [
             // 'codegolf/easy/' => [
-            //     'codegolf_easy_dont-panic',              // also in global section
-            //     'codegolf_easy_power-of-thor',           // also in global section
+            //     'codegolf_easy_dont-panic',
+            //     'codegolf_easy_power-of-thor',
             // ],
             // 'codegolf/medium/' => [
             //    'codegolf_medium_shadows-of-the-knight-episode-1',
@@ -1029,7 +961,7 @@ return [
             // 'codegolf/expert/' => [
             //    'codegolf_expert_mars-lander-episode-3',
             //    'codegolf_expert_shadows-of-the-knight-episode-2',
-            //    'codegolf_expert_the-fall-episode-3',     // TODO: solve
+            //    'codegolf_expert_the-fall-episode-3',
             //    'codegolf_expert_vox-codei-episode-2',
             // ],
             'optim/cg/' => [
@@ -1054,7 +986,7 @@ return [
                 'optim_com_2048',
             ],
             'puzzle/cg/' => [
-                // 'tutorial_onboarding',                   // also in global section
+                'tutorial_onboarding',
             ],
             'puzzle/cg/event/' => [
                 'event_summer-challenge-2023-q04',
@@ -1067,13 +999,13 @@ return [
                 'event_winter-challenge-2023-q05',
             ],
             'puzzle/cg/easy/' => [
-                // 'easy_cg_mars-lander-episode-1',         // also in global section
-                // 'easy_cg_power-of-thor-episode-1',       // also in global section
-                // 'easy_cg_the-descent',                   // also in global section
+                'easy_cg_mars-lander-episode-1',
+                'easy_cg_power-of-thor-episode-1',
+                'easy_cg_the-descent',
             ],
             'puzzle/cg/medium/' => [
                 'medium_cg_death-first-search-episode-1',
-                // 'medium_cg_dont-panic-episode-1',        // also in global section
+                'medium_cg_dont-panic-episode-1',
                 'medium_cg_mars-lander-episode-2',
                 'medium_cg_shadows-of-the-knight-episode-1',
                 'medium_cg_the-fall-episode-1',
@@ -1125,69 +1057,6 @@ return [
                 'expert_com_space-maze',
             ],
         ],
-        // == Exclude these puzzles from testing in php, if the required php extension is not available:
-        'excludePuzzles' => array_merge(
-            !extension_loaded('bcmath') ? [
-                'easy_com_fibonaccis-rabbit',
-                'medium_com_christmas-tree',
-                'medium_com_gravity-centrifuge-tuning',
-                'medium_com_oneway-city',
-                'medium_com_polydivisible-number',
-            ] : [],
-            !extension_loaded('mbstring') ? [
-                'easy_com_frame-the-picture',
-                'medium_com_ascii-cube',
-            ] : [],
-            !extension_loaded('ctype') ? [
-                'easy_com_sentence-tokenising',
-                'hard_com_derivative-time---part2',
-                'medium_com_lost-astronaut',
-                'medium_com_sticky-keyboard',
-            ] : [],
-        ),
-    ],
-    // Additional languages, unsupported on CodinGame:
-    'fortran' => [
-        'excludePuzzles' => [
-            // exclude ALL puzzles from the global 'puzzles' and 'runOnlyPuzzles' lists, except 'medium_com_rubik'
-            'codegolf_easy_ascii-art',
-            'codegolf_easy_unary',
-            'codegolf_easy_temperatures',
-            'easy_cg_ascii-art',
-            'easy_cg_horse-racing-duals',
-            'easy_cg_mars-lander-episode-1',
-            'easy_cg_power-of-thor-episode-1',
-            'easy_cg_temperatures',
-            'easy_cg_the-descent',
-            'easy_cg_unary',
-            'medium_cg_dont-panic-episode-1',
-            'medium_cg_stock-exchange-losses',
-            'easy_com_1d-bush-fire',
-            'easy_com_count-as-i-count',
-            'easy_com_create-the-longest-sequence-of-1s',
-            'easy_com_credit-card-verifier-luhns-algorithm',
-            'easy_com_robot-show',
-            'easy_com_smooth',
-            'easy_com_sum-of-spirals-diagonals',
-            'easy_com_the-mystic-rectangle',
-            'easy_com_the-river-i-',
-            'easy_com_the-river-ii-',
-            'easy_com_unit-fractions',
-            'medium_com_bit-count-to-limit',
-            'medium_com_factorial-vs-exponential',
-            'medium_com_halting-sequences',
-            'medium_com_minimal-number-of-swaps',
-            'medium_com_porcupine-fever',
-            'medium_com_remaining-card',
-            'medium_com_reversed-look-and-say',
-            'medium_com_sum-of-divisors',
-            'medium_com_the-experience-for-creating-puzzles',
-            'medium_com_the-fastest',
-            'hard_com_execution-circle',
-            'hard_com_google-interview---the-two-egg-problem',
-            'hard_com_highest-truncated-pyramid',
-            'expert_com_recurring-decimals',
-        ],
     ],
 ];
-// Note: last puzzle added on 24.01.29: 'hard_com_counter-attack',
+// Note: last puzzle added on 24.02.05: 'easy_com_cheap-choices',
