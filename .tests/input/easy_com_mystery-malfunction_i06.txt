@@ -1,0 +1,4 @@
+3
+Item REMAINS at teleporter
+Item appears at WRONG LOCATION
+Item REMAINS at teleporter

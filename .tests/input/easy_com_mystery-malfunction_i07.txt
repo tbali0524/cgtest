@@ -1,0 +1,6 @@
+5
+Item appears at WRONG LOCATION
+Item REMAINS at teleporter
+Item DOESNT APPEAR at location
+Item appears at WRONG LOCATION
+Item DOESNT APPEAR at location

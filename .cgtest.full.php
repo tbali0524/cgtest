@@ -313,6 +313,7 @@ return [
                 'easy_com_flip-the-sign',
                 'easy_com_frame-the-picture',
                 'easy_com_furlongs-per-fortnight',
+                'easy_com_gdq---binary-coded-decimal-clock',
                 'easy_com_genetics-and-computers---part-1',
                 'easy_com_ghost-legs',
                 'easy_com_gold-packing',
@@ -359,6 +360,7 @@ return [
                 'easy_com_mountain-map',
                 'easy_com_moves-in-maze',
                 'easy_com_murder-in-the-village',
+                'easy_com_mystery-malfunction',             // removed puzzle
                 'easy_com_nato-alphabets-odd-uncles',
                 'easy_com_nature-of-quadrilaterals',
                 'easy_com_nature-of-triangles',
@@ -1059,4 +1061,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 24.02.05: 'easy_com_cheap-choices',
+// Note: last puzzle added on 24.02.21: 'easy_com_mystery-malfunction',
