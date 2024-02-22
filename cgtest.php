@@ -932,7 +932,9 @@ foreach ($config['languages'] as $language) {
             continue;
         }
         if ($config['lang-versions']) {
-            if (($language == 'php') or ($language == 'perl')) {
+            if ($language == 'perl') {
+                $maxLines = 5;
+            } elseif ($language == 'php') {
                 $maxLines = 4;
             } elseif ($language == 'java') {
                 $maxLines = 3;
@@ -955,10 +957,18 @@ foreach ($config['languages'] as $language) {
             $config['verbose']
             and !$config['lang-versions']
             and !$config['dry-run']
-            and (($execOutput[0] ?? '') != '')
         ) {
-            echo $infoTag . 'Using ' . $ansiInfo . $language . $ansiReset . ' version: '
-                . $ansiGreen . $execOutput[0] . $ansiReset . PHP_EOL;
+            if (($execOutput[0] ?? '') != '') {
+                $langVersionInfo = $execOutput[0];
+            } elseif (($execOutput[1] ?? '') != '') {
+                $langVersionInfo = $execOutput[1];
+            } else {
+                $langVersionInfo == '';
+            }
+            if ($langVersionInfo != '') {
+                echo $infoTag . 'Using ' . $ansiInfo . str_pad(substr(strval($language), 0, 12), 12) . $ansiReset
+                . ' version: ' . $ansiGreen . $langVersionInfo . $ansiReset . PHP_EOL;
+            }
         }
     }
     // --------------------------------------------------------------------
