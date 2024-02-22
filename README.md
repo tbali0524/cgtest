@@ -1,7 +1,7 @@
 # CGTest
 
 ![release](https://img.shields.io/github/v/release/tbali0524/cgtest)
-![build](https://img.shields.io/github/actions/workflow/status/tbali0524/cgtest/cgtest.yml)
+![build](https://img.shields.io/github/actions/workflow/status/tbali0524/cgtest/cgtest-fast.yml)
 ![languages](https://img.shields.io/github/languages/count/tbali0524/cgtest?label=supported%20languages)
 ![CG test cases](https://img.shields.io/github/directory-file-count/tbali0524/cgtest/.tests/input?label=CG%20test%20cases)
 ![MIT](https://img.shields.io/github/license/tbali0524/cgtest)
@@ -10,7 +10,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
-_The repository also contains __5600+__ test cases for __800+__ `CodinGame` puzzles and __~700__ puzzle statements._
+_The repository also contains __5700+__ test cases for __810+__ `CodinGame` puzzles and __730+__ puzzle statements._
 
 ## Intro
 

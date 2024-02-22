@@ -41,12 +41,15 @@ return [
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
         // tested on Linux only
         'bash',
-        'ocaml',
+        'c++',
+        // 'clojure',       // untested
+        // 'objective-c',   // untested
+        'ocaml',            // tested on Linux only
+        // 'swift',         // untested
     ] : [], [
         'c',
         'c#',
         'c++',
-        // 'clojure',       // untested
         'd',
         'dart',
         'f#',
@@ -57,7 +60,6 @@ return [
         'javascript',
         'kotlin',
         'lua',
-        // 'objective-c',   // untested
         'pascal',
         'perl',
         'php',
@@ -65,7 +67,6 @@ return [
         'ruby',
         'rust',
         'scala',
-        // 'swift',         // untested
         'typescript',
         'vb.net',
     // Additional languages, unsupported on CodinGame:

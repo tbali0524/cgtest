@@ -155,7 +155,6 @@ $defaultConfig = [
         'versionCommand' => 'g++ --version',
         // note: omitting -ldl -lcrypt from CG settings
         'buildCommand' => 'g++ -lm -lpthread -m64 -std=c++17 -x c++ -o %b%p_%l.exe %s',
-        // 'buildCommand' => 'g++ -lm -lpthread -m64 -std=c++17 -isystem C:\tools\msys64\mingw64\include\c++\13.2.0\ -x c++ -o %b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
@@ -454,7 +453,7 @@ $csprojTemplate =
     <OutputPath>bin/</OutputPath>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <PublishTrimmed>true</PublishTrimmed>
     <PublishReadyToRun>true</PublishReadyToRun>
     <PublishSingleFile>true</PublishSingleFile>
@@ -933,7 +932,14 @@ foreach ($config['languages'] as $language) {
             continue;
         }
         if ($config['lang-versions']) {
-            for ($i = 0; $i < min(4, count($execOutput)); ++$i) {
+            if (($language == 'php') or ($language == 'perl')) {
+                $maxLines = 4;
+            } elseif ($language == 'java') {
+                $maxLines = 3;
+            } else {
+                $maxLines = 2;
+            }
+            for ($i = 0; $i < min($maxLines, count($execOutput)); ++$i) {
                 if (($execOutput[$i] ?? '') == '') {
                     continue;
                 }
