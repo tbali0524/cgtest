@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Show the language versions used during normal test runs with `--verbose`.
 - Github Actions updated.
+- default c++ build command on Windows include `-static-libgcc -static-libstdc++`
 
 ### Fixed
 

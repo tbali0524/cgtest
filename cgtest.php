@@ -121,7 +121,10 @@ $defaultConfig = [
         'sourceExtension' => '.sh',
         'codinGameVersion' => 'GNU bash, version 5.1.16(1)',
         'versionCommand' => 'bash --version',
-        'buildCommand' => 'chmod +x %s',
+        'buildCommand' => (PHP_OS_FAMILY != 'Windows'
+            ? 'chmod +x %s'
+            : ''
+        ),
         'runCommand' => '%s',
         'cleanPatterns' => [],
     ],
@@ -154,7 +157,10 @@ $defaultConfig = [
         'codinGameVersion' => 'g++ 11.2.0-20',
         'versionCommand' => 'g++ --version',
         // note: omitting -ldl -lcrypt from CG settings
-        'buildCommand' => 'g++ -lm -lpthread -m64 -std=c++17 -x c++ -o %b%p_%l.exe %s',
+        'buildCommand' => (PHP_OS_FAMILY != 'Windows'
+            ? 'g++ -lm -lpthread -m64 -std=c++17 -x c++ -o %b%p_%l.exe %s'
+            : 'g++ -static-libgcc -static-libstdc++ -lm -lpthread -m64 -std=c++17 -x c++ -o %b%p_%l.exe %s'
+        ),
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],

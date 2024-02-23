@@ -41,7 +41,6 @@ return [
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
         // tested on Linux only
         'bash',
-        'c++',
         // 'clojure',       // untested
         // 'objective-c',   // untested
         'ocaml',            // tested on Linux only
