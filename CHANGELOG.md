@@ -9,13 +9,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Nothing yet.
+
+### Changed
+
+- Nothing yet.
+
+### Fixed
+
+- Nothing yet.
+
+## [v1.12.0](https://github.com/tbali0524/cgtest/releases/v1.12.0) - 2024-02-24
+
+### Added
+
+- Source line counting added.
 - More test cases added.
 
 ### Changed
 
 - Show the language versions used during normal test runs with `--verbose`.
 - Github Actions updated.
-- default c++ build command on Windows include `-static-libgcc -static-libstdc++`
+- Default c++ build command on Windows include `-static-libgcc -static-libstdc++`
+- Color tweaks.
 
 ### Fixed
 

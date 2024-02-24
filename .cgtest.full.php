@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.11.1 by Balint Toth [TBali]
+ * CGTest v1.12.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
