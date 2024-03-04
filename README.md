@@ -42,6 +42,7 @@ Options:
    --help             Display this help message
    --dry-run          Do not run the tests; only show what test cases would run
    --run-only         Run the tests, but do not evaluate results
+   --alt              Use alternative compiler, if such is defined in the config (e.g. for c, c++, php)
    --ansi             Use color output [default]
    --no-ansi          Disable color output
    --verbose          Increase the verbosity of messages: also show each passed tests

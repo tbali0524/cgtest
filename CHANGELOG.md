@@ -19,6 +19,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet.
 
+## [v1.13.0](https://github.com/tbali0524/cgtest/releases/v1.13.0) - 2024-03-04
+
+### Added
+
+- `--alt` command-line argument added.
+- `alt` global configuration option added.
+- `altVersionCommand`, `altBuildCommand`, `altRunCommand`, `altNote` configuration options added to the per language section.
+- More test cases added.
+
+### Changed
+
+- More color in warnings and error messages.
+
 ## [v1.12.0](https://github.com/tbali0524/cgtest/releases/v1.12.0) - 2024-02-24
 
 ### Added

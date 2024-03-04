@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.12.0 by Balint Toth [TBali]
+ * CGTest v1.13.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
@@ -15,6 +15,7 @@ return [
     // == The following default config options can be overriden:
     // 'dry-run' => false,
     // 'run-only' => false,
+    // 'alt' => false,
     // 'ansi' => true,
     // 'verbose' => false,
     // 'stats' => false,
@@ -105,6 +106,10 @@ return [
     //     'versionCommand' => 'lang --version',
     //     'buildCommand' => '',
     //     'runCommand' => 'lang %s',
+    //     'altVersionCommand' => '',
+    //     'altBuildCommand' => '',
+    //     'altRunCommand' => '',
+    //     'altNote' => '',
     //     'cleanPatterns' => [
     //         'fileNameWithPathOrPattern',
     //     ],
@@ -129,25 +134,6 @@ return [
     //     %b buildPath
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
-    // == Example (not really needed here, as these are the default settings for rust):
-    // 'rust' => [
-    //     'sourcePath' => 'rust/',
-    //     'sourceExtension' => '.rs',
-    //     'codinGameVersion' => 'rustc 1.70.0',
-    //     'versionCommand' => 'rustc --version',
-    //     'buildCommand' => 'rustc -C opt-level=3 --edition 2021 %s -o%b%p_%l.exe',
-    //     'runCommand' => '%b%p_%l.exe',
-    //     'cleanPatterns' => [
-    //         '%b%p_%l.exe',
-    //         '%b%p_%l.pdb',
-    //     ],
-    //     'excludePuzzles' => [
-    //     ],
-    //     'includePuzzles' => [
-    //     ],
-    //     'runOnlyPuzzles' => [
-    //     ],
-    // ],
     // == Additional test cases for a single language:
     'c++' => [
         'includePuzzles' => [
@@ -378,6 +364,7 @@ return [
                 'easy_com_panel-count',
                 'easy_com_park-pilot',
                 'easy_com_parse-sql-queries',
+                'easy_com_periodic-table-spelling',
                 'easy_com_personal-best',
                 'easy_com_pirates-treasure',
                 'easy_com_popularity-of-each-activity',
@@ -1061,4 +1048,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 24.02.21: 'easy_com_mystery-malfunction',
+// Note: last puzzle added on 24.02.26: 'easy_com_periodic-table-spelling',

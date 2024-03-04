@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.12.0 by Balint Toth [TBali]
+ * CGTest v1.13.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
@@ -15,6 +15,7 @@ return [
     // == The following default config options can be overriden:
     // 'dry-run' => false,
     // 'run-only' => false,
+    // 'alt' => false,
     // 'ansi' => true,
     // 'verbose' => false,
     // 'stats' => false,
@@ -104,6 +105,10 @@ return [
     //     'versionCommand' => 'lang --version',
     //     'buildCommand' => '',
     //     'runCommand' => 'lang %s',
+    //     'altVersionCommand' => '',
+    //     'altBuildCommand' => '',
+    //     'altRunCommand' => '',
+    //     'altNote' => '',
     //     'cleanPatterns' => [
     //         'fileNameWithPathOrPattern',
     //     ],
@@ -128,17 +133,20 @@ return [
     //     %b buildPath
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
-    // == Example (not really needed here, as these are the default settings for rust):
-    // 'rust' => [
-    //     'sourcePath' => 'rust/',
-    //     'sourceExtension' => '.rs',
-    //     'codinGameVersion' => 'rustc 1.70.0',
-    //     'versionCommand' => 'rustc --version',
-    //     'buildCommand' => 'rustc -C opt-level=3 --edition 2021 %s -o%b%p_%l.exe',
+    // == Example (not really needed here, as these are the default settings for c):
+    // 'c' => [
+    //     'sourcePath' => 'c/',
+    //     'sourceExtension' => '.c',
+    //     'codinGameVersion' => 'gcc 11.2.0-20',
+    //     'versionCommand' => 'gcc --version',
+    //     'buildCommand' => 'gcc -lm -lpthread -std=c17 -o %b%p_%l.exe %s',
     //     'runCommand' => '%b%p_%l.exe',
+    //     'altVersionCommand' => 'clang --version',
+    //     'altBuildCommand' => 'clang -std=c17 -o %b%p_%l.exe %s',
+    //     'altRunCommand' => '%b%p_%l.exe',
+    //     'altNote' => '',
     //     'cleanPatterns' => [
     //         '%b%p_%l.exe',
-    //         '%b%p_%l.pdb',
     //     ],
     //     'excludePuzzles' => [
     //     ],

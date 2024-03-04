@@ -1,5 +1,6 @@
 // https://www.codingame.com/training/medium/rubik%C2%AE
 
+#define _CRT_SECURE_NO_WARNINGS // not needed in CG
 #include <stdio.h>
 int main()
 {
