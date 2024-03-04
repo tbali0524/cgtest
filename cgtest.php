@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.13.0 by Balint Toth [TBali]
+ * CGTest v1.13.1 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * For usage, see:
@@ -20,7 +20,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.13.0';
+$version = 'v1.13.1';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -138,7 +138,7 @@ $defaultConfig = [
         'codinGameVersion' => 'gcc 11.2.0-20',
         'versionCommand' => 'gcc --version',
         // note: omitting -ldl -lcrypt from CG settings
-        'buildCommand' => 'gcc -lm -lpthread -std=c17 -o %b%p_%l.exe %s',
+        'buildCommand' => 'gcc -std=c17 -o %b%p_%l.exe %s -lm -lpthread',
         'runCommand' => '%b%p_%l.exe',
         'altVersionCommand' => 'clang --version',
         'altBuildCommand' => 'clang -std=c17 -o %b%p_%l.exe %s',
@@ -165,8 +165,8 @@ $defaultConfig = [
         'versionCommand' => 'g++ --version',
         // note: omitting -ldl -lcrypt from CG settings
         'buildCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'g++ -lm -lpthread -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s'
-            : 'g++ -static-libgcc -static-libstdc++ -lm -lpthread -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s'
+            ? 'g++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread -ldl -lcrypt'
+            : 'g++ -static-libgcc -static-libstdc++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread'
         ),
         'runCommand' => '%b%p_%l.exe',
         'altVersionCommand' => 'clang++ --version',

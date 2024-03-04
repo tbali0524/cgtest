@@ -139,7 +139,7 @@ return [
     //     'sourceExtension' => '.c',
     //     'codinGameVersion' => 'gcc 11.2.0-20',
     //     'versionCommand' => 'gcc --version',
-    //     'buildCommand' => 'gcc -lm -lpthread -std=c17 -o %b%p_%l.exe %s',
+    //     'buildCommand' => 'gcc -std=c17 -o %b%p_%l.exe %s -lm -lpthread',
     //     'runCommand' => '%b%p_%l.exe',
     //     'altVersionCommand' => 'clang --version',
     //     'altBuildCommand' => 'clang -std=c17 -o %b%p_%l.exe %s',
