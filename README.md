@@ -45,7 +45,8 @@ Options:
    --alt              Use alternative compiler, if such is defined in the config (e.g. for c, c++, php)
    --ansi             Use color output [default]
    --no-ansi          Disable color output
-   --verbose          Increase the verbosity of messages: also show each passed tests
+   --verbose          Increase the verbosity of messages: also show each passed tests [default]
+   --quiet            'Decrease the verbosity of messages: only show errors and warnings
    --stats            Show per-language test stats
    --lang-versions    Show versions for all configured programming languages
    --show-defaults    Show default configuration settings (as json)

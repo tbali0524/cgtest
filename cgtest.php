@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.13.1 by Balint Toth [TBali]
+ * CGTest v1.13.2 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * For usage, see:
@@ -100,7 +100,7 @@ $defaultConfig = [
     'run-only' => false,
     'ansi' => true,
     'alt' => false,
-    'verbose' => false,
+    'verbose' => true,
     'stats' => false,
     'lang-versions' => false,
     'clean' => false,
@@ -521,11 +521,14 @@ for ($i = 1; $i < $argc; ++$i) {
             . $ansiInfo . '   --alt              ' . $ansiReset
             . 'Use alternative compiler, if such is defined in the config (e.g. for c, c++, php)' . PHP_EOL
             . $ansiInfo . '   --ansi             ' . $ansiReset
-            . 'Use color output [default]' . PHP_EOL
+            . 'Use color output [' . $ansiInfo . 'default' . $ansiReset . ']' . PHP_EOL
             . $ansiInfo . '   --no-ansi          ' . $ansiReset
             . 'Disable color output' . PHP_EOL
             . $ansiInfo . '   --verbose          ' . $ansiReset
-            . 'Increase the verbosity of messages: also show each passed tests' . PHP_EOL
+            . 'Increase the verbosity of messages: also show each passed tests [' . $ansiInfo . 'default' . $ansiReset
+                . ']' . PHP_EOL
+            . $ansiInfo . '   --quiet          ' . $ansiReset
+            . 'Decrease the verbosity of messages: only show errors and warnings' . PHP_EOL
             . $ansiInfo . '   --stats            ' . $ansiReset
             . 'Show per-language test stats' . PHP_EOL
             . $ansiInfo . '   --lang-versions    ' . $ansiReset
@@ -598,6 +601,10 @@ for ($i = 1; $i < $argc; ++$i) {
     }
     if ($arg == '--no-ansi') {
         $argumentConfig['ansi'] = false;
+        continue;
+    }
+    if ($arg == '--quiet') {
+        $argumentConfig['verbose'] = false;
         continue;
     }
     if ((substr($arg, 0, 2) == '--') and in_array(substr($arg, 2), $booleanConfigKeys, true)) {
@@ -830,7 +837,7 @@ if ($config['create'] != '') {
                 ++$totalSkipped;
                 continue;
             }
-            $inputFile = fopen($inputFullFileName, 'w');
+            $inputFile = @fopen($inputFullFileName, 'w');
             if ($inputFile === false) {
                 echo $errorTag . 'Cannot create file:     '
                     . $ansiWarn . $inputFullFileName . $ansiReset . PHP_EOL . PHP_EOL;
@@ -884,8 +891,15 @@ if (!$config['dry-run'] and file_exists($config['buildLog'])) {
         }
     }
 }
-if (!$config['clean'] and !$config['lang-versions'] and !$config['dry-run']) {
-    $logFile = fopen($config['debugLog'], 'ab');
+$useLogFiles = false;
+if (
+    !$config['clean']
+    and !$config['lang-versions']
+    and !$config['dry-run']
+    and (count($config['languages'] ?? []) != 0)
+    and ((($argumentConfig['puzzles'] ?? []) != []) or ($configFromFile != []))
+) {
+    $logFile = @fopen($config['debugLog'], 'ab');
     if ($logFile === false) {
         echo $errorTag . 'Cannot open logfile to write: '
             . $ansiWarn . $config['debugLog'] . $ansiReset . PHP_EOL . PHP_EOL;
@@ -897,6 +911,7 @@ if (!$config['clean'] and !$config['lang-versions'] and !$config['dry-run']) {
         . $ansiInfo . $config['debugLog'] . $ansiReset . PHP_EOL;
     echo $infoTag . 'Compilers / interpreters\' messages redirected to file: '
         . $ansiInfo . $config['buildLog'] . $ansiReset . PHP_EOL;
+    $useLogFiles = true;
 }
 if (!$config['clean'] and ($config['test-case'] != 'all')) {
     echo $infoTag . 'Limited to test case #' . $ansiInfo . $config['test-case'] . $ansiReset . PHP_EOL;
@@ -986,12 +1001,13 @@ foreach ($config['languages'] as $language) {
                 echo $infoTag . '-- version supported at CodinGame: ' . $config[$language]['codinGameVersion']
                     . PHP_EOL;
             }
-            $versionCommandFull =  $versionCommand . ' 2>&1';
-        } elseif ($config['dry-run']) {
-            $versionCommandFull =  $versionCommand . ' >> ' . $config['buildLog'] . ' 2>&1';
+            $redirectPart = ' 2>&1';
+        } elseif ($config['dry-run'] and $useLogFiles) {
+            $redirectPart = ' >> ' . $config['buildLog'] . ' 2>&1';
         } else {
-            $versionCommandFull =  $versionCommand . ' 2>&1';
+            $redirectPart = ' 2>&1';
         }
+        $versionCommandFull = $versionCommand . $redirectPart;
         $execOutput = [];
         $execResultCode = 0;
         $execResult = exec($versionCommandFull, $execOutput, $execResultCode);
@@ -1223,7 +1239,7 @@ foreach ($config['languages'] as $language) {
                         [$language, $puzzleName, $config['outputPath'], $config['buildPath'], $sourceFullFileName],
                         $csprojTemplate
                     );
-                    $csprojFile = fopen($csprojFilename, 'w');
+                    $csprojFile = @fopen($csprojFilename, 'w');
                     if ($csprojFile === false) {
                         echo $errorTag . 'Cannot create project file for C#: '
                             . $ansiWarn . $csprojFilename . $ansiReset . PHP_EOL . PHP_EOL;
@@ -1236,7 +1252,7 @@ foreach ($config['languages'] as $language) {
                         [$language, $puzzleName, $config['outputPath'], $config['buildPath'], $sourceFullFileName],
                         $csDirectoryBuildPropsTemplate
                     );
-                    $csDirectoryBuildPropsFile = fopen($csDirectoryBuildPropsFilename, 'w');
+                    $csDirectoryBuildPropsFile = @fopen($csDirectoryBuildPropsFilename, 'w');
                     if ($csDirectoryBuildPropsFile === false) {
                         echo $errorTag . 'Cannot create project file for ' . $language . ': '
                             . $ansiWarn . $csDirectoryBuildPropsFilename . $ansiReset . PHP_EOL . PHP_EOL;
@@ -1267,7 +1283,12 @@ foreach ($config['languages'] as $language) {
                 if (PHP_OS_FAMILY == 'Windows') {
                     $baseBuildCommand = str_replace('/', '\\', $baseBuildCommand);
                 }
-                $buildCommandFull = $baseBuildCommand . ' >> ' . $config['debugLog'] . ' 2>> ' . $config['buildLog'];
+                if ($useLogFiles) {
+                    $buildCommandFull = $baseBuildCommand . ' >> ' . $config['debugLog'] . ' 2>> '
+                        . $config['buildLog'];
+                } else {
+                    $buildCommandFull = $baseBuildCommand;
+                }
                 $execOutput = [];
                 $execResultCode = 0;
                 $execResult = exec($buildCommandFull, $execOutput, $execResultCode);
@@ -1280,7 +1301,7 @@ foreach ($config['languages'] as $language) {
             // --------------------------------------------------------------------
             // count source lines
             if (!$config['clean']) {
-                $sourceFileContents = fopen($sourceFullFileName, 'r');
+                $sourceFileContents = @fopen($sourceFullFileName, 'r');
                 if ($sourceFileContents === false) {
                     echo $errorTag . 'Cannot open source file: '
                         . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL;
@@ -1428,7 +1449,7 @@ foreach ($config['languages'] as $language) {
                     }
                     $expectedFileContents = substr($expectedFileContents, 0, $i + 1);
                 }
-                $logFile = fopen($config['debugLog'], 'ab');
+                $logFile = @fopen($config['debugLog'], 'ab');
                 if ($logFile !== false) {
                     $s = "| $language | $stringIdxTest | $sourceFullFileName |";
                     fwrite($logFile, str_repeat('=', strlen($s)) . PHP_EOL);
@@ -1439,8 +1460,12 @@ foreach ($config['languages'] as $language) {
                 }
                 // --------------------------------------------------------------------
                 // run the test
-                $runCommandFull = $baseRunCommand . " < $inputFullFileName > $outputFullFileName 2>> "
-                    . $config['debugLog'];
+                if ($useLogFiles) {
+                    $runCommandFull = $baseRunCommand . " < $inputFullFileName > $outputFullFileName 2>> "
+                        . $config['debugLog'];
+                } else {
+                    $runCommandFull = $baseRunCommand . " < $inputFullFileName > $outputFullFileName";
+                }
                 $execOutput = [];
                 $execResultCode = 0;
                 $testStartTime = hrtime(true);

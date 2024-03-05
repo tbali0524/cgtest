@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Nothing yet.
+- `verbose` configuration option is now the default.
+- `--quiet` command-line argument added.
 
 ### Changed
 
@@ -18,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Default c build command fixed.
+- Fixed double warning when log file cannot be created. 
 
 ## [v1.13.0](https://github.com/tbali0524/cgtest/releases/v1.13.0) - 2024-03-04
 

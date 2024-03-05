@@ -17,7 +17,7 @@ return [
     // 'run-only' => false,
     // 'alt' => false,
     // 'ansi' => true,
-    // 'verbose' => false,
+    // 'verbose' => true,
     // 'stats' => false,
     // 'lang-versions' => false,
     // 'clean' => false,
