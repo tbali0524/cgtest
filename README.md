@@ -10,7 +10,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
-_The repository also contains __5700+__ test cases for __810+__ `CodinGame` puzzles and __730+__ puzzle statements._
+_The repository also contains __5700+__ test cases for __810+__ `CodinGame` puzzles and __730+__ puzzle statements.
 
 ## Intro
 
@@ -67,13 +67,13 @@ The minimal required configuration to run CGTest is to define (either via comman
 
 ### Typical output
 
-CGTest shows the list of failed tests and a summary:
-
-![screenshot](cgtest_screenshot_base.png)
-
-With the `--verbose` option, all tested source files listed, even if passing:
+CGTest shows the result of the tests and a summary:
 
 ![screenshot verbose](cgtest_screenshot_verbose.png)
+
+With the `--quiet` option only errors, warnings and a summary is shown.
+
+![screenshot](cgtest_screenshot_base.png)
 
 The `--stats` option is useful if you run the test for multiple languages:
 
@@ -90,6 +90,8 @@ CGTest is a single-file php script, so you need `PHP` (v7.3 or newer) installed 
 * If you are unfamiliar with setting up php, [this section on my tech.io article about php dev tools](https://www.codingame.com/playgrounds/77580/php-dev-tools-for-codingame-or-elsewhere/running-your-code-locally-php) might provide some help.
 
 Of course, your code does not need to be written in php. _Any language can be used_, for which you have a local dev environment. You might just need to configure how the test runner should invoke your compiler and/or interpreter. _(But there is a high chance that default settings, provided for ~30 languages will also work for you.)_
+
+While there are many files in the repo, the only file you really need is `cgtest.php`, and the input and expected result files for your test cases.
 
 ## Configuration file
 
@@ -116,7 +118,7 @@ Some settings (but not all) can be also overriden via command-line arguments. If
     * Besides the test run output, CGTest will delete the files defined in the per-language `'cleanPatterns'` configuration section. If you override the defaults, be extra careful with the file pattern, not to accidentaly delete something in your system.
 * You can either put your source files in _per-language_ directories, or you can structure them in a _per-puzzle (or per-puzzle-group)_ basis.
     * By default, all source code is expected to be in the respective `languageName/` directory, with the same name as the beginning of the test case input data file name.
-    * If using _per-puzzle_ directories for the test cases, you must set the per-language `'sourcePath'` setting to `''` in the config file.)
+    * If using _per-puzzle_ directories for the test cases, you must set the per-language `'sourcePath'` setting to `''` in the config file.
 * If not provided via command-line, list the puzzle names in the config file either in the global `'puzzles'` section, or in a per-language `'includePuzzles'` list. If you have solution for a puzzle in most (but not all) languages, you can list it in the global puzzles section, but also add it to the per-language `'excludePuzzles'` lists for languages that you lack the solution.  
 * You can also add a puzzle to a per-language `'runOnlyPuzzles'` list in the config file. These puzzles will be built and run, but the tests will always pass, without evaluating the test results. This is useful to run some _optimization_ and _multi-turn_ puzzles on CodinGame.
 * You can change the directory structure and the file naming conventions that `CGTest` is using out of the box. However, you will need to tweak the config file a bit to your liking. For more details, check out the comments in the sample config file.

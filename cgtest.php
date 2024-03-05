@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.13.2 by Balint Toth [TBali]
+ * CGTest v1.14.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * For usage, see:
@@ -20,7 +20,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.13.1';
+$version = 'v1.14.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -58,14 +58,23 @@ $zeroPuzzleStat = [
 $puzzleStats = [];
 $directoryStats = [];
 $slowTests = [];
+// --------------------------------------------------------------------
+// setup color mode based on terminal type
+const ANSI_RED_INV = "\e[1;37;41m";
+const ANSI_GREEN_INV = "\e[1;37;42m";
+const ANSI_YELLOW_INV = "\e[1;37;43m";
+const ANSI_GREEN = "\e[32m";
+const ANSI_YELLOW = "\e[33m";
+const ANSI_LIGHT_CYAN = "\e[96m";
+const ANSI_RESET = "\e[0m";
 $useAnsi = stream_isatty(STDOUT);
-$ansiRedInv = $useAnsi ? "\e[1;37;41m" : '';
-$ansiGreenInv = $useAnsi ? "\e[1;37;42m" : '';
-$ansiYellowInv = $useAnsi ? "\e[1;37;43m" : '';
-$ansiGreen = $useAnsi ? "\e[32m" : '';
-$ansiYellow = $useAnsi ? "\e[33m" : '';
-$ansiLightCyan = $useAnsi ? "\e[96m" : '';
-$ansiReset = $useAnsi ? "\e[0m" : '';
+$ansiRedInv = $useAnsi ? ANSI_RED_INV : '';
+$ansiGreenInv = $useAnsi ? ANSI_GREEN_INV : '';
+$ansiYellowInv = $useAnsi ? ANSI_YELLOW_INV : '';
+$ansiGreen = $useAnsi ? ANSI_GREEN  : '';
+$ansiYellow = $useAnsi ? ANSI_YELLOW : '';
+$ansiLightCyan = $useAnsi ? ANSI_LIGHT_CYAN : '';
+$ansiReset = $useAnsi ? ANSI_RESET : '';
 $ansiVersion = $ansiGreen;
 $ansiInfo = $ansiLightCyan;
 $ansiWarn = $ansiYellow;
@@ -75,15 +84,15 @@ $passTag = $ansiGreenInv . '[PASS]' . $ansiReset . ' ';
 $failTag = $ansiRedInv . '[FAIL]' . $ansiReset . ' ';
 $infoTag = '[INFO] ';
 // --------------------------------------------------------------------
-// print application title, check php version
+// check php version
 $author = 'by Balint Toth [TBali]';
 $authorAnsi = 'by Balint Toth [' . $ansiInfo . 'TBali' . $ansiReset . ']';
 $title = 'CGTest ' . $version . ' ' . $author . PHP_EOL;
 $titleAnsi = 'CGTest ' . $ansiVersion . $version . $ansiReset . ' ' . $authorAnsi . PHP_EOL;
 $titleDesc = 'A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles' . PHP_EOL;
-echo $titleAnsi . $titleDesc . PHP_EOL;
 const MIN_PHP_VERSION = '7.3.0';
 if (version_compare(phpversion(), MIN_PHP_VERSION, '<')) {
+    echo $titleAnsi . $titleDesc . PHP_EOL;
     echo $errorTag . 'Minimum required PHP version is ' . $ansiVersion . MIN_PHP_VERSION . $ansiReset
         . '; you are on ' . $ansiWarn . phpversion() . $ansiReset . PHP_EOL . PHP_EOL;
     // OS exit codes: 0 = OK, 1 = some tests failed, 2 = error (wrong CLI arguments, etc)
@@ -501,66 +510,25 @@ $noPathKey = '@';
 // command-line arguments
 $argumentConfig = [];
 $argConfigFileName = '';
+$errorMsg = '';
 for ($i = 1; $i < $argc; ++$i) {
     $arg = strtolower($argv[$i]);
     if ($arg == '--version') {
-        exit(0);
+        $argumentConfig['version'] = true;
+        continue;
     }
     if ($arg == '--help') {
-        echo 'Usage:   ' . $ansiGreen . 'php cgtest.php' . $ansiInfo . ' [options] [puzzles]' . $ansiReset . PHP_EOL
-            . PHP_EOL
-            . 'Options:' . PHP_EOL
-            . $ansiInfo . '   --version          ' . $ansiReset
-            . 'Display CGTest application version' . PHP_EOL
-            . $ansiInfo . '   --help             ' . $ansiReset
-            . 'Display this help message' . PHP_EOL
-            . $ansiInfo . '   --dry-run          ' . $ansiReset
-            . 'Do not run the tests; only show what test cases would run' . PHP_EOL
-            . $ansiInfo . '   --run-only         ' . $ansiReset
-            . 'Run the tests, but do not evaluate results' . PHP_EOL
-            . $ansiInfo . '   --alt              ' . $ansiReset
-            . 'Use alternative compiler, if such is defined in the config (e.g. for c, c++, php)' . PHP_EOL
-            . $ansiInfo . '   --ansi             ' . $ansiReset
-            . 'Use color output [' . $ansiInfo . 'default' . $ansiReset . ']' . PHP_EOL
-            . $ansiInfo . '   --no-ansi          ' . $ansiReset
-            . 'Disable color output' . PHP_EOL
-            . $ansiInfo . '   --verbose          ' . $ansiReset
-            . 'Increase the verbosity of messages: also show each passed tests [' . $ansiInfo . 'default' . $ansiReset
-                . ']' . PHP_EOL
-            . $ansiInfo . '   --quiet          ' . $ansiReset
-            . 'Decrease the verbosity of messages: only show errors and warnings' . PHP_EOL
-            . $ansiInfo . '   --stats            ' . $ansiReset
-            . 'Show per-language test stats' . PHP_EOL
-            . $ansiInfo . '   --lang-versions    ' . $ansiReset
-            . 'Show versions for all configured programming languages' . PHP_EOL
-            . $ansiInfo . '   --show-defaults    ' . $ansiReset
-            . 'Show default configuration settings (as json)' . PHP_EOL
-            . $ansiInfo . '   --clean            ' . $ansiReset
-            . 'Delete temporary and output files of previous test run' . PHP_EOL
-            . $ansiInfo . '   --create=' . $ansiGreen . 'COUNT     ' . $ansiReset
-            . 'Create COUNT number of empty test cases for the given puzzle' . PHP_EOL
-            . $ansiInfo . '   --config=' . $ansiGreen . 'FILENAME  ' . $ansiReset
-            . 'Use configfile [default: ' . $ansiInfo . $defaultConfigFileName . $ansiReset . ']' . PHP_EOL
-            . $ansiInfo . '   --test-case=' . $ansiGreen . 'ID     ' . $ansiReset
-            . 'Run only a specific test case [default: ' . $ansiInfo . 'all' . $ansiReset . ']' . PHP_EOL
-            . $ansiInfo . '   --lang=' . $ansiGreen . 'LANGUAGES   ' . $ansiReset
-            . 'Run tests in these languages (comma separated list)' . PHP_EOL
-            . '                        - default: ' . $ansiInfo . implode(',', $defaultConfig['languages'])
-            . $ansiReset . '; or the languages section in the config file' . PHP_EOL . PHP_EOL
-            . 'Puzzles:              Space separated list of source filenames (without extension)' . PHP_EOL
-            . '                        - if given, it overrides the list in the config file' . PHP_EOL
-            . '                        - path can be given, but no wildcards allowed' . PHP_EOL . PHP_EOL;
-        exit(0);
+        $argumentConfig['help'] = true;
+        continue;
     }
     if ($arg == '--show-defaults') {
-        echo $infoTag . 'Default configuration settings (before applying any config file):' . PHP_EOL;
-        echo json_encode($defaultConfig, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL . PHP_EOL;
-        exit(0);
+        $argumentConfig['show-defaults'] = true;
+        continue;
     }
     if ((substr($arg, 0, 9) == '--config=') and (strlen($arg) > 9)) {
         if ($argConfigFileName != '') {
-            echo $errorTag . 'Invalid arguments: only a single config file can be given.' . PHP_EOL . PHP_EOL;
-            exit(2);
+            $errorMsg = $errorTag . 'Invalid arguments: only a single config file can be given.' . PHP_EOL . PHP_EOL;
+            continue;
         }
         $argConfigFileName = substr($arg, 9);
         continue;
@@ -572,8 +540,8 @@ for ($i = 1; $i < $argc; ++$i) {
         }
         foreach ($langs as $lang) {
             if (array_search($lang, $reservedConfigKeys, true) !== false) {
-                echo $errorTag . 'Invalid language name: ' . $ansiWarn . $lang . $ansiReset . PHP_EOL . PHP_EOL;
-                exit(2);
+                $errorMsg = $errorTag . 'Invalid language name: ' . $ansiWarn . $lang . $ansiReset . PHP_EOL . PHP_EOL;
+                continue;
             }
             if (array_search($lang, $argumentConfig['languages'], true) === false) {
                 $argumentConfig['languages'][] = $lang;
@@ -583,27 +551,37 @@ for ($i = 1; $i < $argc; ++$i) {
     }
     if ((substr($arg, 0, 12) == '--test-case=') and (strlen($arg) > 12)) {
         if (isset($argumentConfig['test-case'])) {
-            echo $errorTag . 'Invalid arguments: ' . $ansiWarn . 'test-case' . $ansiReset
+            $errorMsg = $errorTag . 'Invalid arguments: ' . $ansiWarn . 'test-case' . $ansiReset
                 . ' can be given only once.' . PHP_EOL . PHP_EOL;
-            exit(2);
+            continue;
         }
         $argumentConfig['test-case'] = substr($arg, 12);
         continue;
     }
     if ((substr($arg, 0, 9) == '--create=') and (strlen($arg) > 9)) {
         if (isset($argumentConfig['create'])) {
-            echo $errorTag . 'Invalid arguments: ' . $ansiWarn . 'create' . $ansiResetű
+            $errorMsg = $errorTag . 'Invalid arguments: ' . $ansiWarn . 'create' . $ansiReset
                 . ' can be given only once.' . PHP_EOL . PHP_EOL;
-            exit(2);
+            continue;
         }
         $argumentConfig['create'] = substr($arg, 9);
         continue;
     }
     if ($arg == '--no-ansi') {
+        if (isset($argumentConfig['ansi'])) {
+            $errorMsg = $errorTag . 'Invalid arguments: ' . $ansiWarn . '--ansi' . $ansiReset . ' or '
+                . $ansiWarn . '--no-ansi' . $ansiReset . ' can be given only once.' . PHP_EOL . PHP_EOL;
+            continue;
+        }
         $argumentConfig['ansi'] = false;
         continue;
     }
     if ($arg == '--quiet') {
+        if (isset($argumentConfig['verbose'])) {
+            $errorMsg = $errorTag . 'Invalid arguments: ' . $ansiWarn . '--verbose' . $ansiReset . ' or '
+                . $ansiWarn . '--quiet' . $ansiReset . ' can be given only once.' . PHP_EOL . PHP_EOL;
+            continue;
+        }
         $argumentConfig['verbose'] = false;
         continue;
     }
@@ -612,8 +590,8 @@ for ($i = 1; $i < $argc; ++$i) {
         continue;
     }
     if ($arg[0] == '-') {
-        echo $errorTag . 'Invalid argument: ' . $ansiWarn . $arg . $ansiReset . PHP_EOL . PHP_EOL;
-        exit(2);
+        $errorMsg = $errorTag . 'Invalid argument: ' . $ansiWarn . $arg . $ansiReset . PHP_EOL . PHP_EOL;
+        continue;
     }
     if (!isset($argumentConfig['puzzles'])) {
         $argumentConfig['puzzles'] = [];
@@ -628,13 +606,112 @@ for ($i = 1; $i < $argc; ++$i) {
     }
     $puzzle = substr($argv[$i], $j + 1);
     if ($puzzle == '') {
-        echo $errorTag . 'Invalid puzzle name: ' . $ansiWarn . $argv[$i] . $ansiReset . PHP_EOL . PHP_EOL;
-        exit(2);
+        $errorMsg =  $errorTag . 'Invalid puzzle name: ' . $ansiWarn . $argv[$i] . $ansiReset . PHP_EOL . PHP_EOL;
+        continue;
     }
     if (!isset($argumentConfig['puzzles'][$path])) {
         $argumentConfig['puzzles'][$path] = [];
     }
     $argumentConfig['puzzles'][$path][] = $puzzle;
+}
+if ($argumentConfig['help'] ?? false) {
+    $errorMsg = 'Usage:   ' . $ansiGreen . 'php cgtest.php' . $ansiInfo . ' [options] [puzzles]' . $ansiReset
+        . PHP_EOL . PHP_EOL
+        . 'Options:' . PHP_EOL
+        . $ansiInfo . '   --version          ' . $ansiReset
+        . 'Display CGTest application version' . PHP_EOL
+        . $ansiInfo . '   --help             ' . $ansiReset
+        . 'Display this help message' . PHP_EOL
+        . $ansiInfo . '   --dry-run          ' . $ansiReset
+        . 'Do not run the tests; only show what test cases would run' . PHP_EOL
+        . $ansiInfo . '   --run-only         ' . $ansiReset
+        . 'Run the tests, but do not evaluate results' . PHP_EOL
+        . $ansiInfo . '   --alt              ' . $ansiReset
+        . 'Use alternative compiler, if such is defined in the config [e.g. for '
+            . $ansiInfo . 'c, c++, php' . $ansiReset . ']' . PHP_EOL
+        . $ansiInfo . '   --ansi             ' . $ansiReset
+        . 'Use color output [' . $ansiInfo . 'default' . $ansiReset . ']' . PHP_EOL
+        . $ansiInfo . '   --no-ansi          ' . $ansiReset
+        . 'Disable color output' . PHP_EOL
+        . $ansiInfo . '   --verbose          ' . $ansiReset
+        . 'Increase the verbosity of messages: also show each passed tests [' . $ansiInfo . 'default' . $ansiReset
+            . ']' . PHP_EOL
+        . $ansiInfo . '   --quiet          ' . $ansiReset
+        . 'Decrease the verbosity of messages: only show errors and warnings' . PHP_EOL
+        . $ansiInfo . '   --stats            ' . $ansiReset
+        . 'Show per-language test stats' . PHP_EOL
+        . $ansiInfo . '   --lang-versions    ' . $ansiReset
+        . 'Show versions for all configured programming languages' . PHP_EOL
+        . $ansiInfo . '   --show-defaults    ' . $ansiReset
+        . 'Show default configuration settings (as json)' . PHP_EOL
+        . $ansiInfo . '   --clean            ' . $ansiReset
+        . 'Delete temporary and output files of previous test run' . PHP_EOL
+        . $ansiInfo . '   --create=' . $ansiGreen . 'COUNT     ' . $ansiReset
+        . 'Create COUNT number of empty test cases for the given puzzle' . PHP_EOL
+        . $ansiInfo . '   --config=' . $ansiGreen . 'FILENAME  ' . $ansiReset
+        . 'Use configfile [default: ' . $ansiInfo . $defaultConfigFileName . $ansiReset . ']' . PHP_EOL
+        . $ansiInfo . '   --test-case=' . $ansiGreen . 'ID     ' . $ansiReset
+        . 'Run only a specific test case [default: ' . $ansiInfo . 'all' . $ansiReset . ']' . PHP_EOL
+        . $ansiInfo . '   --lang=' . $ansiGreen . 'LANGUAGES   ' . $ansiReset
+        . 'Run tests in these languages (comma separated list)' . PHP_EOL
+        . '                        - default: ' . $ansiInfo . implode(',', $defaultConfig['languages'])
+        . $ansiReset . '; or the languages section in the config file' . PHP_EOL . PHP_EOL
+        . 'Puzzles:              Space separated list of source filenames (without extension)' . PHP_EOL
+        . '                        - if given, it overrides the list in the config file' . PHP_EOL
+        . '                        - path can be given, but no wildcards allowed' . PHP_EOL . PHP_EOL;
+} elseif ($argumentConfig['show-defaults'] ?? false) {
+    if ($errorMsg == '') {
+        $errorMsg = $infoTag . 'Default configuration settings (before applying any config file):' . PHP_EOL;
+        $errorMsg .= json_encode($defaultConfig, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . PHP_EOL . PHP_EOL;
+    } else {
+        $argumentConfig['show-defaults'] = false;
+    }
+}
+// --------------------------------------------------------------------
+// setup color mode after cli arguments
+if (isset($argumentConfig['ansi'])) {
+    if (!$argumentConfig['ansi'] and $useAnsi and ($errorMsg != '')) {
+        $errorMsg = str_replace($ansiRedInv, '', $errorMsg);
+        $errorMsg = str_replace($ansiGreenInv, '', $errorMsg);
+        $errorMsg = str_replace($ansiYellowInv, '', $errorMsg);
+        $errorMsg = str_replace($ansiGreen, '', $errorMsg);
+        $errorMsg = str_replace($ansiVersion, '', $errorMsg);
+        $errorMsg = str_replace($ansiInfo, '', $errorMsg);
+        $errorMsg = str_replace($ansiWarn, '', $errorMsg);
+        $errorMsg = str_replace($ansiReset, '', $errorMsg);
+    }
+    $useAnsi = $argumentConfig['ansi'];
+    $ansiRedInv = $useAnsi ? ANSI_RED_INV : '';
+    $ansiGreenInv = $useAnsi ? ANSI_GREEN_INV : '';
+    $ansiYellowInv = $useAnsi ? ANSI_YELLOW_INV : '';
+    $ansiGreen = $useAnsi ? ANSI_GREEN  : '';
+    $ansiYellow = $useAnsi ? ANSI_YELLOW : '';
+    $ansiLightCyan = $useAnsi ? ANSI_LIGHT_CYAN : '';
+    $ansiReset = $useAnsi ? ANSI_RESET : '';
+    $ansiVersion = $ansiGreen;
+    $ansiInfo = $ansiLightCyan;
+    $ansiWarn = $ansiYellow;
+    $errorTag = $ansiRedInv . '[ERROR]' . $ansiReset . ' ';
+    $warnTag = $ansiYellowInv . '[WARN]' . $ansiReset . ' ';
+    $passTag = $ansiGreenInv . '[PASS]' . $ansiReset . ' ';
+    $failTag = $ansiRedInv . '[FAIL]' . $ansiReset . ' ';
+}
+if ($useAnsi) {
+    echo $titleAnsi . $titleDesc . PHP_EOL;
+} else {
+    echo $title . $titleDesc . PHP_EOL;
+}
+if (($argumentConfig['version'] ?? false) and !($argumentConfig['help'] ?? false)) {
+    exit(0);
+}
+if ($errorMsg != '') {
+    echo $errorMsg;
+    if (($argumentConfig['help'] ?? false) or ($argumentConfig['show-defaults'] ?? false)) {
+        $exitCode = 0;
+    } else {
+        $exitCode = 2;
+    }
+    exit($exitCode);
 }
 // --------------------------------------------------------------------
 // read config file
@@ -684,21 +761,21 @@ if (isset($argumentConfig['puzzles']) and (count($argumentConfig['puzzles']) != 
     }
 }
 // --------------------------------------------------------------------
-// setup color mode
+// setup color mode after config file
 if (!isset($config['ansi']) or !is_bool($config['ansi'])) {
     $config['ansi'] = false;
 }
 $useAnsi = $config['ansi'];
-$ansiRedInv = $useAnsi ? "\e[1;37;41m" : '';
-$ansiGreenInv = $useAnsi ? "\e[1;37;42m" : '';
-$ansiYellowInv = $useAnsi ? "\e[1;37;43m" : '';
-$ansiGreen = $useAnsi ? "\e[32m" : '';
-$ansiYellow = $useAnsi ? "\e[33m" : '';
-$ansiLightCyan = $useAnsi ? "\e[96m" : '';
+$ansiRedInv = $useAnsi ? ANSI_RED_INV : '';
+$ansiGreenInv = $useAnsi ? ANSI_GREEN_INV : '';
+$ansiYellowInv = $useAnsi ? ANSI_YELLOW_INV : '';
+$ansiGreen = $useAnsi ? ANSI_GREEN  : '';
+$ansiYellow = $useAnsi ? ANSI_YELLOW : '';
+$ansiLightCyan = $useAnsi ? ANSI_LIGHT_CYAN : '';
+$ansiReset = $useAnsi ? ANSI_RESET : '';
 $ansiVersion = $ansiGreen;
 $ansiInfo = $ansiLightCyan;
 $ansiWarn = $ansiYellow;
-$ansiReset = $useAnsi ? "\e[0m" : '';
 $errorTag = $ansiRedInv . '[ERROR]' . $ansiReset . ' ';
 $warnTag = $ansiYellowInv . '[WARN]' . $ansiReset . ' ';
 $passTag = $ansiGreenInv . '[PASS]' . $ansiReset . ' ';
@@ -748,8 +825,8 @@ foreach ($arrayConfigKeys as $configKey) {
 if ($config['test-case'] != 'all') {
     $value = intval($config['test-case']);
     if (($value <= 0) or ($value > 99)) {
-        echo $errorTag . "Invalid arguments: ' . $ansiWarn . '--test-case' . $ansiReset
-            . ' must be 'all' or between 01 and 99" . PHP_EOL . PHP_EOL;
+        echo $errorTag . 'Invalid arguments: ' . $ansiWarn . '--test-case' . $ansiReset
+            . " must be 'all' or between 01 and 99" . PHP_EOL . PHP_EOL;
         exit(2);
     }
 }
@@ -788,8 +865,8 @@ if ($config['dry-run'] and $config['run-only']) {
 if ($config['create'] != '') {
     $maxTests = intval($config['create']);
     if (($maxTests <= 0) or ($maxTests > 99)) {
-        echo $errorTag . "Invalid arguments: ' . $ansiWarn . '--create' . $ansiReset
-            . ' must be between 1 and 99" . PHP_EOL . PHP_EOL;
+        echo $errorTag . 'Invalid arguments: ' . $ansiWarn . '--create' . $ansiReset
+            . ' must be between 1 and 99' . PHP_EOL . PHP_EOL;
         exit(2);
     }
     if (
@@ -862,9 +939,10 @@ if ($config['create'] != '') {
 }
 // --------------------------------------------------------------------
 // delete / init log files
+$noConfig = (($argumentConfig['puzzles'] ?? []) == []) && ($configFromFile == []);
 $totalUnsuccessfulDeleteFiles = 0;
-if (!$config['dry-run'] and file_exists($config['debugLog'])) {
-    $unlinkResult = unlink($config['debugLog']);
+if (!$config['dry-run'] and !$noConfig and file_exists((string) $config['debugLog'])) {
+    $unlinkResult = unlink((string) $config['debugLog']);
     if ($config['clean']) {
         if (!$unlinkResult) {
             ++$totalUnsuccessfulDeleteFiles;
@@ -877,8 +955,8 @@ if (!$config['dry-run'] and file_exists($config['debugLog'])) {
         }
     }
 }
-if (!$config['dry-run'] and file_exists($config['buildLog'])) {
-    $unlinkResult = unlink($config['buildLog']);
+if (!$config['dry-run'] and !$noConfig and file_exists((string) $config['buildLog'])) {
+    $unlinkResult = unlink((string) $config['buildLog']);
     if ($config['clean']) {
         if (!$unlinkResult) {
             ++$totalUnsuccessfulDeleteFiles;
@@ -897,9 +975,9 @@ if (
     and !$config['lang-versions']
     and !$config['dry-run']
     and (count($config['languages'] ?? []) != 0)
-    and ((($argumentConfig['puzzles'] ?? []) != []) or ($configFromFile != []))
+    and !$noConfig
 ) {
-    $logFile = @fopen($config['debugLog'], 'ab');
+    $logFile = @fopen((string) $config['debugLog'], 'ab');
     if ($logFile === false) {
         echo $errorTag . 'Cannot open logfile to write: '
             . $ansiWarn . $config['debugLog'] . $ansiReset . PHP_EOL . PHP_EOL;
@@ -922,6 +1000,9 @@ foreach ($config['languages'] as $language) {
     $languageStats[$language] = $zeroLanguageStat;
     $languageStats[$language]['startTime'] = hrtime(true);
     ++$languageStats[$language]['countLanguages'];
+    if ($noConfig and !$config['lang-versions']) {
+        break;
+    }
     // --------------------------------------------------------------------
     // check for configuration errors in per-language settings
     $isLanguageOk = true;
@@ -992,16 +1073,18 @@ foreach ($config['languages'] as $language) {
     }
     if (!$config['clean'] and ($versionCommand != '')) {
         if ($config['lang-versions']) {
-            echo $infoTag . 'Version info for language: ' . $ansiInfo . $language . $ansiReset;
-            if ($altNote != '') {
-                echo $ansiInfo . ' (' .  $altNote . ')' . $ansiReset;
-            }
-            echo PHP_EOL;
-            if ($config[$language]['codinGameVersion'] != '') {
-                echo $infoTag . '-- version supported at CodinGame: ' . $config[$language]['codinGameVersion']
-                    . PHP_EOL;
-            }
             $redirectPart = ' 2>&1';
+            if ($config['verbose']) {
+                echo $infoTag . 'Version info for language: ' . $ansiInfo . $language . $ansiReset;
+                if ($altNote != '') {
+                    echo $ansiInfo . ' (' .  $altNote . ')' . $ansiReset;
+                }
+                echo PHP_EOL;
+                if ($config[$language]['codinGameVersion'] != '') {
+                    echo $infoTag . '-- version supported at CodinGame: ' . $config[$language]['codinGameVersion']
+                        . PHP_EOL;
+                }
+            }
         } elseif ($config['dry-run'] and $useLogFiles) {
             $redirectPart = ' >> ' . $config['buildLog'] . ' 2>&1';
         } else {
@@ -1016,7 +1099,7 @@ foreach ($config['languages'] as $language) {
             ++$languageStats[$language]['countSkippedLanguages'];
             continue;
         }
-        if ($config['lang-versions']) {
+        if ($config['lang-versions'] and $config['verbose']) {
             if ($language == 'perl') {
                 $maxLines = 5;
             } elseif ($language == 'php') {
@@ -1039,9 +1122,8 @@ foreach ($config['languages'] as $language) {
             continue;
         }
         if (
-            $config['verbose']
-            and !$config['lang-versions']
-            and !$config['dry-run']
+            ($config['verbose'] and !$config['dry-run'] and !$config['lang-versions'])
+            or ($config['lang-versions'] and !$config['verbose'])
         ) {
             if (($execOutput[0] ?? '') != '') {
                 $langVersionInfo = $execOutput[0];
@@ -1057,6 +1139,9 @@ foreach ($config['languages'] as $language) {
                     echo $ansiInfo . ' (' .  $altNote . ')' . $ansiReset;
                 }
                 echo PHP_EOL;
+            }
+            if ($config['lang-versions']) {
+                continue;
             }
         }
     }
@@ -1449,7 +1534,7 @@ foreach ($config['languages'] as $language) {
                     }
                     $expectedFileContents = substr($expectedFileContents, 0, $i + 1);
                 }
-                $logFile = @fopen($config['debugLog'], 'ab');
+                $logFile = @fopen((string) $config['debugLog'], 'ab');
                 if ($logFile !== false) {
                     $s = "| $language | $stringIdxTest | $sourceFullFileName |";
                     fwrite($logFile, str_repeat('=', strlen($s)) . PHP_EOL);
@@ -1628,7 +1713,7 @@ if ($config['verbose'] and (($config['slowThreshold'] ?? 0) > 0) and (count($slo
 }
 // --------------------------------------------------------------------
 // print per language stats
-if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
+if (!$noConfig and $config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
     $cleanHeader1 = '';
     $cleanHeader2 = '';
     $cleanHeader3 = '';
@@ -1788,7 +1873,7 @@ if ($config['stats'] and ($languageStats['totals']['countLanguages'] > 0)) {
 }
 // --------------------------------------------------------------------
 // Special case for C# and VB.NET: delete Directory.build.props file
-if (file_exists($csDirectoryBuildPropsFilename)) {
+if (!$noConfig and file_exists($csDirectoryBuildPropsFilename)) {
     unlink($csDirectoryBuildPropsFilename);
 }
 // --------------------------------------------------------------------

@@ -9,8 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `verbose` configuration option is now the default.
-- `--quiet` command-line argument added.
+- Nothing yet.
 
 ### Changed
 
@@ -18,8 +17,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Default c build command fixed.
-- Fixed double warning when log file cannot be created. 
+- Nothing yet.
+
+## [v1.14.0](https://github.com/tbali0524/cgtest/releases/v1.14.0) - 2024-03-05
+
+### Added
+
+- `verbose` configuration option is now the default.
+- `--quiet` command-line argument added.
+
+### Fixed
+
+- Default `c` build command fixed.
+- Fixed double warning when log file cannot be created.
+- Command line option `--no-ansi` and `--ansi` is taken into account with `--help`, `--version`, or if there are errors with the other command-line arguments.
 
 ## [v1.13.0](https://github.com/tbali0524/cgtest/releases/v1.13.0) - 2024-03-04
 
@@ -45,7 +56,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Show the language versions used during normal test runs with `--verbose`.
 - Github Actions updated.
-- Default c++ build command on Windows include `-static-libgcc -static-libstdc++`
+- Default `c++` build command on Windows include `-static-libgcc -static-libstdc++`
 - Color tweaks.
 
 ### Fixed
@@ -61,7 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - More colorful output.
-- Rust default compiler settings changed to include `-C opt-level=3`.
+- Default `rust` compiler settings changed to include `-C opt-level=3`.
 
 ### Fixed
 
@@ -79,7 +90,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Tweak in sample config files: bash enabled if OS is not Windows
 - Info updated about CG supported language versions in the `--lang-versions` output.
-- Rust default compiler settings changed to include `-O --edition 2021`.
+- Default `rust` compiler settings changed to include `-O --edition 2021`.
 
 ## [v1.9.0](https://github.com/tbali0524/cgtest/releases/v1.9.0) - 2023-07-17
 
@@ -103,7 +114,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- In the default configuration C compile command line the -lm argument is moved to the end.
+- In the default configuration `c` compile command line the -lm argument is moved to the end.
 
 ## [v1.7.0](https://github.com/tbali0524/cgtest/releases/v1.7.0) - 2023-02-25
 
@@ -163,7 +174,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Test cases for all CG solo I/O puzzles added. Total is now over 750 test cases for around 600 puzzles.
+- Test cases for all CG solo I/O puzzles added. Total is now over __750__ test cases for around __600__ puzzles.
 - Stats for unique puzzles.
 
 ### Fixed
@@ -175,7 +186,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `--stats` command-line option added.
-- 150+ CG puzzle test cases added.
+- __150+__ CG puzzle test cases added.
 - Fortran default config and sample code added.
 
 ### Changed
@@ -185,7 +196,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Shebang added to the bash sample solution.
+- Shebang added to the `bash` sample solution.
 - Added -lm to default gcc build command.
 
 ## [v1.0.0](https://github.com/tbali0524/cgtest/releases/v1.0.0) - 2022-07-23

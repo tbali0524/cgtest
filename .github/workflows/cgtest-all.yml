@@ -90,17 +90,17 @@ jobs:
       # =========================================================================
 
       # This is not needed in the cgtest repo itself, but can be used in other code repos:
-      #   - name: Download latest CGTest script from its repo
-      #     run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
-        # uses: wei/wget@v1
-        # with:
-        #     args: -O cgtest.php https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
+      # - name: Download latest CGTest script from its repo
+      #   run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
+      # uses: wei/wget@v1
+      # with:
+      #     args: -O cgtest.php https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
 
       - name: Check available language versions
-        run: php cgtest.php --config=.cgtest.php --verbose --stats  --lang-versions
+        run: php cgtest.php --config=.cgtest.php --stats  --lang-versions
 
       - name: Run tests (in all languages)
-        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c#,c++,d,dart,f#,go,groovy,haskell,java,javascript,kotlin,lua,pascal,perl,php,python,ruby,rust,scala,typescript,vb.net
+        run: php cgtest.php --config=.cgtest.php --stats --lang=bash,c,c#,c++,d,dart,f#,go,groovy,haskell,java,javascript,kotlin,lua,pascal,perl,php,python,ruby,rust,scala,typescript,vb.net
         # disabled in all: clojure,objective-c,ocaml,swift
 
       - name: Upload cgtest logs

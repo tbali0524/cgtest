@@ -11,9 +11,9 @@ jobs:
       #   - name: Download latest CGTest script from its repo
       #     run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
       - name: Check available language versions
-        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang-versions
+        run: php cgtest.php --config=.cgtest.php --stats --lang-versions
       - name: Run tests (only in fast languages)
-        run: php cgtest.php --config=.cgtest.php --verbose --stats --lang=bash,c,c++,javascript,perl,php,python,ruby,rust
+        run: php cgtest.php --config=.cgtest.php --stats --lang=bash,c,c++,javascript,perl,php,python,ruby,rust
       - name: Upload cgtest logs
         if: ${{ failure() }}
         uses: actions/upload-artifact@v4
