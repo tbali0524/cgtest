@@ -41,7 +41,6 @@ return [
     //      Note: can be overriden via the '--lang=...' command-line option
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
         'bash',
-        // 'clojure',       // untested
         // 'objective-c',   // untested
         'ocaml',            // tested on Linux only
         // 'swift',         // untested
@@ -49,6 +48,7 @@ return [
         'c',
         'c++',
         'c#',
+        'clojure',
         'd',
         'dart',
         'f#',

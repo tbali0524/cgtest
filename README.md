@@ -16,7 +16,7 @@ _The repository also contains __5700+__ test cases for __810+__ `CodinGame` puzz
 
 __CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used for running `c`, `c#`, `c++`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `javascript`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust`, `scala`, `typescript` and `vb.net` tests both on Windows and on Linux, and additionally `bash` and `ocaml` on Linux. It should also work on almost any other computer system, including Mac.
+CGTest was successfully used for running `c`, `c#`, `c++`, `clojure`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `javascript`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust`, `scala`, `typescript` and `vb.net` tests both on Windows and on Linux, and additionally `bash` and `ocaml` on Linux. It should also work on almost any other computer system, including Mac.
 
 The test runner works for any non-interactive code that reads from a standard input stream, and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 
@@ -155,11 +155,13 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
 
 * Building `C#` or `VB.NET` source code generates lots of files in the `.tests/temp/bin` and `.tests/temp/obj` directories. CGTest does not delete these directories with the `--clean` command-line option.
 
+* OCamlopt creates build files (`*.cm?`, `*.o`) in the source folder. CGTest does not delete these files with the `--clean` command-line option.
+
 ## Known issues
 
 I don't have local dev environment for all the 27 languages Codingame supports. Therefore, some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
 
-* I could not yet set up to run the tester properly for: `clojure`, `objective-c`, `swift`
+* I could not yet set up to run the tester properly for: `objective-c` and `swift`
 * Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows using a _'bash for Windows'_ package such as `MSYS2`.
 
 _If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax)._

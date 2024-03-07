@@ -20,7 +20,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.14.0';
+$version = 'v1.14.1';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -150,7 +150,10 @@ $defaultConfig = [
         'buildCommand' => 'gcc -std=c17 -o %b%p_%l.exe %s -lm -lpthread',
         'runCommand' => '%b%p_%l.exe',
         'altVersionCommand' => 'clang --version',
-        'altBuildCommand' => 'clang -std=c17 -o %b%p_%l.exe %s',
+        'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
+            ? 'clang-17 -std=c17 -o %b%p_%l.exe %s -lm'
+            : 'clang -std=c17 -o %b%p_%l.exe %s'
+        ),
         'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
@@ -179,23 +182,24 @@ $defaultConfig = [
         ),
         'runCommand' => '%b%p_%l.exe',
         'altVersionCommand' => 'clang++ --version',
-        'altBuildCommand' => 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s',
+        'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
+            ? 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm'
+            : 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s'
+        ),
         'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
-    // todo: fix buildCommand, runCommand, cleanPatterns
     'clojure' => [
         'sourcePath' => 'clojure/',
         'sourceExtension' => '.clj',
         'codinGameVersion' => 'Clojure 1.11.1',
-        'versionCommand' => 'clojure --version',
+        'versionCommand' => 'bb --version',
         'buildCommand' => '',
-        'runCommand' => 'clojure -X Solution/main %s',
-        'cleanPatterns' => [],
-        // 'versionCommand' => 'pwsh -Command clojure --version',
-        // 'buildCommand' => '',
-        // 'runCommand' => 'pwsh -Command clojure -X Solution/main %s',
-        // 'cleanPatterns' => [],
+        'runCommand' => 'bb --classpath %b -m Solution -f %bSolution.clj',
+        'altVersionCommand' => 'clojure --version',
+        'altBuildCommand' => '',
+        'altRunCommand' => 'clojure -X Solution/main %bSolution.clj',
+        'cleanPatterns' => ['%bSolution.clj'],
     ],
     'd' => [
         'sourcePath' => 'd/',
@@ -314,7 +318,13 @@ $defaultConfig = [
         'versionCommand' => 'ocamlopt -v',
         'buildCommand' => 'ocamlopt %s -o %b%p_%l.exe',
         'runCommand' => '%b%p_%l.exe',
-        'cleanPatterns' => ['%b%p_%l.exe'],
+        // TODO fix: ocamlopt creates interim files in source directory, --clean does not delete them
+        'cleanPatterns' => [
+            '%b%p_%l.cmi',
+            '%b%p_%l.cmx',
+            '%b%p_%l.o',
+            '%b%p_%l.exe',
+        ],
     ],
     'pascal' => [
         'sourcePath' => 'pascal/',
@@ -346,7 +356,7 @@ $defaultConfig = [
         'runCommand' => 'php %s',
         'altVersionCommand' => 'php --version',
         'altBuildCommand' => '',
-        'altRunCommand' => 'php -d opcache.enable_cli=0 %s',
+        'altRunCommand' => 'php -d opcache.enable_cli=0 -d xdebug.mode=off %s',
         'altNote' => 'with OPcache JIT off',
         'cleanPatterns' => [],
     ],
@@ -357,6 +367,9 @@ $defaultConfig = [
         'versionCommand' => 'python --version',
         'buildCommand' => '',
         'runCommand' => 'python %s',
+        'altVersionCommand' => 'python3.12 --version',
+        'altBuildCommand' => '',
+        'altRunCommand' => 'python3.12 %s',
         'cleanPatterns' => [],
     ],
     'ruby' => [
@@ -440,6 +453,9 @@ $defaultConfig = [
         'versionCommand' => 'gfortran --version',
         'buildCommand' => 'gfortran -o%b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
+        'altVersionCommand' => 'gfortran-17 --version',
+        'altBuildCommand' => 'gfortran-17 -o%b%p_%l.exe %s',
+        'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
     // todo: check
@@ -1291,6 +1307,35 @@ foreach ($config['languages'] as $language) {
                 if (file_exists($tempFileName)) {
                     unlink($tempFileName);
                 }
+            }
+            // --------------------------------------------------------------------
+            // Special case for Clojure: copy source to Solution.clj in build path
+            if (($language == 'clojure') and !$config['dry-run']) {
+                $cljSrcFile = @fopen($sourceFullFileName, 'rb');
+                if ($cljSrcFile === false) {
+                    echo $errorTag . 'Cannot read source file for Clojure: '
+                        . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL . PHP_EOL;
+                    exit(2);
+                }
+                $cljSrcContents = @fread($cljSrcFile, filesize($sourceFullFileName));
+                if ($cljSrcContents === false) {
+                    echo $errorTag . 'Cannot read source file for Clojure: '
+                        . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL . PHP_EOL;
+                    exit(2);
+                }
+                fclose($cljSrcFile);
+                $tempFileName = $config['buildPath'] . 'Solution.clj';
+                if (file_exists($tempFileName)) {
+                    unlink($tempFileName);
+                }
+                $cljSolFile = @fopen($tempFileName, 'w');
+                if ($cljSolFile === false) {
+                    echo $errorTag . 'Cannot create temporary file for Clojure: '
+                        . $ansiWarn . $tempFileName . $ansiReset . PHP_EOL . PHP_EOL;
+                    exit(2);
+                }
+                fwrite($cljSolFile, $cljSrcContents);
+                fclose($cljSolFile);
             }
             // --------------------------------------------------------------------
             // Special case for C# and VB.NET

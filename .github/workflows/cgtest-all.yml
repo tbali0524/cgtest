@@ -11,6 +11,11 @@ jobs:
       # =========================================================================
       # Add missing languages, optionally matching the version at Codingame
 
+      - name: Setup Clojure
+        uses: DeLaGuardo/setup-clojure@12.5
+        with:
+          bb: latest
+
       - name: Setup D
         uses: dlang-community/setup-dlang@v1
         with:
@@ -97,11 +102,11 @@ jobs:
       #     args: -O cgtest.php https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
 
       - name: Check available language versions
-        run: php cgtest.php --config=.cgtest.php --stats  --lang-versions
+        run: php cgtest.php --config=.cgtest.php --stats --lang-versions
 
       - name: Run tests (in all languages)
-        run: php cgtest.php --config=.cgtest.php --stats --lang=bash,c,c#,c++,d,dart,f#,go,groovy,haskell,java,javascript,kotlin,lua,pascal,perl,php,python,ruby,rust,scala,typescript,vb.net
-        # disabled in all: clojure,objective-c,ocaml,swift
+        run: php cgtest.php --config=.cgtest.php --stats --lang=bash,c,c#,c++,clojure,d,dart,f#,go,groovy,haskell,java,javascript,kotlin,lua,pascal,perl,php,python,ruby,rust,scala,typescript,vb.net
+        # disabled in all: objective-c,ocaml,swift
 
       - name: Upload cgtest logs
         if: ${{ !cancelled() }}
