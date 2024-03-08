@@ -1,0 +1,14 @@
+1
+8 8 8 8 7 7 7 7
+Foundations:
+Freecells: - - - -
+: 3H KS 6C 8C 9C 9D 8S
+: 3C 2S QC JC 5C 9S JH
+: 4D 7D JD AD KC KD TS
+: AS 5D JS 9H 7C AH 4H
+: TD 6D 5S 6H 2H KH
+: 7H 4C AC 2C 7S QS
+: 8H QH QD 3D TH 3S
+: 2D TC 6S 4S 8D 5H
+37
+13 1a 1b 1c 1d 26 2a 2b 2c 2d 32 3a 3b 3c 3d 4a 4b 4c 4d 5a 5b 5c 5d 65 6a 6b 6c 6d 74 7a 7b 7c 7d 8a 8b 8c 8d

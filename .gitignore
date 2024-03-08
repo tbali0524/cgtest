@@ -4,6 +4,8 @@
 /.tests/output/*
 /.tests/temp/*
 **/*.csproj
+**/*.cmi
+**/*.cmx
 **/*.hi
 **/*.o
 **/*.obj

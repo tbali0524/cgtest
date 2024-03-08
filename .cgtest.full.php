@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.14.0 by Balint Toth [TBali]
+ * CGTest v1.15.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
@@ -40,9 +40,7 @@ return [
     // == Tests will be run in the following languages:
     //      Note: can be overriden via the '--lang=...' command-line option
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
-        // tested on Linux only
-        'bash',
-        // 'clojure',       // untested
+        'bash',             // tested on Linux only
         // 'objective-c',   // untested
         'ocaml',            // tested on Linux only
         // 'swift',         // untested
@@ -50,6 +48,7 @@ return [
         'c',
         'c#',
         'c++',
+        'clojure',
         'd',
         'dart',
         'f#',
@@ -177,6 +176,7 @@ return [
                 // 'event_summer-challenge-2023-q06',       // SQL puzzle
                 'event_summer-challenge-2023-q10',          // only tests 01-07 are included
                 'event_winter-challenge-2023-q01',
+                'event_winter-challenge-2023-q04',
                 'event_winter-challenge-2023-q06',          // only tests 01-10 are included
                 'event_winter-challenge-2023-q07',          // only tests 01-07 are included
             ],
@@ -984,7 +984,6 @@ return [
                 'event_summer-challenge-2023-q09',
                 'event_winter-challenge-2023-q02',
                 'event_winter-challenge-2023-q03',
-                'event_winter-challenge-2023-q04',
                 'event_winter-challenge-2023-q05',
             ],
             'puzzle/cg/easy/' => [

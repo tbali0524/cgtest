@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.14.0 by Balint Toth [TBali]
+ * CGTest v1.15.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
@@ -40,7 +40,7 @@ return [
     // == Tests will be run in the following languages:
     //      Note: can be overriden via the '--lang=...' command-line option
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
-        'bash',
+        'bash',             // tested on Linux only
         // 'objective-c',   // untested
         'ocaml',            // tested on Linux only
         // 'swift',         // untested

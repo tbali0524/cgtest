@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.14.0 by Balint Toth [TBali]
+ * CGTest v1.15.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * For usage, see:
@@ -20,7 +20,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.14.1';
+$version = 'v1.15.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -128,7 +128,7 @@ $defaultConfig = [
     'languages' => ['php'],
     'puzzles' => [],
     'runOnlyPuzzles' => [],
-    // todo: fix to work also under Windows
+    // TODO: fix to work also under Windows
     'bash' => [
         'sourcePath' => 'bash/',
         'sourceExtension' => '.sh',
@@ -175,7 +175,7 @@ $defaultConfig = [
         'sourceExtension' => '.cpp',
         'codinGameVersion' => 'g++ 11.2.0-20',
         'versionCommand' => 'g++ --version',
-        // note: omitting -ldl -lcrypt from CG settings
+        // note: omitting -ldl -lcrypt on Windows from CG settings
         'buildCommand' => (PHP_OS_FAMILY != 'Windows'
             ? 'g++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread -ldl -lcrypt'
             : 'g++ -static-libgcc -static-libstdc++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread'
@@ -299,7 +299,7 @@ $defaultConfig = [
         'runCommand' => 'lua %s',
         'cleanPatterns' => [],
     ],
-    // todo: fix buildCommand, runCommand, cleanPatterns
+    // TODO: fix buildCommand, runCommand, cleanPatterns
     'objective-c' => [
         'sourcePath' => 'objective-c/',
         'sourceExtension' => '.m',
@@ -310,7 +310,7 @@ $defaultConfig = [
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
-    // todo: try out also in Windows:
+    // TODO: try out also in Windows:
     'ocaml' => [
         'sourcePath' => 'ocaml/',
         'sourceExtension' => '.ml',
@@ -318,7 +318,7 @@ $defaultConfig = [
         'versionCommand' => 'ocamlopt -v',
         'buildCommand' => 'ocamlopt %s -o %b%p_%l.exe',
         'runCommand' => '%b%p_%l.exe',
-        // TODO fix: ocamlopt creates interim files in source directory, --clean does not delete them
+        // TODO: fix that ocamlopt creates interim files in source directory, --clean does not delete them
         'cleanPatterns' => [
             '%b%p_%l.cmi',
             '%b%p_%l.cmx',
@@ -402,7 +402,7 @@ $defaultConfig = [
         'runCommand' => 'scala -cp %b %s',
         'cleanPatterns' => [],
     ],
-    // todo: fix buildCommand, runCommand, cleanPatterns
+    // TODO: fix buildCommand, runCommand, cleanPatterns
     'swift' => [
         'sourcePath' => 'swift/',
         'sourceExtension' => '.swift',
@@ -436,7 +436,7 @@ $defaultConfig = [
         ],
     ],
     // unsupported on CodinGame
-    // todo: check
+    // TODO: check
     'cobol' => [
         'sourcePath' => 'cobol/',
         'sourceExtension' => '.cob',
@@ -458,7 +458,7 @@ $defaultConfig = [
         'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
-    // todo: check
+    // TODO: check
     'r' => [
         'sourcePath' => 'r/',
         'sourceExtension' => '.R',
@@ -887,14 +887,13 @@ if ($config['create'] != '') {
     }
     if (
         $config['dry-run']
-        or $config['run-only']
         or $config['alt']
         or $config['lang-versions']
         or $config['clean']
         or ($config['test-case'] != 'all')
     ) {
         echo $errorTag . 'Invalid arguments: if using ' . $ansiWarn . '--create' . $ansiReset
-            . ', cannot use --dry-run, --run-only, --alt, --lang-versions, --clean, --test-case' . PHP_EOL . PHP_EOL;
+            . ', cannot use --dry-run, --alt, --lang-versions, --clean, --test-case' . PHP_EOL . PHP_EOL;
         exit(2);
     }
     if (count($argumentConfig['puzzles'] ?? []) != 1) {
@@ -913,6 +912,9 @@ if ($config['create'] != '') {
     $totalSkipped = 0;
     // run separately for input and expected test case files
     for ($i = 0; $i < 2; ++$i) {
+        if ($config['run-only'] and ($i == 1)) {
+            continue;
+        }
         $fullPattern = (
             $i == 0
             ? $config['inputPath'] . $config['inputPattern']
@@ -945,8 +947,9 @@ if ($config['create'] != '') {
     }
     echo PHP_EOL;
     if ($totalCreated > 0) {
-        echo $infoTag . 'Created ' . $totalCreated . ' empty input and expected output test case file'
-            . ($totalCreated > 1 ? 's' : '') . '.' . PHP_EOL;
+        echo $infoTag . 'Created ' . $ansiInfo . $totalCreated . $ansiReset . ' empty input '
+            . (!$config['run-only'] ? 'and expected output ' : '')
+            . 'test case file' . ($totalCreated > 1 ? 's' : '') . '.' . PHP_EOL;
     } else {
         echo $infoTag . 'There was nothing to create.' . PHP_EOL;
     }
@@ -1311,31 +1314,33 @@ foreach ($config['languages'] as $language) {
             // --------------------------------------------------------------------
             // Special case for Clojure: copy source to Solution.clj in build path
             if (($language == 'clojure') and !$config['dry-run']) {
-                $cljSrcFile = @fopen($sourceFullFileName, 'rb');
-                if ($cljSrcFile === false) {
-                    echo $errorTag . 'Cannot read source file for Clojure: '
-                        . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL . PHP_EOL;
-                    exit(2);
-                }
-                $cljSrcContents = @fread($cljSrcFile, filesize($sourceFullFileName));
-                if ($cljSrcContents === false) {
-                    echo $errorTag . 'Cannot read source file for Clojure: '
-                        . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL . PHP_EOL;
-                    exit(2);
-                }
-                fclose($cljSrcFile);
                 $tempFileName = $config['buildPath'] . 'Solution.clj';
                 if (file_exists($tempFileName)) {
                     unlink($tempFileName);
                 }
-                $cljSolFile = @fopen($tempFileName, 'w');
-                if ($cljSolFile === false) {
-                    echo $errorTag . 'Cannot create temporary file for Clojure: '
-                        . $ansiWarn . $tempFileName . $ansiReset . PHP_EOL . PHP_EOL;
-                    exit(2);
+                if (!$config['clean']) {
+                    $cljSrcFile = @fopen($sourceFullFileName, 'rb');
+                    if ($cljSrcFile === false) {
+                        echo $errorTag . 'Cannot read source file for Clojure: '
+                            . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL . PHP_EOL;
+                        exit(2);
+                    }
+                    $cljSrcContents = @fread($cljSrcFile, filesize($sourceFullFileName));
+                    if ($cljSrcContents === false) {
+                        echo $errorTag . 'Cannot read source file for Clojure: '
+                            . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL . PHP_EOL;
+                        exit(2);
+                    }
+                    fclose($cljSrcFile);
+                    $cljSolFile = @fopen($tempFileName, 'wb');
+                    if ($cljSolFile === false) {
+                        echo $errorTag . 'Cannot create temporary file for Clojure: '
+                            . $ansiWarn . $tempFileName . $ansiReset . PHP_EOL . PHP_EOL;
+                        exit(2);
+                    }
+                    fwrite($cljSolFile, $cljSrcContents);
+                    fclose($cljSolFile);
                 }
-                fwrite($cljSolFile, $cljSrcContents);
-                fclose($cljSolFile);
             }
             // --------------------------------------------------------------------
             // Special case for C# and VB.NET
@@ -1981,22 +1986,34 @@ if ($languageStats['totals']['countTests'] == 0) {
     exit(1);
 }
 if ($languageStats['totals']['countLanguages'] > 1) {
-    $msgUniquePuzzles = ' (' . $ansiInfo . $languageStats['unique']['countFiles'] . $ansiReset . ' unique)';
+    $msgUniquePuzzles = ' for ' . $ansiInfo . $languageStats['unique']['countFiles'] . $ansiReset
+        . ' unique puzzle' . ($languageStats['unique']['countFiles'] > 1 ? 's' : '');
     $msgUniqueTests = ' (' . $ansiInfo . $languageStats['unique']['countTests'] . $ansiReset . ' unique)';
 } else {
     $msgUniquePuzzles = '';
     $msgUniqueTests = '';
 }
+if (
+    !$config['dry-run']
+    and ($languageStats['totals']['countPassedTests'] < $languageStats['totals']['countTests'])
+) {
+    $msgFailedTests = ', '
+        . $ansiWarn . ($languageStats['totals']['countTests'] - $languageStats['totals']['countPassedTests'])
+        . $ansiReset . ' failed';
+} else {
+    $msgFailedTests = '';
+}
 echo $infoTag . 'Total: ' . $ansiInfo . $languageStats['totals']['countPassedTests'] . $ansiReset
-    . ' test' . ($languageStats['totals']['countPassedTests'] > 1 ? 's' : '') . ' passed out of '
+    . ' test case' . ($languageStats['totals']['countPassedTests'] > 1 ? 's' : '') . ' passed'
+    . $msgFailedTests . ' out of '
     . $ansiInfo . $languageStats['totals']['countTests'] . $ansiReset
     . $msgUniqueTests . '.' . PHP_EOL;
 echo $infoTag . 'Total: ' . $ansiInfo . $languageStats['totals']['countFiles'] . $ansiReset
     . ' solution' . ($languageStats['totals']['countFiles'] > 1 ? 's' : '')
-    . $msgUniquePuzzles
-    . ' with ' . $ansiInfo . $languageStats['totals']['countLines'] . $ansiReset . ' total source lines in '
+    . ', ' . $ansiInfo . $languageStats['totals']['countLines'] . $ansiReset . ' source lines in '
     . $ansiInfo . $languageStats['totals']['countLanguages'] . $ansiReset
-    . ' programming language' . ($languageStats['totals']['countLanguages'] > 1 ? 's' : '') . '.' . PHP_EOL;
+    . ' programming language' . ($languageStats['totals']['countLanguages'] > 1 ? 's' : '')
+    . $msgUniquePuzzles . '.' . PHP_EOL;
 if ((($config['slowThreshold'] ?? 0) > 0) and (count($slowTests) > 0)) {
     echo $infoTag . 'There were ' . $ansiWarn . count($slowTests) . $ansiReset
         . ' test' . (count($slowTests) > 1 ? 's' : '')

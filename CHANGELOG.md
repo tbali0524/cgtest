@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Clojure support added with `babashka`.
+- Nothing yet.
 
 ### Changed
 
@@ -18,6 +18,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Nothing yet.
+
+## [v1.15.0](https://github.com/tbali0524/cgtest/releases/v1.15.0) - 2024-03-09
+
+### Added
+
+- Clojure support added with `babashka`.
+- More test cases added.
+
+### Fixed
+
+- Using `--create` and `--run-only` at the same time creates only input files but not expected output files.
 
 ## [v1.14.0](https://github.com/tbali0524/cgtest/releases/v1.14.0) - 2024-03-05
 

@@ -10,7 +10,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
-_The repository also contains __5700+__ test cases for __810+__ `CodinGame` puzzles and __730+__ puzzle statements.
+_The repository also contains __6100+__ test cases for __810+__ `CodinGame` puzzles and __730+__ puzzle statements.
 
 ## Intro
 
@@ -65,21 +65,31 @@ Puzzles:              Space separated list of source filenames (WITHOUT extensio
 
 The minimal required configuration to run CGTest is to define (either via command-line or via the config file) the list of puzzles to test, and the list of languages to run.
 
+There are some helper `.bat` and `.sh` files in the  `bin/` directory.
+
 ### Typical output
 
-CGTest shows the result of the tests and a summary:
+CGTest shows the result of each test run and a summary:
 
-![screenshot verbose](cgtest_screenshot_verbose.png)
+![screenshot](.pic/cgtest_screenshot_verbose.png)
 
-With the `--quiet` option only errors, warnings and a summary is shown.
+With the `--quiet` option, only errors, warnings and a summary is shown.
 
-![screenshot](cgtest_screenshot_base.png)
+![screenshot quiet](.pic/cgtest_screenshot_base.png)
 
-The `--stats` option is useful if you run the test for multiple languages:
+Adding the `--stats` option is useful if you run the test for multiple languages:
 
-![screenshot stats](cgtest_screenshot_stats.png)
+![screenshot stats](.pic/cgtest_screenshot_stats.png)
 
 _Note: The spent time shown includes the time of compiling, not just the time spent in your source code._
+
+You can check which supported languages are available on your system with:
+
+```sh
+php cgtest.php --config=.cgtest.full.php --lang-versions --quiet
+```
+
+![screenshot langs](.pic/cgtest_screenshot_langs.png)
 
 ## Prerequisites
 
