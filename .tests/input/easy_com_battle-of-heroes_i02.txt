@@ -1,0 +1,2 @@
+Crusader;100;65;20
+Bone dragon;1;150;45

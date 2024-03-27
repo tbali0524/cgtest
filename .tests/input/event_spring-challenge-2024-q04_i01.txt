@@ -1,0 +1,3 @@
+8
+12
+["bbCCCCC3cC3c","1CAABBBC3c3c","aCAAbbbC312A","aCCBbabCB111","3CBBbbbC2C12","CCBAca3C2a1C","2ACCCCCaaaaa","b33ccccccccc"]

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.15.0 by Balint Toth [TBali]
+ * CGTest v1.16.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
@@ -105,6 +105,7 @@ return [
     //     'versionCommand' => 'lang --version',
     //     'buildCommand' => '',
     //     'runCommand' => 'lang %s',
+    //     'note' => '',
     //     'altVersionCommand' => '',
     //     'altBuildCommand' => '',
     //     'altRunCommand' => '',
@@ -179,6 +180,14 @@ return [
                 'event_winter-challenge-2023-q04',
                 'event_winter-challenge-2023-q06',          // only tests 01-10 are included
                 'event_winter-challenge-2023-q07',          // only tests 01-07 are included
+                'event_spring-challenge-2024-q01',
+                'event_spring-challenge-2024-q02',
+                // 'event_spring-challenge-2024-q03',       // SQL puzzle
+                'event_spring-challenge-2024-q04',
+                'event_spring-challenge-2024-q06',
+                // 'event_spring-challenge-2024-q07',       // SQL puzzle
+                'event_spring-challenge-2024-q08',
+                'event_spring-challenge-2024-q09',
             ],
             'puzzle/cg/easy/' => [
                 'easy_cg_ascii-art',
@@ -242,6 +251,7 @@ return [
                 'easy_com_balanced-ternary-computer-encode',
                 'easy_com_ball-trajectory-predictor',       // removed puzzle
                 'easy_com_bank-robbers',
+                'easy_com_battle-of-heroes',
                 'easy_com_benfords-law',
                 'easy_com_bet-payout-calculator',           // removed puzzle
                 'easy_com_binary-image',
@@ -308,6 +318,7 @@ return [
                 'easy_com_hidden-messages-in-images',
                 'easy_com_hooch-clash',
                 'easy_com_horse-racing-hyperduals',
+                'easy_com_how-high-up-does-the-beer-go',
                 'easy_com_how-time-flies',
                 'easy_com_hunger-games',
                 'easy_com_in-stereo',
@@ -388,6 +399,7 @@ return [
                 'easy_com_rugby-score',
                 'easy_com_saving-snoopy',
                 'easy_com_score-a-bridge-deal',
+                'easy_com_scrabble-score',
                 'easy_com_self-driving-car-testing',
                 // 'easy_com_sentence-tokenising',          // removed puzzle, unavailable
                 'easy_com_shadow-casting',
@@ -684,6 +696,7 @@ return [
                 'medium_com_rocket-engines',
                 'medium_com_rod-cutting-problem',
                 'medium_com_roman-sorting',
+                'medium_com_rummikub-1',
                 'medium_com_sandpile-addition',
                 'medium_com_scary-ride-at-the-haunted-mansion',
                 'medium_com_seam-carving',
@@ -985,6 +998,7 @@ return [
                 'event_winter-challenge-2023-q02',
                 'event_winter-challenge-2023-q03',
                 'event_winter-challenge-2023-q05',
+                'event_spring-challenge-2024-q05',
             ],
             'puzzle/cg/easy/' => [
                 'easy_cg_mars-lander-episode-1',
@@ -1047,4 +1061,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 24.02.26: 'easy_com_periodic-table-spelling',
+// Note: last puzzle added on 24.03.27: 'event_spring-challenge-2024-qXX',

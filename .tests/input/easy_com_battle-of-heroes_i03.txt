@@ -1,0 +1,2 @@
+Halfling;1000;3;3
+Centaur;1300;5;2

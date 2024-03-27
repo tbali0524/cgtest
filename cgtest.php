@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.15.0 by Balint Toth [TBali]
+ * CGTest v1.16.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * For usage, see:
@@ -20,7 +20,7 @@ namespace TBali\CGTest;
 // So I skipped using OOP, and - as code repetition is low - even functions.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.15.0';
+$version = 'v1.16.0-dev';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -149,9 +149,12 @@ $defaultConfig = [
         // note: omitting -ldl -lcrypt from CG settings
         'buildCommand' => 'gcc -std=c17 -o %b%p_%l.exe %s -lm -lpthread',
         'runCommand' => '%b%p_%l.exe',
-        'altVersionCommand' => 'clang --version',
+        'altVersionCommand' => (PHP_OS_FAMILY != 'Windows'
+            ? 'clang-18 --version'
+            : 'clang --version'
+        ),
         'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang-17 -std=c17 -o %b%p_%l.exe %s -lm'
+            ? 'clang-18 -std=c17 -o %b%p_%l.exe %s -lm'
             : 'clang -std=c17 -o %b%p_%l.exe %s'
         ),
         'altRunCommand' => '%b%p_%l.exe',
@@ -165,6 +168,7 @@ $defaultConfig = [
         'buildCommand' => 'dotnet publish %b%p' . $csprojExtension
             . ' -o %b --nologo --use-current-runtime --sc -v:q',
         'runCommand' => '%b%p' . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
+        'note' => '.NET SDK',
         'cleanPatterns' => [
             '%b%p' . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
             '%b%p.pdb',
@@ -181,9 +185,12 @@ $defaultConfig = [
             : 'g++ -static-libgcc -static-libstdc++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread'
         ),
         'runCommand' => '%b%p_%l.exe',
-        'altVersionCommand' => 'clang++ --version',
+        'altVersionCommand' => (PHP_OS_FAMILY != 'Windows'
+            ? 'clang++-18 --version'
+            : 'clang++ --version'
+        ),
         'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm'
+            ? 'clang++-18 -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm'
             : 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s'
         ),
         'altRunCommand' => '%b%p_%l.exe',
@@ -230,6 +237,7 @@ $defaultConfig = [
         'versionCommand' => 'dotnet --version',
         'buildCommand' => '',
         'runCommand' => 'dotnet fsi %s',
+        'note' => '.NET SDK',
         'cleanPatterns' => [],
     ],
     'go' => [
@@ -279,6 +287,7 @@ $defaultConfig = [
         'versionCommand' => 'node --version',
         'buildCommand' => '',
         'runCommand' => 'node -r polyfill.js %s',
+        'note' => 'Node.js',
         'cleanPatterns' => [],
     ],
     'kotlin' => [
@@ -333,6 +342,7 @@ $defaultConfig = [
         'versionCommand' => 'fpc -iW',
         'buildCommand' => 'fpc -v0 -FE%b -o%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
+        'note' => 'Free Pascal Compiler',
         'cleanPatterns' => [
             '%b%p_%l.exe',
             '%b%p.o',
@@ -357,7 +367,7 @@ $defaultConfig = [
         'altVersionCommand' => 'php --version',
         'altBuildCommand' => '',
         'altRunCommand' => 'php -d opcache.enable_cli=0 -d xdebug.mode=off %s',
-        'altNote' => 'with OPcache JIT off',
+        'altNote' => 'JIT off',
         'cleanPatterns' => [],
     ],
     'python' => [
@@ -420,6 +430,7 @@ $defaultConfig = [
         // 'versionCommand' => 'tsc --version',
         'buildCommand' => '',
         'runCommand' => 'node -r polyfill.js %s',
+        'note' => 'Node.js',
         'cleanPatterns' => [],
     ],
     'vb.net' => [
@@ -430,6 +441,7 @@ $defaultConfig = [
         'buildCommand' => 'dotnet publish %b' . $vbProjectName . $vbprojExtension
             . ' -o %b --nologo --use-current-runtime --sc -v:q', // -v:q
         'runCommand' => '%b' . $vbProjectName . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
+        'note' => '.NET SDK',
         'cleanPatterns' => [
             '%b' . $vbProjectName . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
             '%b' . $vbProjectName . '.pdb',
@@ -453,8 +465,8 @@ $defaultConfig = [
         'versionCommand' => 'gfortran --version',
         'buildCommand' => 'gfortran -o%b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
-        'altVersionCommand' => 'gfortran-17 --version',
-        'altBuildCommand' => 'gfortran-17 -o%b%p_%l.exe %s',
+        'altVersionCommand' => 'gfortran-13 --version',
+        'altBuildCommand' => 'gfortran-13 -o%b%p_%l.exe %s',
         'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
     ],
@@ -473,7 +485,7 @@ foreach ($defaultConfig['languages'] as $language) {
     $defaultConfig[$language]['excludePuzzles'] = [];
     $defaultConfig[$language]['includePuzzles'] = [];
     $defaultConfig[$language]['runOnlyPuzzles'] = [];
-    foreach (['altVersionCommand', 'altBuildCommand', 'altRunCommand', 'altNote'] as $cfgToAdd) {
+    foreach (['note', 'altVersionCommand', 'altBuildCommand', 'altRunCommand', 'altNote'] as $cfgToAdd) {
         if (!isset($defaultConfig[$language][$cfgToAdd])) {
             $defaultConfig[$language][$cfgToAdd] = '';
         }
@@ -494,7 +506,7 @@ $reservedConfigKeys = array_merge(
 );
 $languageNonEmptyStringConfigKeys = ['sourceExtension', 'runCommand'];
 $languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionCommand', 'buildCommand',
-    'altVersionCommand', 'altBuildCommand', 'altRunCommand', 'altNote'];
+    'note', 'altVersionCommand', 'altBuildCommand', 'altRunCommand', 'altNote'];
 $languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles', 'runOnlyPuzzles'];
 $csprojTemplate =
 "<Project Sdk=\"Microsoft.NET.Sdk\">
@@ -1080,25 +1092,25 @@ foreach ($config['languages'] as $language) {
     }
     // --------------------------------------------------------------------
     // check language availability for --lang-versions, --dry-run, or real tests
+    if (!$config['alt']) {
+        $note = $config[$language]['note'] ?? '';
+    } else {
+        if ($config[$language]['altNote'] != '') {
+            $note = $config[$language]['altNote'];
+        } else {
+            $note = $config[$language]['note'] ?? '';
+        }
+    }
     if ($config['alt'] and ($config[$language]['altVersionCommand'] != '')) {
         $versionCommand = $config[$language]['altVersionCommand'];
     } else {
         $versionCommand = $config[$language]['versionCommand'];
     }
-    if ($config['alt'] and ($config[$language]['altNote'] != '')) {
-        $altNote = $config[$language]['altNote'];
-    } else {
-        $altNote = '';
-    }
     if (!$config['clean'] and ($versionCommand != '')) {
         if ($config['lang-versions']) {
             $redirectPart = ' 2>&1';
             if ($config['verbose']) {
-                echo $infoTag . 'Version info for language: ' . $ansiInfo . $language . $ansiReset;
-                if ($altNote != '') {
-                    echo $ansiInfo . ' (' .  $altNote . ')' . $ansiReset;
-                }
-                echo PHP_EOL;
+                echo $infoTag . 'Version info for language: ' . $ansiInfo . $language . $ansiReset . PHP_EOL;
                 if ($config[$language]['codinGameVersion'] != '') {
                     echo $infoTag . '-- version supported at CodinGame: ' . $config[$language]['codinGameVersion']
                         . PHP_EOL;
@@ -1133,7 +1145,11 @@ foreach ($config['languages'] as $language) {
                     continue;
                 }
                 if (($i == 0) or (($i == 1) and ($execOutput[0] == ''))) {
-                    echo '    ' . $ansiGreen . $execOutput[$i] . $ansiReset . PHP_EOL;
+                    echo '    ' . $ansiGreen . $execOutput[$i] . $ansiReset;
+                    if ($note != '') {
+                        echo $ansiInfo . ' (' .  $note . ')' . $ansiReset;
+                    }
+                    echo PHP_EOL;
                 } else {
                     echo '    ' . $execOutput[$i] . PHP_EOL;
                 }
@@ -1154,8 +1170,8 @@ foreach ($config['languages'] as $language) {
             if ($langVersionInfo != '') {
                 echo $infoTag . 'Using ' . $ansiInfo . str_pad(substr(strval($language), 0, 12), 12) . $ansiReset
                 . ' version: ' . $ansiGreen . $langVersionInfo . $ansiReset;
-                if ($altNote != '') {
-                    echo $ansiInfo . ' (' .  $altNote . ')' . $ansiReset;
+                if ($note != '') {
+                    echo $ansiInfo . ' (' .  $note . ')' . $ansiReset;
                 }
                 echo PHP_EOL;
             }

@@ -1,0 +1,2 @@
+Minotaur;20;35;10
+Unicorn;16;40;14

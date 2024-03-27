@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Nothing yet.
+- More test cases added.
+- `note` configuration option added to the per language section.
 
 ### Changed
 

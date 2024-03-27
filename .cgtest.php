@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.15.0 by Balint Toth [TBali]
+ * CGTest v1.16.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
@@ -105,6 +105,7 @@ return [
     //     'versionCommand' => 'lang --version',
     //     'buildCommand' => '',
     //     'runCommand' => 'lang %s',
+    //     'note' => '',
     //     'altVersionCommand' => '',
     //     'altBuildCommand' => '',
     //     'altRunCommand' => '',
@@ -141,6 +142,7 @@ return [
     //     'versionCommand' => 'gcc --version',
     //     'buildCommand' => 'gcc -std=c17 -o %b%p_%l.exe %s -lm -lpthread',
     //     'runCommand' => '%b%p_%l.exe',
+    //     'note' => '',
     //     'altVersionCommand' => 'clang --version',
     //     'altBuildCommand' => 'clang -std=c17 -o %b%p_%l.exe %s',
     //     'altRunCommand' => '%b%p_%l.exe',

@@ -1,0 +1,8 @@
+Round 1
+9 Vampire(s) attack(s) 28 Genie(s) dealing 72 damage
+1 unit(s) perish
+----------
+27 Genie(s) attack(s) 9 Vampire(s) dealing 270 damage
+9 unit(s) perish
+##########
+Genie won! 27 unit(s) left

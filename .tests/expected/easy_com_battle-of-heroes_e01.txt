@@ -1,0 +1,33 @@
+Round 1
+20 Minotaur(s) attack(s) 16 Unicorn(s) dealing 200 damage
+5 unit(s) perish
+----------
+11 Unicorn(s) attack(s) 20 Minotaur(s) dealing 154 damage
+4 unit(s) perish
+##########
+Round 2
+16 Minotaur(s) attack(s) 11 Unicorn(s) dealing 160 damage
+4 unit(s) perish
+----------
+7 Unicorn(s) attack(s) 16 Minotaur(s) dealing 98 damage
+3 unit(s) perish
+##########
+Round 3
+13 Minotaur(s) attack(s) 7 Unicorn(s) dealing 130 damage
+3 unit(s) perish
+----------
+4 Unicorn(s) attack(s) 13 Minotaur(s) dealing 56 damage
+1 unit(s) perish
+##########
+Round 4
+12 Minotaur(s) attack(s) 4 Unicorn(s) dealing 120 damage
+3 unit(s) perish
+----------
+1 Unicorn(s) attack(s) 12 Minotaur(s) dealing 14 damage
+1 unit(s) perish
+##########
+Round 5
+11 Minotaur(s) attack(s) 1 Unicorn(s) dealing 110 damage
+1 unit(s) perish
+----------
+Minotaur won! 11 unit(s) left

@@ -1,0 +1,29 @@
+Round 1
+1000 Rogue(s) attack(s) 400 Nomad(s) dealing 2000 damage
+100 unit(s) perish
+----------
+300 Nomad(s) attack(s) 1000 Rogue(s) dealing 1500 damage
+375 unit(s) perish
+##########
+Round 2
+625 Rogue(s) attack(s) 300 Nomad(s) dealing 1250 damage
+62 unit(s) perish
+----------
+238 Nomad(s) attack(s) 625 Rogue(s) dealing 1190 damage
+297 unit(s) perish
+##########
+Round 3
+328 Rogue(s) attack(s) 238 Nomad(s) dealing 656 damage
+33 unit(s) perish
+----------
+205 Nomad(s) attack(s) 328 Rogue(s) dealing 1025 damage
+256 unit(s) perish
+##########
+Round 4
+72 Rogue(s) attack(s) 205 Nomad(s) dealing 144 damage
+7 unit(s) perish
+----------
+198 Nomad(s) attack(s) 72 Rogue(s) dealing 990 damage
+72 unit(s) perish
+##########
+Nomad won! 198 unit(s) left

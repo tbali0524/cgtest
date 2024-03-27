@@ -1,0 +1,36 @@
+Round 1
+1000 Halfling(s) attack(s) 1300 Centaur(s) dealing 3000 damage
+600 unit(s) perish
+----------
+700 Centaur(s) attack(s) 1000 Halfling(s) dealing 1400 damage
+466 unit(s) perish
+##########
+Round 2
+534 Halfling(s) attack(s) 700 Centaur(s) dealing 1602 damage
+320 unit(s) perish
+----------
+380 Centaur(s) attack(s) 534 Halfling(s) dealing 760 damage
+254 unit(s) perish
+##########
+Round 3
+280 Halfling(s) attack(s) 380 Centaur(s) dealing 840 damage
+168 unit(s) perish
+----------
+212 Centaur(s) attack(s) 280 Halfling(s) dealing 424 damage
+141 unit(s) perish
+##########
+Round 4
+139 Halfling(s) attack(s) 212 Centaur(s) dealing 417 damage
+83 unit(s) perish
+----------
+129 Centaur(s) attack(s) 139 Halfling(s) dealing 258 damage
+86 unit(s) perish
+##########
+Round 5
+53 Halfling(s) attack(s) 129 Centaur(s) dealing 159 damage
+32 unit(s) perish
+----------
+97 Centaur(s) attack(s) 53 Halfling(s) dealing 194 damage
+53 unit(s) perish
+##########
+Centaur won! 97 unit(s) left

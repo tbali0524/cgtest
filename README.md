@@ -10,7 +10,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
-_The repository also contains __6100+__ test cases for __810+__ `CodinGame` puzzles and __730+__ puzzle statements.
+_The repository also contains __6100+__ test cases for __810+__ `CodinGame` puzzles and __730+__ puzzle statements._
 
 ## Intro
 
@@ -46,7 +46,7 @@ Options:
    --ansi             Use color output [default]
    --no-ansi          Disable color output
    --verbose          Increase the verbosity of messages: also show each passed tests [default]
-   --quiet            'Decrease the verbosity of messages: only show errors and warnings
+   --quiet            Decrease the verbosity of messages: only show errors and warnings
    --stats            Show per-language test stats
    --lang-versions    Show versions for all configured programming languages
    --show-defaults    Show default configuration settings (as json)

@@ -1,0 +1,5 @@
+Round 1
+100 Crusader(s) attack(s) 1 Bone dragon(s) dealing 2000 damage
+1 unit(s) perish
+----------
+Crusader won! 100 unit(s) left

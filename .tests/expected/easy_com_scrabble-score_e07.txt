@@ -1,0 +1,3 @@
+BURGERS 30
+SCISSOR 27
+Total 57
