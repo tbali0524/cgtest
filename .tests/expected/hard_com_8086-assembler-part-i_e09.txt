@@ -1,0 +1,8 @@
+     |                   | ; Test 'parser'
+0000 | 83 C3 DA          | add bx, ';'-','+'\''-'\\' ; 'this, is, a, comment'
+     |                   | ; mov ax, 12h
+0003 | B8 05 00          | mov ax, 5 ; mov bx, 3
+0006 | B3 70             | mov bl, '8'*2 ; , 4
+0008 | BA 57 00          | mov dx, '(' + 2 * 3 + ')'
+000B | B9 00 00          | mov cx, 2 + '+' - '-'
+000E | B8 5F 00          | mov ax, ( (2+3) * (5+$) )

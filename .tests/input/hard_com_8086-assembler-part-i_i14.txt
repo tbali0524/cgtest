@@ -1,0 +1,5 @@
+4
+; Invalid hex format
+mov ax, 0
+mov ch, 5h
+mov dl, fh

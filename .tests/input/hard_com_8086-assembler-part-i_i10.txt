@@ -1,0 +1,24 @@
+23
+; ---------------------------------------
+; Hello
+; ---------------------------------------
+
+;
+; Display Hello word on screen with interrupt 21h
+;
+
+mov dl, 'H' 
+mov ah, 2   
+int 21h
+
+MOV DL, 'e'
+INT 21h
+
+mov dl, 'l'
+int 21h
+
+mov dl, 'l'
+int 21h
+
+mov dl, 'o'
+int 21h

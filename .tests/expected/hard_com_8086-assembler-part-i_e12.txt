@@ -1,0 +1,16 @@
+     |                   | ; Tricky encoding explanation
+     |                   | ;
+     |                   | ; 65535 = 0xFFFF (unsigned)
+     |                   | ; -1 = 0xFFFF (16-bit signed)
+     |                   | ; Two different numbers are encoded the same way
+     |                   | ;   depending on the range considered (signed or unsigned).
+     |                   | ; When executed, instructions will interpret the immediate as
+     |                   | ;   signed, unsigned, or both (ADD/CMP/...).
+     |                   | ; MOV example
+0000 | B8 FF FF          | mov ax, 65535
+0003 | B8 FF FF          | mov ax, -1
+     |                   | ; ADD example
+     |                   | ; As 65535 = 0xFFFF = -1 and -1 = 0xFF for 8 bits,
+     |                   | ;   the command is assembled with R16, I8:  83 C0+T data
+     |                   | ; 0xFF will be sign-extended to 0xFFFF when executed.
+0006 | 83 C0 FF          | add ax, 65535

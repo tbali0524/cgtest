@@ -1,0 +1,25 @@
+24
+mov ax, -1
+mov bx, 128
+mov cx, 215h
+mov dx, 10010001b
+mov ax, cx
+mov dx, bx
+mov bx, -32768
+
+mov ah, 010
+mov al, 255
+mov bh, 0x01
+mov cl, 1001b
+mov dh, '~'
+mov ah, cl
+
+mov ax, 'b'-'h'
+mov bx, 3 * ( 8 - 7 / 2 )
+mov cx, ( 1001000b+12h-0x03 ) * 'a'
+mov dx, $
+mov ax, 5h + $
+mov ax, -10h + 'A'
+
+mov dl, 0ah / 2
+mov cl, 100 - 0ch + 0dh

@@ -1,0 +1,12 @@
+11
+add ch, -1
+add ch, 0xFF
+add cx, 127
+add cx, 128
+add ax, 0xFF
+add ax, 0xff7f
+add ax, 0xff80
+add bx, 65535
+add bx, -128
+add ax, $
+add ax, 2*$+1

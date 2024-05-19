@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-php cgtest.php --config=.cgtest.full.php --dry-run --quiet --stats "$@"
+DIR=$( dirname $(readlink -f "$0") )
+php "$DIR"/../cgtest.php --config="$DIR"/../.cgtest.full.php --dry-run --quiet --stats "$@"

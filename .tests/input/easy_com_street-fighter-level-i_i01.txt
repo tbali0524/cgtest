@@ -1,0 +1,6 @@
+KEN RYU
+4
+< KICK
+< PUNCH
+> KICK
+< PUNCH

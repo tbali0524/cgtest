@@ -1,0 +1,145 @@
+8086 Assembler, part I
+
+hard_com_8086-assembler-part-i
+https://www.codingame.com/training/hard/8086-assembler-part-i
+https://www.codingame.com/contribute/view/816904be65bbb77d46506cfb58d971eaa16a4
+
+A contribution by JDOnline
+Approved by JeZzElLutin,Eulero314,UnknownException
+
+Goal
+This multi-part puzzle creates a (partial) 8086 assembler and produces executable code, which actually works on DOS emulators for 8086. Through each part, you will learn and enrich your assembler to implement 80% of the 8086 assembler features and roughly 25% of all commands as well as some linkage actions.
+
+The aim of part 1 is to parse assembly commands and display the assembled code next to the program, useful for debugging in the next parts.
+
+Registers (REG)
+The 8086 CPU consists of 4 main registers of 16 bits (R16): AX, BX, CX, DX.
+
+Each R16 register consists of 2 sub-registers of 8 bits (R8) for high (H) and low (L), e.g. AX = AH + AL.
+
+Each register has a code:
+
+AX=0 AL=0 AH=4
+CX=1 CL=1 CH=5
+DX=2 DL=2 DH=6
+BX=3 BL=3 BH=7
+
+Grammar
+1/ Each line of the assembly program is a comment or a command. Empty lines are ignored.
+2/ A comment starts with ; and the rest of the line is ignored.
+3/ A command is composed of characters, digits and _, but never starts with a digit.
+3.1/ A command has 0 to 2 arguments (also called operands), which are separated by ,.
+3.2/ A command may be followed by a comment.
+3.3/ The assembly language is not case-sensitive except for a character constant (see below).
+4/ An argument is either REG or an immediate value (IMM).
+4.1/ REG is R16 or R8.
+4.2/ IMM is a 16-bit (I16) or 8-bit (I8) value which is unsigned (I16: 0..65535/I8: 0..255) or signed (I16: -32768..32767/I8: -128..127).
+4.3/ IMM is:
+• a number,
+• a character, which represents its ASCII value,
+• $(encoded using the same size as the destination register), which represents the current byte code position, or
+• a number resulting from the evaluation of an expression
+4.4/ Numbers are decimal by default. A binary number ends with b. A hexadecimal number starts with 0x, or starts with a digit and ends with h.
+4.5/ Single quotes are used to define a character, e.g. 'A'. \ is used as the escape character if the character is ' or \.
+4.6/ Assembled code positions start from 0.
+4.7/ + - * / (floor division) and ( ) are used in an IMM expression. When an IMM expression is assembled, it is evaluated using the usual operator precedence and replaced by the result.
+
+Commands
+When a command uses 2 operands, the first one is the target T and the second one is the source S.
+
+AX and AL are treated as primary accumulators (ACC) by some commands when the IMM command argument matches the number of bits (I16 for AX, I8 for AL).
+
+In Part I, we will use 3 commands. The conversion table below lists their operand types and corresponding instructions encodings:
+
+MOV arg1, arg2 Moves a source (arg2) to a target (arg1)
+REG, REG: 88+w C0+8*S+T
+R16, I16: B0+8*w+T data
+R8,  I8 : B0+8*w+T data
+
+ADD arg1, arg2 Adds a source (arg2) to a target (arg1)
+REG, REG: 00+w C0+8*S+T
+ACC, IMM: 04+w data
+R16, I16: 81 C0+T data
+R16, I8:  83 C0+T data	(I8 will be sign-extended)
+R8,  I8:  80 C0+T data
+
+INT arg Generates a software interrupt
+I8: CD data
+
+Notes:
+• w = 1 for R16, 0 for R8. The target register determines the number of bits.
+• T and S are register codes, e.g. 0 for AX.
+• If IMM does not match the size of the destination, it will be sign-extended when executed.
+• IMM is classified as I16 or I8 based on the smallest valid range supported by the instruction. For example, 10 is I8 in add ax, 10 but I16 in mov ax, 10.
+• data is IMM expressed in 4 hexadecimal digits for I16, and 2 for I8.
+• data is stored using little endian encoding where the least significant byte comes first.
+• Negative numbers are encoded using the two's complement representation https://en.wikipedia.org/wiki/Two%27s_complement.
+
+Task
+For each line of the assembly program, output the details below:
+
+Position in assembled code  |  Hex codes  |  Source code
+
+A comment line is output without a position or hex codes.
+
+In case of a compilation error, output the following only:
+Line x: error message
+where:
+x is the program line number (starts from 1).
+error message is one of the following:
+• Unknown command
+• Invalid number of arguments
+• Invalid expression or argument
+• Invalid operand: an operand does not match command needs (e.g the INT command accepts I8 only)
+
+Example
+
+; Basic example
+mov ax, 10h
+
+mov ax, 10h corresponds to MOV REG, IMM in the conversion table, and its encoding is B0+8*w+T data.
+1st part (opcode): w = 1 (AX is R16) and T = 0 (AX = 0) => B8
+2nd part (data): It is 16-bit (AX is R16), hence 10h => 0x0010, or 0x10 0x00 in little endian encoding.
+Full assembled instruction: B8 10 00
+
+Output is hence:
+
+     |                    | ; Basic example
+0000 | B8 10 00           | mov ax, 10h
+Input
+Line 1: An integer N for the number of lines in the following assembly program
+Next N lines: A string LINE for a line in the assembly program
+Output
+The assembled code in the following format:
+
+ADDR  |  HEX CODE  |  SOURCE CODE
+
+ADDR is the starting position of HEX CODE in the assembled code. It consists of 4 hexadecimal digits (uppercase).
+HEX CODE is max 6 bytes (uppercase hexadecimal) separated by spaces.
+SOURCE CODE is the line of assembly source code. Any trailing spaces in the source code should be removed.
+
+Constraints
+1 ≤ N ≤ 50.
+0 ≤ number of characters in LINE ≤ 99.
+
+Example
+
+Input
+5
+; This is a basic example
+mov ax, 10h ; this is a hexa value
+mov cx, ax
+mov dx, $
+mov ch, $
+Output
+     |                   | ; This is a basic example
+0000 | B8 10 00          | mov ax, 10h ; this is a hexa value
+0003 | 89 C1             | mov cx, ax
+0005 | BA 05 00          | mov dx, $
+0008 | B5 08             | mov ch, $
+
+Difficulty
+Hard
+
+Tags
+Interpreters, String manipulation

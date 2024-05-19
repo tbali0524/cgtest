@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-php cgtest.php --stats "$@"
+DIR=$( dirname $(readlink -f "$0") )
+php "$DIR"/../cgtest.php --stats "$@"

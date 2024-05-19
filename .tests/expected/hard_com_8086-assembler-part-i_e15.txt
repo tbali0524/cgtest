@@ -1,0 +1,11 @@
+0000 | 80 C5 FF          | add ch, -1
+0003 | 80 C5 FF          | add ch, 0xFF
+0006 | 83 C1 7F          | add cx, 127
+0009 | 81 C1 80 00       | add cx, 128
+000D | 05 FF 00          | add ax, 0xFF
+0010 | 05 7F FF          | add ax, 0xff7f
+0013 | 83 C0 80          | add ax, 0xff80
+0016 | 83 C3 FF          | add bx, 65535
+0019 | 83 C3 80          | add bx, -128
+001C | 05 1C 00          | add ax, $
+001F | 05 3F 00          | add ax, 2*$+1

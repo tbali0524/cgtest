@@ -1,0 +1,9 @@
+8
+; Test 'parser'
+add bx, ';'-','+'\''-'\\' ; 'this, is, a, comment'
+; mov ax, 12h
+mov ax, 5 ; mov bx, 3
+mov bl, '8'*2 ; , 4
+mov dx, '(' + 2 * 3 + ')'
+mov cx, 2 + '+' - '-'
+mov ax, ( (2+3) * (5+$) )

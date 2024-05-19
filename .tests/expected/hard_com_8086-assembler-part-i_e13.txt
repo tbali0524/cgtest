@@ -1,0 +1,20 @@
+0000 | 05 34 12          | add ax, 0x1234
+0003 | 04 12             | add al, 12h
+0005 | 83 C3 04          | add bx, 4
+0008 | 80 C4 0A          | add ah, 10
+000B | 81 C3 F4 15       | add bx, 5620
+000F | 81 C3 CF 07       | add bx, 1999
+0013 | 01 D8             | add AX, bx
+0015 | 83 C1 9E          | add cx, -98
+0018 | 81 C3 89 00       | add bx, 0x89
+001C | 81 C3 91 00       | add bx, 10010001b
+0020 | 83 C3 09          | add bx, 1001b
+0023 | 00 C4             | add ah, al
+0025 | 80 C3 08          | add bl, 8
+0028 | 80 C7 41          | add bh, 'A'
+002B | 83 C2 FF          | add dx, 65535
+002E | 83 C2 80          | add dx, -128
+0031 | 80 C1 F7          | ADD cl, -9
+0034 | 80 C6 05          | add dh, 0x5
+0037 | 80 C2 00          | add dl, '$' - 3h * 0x0c
+003A | 00 CB             | add bl, cl

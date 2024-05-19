@@ -1,0 +1,12 @@
+KEN VLAD
+10
+> KICK
+< KICK
+> KICK
+< KICK
+> KICK
+< KICK
+> KICK
+< KICK
+> KICK
+< KICK

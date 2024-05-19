@@ -1,0 +1,5 @@
+     |                   | ; This is a basic example
+0000 | B8 10 00          | mov ax, 10h ; this is a hexa value
+0003 | 89 C1             | mov cx, ax
+0005 | BA 05 00          | mov dx, $
+0008 | B5 08             | mov ch, $

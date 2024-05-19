@@ -1,0 +1,4 @@
+3
+mov dh, 'H'
+mov al, 2
+int 0x2225

@@ -1,0 +1,6 @@
+5
+; This is a basic example
+mov ax, 10h ; this is a hexa value
+mov cx, ax
+mov dx, $
+mov ch, $

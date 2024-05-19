@@ -1,0 +1,21 @@
+20
+add ax, 0x1234
+add al, 12h
+add bx, 4
+add ah, 10
+add bx, 5620
+add bx, 1999
+add AX, bx
+add cx, -98
+add bx, 0x89
+add bx, 10010001b
+add bx, 1001b
+add ah, al
+add bl, 8
+add bh, 'A'
+add dx, 65535
+add dx, -128
+ADD cl, -9
+add dh, 0x5
+add dl, '$' - 3h * 0x0c
+add bl, cl

@@ -1,0 +1,24 @@
+0000 | B8 FF FF          | mov ax, -1
+0003 | BB 80 00          | mov bx, 128
+0006 | B9 15 02          | mov cx, 215h
+0009 | BA 91 00          | mov dx, 10010001b
+000C | 89 C8             | mov ax, cx
+000E | 89 DA             | mov dx, bx
+0010 | BB 00 80          | mov bx, -32768
+     |                   | 
+0013 | B4 0A             | mov ah, 010
+0015 | B0 FF             | mov al, 255
+0017 | B7 01             | mov bh, 0x01
+0019 | B1 09             | mov cl, 1001b
+001B | B6 7E             | mov dh, '~'
+001D | 88 CC             | mov ah, cl
+     |                   | 
+001F | B8 FA FF          | mov ax, 'b'-'h'
+0022 | BB 0F 00          | mov bx, 3 * ( 8 - 7 / 2 )
+0025 | B9 F7 20          | mov cx, ( 1001000b+12h-0x03 ) * 'a'
+0028 | BA 28 00          | mov dx, $
+002B | B8 30 00          | mov ax, 5h + $
+002E | B8 31 00          | mov ax, -10h + 'A'
+     |                   | 
+0031 | B2 05             | mov dl, 0ah / 2
+0033 | B1 65             | mov cl, 100 - 0ch + 0dh

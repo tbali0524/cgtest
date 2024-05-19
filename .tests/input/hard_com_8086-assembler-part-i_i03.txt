@@ -1,0 +1,3 @@
+2
+mov ax, 10
+add bx, bk

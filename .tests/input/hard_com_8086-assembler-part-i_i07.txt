@@ -1,0 +1,5 @@
+4
+mov ax, 'a'
+add ax, 0
+add ax, 'b'
+add ax, 'cc'

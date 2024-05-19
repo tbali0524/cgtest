@@ -1,0 +1,23 @@
+     |                   | ; ---------------------------------------
+     |                   | ; Hello
+     |                   | ; ---------------------------------------
+     |                   | 
+     |                   | ;
+     |                   | ; Display Hello word on screen with interrupt 21h
+     |                   | ;
+     |                   | 
+0000 | B2 48             | mov dl, 'H'
+0002 | B4 02             | mov ah, 2
+0004 | CD 21             | int 21h
+     |                   | 
+0006 | B2 65             | MOV DL, 'e'
+0008 | CD 21             | INT 21h
+     |                   | 
+000A | B2 6C             | mov dl, 'l'
+000C | CD 21             | int 21h
+     |                   | 
+000E | B2 6C             | mov dl, 'l'
+0010 | CD 21             | int 21h
+     |                   | 
+0012 | B2 6F             | mov dl, 'o'
+0014 | CD 21             | int 21h
