@@ -1,0 +1,14 @@
+13
+var i;
+
+procedure sub;
+const i = 2;
+begin
+  i := 7;
+end;
+
+begin
+    i := 0;
+    call sub;
+    ! i;
+end.

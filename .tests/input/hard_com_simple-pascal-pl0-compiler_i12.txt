@@ -1,0 +1,10 @@
+9
+var i, j;
+
+begin
+    ? i;
+    j := i;
+    if odd i then
+        j := -i;
+    ! j;
+end.

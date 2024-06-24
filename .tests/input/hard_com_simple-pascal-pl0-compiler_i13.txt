@@ -1,0 +1,29 @@
+28
+const 
+    k = 10,
+    in = 100;
+var 
+    i;
+
+    procedure sub;
+    const 
+        i = 5;
+    var k;
+        procedure in;
+        const sub=4;
+        var i;
+        begin
+            i := sub;
+            ! i;
+        end;
+    begin
+        call in;
+        k := i;
+        ! k;
+    end;
+
+begin
+    i := k;
+    call sub;
+    ! i;
+end.

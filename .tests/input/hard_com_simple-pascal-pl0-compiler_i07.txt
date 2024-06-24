@@ -1,0 +1,6 @@
+5
+var i;
+begin
+    ? i;
+    if i < 10 !0;
+end.

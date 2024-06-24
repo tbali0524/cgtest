@@ -1,0 +1,16 @@
+15
+VAR
+    INPUT, COUNT;
+BEGIN
+ COUNT := +2;
+ WHILE COUNT # 0 DO
+ BEGIN
+   COUNT := COUNT - 1;
+   ? INPUT;
+   IF INPUT < 10 THEN 
+      WHILE INPUT < 10 DO
+        ! INPUT;
+   IF INPUT >= 10 THEN
+     ! -1;
+  END
+END.

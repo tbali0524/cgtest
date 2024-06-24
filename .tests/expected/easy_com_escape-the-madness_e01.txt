@@ -1,0 +1,1 @@
+Some very old keyboards lack necessary characters to program in C, such as #, ^, [], | and ~.

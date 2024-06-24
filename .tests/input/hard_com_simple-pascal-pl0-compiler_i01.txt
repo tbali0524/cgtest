@@ -1,0 +1,4 @@
+3
+const k=5;
+var i;
+begin i := k; !i end.

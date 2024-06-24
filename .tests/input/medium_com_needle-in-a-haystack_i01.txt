@@ -1,0 +1,16 @@
+5 3
+aaaad
+daaab
+bbbbc
+11
+a-c
+c,a,b
+a,c
+c,b
+d,a
+d,b-c,a
+a-d
+a-c,b-d
+d,d
+a
+c

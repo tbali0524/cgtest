@@ -1,0 +1,11 @@
+10
+const 
+    k890 = 10,
+    k890 = 30;
+
+var i;
+
+begin
+    WHILE i < k DO
+        !i;
+end.

@@ -1,0 +1,42 @@
+41
+var i;
+
+procedure f;
+begin
+    i := i + 1;
+end;
+
+procedure g;
+var j;
+
+    procedure k;
+    begin
+        j := i;
+        i := - 64 - j; 
+        call f;       
+    end;
+
+    procedure m;
+    begin
+        i := i - 1;
+        call k;
+    end;
+
+begin
+    i := i + 2;
+    call f;
+    call m;
+end;
+
+procedure h;
+begin
+    i := i + 3;
+    call g;
+end;
+
+begin
+    ? i;
+    call h;
+    call g;
+    ! i*2;
+end.

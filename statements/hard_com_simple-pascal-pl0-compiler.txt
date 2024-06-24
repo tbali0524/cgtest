@@ -1,0 +1,140 @@
+Simple Pascal (PL/0) Compiler
+
+hard_com_strobogrammatic-numbers
+https://www.codingame.com/training/hard/strobogrammatic-numbers
+https://www.codingame.com/contribute/view/94232e60b5656124e0d138669db552f481c09
+
+A contribution by JDOnline
+Approved by Eulero314,JeZzElLutin,TAFITA_Julis
+
+Goal
+In memory of Niklaus Wirth (1934-2024).
+
+In this part of the puzzle you will develop a compiler which produces PL/0 instructions.
+
+PL/0 language was introduced in the book, Algorithms + Data Structures = Programs, by Niklaus Wirth. He is also the creator of Pascal, so do not be surprised to find some Pascal flavors in PL/0.
+
+Grammar
+Here is the EBNF definition of the PL/0 grammar:
+program = block "."
+
+block = [ "const" ident "=" number { "," ident "=" number } ";" ]
+        [ "var" ident { "," ident } ";" ]
+        { "procedure" ident ";" block ";" } statement
+
+statement = [ ident ":=" expr | "call" ident
+              | "?" ident | "!" expr
+              | "begin" statement { ";" statement } "end"
+              | "if" condition "then" statement
+              | "while" condition "do" statement ]
+
+condition = "odd" expr |
+            expr ( "=" | "#" | "<" | "<=" | ">" | ">=" ) expr
+
+expr = [ "+" | "-" ] term { ( "+" | "-" ) term }
+
+term = factor { ( "*" | "/" ) factor }
+
+factor = ident | number | "(" expr ")"
+
+# means not equal.
+! prints a value.
+? gets a value from inputs.
+
+PL/0 is not case-sensitive for keywords.
+
+number is a non-negative integer.
+
+ident is used to name a const, var or procedure. It is alphanumerical, case-sensitive and does not start with a digit. ident is visible in the block where it is defined and all the nested blocks. ident can be overloaded with a new definition in a nested block, without affecting ident in the nesting blocks.
+
+Error messages
+If an error occurs, you need to print an error message:
+Line x: msg
+
+• x is program line number of error
+• msg is one of the following:
+> s missing
+> Invalid w
+> Unknown var
+> elt already defined
+• w is expr/statement
+• s is ;/then/do
+• elt is const/var/procedure
+
+If the error is an unknown variable or an element already defined, the line containing such variable or element is considered to contain the error; otherwise, the line containing the last valid token is deemed to contain the error.
+
+Levels and addresses
+Each block of PL/0 defines a level. The main block (and the variables defined there) is level 0. A procedure block defined in the main block is level 1, and one defined in level 1 is level 2, and so on.
+
+A single stack is used for pushing and popping values. Each time a block is called, part of the stack (called a frame) is allocated to it, including 3 spaces reserved for the PL/0 processor, and 1 space for each variable (no allocation for constants). Relative address (index) is used for each frame, starting from 0.
+
+Instructions
+8 instructions are available in PL/0. In the explanation below, l is the absolute difference in nesting levels between an ident definition and its usage, and a is a non-negative integer.
+
+lit 0, a pushes constant a onto the stack.
+
+opr 0, a executes operation a (0 to 14):
+0 returns from a procedure call or ends the program.
+math operations: 1 neg (negative), 2 +, 3 -, 4 *, 5 / (floor division)
+comparison operations: 6 odd, 7 =, 8 #, 9 <, 10 >=, 11 >, 12 <=
+IO operations: 13 pops the stack and prints the popped value, 14 gets an input value and pushes it onto the stack.
+For 1 to 12, arguments are popped from the stack (1 argument for neg and odd, 2 for others), math/comparison is performed and the result is pushed onto the stack. For 6 to 12, the result is either 1 for True or 0 for False.
+
+jmp 0, a jumps to instruction at position (i.e. line number) a.
+
+jpc 0, a conditional jump. The stack is popped, and if the popped value is 0 then jump to instruction at position a.
+
+cal l, a calls procedure at instruction position a l levels up.
+
+int 0, a allocates space in the stack. a is the number of spaces, i.e. 3 plus 1 for each variable as explained above.
+
+lod l, a copies the value at stack relative address a l levels up, and pushes it onto the stack.
+
+sto l, a pops the stack and stores the popped value at stack relative address a l levels up.
+
+Instruction generation rules
+Instructions should be generated following the program order.
+
+expr such as 2 + 1 and condition such as if a < 0 then are compiled by pushing the arguments onto the stack (first operand is pushed first) and then applying the operator.
+
+In an if/then statement, we use a conditional jump (jpc) for control flow.
+
+Every block starts with jmp to jump over all instructions of nested procedures (if any) to an int instruction used to allocate stack space.
+
+Program lines (i.e. input) are counted starting from 1. Instruction lines (i.e. output) are counted starting from 0, ignoring nesting level.
+
+Input
+Line 1: An integer N the number of lines in the PL/0 program
+Next N lines: Strings of PL/0 program (some lines may begin with spaces or tabs).
+
+Output
+The PL/0 instructions (one per line) of the given program, or an error message.
+
+Constraints
+0 <= N < 100
+Each line of PL/0 program is maximum 100 characters length.
+
+All math and comparison operations work from left to right (e.g. there won't be cases like 2 + 7 * 9).
+
+Example
+
+Input
+3
+const k=5;
+var i;
+begin i := k; !i end.
+
+Output
+jmp 0, 1
+int 0, 4
+lit 0, 5
+sto 0, 3
+lod 0, 3
+opr 0, 13
+opr 0, 0
+
+Difficulty
+Hard
+
+Tags
+Recursion, Strings, DFS

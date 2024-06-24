@@ -1,0 +1,6 @@
+5
+const k = 10;
+var i;
+begin
+    i := ( 2 * k * -5 ) / 3
+end.

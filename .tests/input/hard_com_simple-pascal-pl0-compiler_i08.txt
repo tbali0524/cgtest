@@ -1,0 +1,18 @@
+17
+var i;
+
+procedure p;
+var
+    i;
+begin
+    i := 0;
+end;
+
+procedure p;
+begin
+    i != 1;
+end;
+
+begin
+    call p;
+end.

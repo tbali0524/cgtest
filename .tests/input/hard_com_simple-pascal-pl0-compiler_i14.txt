@@ -1,0 +1,11 @@
+10
+const k=5, l=8;
+
+PROCEDURE run;
+VAR I;
+WHILE I <= k DO I := I - 1;
+
+procedure print;
+! ( k * l );
+
+call print.

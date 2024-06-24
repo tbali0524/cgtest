@@ -1,0 +1,32 @@
+31
+const I218=218;var i218;PROcedure other;begin i218:=-218; end; 
+procedure subI218; BEGIN
+    i218 := 2024;
+    Call
+    other;
+    While 
+        -i218 # 
+        ( 
+            5 
+            +
+            23
+        )
+    Do       
+    i218 := I218 + i218;
+    if i218=0 then
+    i218 := 
+    i218
+    -
+    1;
+    While i218 = I218 dO
+      if i218 > i218 THEN 
+         WHILe i218 # 0 DO
+           if i218 = I218 tHEn 
+              i218 
+              :=
+              0
+END;
+
+begin
+    CaLl subI218;
+end.

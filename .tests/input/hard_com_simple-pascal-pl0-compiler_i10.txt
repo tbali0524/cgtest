@@ -1,0 +1,12 @@
+11
+var 
+    i, i;
+
+procedure sub;
+begin
+    i := 0;
+end
+
+begin
+    call sub;
+end.

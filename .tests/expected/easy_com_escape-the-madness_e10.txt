@@ -1,0 +1,1 @@
+Prerendering HTML strings from C code is complete madness! You can find trigraphs such as ??!, backslash escape sequences such as \u0042, HTML entities such as &bsol;, and even mixed stuff such as ??/u0026amp;, but the end result can be as simple as "^\#".
