@@ -9,8 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- More test cases added.
-- `note` configuration option added to the per language section.
+- Nothing yet.
 
 ### Changed
 
@@ -19,6 +18,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Nothing yet.
+
+## [v1.16.0](https://github.com/tbali0524/cgtest/releases/v1.16.0) - 2024-07-20
+
+### Added
+
+- Seperate build and running times are displayed in with `--stats`. Note: some compilers combine build and run steps into a single invocation.
+- `note` configuration option added to the per language section.
+- Default `dart` and `go` config updated to separate build and run steps.
+- More test cases added.
 
 ## [v1.15.0](https://github.com/tbali0524/cgtest/releases/v1.15.0) - 2024-03-09
 
