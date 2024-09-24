@@ -1,0 +1,5 @@
+NW
+3
+RIGHT
+RIGHT
+LEFT

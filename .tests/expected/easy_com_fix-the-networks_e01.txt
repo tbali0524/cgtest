@@ -1,0 +1,4 @@
+valid 1
+valid 4
+valid 16
+invalid 10.0.0.32/27 32

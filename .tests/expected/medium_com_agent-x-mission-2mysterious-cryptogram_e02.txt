@@ -1,0 +1,27 @@
+...I'm going to be captured very soon, so I'm trying to make sure we can still communicate despite the fact that I'm at risk of being attacked. I can't get out of the hideout and I can't communicate.
+A -> P
+B -> J
+C -> O
+D -> K
+E -> D
+F -> B
+G -> I
+H -> V
+I -> L
+Na
+K -> X
+L -> R
+M -> N
+N -> A
+O -> Q
+P -> T
+Na
+R -> H
+S -> U
+T -> W
+U -> Z
+V -> Y
+W -> G
+Na
+Y -> S
+Na

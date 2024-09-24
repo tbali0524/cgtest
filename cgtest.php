@@ -21,7 +21,7 @@ namespace TBali\CGTest;
 // And the code grew organically a bit larger than I originally planned.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.16.0';
+$version = 'v1.16.0-dev';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -2063,7 +2063,9 @@ echo $infoTag . 'Total: ' . $ansiInfo . $languageStats['totals']['countFiles'] .
     . ' programming language' . ($languageStats['totals']['countLanguages'] > 1 ? 's' : '')
     . $msgUniquePuzzles . '.' . PHP_EOL;
 if ((($config['slowThreshold'] ?? 0) > 0) and (count($slowTests) > 0)) {
-    echo $infoTag . 'There were ' . $ansiWarn . count($slowTests) . $ansiReset
+    echo $infoTag . 'There '
+        . (count($slowTests) > 1 ? 'were' : 'was')
+        . ' ' . $ansiWarn . count($slowTests) . $ansiReset
         . ' test' . (count($slowTests) > 1 ? 's' : '')
         . ' taking longer than ' . $ansiInfo . ($config['slowThreshold'] ?? 0) . $ansiReset . ' seconds.' . PHP_EOL;
 }

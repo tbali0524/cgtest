@@ -1,0 +1,5 @@
+valid 1
+valid 256
+valid 65536
+valid 16777216
+invalid 255.0.0.0/8 16777216

@@ -1,0 +1,27 @@
+I've heard about a boat, and I think it's going to take me out to sea. I hope you'll be able to decipher my messages so that I can be rescued.
+A -> B
+B -> N
+C -> L
+D -> K
+E -> T
+Na
+G -> Q
+H -> D
+I -> S
+Na
+K -> F
+L -> I
+M -> V
+N -> W
+O -> O
+P -> X
+Na
+R -> Y
+S -> C
+T -> E
+U -> R
+V -> M
+Na
+Na
+Y -> P
+Na

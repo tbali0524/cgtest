@@ -1,0 +1,78 @@
+Vehicle Routing Problem
+
+optim_com_vehicle-routing-problem
+https://www.codingame.com/multiplayer/optimization/vehicle-routing-problem
+https://www.codingame.com/contribute/view/89181c43909c21c7172daafc573c881c8d8c2
+
+A contribution by PierreLaur
+Approved by LeMasSon,Rob-G,Aldoggen
+
+Capacitated Vehicle Routing
+In the Vehicle Routing Problem, you must serve a set of customers with a fleet of vehicles.
+In the Capacitated variant, vehicles have a limited capacity.
+You must find the shortest possible set of tours.
+
+Rules
+The vehicles start from the depot (index 0) and must return to it.
+Every customer must be visited exactly once.
+For each tour, the sum of the demands of the customers visited must not exceed the capacity of the vehicles.
+The distance between two points is Euclidean, rounded to the nearest integer: dist(a, b) = round(sqrt((xa - xb)2 + (ya - yb)2))
+
+Game Input
+The program must first read the given inputs, then output a single line representing the vehicle tours.
+
+Input
+Line 1: an integer n, the number of customers (+1 for the depot)
+Line 2: an integer c, the capacity of the vehicles
+Next n lines: 4 space-separated integers for each customer/depot
+
+index, the index of the customer (or 0 for the depot)
+x, the first coordinate of the customer or depot
+y, the second coordinate of the customer or depot
+demand, the customer's demand. The depot (index=0) has a demand of 0.
+
+Output
+A single line containing the tours separated by a semicolon.
+
+Each tour must be the indices of the customers separated by a space.
+The depot (0) should not be included in the output.
+
+Constraints
+5 <= n <= 200
+
+Response time is limited to 10 seconds.
+
+Example
+Given the input of the first test case:
+
+5 10 -> n = 5, c = 10
+0 0 0 0 -> depot at (0,0) - no demand
+1 0 10 3 -> customer 1 at (0,10) demand=3
+2 -10 10 3 -> customer 2 at (-10,10) demand=3
+3 0 -10 3 -> customer 3 at (0,-10) demand=3
+4 10 -10 3 -> customer 4 at (10,-10) demand=3
+
+Some example outputs in the correct format:
+1 2 3;4
+The first vehicle goes 0 -> 1 -> 2 -> 3 -> 0. The second vehicle goes 0 -> 4 -> 0.
+The distance is dist(0, 1) + dist(1, 2) + dist(2, 3) + dist(3, 0) + dist(0, 4) + dist(4, 0) = 10 + 10 + sqrt(500) + 10 + sqrt(200) + sqrt(200) ≈ 80.6.
+4 2 1 3
+The first vehicle goes 0 -> 4 -> 2 -> 1 -> 3 -> 0.
+This solution is invalid: the sum of demands is 3 + 3 + 3 + 3 > c = 10.
+1;2 4;3 2
+This solution is invalid: Customer 2 is visited twice.
+1;3 4
+This solution is invalid: Customer 2 is not visited.
+1 2;3 4
+This solution is valid and optimal.
+The distance is dist(0, 1) + dist(1, 2) + dist(2, 0) + dist(0, 3) + dist(3, 4) + dist(4, 0) = 10 + 10 + sqrt(200) + 10 + 10 + sqrt(200) ≈ 68.3.
+
+Some Tips
+The VRP is a classic NP-Hard problem. Finding an optimal solution is incredibly difficult, so you should use approximation algorithms - time to bring out your favorite metaheuristics!
+Have you already solved the Travelling Salesman Problem ? If so, maybe you can reuse your code: every vehicle tour is basically a small TSP.
+About the Test & Validation Instances
+The 4 benchmark instances are from the CVRPLib, specifically sets A and M. Their known optima is used to give you the optimality gap. Feel free to use other instances from the library to tune your algorithms.
+Validation instances will be similar but different to prevent hard-coded solutions.
+
+Tags
+Metaheuristics, Simulated Annealing, Genetic Algorithm, Greedy algorithms
