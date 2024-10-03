@@ -1,0 +1,17 @@
+16
+albatross
+alligator
+eagle
+elephant
+lion
+llama
+nightingale
+narwhal
+rooster
+raccoon
+rat
+snake
+squirrel
+tiger
+toucan
+turtle

@@ -1,0 +1,4 @@
+p2
+tr p2
+p1 tr p2
+p1 tr p2 nop

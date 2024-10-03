@@ -777,6 +777,8 @@ return [
                 'medium_com_what-the-brainfuck',
                 'medium_com_windmill-problem',
                 'medium_com_wine-from-kalbodia---episode-1',
+                'medium_com_word-chain-game',
+                'medium_com_wordle-solution-regex',
             ],
             'puzzle/community/hard/' => [
                 'hard_com_24-the-long-game',
@@ -856,6 +858,7 @@ return [
                 'hard_com_lets-make-a-cheap-ascii-3d-engine',
                 'hard_com_levenshtein-distance',
                 'hard_com_longest-palindrome',
+                'hard_com_m-a-r-i--and-the-crazy-factory',
                 'hard_com_magic-count-of-numbers',
                 'hard_com_magical-frog',
                 'hard_com_map-colorations',
@@ -1094,4 +1097,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 24.09.24: 'easy_com_azimut',
+// Note: last puzzle added on 24.10.03: 'hard_com_m-a-r-i--and-the-crazy-factory',

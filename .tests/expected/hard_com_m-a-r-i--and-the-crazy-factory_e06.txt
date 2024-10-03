@@ -1,0 +1,3 @@
+p2 tr
+p1 p2 tr
+p1 tl p2 tr

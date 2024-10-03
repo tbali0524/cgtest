@@ -1,0 +1,4 @@
+3
+assay YY___
+plate __G__
+shack __GY_

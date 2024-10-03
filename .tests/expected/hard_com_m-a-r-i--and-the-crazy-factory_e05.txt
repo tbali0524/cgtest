@@ -1,0 +1,5 @@
+p2
+tr p2
+tr bk p2
+tr p1 bk p2
+tr p1 p1 bk p2
