@@ -1,0 +1,3 @@
+ENCODE
+3
+ABC

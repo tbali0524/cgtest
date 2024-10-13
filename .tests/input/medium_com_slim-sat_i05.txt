@@ -1,0 +1,6 @@
+( ( ( A AND ( X XOR ( X AND ( ( X AND D ) OR ( A XOR X ) ) ) ) ) OR ( A XOR ( B OR D ) ) ) AND ( ( C OR ( ( A OR X ) AND ( ( X XOR ( B AND X ) ) OR X ) ) ) XOR ( X XOR X ) ) )
+4
+A FALSE
+B TRUE
+C FALSE
+D FALSE

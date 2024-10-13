@@ -1,0 +1,3 @@
+( ( X AND ( A OR A ) ) XOR ( A AND X ) )
+1
+A TRUE

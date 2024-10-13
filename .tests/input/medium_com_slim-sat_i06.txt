@@ -1,0 +1,27 @@
+( ( ( ( ( L AND ( X XOR ( N OR ( J AND ( ( V AND ( (  E OR ( X XOR ( V AND ( ( H OR ( X AND T ) ) OR Q ) ) ) ) AND D ) ) XOR M ) ) ) ) ) OR ( ( P AND W ) XOR L ) ) AND ( K OR ( A OR ( X OR B ) ) ) ) OR ( Z XOR ( C AND ( F XOR ( C OR ( X AND ( ( ( U XOR G ) AND ( ( O OR R ) OR I ) ) OR X ) ) ) ) ) ) ) AND ( S AND Y ) )
+25
+A TRUE
+B FALSE
+C FALSE
+D FALSE
+E TRUE
+F FALSE
+G FALSE
+H TRUE
+I TRUE
+J FALSE
+K FALSE
+L TRUE
+M FALSE
+N FALSE
+O FALSE
+P TRUE
+Q FALSE
+R FALSE
+S TRUE
+T FALSE
+U TRUE
+V FALSE
+W TRUE
+Y TRUE
+Z FALSE

@@ -1,0 +1,5 @@
+( ( X OR Y ) XOR ( ( B AND X ) OR ( A AND X ) ) )
+3
+A FALSE
+B FALSE
+Y FALSE
