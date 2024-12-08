@@ -1,0 +1,7 @@
+/----------------------\
+|   -Draconic Sword-   |
+|         Epic         |
+| Skill Dragon Cry     |
+| Damage 100           |
+| Critical Damage 150% |
+\______________________/

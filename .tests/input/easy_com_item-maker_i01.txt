@@ -1,0 +1,1 @@
+Wooden Sword,Common,Damage:20

@@ -1,0 +1,34 @@
+Non-Triple Numbers
+
+easy_com_non-triple-numbers
+https://www.codingame.com/training/easy/non-triple-numbers
+https://www.codingame.com/contribute/view/1084202948e13dff9e46334868f2a98ae31394
+
+A contribution by NicknamedTwice
+Approved by EnamSon,David Augusto Villa,TBali
+
+Goal
+You must find the smallest non-triple number greater than a given integer. A triple number is one whose binary representation contains three or more consecutive 1s or 0s.
+
+Input
+Line 1: A single decimal integer n
+
+Output
+Line 1: The smallest decimal integer greater than n that does't contain three consecutive 1s or 0s when converted to binary
+
+Constraints
+1 ≤ n ≤ 10^10
+
+Example
+
+Input
+27
+
+Output
+36
+
+Difficulty
+Easy
+
+Tags
+Bit Manipulation, Greedy algorithms, Mathematics

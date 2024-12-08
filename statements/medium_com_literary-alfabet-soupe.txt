@@ -1,0 +1,80 @@
+Literary Alfabet Soupe
+
+medium_com_literary-alfabet-soupe
+https://www.codingame.com/training/medium/literary-alfabet-soupe
+https://www.codingame.com/contribute/view/10927847b0d993b9733416113429dd01e93726
+
+A contribution by David Augusto Villa
+Approved by Eulero314,TBali,BerserkVl
+
+Goal
+A quotation from a classic literary work has been translated into a dozen different European languages. However, the translations have all been shuffled in some arbitrary order. With the original mixed in, that's 13 languages altogether. What bad luck!
+
+Given an excerpt in every one of these 13 languages, determine the order they're in by matching a unique language to each.
+
+As a rule in this puzzle, English will use the 26 letters without diacritics as in résumé and naïve, nor ligatures as in Cæsar and amœba. Alphabets for other languages have further restrictions strictly adhered to, and other possibilities for alphabetic characters as detailed below:
+
+Language   Exclusions   Inclusions
+─────────  ───────────  ─────────────────────────────────────
+Danish          q    z           æ å  ø                      
+Estonian    cf  q wxy        šž         õä  öü               
+Finnish    b f  q wx                     ä  ö                
+French                     ç      œ       ëï üàè  ùâêîôû é   
+German                  ß                ä  öü               
+Irish         jkqvwxyz                                  áéíóú
+Italian       jk  wxy                         àèìòù      é   
+Portuguese     k  w        ç           ãõ     à    âê ô áéíóú
+Spanish        k  w       ñ                  ü          áéíóú
+Swedish         q w                å     ä  ö                
+Turkish         q wx     ğ çş       İı      öü               
+Welsh         jkqv x z         ŵŷ                  âêîôû     
+           ───────────  ─────────────────────────────────────
+           bcfjkqvwxyz  ßğñçşšžŵŷæœåİıøãõäëïöüàèìòùâêîôûáéíóú
+
+While this information is sufficient to solve the puzzle, it should be noted that language in general is highly patterned, so there are other approaches that can be used to discriminate the texts. For instance, the stop words they, who and only are exclusively found in English, and others are highly correlated. This and alternative ideas can similarly lead to valid solutions.
+
+Input
+Lines 1 to 13: A string excerpt in UTF-8 encoding
+
+Output
+Lines 1 to 13: Danish, English, Estonian, Finnish, French, German, Irish, Italian, Portuguese, Spanish, Swedish, Turkish, or Welsh
+
+Constraints
+Length of excerpt is less than 500 bytes. Each of 13 is written in a unique language.
+
+Example
+
+Input
+En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.
+In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing.
+I en landsby i La Mancha, hvis navn jeg ikke vil huske, levede der for ikke så længe siden en hidalgo, en af dem med en lanse i våbenstativet, et gammelt skjold, en mager hest og en mynde til jagt.
+Mantša külas, mille nime ma ei taha meelde tuletada, elas mitte kaua aega tagasi üks hidalgo, kes hoidis oda relvastendis, vana kilpi, kõhna hobust ja jahiks kasutatavat hagijat.
+Eräässä La Manchan kylässä, jonka nimeä en halua muistaa, eli jokin aika sitten aatelismies, niistä jotka pitävät keihästä telineessä, vanhaa kilpeä, laihaa hevosta ja vinttikoiraa juoksemiseen.
+Dans un village de la Manche, dont je ne veux pas me souvenir du nom, vivait il n'y a pas si longtemps un hidalgo de ceux qui possèdent une lance au râtelier, un vieux bouclier, un cheval maigre et un lévrier pour la chasse.
+In einem Dorf in La Mancha, dessen Namen ich nicht nennen will, lebte vor nicht allzu langer Zeit ein Hidalgo, einer von denen, die eine Lanze im Waffenständer, einen alten Schild, ein mageres Ross und einen Windhund zum Jagen haben.
+I sráidbhaile i La Mancha, nach bhfuil fonn orm cuimhneamh ar a ainm, bhí hidalgo ina chónaí, ní fada ó shin, le sleá sa seilf arm, seanchlár sciath, capall tanaí agus galfghadhar chun seilge.
+In un villaggio della Mancia, il cui nome non voglio ricordare, non molto tempo fa viveva un hidalgo, uno di quelli con la lancia nel rastrelliere, un vecchio scudo, un cavallo magro e un levriero per la caccia.
+Numa aldeia da Mancha, cujo nome não quero lembrar-me, não há muito tempo vivia um fidalgo daqueles que guardam uma lança no armário de armas, um velho escudo, um cavalo magro e um galgo corredor.
+I en by i La Mancha, vars namn jag inte vill minnas, bodde för inte så länge sedan en hidalgo, en av de där med en lans i vapenskåpet, en gammal sköld, en mager häst och en vinthund för jakt.
+Adını hatırlamak istemediğim La Mancha'daki bir köyde, uzun zaman önce olmayan, mızrağını rafında tutan, eski bir kalkan, zayıf bir at ve avcılık için bir tazı olan bir hidalgo yaşıyordu.
+Mewn pentref yn La Mancha, nad wyf am gofio’r enw, roedd hidalgo yn byw, nid yn rhy hir yn ôl, gyda gwaywffon yn y rhestr arfau, tarian hen, ceffyl main, a milgi ar gyfer hela.
+Output
+Spanish
+English
+Danish
+Estonian
+Finnish
+French
+German
+Irish
+Italian
+Portuguese
+Swedish
+Turkish
+Welsh
+
+Difficulty
+Medium
+
+Tags
+Natural language, Unicode, Constraint satisfaction

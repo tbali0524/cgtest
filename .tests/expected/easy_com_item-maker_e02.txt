@@ -1,0 +1,7 @@
+/###################\
+#   -Iron Pickaxe-  #
+#        Rare       #
+# Speed 5           #
+# Damage 5          #
+# Crit. Chance 1.2% #
+\###################/

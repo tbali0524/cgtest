@@ -1,0 +1,1 @@
+Elucidator,Legendary,Skill:Dual Blades,Damage:150,Speed:15,Critical Chance:5.1%,Critical Damage:450%

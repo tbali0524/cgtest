@@ -1,0 +1,13 @@
+English
+French
+German
+Italian
+Portuguese
+Danish
+Estonian
+Finnish
+Irish
+Spanish
+Swedish
+Turkish
+Welsh

@@ -1,0 +1,10 @@
+X----------\_/----------X
+[ -Sword of Everything- ]
+|       Legendary       |
+| Skill Annihilation    |
+| Skill Creation        |
+| Damage 500            |
+| Critical Chance 3.5%  |
+| Critical Damage 300%  |
+| Speed 2               |
+X_______________________X
