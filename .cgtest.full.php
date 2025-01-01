@@ -317,6 +317,7 @@ return [
                 'easy_com_flip-the-sign',
                 'easy_com_frame-the-picture',
                 'easy_com_furlongs-per-fortnight',
+                'easy_com_fussy-fuzzy-matching',
                 'easy_com_gdq---binary-coded-decimal-clock',
                 'easy_com_genetics-and-computers---part-1',
                 'easy_com_ghost-legs',
@@ -373,6 +374,7 @@ return [
                 'easy_com_nato-alphabets-odd-uncles',
                 'easy_com_nature-of-quadrilaterals',
                 'easy_com_nature-of-triangles',
+                'easy_com_nd-vector-sorting',
                 'easy_com_next-growing-number',
                 'easy_com_nicholas-breakspeare-and-hugh-of-evesham',
                 'easy_com_no-more-pythons-please',
@@ -1120,4 +1122,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 24.12.08: 'hard_com_fold-and-cut',
+// Note: last puzzle added on 24.12.27: 'easy_com_nd-vector-sorting',
