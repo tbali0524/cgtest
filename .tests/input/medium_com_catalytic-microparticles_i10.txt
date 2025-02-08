@@ -1,0 +1,20 @@
+19 7 7
+####### ####### ####### ####### ####### ####### #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### ####### ####### ####### ####### ####### #######
+#o#o#o# o#ooo#o #o#o#o# ooo#ooo #o#o#o# o#ooo#o #o#o#o#
+#o#o#o# o#ooo#o #o#o#o# ooo#ooo #o#o#o# o#ooo#o #o#o#o#
+#o#o#o# o#ooo#o #o#o#o# ooo#ooo #o#o#o# o#ooo#o #o#o#o#
+#o#o#o# o#ooo#o #o#o#o# ooo#ooo #o#o#o# o#ooo#o #o#o#o#
+#o#o#o# o#ooo#o #o#o#o# ooo#ooo #o#o#o# o#ooo#o #o#o#o#
+####### ####### ####### ####### ####### ####### #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### #ooooo# #ooooo# #ooooo# #ooooo# #ooooo# #######
+####### ####### ####### ####### ####### ####### #######

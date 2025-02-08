@@ -1,0 +1,39 @@
+A Million Digits of Pi
+
+expert_com_a-million-digits-of-pi
+https://www.codingame.com/training/expert/a-million-digits-of-pi
+https://www.codingame.com/contribute/view/57289ec74b1437929376813753dcee321467
+
+A contribution by Westicles
+Approved by Ayush-Kukreti,DoYouEvenFlask,TheOtherAKS
+
+Goal
+Print out the requested digits of pi.
+
+As requested, here is a hint in rot13 for those who want the best algorithm pointed out: Puhqabifxlf Nytbevguz
+
+Input
+First line: The INDEX of the first digit of pi to print.
+Second line: The number of digits to print N .
+
+Output
+One line with the requested sequence.
+
+Constraints
+INDEX < 1,000,000
+N <= 50
+
+Example
+
+Input
+0
+10
+
+Output
+3141592653
+
+Difficulty
+Very Hard
+
+Tags
+Optimization

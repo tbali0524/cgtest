@@ -1,0 +1,8 @@
+a:0 d:1 e:0
+h c g
+5
+f or g -> h
+d or e -> g
+a xor c -> f
+b and c -> e
+a or b -> d

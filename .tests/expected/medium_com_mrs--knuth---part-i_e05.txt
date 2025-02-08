@@ -1,0 +1,10 @@
+       Monday        Tuesday       Wednesday       Thursday        Friday
+ 8 -------------- -------------- -------------- -------------- Ayla/Baritone
+ 9  Mae/Trumpet    Levi/Trumpet  -------------- --------------    Mia/Tuba
+10 Ben/Saxophone    Anna/Tuba    -------------- --------------   Bo/Trumpet
+11   Rae/Flute    Coop/Clarinet  -------------- -------------- Ella/Clarinet
+       LUNCH          LUNCH          LUNCH          LUNCH          LUNCH
+ 1 Adam/Clarinet    Noah/Flute   -------------- -------------- Sara/Saxophone
+ 2  Kai/Baritone  Cole/Baritone  -------------- --------------   Isla/Flute
+ 3   Dave/Tuba      Ava/Drums    -------------- --------------   Bob/Drums
+ 4   Olly/Drums   Luna/Saxophone -------------- -------------- --------------

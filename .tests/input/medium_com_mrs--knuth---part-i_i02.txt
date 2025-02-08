@@ -1,0 +1,10 @@
+M Tu 8 9 10 11 1 2 3 4 W Th F
+8
+Ayla Trumpet M Tu 11 W Th F
+Alex Baritone M Tu 3 W Th F
+Gabe Saxophone M Tu 2 4 W Th F
+Jack Tuba M Tu 10 1 W Th F
+Noah Drums M Tu 10 W Th F
+Jay Flute M Tu 9 11 W Th F
+Abby Trombone M Tu 8 W Th F
+Ben Clarinet M Tu 1 4 W Th F

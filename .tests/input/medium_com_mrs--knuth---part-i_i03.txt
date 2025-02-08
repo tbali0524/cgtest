@@ -1,0 +1,14 @@
+M 10 11 1 2 3 4 Tu W 10 11 1 2 3 4 Th F
+12
+Ben Trombone M 2 Tu W 1 Th F
+Izzy Trumpet M 11 2 Tu W 1 Th F
+Rae Trombone M 10 11 2 3 Tu W 4 Th F
+Isla Flute M 10 Tu W 2 Th F
+Ella Saxophone M 10 1 2 3 Tu W 4 Th F
+Ayla Trumpet M 11 2 3 Tu W 3 Th F
+Ali Flute M 10 Tu W 10 Th F
+Sean Clarinet M 3 Tu W 10 11 3 4 Th F
+Jay Clarinet M 11 Tu W 2 3 Th F
+Nora Saxophone M 11 4 Tu W 4 Th F
+Wren Tuba M 2 4 Tu W 11 Th F
+Noah Tuba M 10 11 Tu W 10 4 Th F

@@ -1,0 +1,17 @@
+M 10 11 1 2 3 Tu W Th 9 10 11 1 2 F 11 1 2 3 4
+15
+Josh Baritone M 2 Tu W Th 1 2 F
+Sara Saxophone M Tu W Th 2 F 1 4
+Mike Baritone M 3 Tu W Th 9 10 F 1
+Joy Tuba M 11 Tu W Th 10 1 F 11 2
+Amy Trombone M 1 Tu W Th 10 11 1 F
+Ali Tuba M 2 Tu W Th 10 F 3 4
+Kate Trombone M 11 Tu W Th 1 2 F
+Lily Flute M 2 Tu W Th 9 11 2 F
+Zoey Tuba M 10 2 Tu W Th F 3 4
+Liam Flute M 11 Tu W Th 9 2 F 1
+Emma Trombone M Tu W Th 11 F 11 2
+Drew Saxophone M 11 1 2 Tu W Th 1 F 2
+Gabe Saxophone M 11 2 3 Tu W Th 9 F 4
+Nora Baritone M 1 2 Tu W Th 10 2 F
+JT Flute M 2 3 Tu W Th 9 11 F 11

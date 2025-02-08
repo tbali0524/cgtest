@@ -1,0 +1,12 @@
+11 11 7
+oo#######oo oo#ooooo#oo ########### #ooooooooo# ########### oo#ooooo#oo oo#######oo
+oo#ooooo#oo ooooooooooo #oooo#oooo# ooooooooooo #oooo#oooo# ooooooooooo oo#ooooo#oo
+########### #o#######o# #o#######o# oo#######oo #o#######o# #o#######o# ###########
+#o#######o# oo#ooooo#oo #o#ooooo#o# oo#ooooo#oo #o#ooooo#o# oo#ooooo#oo #o#######o#
+#o#######o# oo#ooooo#oo #o#ooooo#o# oo#ooooo#oo #o#ooooo#o# oo#ooooo#oo #o#######o#
+#o#######o# oo#ooooo#oo ###ooooo### oo#ooooo#oo ###ooooo### oo#ooooo#oo #o#######o#
+#o#######o# oo#ooooo#oo #o#ooooo#o# oo#ooooo#oo #o#ooooo#o# oo#ooooo#oo #o#######o#
+#o#######o# oo#ooooo#oo #o#ooooo#o# oo#ooooo#oo #o#ooooo#o# oo#ooooo#oo #o#######o#
+########### #o#######o# #o#######o# oo#######oo #o#######o# #o#######o# ###########
+oo#ooooo#oo ooooooooooo #oooo#oooo# ooooooooooo #oooo#oooo# ooooooooooo oo#ooooo#oo
+oo#######oo oo#ooooo#oo ########### #ooooooooo# ########### oo#ooooo#oo oo#######oo

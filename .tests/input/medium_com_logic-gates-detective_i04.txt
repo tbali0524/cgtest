@@ -1,0 +1,10 @@
+d:0 f:1
+k g j c h
+7
+a and b -> e
+a and c -> f
+b and d -> g
+c and d -> h
+e and g -> i
+f and h -> j
+i and j -> k

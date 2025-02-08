@@ -1,0 +1,12 @@
+11 11 11
+ooooooooooo ooooooooooo ooooooooooo oooo#o#oooo ooo#o#o#ooo oooo#o#oooo ooo#o#o#ooo oooo#o#oooo ooooooooooo ooooooooooo ooooooooooo
+ooooooooooo ooooooooooo ooo#####ooo oo#######oo oo#######oo oo#######oo oo#######oo oo#######oo ooo#####ooo ooooooooooo ooooooooooo
+ooooooooooo ooo#####ooo oo#######oo o###ooo###o o##ooooo##o o##ooooo##o o##ooooo##o o###ooo###o oo#######oo ooo#####ooo ooooooooooo
+oooo#o#oooo oo#######oo o###ooo###o o##ooooo##o ##ooooooo## o#ooooooo#o ##ooooooo## o##ooooo##o o###ooo###o oo#######oo oooo#o#oooo
+ooo#o#o#ooo oo#######oo o##ooooo##o ##ooooooo## o#ooooooo#o ##ooooooo## o#ooooooo#o ##ooooooo## o##ooooo##o oo#######oo ooo#o#o#ooo
+oooo#o#oooo oo#######oo o##ooooo##o o#ooooooo#o ##ooooooo## o#ooooooo#o ##ooooooo## o#ooooooo#o o##ooooo##o oo#######oo oooo#o#oooo
+ooo#o#o#ooo oo#######oo o##ooooo##o ##ooooooo## o#ooooooo#o ##ooooooo## o#ooooooo#o ##ooooooo## o##ooooo##o oo#######oo ooo#o#o#ooo
+oooo#o#oooo oo#######oo o###ooo###o o##ooooo##o ##ooooooo## o#ooooooo#o ##ooooooo## o##ooooo##o o###ooo###o oo#######oo oooo#o#oooo
+ooooooooooo ooo#####ooo oo#######oo o###ooo###o o##ooooo##o o##ooooo##o o##ooooo##o o###ooo###o oo#######oo ooo#####ooo ooooooooooo
+ooooooooooo ooooooooooo ooo#####ooo oo#######oo oo#######oo oo#######oo oo#######oo oo#######oo ooo#####ooo ooooooooooo ooooooooooo
+ooooooooooo ooooooooooo ooooooooooo oooo#o#oooo ooo#o#o#ooo oooo#o#oooo ooo#o#o#ooo oooo#o#oooo ooooooooooo ooooooooooo ooooooooooo

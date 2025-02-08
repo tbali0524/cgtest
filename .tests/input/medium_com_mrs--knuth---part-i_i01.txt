@@ -1,0 +1,5 @@
+M Tu W Th 2 3 4 F
+3
+Ayla Trumpet M Tu W Th 2 F
+Bob Drums M Tu W Th 2 3 F
+Alex Tuba M Tu W Th 2 4 F

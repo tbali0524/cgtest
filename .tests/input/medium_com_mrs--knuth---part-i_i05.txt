@@ -1,0 +1,23 @@
+M 9 10 11 1 2 3 4 Tu 9 10 11 1 2 3 4 W Th F 8 9 10 11 1 2 3
+21
+Bo Trumpet M Tu 11 W Th F 10 2
+Kai Baritone M 9 2 Tu W Th F 2
+Dave Tuba M 3 4 Tu W Th F 3
+Noah Flute M 9 Tu 9 11 1 W Th F 10
+Luna Saxophone M 2 Tu 3 4 W Th F
+Ben Saxophone M 10 Tu 1 3 W Th F
+Isla Flute M 3 Tu 11 W Th F 2
+Ella Clarinet M 9 11 Tu 3 W Th F 11
+Adam Clarinet M 10 1 Tu 3 W Th F 1
+Bob Drums M 9 1 Tu 3 W Th F 3
+Sara Saxophone M 11 Tu 4 W Th F 8 1
+Cole Baritone M 11 2 Tu 2 4 W Th F 2
+Ava Drums M Tu 10 3 W Th F 10 2
+Mae Trumpet M 9 Tu 9 W Th F 10
+Anna Tuba M 9 11 Tu 10 W Th F
+Coop Clarinet M 1 2 4 Tu 11 4 W Th F
+Mia Tuba M 1 4 Tu 3 W Th F 9 11
+Rae Flute M 11 4 Tu 9 W Th F 9 1
+Ayla Baritone M 1 Tu 11 W Th F 8
+Levi Trumpet M Tu 9 11 W Th F 9 11
+Olly Drums M 4 Tu W Th F 10 11 2

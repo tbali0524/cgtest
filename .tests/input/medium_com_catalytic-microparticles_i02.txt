@@ -1,0 +1,6 @@
+5 5 5
+ooooo ooooo ooooo ooooo ooooo
+ooooo o###o o###o o###o ooooo
+ooooo o###o o###o o###o ooooo
+ooooo o###o o###o o###o ooooo
+ooooo ooooo ooooo ooooo ooooo

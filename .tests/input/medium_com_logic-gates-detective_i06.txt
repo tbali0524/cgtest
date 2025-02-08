@@ -1,0 +1,14 @@
+h:1 i:0 c:0 g:1
+a b c d e f g j m k n l o
+11
+a xor b -> e
+b xor c -> f
+c xor d -> g
+a xor c -> h
+e xor h -> i
+h xor g -> j
+f xor g -> m
+i xor f -> k
+k xor j -> l
+j xor m -> n
+l xor n -> o

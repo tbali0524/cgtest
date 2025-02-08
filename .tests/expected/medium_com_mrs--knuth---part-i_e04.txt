@@ -1,0 +1,10 @@
+       Monday        Tuesday       Wednesday       Thursday        Friday
+ 8 -------------- -------------- -------------- -------------- --------------
+ 9 -------------- -------------- --------------   Liam/Flute   --------------
+10   Zoey/Tuba    -------------- --------------    Joy/Tuba    --------------
+11 Kate/Trombone  -------------- --------------  Amy/Trombone     JT/Flute
+       LUNCH          LUNCH          LUNCH          LUNCH          LUNCH
+ 1 Nora/Baritone  -------------- -------------- Drew/Saxophone Mike/Baritone
+ 2   Lily/Flute   -------------- -------------- Josh/Baritone  Emma/Trombone
+ 3 Gabe/Saxophone -------------- -------------- --------------    Ali/Tuba
+ 4 -------------- -------------- -------------- -------------- Sara/Saxophone

@@ -1,0 +1,11 @@
+i:0 k:1
+l j h c e f b
+8
+a or b -> e
+b or c -> f
+c or d -> g
+b or d -> h
+e or h -> i
+f or g -> j
+h or g -> k
+b or i -> l
