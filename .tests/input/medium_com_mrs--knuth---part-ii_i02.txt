@@ -1,0 +1,9 @@
+M Tu W Th F 11 1 2 3 4
+4
+Ava Tuba M Tu W Th F 11 1 2
+Ayla Flute M Tu W Th F 1 2
+Jay Drums M Tu W Th F 11 1 3
+Ryan Trumpet M Tu W Th F 11 2 4
+2
+Ayla Ava
+Ryan Jay

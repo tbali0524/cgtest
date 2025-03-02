@@ -1,0 +1,49 @@
+48 3
+Monsieur Orange, Father Lavender, Count Olive
+Monsieur Orange, poisoned dart, attic, Doctor Maroon
+Father Lavender, sword, brass mallet, Earl Grey
+Count Olive, noose, brick, Princess Swan
+Lieutenant Feather, sword, gymnasium, garage
+candlestick, foyer, dining hall, poolside
+sword, tennis court, reading room, gymnasium
+Marquis Malard, Sir Guineahen, Madame Turquoise, pocket pistol
+Lord Indigo, shovel, noose, play room
+Commander Beige, shovel, hedge maze, terrace
+secret passageway, attic, cellar, garden
+Commander Beige, Lieutenant Feather, candlestick, guest house
+brass mallet, studio, guest house, gymnasium
+studio, kitchen, terrace, attic
+Lady Violet, ice pick, shovel, salon
+Commander Beige, Lord Indigo, candlestick, patio
+Commander Beige, piano wire, brick, dining hall
+shovel, pocket pistol, patio, guest house
+Princess Swan, Lieutenant Feather, terrace, basement
+Master Teal, meat cleaver, patio, garden
+Lord Indigo, Miss Salmon, cellar, gymnasium
+Miss Salmon, cudgel, guest house, basement
+Sergeant Turkey, Mother Goose, Marquis Malard, kitchen
+Admiral Duckbill, Lieutenant Feather, pocket pistol, terrace
+Duke Pelican, fire poker, handgun, secret passageway
+Lieutenant Feather, Duchess Quail, garage, attic
+Sergeant Turkey, Lady Violet, meat cleaver, play room
+pocket pistol, piano wire, tennis court, attic
+Major Pheasant, basement, poolside, foyer
+Mother Goose, shovel, foyer, garage
+cudgel, poisoned dart, shovel, guest house
+Duke Pelican, tennis court, balcony, dining hall
+sword, brass mallet, salon, poolside
+Princess Swan, Miss Salmon, ice pick, noose
+Admiral Duckbill, Sir Guineahen, cudgel, handgun
+Prince Chartreuse, Reverend Crimson, reading room, kitchen
+Doctor Maroon, Sir Guineahen, sword, bedchamber
+Lieutenant Feather, Admiral Duckbill, handgun, garage
+Prince Chartreuse, bottle of poison, salon, attic
+meat cleaver, sword, ice pick, salon
+Major Pheasant, Doctor Maroon, Sir Guineahen, sword
+Madame Turquoise, Sir Guineahen, guest house, terrace
+handgun, hedge maze, attic, guest house
+Marquis Malard, Duchess Quail, balcony, reading room
+Mother Goose, Commander Beige, basement, guest house
+Master Teal, poisoned dart, pocket pistol, bottle of poison
+Earl Grey, shovel, handgun, bedchamber
+Reverend Crimson, fire poker, attic, cellar

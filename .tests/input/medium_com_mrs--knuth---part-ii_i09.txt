@@ -1,0 +1,40 @@
+M 8 9 10 11 1 2 3 Tu 8 9 10 11 1 2 3 W 9 10 11 1 2 3 Th 11 1 2 3 4 F 8 9 10 11 1 2 3 4
+27
+Adam Trumpet M 8 Tu 3 W 10 Th F 10
+Ali Trombone M Tu 9 W 1 Th 1 F 11
+Alma Drums M 1 Tu W 2 Th 1 F
+Anna Flute M 3 Tu 2 W Th 2 F
+Ben Clarinet M 8 Tu 10 W Th F 11 4
+Bo Trombone M Tu 11 W 2 Th F 11
+Bob Baritone M 3 Tu W 10 Th F 3
+Dave Flute M Tu 2 W Th 11 3 F
+Doug Clarinet M Tu 11 1 W Th F 10
+Ella Trombone M Tu W Th 3 F 8 9
+Gabe Baritone M 11 Tu W 3 Th F 8
+Isla Drums M Tu 11 W 10 2 Th F 2
+Jack Saxophone M Tu 3 W 10 3 Th 2 F
+Jim Trumpet M 2 Tu W Th 4 F 2
+Joe Drums M 11 Tu 1 W 9 Th F
+Josh Baritone M 9 Tu 8 1 W Th F 3
+Kate Saxophone M 3 Tu W Th 2 F 1
+Leo Drums M Tu 9 W 2 Th 2 F 1
+Liam Drums M 9 11 Tu 10 W Th F
+Lily Clarinet M Tu W 10 Th 11 F 9
+Lola Flute M 3 Tu 2 W 2 Th F 11
+Mike Tuba M 9 10 Tu 3 W 3 Th F
+Olly Baritone M 2 Tu 3 W Th 1 F
+Ryan Tuba M 8 1 Tu 3 W Th 4 F
+Sam Trombone M 9 Tu 8 9 W Th F 8
+Sean Saxophone M 11 Tu 9 W Th F 10 11
+Zoey Trumpet M 11 Tu 10 W Th 2 3 F
+10
+Doug Zoey
+Bo Gabe
+Dave Anna
+Josh Ali
+Lily Alma
+Sean Bob
+Lola Sam
+Jim Liam
+Leo Isla
+Kate Joe

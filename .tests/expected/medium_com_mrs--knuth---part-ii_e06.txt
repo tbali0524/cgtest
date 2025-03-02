@@ -1,0 +1,10 @@
+       Monday        Tuesday       Wednesday       Thursday        Friday
+ 8 -------------- -------------- --------------    JT/Drums    --------------
+ 9 -------------- -------------- Joe/Saxophone    Jay/Flute    --------------
+10 -------------- --------------   Cora/Tuba     Aria/Trumpet  Zara/Clarinet
+11 Emma/Saxophone --------------  Ryan/Trumpet  --------------   Sam/Flute
+       LUNCH          LUNCH          LUNCH          LUNCH          LUNCH
+ 1  Kai/Trombone  -------------- Adam/Trombone  -------------- Drew/Trombone
+ 2  Ben/Clarinet  -------------- -------------- --------------   Nora/Tuba
+ 3 Isla/Baritone  -------------- Sean/Clarinet  -------------- Tony/Baritone
+ 4   Doug/Drums   -------------- -------------- -------------- --------------

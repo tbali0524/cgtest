@@ -1,0 +1,14 @@
+M 11 1 2 3 4 Tu 9 10 11 1 W Th F
+8
+Alma Trombone M 1 3 Tu 11 W Th F
+Amy Saxophone M 2 4 Tu W Th F
+Gabe Flute M 11 4 Tu 11 W Th F
+Izzy Trombone M 2 Tu 9 10 11 W Th F
+Lola Clarinet M 11 3 Tu 11 1 W Th F
+MJ Flute M 3 Tu 9 1 W Th F
+Noah Drums M 1 3 Tu 9 10 W Th F
+Ryan Trumpet M 2 3 4 Tu 10 W Th F
+3
+Lola Amy
+Noah Izzy
+MJ Gabe

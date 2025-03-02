@@ -1,0 +1,11 @@
+M 1 2 Tu 1 2 W 10 11 1 Th 9 10 F 11 1
+7
+Alma Flute 1 M Tu W 11 Th 10 F 11
+Amy Trombone 2 M 1 2 Tu 1 2 W 10 11 1 Th 9 10 F 11 1
+Ayla Clarinet 1 M 1 Tu 1 W 11 Th 9 10 F 11
+Cora Trombone 1 M Tu W Th F 11 1
+Jack Tuba 1 M 1 2 Tu 1 W Th 9 F 11
+Joe Flute 3 M 2 Tu W 1 Th 10 F 11
+Luke Flute 1 M 2 Tu 1 2 W 11 Th F 11
+1
+Ayla Luke

@@ -1,0 +1,251 @@
+250 3
+Arrogant Rascal, Beauty Entrepreneur, Protege Heir
+Sr A, sign A, info A, hint A
+Sr B, sign B, info B, hint B
+Sr C, sign C, info C, hint C
+Sr D, sign D, info D, hint D
+Sr E, sign E, info E, hint E
+Sr F, sign F, info F, hint F
+Sr G, sign G, info G, hint G
+Sr H, sign H, info H, hint H
+Sr I, sign I, info I, hint I
+Sr J, sign J, info J, hint J
+Sr K, sign K, info K, hint K
+Sr L, sign L, info L, hint L
+Sr M, sign M, info M, hint M
+Sr N, sign N, info N, hint N
+Sr O, sign O, info O, hint O
+Sr P, sign P, info P, hint P
+Sr Q, sign Q, info Q, hint Q
+Sr R, sign R, info R, hint R
+Sr S, sign S, info S, hint S
+Sr T, sign T, info T, hint T
+Sr U, sign U, info U, hint U
+Sr V, sign V, info V, hint V
+Sr W, sign W, info W, hint W
+Sr X, sign X, info X, hint X
+Sr Y, sign Y, info Y, hint Y
+Ms A, plot A, tool A, clue A
+Ms B, plot B, tool B, clue B
+Ms C, plot C, tool C, clue C
+Ms D, plot D, tool D, clue D
+Ms E, plot E, tool E, clue E
+Ms F, plot F, tool F, clue F
+Ms G, plot G, tool G, clue G
+Ms H, plot H, tool H, clue H
+Ms I, plot I, tool I, clue I
+Ms J, plot J, tool J, clue J
+Ms K, plot K, tool K, clue K
+Ms L, plot L, tool L, clue L
+Ms M, plot M, tool M, clue M
+Ms N, plot N, tool N, clue N
+Ms O, plot O, tool O, clue O
+Ms P, plot P, tool P, clue P
+Ms Q, plot Q, tool Q, clue Q
+Ms R, plot R, tool R, clue R
+Ms S, plot S, tool S, clue S
+Ms T, plot T, tool T, clue T
+Ms U, plot U, tool U, clue U
+Ms V, plot V, tool V, clue V
+Ms W, plot W, tool W, clue W
+Ms X, plot X, tool X, clue X
+Ms Y, plot Y, tool Y, clue Y
+Mr A, area A, data A, idea A
+Mr B, area B, data B, idea B
+Mr C, area C, data C, idea C
+Mr D, area D, data D, idea D
+Mr E, area E, data E, idea E
+Mr F, area F, data F, idea F
+Mr G, area G, data G, idea G
+Mr H, area H, data H, idea H
+Mr I, area I, data I, idea I
+Mr J, area J, data J, idea J
+Mr K, area K, data K, idea K
+Mr L, area L, data L, idea L
+Mr M, area M, data M, idea M
+Mr N, area N, data N, idea N
+Mr O, area O, data O, idea O
+Mr P, area P, data P, idea P
+Mr Q, area Q, data Q, idea Q
+Mr R, area R, data R, idea R
+Mr S, area S, data S, idea S
+Mr T, area T, data T, idea T
+Mr U, area U, data U, idea U
+Mr V, area V, data V, idea V
+Mr W, area W, data W, idea W
+Mr X, area X, data X, idea X
+Mr Y, area Y, data Y, idea Y
+sign U, info P, clue S, area I, idea Y
+hint E, plot X, idea C, data T, idea V
+hint U, info U, clue E, idea P, data E
+hint M, clue A, tool G, idea X, data Q
+sign C, tool P, plot T, area N, data P
+sign X, info E, clue W, idea J, idea H
+sign Y, info L, clue F, area X, area U
+info K, clue M, idea E, area M, area L
+hint X, hint P, plot U, idea O, idea M
+info Y, clue U, clue K, plot R, area S
+sign Q, sign T, plot Y, tool W, data C
+hint K, sign S, tool T, idea A, area W
+hint B, tool L, area A, area O, data Y
+info F, info O, plot E, idea T, area C
+hint W, hint Q, tool D, plot M, data W
+hint N, plot K, clue X, area G, data K
+sign O, info J, plot B, tool N, data B
+hint I, plot N, area Y, idea Q, data A
+hint Y, clue B, plot H, area E, data M
+hint F, hint S, clue T, tool R, data S
+hint J, clue J, data J, area T, data F
+sign R, sign N, tool O, clue G, idea F
+info A, tool A, plot C, tool Q, data V
+info S, sign H, tool S, plot D, idea R
+info M, clue Q, idea I, data I, area Q
+sign I, sign E, plot G, area J, data U
+hint R, sign P, hint C, clue Y, data D
+hint L, info V, clue D, data H, idea S
+info T, tool V, area F, idea W, idea G
+sign V, info W, clue V, idea L, area P
+sign L, plot V, clue N, area D, area K
+hint O, info C, sign A, plot O, idea B
+sign J, info X, plot L, area L, area R
+sign D, tool C, clue I, data A, area B
+sign G, plot P, clue O, area G, data R
+info N, tool U, plot F, idea L, area E
+info D, info Y, plot J, tool Y, data Q
+sign B, hint Q, tool F, tool H, data D
+sign T, sign C, tool J, area H, idea G
+sign L, tool I, tool J, clue O, idea K
+info J, tool W, clue I, data L, data T
+hint C, hint U, sign M, tool S, area Q
+hint I, info A, info V, clue T, area P
+hint A, clue B, plot B, idea B, data P
+sign D, tool C, tool Q, plot S, data C
+sign S, info T, tool P, plot X, idea U
+hint G, hint E, info F, clue D, idea A
+hint Y, plot C, clue G, data L, area J
+hint S, plot Q, plot P, idea R, area R
+sign R, hint N, tool R, clue P, idea O
+sign A, plot D, area S, area V, idea Q
+info H, sign H, info E, clue H, data W
+hint P, hint M, plot I, area X, area V
+hint H, info P, plot U, tool U, area O
+info L, plot V, tool Y, plot H, idea J
+hint T, info H, clue V, idea M, data U
+sign F, info B, tool F, data Y, idea D
+hint B, info Q, sign I, clue F, idea V
+sign X, tool T, clue L, data J, idea W
+info G, tool E, tool X, idea F, data N
+info B, hint F, plot W, clue Q, area N
+info W, hint J, plot E, idea T, data H
+hint O, info O, plot O, data S, data N
+hint W, hint R, tool M, data B, area Y
+sign W, sign V, tool X, clue N, data E
+hint K, sign G, info N, clue J, idea E
+info X, info I, clue S, idea P, area I
+sign K, tool N, tool H, area C, idea X
+sign Q, clue C, clue K, idea I, idea H
+info R, tool L, area U, data K, area K
+sign E, info D, clue W, idea S, idea D
+sign M, clue E, plot L, plot G, data J
+info R, info M, clue M, plot M, area F
+hint S, tool B, plot N, idea F, data E
+sign U, clue L, plot K, idea B, data K
+hint L, tool A, area O, idea R, idea I
+info L, plot P, plot T, area Y, idea H
+hint R, sign W, sign S, plot R, area G
+hint U, sign A, sign U, tool O, data A
+hint G, sign I, tool A, clue M, idea W
+sign Y, info N, tool X, plot L, idea X
+hint H, info V, clue Q, plot B, area M
+info O, sign C, hint J, clue X, data H
+info H, tool B, area I, data B, area T
+hint N, info I, info J, tool C, data C
+info K, hint D, tool Q, data P, area C
+info Y, info X, clue R, area E, idea M
+info M, plot X, tool R, plot G, data X
+info G, clue D, area V, area Q, data V
+hint B, plot U, plot E, area S, idea U
+info B, clue O, clue J, data M, data Q
+info C, sign N, clue F, idea A, area U
+info F, sign H, sign Q, plot M, data G
+sign O, sign R, clue W, clue S, data U
+info S, hint C, hint Y, plot O, area K
+hint K, sign P, clue E, idea L, data Y
+sign D, hint O, tool H, tool L, area D
+sign X, sign T, plot F, tool I, data T
+info U, hint E, tool I, area J, area L
+info Q, clue T, plot D, clue G, idea P
+info E, plot K, plot R, area H, data N
+hint W, hint P, tool D, clue A, area R
+info D, info G, plot Q, area F, idea D
+sign N, clue Y, plot A, idea O, idea S
+hint F, hint V, tool F, plot H, idea V
+sign G, tool T, plot V, tool K, area N
+info K, clue V, tool J, data R, idea G
+sign V, info A, clue A, idea C, data W
+hint I, tool P, clue H, tool N, data D
+hint A, info T, clue B, clue I, idea I
+sign L, clue K, plot Y, data A, area T
+sign A, tool W, clue Y, area X, idea K
+hint I, sign K, tool U, data W, data U
+info D, clue N, area B, idea V, idea F
+info P, clue R, clue T, area U, area T
+hint V, hint F, clue E, data K, data E
+info G, clue P, tool P, clue F, area O
+info T, plot O, tool M, plot K, idea O
+info J, hint U, clue W, data F, data Q
+sign I, clue G, tool S, plot A, area J
+hint T, tool F, area F, data D, area S
+hint P, plot J, tool S, idea W, area K
+info H, hint O, tool V, tool Y, area N
+info F, plot I, idea D, area Y, area Q
+sign J, plot P, data Y, idea B, idea L
+hint C, plot M, plot B, data B, idea N
+sign B, sign T, clue I, idea A, idea P
+hint J, plot H, tool Q, clue C, idea G
+sign R, sign C, plot N, clue U, area E
+hint Q, hint X, info E, clue N, area G
+hint Q, tool L, data J, data P, data O
+info O, tool M, data C, idea R, data T
+sign W, hint K, tool I, clue D, area L
+hint W, hint M, plot G, idea T, area V
+sign X, clue A, clue M, tool R, data O
+info S, sign N, info W, tool X, idea S
+info K, plot X, plot T, plot U, data H
+sign E, hint E, tool J, tool W, idea M
+info V, clue C, area X, area M, idea X
+hint M, sign U, info B, plot C, data R
+info P, info L, clue J, area I, area A
+hint S, clue Q, tool Y, clue O, data V
+hint Y, plot N, tool E, area M, data N
+info W, tool U, idea P, area F, idea K
+sign D, tool N, tool B, plot E, area L
+sign Q, sign L, plot D, plot R, idea N
+hint N, clue B, plot Q, area N, area M
+hint B, info A, tool T, clue X, idea W
+sign G, tool A, tool H, plot W, area I
+sign H, clue S, clue Y, area C, data L
+info M, tool D, plot C, idea F, data J
+info Y, tool O, plot V, idea V, data P
+hint R, tool K, clue J, plot L, data A
+info X, hint X, plot C, plot U, data U
+info F, clue H, idea H, area E, idea G
+hint S, sign S, plot P, area V, area D
+sign U, tool L, plot S, clue O, area T
+sign V, info K, clue W, plot I, area O
+info N, info O, hint V, clue K, area U
+info L, plot X, clue P, idea B, area C
+info Y, hint O, tool Y, plot K, data G
+info P, clue M, clue V, tool V, idea L
+sign G, tool F, clue U, data Q, area K
+hint J, clue L, tool I, tool T, area R
+info H, tool J, plot A, data C, area R
+hint P, sign D, tool Q, clue F, data I
+sign V, plot J, data N, data D, data H
+hint G, clue N, idea A, data T, data K
+sign R, clue V, plot H, tool E, area Q
+info N, info J, plot Y, idea O, idea R
+info M, plot S, idea H, data E, idea D
+Arrogant Rascal, Sr A, Sr B, Sr C, Sr D, Sr E, Sr F, Sr G, Sr H, Sr I, Sr J, Sr K, Sr L, Sr M, Sr N, Sr O, Sr P, Sr Q, Sr R, Sr S, Sr T, Sr U, Sr V, Sr W, Sr X, Sr Y
+Beauty Entrepreneur, Ms A, Ms B, Ms C, Ms D, Ms E, Ms F, Ms G, Ms H, Ms I, Ms J, Ms K, Ms L, Ms M, Ms N, Ms O, Ms P, Ms Q, Ms R, Ms S, Ms T, Ms U, Ms V, Ms W, Ms X, Ms Y
+Protege Heir, Mr A, Mr B, Mr C, Mr D, Mr E, Mr F, Mr G, Mr H, Mr I, Mr J, Mr K, Mr L, Mr M, Mr N, Mr O, Mr P, Mr Q, Mr R, Mr S, Mr T, Mr U, Mr V, Mr W, Mr X, Mr Y

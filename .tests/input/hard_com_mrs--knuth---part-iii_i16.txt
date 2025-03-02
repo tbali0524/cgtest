@@ -1,0 +1,11 @@
+M 8 9 10 Tu 8 9 10 11 1 2 W 1 2 3 Th 10 11 1 2 3 4 F 8 9 10
+6
+Cole Saxophone 4 M 9 10 Tu 1 W 1 2 3 Th F 9
+Coop Drums 2 M Tu 10 11 2 W 2 3 Th 10 11 1 2 3 F 8
+Joe Flute 1 M Tu 11 W Th 2 F 10
+Luna Drums 1 M 8 10 Tu 10 W 2 Th 11 F 10
+Ryan Flute 1 M 9 Tu 10 11 W 3 Th 11 F
+Sam Drums 2 M 9 10 Tu 9 10 W 2 Th 11 3 F
+2
+Coop Ryan
+Luna Joe

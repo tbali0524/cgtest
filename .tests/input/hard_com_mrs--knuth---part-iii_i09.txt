@@ -1,0 +1,5 @@
+M Tu W Th F 8 9 10 11 1 2 3 4
+2
+Ella Trumpet 1 M Tu W Th F 8 10 11 1 2 4
+Drew Clarinet 1 M Tu W Th F 8 10 11 1 2 4
+0

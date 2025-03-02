@@ -1,0 +1,7 @@
+6 3
+Prince Chartreuse, Monsieur Orange, Commander Beige
+sword, piano wire
+library, salon
+Prince Chartreuse, library, piano wire
+Commander Beige, library, sword
+Monsieur Orange, salon, piano wire

@@ -1,0 +1,6 @@
+M 2 Tu 9 W Th F 9 10 11 3 4
+3
+Ella Saxophone 1 M Tu 9 W Th F 9 10 11 3
+Drew Clarinet 1 M Tu 9 W Th F 9 10 11 3 4
+Lola Flute 1 M 2 Tu 9 W Th F
+0

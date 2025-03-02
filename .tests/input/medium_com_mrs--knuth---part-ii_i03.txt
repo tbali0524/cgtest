@@ -1,0 +1,13 @@
+M 8 9 10 11 1 2 3 Tu W Th F
+7
+Abby Flute M 8 10 11 1 Tu W Th F
+Izzy Drums M 9 11 1 Tu W Th F
+Josh Tuba M 11 1 2 3 Tu W Th F
+Kate Baritone M 8 11 3 Tu W Th F
+Leo Trumpet M 8 2 3 Tu W Th F
+MJ Clarinet M 9 10 3 Tu W Th F
+Mae Saxophone M 11 2 3 Tu W Th F
+3
+Abby MJ
+Kate Izzy
+Mae Leo

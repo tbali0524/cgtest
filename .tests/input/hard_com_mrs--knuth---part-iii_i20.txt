@@ -1,0 +1,12 @@
+M 9 10 11 1 Tu 10 11 1 2 3 4 W 10 11 1 Th 9 10 11 1 2 F 9 10 11
+7
+Alex Trombone 2 M 1 Tu 1 W Th 1 F 10
+Cole Trumpet 1 M Tu 1 4 W Th 9 11 F 9 10
+Dave Saxophone 2 M Tu 11 2 4 W 10 Th 11 2 F
+Drew Drums 2 M Tu 10 2 W Th 10 11 1 2 F 10
+John Clarinet 2 M 10 Tu 1 4 W 10 11 Th 9 10 1 F
+Mike Tuba 2 M Tu 4 W Th 9 11 F 9 10 11
+Noah Trombone 1 M 1 Tu W Th 9 1 2 F
+2
+Noah John
+Drew Alex

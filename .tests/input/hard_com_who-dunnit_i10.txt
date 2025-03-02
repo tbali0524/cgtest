@@ -1,0 +1,25 @@
+24 10
+Madame Turquoise, Reverend Crimson, Lady Violet, Lord Indigo, Prince Chartreuse, Monsieur Orange, Commander Beige, Miss Salmon, Father Lavender, Earl Grey
+Madame Turquoise, theater performance
+Reverend Crimson, baptism service
+Lady Violet, bank receipt
+Lord Indigo, tournament
+Prince Chartreuse, sea voyage
+Monsieur Orange, incarceration
+Commander Beige, train ticket
+Miss Salmon, dance recital
+Father Lavender, choir practice
+Earl Grey, council meeting
+theater performance, revolver, brick, poisoned dart
+baptism service, tennis court, terrace, play room
+bank receipt, ice pick, meat cleaver, poolside
+tournament, brass mallet, garden, guest house
+sea voyage, fire poker, poolside, cellar
+train ticket, cudgel, brick, secret passageway
+incarceration, brass mallet, garden, cellar, play room
+dance recital, revolver, ice pick, terrace
+choir practice, meat cleaver, tennis court, guest house
+council meeting, fire poker, poisoned dart, secret passageway
+revolver, brass mallet, ice pick, fire poker, cudgel, brick, meat cleaver, poisoned dart
+garden, tennis court, poolside, terrace, cellar, foyer, play room, guest house, secret passageway
+brass mallet, brick, meat cleaver, poisoned dart, garden, tennis court, poolside, terrace, foyer

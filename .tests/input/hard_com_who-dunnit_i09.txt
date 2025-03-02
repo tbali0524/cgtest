@@ -1,0 +1,24 @@
+23 8
+Doctor Maroon, Lady Violet, Lord Indigo, Prince Chartreuse, Monsieur Orange, Master Teal, Miss Salmon, Count Olive
+Doctor Maroon, balcony, brick, Sir Guineahen
+Lady Violet, patio, sword, Duchess Quail
+Lord Indigo, kitchen, noose, Marquis Malard
+Prince Chartreuse, studio, brick, Lieutenant Feather
+Monsieur Orange, play room, noose, handgun
+Master Teal, guest house, handgun, Sir Guineahen
+Miss Salmon, play room, cudgel, Major Pheasant
+Count Olive, bottle of poison, patio, Mother Goose
+Major Pheasant, dining hall, noose, cudgel
+Mother Goose, studio, salon, sword
+Duchess Quail, guest house, handgun, cudgel
+Duke Pelican, balcony, bottle of poison, ice pick
+Princess Swan, hedge maze, patio, candlestick
+Major Pheasant, kitchen, salon, bottle of poison
+Lieutenant Feather, studio, balcony, brick
+Mother Goose, hedge maze, dining hall, ice pick
+Sir Guineahen, kitchen, guest house, candlestick
+Marquis Malard, hedge maze, play room, sword
+Duchess Quail, kitchen, dining hall, sword
+Duke Pelican, patio, shovel, ice pick
+Princess Swan, balcony, candlestick, shovel
+shovel

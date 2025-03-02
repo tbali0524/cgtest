@@ -1,0 +1,10 @@
+       Monday        Tuesday       Wednesday       Thursday        Friday
+ 8 --------------   Liam/Flute   --------------  Amy/Trumpet     Cole/Tuba
+ 9 --------------   Tony/Drums   -------------- Luke/Baritone  --------------
+10 -------------- Olly/Clarinet  -------------- Izzy/Trombone  Sean/Baritone
+11 --------------  Joe/Trumpet   -------------- Lola/Saxophone --------------
+       LUNCH          LUNCH          LUNCH          LUNCH          LUNCH
+ 1 --------------  Joy/Trombone  --------------   Jim/Drums      Ayla/Drums
+ 2 -------------- -------------- -------------- -------------- --------------
+ 3 --------------    JT/Tuba     -------------- --------------  Sara/Trumpet
+ 4 -------------- -------------- -------------- -------------- --------------

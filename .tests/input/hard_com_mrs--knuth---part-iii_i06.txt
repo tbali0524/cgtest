@@ -1,0 +1,8 @@
+M Tu W 8 9 10 2 3 Th F
+5
+Lola Saxophone 1 M Tu W 8 9 10 2 3 Th F
+Ella Flute 1 M Tu W 8 9 10 2 3 Th F
+Alma Clarinet 1 M Tu W 8 9 10 2 3 Th F
+Drew Tuba 1 M Tu W 8 9 10 2 3 Th F
+Amy Baritone 1 M Tu W 8 9 10 2 3 Th F
+0

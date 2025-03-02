@@ -1,0 +1,7 @@
+6 2
+Madame Turquoise, Reverend Crimson
+candlestick, noose, sword
+reading room, bedchamber
+Reverend Crimson, candlestick, reading room
+Madame Turquoise, noose, reading room
+Reverend Crimson, sword, bedchamber

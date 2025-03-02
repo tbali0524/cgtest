@@ -1,0 +1,16 @@
+15 5
+Doctor Maroon, Commander Beige, Master Teal, Miss Salmon, Count Olive
+Doctor Maroon, attic, Marquis Malard
+Commander Beige, revolver, Lieutenant Feather
+Master Teal, brass mallet, fire poker
+Miss Salmon, tennis court, noose
+Count Olive, meat cleaver, Princess Swan
+meat cleaver, attic, garden
+Major Pheasant, noose, fire poker
+Sir Guineahen, tennis court, revolver
+Major Pheasant, foyer, revolver
+Lieutenant Feather, garden, brass mallet
+Sir Guineahen, foyer, noose
+Marquis Malard, tennis court, brass mallet
+Princess Swan, attic, fire poker
+foyer

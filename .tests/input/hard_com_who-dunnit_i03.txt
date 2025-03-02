@@ -1,0 +1,5 @@
+4 2
+Lady Violet, Lord Indigo
+handgun
+Lady Violet, handgun, pocket pistol
+Lord Indigo, pocket pistol

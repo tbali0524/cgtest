@@ -1,0 +1,11 @@
+M 2 3 4 Tu 9 10 11 1 2 3 W 11 1 2 3 4 Th 11 1 2 F 8 9 10 11 1
+6
+Adam Drums 2 M 3 Tu W 1 Th F 8 1
+Alma Trombone 3 M 2 3 Tu 9 3 W 11 1 2 Th 11 1 2 F 10
+Anna Flute 2 M 4 Tu 9 10 W 2 4 Th F 10 1
+Joe Baritone 2 M 4 Tu 9 1 W 1 Th 1 F
+Liam Baritone 1 M Tu 9 11 W 3 Th 2 F
+Lola Tuba 2 M Tu W 11 2 Th F 10
+2
+Liam Joe
+Adam Anna

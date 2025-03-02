@@ -1,0 +1,24 @@
+M 11 1 2 3 4 Tu W 9 10 11 1 2 3 Th 8 9 10 F 10 11 1 2 3
+18
+Adam Trombone M Tu W 1 Th 9 F
+Aria Trumpet M 1 4 Tu W 2 Th 10 F 10
+Ben Clarinet M 2 4 Tu W Th 9 10 F 3
+Cora Tuba M 1 Tu W 10 Th F
+Doug Drums M 4 Tu W 1 Th 9 F
+Drew Trombone M Tu W 9 2 Th F 1
+Emma Saxophone M 11 Tu W 3 Th F
+Isla Baritone M 3 Tu W 10 Th F
+JT Drums M 3 4 Tu W 1 Th 8 10 F 2
+Jay Flute M 11 1 Tu W 9 1 Th 9 F 10
+Joe Saxophone M 3 Tu W 9 10 11 Th F 1
+Kai Trombone M 1 3 Tu W Th 9 F
+Nora Tuba M 1 Tu W 9 Th F 1 2
+Ryan Trumpet M 4 Tu W 11 1 Th F 2
+Sam Flute M 2 Tu W 3 Th F 11
+Sean Clarinet M 11 Tu W 1 3 Th 8 F 1
+Tony Baritone M 3 Tu W 1 Th 8 10 F 11 3
+Zara Clarinet M Tu W 10 Th F 10 1
+3
+Cora Kai
+Emma Ryan
+Nora Ben

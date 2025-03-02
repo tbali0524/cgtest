@@ -1,0 +1,31 @@
+30 5
+Hired Nurse, Male Inlaw, Arrogant Rascal, Beauty Entrepreneur, Protege Heir
+Hired Nurse, nurse is successfully framed, nurse gives correct medicine
+nurse gives correct medicine, wrong medicine kills magnate
+Hired Nurse, culprit swaps vials, magnate killed after midnight
+Male Inlaw, grandma catches nurse, inlaw misinterprets grandma
+inlaw misinterprets grandma, someone mistaken for magnate, grandma halucinated rascal
+Arrogant Rascal, grandma halucinated rascal, nurse secretly knew about will, magnate killed after midnight
+Beauty Entrepreneur, Protege Heir, someone leaves and sneaks back in
+Beauty Entrepreneur, someone mistaken for magnate, protege lies about magnate, nurse gives wrong medicine
+no one swaps vials, magnate realizes labels swapped, wrong medicine kills magnate
+magnate cut heirs from will, vials swapped by mistake
+nurse is successfully framed, nurse secretly knew about will, magnate realizes labels swapped, magnate killed after midnight
+no one leaves and sneaks back in, someone mistaken for magnate
+someone mistaken for magnate, protege lies about magnate, magnate killed after midnight
+grandma halucinated rascal, someone seen sneaking out
+grandma catches nurse, no one seen sneaking out, grandma halucinated rascal
+vials swapped by mistake, only family knew about will, everyone knew about will, nurse discovered secret
+family argued about will, magnate told no one about will
+magnate told family about will, family genuinely surprised by will
+magnate and family bonded, magnate cut heirs from will
+nurse secretly knew about will, nurse genuinely surprised by will
+family genuinely surprised by will, family argued about will, magnate and family bonded
+someone leaves and sneaks back in, no one leaves and sneaks back in
+someone seen sneaking out, no one seen sneaking out
+nurse gives correct medicine, nurse gives wrong medicine
+culprit swaps vials, vials swapped by mistake, no one swaps vials
+nurse genuinely surprised by will, nurse discovered secret, everyone knew about will
+everyone knew about will, only family knew about will, magnate told no one about will
+magnate told family about will, magnate told no one about will
+magnate cut heirs from will

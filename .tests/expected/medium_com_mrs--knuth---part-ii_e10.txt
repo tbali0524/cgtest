@@ -1,0 +1,10 @@
+       Monday        Tuesday       Wednesday       Thursday        Friday
+ 8 Mia/Saxophone  Wren/Trombone  --------------  Jim/Trombone  --------------
+ 9    Amy/Tuba      Ayla/Tuba    Luke/Baritone  --------------   Ryan/Drums
+10 Zoey/Trombone  Cora/Baritone   Rae/Clarinet   Mae/Baritone  --------------
+11 --------------   John/Drums   --------------   Kai/Flute    Luna/Trombone
+       LUNCH          LUNCH          LUNCH          LUNCH          LUNCH
+ 1   Lily/Drums     Zara/Flute     Emma/Tuba    Joy/Saxophone   Alex/Trumpet
+ 2   Ava/Flute    Liam/Saxophone   Lola/Flute     Leo/Drums       Ben/Tuba
+ 3  Sara/Trumpet   Noah/Trumpet  Ivy/Saxophone    Aria/Tuba    Kate/Clarinet
+ 4 Doug/Clarinet  Coop/Clarinet   Drew/Trumpet   Dave/Trumpet     Jo/Flute

@@ -1,0 +1,11 @@
+M 9 10 11 1 Tu 11 1 2 W 2 3 4 Th 11 1 2 3 4 F 11 1 2 3 4
+6
+Cole Clarinet 2 M Tu 11 W 2 Th 2 F 1
+Izzy Drums 2 M 10 Tu 1 W 2 4 Th 11 1 4 F 1 2
+Liam Trombone 2 M 10 11 1 Tu W 2 Th 11 1 F 4
+Lola Trumpet 1 M 10 Tu W 3 Th F 11 2 3
+Mike Baritone 2 M Tu 11 W 3 4 Th 4 F
+Olly Clarinet 2 M Tu 2 W 3 4 Th 1 4 F 1 2 3
+2
+Mike Cole
+Izzy Olly

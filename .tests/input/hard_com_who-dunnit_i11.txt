@@ -1,0 +1,14 @@
+13 10
+Doctor Black, Mr Brown, Mr Gold, The Rev Mr Green, Miss Grey, Professor Plum, Miss Scarlet, Nurse White, Mrs Silver, Colonel Yellow
+axe, shillelagh, bomb, rope, dagger, revolver, hypodermic syringe, bottle of poison, poker
+ball room, billiard room, conservatory, dining room, hall, kitchen, lounge, library, study
+The Rev Mr Green, Miss Scarlet, rope, conservatory, billiard room, hall, kitchen
+Doctor Black, Mr Brown, The Rev Mr Green, Colonel Yellow, Nurse White, study, dining room
+Mr Brown, Mr Gold, Colonel Yellow, bomb, poker, dining room, ball room, hall
+Mr Brown, Colonel Yellow, hypodermic syringe, hall, lounge, library
+Colonel Yellow, Miss Grey, bomb, bottle of poison, rope, poker
+Doctor Black, Mr Gold, The Rev Mr Green, Professor Plum, conservatory, library, kitchen, dining room
+Miss Scarlet, Colonel Yellow, dagger, axe, bottle of poison, dining room, billiard room
+Professor Plum, Mr Gold, Mr Brown, bottle of poison, axe, conservatory, library, kitchen
+Mr Gold, Nurse White, hypodermic syringe, shillelagh, axe, kitchen
+Colonel Yellow, Professor Plum, The Rev Mr Green, Mrs Silver, revolver, billiard room, ball room

@@ -1,0 +1,24 @@
+23 11
+Madame Turquoise, Reverend Crimson, Doctor Maroon, Lady Violet, Lord Indigo, Prince Chartreuse, Monsieur Orange, Master Teal, Miss Salmon, Father Lavender, Count Olive
+bottle of poison, candlestick, noose, sword, piano wire, ice pick, fire poker, brass mallet, revolver
+reading room, bedchamber, kitchen, dining hall, salon, play room, studio, attic, foyer, secret passageway
+Major Pheasant, Sergeant Turkey, Admiral Duckbill, Lieutenant Feather, Mother Goose, Sir Guineahen, Marquis Malard, Duchess Quail, Duke Pelican, Princess Swan
+hedge maze, garden, tennis court, gymnasium, poolside, terrace, cellar, basement, garage, guest house
+Doctor Maroon, Master Teal, Lord Indigo, sword, studio, Mother Goose, Sir Guineahen, Princess Swan
+Madame Turquoise, sword, reading room, foyer, Duchess Quail, Lieutenant Feather, Sir Guineahen, terrace
+ice pick, piano wire, foyer, Major Pheasant, Sergeant Turkey, Marquis Malard, cellar, guest house
+piano wire, salon, Princess Swan, Marquis Malard, garden, tennis court, garage, cellar
+Monsieur Orange, Doctor Maroon, fire poker, ice pick, secret passageway, hedge maze, cellar, garden
+Prince Chartreuse, Lady Violet, fire poker, reading room, dining hall, foyer, Duchess Quail, Major Pheasant
+Madame Turquoise, Master Teal, noose, brass mallet, Princess Swan, Marquis Malard, poolside, garden
+Count Olive, Monsieur Orange, Doctor Maroon, candlestick, kitchen, poolside, basement, tennis court
+Count Olive, candlestick, fire poker, salon, attic, Marquis Malard, Lieutenant Feather, hedge maze
+Father Lavender, sword, noose, candlestick, Sergeant Turkey, Major Pheasant, Admiral Duckbill, Duchess Quail
+Madame Turquoise, piano wire, Admiral Duckbill, Sergeant Turkey, Princess Swan, gymnasium, terrace, tennis court
+Miss Salmon, attic, dining hall, bedchamber, Major Pheasant, Duchess Quail, basement, garage
+Father Lavender, candlestick, brass mallet, revolver, ice pick, foyer, Duchess Quail, poolside
+brass mallet, fire poker, attic, bedchamber, salon, Mother Goose, Admiral Duckbill, hedge maze
+Master Teal, Monsieur Orange, sword, noose, foyer, Mother Goose, Admiral Duckbill, gymnasium
+Master Teal, Father Lavender, Doctor Maroon, Prince Chartreuse, Major Pheasant, Sir Guineahen, Mother Goose, garage
+Prince Chartreuse, piano wire, fire poker, foyer, attic, Duke Pelican, Major Pheasant, poolside
+Reverend Crimson, bottle of poison, dining hall, kitchen, play room, foyer, secret passageway, Lieutenant Feather, gymnasium

@@ -1,0 +1,21 @@
+M Tu 8 9 10 11 1 2 3 W Th 8 9 10 11 1 F 8 9 10 11 1 2 3
+15
+Amy Trumpet M Tu 11 W Th 8 F 9 1
+Ayla Drums M Tu W Th 9 F 8 1
+Cole Tuba M Tu 9 3 W Th F 8
+Izzy Trombone M Tu 8 11 W Th 10 F
+JT Tuba M Tu 3 W Th 8 F
+Jim Drums M Tu 9 2 W Th 9 1 F
+Joe Trumpet M Tu 11 W Th F 9 11 2
+Joy Trombone M Tu 1 W Th F 2
+Liam Flute M Tu 8 1 W Th F 2
+Lola Saxophone M Tu 1 W Th 11 F 8 10
+Luke Baritone M Tu 9 W Th 8 9 F 3
+Olly Clarinet M Tu 9 10 W Th 10 1 F
+Sara Trumpet M Tu 10 W Th F 10 3
+Sean Baritone M Tu 10 1 W Th F 10
+Tony Drums M Tu 9 11 2 3 W Th F
+3
+Tony Luke
+Liam Sara
+JT Izzy

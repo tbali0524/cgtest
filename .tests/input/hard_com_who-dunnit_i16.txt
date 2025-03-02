@@ -1,0 +1,101 @@
+100 3
+Admiral Duckbill, Captain Navy, Private Aquamarine
+attic, brick
+axe, Baron Blue
+balcony, Earl Grey
+baptism service, Father Lavender
+Baron Blue, criminal cover up
+Baroness Silver, incarceration
+basement, baptism service
+bedchamber, revenge
+bottle of poison, tournament
+brass mallet, shovel
+brick, orchard
+candlestick, mental illness
+Captain Navy, poolside
+cellar, sea voyage
+Chief Brown, class envy
+choir practice, terrace
+class envy, General Gold
+Coach Green, sword
+Commander Beige, balcony
+Corporal Purple, cudgel
+council meeting, guest house
+Count Olive, garden
+Countess Ivory, Commander Beige
+criminal cover up, Lieutenant Feather
+cudgel, garage
+dance recital, meat cleaver
+Deputy Khaki, tennis court
+dining hall, Countess Ivory
+Doctor Maroon, Master Teal
+Duchess Quail, Reverend Crimson
+Duke Pelican, attic
+Earl Grey, Admiral Duckbill
+Father Lavender, Viceroy Platypus
+fire poker, patio
+foyer, Rabbi Black
+garage, axe
+garden, Deputy Khaki
+General Gold, poisoned dart
+guest house, Marquis Malard
+gymnasium, handgun
+handgun, Lady Violet
+heat of passion, Baroness Silver
+hedge maze, revolver
+home office, reading room
+ice pick, brass mallet
+incarceration, sledgehammer
+inheritance, gymnasium
+insurance fraud, Professor Pinkish
+Judge Red, piano wire
+kitchen, Duke Pelican
+Lady Violet, Major Pheasant
+lawn gnome, studio
+Lieutenant Feather, Coach Green
+Lord Indigo, play room
+Madame Turquoise, bedchamber
+Major Pheasant, Count Olive
+Marquis Malard, Judge Red
+Master Teal, ice pick
+meat cleaver, fire poker
+mental illness, Mother Goose
+Miss Salmon, Madame Turquoise
+mistaken identity, Chief Brown
+Monsieur Orange, Doctor Maroon
+Mother Goose, Princess Swan
+noose, theater
+orchard, lawn gnome
+patio, pocket pistol
+piano wire, Senator Limelight
+play room, council meeting
+pocket pistol, choir practice
+poisoned dart, Signore Siena
+power and control, mistaken identity
+Prince Chartreuse, hedge maze
+Princess Swan, Miss Salmon
+Private Aquamarine, theater performance
+Professor Pinkish, dining hall
+Rabbi Black, poolside, noose
+reading room, insurance fraud
+revenge, kitchen
+Reverend Crimson, Sergeant Turkey
+revolver, candlestick
+romantic jealousy, cellar
+salon, home office
+sea voyage, heat of passion
+secret passageway, basement
+Senator Limelight, Prince Chartreuse
+Sergeant Turkey, inheritance
+shovel, Sir Guineahen
+Signore Siena, Monsieur Orange
+Sir Guineahen, salon
+sledgehammer, dance recital
+studio, Corporal Purple
+sword, Duchess Quail
+tennis court, power and control
+terrace, Lord Indigo
+theater performance, secret passageway
+theater, foyer
+tournament, romantic jealousy
+Viceroy Platypus, bottle of poison

@@ -1,0 +1,10 @@
+       Monday        Tuesday       Wednesday       Thursday        Friday
+ 8  Ben/Clarinet  -------------- -------------- -------------- Ella/Trombone
+ 9  Sam/Trombone    Leo/Drums      Joe/Drums    -------------- Lily/Clarinet
+10   Mike/Tuba    -------------- Jack/Saxophone --------------  Adam/Trumpet
+11   Liam/Drums    Bo/Trombone   --------------   Dave/Flute   Sean/Saxophone
+       LUNCH          LUNCH          LUNCH          LUNCH          LUNCH
+ 1 -------------- Doug/Clarinet   Ali/Trombone    Alma/Drums   --------------
+ 2  Jim/Trumpet     Anna/Flute     Lola/Flute   Kate/Saxophone   Isla/Drums
+ 3  Bob/Baritone  Olly/Baritone  Gabe/Baritone   Zoey/Trumpet  Josh/Baritone
+ 4 -------------- -------------- --------------   Ryan/Tuba    --------------

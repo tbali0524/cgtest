@@ -1,14 +1,14 @@
-Mrs. Knuth - Part I
+Mrs. Knuth - Part II
 
-medium_com_mrs--knuth---part-i
-https://www.codingame.com/training/medium/mrs--knuth---part-i
-https://www.codingame.com/contribute/view/1156146d442abd1af9d939579c1417e72dfe3e
+medium_com_mrs--knuth---part-ii
+https://www.codingame.com/training/medium/mrs--knuth---part-ii
+https://www.codingame.com/contribute/view/950238e7e8f40105ccd0fd6237bf60c4d25b3
 
 A contribution by Timinator
-Approved by Eulero314,Rafarafa,darkhorse64
+Approved by yhuberla,darkhorse64,Malleek
 
 Goal
-This puzzle is part 1 of a multi-part Algorithm X tutorial and is meant to be done per the guidance in the following playground:
+This puzzle is part 2 of a multi-part Algorithm X tutorial and is meant to be done per the guidance in the following playground:
 
 https://www.codingame.com/playgrounds/156252
 
@@ -16,20 +16,20 @@ Although you may use any language you wish to complete this puzzle, the playgrou
 
 Task Overview:
 
-Mrs. Knuth, the school band teacher, has asked you to write an algorithm to generate her weekly private lesson schedule for the summer. Her availability is different from week to week, but she will always teach between 1 and 5 days per week. On each day that she teaches, she will teach between 2 and 8 hours. Because she likes consistency, she will teach the same number of hours on each day she teaches, but the actual time slots during which she is available might be different from day to day.
-Mrs. Knuth is a creature of habit. Her workday starts at 8am every day and ends at 5pm with an hour break for lunch each day from noon to 1pm. Although she is at school 9 total hours every day, she might not be available to teach on some days, she might have partial teaching availability on other days or she might have a day where she teaches every free minute other than during lunch.
-Mrs. Knuth is also a bit odd when it comes to music. To keep her mind fresh, she refuses to teach more than a single hour per day for any particular instrument. If she teaches 3 hours in one day, those lessons must be for 3 different instruments. If she teaches 8 hours in one day, all 8 instruments that day must be different.
-Given Mrs. Knuth’s open availability and each student’s instrument and lesson availability, generate a schedule for Mrs. Knuth that allows her to work with each student one time per week and meets her quirky demands.
+Mrs. Knuth was thrilled with the work you did for her in Part I and her scheduling has been a breeze! She did run into a couple of issues though, and she'd like you to integrate the following changes into your scheduling algorithm.
+Mrs. Knuth's schedule needs to be more flexible than she first thought. She isn't able to always teach the same number of hours on her teaching days. She also doesn't always have enough students to completely fill her teacherAvailability. You'll need to adjust your algorithm to handle her teacherAvailability possibly containing different numbers of hours for each day she teaches and you'll need to be able to handle hours in her teacherAvailability for which there ends up being no student scheduled.
+You might be impressed with Mrs. Knuth's newfound flexibility, but don't get too relaxed. She still requires that no instrument be taught more than one hour on any one day. On top of that, she has struggled with loudInstruments, specifically the Trumpet, the Drums and the Trombone. In the interest of her long-term hearing, she has asked that you make sure no two loudInstruments are ever scheduled back-to-back. (A lesson at 11am and a lesson at 1pm are not considered back-to-back since there is an hour lunch break between the two.)
+For the most part, the kids in school are good kids, but some kids get a bit rowdy when they are with certain friends. To avoid disruptions to her schedule, Mrs. Knuth has given you a list of troublesomePairs. It's important the individuals in these pairs never be scheduled back-to-back. There must be at least an hour of time between the two individuals to ensure they don't get each other wound up and start causing trouble.
+Despite Mrs. Knuth's wacky requests, all students must get a spot on her schedule.
+All notes about INPUT and OUTPUT formatting still apply to Part II. For your reference, those notes have been copied here:
 
 Note About INPUT Formatting:
-
 Availability for Mrs. Knuth, or for any one student, is formatted as a character string using the following abbreviations for the days of the week: M, Tu, W, Th and F. An availabilityString will contain all 5 abbreviations in this same order. After each abbreviation will be between 0 and 8 integers representing the times the person is available on that day. Lessons can be taught in the morning at 8, 9, 10 and 11 and in the afternoon at 1, 2, 3 and 4. Consider the following availabilityString:
 M 1 2 3 Tu W Th 8 9 F 11
 This indicates the person is available on Monday at 1pm, 2pm and 3pm, on Thursday at 8am and 9am and on Friday at 11am. This person has no availability on Tuesday or Wednesday.
 The only valid elements in an availabilityString are M, Tu, W, Th, F, 8, 9, 10, 11, 1, 2, 3 and 4. All elements of an availabilityString are space separated.
 
 Note About OUTPUT Formatting:
-
 Mrs. Knuth requires a very specific format for her calendar. Her calendar has 10 rows and 6 columns with one space between each of the 6 columns.
 Column 1 is 2 characters wide. In it, rows 2 – 5 and 7 – 10 contain the hours of the days, right justified. See the example below.
 Columns 2 – 6 are each 14 characters wide. The contents of each row in each column is always center justified, with the extra space being on the right when it is not possible to perfectly center justify the text. At the top of each column is the day, fully written out as Monday, Tuesday, Wednesday, Thursday or Friday. In the 6th row of columns 2 - 6 is the word LUNCH.
@@ -40,6 +40,8 @@ Input
 Line 1: Mrs. Knuth’s teacherAvailability
 Line 2: An integer numStudents
 Next numStudents lines: name instrument studentAvailability
+Next Line: An integer numTroublesomePairs
+Next numTroublesomePairs lines: name1 name2
 
 Output
 10 lines: schedule per the rules above. Trailing spaces must be removed from each line.
@@ -47,41 +49,42 @@ Output
 Constraints
 • 2 <= length of name <= 4.
 • 4 <= length of instrument <= 9.
-• numStudents = Mrs. Knuth's available hours per week.
-• count of each type of instrument = count of days with hours in teacherAvailability, meaning the student roster will always contain the appropriate number of instruments to make sure no duplication of instruments on any one day is possible.
+• The only loudInstruments are Trumpet, Drums and Trombone.
+• numStudents <= Mrs. Knuth's available hours per week.
+• 1 <= numTroublesomePairs <= 12.
+• The two names in a troublesomePair are always different.
 • All students have unique names.
 • name and instrument do not contain any spaces.
 • teacherAvailability and studentAvailability are in the availabilityString format as explained in Goal section and always valid (e.g. no duplicate hours on the same day).
 • All lessons consist of 1 student with 1 instrument for 1 hour.
 • Mrs. Knuth will be available to teach on at least 1 day and at most 5 days.
-• Mrs. Knuth will teach the same number of hours per day on each day she teaches.
 • All test cases have a unique solution.
 
 Example
 
 Input
-M Tu W Th 2 3 4 F
+M Tu W Th F 8 9 10 11 1
 3
-Ayla Trumpet M Tu W Th 2 F
-Bob Drums M Tu W Th 2 3 F
-Alex Tuba M Tu W Th 2 4 F
+Drew Trombone M Tu W Th F 10 11 1
+Ella Flute M Tu W Th F 10 1
+Lola Drums M Tu W Th F 11 1
+1
+Drew Ella
 
 Output
        Monday        Tuesday       Wednesday       Thursday        Friday
  8 -------------- -------------- -------------- -------------- --------------
  9 -------------- -------------- -------------- -------------- --------------
-10 -------------- -------------- -------------- -------------- --------------
-11 -------------- -------------- -------------- -------------- --------------
+10 -------------- -------------- -------------- --------------   Ella/Flute
+11 -------------- -------------- -------------- --------------   Lola/Drums
        LUNCH          LUNCH          LUNCH          LUNCH          LUNCH
- 1 -------------- -------------- -------------- -------------- --------------
- 2 -------------- -------------- --------------  Ayla/Trumpet  --------------
- 3 -------------- -------------- --------------   Bob/Drums    --------------
- 4 -------------- -------------- --------------   Alex/Tuba    --------------
-
+ 1 -------------- -------------- -------------- -------------- Drew/Trombone
+ 2 -------------- -------------- -------------- -------------- --------------
+ 3 -------------- -------------- -------------- -------------- --------------
+ 4 -------------- -------------- -------------- -------------- --------------
 
 Difficulty
 Medium
 
 Tags
-Backtracking
-
+Algorithm X, Exact Cover, Backtracking

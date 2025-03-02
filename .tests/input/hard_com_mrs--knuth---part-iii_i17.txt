@@ -1,0 +1,9 @@
+M 8 9 10 Tu 11 1 2 W 1 2 3 Th 2 3 4 F 9 10 11 1 2
+5
+Abby Tuba 2 M 8 9 Tu 11 1 W 2 Th 2 3 F 9 10 1 2
+Alex Clarinet 2 M Tu 11 1 W 1 Th F
+Ella Saxophone 2 M Tu W 3 Th 3 F 9 11
+Isla Flute 2 M 8 9 Tu W 2 Th F 10 1
+Lola Saxophone 3 M 8 9 Tu 1 2 W 1 2 3 Th 2 3 4 F 10 11 1 2
+1
+Alex Lola

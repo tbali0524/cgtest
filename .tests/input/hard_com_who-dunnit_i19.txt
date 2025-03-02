@@ -1,0 +1,251 @@
+250 3
+Hired Nurse, Arrogant Rascal, Protege Heir
+Hired Nurse, Dr A, Dr B, Dr C, Dr D, Dr E, Dr F, Dr G, Dr H, Dr I, Dr J, Dr K, Dr L, Dr M, Dr N, Dr O, Dr P, Dr Q, Dr R, Dr S, Dr T, Dr U, Dr V, Dr W, Dr X, Dr Y
+Arrogant Rascal, Sr A, Sr B, Sr C, Sr D, Sr E, Sr F, Sr G, Sr H, Sr I, Sr J, Sr K, Sr L, Sr M, Sr N, Sr O, Sr P, Sr Q, Sr R, Sr S, Sr T, Sr U, Sr V, Sr W, Sr X, Sr Y
+Protege Heir, Mr A, Mr B, Mr C, Mr D, Mr E, Mr F, Mr G, Mr H, Mr I, Mr J, Mr K, Mr L, Mr M, Mr N, Mr O, Mr P, Mr Q, Mr R, Mr S, Mr T, Mr U, Mr V, Mr W, Mr X, Mr Y
+item S, sign I, sign F, info T, data C
+item O, room V, time R, hint U, area S
+room C, time E, hint F, idea O, idea J
+item A, time M, hint G, data U, data K
+item Y, room G, info I, area B, area L
+time V, room N, item N, hint L, area T
+room Q, time A, sign R, area M, data E
+item V, item L, info Q, hint P, idea H
+time H, time J, info P, hint I, data S
+time D, info K, data Y, area C, area D
+time I, sign U, info H, data O, idea M
+time Y, hint S, hint H, sign B, area N
+item H, hint K, info L, info W, area I
+time U, time P, sign K, info B, idea Q
+item W, room E, hint V, area G, data G
+room T, info Y, data H, area Y, idea I
+item G, info E, hint T, sign H, idea B
+time X, hint Q, data T, area K, idea Y
+item R, hint X, sign L, info R, idea V
+room L, room P, info D, sign X, data J
+room W, hint M, hint A, idea N, area U
+time W, item K, time T, info S, data W
+room D, room I, room A, info C, data A
+item X, time F, sign D, sign C, idea C
+time L, room S, sign N, info O, area Q
+item U, room B, sign Y, sign E, idea L
+item J, hint O, sign J, data R, idea A
+room O, info V, area O, area E, idea F
+item B, room Y, sign A, area R, idea E
+item F, item Q, hint B, idea X, area P
+item T, item C, hint R, idea W, idea T
+time H, sign P, sign O, idea G, area J
+room B, room T, time R, info A, data X
+room H, time E, sign M, hint J, data L
+time V, info N, sign Q, sign T, idea S
+item V, info G, hint Y, area F, data P
+room K, room I, time I, sign V, data F
+item K, room O, hint C, data D, data M
+time U, room X, hint W, data W, area R
+item U, time N, room C, hint U, idea L
+time D, info B, info X, sign C, area B
+item R, hint N, info L, area M, idea I
+room E, hint D, sign H, sign S, idea K
+item E, info I, sign U, idea X, data P
+time P, hint K, idea F, idea D, data D
+item T, time M, info U, data O, area G
+time O, info S, info M, area J, data Q
+room D, item Q, item G, sign G, data B
+room L, time J, hint D, idea P, area W
+item B, sign W, sign Q, area I, data V
+room P, sign F, sign I, idea U, idea Q
+room G, hint Y, sign S, area H, data U
+item C, info F, info N, idea G, data Y
+time K, item P, hint L, hint C, data C
+item X, hint F, sign Y, idea T, idea H
+time Y, time L, hint T, data I, data K
+item W, sign B, idea R, data T, idea A
+room S, room H, sign E, area V, area S
+item O, item J, hint W, area U, area A
+room J, time X, hint A, area K, area E
+room A, sign W, hint P, data F, area O
+time F, time K, hint S, idea P, data Q
+item I, room Q, sign O, info J, data X
+room M, item F, sign X, sign N, area W
+time A, item Y, info D, data J, data S
+room M, hint O, data A, data V, idea N
+time S, time E, hint X, idea M, data R
+item J, time W, sign V, idea V, area A
+item F, info H, data B, area N, data L
+room R, info W, sign A, info M, idea Y
+item N, sign J, info E, area C, idea E
+time G, item S, room L, info J, area D
+room M, room B, info X, area P, idea W
+time Q, time K, info P, info R, data T
+room F, hint V, idea Y, area I, data F
+room N, time V, hint M, data Q, area X
+item B, info A, area E, data U, area P
+time B, item U, sign R, info G, data O
+time I, info K, sign D, area G, data X
+time R, sign M, data L, data D, area M
+time L, time F, info T, idea C, data S
+room H, time M, info Q, data H, area Y
+room E, sign T, area U, idea B, idea X
+item C, time U, sign K, hint G, idea J
+time A, hint H, sign O, data G, data B
+time D, info Y, area O, area H, data W
+item X, room P, item I, hint U, data H
+room T, time Y, sign T, data C, data E
+item Y, item S, info N, area L, area K
+item T, hint J, area S, idea K, idea T
+time Q, time P, info B, hint H, idea M
+item O, info K, hint D, hint Y, data N
+item V, item A, sign A, idea H, idea N
+time J, room D, sign G, info D, idea A
+item K, info Q, hint R, idea G, area J
+room S, time W, room I, info F, idea P
+time H, sign J, idea V, idea S, data Y
+item N, hint A, info W, area D, idea O
+room Q, item D, info E, sign R, area R
+item R, time C, hint K, idea I, data K
+time X, hint V, sign I, area F, data R
+time S, room O, info I, idea L, area N
+room A, info P, hint B, hint M, idea Q
+item W, sign Q, info S, data M, data V
+room G, info M, sign V, hint P, data I
+room T, info O, area T, idea C, idea E
+time L, sign B, info R, data P, idea U
+time I, info G, idea W, data N, area B
+room O, room F, sign S, sign C, data P
+item R, room W, hint F, hint L, idea A
+room D, item Q, time G, sign X, data F
+time K, info O, idea R, data O, idea J
+item P, room B, hint T, area G, data H
+time D, info U, hint J, info Y, data V
+time E, sign N, hint C, hint E, area M
+room N, time W, sign H, area C, data D
+time B, info J, hint G, area I, area D
+room V, time U, room Q, hint W, data W
+item N, time P, info L, data R, idea S
+item J, item E, hint P, sign Q, area U
+time T, info B, hint F, data C, area R
+item O, item W, info C, hint A, data K
+room M, sign L, sign O, data T, idea P
+time V, time J, sign E, area L, idea C
+item C, item Q, time R, sign P, area P
+time F, sign E, idea F, area N, data E
+room E, item U, hint N, sign R, idea Q
+room S, hint E, idea E, data U, area E
+time X, item G, info J, hint D, idea U
+room C, sign A, hint X, hint G, data N
+time H, sign F, sign B, idea H, idea D
+item K, hint V, sign P, data S, idea N
+item X, room N, sign H, area J, data M
+item S, room R, info Q, info K, idea Y
+item L, hint U, info M, hint X, data Y
+time N, hint T, hint Y, idea L, idea X
+item M, hint L, hint J, idea J, idea G
+room H, room P, room I, sign L, area B
+room G, item T, sign V, info U, idea W
+item V, info L, hint N, hint M, data Q
+item F, item Y, sign C, info F, area O
+item G, time M, info P, idea R, idea F
+room A, room U, info O, info R, area S
+item B, sign I, sign S, info D, idea B
+time H, sign U, hint S, idea M, idea I
+item V, sign J, sign T, sign X, data J
+time C, item X, item F, info N, data A
+room M, item H, sign U, area K, idea V
+time O, item J, info S, info G, idea T
+time U, time A, item M, hint K, idea T
+room C, room N, info I, area V, data V
+room G, room J, hint W, data X, idea M
+room L, info E, hint I, area S, idea E
+room D, time D, hint H, info X, data Q
+item E, info W, idea N, data X, area O
+item T, item C, info V, idea I, area E
+item Q, room I, sign H, data L, area Q
+time J, sign E, sign T, idea O, data U
+room L, hint B, data R, data O, idea P
+time Y, time E, info S, info T, area I
+room B, time W, hint X, sign Y, idea A
+item G, time R, time Q, info D, idea V
+time F, info G, data K, area X, area R
+time L, sign B, info H, area N, data A
+room H, item R, hint A, area V, area G
+item P, hint W, info R, data P, data B
+time S, info K, sign F, data S, idea H
+time O, item K, hint U, hint C, area J
+item N, sign X, area B, data Y, area Y
+time B, time V, sign V, data B, area M
+room A, item A, hint P, area P, idea F
+Dr A, room A, item A, time A
+Dr B, room B, item B, time B
+Dr C, room C, item C, time C
+Dr D, room D, item D, time D
+Dr E, room E, item E, time E
+Dr F, room F, item F, time F
+Dr G, room G, item G, time G
+Dr H, room H, item H, time H
+Dr I, room I, item I, time I
+Dr J, room J, item J, time J
+Dr K, room K, item K, time K
+Dr L, room L, item L, time L
+Dr M, room M, item M, time M
+Dr N, room N, item N, time N
+Dr O, room O, item O, time O
+Dr P, room P, item P, time P
+Dr Q, room Q, item Q, time Q
+Dr R, room R, item R, time R
+Dr S, room S, item S, time S
+Dr T, room T, item T, time T
+Dr U, room U, item U, time U
+Dr V, room V, item V, time V
+Dr W, room W, item W, time W
+Dr X, room X, item X, time X
+Dr Y, room Y, item Y, time Y
+Sr A, sign A, info A, hint A
+Sr B, sign B, info B, hint B
+Sr C, sign C, info C, hint C
+Sr D, sign D, info D, hint D
+Sr E, sign E, info E, hint E
+Sr F, sign F, info F, hint F
+Sr G, sign G, info G, hint G
+Sr H, sign H, info H, hint H
+Sr I, sign I, info I, hint I
+Sr J, sign J, info J, hint J
+Sr K, sign K, info K, hint K
+Sr L, sign L, info L, hint L
+Sr M, sign M, info M, hint M
+Sr N, sign N, info N, hint N
+Sr O, sign O, info O, hint O
+Sr P, sign P, info P, hint P
+Sr Q, sign Q, info Q, hint Q
+Sr R, sign R, info R, hint R
+Sr S, sign S, info S, hint S
+Sr T, sign T, info T, hint T
+Sr U, sign U, info U, hint U
+Sr V, sign V, info V, hint V
+Sr W, sign W, info W, hint W
+Sr X, sign X, info X, hint X
+Sr Y, sign Y, info Y, hint Y
+Mr A, area A, data A, idea A
+Mr B, area B, data B, idea B
+Mr C, area C, data C, idea C
+Mr D, area D, data D, idea D
+Mr E, area E, data E, idea E
+Mr F, area F, data F, idea F
+Mr G, area G, data G, idea G
+Mr H, area H, data H, idea H
+Mr I, area I, data I, idea I
+Mr J, area J, data J, idea J
+Mr K, area K, data K, idea K
+Mr L, area L, data L, idea L
+Mr M, area M, data M, idea M
+Mr N, area N, data N, idea N
+Mr O, area O, data O, idea O
+Mr P, area P, data P, idea P
+Mr Q, area Q, data Q, idea Q
+Mr R, area R, data R, idea R
+Mr S, area S, data S, idea S
+Mr T, area T, data T, idea T
+Mr U, area U, data U, idea U
+Mr V, area V, data V, idea V
+Mr W, area W, data W, idea W
+Mr X, area X, data X, idea X
+Mr Y, area Y, data Y, idea Y

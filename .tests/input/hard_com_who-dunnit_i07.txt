@@ -1,0 +1,10 @@
+9 3
+Miss Salmon, Father Lavender, Earl Grey
+ice pick, fire poker
+Sergeant Turkey, Admiral Duckbill, Mother Goose
+studio, attic, garage
+Earl Grey, ice pick, Admiral Duckbill
+Father Lavender, Sergeant Turkey, studio
+Miss Salmon, fire poker, garage
+Father Lavender, Mother Goose, attic
+fire poker, Admiral Duckbill, Mother Goose, studio

@@ -1,0 +1,251 @@
+250 3
+Hired Nurse, Male Inlaw, Beauty Entrepreneur
+Hired Nurse, Dr A, Dr B, Dr C, Dr D, Dr E, Dr F, Dr G, Dr H, Dr I, Dr J, Dr K, Dr L, Dr M, Dr N, Dr O, Dr P, Dr Q, Dr R, Dr S, Dr T, Dr U, Dr V, Dr W, Dr X, Dr Y
+Male Inlaw, Mr A, Mr B, Mr C, Mr D, Mr E, Mr F, Mr G, Mr H, Mr I, Mr J, Mr K, Mr L, Mr M, Mr N, Mr O, Mr P, Mr Q, Mr R, Mr S, Mr T, Mr U, Mr V, Mr W, Mr X, Mr Y
+Beauty Entrepreneur, Ms A, Ms B, Ms C, Ms D, Ms E, Ms F, Ms G, Ms H, Ms I, Ms J, Ms K, Ms L, Ms M, Ms N, Ms O, Ms P, Ms Q, Ms R, Ms S, Ms T, Ms U, Ms V, Ms W, Ms X, Ms Y
+Dr A, room A, item A, time A
+Dr B, room B, item B, time B
+Dr C, room C, item C, time C
+Dr D, room D, item D, time D
+Dr E, room E, item E, time E
+Dr F, room F, item F, time F
+Dr G, room G, item G, time G
+Dr H, room H, item H, time H
+Dr I, room I, item I, time I
+Dr J, room J, item J, time J
+Dr K, room K, item K, time K
+Dr L, room L, item L, time L
+Dr M, room M, item M, time M
+Dr N, room N, item N, time N
+Dr O, room O, item O, time O
+Dr P, room P, item P, time P
+Dr Q, room Q, item Q, time Q
+Dr R, room R, item R, time R
+Dr S, room S, item S, time S
+Dr T, room T, item T, time T
+Dr U, room U, item U, time U
+Dr V, room V, item V, time V
+Dr W, room W, item W, time W
+Dr X, room X, item X, time X
+Dr Y, room Y, item Y, time Y
+Mr A, area A, data A, idea A
+Mr B, area B, data B, idea B
+Mr C, area C, data C, idea C
+Mr D, area D, data D, idea D
+Mr E, area E, data E, idea E
+Mr F, area F, data F, idea F
+Mr G, area G, data G, idea G
+Mr H, area H, data H, idea H
+Mr I, area I, data I, idea I
+Mr J, area J, data J, idea J
+Mr K, area K, data K, idea K
+Mr L, area L, data L, idea L
+Mr M, area M, data M, idea M
+Mr N, area N, data N, idea N
+Mr O, area O, data O, idea O
+Mr P, area P, data P, idea P
+Mr Q, area Q, data Q, idea Q
+Mr R, area R, data R, idea R
+Mr S, area S, data S, idea S
+Mr T, area T, data T, idea T
+Mr U, area U, data U, idea U
+Mr V, area V, data V, idea V
+Mr W, area W, data W, idea W
+Mr X, area X, data X, idea X
+Mr Y, area Y, data Y, idea Y
+Ms A, plot A, tool A, clue A
+Ms B, plot B, tool B, clue B
+Ms C, plot C, tool C, clue C
+Ms D, plot D, tool D, clue D
+Ms E, plot E, tool E, clue E
+Ms F, plot F, tool F, clue F
+Ms G, plot G, tool G, clue G
+Ms H, plot H, tool H, clue H
+Ms I, plot I, tool I, clue I
+Ms J, plot J, tool J, clue J
+Ms K, plot K, tool K, clue K
+Ms L, plot L, tool L, clue L
+Ms M, plot M, tool M, clue M
+Ms N, plot N, tool N, clue N
+Ms O, plot O, tool O, clue O
+Ms P, plot P, tool P, clue P
+Ms Q, plot Q, tool Q, clue Q
+Ms R, plot R, tool R, clue R
+Ms S, plot S, tool S, clue S
+Ms T, plot T, tool T, clue T
+Ms U, plot U, tool U, clue U
+Ms V, plot V, tool V, clue V
+Ms W, plot W, tool W, clue W
+Ms X, plot X, tool X, clue X
+Ms Y, plot Y, tool Y, clue Y
+item O, room N, data G, tool B, clue E
+time J, time C, area C, idea X, tool E
+room P, item A, data L, data I, plot P
+time F, data P, clue P, plot Q, tool Y
+room B, item R, idea C, idea R, tool D
+item W, item J, data V, data M, clue M
+item L, room Q, data S, clue A, tool R
+time K, item G, idea K, tool H, plot N
+time M, room H, idea T, area U, tool X
+time W, data H, idea E, area S, tool A
+room W, item Y, idea U, idea A, clue F
+room F, item D, idea F, clue J, clue R
+time H, time N, idea V, area P, tool S
+room D, data E, clue H, plot B, clue D
+room V, time G, area V, tool N, clue V
+room A, room L, area Q, tool P, plot C
+item X, area H, area Y, clue I, tool G
+time Y, time S, data U, clue X, clue S
+item F, idea W, data X, clue W, plot O
+time D, time I, data O, tool J, tool C
+room U, time U, time B, area R, clue N
+item S, room K, idea O, plot H, tool K
+room E, item V, item C, idea D, plot V
+item U, area G, area L, area J, plot L
+room M, item T, area X, plot A, clue Q
+time O, area O, clue Y, plot X, tool O
+room T, data F, tool T, clue T, plot S
+room I, room S, area N, data K, plot W
+time E, room X, area B, idea S, clue U
+item Q, data N, plot M, tool L, clue O
+item P, idea B, plot I, plot T, clue G
+time X, room O, data Y, data R, plot L
+item F, area K, idea Y, clue I, tool O
+room P, item Q, area F, clue Y, clue K
+room H, data W, area D, plot M, clue G
+room G, time F, area T, clue E, plot H
+time G, area I, tool D, tool E, clue B
+item O, item N, idea L, plot R, tool B
+item W, item J, data T, plot Y, tool X
+item S, time E, room T, area E, tool Y
+time C, item R, data Q, idea N, clue L
+time M, room N, data D, plot Q, tool I
+item N, room C, idea P, tool C, plot V
+time Y, idea J, data A, plot I, plot U
+room X, item B, area W, data C, clue V
+time R, data B, idea Q, plot P, clue Q
+time X, time A, room D, data N, plot F
+time S, room O, area W, plot G, clue X
+time O, data V, area A, area K, clue R
+room E, data O, clue P, tool K, clue C
+room J, data E, data L, plot C, clue A
+time T, area D, idea N, tool S, clue U
+room W, item C, data M, tool V, tool H
+time V, idea P, area Q, clue O, clue J
+item I, idea I, data I, clue D, tool U
+time K, room B, room K, area J, plot E
+time R, idea X, tool U, clue K, clue M
+item Y, room A, item H, area C, clue T
+item D, idea M, clue N, plot B, tool A
+time Q, data A, plot N, tool T, tool G
+item P, idea K, area M, plot W, clue S
+room R, time J, idea W, idea G, clue F
+room M, time B, data T, tool W, plot F
+item G, item U, room I, idea Y, clue U
+item V, data Q, idea T, clue X, plot I
+room V, area X, idea I, clue I, tool M
+time H, area R, area A, area H, plot K
+room Q, idea U, data J, tool X, tool A
+item M, room L, data B, clue V, tool R
+item L, area U, area F, tool L, clue W
+room U, item U, area G, plot S, clue Q
+item K, time M, area M, area N, tool T
+item Y, data X, data J, clue W, tool H
+item C, idea L, data C, tool N, tool J
+item R, area V, plot A, plot C, clue R
+time R, idea Q, data F, tool R, clue K
+item V, item O, idea A, plot N, plot H
+time A, area L, clue S, plot Q, plot F
+room P, time P, idea E, idea J, clue G
+item P, area Y, data G, area P, clue Y
+time O, idea B, idea F, idea V, clue B
+time G, data K, data H, tool J, plot O
+room B, room X, area S, idea O, clue T
+item G, area O, data Y, plot G, tool U
+item L, room D, idea C, tool Y, plot L
+room E, time F, idea H, tool E, clue M
+time J, idea S, data U, idea G, plot B
+item Q, time K, idea H, data D, tool G
+room V, item J, time L, data I, plot M
+item S, item B, time C, idea N, tool L
+item M, time E, item D, area Q, clue D
+room K, data D, data M, idea W, clue H
+room A, room O, data S, area X, plot W
+time T, item T, item W, area G, clue N
+room H, time X, room W, area E, plot P
+room L, data X, tool S, clue P, tool V
+room G, area R, data T, tool D, clue A
+time Y, idea R, tool O, tool K, tool W
+room Q, area B, tool C, clue F, tool B
+item A, idea P, idea I, tool O, clue D
+time I, data W, plot W, clue P, clue J
+room M, item T, data R, data L, tool H
+room N, room I, idea D, data Q, plot V
+item E, area H, area D, plot M, tool L
+time B, area T, area B, data A, plot C
+time N, item F, area Y, tool T, tool G
+time I, idea G, area T, data G, plot P
+item X, area J, data B, idea L, clue V
+time S, data Y, data K, data O, plot D
+time H, room U, room T, idea E, plot R
+item H, room A, area V, idea U, plot V
+item U, item C, area I, tool E, tool F
+item O, item L, data F, idea K, tool K
+time O, area W, idea H, clue U, clue R
+item R, item J, area I, clue T, plot J
+room U, idea S, idea B, area U, plot U
+time H, idea J, tool J, clue Q, plot Y
+time J, area O, idea F, plot H, clue C
+time A, area A, idea R, idea V, plot X
+item D, area K, clue E, clue F, plot K
+room R, time B, item V, data E, tool D
+item N, data S, data H, plot F, clue S
+room E, area S, idea C, area N, clue I
+room L, time G, area X, tool B, plot T
+item N, data V, data E, clue K, tool R
+time E, item Q, area R, idea B, plot D
+room C, item S, area Y, area N, tool A
+item F, time V, area M, area P, tool X
+item P, room K, data K, tool P, tool S
+time Y, time S, idea A, data Y, plot I
+room P, time C, room W, data P, clue M
+time D, item Y, area O, data F, clue E
+room I, time L, area V, data O, plot N
+time I, time R, area J, data L, tool Q
+room J, time F, area C, idea V, clue Y
+room F, item T, data T, idea F, plot L
+room D, room H, idea T, tool U, clue O
+item I, idea E, data Q, plot B, tool Y
+item K, time A, idea U, tool C, clue W
+item W, time M, idea I, idea S, plot J
+room T, area G, idea W, clue L, clue X
+time X, area P, clue A, plot S, clue N
+time K, time P, data D, area W, tool U
+room J, area K, idea P, plot N, tool S
+room B, room O, data M, plot D, tool R
+room Q, area M, idea N, plot L, plot J
+room M, room C, room N, data C, plot P
+room B, room D, area I, clue O, plot G
+room I, item A, idea G, clue D, clue Y
+item O, time H, area C, area A, tool M
+room K, data U, tool T, clue X, plot Q
+item F, area E, clue V, tool O, clue M
+item G, item H, area D, idea L, clue A
+time X, time K, time E, area T, tool N
+time D, data I, plot W, tool G, plot F
+room T, time N, area S, tool C, tool B
+time G, time J, room O, idea J, plot E
+item N, room W, room H, area U, plot Y
+item W, item P, area H, idea O, clue R
+item V, idea R, area Q, data C, clue B
+room X, item J, area V, tool Q, clue S
+room Q, time Q, room X, area O, tool Y
+room V, time S, area M, tool L, plot E
+item T, item S, room U, data X, tool P
+time C, room A, time O, data F, plot A
+time I, item K, data O, clue I, clue N
+item L, room N, area I, tool F, tool X
+room Y, room P, item Q, area A, tool H
+room M, data D, idea J, clue C, clue G
+time Q, area J, plot M, plot C, tool E
+item D, area L, area D, area Y, clue G

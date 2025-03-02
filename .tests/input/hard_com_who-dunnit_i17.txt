@@ -1,0 +1,102 @@
+101 9
+Major Pheasant, Sergeant Turkey, Lieutenant Feather, Mother Goose, Sir Guineahen, Marquis Malard, Duchess Quail, Duke Pelican, Princess Swan
+Major Pheasant, Professor Pinkish, Lady Violet, Monsieur Orange
+Sergeant Turkey, Reverend Crimson, Father Lavender, Deputy Khaki
+Lieutenant Feather, Madame Turquoise, Earl Grey, Judge Red
+Mother Goose, Lord Indigo, Master Teal, Corporal Purple
+Sir Guineahen, Count Olive, Captain Navy, Coach Green
+Marquis Malard, Commander Beige, Countess Ivory, General Gold
+Duchess Quail, Prince Chartreuse, Private Aquamarine, Chief Brown
+Duke Pelican, Doctor Maroon, Baron Blue, Senator Limelight
+Princess Swan, Miss Salmon, Baroness Silver, Rabbi Black
+Madame Turquoise, theater performance
+Reverend Crimson, baptism service
+Doctor Maroon, surgery
+Lady Violet, bank receipt
+Lord Indigo, tournament
+Prince Chartreuse, sea voyage
+Monsieur Orange, incarceration
+Master Teal, interview
+Commander Beige, train ticket
+Miss Salmon, dance recital
+Father Lavender, choir practice
+Count Olive, piano concerto
+Countess Ivory, ballet staging
+Earl Grey, council meeting
+Baron Blue, opera
+Baroness Silver, in transit
+General Gold, headquarters
+Captain Navy, debriefing
+Private Aquamarine, active duty
+Corporal Purple, hometown
+Professor Pinkish, lecture
+Deputy Khaki, search warrant
+Judge Red, preliminary hearing
+Coach Green, sparring match
+Chief Brown, casino
+Senator Limelight, brothel
+Rabbi Black, sermon
+search warrant, ice pick, terrace
+dance recital, criminal cover up, pocket pistol
+ballet staging, handgun, hedge maze
+mistaken identity, search warrant, patio
+search warrant, revenge, pocket pistol
+theater performance, heat of passion, dining hall
+debriefing, handgun, patio
+hometown, romantic jealousy, secret passageway
+class envy, handgun, patio
+mental illness, cudgel, hedge maze
+inheritance, bottle of poison, cellar
+surgery, revenge, basement
+lecture, revenge, pocket pistol
+insurance fraud, lawn gnome, kitchen
+theater performance, candlestick, foyer
+dance recital, candlestick, cellar
+hometown, heat of passion, cellar
+debriefing, revolver, tennis court
+lecture, sledgehammer, tennis court
+tournament, power and control, basement
+sermon, fire poker, bedchamber
+sea voyage, handgun, bedchamber
+romantic jealousy, brick, cellar
+power and control, sparring match, play room
+casino, mental illness, shovel
+dance recital, heat of passion, brick
+opera, bottle of poison, attic
+mistaken identity, lawn gnome, kitchen
+hometown, romantic jealousy, piano wire
+mistaken identity, brass mallet, studio
+opera, mental illness, studio
+debriefing, cudgel, hedge maze
+opera, candlestick, foyer
+council meeting, noose, basement
+heat of passion, meat cleaver, play room
+debriefing, insurance fraud, bottle of poison
+baptism service, ice pick, criminal cover up
+bank receipt, dining hall, fire poker
+incarceration, secret passageway, sword
+interview, revolver, attic
+train ticket, sledgehammer, mistaken identity
+choir practice, fire poker, inheritance
+piano concerto, shovel, class envy
+in transit, brass mallet, poolside
+headquarters, noose, guest house
+inheritance, lawn gnome, play room
+dance recital, mental illness, reading room
+ballet staging, reading room, shovel
+criminal cover up, sledgehammer, balcony
+inheritance, pocket pistol, play room
+lecture, power and control, axe
+theater performance, meat cleaver, patio
+power and control, preliminary hearing, cellar
+bank receipt, mental illness, sledgehammer
+mistaken identity, lawn gnome, basement
+inheritance, poisoned dart, secret passageway
+power and control, poisoned dart, attic
+opera, heat of passion, handgun
+hometown, revenge, axe
+ballet staging, revenge, pocket pistol
+active duty, poolside, brick
+guest house, shovel, brothel
+terrace, sword, insurance fraud
+balcony, piano wire, class envy

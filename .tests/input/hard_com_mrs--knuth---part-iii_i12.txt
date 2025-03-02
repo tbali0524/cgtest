@@ -1,0 +1,9 @@
+M Tu 10 11 1 2 W Th 9 10 11 F 2 3 4
+4
+Ella Baritone 2 M Tu 10 11 1 W Th 10 11 F 2 3
+Emma Flute 3 M Tu 10 11 1 2 W Th 9 10 11 F 2 3 4
+Jack Saxophone 2 M Tu 10 11 1 2 W Th 9 10 11 F 2 3 4
+Zoey Tuba 1 M Tu 1 W Th 9 10 11 F 2 3
+2
+Emma Ella
+Jack Zoey

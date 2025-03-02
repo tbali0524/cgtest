@@ -1,0 +1,9 @@
+M 10 11 1 2 3 4 Tu 1 2 3 4 W 9 10 11 1 Th 9 10 11 F 2 3 4
+5
+Alma Trombone 2 M 1 2 3 Tu 1 4 W 1 Th 9 11 F 2 3
+Ben Trumpet 2 M Tu 3 W 11 1 Th F
+Ivy Saxophone 3 M 2 Tu 1 2 W 9 11 1 Th 9 F 3 4
+Jim Drums 1 M 10 3 Tu 2 4 W 1 Th 9 F
+MJ Saxophone 2 M 11 3 4 Tu 2 3 4 W 9 10 11 Th 11 F
+1
+MJ Ben
