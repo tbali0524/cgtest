@@ -439,6 +439,7 @@ return [
                 'easy_com_someones-acting-sus----',
                 'easy_com_sparse-matmul',
                 'easy_com_square-spiral-for-alien-contact',
+                'easy_com_squash_pi',
                 'easy_com_stall-tilt',
                 'easy_com_street-fighter-level-i',
                 'easy_com_substitution-encoding',
@@ -627,6 +628,7 @@ return [
                 'medium_com_frog-exchange',
                 'medium_com_fun-with-cgx-expressions',
                 'medium_com_fun-with-set-theory',
+                'medium_com_function-notation',
                 'medium_com_futoshiki-solver',
                 'medium_com_game-of-life',
                 'medium_com_game-of-life-simulation',
@@ -657,6 +659,7 @@ return [
                 'medium_com_identifying-data-structure',
                 'medium_com_if-then-else',
                 'medium_com_indented-to-xml-like',          // removed puzzle
+                'medium_com_inside-area',
                 'medium_com_inversion-count',
                 'medium_com_ip-mask-calculating',
                 'medium_com_is-the-king-in-check-part-2',
@@ -757,6 +760,7 @@ return [
                 'medium_com_scary-ride-at-the-haunted-mansion',
                 'medium_com_seam-carving',
                 'medium_com_self-checkout-machine',
+                'medium_com_shape-outline',
                 'medium_com_shikaku-solver',
                 'medium_com_short-accounts-make-long-friends',
                 'medium_com_simple-blur',
@@ -815,6 +819,7 @@ return [
                 'medium_com_wine-from-kalbodia---episode-1',
                 'medium_com_word-chain-game',
                 'medium_com_wordle-solution-regex',
+                'medium_com_ye_-an_th_r-w_rd-se_rch',
             ],
             'puzzle/community/hard/' => [
                 'hard_com_24-the-long-game',
@@ -906,7 +911,7 @@ return [
                 'hard_com_mini-sudoku-solver',
                 'hard_com_misere-nim',
                 'hard_com_monte-carlo-tree-search-exercise',
-                'hard_com_mrs--knuth---part-iii', 
+                'hard_com_mrs--knuth---part-iii',
                 'hard_com_musical-intervals',
                 'hard_com_mystery-sums',
                 'hard_com_neighbor-sum-grids',
@@ -1078,6 +1083,7 @@ return [
                 'event_winter-challenge-2023-q03',
                 'event_winter-challenge-2023-q05',
                 'event_spring-challenge-2024-q05',
+                'event_spring-challenge-2025',
             ],
             'puzzle/cg/easy/' => [
                 'easy_cg_mars-lander-episode-1',
@@ -1119,8 +1125,10 @@ return [
                 'medium_com_find-the-winning-strategy',
                 'medium_com_forest-fire',
                 'medium_com_minesweeper-1',
+                'medium_com_polyominoes',
                 'medium_com_rush-hour',
                 'medium_com_sky-maze-adventures-1',
+                'medium_com_tetrasticks',
             ],
             'puzzle/community/hard/' => [
                 'hard_com_11-puzzle',
@@ -1140,4 +1148,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.03.02: 'easy_com_sign-programming-language',
+// Note: last puzzle added on 25.04.06: 'easy_com_squash-pi',
