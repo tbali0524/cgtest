@@ -12,4 +12,6 @@
 **/*.pdb
 **/*.jar
 **/*.exe
+**/.bsp/
+**/.scala-build/
 Directory.Build.props

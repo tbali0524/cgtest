@@ -1163,7 +1163,9 @@ foreach ($config['languages'] as $language) {
             ($config['verbose'] and !$config['dry-run'] and !$config['lang-versions'])
             or ($config['lang-versions'] and !$config['verbose'])
         ) {
-            if (($execOutput[0] ?? '') != '') {
+            if (($language == 'scala') and (($execOutput[1] ?? '') != '')) {
+                $langVersionInfo = $execOutput[1];
+            } elseif (($execOutput[0] ?? '') != '') {
                 $langVersionInfo = $execOutput[0];
             } elseif (($execOutput[1] ?? '') != '') {
                 $langVersionInfo = $execOutput[1];

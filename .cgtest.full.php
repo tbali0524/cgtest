@@ -282,6 +282,7 @@ return [
                 'easy_com_count-as-i-count',
                 'easy_com_count-your-coins',
                 'easy_com_couples-picture-frame',
+                'easy_com_crack-the-trio-code',
                 'easy_com_crazy-list',
                 'easy_com_create-the-longest-sequence-of-1s',
                 'easy_com_create-turn-here-signs',
@@ -400,6 +401,7 @@ return [
                 'easy_com_popularity-of-each-activity',
                 'easy_com_prefix-code',
                 'easy_com_probability-for-dummies',
+                'easy_com_production-pipeline',
                 'easy_com_queen-control',
                 'easy_com_random-walk',
                 'easy_com_rectangle-partition',
@@ -576,6 +578,7 @@ return [
                 'medium_com_count-as-i-count-2',
                 'medium_com_counting-squares-on-pegs',
                 'medium_com_count-of-primes-in-a-number-grid',
+                'medium_com_cows-in-a-maze',
                 'medium_com_criminal',
                 'medium_com_crossword',
                 'medium_com_custom-game-of-life',
@@ -625,6 +628,7 @@ return [
                 'medium_com_fractal-image-recognition',
                 'medium_com_frequency-based-decryption',
                 'medium_com_frobenius-coin-puzzle',         // removed puzzle
+                'medium_com_frog-date',
                 'medium_com_frog-exchange',
                 'medium_com_fun-with-cgx-expressions',
                 'medium_com_fun-with-set-theory',
@@ -1148,4 +1152,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.04.06: 'easy_com_squash-pi',
+// Note: last puzzle added on 25.04.22: 'medium_com_frog-date',
