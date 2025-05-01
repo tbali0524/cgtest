@@ -1,0 +1,65 @@
+Ye_ An_th_r W_rd Se_rch
+
+medium_com_ye_-an_th_r-w_rd-se_rch
+https://www.codingame.com/training/medium/ye_-an_th_r-w_rd-se_rch
+https://www.codingame.com/contribute/view/493839424591127bcdbb6371018895b7bf742
+
+A contribution by Timinator
+Approved by odaxav,EchoesOfEven,darkhorse64
+
+Goal
+This puzzle is part of a multi-part Algorithm X tutorial and is meant to be done per the guidance in the following playground:
+
+https://www.codingame.com/playgrounds/156252
+
+Although you may use any language you wish to complete this puzzle, the playground is written for the Python programmer. Most importantly, the reusable Algorithm X Solver provided in the playground is written in Python (some language translations are provided). If you follow the directions in the playground, this puzzle should be significantly easier than it might be otherwise.
+
+Task Overview:
+
+While cleaning out the storage closet at CodinGame HQ, a handful of word search puzzles were found. Due to water damage, some letters on the grid are smudged and illegible. Find the words and print out the solution. Words can be hidden in any direction, including horizontally, vertically, diagonally, forward or backward.
+
+Input
+Line 1: Two space-separated integers, the height and width of the word search grid.
+Next height lines: A row of letters in the word search grid. Illegible letters are represented with a (.).
+Next line: A string words, a sequence of space-separated words hidden in the word search.
+
+Output
+height lines: A row of the solution grid with the hidden words displayed. All locations that are not part of the solution must be replaced with a space. Do NOT trim any trailing spaces from the lines of your solution.
+
+Constraints
+• 7 <= height, width < 50.
+• All test cases have a unique solution.
+
+Example
+
+Input
+10 10
+...G......
+.H...C....
+..N.......
+......U..H
+...H......
+........K.
+.......H..
+I...Q.....
+F.V.......
+.P..J.....
+ANTELOPE CROCODILE
+
+Output
+          
+     C    
+     R    
+     O    
+     C    
+ANTELOPE  
+     D    
+     I    
+     L    
+     E    
+
+Difficulty
+Medium
+
+Tags
+Backtracking, Algorithm X, Exact Cover

@@ -1,0 +1,7 @@
+ABHJ
+5 8
+..O..OO.
+..O...O.
+O.OO....
+O....O.O
+OOO..OOO

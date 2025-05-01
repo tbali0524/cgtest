@@ -10,7 +10,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
-_The repository also contains __6700+__ test cases for __890+__ `CodinGame` puzzles and __800+__ puzzle statements._
+_The repository also contains __7000+__ test cases for __930+__ `CodinGame` puzzles and __820+__ puzzle statements._
 
 ## Intro
 
@@ -27,6 +27,7 @@ The test runner works for any non-interactive code that reads from a standard in
 At CG, you don't have to bother about setting up any local development environment: just start to write your code directly on the CG website using your browser, run there the provided test cases (for solo puzzles), and submit your solution when you feel ready.
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
+See [this short overview](dev-env-local.md) how to setup local dev environment for various languages on Windows and on Linux.
 
 The repo contains almost all public test cases for all solo puzzles (see `.tests/input` and `.tests/expected` directories).
 

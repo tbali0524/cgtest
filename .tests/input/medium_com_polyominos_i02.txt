@@ -1,0 +1,6 @@
+AILN
+4 11
+OO....OOO..
+.O.OO.OO.OO
+OO..O.....O
+O...OO....O

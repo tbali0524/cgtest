@@ -1152,4 +1152,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.04.22: 'medium_com_frog-date',
+// Note: last puzzle added on 25.04.24: 'easy_com_production-pipeline',
