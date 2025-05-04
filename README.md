@@ -27,7 +27,7 @@ The test runner works for any non-interactive code that reads from a standard in
 At CG, you don't have to bother about setting up any local development environment: just start to write your code directly on the CG website using your browser, run there the provided test cases (for solo puzzles), and submit your solution when you feel ready.
 
 However, sometimes you might want to setup and use your own local dev environment. Having to copy (even with autosync tools) your code to the CG online IDE just to run some tests can be tedious.
-See [this short overview](dev-env-local.md) how to setup local dev environment for various languages on Windows and on Linux.
+See [this short doc](HOWTO-install-local-dev-env.md) how to setup a local development environment for various programming languages on Windows or on Linux.
 
 The repo contains almost all public test cases for all solo puzzles (see `.tests/input` and `.tests/expected` directories).
 
@@ -164,16 +164,14 @@ ___SPOILER ALERT:___ In the repository, there are solution source code files in 
 
 * CGTest does not use containers or any other environment separation when running your tests. If your code does silly things, like deleting files, then CGTest will NOT prevent it doing the damage.
 
-* Building `C#` or `VB.NET` source code generates lots of files in the `.tests/temp/bin` and `.tests/temp/obj` directories. CGTest does not delete these directories with the `--clean` command-line option.
-
-* OCamlopt creates build files (`*.cm?`, `*.o`) in the source folder. CGTest does not delete these files with the `--clean` command-line option.
-
 ## Known issues
 
 I don't have local dev environment for all the 27 languages Codingame supports. Therefore, some of the languages default settings are not properly set up. You need to create a section for these languages in the config file.
 
 * I could not yet set up to run the tester properly for: `objective-c` and `swift`
 * Running `bash` script works in WSL or in Linux, but I ran into issues with vanilla Windows using a _'bash for Windows'_ package such as `MSYS2`.
+* The compiled `jar` files for `kotlin` keep locked for writing and can be deleted only after a reboot.
+* Scala runner is very slow to compile and simetime hangs when running a second test case.
 
 _If you have experience in how to set up any of the other languages, please send a message, or give a Pull Request (for example with a config file with proper command-line syntax)._
 

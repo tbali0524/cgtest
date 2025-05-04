@@ -1,7 +1,7 @@
 <?php
 
 /**
- * CGTest v1.16.0 by Balint Toth [TBali]
+ * CGTest v1.17.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * configuration file
@@ -23,7 +23,7 @@ return [
     // 'clean' => false,
     // 'create' => '',
     // 'test-case' => 'all',
-    // 'slowThreshold' => 5, // in seconds
+    // 'slowThreshold' => 10, // in seconds
     // 'inputPath' => '.tests/input/',
     // 'inputPattern' => '%p_i%t.txt',
     // 'expectedPath' => '.tests/expected/',
@@ -113,6 +113,9 @@ return [
     //     'cleanPatterns' => [
     //         'fileNameWithPathOrPattern',
     //     ],
+    //     'cleanDirectoryPatterns' => [
+    //         'directoryNameWithPathOrPattern',
+    //     ],
     //     'excludePuzzles' => [
     //         'puzzleName',
     //     ],
@@ -127,13 +130,15 @@ return [
     //         ],
     //     ],
     // ],
-    // == Patterns available in 'buildCommand', 'runCommand', 'cleanPatterns':
+    // == Patterns available in 'buildCommand', 'runCommand', 'cleanPatterns', 'cleanDirectoryPatterns':
     //     %l languageName
     //     %p puzzleName
     //     %o outputPath
     //     %b buildPath
     // == Patterns available in 'buildCommand', 'runCommand':
     //     %s sourceFileName (with path and extension)
+    // == Patterns available in 'cleanPatterns', 'cleanDirectoryPatterns':
+    //     %d sourcePath
     // == Additional test cases for a single language:
     'c++' => [
         'includePuzzles' => [
@@ -1129,7 +1134,7 @@ return [
                 'medium_com_find-the-winning-strategy',
                 'medium_com_forest-fire',
                 'medium_com_minesweeper-1',
-                'medium_com_polyominoes',
+                'medium_com_polyominos',
                 'medium_com_rush-hour',
                 'medium_com_sky-maze-adventures-1',
                 'medium_com_tetrasticks',

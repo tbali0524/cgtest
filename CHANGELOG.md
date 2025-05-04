@@ -19,6 +19,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet.
 
+## [v1.17.0](https://github.com/tbali0524/cgtest/releases/v1.17.0) - 2025-05-04
+
+### Added
+
+- More test cases added.
+- Docs added: how to setup a local dev environment for various languages on Windows or on Linux.
+- `cleanDirectoryPatterns` configuration option added to the per language section.
+- `%d` patterns added to `cleanPatterns` and `cleanDirectoryPatterns` configuration options.
+
+### Changed
+
+- Default config for `c#` and `vb.net` tweaked to shorten build times.
+
+### Fixed
+
+- `--clean` option now properly cleans temporary directories created by `c#` and `ocamlopt`.
+
 ## [v1.16.0](https://github.com/tbali0524/cgtest/releases/v1.16.0) - 2024-07-20
 
 ### Added

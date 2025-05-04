@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.16.0 by Balint Toth [TBali]
+ * CGTest v1.17.0 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * For usage, see:
@@ -10,6 +10,8 @@
  *
  * Latest version: https://github.com/tbali0524/cgtest
  */
+
+// phpcs:disable PSR1.Files.SideEffects
 
 declare(strict_types=1);
 
@@ -21,7 +23,7 @@ namespace TBali\CGTest;
 // And the code grew organically a bit larger than I originally planned.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.16.0-dev';
+$version = 'v1.17.0';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -118,7 +120,7 @@ $defaultConfig = [
     'clean' => false,
     'create' => '',
     'test-case' => 'all',
-    'slowThreshold' => 5, // in seconds
+    'slowThreshold' => 10, // in seconds
     'inputPath' => '.tests/input/',
     'inputPattern' => '%p_i%t.txt',
     'expectedPath' => '.tests/expected/',
@@ -143,6 +145,7 @@ $defaultConfig = [
         ),
         'runCommand' => '%s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'c' => [
         'sourcePath' => 'c/',
@@ -153,28 +156,36 @@ $defaultConfig = [
         'buildCommand' => 'gcc -std=c17 -o %b%p_%l.exe %s -lm -lpthread',
         'runCommand' => '%b%p_%l.exe',
         'altVersionCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang-18 --version'
+            ? 'clang-19 --version'
             : 'clang --version'
         ),
         'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang-18 -std=c17 -o %b%p_%l.exe %s -lm'
+            ? 'clang-19 -std=c17 -o %b%p_%l.exe %s -lm'
             : 'clang -std=c17 -o %b%p_%l.exe %s'
         ),
         'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
+        'cleanDirectoryPatterns' => [],
     ],
     'c#' => [
         'sourcePath' => 'c#/',
         'sourceExtension' => '.cs',
         'codinGameVersion' => '.NET 8.0.401',
         'versionCommand' => 'dotnet --version',
-        'buildCommand' => 'dotnet publish %b%p' . $csprojExtension
-            . ' -o %b --nologo --use-current-runtime --sc -v:q',
-        'runCommand' => '%b%p' . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
+        'buildCommand' => 'dotnet publish %b%p_%l' . $csprojExtension
+            . ' -o %b --nologo --use-current-runtime --sc false -v:q',
+        'runCommand' => '%b%p_%l' . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
         'note' => '.NET SDK',
         'cleanPatterns' => [
-            '%b%p' . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
-            '%b%p.pdb',
+            '%b%p_%l' . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
+            '%b%p_%l.pdb',
+            // '%b%p_%l.dll',
+            // '%b%p_%l.deps.json',
+            // '%b%p_%l.runtimeconfig.json',
+        ],
+        'cleanDirectoryPatterns' => [
+            '%bbin',
+            '%bobj',
         ],
     ],
     'c++' => [
@@ -189,15 +200,16 @@ $defaultConfig = [
         ),
         'runCommand' => '%b%p_%l.exe',
         'altVersionCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang++-18 --version'
+            ? 'clang++-19 --version'
             : 'clang++ --version'
         ),
         'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang++-18 -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm'
+            ? 'clang++-19 -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm'
             : 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s'
         ),
         'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
+        'cleanDirectoryPatterns' => [],
     ],
     'clojure' => [
         'sourcePath' => 'clojure/',
@@ -210,6 +222,7 @@ $defaultConfig = [
         'altBuildCommand' => '',
         'altRunCommand' => 'clojure -X Solution/main %bSolution.clj',
         'cleanPatterns' => ['%bSolution.clj'],
+        'cleanDirectoryPatterns' => [],
     ],
     'd' => [
         'sourcePath' => 'd/',
@@ -223,6 +236,7 @@ $defaultConfig = [
             '%b%p_%l.obj',
             '%b%p_%l.o',
         ],
+        'cleanDirectoryPatterns' => [],
     ],
     'dart' => [
         'sourcePath' => 'dart/',
@@ -232,6 +246,7 @@ $defaultConfig = [
         'buildCommand' => 'dart compile exe -o %b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
+        'cleanDirectoryPatterns' => [],
     ],
     'f#' => [
         'sourcePath' => 'f#/',
@@ -242,6 +257,7 @@ $defaultConfig = [
         'runCommand' => 'dotnet fsi %s',
         'note' => '.NET SDK',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'go' => [
         'sourcePath' => 'go/',
@@ -251,6 +267,7 @@ $defaultConfig = [
         'buildCommand' => 'go build -o %b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
+        'cleanDirectoryPatterns' => [],
     ],
     'groovy' => [
         'sourcePath' => 'groovy/',
@@ -260,6 +277,7 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'groovy %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'haskell' => [
         'sourcePath' => 'haskell/',
@@ -273,6 +291,7 @@ $defaultConfig = [
             '%bMain.o',
             '%bMain.hi',
         ],
+        'cleanDirectoryPatterns' => [],
     ],
     'java' => [
         'sourcePath' => 'java/',
@@ -282,6 +301,7 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'java %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'javascript' => [
         'sourcePath' => 'javascript/',
@@ -292,6 +312,7 @@ $defaultConfig = [
         'runCommand' => 'node -r polyfill.js %s',
         'note' => 'Node.js',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'kotlin' => [
         'sourcePath' => 'kotlin/',
@@ -301,6 +322,7 @@ $defaultConfig = [
         'buildCommand' => 'kotlinc -include-runtime -d %b%p_%l.jar %s',
         'runCommand' => 'java -jar %b%p_%l.jar',
         'cleanPatterns' => ['%b%p_%l.jar'],
+        'cleanDirectoryPatterns' => [],
     ],
     'lua' => [
         'sourcePath' => 'lua/',
@@ -310,6 +332,7 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'lua %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     // TODO: fix buildCommand, runCommand, cleanPatterns
     'objective-c' => [
@@ -321,6 +344,7 @@ $defaultConfig = [
             . ' -fconstant-string-class=NSConstantString %s',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
+        'cleanDirectoryPatterns' => [],
     ],
     // TODO: try out also in Windows:
     'ocaml' => [
@@ -330,13 +354,13 @@ $defaultConfig = [
         'versionCommand' => 'ocamlopt -v',
         'buildCommand' => 'ocamlopt %s -o %b%p_%l.exe',
         'runCommand' => '%b%p_%l.exe',
-        // TODO: fix that ocamlopt creates interim files in source directory, --clean does not delete them
         'cleanPatterns' => [
-            '%b%p_%l.cmi',
-            '%b%p_%l.cmx',
-            '%b%p_%l.o',
             '%b%p_%l.exe',
+            '%d%p.cmi',
+            '%d%p.cmx',
+            '%d%p.o',
         ],
+        'cleanDirectoryPatterns' => [],
     ],
     'pascal' => [
         'sourcePath' => 'pascal/',
@@ -350,6 +374,7 @@ $defaultConfig = [
             '%b%p_%l.exe',
             '%b%p.o',
         ],
+        'cleanDirectoryPatterns' => [],
     ],
     'perl' => [
         'sourcePath' => 'perl/',
@@ -359,6 +384,7 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'perl %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'php' => [
         'sourcePath' => 'php/',
@@ -372,6 +398,7 @@ $defaultConfig = [
         'altRunCommand' => 'php -d opcache.enable_cli=0 -d xdebug.mode=off %s',
         'altNote' => 'JIT off',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'python' => [
         'sourcePath' => 'python/',
@@ -384,6 +411,7 @@ $defaultConfig = [
         'altBuildCommand' => '',
         'altRunCommand' => 'python3.12 %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'ruby' => [
         'sourcePath' => 'ruby/',
@@ -393,6 +421,7 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'ruby %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'rust' => [
         'sourcePath' => 'rust/',
@@ -405,6 +434,7 @@ $defaultConfig = [
             '%b%p_%l.exe',
             '%b%p_%l.pdb',
         ],
+        'cleanDirectoryPatterns' => [],
     ],
     'scala' => [
         'sourcePath' => 'scala/',
@@ -414,6 +444,10 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'scala -cp %b %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [
+            '%d.bsp',
+            '%d.scala-build',
+        ],
     ],
     // TODO: fix buildCommand, runCommand, cleanPatterns
     'swift' => [
@@ -424,17 +458,19 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'swift %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'typescript' => [
         'sourcePath' => 'typescript/',
         'sourceExtension' => '.ts',
         'codinGameVersion' => 'node.js v20.17.0; Typescript Compiler Version 5.6.2',
         'versionCommand' => 'node --version',
-        // 'versionCommand' => 'tsc --version',
+        // 'versionCommand' => 'npx tsc --version',
         'buildCommand' => '',
         'runCommand' => 'node -r polyfill.js %s',
         'note' => 'Node.js',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
     'vb.net' => [
         'sourcePath' => 'vb.net/',
@@ -442,12 +478,16 @@ $defaultConfig = [
         'codinGameVersion' => '.NET 8.0.401',
         'versionCommand' => 'dotnet --version',
         'buildCommand' => 'dotnet publish %b' . $vbProjectName . $vbprojExtension
-            . ' -o %b --nologo --use-current-runtime --sc -v:q', // -v:q
+            . ' -o %b --nologo --use-current-runtime --sc false -v:q',
         'runCommand' => '%b' . $vbProjectName . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
         'note' => '.NET SDK',
         'cleanPatterns' => [
             '%b' . $vbProjectName . (PHP_OS_FAMILY == 'Windows' ? '.exe' : ''),
             '%b' . $vbProjectName . '.pdb',
+        ],
+        'cleanDirectoryPatterns' => [
+            '%bbin',
+            '%bobj',
         ],
     ],
     // unsupported on CodinGame
@@ -460,6 +500,7 @@ $defaultConfig = [
         'buildCommand' => 'cobc -x -o%b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
+        'cleanDirectoryPatterns' => [],
     ],
     'fortran' => [
         'sourcePath' => 'fortran/',
@@ -472,6 +513,7 @@ $defaultConfig = [
         'altBuildCommand' => 'gfortran-13 -o%b%p_%l.exe %s',
         'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
+        'cleanDirectoryPatterns' => [],
     ],
     // TODO: check
     'r' => [
@@ -482,6 +524,7 @@ $defaultConfig = [
         'buildCommand' => '',
         'runCommand' => 'Rscript %s',
         'cleanPatterns' => [],
+        'cleanDirectoryPatterns' => [],
     ],
 ];
 foreach ($defaultConfig['languages'] as $language) {
@@ -510,7 +553,7 @@ $reservedConfigKeys = array_merge(
 $languageNonEmptyStringConfigKeys = ['sourceExtension', 'runCommand'];
 $languageOptionalStringConfigKeys = ['sourcePath', 'codinGameVersion', 'versionCommand', 'buildCommand',
     'note', 'altVersionCommand', 'altBuildCommand', 'altRunCommand', 'altNote'];
-$languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles', 'runOnlyPuzzles'];
+$languageArrayConfigKeys = ['excludePuzzles', 'includePuzzles', 'runOnlyPuzzles', 'cleanPatterns', 'cleanDirectoryPatterns'];
 $csprojTemplate =
 "<Project Sdk=\"Microsoft.NET.Sdk\">
   <ItemGroup>
@@ -521,7 +564,7 @@ $csprojTemplate =
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <PublishTrimmed>true</PublishTrimmed>
+    <PublishTrimmed>false</PublishTrimmed>
     <PublishReadyToRun>true</PublishReadyToRun>
     <PublishSingleFile>true</PublishSingleFile>
   </PropertyGroup>
@@ -1299,10 +1342,17 @@ foreach ($config['languages'] as $language) {
             // --------------------------------------------------------------------
             // clean temporary and output files from previous test run
             if ($config['clean']) {
+                $sourceDir = $config[$language]['sourcePath'] == '' ? $sourcePath : $config[$language]['sourcePath'];
                 foreach ($config[$language]['cleanPatterns'] as $patternToClean) {
+                    if (
+                        in_array($patternToClean, ['', '.', '%o', '%b', '%d', '%s', 'cgtest.php', '.cgtest.php'], true)
+                        or in_array($patternToClean[0], ['/', '\\', '~'], true)
+                    ) {
+                        continue;
+                    }
                     $tempFileName = str_replace(
-                        ['%l', '%p', '%o', '%b'],
-                        [$language, $puzzleName, $config['outputPath'], $config['buildPath']],
+                        ['%l', '%p', '%o', '%b', '%d'],
+                        [$language, $puzzleName, $config['outputPath'], $config['buildPath'], $sourceDir],
                         $patternToClean
                     );
                     if (file_exists($tempFileName)) {
@@ -1318,6 +1368,26 @@ foreach ($config['languages'] as $language) {
                             }
                         }
                     }
+                }
+                foreach ($config[$language]['cleanDirectoryPatterns'] as $patternToClean) {
+                    if (
+                        in_array($patternToClean, ['', '.', '..', '%o', '%b', '%d', '%s', 'bin', 'statements',
+                            '.github', '.pic', '.tests', '.tools', '.vscode', 'node_modules', 'vendor',
+                            'bot', 'clash', 'codegolf', 'contest', 'optim', 'puzzle', $language], true)
+                        or in_array($patternToClean[0], ['/', '\\', '~'], true)
+                    ) {
+                        continue;
+                    }
+                    $tempDirName = str_replace(
+                        ['%l', '%p', '%o', '%b', '%d'],
+                        [$language, $puzzleName, $config['outputPath'], $config['buildPath'], $sourceDir],
+                        $patternToClean
+                    );
+                    [$countDeleted, $countUnsuccessful] = deleteDirectory($tempDirName,
+                        $warnTag, $infoTag, $ansiWarn, $ansiReset, $config['verbose'], 0, 0
+                    );
+                    $languageStats[$language]['countDeletedFiles'] += $countDeleted;
+                    $totalUnsuccessfulDeleteFiles += $countUnsuccessful;
                 }
             }
             // --------------------------------------------------------------------
@@ -1367,7 +1437,7 @@ foreach ($config['languages'] as $language) {
             // Special case for C# and VB.NET
             if ((($language == 'c#') or ($language == 'vb.net')) and !$config['dry-run']) {
                 if ($language == 'c#') {
-                    $csprojFilename = $config['buildPath'] . $puzzleName . $csprojExtension;
+                    $csprojFilename = $config['buildPath'] . $puzzleName . '_' . $language . $csprojExtension;
                 } else {
                     $csprojFilename = $config['buildPath'] . $vbProjectName . $vbprojExtension;
                 }
@@ -1991,11 +2061,13 @@ if ($config['clean']) {
     if ($languageStats['totals']['countDeletedFiles'] > 0) {
         echo $infoTag . 'Deleted ' . $ansiInfo . $languageStats['totals']['countDeletedFiles'] . $ansiReset
             . ' temporary and test output file' . ($languageStats['totals']['countDeletedFiles'] > 1 ? 's' : '')
-            . '.' . PHP_EOL;
+            . ' and director' . ($languageStats['totals']['countDeletedFiles'] > 1 ? 'ies' : 'y') . '.' . PHP_EOL;
     }
     if ($totalUnsuccessfulDeleteFiles > 0) {
         echo $warnTag . 'Failed to delete ' . $ansiWarn . $totalUnsuccessfulDeleteFiles . $ansiReset
-            . ' file' . ($totalUnsuccessfulDeleteFiles > 1 ? 's' : '') . '.' . PHP_EOL . PHP_EOL;
+            . ' file' . ($totalUnsuccessfulDeleteFiles > 1 ? 's' : '')
+            . ' or director' . ($languageStats['totals']['countDeletedFiles'] > 1 ? 'ies' : 'y') . '.' . PHP_EOL
+            . PHP_EOL;
         exit(1);
     }
     if ($languageStats['totals']['countDeletedFiles'] == 0) {
@@ -2081,4 +2153,46 @@ if (!$config['dry-run']) {
     echo $ansiGreenInv . str_pad(' [OK] All tests passed.', $statusWidth) . $ansiReset . PHP_EOL . PHP_EOL;
 }
 exit(0);
+// --------------------------------------------------------------------
+// Recursively delete directory and its contents
+function deleteDirectory(string $dirPath, string $warnTag, string $infoTag, string $ansiWarn, string $ansiReset, $verbose,
+    int $countDeleted = 0, int $countUnsuccessful = 0
+): array {
+    if (is_dir($dirPath)) {
+        $files = scandir($dirPath);
+        foreach ($files as $file) {
+            if ($file !== '.' && $file !== '..') {
+                $filePath = $dirPath . '/' . $file;
+                if (is_dir($filePath)) {
+                    deleteDirectory($filePath, $warnTag, $infoTag, $ansiWarn, $ansiReset, $verbose, $countDeleted, $countUnsuccessful);
+                } else {
+                    $unlinkResult = unlink($filePath);
+                    if (!$unlinkResult) {
+                        ++$countUnsuccessful;
+                        echo $warnTag . 'Could not delete file: '
+                            . $ansiWarn . $filePath . $ansiReset . PHP_EOL;
+                    } else {
+                        ++$countDeleted;
+                        if ($verbose) {
+                            echo $infoTag . 'Deleted file: ' . $filePath . PHP_EOL;
+                        }
+                    }
+                }
+            }
+        }
+        $unlinkResult = rmdir($dirPath);
+        if (!$unlinkResult) {
+            ++$countUnsuccessful;
+            echo $warnTag . 'Could not delete directory: '
+                . $ansiWarn . $dirPath . $ansiReset . PHP_EOL;
+        } else {
+            ++$countDeleted;
+            if ($verbose) {
+                echo $infoTag . 'Deleted directory: ' . $dirPath . PHP_EOL;
+            }
+        }
+
+    }
+    return [$countDeleted, $countUnsuccessful];
+}
 // --------------------------------------------------------------------
