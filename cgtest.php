@@ -23,7 +23,7 @@ namespace TBali\CGTest;
 // And the code grew organically a bit larger than I originally planned.
 // --------------------------------------------------------------------
 // init counters, start global timer
-$version = 'v1.17.0';
+$version = 'v1.17.1-dev';
 $zeroLanguageStat = [
     'countLanguages' => 0,
     'countSkippedLanguages' => 0,
@@ -298,9 +298,17 @@ $defaultConfig = [
         'sourceExtension' => '.java',
         'codinGameVersion' => 'openjdk 21.0.4',
         'versionCommand' => 'java --version',
+        // ... cannot use this way: Solution and Player classnames are both in use:
+        // 'buildCommand' => 'javac %s -d %b',
+        // 'runCommand' => 'java --class-path %b Solution',
         'buildCommand' => '',
         'runCommand' => 'java %s',
-        'cleanPatterns' => [],
+        'cleanPatterns' => [
+            // '%bPlayer.class',
+            // '%bPlayer$Mode.class',
+            // '%bSolution.class',
+            // '%bSolution$Mode.class',
+        ],
         'cleanDirectoryPatterns' => [],
     ],
     'javascript' => [
@@ -440,9 +448,15 @@ $defaultConfig = [
         'sourcePath' => 'scala/',
         'sourceExtension' => '.scala',
         'codinGameVersion' => 'Scala code runner version 2.13.5',
-        'versionCommand' => 'scala --version',
+        'versionCommand' => (PHP_OS_FAMILY != 'Windows'
+            ? 'scala --version'
+            : 'scala-cli --version'
+        ),
         'buildCommand' => '',
-        'runCommand' => 'scala -cp %b %s',
+        'runCommand' =>  (PHP_OS_FAMILY != 'Windows'
+            ? 'scala -cp %b %s'
+            : 'scala-cli run %s'
+        ),
         'cleanPatterns' => [],
         'cleanDirectoryPatterns' => [
             '%d.bsp',

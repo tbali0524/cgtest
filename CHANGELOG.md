@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Nothing yet.
+- Default config for `scala` tweaked to use newer cli runner on Windows.
 
 ### Fixed
 

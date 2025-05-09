@@ -5,9 +5,9 @@ No IDE is needed, only the compilers/interpreters, to be invoked via CLI.
 
 Instructions for [Windows](#windows) or [Linux](#linux)
 
-Last updated: _2025.05.04_
+Last updated: _2025.05.09_
 
-Version numbers are current as of _2025.05.04_.
+Version numbers are current as of _2025.05.09_.
 
 ## Windows
 
@@ -149,7 +149,7 @@ dotnet fsi --version
 ### Go
 
 * Homepage: <https://go.dev/>
-* Version: `go version go1.24.2 windows/amd64`
+* Version: `go version go1.24.3 windows/amd64`
 * Default path: `C:\Program Files\Go\bin\go.exe`
 
 ```pwsh
@@ -241,7 +241,7 @@ kotlinc -version
 
 * Homepage: <https://www.lua.org/>
 * Version: `Lua 5.4.6  Copyright (C) 1994-2023 Lua.org, PUC-Rio`
-* Default path: `C:\Users\balint.toth\AppData\Local\Programs\Lua\bin\lua.exe`
+* Default path: `C:\Users\${Env:Username}\AppData\Local\Programs\Lua\bin\lua.exe`
 
 ```pwsh
 winget search DEVCOM.Lua
@@ -256,7 +256,18 @@ winget update DEVCOM.Lua
 
 ### OCaml
 
-* `cgtest` currently does not work for `OCaml` puzzles on Windows.
+* Homepage: <https://ocaml.org/>
+* Version: `The OCaml native-code compiler, version 5.3.0`
+* Recommended path: `C:\tools\FPC\bin\i386-Win32\fpc.exe`
+* Default path: `C:\Users\${Env:Username}\AppData\Local\opam\default\bin\ocamlopt.exe`
+* Requires git
+
+```pwsh
+winget install Git.Git OCaml.opam
+opam init -y
+(& opam env) -split '\r?\n' | ForEach-Object { Invoke-Expression $_ }
+ocamlopt --version
+```
 
 ### Pascal
 
@@ -293,7 +304,7 @@ winget update StrawberryPerl.StrawberryPerl
 * Also available: install as part of XAMPP (outdated): `winget search ApacheFriends.Xampp.8.2`
 * Install extensions with [PIE](https://github.com/php/pie) or install [XDebug](https://xdebug.org/) manually
 * Keep separate configs for "JIT enabled" and "XDebug enabled" runs.
-* Version: `PHP 8.4.6 (cli) (built: Apr  9 2025 09:45:15) (ZTS Visual C++ 2022 x64)`
+* Version: `PHP 8.4.7 (cli) (built: May  6 2025 14:12:45) (ZTS Visual C++ 2022 x64)`
 * Default path (if using XAMPP): `c:\xampp\php\php.exe`
 
 ```pwsh
@@ -307,7 +318,7 @@ winget update PHP.PHP.8.4
 
 * Homepage: <https://www.python.org/>
 * Version: `Python 3.13.3`
-* Default path: `C:\Users\{$Env:Username}\AppData\Local\Programs\Python\Python313\python.exe`
+* Default path: `C:\Users\${Env:Username}\AppData\Local\Programs\Python\Python313\python.exe`
 
 ```pwsh
 winget search Python.Python
@@ -359,6 +370,7 @@ rustup update stable
 
 ```pwsh
 scala --version
+scala-cli --version
 ```
 
 ### Swift
@@ -632,7 +644,7 @@ perl --version
 ### PHP
 
 * Already included in the default installation.
-* Version: `PHP 8.3.20 (cli) (built: Apr 10 2025 21:33:50) (NTS)`
+* Version: `PHP 8.3.21 (cli) (built: May  9 2025 06:27:43) (NTS)`
 
 ```sh
 php --version

@@ -16,7 +16,7 @@ _The repository also contains __7000+__ test cases for __930+__ `CodinGame` puzz
 
 __CGTest__ is a simple command-line tool to run tests in batch mode using your local dev and runtime environments. With a single command, you can run hundreds of tests for your code, even if written in __multiple languages__, for __multiple puzzles__ (or projects), and for __multiple test cases__ per puzzle.
 
-CGTest was successfully used for running `c`, `c#`, `c++`, `clojure`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `javascript`, `kotlin`, `lua`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust`, `scala`, `typescript` and `vb.net` tests both on Windows and on Linux, and additionally `bash` and `ocaml` on Linux. It should also work on almost any other computer system, including Mac.
+CGTest was successfully used for running `c`, `c#`, `c++`, `clojure`, `d`, `dart`, `f#`, `fortran`, `go`, `groovy`, `haskell`, `java`, `javascript`, `kotlin`, `lua`, `ocaml`, `pascal`, `perl`, `php`, `python`, `ruby`, `rust`, `scala`, `typescript` and `vb.net` tests both on Windows and on Linux, and additionally `bash` on Linux. It should also work on almost any other computer system, including Mac.
 
 The test runner works for any non-interactive code that reads from a standard input stream, and writes the result to the standard output stream. Using it for CodinGame puzzles is only one possible use case.
 

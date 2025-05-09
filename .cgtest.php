@@ -42,7 +42,6 @@ return [
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
         'bash',             // tested on Linux only
         // 'objective-c',   // untested
-        'ocaml',            // tested on Linux only
         // 'swift',         // untested
         ] : [], [
         'c',
@@ -59,6 +58,7 @@ return [
         'javascript',
         'kotlin',
         'lua',
+        'ocaml',
         'pascal',
         'perl',
         'php',

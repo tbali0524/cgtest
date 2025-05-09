@@ -42,7 +42,6 @@ return [
     'languages' => array_merge(PHP_OS_FAMILY != 'Windows' ? [
         'bash',             // tested on Linux only
         // 'objective-c',   // untested
-        'ocaml',            // tested on Linux only
         // 'swift',         // untested
     ] : [], [
         'c',
@@ -59,6 +58,7 @@ return [
         'javascript',
         'kotlin',
         'lua',
+        'ocaml',
         'pascal',
         'perl',
         'php',
@@ -481,6 +481,7 @@ return [
                 'easy_com_tile-a-floor',
                 'easy_com_tile-a-floor-differently',
                 'easy_com_treasure-hunt',
+                'easy_com_touching-balls',
                 'easy_com_tree-paths',
                 'easy_com_triangle-toggle',
                 'easy_com_tricky-number-verifier',
@@ -1157,4 +1158,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.04.24: 'easy_com_production-pipeline',
+// Note: last puzzle added on 25.05.04: 'easy_com_touching-balls',
