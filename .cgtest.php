@@ -147,9 +147,16 @@ return [
     //     'versionCommand' => 'rustc --version',
     //     'buildCommand' => 'rustc -C opt-level=3 --edition 2021 %s -o%b%p_%l.exe',
     //     'runCommand' => '%b%p_%l.exe',
+    //     'note' => '',
+    //     'altVersionCommand' => '',
+    //     'altBuildCommand' => 'rustc -g -C overflow-checks --edition 2021 %s -o%b%p_%l.exe',
+    //     'altRunCommand' => '',
+    //     'altNote' => 'DEBUG mode',
     //     'cleanPatterns' => [
     //         '%b%p_%l.exe',
     //         '%b%p_%l.pdb',
+    //     ],
+    //     'cleanDirectoryPatterns' => [
     //     ],
     //     'excludePuzzles' => [
     //     ],

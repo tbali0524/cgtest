@@ -5,9 +5,9 @@ No IDE is needed, only the compilers/interpreters, to be invoked via CLI.
 
 Instructions for [Windows](#windows) or [Linux](#linux)
 
-Last updated: _2025.05.09_
+Last updated: _2025.05.21_
 
-Version numbers are current as of _2025.05.09_.
+Version numbers are current as of _2025.05.21_.
 
 ## Windows
 
@@ -52,7 +52,7 @@ pacman -Sy msys2-keyring; pacman -Suy
 #### Using Clang
 
 * Homepage: <https://clang.llvm.org/>
-* Version: `clang version 20.1.4`
+* Version: `clang version 20.1.5`
 * Default path: `C:\Program Files\LLVM\bin\clang.exe`
 
 ```pwsh
@@ -66,7 +66,7 @@ winget update LLVM.LLVM
 
 * Homepage: <https://dotnet.microsoft.com/en-us/>
 * Install as part of __.NET__
-* Version: `dotnet 8.0.408` (LTS)
+* Version: `dotnet 8.0.409` (LTS)
 * Default path: `C:\Program Files\dotnet\dotnet.exe`
 
 ```pwsh
@@ -140,6 +140,7 @@ winget update Google.DartSDK
 
 * Install as part of __.NET__
 * See section __C\#__.
+* Version: `Microsoft (R) F# Interactive version 12.8.403.0 for F# 8.0`
 
 ```pwsh
 dotnet --version
@@ -209,7 +210,7 @@ winget update EclipseAdoptium.Temurin.21.JDK
 
 * Homepage: <https://javascript.info/>
 * Recommended runtime: [Node.js](https://nodejs.org/)
-* Version: `v22.15.0` (LTS)
+* Version: `v22.15.1` (LTS)
 * Default path: `C:\Program Files\nodejs\node.exe`
 
 ```pwsh
@@ -224,7 +225,7 @@ winget update OpenJS.NodeJS.LTS
 
 * Homepage: <https://kotlinlang.org/>
 * Download compiler from [GitHub](https://github.com/JetBrains/kotlin/releases/latest/)
-* Version: `Kotlin version 2.1.20-release-217 (JRE 21.0.7+6-LTS)`
+* Version: `kotlinc-jvm 2.1.21 (JRE 21.0.7+6-LTS)`
 * Recommended path: `C:\tools\kotlinc\bin\kotlinc.bat`
 * Requires Java JDK installed.
 * Update manually
@@ -324,7 +325,14 @@ winget update PHP.PHP.8.4
 winget search Python.Python
 winget install Python.Python.3.13  
 python --version
+pip --version
 winget update Python.Python.3.13
+python -m pip install --upgrade pip
+# add some basic packages 
+pip install numpy --upgrade
+pip install pandas --upgrade
+pip install scipy --upgrade
+pip list
 ```
 
 ### Ruby
@@ -364,13 +372,14 @@ rustup update stable
 ### Scala
 
 * Homepage: <https://www.scala-lang.org/>
-* Version: `ruby 3.4.3 (2025-04-14 revision d0b7e5b6a0) +PRISM [x64-mingw-ucrt]`
-* Default path: `C:\Users\{$Env:Username}\AppData\Local\Coursier\data\bin\scala.bat`
+* Version: `Scala version (default): 3.6.4`
+* Default path: `C:\Users\{$Env:Username}\AppData\Local\Coursier\data\bin\scala-cli.bat`
 * Update manually
 
 ```pwsh
 scala --version
 scala-cli --version
+cs update
 ```
 
 ### Swift
@@ -454,7 +463,7 @@ clang-19 --version
 ### C\#
 
 * Install as part of __.NET__
-* Version: `dotnet 8.0.115`
+* Version: `dotnet 8.0.116`
 
 ```sh
 apt list dotnet-sdk-8.0
@@ -498,7 +507,7 @@ dmd --version
 ### Dart
 
 * install & update manually
-* Version: `Dart SDK version: 3.7.3 (stable) (None) on "linux_x64"`
+* Version: `Dart SDK version: 3.8.0 (stable) (None) on "linux_x64"`
 
 ```sh
 sudo apt-get update && sudo apt-get install apt-transport-https
@@ -512,7 +521,7 @@ dart --version
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 8.0.115`
+* Version: `dotnet 8.0.116`
 
 ```sh
 dotnet --version
@@ -532,7 +541,7 @@ go version
 
 * Default Groovy in Ubuntu 24.04 is outdated v2.4: `apt list groovy`
 * Install with [SDKMan!](https://sdkman.io/)
-* Version: `Groovy Version: 4.0.26 JVM: 21.0.6 Vendor: Ubuntu OS: Linux`
+* Version: `Groovy Version: 4.0.26 JVM: 21.0.7 Vendor: Ubuntu OS: Linux`
 
 ```sh
 curl -s "https://get.sdkman.io" | bash
@@ -559,7 +568,7 @@ ghcup tui
 
 ### Java
 
-* Version: `OpenJDK Runtime Environment (build 21.0.6+7-Ubuntu-124.04.1)`
+* Version: `OpenJDK Runtime Environment (build 21.0.7+6-Ubuntu-0ubuntu124.04)`
 
 ```sh
 apt search openjdk-21
@@ -579,6 +588,7 @@ fnm --version
 fnm install 22
 node -v
 npm -v
+corepack -v
 corepack enable yarn
 yarn -v
 corepack enable pnpm
@@ -589,7 +599,7 @@ pnpm -v
 
 * Install with [SDKMan!](https://sdkman.io/)
 * See Section __Groovy__
-* Version: `kotlinc-jvm 2.1.20 (JRE 21.0.6+7-Ubuntu-124.04.1)`
+* Version: `kotlinc-jvm 2.1.21 (JRE 21.0.7+6-Ubuntu-0ubuntu124.04)`
 
 ```sh
 sdk list kotlin
@@ -695,7 +705,7 @@ rustup update stable
 * Default Scala in Ubuntu 24.04 is outdated v2.11: `apt list scala`
 * Install with [SDKMan!](https://sdkman.io/)
 * See Section __Groovy__
-* Version: `Scala version (default): 3.6.4`
+* Version: `Scala version (default): 3.7.0`
 
 ```sh
 sdk list scala
@@ -723,7 +733,7 @@ npm update -g
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 8.0.115`
+* Version: `dotnet 8.0.116`
 
 ```sh
 dotnet --version

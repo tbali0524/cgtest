@@ -1,0 +1,5 @@
+ADD cgx 1
+REPEAT 4
+ADD cgx 2
+SUB cgx 3
+EXIT

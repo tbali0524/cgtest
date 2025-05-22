@@ -1,0 +1,10 @@
+ADD cgx 1
+SUB cgx 2
+SUB cgx 3
+SUB cgx 4
+SUB cgx 5
+SUB cgx 6
+SUB cgx 7
+SUB cgx 8
+SUB cgx 9
+EXIT

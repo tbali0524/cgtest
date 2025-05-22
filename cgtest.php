@@ -2,7 +2,7 @@
 <?php
 
 /**
- * CGTest v1.17.0 by Balint Toth [TBali]
+ * CGTest v1.17.1 by Balint Toth [TBali]
  * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
  *
  * For usage, see:
@@ -436,8 +436,10 @@ $defaultConfig = [
         'sourceExtension' => '.rs',
         'codinGameVersion' => 'rustc 1.70.0',
         'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc -C opt-level=3 --edition 2021 %s -o%b%p_%l.exe',
+        'buildCommand' => 'rustc -C opt-level=3 -C target-cpu=native --edition 2021 %s -o%b%p_%l.exe',
         'runCommand' => '%b%p_%l.exe',
+        'altBuildCommand' => 'rustc -g -C overflow-checks --edition 2021 %s -o%b%p_%l.exe',
+        'altNote' => 'DEBUG mode',
         'cleanPatterns' => [
             '%b%p_%l.exe',
             '%b%p_%l.pdb',

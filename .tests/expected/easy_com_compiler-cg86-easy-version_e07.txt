@@ -1,0 +1,18 @@
+REPEAT 2
+SUB cgx 1
+ADD cgx 2
+REPEAT 24
+ADD cgx 3
+REPEAT 2
+ADD cgx 4
+REPEAT 5
+ADD cgx 5
+REPEAT 2
+ADD cgx 6
+ADD cgx 7
+ADD cgx 8
+ADD cgx 9
+REPEAT 11
+SUB cgx 9
+ADD cgx 1
+EXIT

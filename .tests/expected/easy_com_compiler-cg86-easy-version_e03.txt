@@ -1,0 +1,3 @@
+ADD cgx 1
+ADD cgx 2
+EXIT

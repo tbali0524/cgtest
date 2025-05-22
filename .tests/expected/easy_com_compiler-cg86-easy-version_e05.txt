@@ -1,0 +1,10 @@
+ADD cgx 1
+ADD cgx 2
+ADD cgx 3
+ADD cgx 4
+ADD cgx 5
+ADD cgx 6
+ADD cgx 7
+ADD cgx 8
+ADD cgx 9
+EXIT

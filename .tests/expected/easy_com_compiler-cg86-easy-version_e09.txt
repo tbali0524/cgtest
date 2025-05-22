@@ -1,0 +1,6 @@
+REPEAT 127
+SUB cgx 9
+REPEAT 2
+ADD cgx 1
+ADD cgx 5
+EXIT
