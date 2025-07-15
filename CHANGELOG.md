@@ -41,7 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Seperate build and running times are displayed in with `--stats`. Note: some compilers combine build and run steps into a single invocation.
+- Seperate build and running times are displayed with `--stats`. Note: some compilers combine build and run steps into a single invocation.
 - `note` configuration option added to the per language section.
 - Default `dart` and `go` config updated to separate build and run steps.
 - More test cases added.

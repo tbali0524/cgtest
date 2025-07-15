@@ -1,0 +1,13 @@
+12
+KEYS
+SET c=c
+SET o=o
+SET d=d
+SET i=i
+SET n=n
+SET -=-
+SET g=g
+SET a=a
+SET m=m
+SET e=e
+GET c o d i n - g a m e

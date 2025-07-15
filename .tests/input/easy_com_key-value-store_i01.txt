@@ -1,0 +1,4 @@
+3
+SET os-name=windows
+SET os-arch=x64
+GET os-name os-arch

@@ -1,0 +1,12 @@
+EMPTY
+null 10 200 40 30
+true true false true true
+x y z w
+null q null
+true true false
+universe tree tree planet null
+false true true
+x y z w q r s t u v
+YY XXX ZZ
+true true true
+x y z w q r s t u v

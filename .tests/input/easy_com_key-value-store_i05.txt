@@ -1,0 +1,4 @@
+3
+KEYS
+GET A B C
+KEYS

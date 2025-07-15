@@ -1,0 +1,5 @@
+4
+SET password=root password=admin
+SET username=root username=admin
+KEYS
+GET username password

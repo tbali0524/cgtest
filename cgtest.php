@@ -354,7 +354,6 @@ $defaultConfig = [
         'cleanPatterns' => ['%b%p_%l.exe'],
         'cleanDirectoryPatterns' => [],
     ],
-    // TODO: try out also in Windows:
     'ocaml' => [
         'sourcePath' => 'ocaml/',
         'sourceExtension' => '.ml',

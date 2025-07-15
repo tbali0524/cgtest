@@ -274,6 +274,7 @@ return [
                 'easy_com_brick-in-the-wall',
                 'easy_com_build-a-bookcase',
                 'easy_com_bulk-email-generator',
+                'easy_com_button-mash',
                 'easy_com_buzzle',
                 'easy_com_by-train-or-by-car',
                 'easy_com_caesar-is-the-chief',
@@ -281,6 +282,8 @@ return [
                 'easy_com_card-counting-when-easily-distracted',
                 'easy_com_character-replacement-problem',
                 'easy_com_cheap-choices',
+                'easy_com_chinese-numbers',
+                'easy_com_city-lights-part-1',
                 'easy_com_codongame',
                 'easy_com_compiler-cg86-easy-version',
                 'easy_com_container-terminal',
@@ -350,6 +353,7 @@ return [
                 'easy_com_item-maker',
                 'easy_com_jack-silver-the-casino',
                 'easy_com_kangaroo-words',
+                'easy_com_key-value-store',
                 'easy_com_kiss-the-girls',
                 'easy_com_largest-number',
                 'easy_com_library-dependencies',
@@ -500,6 +504,7 @@ return [
                 'easy_com_whats-so-complex-about-mandelbrot',
                 'easy_com_where-am-i-going',
                 'easy_com_wheres-wally',
+                'easy_com_who-is-leading',
                 'easy_com_winning-parabola',                // removed puzzle
                 'easy_com_word-search-for-programmers',
                 'easy_com_wordle-colorizer',
@@ -542,6 +547,7 @@ return [
                 'medium_com_battleship',
                 'medium_com_battle-tower',
                 'medium_com_beach-volleyball',
+                'medium_com_beautiful-base-the-most-beautiful',
                 'medium_com_bijective-numeration',
                 'medium_com_bin-packing',
                 'medium_com_binary-search-tree-traversal',
@@ -626,6 +632,7 @@ return [
                 'medium_com_find-the-liars',
                 'medium_com_find-the-missing-plus-signs-in-addition',
                 'medium_com_find-the-replacement',
+                'medium_com_find-the-shortest-path-home',
                 'medium_com_finish-the-eight-queens',
                 'medium_com_firewall-placement',
                 'medium_com_fishing-with-a-stick',
@@ -711,6 +718,7 @@ return [
                 'medium_com_minimal-number-of-swaps',
                 'medium_com_minimax-exercise',
                 'medium_com_mitosis-mayhem',
+                'medium_com_mondrian-painting-strokes',
                 'medium_com_monthly-system',
                 'medium_com_mosaic',
                 'medium_com_mrs--knuth---part-i',
@@ -747,6 +755,7 @@ return [
                 'medium_com_remaining-card',
                 'medium_com_reversed-look-and-say',
                 'medium_com_risk-odds-calculator',
+                'medium_com_road-to-mount-boom',
                 // 'medium_com_rubik',                      // also in global section
                 'medium_com_quaternion-multiplication',
                 'medium_com_queneau-numbers',
@@ -805,6 +814,7 @@ return [
                 'medium_com_the-grand-festival---i',
                 'medium_com_the-grand-festival---ii',
                 'medium_com_the-hooch-clash-grouch',        // removed puzzle
+                'medium_com_the-lord-of-the-annuli',
                 'medium_com_the-lost-child-episode-1',
                 'medium_com_the-lost-files',
                 'medium_com_the-optimal-urinal-problem',
@@ -836,6 +846,7 @@ return [
             'puzzle/community/hard/' => [
                 'hard_com_24-the-long-game',
                 'hard_com_3d-ascii-cube',                   // removed puzzle
+                'hard_com_3d-duck-hunt',
                 'hard_com_7-segment-display',
                 'hard_com_8086-assembler-part-i',
                 'hard_com_advertisements',
@@ -1161,4 +1172,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.05.21: 'easy_com_rocky-pohps-concert-date',
+// Note: last puzzle added on 25.07.07: 'medium_com_road-to-mount-boom',

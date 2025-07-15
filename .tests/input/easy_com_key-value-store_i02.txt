@@ -1,0 +1,4 @@
+3
+SET A=A B=B C=C D=D
+KEYS
+GET A B C D

@@ -1,0 +1,68 @@
+3D Duck Hunt
+
+hard_com_3d-duck-hunt
+https://www.codingame.com/training/hard/3d-duck-hunt
+https://www.codingame.com/contribute/view/116934366bb07ee4bde8398410569352a2cd56
+
+A contribution by pluieciel
+Approved by NicknamedTwice,ManuelJ,hichemjadlaoui
+
+Goal
+You’ve Got One Shot!
+As an elite hunter, you’ve tracked three rogue ducks fleeing through 3D space.
+Your final bullet is special: it can be fired at any speed from any position.
+Can you calculate a position and a single speed vector to hit all three ducks in one shot?
+
+Duck Trajectories
+Each duck’s position and velocity are given in the format:
+x y z @ vx vy vz
+Position: Starting coordinates (x, y, z)
+Velocity: Speed per second in each direction (vx, vy, vz)
+Duck 1: 2 4 3 @ -1 2 0
+Example: After 1 second, it moves to [1, 6, 3].
+Duck 2: -8 7 0 @ 2 1 1
+Duck 3: -4 13 -18 @ 1 0 4
+
+Rules
+Your bullet starts at a position and travels at constant speed.
+A duck is hit if the bullet’s position matches its position at the same time.
+
+Example Solution
+If you fire a bullet at [-4, 7, 0] with speed [1, 1, 1]:
+Hits Duck 1 at [-1, 10, 3] after 3 seconds.
+Hits Duck 2 at [0, 11, 4] after 4 seconds.
+Hits Duck 3 at [2, 13, 6] after 6 seconds.
+Boom! All ducks down with one bullet.
+
+Your Task
+Find position and speed vector for your bullet that intersects all three ducks at some point in time.
+
+Input
+line 1: Duck 1 data, formatted as x y z @ vx vy vz, separated by space.
+line 2: Duck 2 data, same format.
+line 3: Duck 3 data, same format.
+
+Output
+line 1: x y z vx vy vz for your bullet. 6 numbers separated by space.
+
+Constraints
+All coordinates and velocities are integers.
+The ducks’ velocity vectors are linearly independent in 3D space. (i.e.: the 3 vectors don't share a same plane, https://en.wikipedia.org/wiki/Linear_independence)
+
+every number is within range (-2^49, 2^49)
+
+Example
+
+Input
+2 4 3 @ -1 2 0
+-8 7 0 @ 2 1 1
+-4 13 -18 @ 1 0 4
+
+Output
+-4 7 0 1 1 1
+
+Difficulty
+Hard
+
+Tags
+Linear Algebra
