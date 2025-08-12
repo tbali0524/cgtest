@@ -1,0 +1,13 @@
+    X  X  X 
+   O       X
+XOO X  OXO/ 
+X  O    X/  
+ O   XO /OX 
+  XO O /O  X
+X XO   OX   
+       X  O 
+         OO 
+X    XXX O  
+ X X       O
+   XO  XX   
+The winner is O.

@@ -1,0 +1,6 @@
+O    
+OX XX
+ X|  
+O |XO
+X | O
+The winner is O.

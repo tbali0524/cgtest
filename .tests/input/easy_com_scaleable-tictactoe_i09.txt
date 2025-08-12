@@ -1,0 +1,13 @@
+12 4
+    X  X  X 
+   O       X
+XOO X  OXOO 
+X  O    XO  
+ O   XO OOX 
+  XO O OO  X
+X XO   OX   
+       X  O 
+         OO 
+X    XXX O  
+ X X       O
+   XO  XX   

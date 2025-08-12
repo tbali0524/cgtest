@@ -1,0 +1,6 @@
+5 4
+O XXX
+OX   
+ O   
+ XXXX
+  O O

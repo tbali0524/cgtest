@@ -10,7 +10,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
-_The repository also contains __7000+__ test cases for __930+__ `CodinGame` puzzles and __820+__ puzzle statements._
+_The repository also contains __7200+__ test cases for __950+__ `CodinGame` puzzles and __850+__ puzzle statements._
 
 ## Intro
 

@@ -1,0 +1,7 @@
+6 4
+OX X  
+XX OXX
+XXO XX
+  XOOX
+O  X O
+     O
