@@ -1,0 +1,50 @@
+Peaks and Valleys in 2D Grid
+
+easy_com_peaks-and-valleys-in-2d-grid
+https://www.codingame.com/training/easy/peaks-and-valleys-in-2d-grid
+https://www.codingame.com/contribute/view/131949a0ca12bf9be76ab31894cf4d510bc66d
+
+A contribution by Delicious31415
+Approved by User123,Eulero314,anuragm
+
+Goal
+Given a grid of integers, where each integer represents the height of a cell, find all peaks (cells higher than all neighbors) and valleys (cells lower than all neighbors). Neighbors include orthogonally and diagonally adjacent cells.
+
+The output is 2 lines:
+- Peaks coordinates (x, y) separated by a comma and a space, or NONE if none.
+- Valleys coordinates (x, y) separated by a comma and a space, or NONE if none.
+
+Coordinates use (column, row) indexing and are printed in reading order (top to bottom, left to right).
+
+Note: The top-left corner is (0, 0)
+
+Input
+Line 1: The number of lines in the grid - h.
+Next h lines: A line of the grid.
+
+Output
+Line 1: The coordinates for peaks or NONE.
+Line 2: The coordinates for valleys or NONE.
+
+Constraints
+3 ≤ h, the width of the grid ≤ 10
+-10000 ≤ The integers in the grid ≤ 10000
+
+Example
+
+Input
+4
+1 1 1 2
+1 2 1 1
+1 1 1 2
+1 0 1 1
+
+Output
+(3, 0), (1, 1), (3, 2)
+(1, 3)
+
+Difficulty
+Easy
+
+Tags
+2D array

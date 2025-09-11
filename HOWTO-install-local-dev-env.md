@@ -5,9 +5,9 @@ No IDE is needed, only the compilers/interpreters, to be invoked via CLI.
 
 Instructions for [Windows](#windows) or [Linux](#linux)
 
-Last updated: _2025.08.12_
+Last updated: _2025.09.07_
 
-Version numbers are current as of _2025.08.12_.
+Version numbers are current as of _2025.09.07_.
 
 ## Windows
 
@@ -52,7 +52,7 @@ pacman -Sy msys2-keyring; pacman -Suy
 #### Using Clang
 
 * Homepage: <https://clang.llvm.org/>
-* Version: `clang version 20.1.8`
+* Version: `clang version 21.1.0`
 * Default path: `C:\Program Files\LLVM\bin\clang.exe`
 
 ```pwsh
@@ -97,7 +97,7 @@ g++ --version
 * Homepage: <https://clojure.org/>
 * Use with __Babashka__: <https://babashka.org/>
 * Download `bb.exe` binary from [GitHub](https://github.com/babashka/babashka/releases), add to path
-* Version: `babashka v1.12.207`
+* Version: `babashka v1.12.208`
 * Recommended path: `c:\tools\cli\bb.exe`
 * Update manually
 
@@ -105,9 +105,9 @@ g++ --version
 mkdir c:\tools\cli
 cd c:\tools\cli
 # update version number below
-curl -OL https://github.com/babashka/babashka/releases/download/v1.12.207/babashka-1.12.207-windows-amd64.zip
-unzip babashka-1.12.207-windows-amd64.zip
-del babashka-1.12.207-windows-amd64.zip
+curl -OL https://github.com/babashka/babashka/releases/download/v1.12.208/babashka-1.12.208-windows-amd64.zip
+unzip babashka-1.12.208-windows-amd64.zip
+del babashka-1.12.208-windows-amd64.zip
 bb --version
 ```
 
@@ -152,7 +152,7 @@ dotnet fsi --version
 ### Go
 
 * Homepage: <https://go.dev/>
-* Version: `go version go1.24.6 windows/amd64`
+* Version: `go version go1.25.1 windows/amd64`
 * Default path: `C:\Program Files\Go\bin\go.exe`
 
 ```pwsh
@@ -165,7 +165,7 @@ winget update GoLang.Go
 ### Groovy
 
 * Homepage: <https://groovy-lang.org/>
-* Version: `Groovy Version: 4.0.28 JVM: 21.0.7 Vendor: Eclipse Adoptium OS: Windows 11`
+* Version: `Groovy Version: 5.0.0 JVM: 21.0.8 Vendor: Eclipse Adoptium OS: Windows 11`
 * Default path: `C:\Program Files (x86)\Groovy\bin\groovy.bat`
 * Requires Java JDK installed.
 
@@ -212,7 +212,7 @@ winget update EclipseAdoptium.Temurin.21.JDK
 
 * Homepage: <https://javascript.info/>
 * Recommended runtime: [Node.js](https://nodejs.org/)
-* Version: `v22.18.0` (LTS)
+* Version: `v22.19.0` (LTS)
 * Default path: `C:\Program Files\nodejs\node.exe`
 
 ```pwsh
@@ -227,7 +227,7 @@ winget update OpenJS.NodeJS.LTS
 
 * Homepage: <https://kotlinlang.org/>
 * Download compiler from [GitHub](https://github.com/JetBrains/kotlin/releases/latest/)
-* Version: `kotlinc-jvm 2.2.0 (JRE 21.0.8+9-LTS)`
+* Version: `kotlinc-jvm 2.2.10 (JRE 21.0.8+9-LTS)`
 * Recommended path: `C:\tools\kotlinc\bin\kotlinc.bat`
 * Requires Java JDK installed.
 * Update manually
@@ -235,8 +235,9 @@ winget update OpenJS.NodeJS.LTS
 ```pwsh
 mkdir c:\tools\kotlinc
 cd c:\tools\kotlinc
-curl -OL https://github.com/JetBrains/kotlin/releases/download/v2.2.0/kotlin-compiler-2.2.0.zip
-unzip https://github.com/JetBrains/kotlin/releases/download/v2.2.0/kotlin-compiler-2.2.0.zip
+curl -OL https://github.com/JetBrains/kotlin/releases/download/v2.2.10/kotlin-compiler-2.2.10.zip
+unzip kotlin-compiler-2.2.10.zip
+del kotlin-compiler-2.2.10.zip
 kotlinc -version
 ```
 
@@ -261,7 +262,6 @@ winget update DEVCOM.Lua
 
 * Homepage: <https://ocaml.org/>
 * Version: `The OCaml native-code compiler, version 5.3.0`
-* Recommended path: `C:\tools\FPC\bin\i386-Win32\fpc.exe`
 * Default path: `C:\Users\${Env:Username}\AppData\Local\opam\default\bin\ocamlopt.exe`
 * Requires git
 
@@ -307,7 +307,7 @@ winget update StrawberryPerl.StrawberryPerl
 * Also available: install as part of XAMPP (outdated): `winget search ApacheFriends.Xampp.8.2`
 * Install extensions with [PIE](https://github.com/php/pie) or install [XDebug](https://xdebug.org/) manually
 * Keep separate configs for "JIT enabled" and "XDebug enabled" runs.
-* Version: `PHP 8.4.11 (cli) (built: Jul 29 2025 18:01:15) (ZTS Visual C++ 2022 x64)`
+* Version: `PHP 8.4.12 (cli) (built: Aug 26 2025 18:04:08) (ZTS Visual C++ 2022 x64)`
 * Default path (if using XAMPP): `c:\xampp\php\php.exe`
 
 ```pwsh
@@ -321,7 +321,7 @@ winget update PHP.PHP.8.4
 ### Python
 
 * Homepage: <https://www.python.org/>
-* Version: `Python 3.13.6`
+* Version: `Python 3.13.7`
 * Default path: `C:\Users\${Env:Username}\AppData\Local\Programs\Python\Python313\python.exe`
 
 ```pwsh
@@ -378,7 +378,7 @@ rustup update stable
 * Install with [Coursier](https://get-coursier.io/)
 * Use with [Scala-CLI](https://scala-cli.virtuslab.org/)
 * Version: `Scala version (default): 3.7.1`
-* Version: `Scala CLI version: 1.8.4`
+* Version: `Scala CLI version: 1.9.0`
 * Default path: `C:\Users\{$Env:Username}\AppData\Local\Coursier\data\bin\scala-cli.bat`
 * Update manually
 
@@ -472,7 +472,7 @@ clang-19 --version
 ### C\#
 
 * Install as part of __.NET__
-* Version: `dotnet 8.0.117`
+* Version: `dotnet 8.0.119`
 
 ```sh
 apt list dotnet-sdk-8.0
@@ -491,7 +491,7 @@ g++ --version
 
 ### Clojure
 
-* Version: `babashka v1.12.206`
+* Version: `babashka v1.12.208`
 
 ```sh
 curl -sLO https://raw.githubusercontent.com/babashka/babashka/master/install
@@ -517,7 +517,7 @@ dmd --version
 ### Dart
 
 * install & update manually
-* Version: `Dart SDK version: 3.8.2 (stable) (None) on "linux_x64"`
+* Version: `Dart SDK version: 3.9.2 (stable) (None) on "linux_x64"`
 
 ```sh
 sudo apt-get update && sudo apt-get install apt-transport-https
@@ -531,7 +531,7 @@ dart --version
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 8.0.118`
+* Version: `dotnet 8.0.119`
 
 ```sh
 dotnet --version
@@ -566,7 +566,7 @@ sdk upgrade groovy
 
 * Default Haskell in Ubuntu 24.04 is outdated v9.4: `apt list haskell`
 * Install with [GHCup](https://www.haskell.org/ghcup/)
-* Version: `The Glorious Glasgow Haskell Compilation System, version 9.6.7`
+* Version: `The Glorious Glasgow Haskell Compilation System, version 9.12.2`
 
 ```sh
 sudo apt install -y build-essential curl libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev pkg-config
@@ -744,7 +744,7 @@ npm update -g
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 8.0.118`
+* Version: `dotnet 8.0.119`
 
 ```sh
 dotnet --version
