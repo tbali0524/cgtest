@@ -1,0 +1,7 @@
+5
+.C.C.C
+C.C.C.
+.C.CHC
+CHC.C.
+.CHC.C
+C.C.C.

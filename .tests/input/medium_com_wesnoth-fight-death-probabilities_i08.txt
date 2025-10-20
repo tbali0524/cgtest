@@ -1,0 +1,2 @@
+spearman 30 3 60 6
+gorilla 50 2 40 10

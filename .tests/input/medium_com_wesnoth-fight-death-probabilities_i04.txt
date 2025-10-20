@@ -1,0 +1,2 @@
+archer 20 3 60 6
+swordsman 15 0 60 10

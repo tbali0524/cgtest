@@ -1,0 +1,11 @@
+3
+.C.C.C.C.C
+C.C.C.C.C.
+.C.C.C.CHC
+C.C.C.C.C.
+.C.C.CHC.C
+C.C.CHC.C.
+.C.CHC.C.C
+C.C.C.C.C.
+.C.C.CHC.C
+C.C.C.C.C.

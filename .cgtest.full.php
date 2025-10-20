@@ -305,6 +305,7 @@ return [
                 'easy_com_dead-mens-shot',
                 'easy_com_decode-the-message',
                 'easy_com_deus-hex-machina',
+                'easy_com_diagonal-achoo',
                 'easy_com_die-handedness',
                 'easy_com_digital-scoreboard',
                 'easy_com_disordered-first-contact',
@@ -439,6 +440,7 @@ return [
                 'easy_com_scaleable-tictactoe',
                 'easy_com_score-a-bridge-deal',
                 'easy_com_scrabble-score',
+                'easy_com_seeing-squares',
                 'easy_com_self-driving-car-testing',
                 // 'easy_com_sentence-tokenising',          // removed puzzle, unavailable
                 'easy_com_shadow-casting',
@@ -686,6 +688,7 @@ return [
                 'medium_com_indented-to-xml-like',          // removed puzzle
                 'medium_com_inequality-overlap-area',
                 'medium_com_inside-area',
+                'medium_com_integer-pairs-of-abab',
                 'medium_com_inversion-count',
                 'medium_com_ip-mask-calculating',
                 'medium_com_is-the-king-in-check-part-2',
@@ -849,6 +852,7 @@ return [
                 'medium_com_vote-counting',
                 'medium_com_ways-to-make-change',
                 'medium_com_were-going-in-circles',
+                'medium_com_wesnoth-fight-death-probabilities',
                 'medium_com_what-the-brainfuck',
                 'medium_com_windmill-problem',
                 'medium_com_wine-from-kalbodia---episode-1',
@@ -1168,6 +1172,7 @@ return [
                 'medium_com_rush-hour',
                 'medium_com_sky-maze-adventures-1',
                 'medium_com_tetrasticks',
+                'medium_com_the-virus',
             ],
             'puzzle/community/hard/' => [
                 'hard_com_11-puzzle',
@@ -1187,4 +1192,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.09.11: 'medium_com_tired-pac-man',
+// Note: last puzzle added on 25.10.03: 'medium_com_integer-pairs-of-abab',

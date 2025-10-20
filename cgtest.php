@@ -241,7 +241,7 @@ $defaultConfig = [
     'dart' => [
         'sourcePath' => 'dart/',
         'sourceExtension' => '.dart',
-        'codinGameVersion' => 'Dart SDK version: 2.16.2',
+        'codinGameVersion' => 'Dart SDK version: 3.9.4',
         'versionCommand' => 'dart --version',
         'buildCommand' => 'dart compile exe -o %b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
@@ -433,11 +433,11 @@ $defaultConfig = [
     'rust' => [
         'sourcePath' => 'rust/',
         'sourceExtension' => '.rs',
-        'codinGameVersion' => 'rustc 1.70.0',
+        'codinGameVersion' => 'rustc 1.90.0',
         'versionCommand' => 'rustc --version',
-        'buildCommand' => 'rustc -C opt-level=3 -C target-cpu=native --edition 2021 %s -o%b%p_%l.exe',
+        'buildCommand' => 'rustc -C opt-level=3 -C target-cpu=native --edition 2024 %s -o%b%p_%l.exe',
         'runCommand' => '%b%p_%l.exe',
-        'altBuildCommand' => 'rustc -g -C overflow-checks --edition 2021 %s -o%b%p_%l.exe',
+        'altBuildCommand' => 'rustc -g -C overflow-checks --edition 2024 %s -o%b%p_%l.exe',
         'altNote' => 'DEBUG mode',
         'cleanPatterns' => [
             '%b%p_%l.exe',

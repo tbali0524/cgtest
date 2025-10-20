@@ -1,0 +1,2 @@
+rifleman 20 1 50 20
+shaman 15 2 60 10
