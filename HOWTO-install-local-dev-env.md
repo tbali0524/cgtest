@@ -5,9 +5,9 @@ No IDE is needed, only the compilers/interpreters, to be invoked via CLI.
 
 Instructions for [Windows](#windows) or [Linux](#linux)
 
-Last updated: _2025.10.20_
+Last updated: _2025.11.25_
 
-Version numbers are current as of _2025.10.20_.
+Version numbers are current as of _2025.11.25_.
 
 ## Windows
 
@@ -19,7 +19,7 @@ whenever possible, which makes updating the languages much easier later.
 ### Bash
 
 * Install as part of [MSYS2](https://www.msys2.org/)
-* MSYS2 installer version: `msys2-x86_64-20250221.exe`
+* MSYS2 installer version: `msys2-x86_64-20250830.exe`
 * Version: `GNU bash, version 5.2.37(2)-release (x86_64-pc-cygwin)`
 * Default path and startup command: `C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64`
 * `cgtest` currently does not work for `bash` puzzles on Windows.
@@ -31,7 +31,7 @@ whenever possible, which makes updating the languages much easier later.
 * Homepage: <https://gcc.gnu.org/>
 * Install [MSYS2](https://www.msys2.org/)
 * Install as a package with [pacman](https://wiki.archlinux.org/title/Pacman)
-* Version: `gcc.exe (Rev1, Built by MSYS2 project) 15.1.0`
+* Version: `gcc.exe (Rev8, Built by MSYS2 project) 15.2.0`
 * Default path: `C:\msys64\ucrt64\bin\gcc.exe`
 * Update with `pacman`
 
@@ -52,7 +52,7 @@ pacman -Sy msys2-keyring; pacman -Suy
 #### Using Clang
 
 * Homepage: <https://clang.llvm.org/>
-* Version: `clang version 21.1.3`
+* Version: `clang version 21.1.6`
 * Default path: `C:\Program Files\LLVM\bin\clang.exe`
 
 ```pwsh
@@ -66,14 +66,14 @@ winget update LLVM.LLVM
 
 * Homepage: <https://dotnet.microsoft.com/en-us/>
 * Install as part of __.NET__
-* Version: `dotnet 8.0.415` (LTS)
+* Version: `dotnet 10.0.100` (LTS)
 * Default path: `C:\Program Files\dotnet\dotnet.exe`
 
 ```pwsh
 winget search Microsoft.DotNet.SDK
-winget install Microsoft.DotNet.SDK.8
+winget install Microsoft.DotNet.SDK.10
 dotnet --version
-winget update Microsoft.DotNet.SDK.8
+winget update Microsoft.DotNet.SDK.10
 ```
 
 ### C++
@@ -81,7 +81,7 @@ winget update Microsoft.DotNet.SDK.8
 #### Using GCC
 
 * See section __C__.
-* Version: `g++.exe (Rev1, Built by MSYS2 project) 15.1.0`
+* Version: `g++.exe (Rev8, Built by MSYS2 project) 15.2.0`
 * Default path: `C:\msys64\ucrt64\bin\g++.exe`
 
 ```pwsh
@@ -97,7 +97,7 @@ g++ --version
 * Homepage: <https://clojure.org/>
 * Use with __Babashka__: <https://babashka.org/>
 * Download `bb.exe` binary from [GitHub](https://github.com/babashka/babashka/releases), add to path
-* Version: `babashka v1.12.209`
+* Version: `babashka v1.12.210`
 * Recommended path: `c:\tools\cli\bb.exe`
 * Update manually
 
@@ -105,9 +105,9 @@ g++ --version
 mkdir c:\tools\cli
 cd c:\tools\cli
 # update version number below
-curl -OL https://github.com/babashka/babashka/releases/download/v1.12.209/babashka-1.12.209-windows-amd64.zip
-unzip babashka-1.12.209-windows-amd64.zip
-del babashka-1.12.209-windows-amd64.zip
+curl -OL https://github.com/babashka/babashka/releases/download/v1.12.210/babashka-1.12.210-windows-amd64.zip
+unzip babashka-1.12.210-windows-amd64.zip
+del babashka-1.12.210-windows-amd64.zip
 bb --version
 ```
 
@@ -141,8 +141,8 @@ winget update Google.DartSDK
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 8.0.415` (LTS)
-* Version: `Microsoft (R) F# Interactive version 12.8.403.0 for F# 8.0`
+* Version: `dotnet 10.0.100` (LTS)
+* Version: `Microsoft (R) F# Interactive version 14.0.100.0 for F# 10.0`
 
 ```pwsh
 dotnet --version
@@ -152,7 +152,7 @@ dotnet fsi --version
 ### Go
 
 * Homepage: <https://go.dev/>
-* Version: `go version go1.25.3 windows/amd64`
+* Version: `go version go1.25.4 windows/amd64`
 * Default path: `C:\Program Files\Go\bin\go.exe`
 
 ```pwsh
@@ -165,15 +165,15 @@ winget update GoLang.Go
 ### Groovy
 
 * Homepage: <https://groovy-lang.org/>
-* Version: `Groovy Version: 5.0.1 JVM: 25 Vendor: Eclipse Adoptium OS: Windows 11`
+* Version: `Groovy Version: 5.0.1 JVM: 25.0.1 Vendor: Eclipse Adoptium OS: Windows 11`
 * Default path: `C:\Program Files (x86)\Groovy\bin\groovy.bat`
 * Requires Java JDK installed.
 
 ```pwsh
 winget search groovy
-winget install Apache.Groovy.4
+winget install Apache.Groovy.5
 groovy --version
-winget update Apache.Groovy.4
+winget update Apache.Groovy.5
 ```
 
 ### Haskell
@@ -195,7 +195,7 @@ ghcup tui
 
 * Homepage: <https://openjdk.org/>, <https://www.java.com/>
 * Recommended distribution: [Eclipse Adoptium](https://adoptium.net/)
-* Version: `OpenJDK Runtime Environment Temurin-25+36 (build 25+36-LTS)`
+* Version: `OpenJDK Runtime Environment Temurin-25.0.1+8 (build 25.0.1+8-LTS)`
 * Default path: `C:\Program Files\Eclipse Adoptium\jdk-25.0.0.36-hotspot\bin\java.exe`
 * Set environment variable: `JAVA_HOME`
 
@@ -203,7 +203,7 @@ ghcup tui
 winget search groovy
 winget install EclipseAdoptium.Temurin.25.JDK
 java --version
-sudo setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-25.0.0.36-hotspot\" /m
+sudo setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\" /m
 echo $Env:JAVA_HOME
 winget update EclipseAdoptium.Temurin.25.JDK
 ```
@@ -212,7 +212,7 @@ winget update EclipseAdoptium.Temurin.25.JDK
 
 * Homepage: <https://javascript.info/>
 * Recommended runtime: [Node.js](https://nodejs.org/)
-* Version: `v22.20.0` (LTS)
+* Version: `v24.11.1` (LTS)
 * Default path: `C:\Program Files\nodejs\node.exe`
 
 ```pwsh
@@ -227,7 +227,7 @@ winget update OpenJS.NodeJS.LTS
 
 * Homepage: <https://kotlinlang.org/>
 * Download compiler from [GitHub](https://github.com/JetBrains/kotlin/releases/latest/)
-* Version: ` kotlinc-jvm 2.2.10 (JRE 25+36-LTS)`
+* Version: `kotlinc-jvm 2.2.21 (JRE 25.0.1+8-LTS)`
 * Recommended path: `C:\tools\kotlinc\bin\kotlinc.bat`
 * Requires Java JDK installed.
 * Update manually
@@ -235,9 +235,9 @@ winget update OpenJS.NodeJS.LTS
 ```pwsh
 mkdir c:\tools\kotlinc
 cd c:\tools\kotlinc
-curl -OL https://github.com/JetBrains/kotlin/releases/download/v2.2.20/kotlin-compiler-2.2.20.zip
-unzip kotlin-compiler-2.2.20.zip
-del kotlin-compiler-2.2.20.zip
+curl -OL https://github.com/JetBrains/kotlin/releases/download/v2.2.21/kotlin-compiler-2.2.21.zip
+unzip kotlin-compiler-2.2.21.zip
+del kotlin-compiler-2.2.21.zip
 kotlinc -version
 ```
 
@@ -307,15 +307,15 @@ winget update StrawberryPerl.StrawberryPerl
 * Also available: install as part of XAMPP (outdated): `winget search ApacheFriends.Xampp.8.2`
 * Install extensions with [PIE](https://github.com/php/pie) or install [XDebug](https://xdebug.org/) manually
 * Keep separate configs for "JIT enabled" and "XDebug enabled" runs.
-* Version: `PHP 8.4.12 (cli) (built: Aug 26 2025 18:04:08) (ZTS Visual C++ 2022 x64)`
+* Version: `PHP 8.5.0 (cli) (built: Nov 19 2025 09:58:52) (ZTS Visual C++ 2022 x64)`
 * Default path (if using XAMPP): `c:\xampp\php\php.exe`
 
 ```pwsh
 winget search PHP.PHP
-winget install PHP.PHP.8.4
+winget install PHP.PHP.8.5
 php --version
 php --modules
-winget update PHP.PHP.8.4
+winget update PHP.PHP.8.5
 ```
 
 ### Python
@@ -358,7 +358,7 @@ winget update RubyInstallerTeam.RubyWithDevKit.3.4
 * Homepage: <https://www.rust-lang.org/>
 * Install with the `rustup-init (64-bit)`, update with `rustup`
 * Also available: Installing with `winget`: `winget search Rustlang.Rust`
-* Version: `rustc 1.90.0 (1159e78c4 2025-09-14)`
+* Version: `rustc 1.91.1 (ed61e7d7e 2025-11-07)`
 * Toolchain: `stable-x86_64-pc-windows-msvc`
 * Recommended path (after moving to a DevDrive): `D:\packages\cargo\bin\rustc.exe`
 * Requires: [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
@@ -379,8 +379,8 @@ rustup update stable
 * Homepage: <https://www.scala-lang.org/>
 * Install with [Coursier](https://get-coursier.io/)
 * Use with [Scala-CLI](https://scala-cli.virtuslab.org/)
-* Version: `Scala version (default): 3.7.3`
-* Version: `Scala CLI version: 1.9.1`
+* Version: `Scala version (default): 3.7.4`
+* Version: `Scala CLI version: 1.10.1`
 * Default path: `C:\Users\{$Env:Username}\AppData\Local\Coursier\data\bin\scala-cli.bat`
 * Update manually
 
@@ -424,7 +424,7 @@ dotnet --version
 * Homepage: <https://fortran-lang.org/>
 * Install [MSYS2](https://www.msys2.org/), then install as a package
 * See section __C__.
-* Version: `GNU Fortran (Rev1, Built by MSYS2 project) 15.1.0`
+* Version: `GNU Fortran (Rev8, Built by MSYS2 project) 15.2.0`
 * Default path: `C:\msys64\ucrt64\bin\gfortran.exe`
 
 ```pwsh

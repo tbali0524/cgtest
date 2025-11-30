@@ -70,7 +70,7 @@ return [
         'vb.net',
     // Additional languages, unsupported on CodinGame:
         // 'cobol',         // untested
-        'fortran',
+        // 'fortran',
         // 'r',             // untested
     ]),
     // == Tests will be run for the following puzzles in ALL languages

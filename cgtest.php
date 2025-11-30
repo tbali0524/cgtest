@@ -1538,8 +1538,7 @@ foreach ($config['languages'] as $language) {
                 $languageStats[$language]['timeBuilding'] += $timeBuilding;
                 if (($execResult === false) or ($execResultCode != 0)) {
                     $buildSuccessful = false;
-                    echo $warnTag . 'Build unsuccessful for source: '
-                        . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL;
+                    echo $warnTag . 'Build unsuccessful for source: ' . $sourceFullFileName . PHP_EOL;
                 }
             }
             // --------------------------------------------------------------------
@@ -1796,13 +1795,15 @@ foreach ($config['languages'] as $language) {
                 if (count($testsFailed) == $countTestsForFile) {
                     echo $failTag
                         . ' -- all ' . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
-                        . ($countTestsForFile > 1 ? 's' : ' ') . ' failed : ' . $sourceFullFileName . PHP_EOL;
+                        . ($countTestsForFile > 1 ? 's' : ' ') . ' failed : '
+                        . $ansiWarn . $sourceFullFileName . $ansiReset . PHP_EOL;
                     continue;
                 }
                 echo $failTag
                     . ' -- ' . str_pad(strval(count($testsFailed)), $testIdxWidth, ' ', STR_PAD_LEFT) . ' of '
                     . str_pad(strval($countTestsForFile), $testIdxWidth, ' ', STR_PAD_LEFT) . ' test'
-                    . ($countTestsForFile > 1 ? 's' : ' ') . ' failed : ' . $sourceFullFileName
+                    . ($countTestsForFile > 1 ? 's' : ' ') . ' failed : '
+                    . $ansiWarn . $sourceFullFileName . $ansiReset
                     . ' : [ #' . implode(' #', $testsFailed) . ' ]' . PHP_EOL;
                 continue;
             }

@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Default config for `php` tweaked, disabling JIT.
 - Default config for `scala` tweaked to use newer cli runner on Windows.
 - Default config for `rust` tweaked, using a debug build for `--alt`.
 
