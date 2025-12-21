@@ -847,6 +847,7 @@ return [
                 'medium_com_the-ultimate-test',
                 'medium_com_the-urinal-problem',
                 'medium_com_the-voucher',
+                'medium_com_tic-tac-toe-engine',
                 'medium_com_tiny-forest',
                 'medium_com_tired-pac-man',
                 'medium_com_train-passenger',
@@ -1172,6 +1173,7 @@ return [
                 'medium_com_can-you-save-the-forest---episode-1',
                 'medium_com_connect-the-colours---part-1',
                 'medium_com_cooperative-mate-with-rook',
+                'medium_com_entanglement---episode-1',
                 'medium_com_escaping-the-cat',
                 'medium_com_find-the-winning-strategy',
                 'medium_com_forest-fire',
@@ -1194,6 +1196,7 @@ return [
                 'hard_com_freecell',
                 'hard_com_jump-point-search---preprocessing',
                 'hard_com_jump-point-search---runtime',
+                'hard_com_magnets',
                 'hard_com_sokoban',
             ],
             'puzzle/community/expert/' => [
@@ -1203,4 +1206,5 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.10.03: 'medium_com_integer-pairs-of-abab',
+// Note: last puzzle added on 25.12.21: 'medium_com_tic-tac-toe-engine',
+
