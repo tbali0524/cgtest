@@ -1,0 +1,16 @@
+9
+10
+4 0 -1 -1 5 -1 -1 -1 -1 -1
+-1 -1 -1 3 3 4 3 5 -1
+-1 -1 3 5 4 -1 3 4 3 4
+-1 -1 -1 -1 4 4 -1 -1 -1
+GFEEDDCBA
+GFYYKKCBA
+aaZZLLJHH
+bcghhMJII
+bcgiiMRQP
+ddojjNRQP
+eeokkNUSS
+fppmlOUTT
+fqqmlOWWV
+ssrrnnXXV

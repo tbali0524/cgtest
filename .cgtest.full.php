@@ -362,6 +362,7 @@ return [
                 'easy_com_kiss-the-girls',
                 'easy_com_largest-number',
                 'easy_com_library-dependencies',
+                'easy_com_lines_intersections',
                 'easy_com_logically-reasonable-inequalities',
                 'easy_com_logic-gates',
                 'easy_com_longest-coast',
@@ -444,7 +445,8 @@ return [
                 'easy_com_scrabble-score',
                 'easy_com_seeing-squares',
                 'easy_com_self-driving-car-testing',
-                // 'easy_com_sentence-tokenising',          // removed puzzle, unavailable
+                // 'easy_com_sentence-tokenising',          // removed puzzle
+                'easy_com_set-probabilitites-card-game',
                 'easy_com_shadow-casting',
                 'easy_com_shikaku-skill-builder',
                 'easy_com_shoot-enemy-aircraft',
@@ -453,6 +455,7 @@ return [
                 'easy_com_simple-ai-duels',
                 'easy_com_simple-auto-scaling',
                 'easy_com_simple-awale',
+                'easy_com_simple-diff-tool',
                 'easy_com_simple-load-balancing',
                 'easy_com_six-degrees-of-kevin-bacon',
                 'easy_com_smooth',
@@ -802,6 +805,7 @@ return [
                 'medium_com_shape-outline',
                 'medium_com_shikaku-solver',
                 'medium_com_short-accounts-make-long-friends',
+                'medium_com_shortest-palindromic-path',
                 'medium_com_simple-blur',
                 'medium_com_simple-fraction-to-mixed-number',
                 'medium_com_simplified-monopoly-turns-prediction',
@@ -810,6 +814,7 @@ return [
                 'medium_com_smooth-factory',
                 'medium_com_snake-encoding',
                 'medium_com_snakes-and-ladders',
+                'medium_com_snowflakes',
                 'medium_com_solid-integer',
                 'medium_com_spore-city-planner',
                 'medium_com_sticky-keyboard',
@@ -1206,5 +1211,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.12.21: 'medium_com_tic-tac-toe-engine',
-
+// Note: last puzzle added on 25.12.31: 'easy_com_simple-diff-tool',

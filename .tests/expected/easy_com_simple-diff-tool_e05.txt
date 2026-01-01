@@ -1,0 +1,2 @@
+ADD: Some experience points are awarded on tasks achievement
+DELETE: It supports a large set of programming languages.

@@ -1,0 +1,2 @@
+CHANGE: It supports a large set of programming languages. ---> The progression path is divided in four parts: development speed, algorithms, optimisation and artificial intelligence.
+DELETE: The progression path is divided in four parts: development speed, algorithms, optimisation and artificial intelligence.

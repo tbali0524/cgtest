@@ -143,13 +143,13 @@ return [
     // 'rust' => [
     //     'sourcePath' => 'rust/',
     //     'sourceExtension' => '.rs',
-    //     'codinGameVersion' => 'rustc 1.70.0',
+    //     'codinGameVersion' => 'rustc 1.90.0',
     //     'versionCommand' => 'rustc --version',
-    //     'buildCommand' => 'rustc -C opt-level=3 --edition 2021 %s -o%b%p_%l.exe',
+    //     'buildCommand' => 'rustc -C opt-level=3 -C target-cpu=native --edition 2024 %s -o%b%p_%l.exe',
     //     'runCommand' => '%b%p_%l.exe',
     //     'note' => '',
     //     'altVersionCommand' => '',
-    //     'altBuildCommand' => 'rustc -g -C overflow-checks --edition 2021 %s -o%b%p_%l.exe',
+    //     'altBuildCommand' => 'rustc -g -C overflow-checks --edition 2024 %s -o%b%p_%l.exe',
     //     'altRunCommand' => '',
     //     'altNote' => 'DEBUG mode',
     //     'cleanPatterns' => [

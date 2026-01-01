@@ -1,0 +1,9 @@
+BY_NUMBER
+3
+CodinGame is a fun website to learn programming skills.
+It supports a large set of programming languages.
+The progression path is divided in four parts: development speed, algorithms, optimisation and artificial intelligence.
+3
+CodinGame is a fun website to learn programming skills.
+It supports a large set of programming languages.
+The progression path is divided in four parts: development speed, algorithms, optimisation and artificial intelligence.

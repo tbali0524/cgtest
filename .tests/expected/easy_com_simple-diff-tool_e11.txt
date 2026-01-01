@@ -1,0 +1,9 @@
+ADD: Each time a player reaches a new league he awards some experience points.
+ADD: Participants play against each others in several matches.
+ADD: The goal is to create a bot (an AI) capable of playing a game in the given environment.
+DELETE: Participants play against themselves in matches of 2 to 4 players in an arena.
+DELETE: The goal is not to output a solution but to create a bot (an AI) capable of playing a game in the given environment.
+DELETE: When ranking up, you'll be promoted to new leagues: Bronze, Silver, Gold and finally Legend.
+DELETE: You start in the Wood leagues with a simplified version of the game.
+MOVE: Any player who ends up above the boss' score after their ranking battles are finished will be promoted to the league above. @:11 >>> @:10
+MOVE: In each league but the last (Legend), there is a reference bot: the boss. @:10 >>> @:9

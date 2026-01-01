@@ -1,0 +1,5 @@
+CHANGE: In each league but the last (Legend), there is a reference bot: the boss. ---> Any player who ends up above the boss' score after their ranking battles are finished will be promoted to the league above.
+CHANGE: The game is divided into several leagues. ---> The game is divided into several leagues: Woods, Bronze, Silver, Gold and finally Legend
+CHANGE: The goal is not to output a solution but to create a bot (an AI) capable of playing a game in the given environment. ---> The goal is to create a bot (an AI) capable of playing a game in the given environment.
+CHANGE: When ranking up, you'll be promoted to new leagues: Bronze, Silver, Gold and finally Legend. ---> In each league but the last (Legend), there is a reference bot: the boss.
+DELETE: Any player who ends up above the boss' score after their ranking battles are finished will be promoted to the league above.

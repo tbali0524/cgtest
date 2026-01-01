@@ -1,0 +1,3 @@
+CHANGE: CodinGame is a fun website to learn programming skills. ---> The progression path is divided in four parts: development speed, algorithms, optimisation and artificial intelligence.
+CHANGE: It supports a large set of programming languages. ---> CodinGame is a fun website to learn programming skills.
+CHANGE: The progression path is divided in four parts: development speed, algorithms, optimisation and artificial intelligence. ---> It supports a large set of programming languages.

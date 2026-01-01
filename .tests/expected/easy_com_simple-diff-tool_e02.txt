@@ -1,0 +1,2 @@
+ADD: The progression path is divided in four parts: development speed, algorithms, optimisation and artificial intelligence.
+CHANGE: The progression path is divided in four parts: development speed, algorithms, optimisation and artificial intelligence. ---> Some experience points are awarded on tasks achievement

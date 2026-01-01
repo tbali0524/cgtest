@@ -1,0 +1,24 @@
+BY_CONTENT
+11
+Bot programming games are multiplayer games with a game loop.
+There are no test cases to pass.
+The goal is not to output a solution but to create a bot (an AI) capable of playing a game in the given environment.
+Participants play against themselves in matches of 2 to 4 players in an arena.
+Once players submit their code (AI) in the arena, the system matches them against other players of the arena.
+Each match between players impacts their score, hence their ranking.
+The game is divided into several leagues.
+You start in the Wood leagues with a simplified version of the game.
+When ranking up, you'll be promoted to new leagues: Bronze, Silver, Gold and finally Legend.
+In each league but the last (Legend), there is a reference bot: the boss.
+Any player who ends up above the boss' score after their ranking battles are finished will be promoted to the league above.
+10
+Bot programming games are multiplayer games with a game loop.
+There are no test cases to pass.
+The goal is to create a bot (an AI) capable of playing a game in the given environment.
+Participants play against each others in several matches.
+Once players submit their code (AI) in the arena, the system matches them against other players of the arena.
+Each match between players impacts their score, hence their ranking.
+The game is divided into several leagues.
+Each time a player reaches a new league he awards some experience points.
+In each league but the last (Legend), there is a reference bot: the boss.
+Any player who ends up above the boss' score after their ranking battles are finished will be promoted to the league above.
