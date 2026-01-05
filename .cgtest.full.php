@@ -799,6 +799,7 @@ return [
                 'medium_com_rummikub-1',
                 'medium_com_russian-dolls',
                 'medium_com_sandpile-addition',
+                'medium_com_santas-garland',
                 'medium_com_scary-ride-at-the-haunted-mansion',
                 'medium_com_seam-carving',
                 'medium_com_self-checkout-machine',
@@ -1211,4 +1212,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 25.12.31: 'easy_com_simple-diff-tool',
+// Note: last puzzle added on 26.01.04: 'medium_com_santas-garland',

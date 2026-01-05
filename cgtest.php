@@ -821,7 +821,8 @@ if ($argConfigFileName != '') {
 $config = $defaultConfig;
 foreach ($configFromFile as $configKey => $configValue) {
     if (
-        !is_array($defaultConfig[$configKey])
+        !isset($defaultConfig[$configKey])
+        or !is_array($defaultConfig[$configKey])
         or (in_array($configKey, $arrayConfigKeys, true) !== false)
     ) {
         $config[$configKey] = $configValue;
