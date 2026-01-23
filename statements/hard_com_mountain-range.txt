@@ -1,0 +1,143 @@
+Mountain range
+
+hard_com_mountain-range
+https://www.codingame.com/training/hard/mountain-range
+https://www.codingame.com/contribute/view/138549f7afeb999e31575778e6e4aec9fcf7d2
+
+A contribution by Kk81
+Approved by ethan-alexander,User123,YALOKGAR
+
+Goal
+Introduction
+
+You are given a grid that represents a mountain range, using characters /, \, - and spaces. You must count the number of summits in the range.
+
+Here is an example of such a grid with 5 summits:
+                  /\
+        ---      /  \
+-      /   \    /    \                -
+ \    /     ---/      \      --      / \
+  \---        /        \    /  \    /   \
+   \         /          \  /    \  /     \
+    \       /            \/      \/       \
+     \     /             /        \        \
+      \   /             /          -----------
+       -----------------
+
+
+Definitions
+
+For a grid of width W, a completed ridge is a sequence of W non-space characters, one per column. Some sections of the ridges are visible and others are hidden.
+
+A visible section is a continuous sequence of characters given in the input grid.
+
+A hidden section is a continuous sequence of hidden characters that connect two visible sections, or one visible section with the edge of the grid.
+
+The example grid has 3 completed ridges. The front ridge is:
+-
+ \                           --
+  \                         /  \
+   \                       /    \
+    \                     /      \
+     \                   /        \
+      \                 /          -----------
+       -----------------
+
+The middle ridge has 2 visible sections and 3 hidden sections (highlighted):
+                  /\
+                 /  \
+                /    \               -
+               /      \             / \
+              /        \           /   \
+             /          \         /     \
+            /            \       /       \
+           /              --------         \
+          /                                \
+         /                                  \
+
+The back ridge has 1 visible section and 2 hidden sections (highlighted):
+        ---
+       /   \
+      /     ---
+   ---         \
+  /             \
+ /               \
+/                 \
+
+
+One summit is the combination of:
+- a sequence of any number of consecutive - (can be 0)
+- a / at the immediate bottom-left of that sequence (can be hidden)
+- a \ at the immediate bottom-right of that sequence (can be hidden)
+----          ----          ----
+    \        /    \        /
+
+To be counted as one summit, at least one character of the combination must be visible.
+
+A flat ridge (- repeated W times) counts as one summit.
+
+An intersection is the location where a ridge hides another ridge. It will always be represented with one of the following 4x3 patterns:
+
+\           /        /     \        \  /     \  /
+ \--     --/        /       \        \/       \/
+  \       /       ----     ----       \       /
+
+Here are all six patterns highlighted in the example grid:
+                  /\
+        ---      /  \
+-      /   \    /    \                -
+ \    /     ---/      \      --      / \
+  \---        /        \    /  \    /   \
+   \         /          \  /    \  /     \
+    \       /            \/      \/       \   
+     \     /             /        \        \  
+      \   /             /          -----------
+       -----------------
+
+
+Completing partially hidden ridges
+
+When ridges are partially hidden, several interpretations are possible to complete them. This leads to several possible answers unless you connect visible sections to form completed ridges. Non-space characters must be grouped into the same ridge if they connect into a continuous path across columns while satisfying the rules below.
+- A completed ridge occupies exactly one non-space character per column.
+- Characters along a completed ridge form a continuous path across adjacent columns. That means non-space characters in adjacent columns must be in adjacent rows, except when both are -, in which case both must be in the same row.
+- Non-space characters used to fill the hidden sections must lie below the initially visible mountain outline (they cannot be above it because they wouldn't be hidden in the first place).
+- A hidden section on the very left of the grid is filled with /.
+- A hidden section on the very right of the grid is filled with \.
+- A hidden section between two visible characters at the same height is filled with -.
+- A hidden section between a lower-left visible character and an upper-right visible character is filled with - and /.
+- A hidden section between an upper-left visible character and a lower-right visible character is filled with - and \.
+
+Note: This puzzle is solvable without completing partially hidden ridges. The rules stated above are given to eliminate invalid interpretations. Although multiple valid completions may still exist, they all lead to the same final number of summits.
+
+Input
+Line 1: 2 space-separated integers height and width, the dimensions of the grid.
+Next height lines: width characters that are either /, \, - or whitespace.
+
+Output
+The number of summits in the mountain range
+
+Constraints
+- 0 < height < width < 64
+- A character used to define a summit is never reused to define another summit. In other words, two summits are always disjoint.
+- There is no / or \ in the bottom line.
+- Mountain ranges are physically valid. There will never be a case where a ridge hides another ridge at one section and yet becomes hidden by the same ridge in another section.
+
+Example
+
+Input
+6 23
+               /\      
+     --       /  \     
+    /  \     /    \    
+   /    \   /      \   
+  /      ---        \  
+--                   --
+
+Output
+2
+
+Difficulty
+Hard
+
+Tags
+Pattern recognition, Image processing, Ascii Art

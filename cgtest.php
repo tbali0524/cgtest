@@ -155,10 +155,7 @@ $defaultConfig = [
         // note: omitting -ldl -lcrypt from CG settings
         'buildCommand' => 'gcc -std=c17 -o %b%p_%l.exe %s -lm -lpthread',
         'runCommand' => '%b%p_%l.exe',
-        'altVersionCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang-19 --version'
-            : 'clang --version'
-        ),
+        'altVersionCommand' => 'clang --version',
         'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
             ? 'clang-19 -std=c17 -o %b%p_%l.exe %s -lm'
             : 'clang -std=c17 -o %b%p_%l.exe %s'
@@ -199,10 +196,7 @@ $defaultConfig = [
             : 'g++ -static-libgcc -static-libstdc++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread'
         ),
         'runCommand' => '%b%p_%l.exe',
-        'altVersionCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang++-19 --version'
-            : 'clang++ --version'
-        ),
+        'altVersionCommand' => 'clang++ --version',
         'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
             ? 'clang++-19 -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm'
             : 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s'
@@ -218,9 +212,6 @@ $defaultConfig = [
         'versionCommand' => 'bb --version',
         'buildCommand' => '',
         'runCommand' => 'bb --classpath %b -m Solution -f %bSolution.clj',
-        'altVersionCommand' => 'bb --version',
-        'altBuildCommand' => '',
-        'altRunCommand' => 'bb --classpath %b -m Solution -f %bSolution.clj',
         'cleanPatterns' => ['%bSolution.clj'],
         'cleanDirectoryPatterns' => [],
     ],
@@ -414,9 +405,6 @@ $defaultConfig = [
         'versionCommand' => 'python --version',
         'buildCommand' => '',
         'runCommand' => 'python %s',
-        'altVersionCommand' => 'python3.14 --version',
-        'altBuildCommand' => '',
-        'altRunCommand' => 'python3.14 %s',
         'cleanPatterns' => [],
         'cleanDirectoryPatterns' => [],
     ],
@@ -524,9 +512,6 @@ $defaultConfig = [
         'versionCommand' => 'gfortran --version',
         'buildCommand' => 'gfortran -o%b%p_%l.exe %s',
         'runCommand' => '%b%p_%l.exe',
-        'altVersionCommand' => 'gfortran-13 --version',
-        'altBuildCommand' => 'gfortran-13 -o%b%p_%l.exe %s',
-        'altRunCommand' => '%b%p_%l.exe',
         'cleanPatterns' => ['%b%p_%l.exe'],
         'cleanDirectoryPatterns' => [],
     ],
