@@ -5,11 +5,11 @@ No IDE is needed, only the compilers/interpreters, to be invoked via CLI.
 
 Instructions for [Windows](#windows) or [Linux](#linux)
 
-Last updated: _2026.01.19_
+Last updated: _2026.02.06_
 
 ## Windows
 
-Version numbers are current as of _2026.01.19_.
+Version numbers are current as of _2026.02.06_.
 
 The following methods are valid for __Windows 11__.
 The recommended method is to use
@@ -155,7 +155,7 @@ dotnet fsi --version
 ### Go
 
 * Homepage: <https://go.dev/>
-* Version: `go version go1.25.6 windows/amd64`
+* Version: `go version go1.25.7 windows/amd64`
 * Default path: `C:\Program Files\Go\bin\go.exe`
 
 ```pwsh
@@ -168,7 +168,7 @@ winget update GoLang.Go
 ### Groovy
 
 * Homepage: <https://groovy-lang.org/>
-* Version: `Groovy Version: 5.0.3 JVM: 25.0.1 Vendor: Eclipse Adoptium OS: Windows 11`
+* Version: `Groovy Version: 5.0.3 JVM: 25.0.2 Vendor: Eclipse Adoptium OS: Windows 11`
 * Default path: `C:\Program Files (x86)\Groovy\bin\groovy.bat`
 * Requires Java JDK installed.
 
@@ -183,7 +183,7 @@ winget update Apache.Groovy.5
 
 * Homepage: <https://www.haskell.org/>
 * Install with [GHCup](https://www.haskell.org/ghcup/)
-* Version: `The Glorious Glasgow Haskell Compilation System, version 9.12.2`
+* Version: `The Glorious Glasgow Haskell Compilation System, version 9.14.1`
 * Default path: `C:\ghcup\bin\ghc.exe`
 * Default packages path: `C:\cabal\packages`
 * Update manually with: `ghcup tui`
@@ -198,7 +198,7 @@ ghcup tui
 
 * Homepage: <https://openjdk.org/>, <https://www.java.com/>
 * Recommended distribution: [Eclipse Adoptium](https://adoptium.net/)
-* Version: `OpenJDK Runtime Environment Temurin-25.0.1+8 (build 25.0.1+8-LTS)`
+* Version: `OpenJDK Runtime Environment Temurin-25.0.2+10 (build 25.0.2+10-LTS)`
 * Default path: `C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\bin\java.exe`
 * Set environment variable: `JAVA_HOME`
 
@@ -206,7 +206,7 @@ ghcup tui
 winget search groovy
 winget install EclipseAdoptium.Temurin.25.JDK
 java --version
-sudo setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\" /m
+sudo setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\" /m
 echo $Env:JAVA_HOME
 winget update EclipseAdoptium.Temurin.25.JDK
 ```
@@ -230,7 +230,7 @@ winget update OpenJS.NodeJS.LTS
 
 * Homepage: <https://kotlinlang.org/>
 * Download compiler from [GitHub](https://github.com/JetBrains/kotlin/releases/latest/)
-* Version: `kotlinc-jvm 2.3.0 (JRE 25.0.1+8-LTS)`
+* Version: `kotlinc-jvm 2.3.0 (JRE 25.0.2+10-LTS)`
 * Recommended path: `C:\tools\kotlinc\bin\kotlinc.bat`
 * Requires Java JDK installed.
 * Update manually
@@ -361,7 +361,7 @@ winget update RubyInstallerTeam.RubyWithDevKit.3.4
 * Homepage: <https://www.rust-lang.org/>
 * Install with the `rustup-init (64-bit)`, update with `rustup`
 * Also available: Installing with `winget`: `winget search Rustlang.Rust`
-* Version: `rustc 1.92.0 (ded5c06cf 2025-12-08)`
+* Version: `rustc 1.93.0 (254b59607 2026-01-19)`
 * Toolchain: `stable-x86_64-pc-windows-msvc`
 * Recommended path (after moving to a DevDrive): `D:\packages\cargo\bin\rustc.exe`
 * Requires: [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)

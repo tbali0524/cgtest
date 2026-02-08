@@ -362,7 +362,7 @@ return [
                 'easy_com_kiss-the-girls',
                 'easy_com_largest-number',
                 'easy_com_library-dependencies',
-                'easy_com_lines_intersections',
+                'easy_com_lines-intersections',
                 'easy_com_logically-reasonable-inequalities',
                 'easy_com_logic-gates',
                 'easy_com_longest-coast',
