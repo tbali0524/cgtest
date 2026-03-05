@@ -1,0 +1,52 @@
+What a dessert!
+
+easy_com_what-a-dessert
+https://www.codingame.com/training/easy/what-a-dessert
+https://www.codingame.com/contribute/view/1396721a6f372a12ca0252311ee44082a3259d
+
+A contribution by Minni22
+Approved by KAKAROT_MPL,foreignandw0wzahh
+
+Goal
+You are a pastry chef and you make dessert every day according to the ingredients available.
+Each day, the ingredient delivery is different, and you choose what to cook based on the recipes you know.
+
+These are the known recipes:
+Cookie: 1 egg + 100 g flour + 150 g sugar + 50 g butter
+Cake: 3 eggs + 180 g flour + 100 g sugar + 100 g butter
+Muffin: 2 eggs + 150 g flour + 100 g sugar + 150 g butter
+
+You can use a recipe multiple times (you can make 2 cakes for example), but you have to choose only one recipe: the one that gives you the biggest number.
+It is possible to make different types in the same amount, the order of priority is: first Cake, then Cookie and finally Muffin.
+
+Input
+4 integers separated by spaces: E F S B
+
+E: number of eggs
+F: flour quantity in grams
+S: sugar quantity in grams
+B: butter quantity in grams
+
+Output
+The number of desserts and the chosen type (Cookie, Cake or Muffin), separated by a space. Always use the singular form of the dessert.
+
+Constraints
+There will always be enough ingredients to make a recipe.
+0<E<=100
+0<F<=1000
+0<S<=1000
+0<B<=1000
+
+Example
+
+Input
+6 550 700 200
+
+Output
+4 Cookie
+
+Difficulty
+Easy
+
+Tags
+Conditions
