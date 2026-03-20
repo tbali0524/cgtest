@@ -1,0 +1,1 @@
+35sin(x)-21sin(3x)+7sin(5x)-sin(7x)

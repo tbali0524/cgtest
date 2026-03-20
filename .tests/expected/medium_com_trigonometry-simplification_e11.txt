@@ -1,0 +1,1 @@
+14sin(2x)-8sin(4x)-3sin(6x)+4sin(8x)-sin(10x)

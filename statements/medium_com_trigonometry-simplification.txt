@@ -1,0 +1,42 @@
+Trigonometry Simplification
+
+medium_com_trigonometry-simplification
+https://www.codingame.com/training/medium/trigonometry-simplification
+https://www.codingame.com/contribute/view/80931c128f6a64e29890f141d2ea25dfb7cf1
+
+A contribution by Diabetos
+Approved by AvadaKedavra6,N3l,TimesCantCode
+
+Goal
+Products of several cosine and sine are hard to study, therefore, we go through a process of simplification. We simply replace every cos(x) with (e^(ix)+e^(-ix))/2 and every sin(x) with (e^(ix)-e^(-ix))/2i, with i² = -1; then we get rid of every cos/sin power by including them on the exponentials and we make the process the other way.
+E.g. cos²(x) = ((e^(ix)+e^(-ix))/2)² = (e^(2ix) + 2 + e^(-2ix))/4, here we use once again the identity given above, => (cos(2x) + 1)/2
+
+The goal here is to simplify an expression such as sin(x)^S * cos(x)^C * F, where F is a factor given such that the coefficients of the final sum are always integers.
+
+Input
+Three space separated integers S, C and F.
+
+Output
+A line with the answer formatted as k_0±k_1sin/cos(x)±k_2sin/cos(2x)±....
+First the constant term then every term in ascending order of the coefficient in x within each sin/cos term.
+If k = 0, the cos/sin associated need not be displayed.
+
+Constraints
+0 ≤ S ≤ 10
+0 ≤ C ≤ 10
+1 ≤ F ≤ 750,000
+The output of such an expression will only contain sine or cosine, never both at the same time.
+
+Example
+
+Input
+0 2 2
+
+Output
+1+cos(2x)
+
+Difficulty
+Medium
+
+Tags
+Trigonometry, Mathematics

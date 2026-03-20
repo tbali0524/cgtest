@@ -231,6 +231,7 @@ return [
                 'expert_cg_the-resistance',
             ],
             'puzzle/community/easy/' => [
+                'easy_com_0xc0ffee-request-validator',
                 'easy_com_1-ngr-basic-radar',
                 'easy_com_1d-bush-fire',
                 'easy_com_1d-spreadsheet',
@@ -363,6 +364,7 @@ return [
                 'easy_com_key-value-store',
                 'easy_com_kiss-the-girls',
                 'easy_com_largest-number',
+                'easy_com_laughter-is-contagious',
                 'easy_com_library-dependencies',
                 'easy_com_lines-intersections',
                 'easy_com_logically-reasonable-inequalities',
@@ -489,6 +491,7 @@ return [
                 'easy_com_the-alien-business-of-cows',
                 'easy_com_the-broken-editor',
                 'easy_com_the-dart-101',
+                'easy_com_the-descent---part-2',
                 'easy_com_the-electrician-apprentice',
                 'easy_com_the-frog-jump-1',                 // removed puzzle
                 'easy_com_the-helpdesk',
@@ -524,6 +527,7 @@ return [
                 'easy_com_what-is-your-garden-worth',
                 'easy_com_whats-so-complex-about-mandelbrot',
                 'easy_com_where-am-i-going',
+                'easy_com_where-was-this-knight-before',
                 'easy_com_wheres-wally',
                 'easy_com_who-is-leading',
                 'easy_com_winning-parabola',                // removed puzzle
@@ -868,6 +872,7 @@ return [
                 'medium_com_tired-pac-man',
                 'medium_com_train-passenger',
                 'medium_com_tree-recognition',
+                'medium_com_trigonometry-simplification',
                 'medium_com_trits-balanced-ternary-computing',
                 'medium_com_valid-brackets-in-code',
                 'medium_com_various-number-spirals',
@@ -1224,4 +1229,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 26.03.05: 'easy_com_solar-shadow-hunter',
+// Note: last puzzle added on 26.03.20: 'easy_com_where-was-this-knight-before',

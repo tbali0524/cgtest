@@ -1,0 +1,1 @@
+3cos(x)-3cos(3x)-cos(5x)+cos(7x)

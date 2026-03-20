@@ -1,0 +1,17 @@
+RDVX
+.DVXRDVX
+X..A....
+.X...BXX
+..X..X..
+rdvx..c.
+....xvdr
+rrrrrrrr
+........
+.DVXRDVX
+X..A....
+.X...BX*
+..X..X..
+rdvx..X.
+..*.xvdr
+rrrrrrrr
+...i....
