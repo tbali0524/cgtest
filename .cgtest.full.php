@@ -735,6 +735,7 @@ return [
                 'medium_com_magic-coloring',
                 'medium_com_magic-square',
                 'medium_com_magic-stones',
+                'medium_com_mana-quest-hunt-for-the-perfect-seven',
                 'medium_com_markov-ants',
                 'medium_com_mask-matching',
                 'medium_com_maximum-sub-sequence',
@@ -1229,4 +1230,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 26.03.20: 'easy_com_where-was-this-knight-before',
+// Note: last puzzle added on 26.03.27: 'medium_com_mana-quest-hunt-for-the-perfect-seven',

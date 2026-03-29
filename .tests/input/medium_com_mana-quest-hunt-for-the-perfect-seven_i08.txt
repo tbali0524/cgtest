@@ -1,0 +1,13 @@
+6
+C1R 4
+C2G 8
+C3B 10
+I1W 10
+L0U 18
+S2U 10
+5
+x1x
+C2x
+C3x
+I1x
+L0x

@@ -1,0 +1,18 @@
+8
+C1R 8
+C2G 8
+C3B 8
+C8U 8
+I1W 8
+S5W 8
+L0B 8
+E1R 4
+8
+CxR
+x2G
+C3B
+C8x
+x1W
+x5x
+L0B
+E1R

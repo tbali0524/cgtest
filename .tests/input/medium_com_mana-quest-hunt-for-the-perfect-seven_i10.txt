@@ -1,0 +1,16 @@
+7
+C1R 10
+C2G 10
+C3B 10
+C4U 10
+I1W 10
+S2W 5
+L0B 5
+7
+C1x
+C2x
+C3x
+CxU
+xxx
+S2x
+x0B

@@ -1,0 +1,14 @@
+6
+C1R 10
+C2G 10
+C5B 10
+I1W 10
+S2W 10
+L0B 10
+6
+xxR
+CxG
+C5x
+x1W
+S2x
+L0x
