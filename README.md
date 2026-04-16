@@ -10,7 +10,7 @@ A multi-language offline batch test runner for `CodinGame` (or other) solo I/O p
 
 by Bálint Tóth ([TBali](https://www.codingame.com/profile/08e6e13d9f7cad047d86ec4d10c777500155033))
 
-_The repository also contains __7400+__ test cases for __970+__ `CodinGame` puzzles and __870+__ puzzle statements._
+_The repository also contains __7800+__ test cases for __980+__ `CodinGame` puzzles and __900+__ puzzle statements._
 
 ## Intro
 
@@ -43,18 +43,19 @@ Options:
    --help             Display this help message
    --dry-run          Do not run the tests; only show what test cases would run
    --run-only         Run the tests, but do not evaluate results
+   --test-case=ID     Run only a specific test case [default: all]
    --alt              Use alternative compiler, if such is defined in the config (e.g. for c, c++, php)
    --ansi             Use color output [default]
    --no-ansi          Disable color output
    --verbose          Increase the verbosity of messages: also show each passed tests [default]
    --quiet            Decrease the verbosity of messages: only show errors and warnings
-   --stats            Show per-language test stats
+   --log-single       Supress all log output except a single result row per puzzle tested
+   --stats            Show per-language test statistics
    --lang-versions    Show versions for all configured programming languages
    --show-defaults    Show default configuration settings (as json)
    --clean            Delete temporary and output files of previous test run
    --create=COUNT     Create COUNT number of empty test cases for the given puzzle
    --config=FILENAME  Use configfile [default: .cgtest.php]
-   --test-case=id     Run only a specific test case [default: all]
    --lang=LANGUAGES   Run tests in these languages (comma separated list)
                         - default: php; or the languages section in the config file
 

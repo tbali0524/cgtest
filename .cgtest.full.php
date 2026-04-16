@@ -1,23 +1,20 @@
 <?php
 
-/**
- * CGTest v1.17.0 by Balint Toth [TBali]
- * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- *
- * configuration file
- */
+// Config for [CGTest](https://github.com/tbali0524/cgtest).
 
 declare(strict_types=1);
 
 namespace TBali\CGTest;
 
 return [
+    'cgtest-version' => '1.18',
     // == The following default config options can be overriden:
     // 'dry-run' => false,
     // 'run-only' => false,
     // 'alt' => false,
     // 'ansi' => true,
     // 'verbose' => true,
+    // 'log-single' => false,
     // 'stats' => false,
     // 'lang-versions' => false,
     // 'clean' => false,
@@ -425,6 +422,7 @@ return [
                 'easy_com_prefix-code',
                 'easy_com_probability-for-dummies',
                 'easy_com_production-pipeline',
+                'easy_com_pyramid-stacker',
                 'easy_com_queen-control',
                 'easy_com_random-walk',
                 'easy_com_rectangle-partition',
@@ -764,6 +762,7 @@ return [
                 'medium_com_number-of-letters-in-a-number---binary',
                 'medium_com_number-of-paths-between-2-points',
                 'medium_com_number-of-triangles-enclosing-x',
+                'medium_com_numbers-with-only-two-distinct-digits',
                 'medium_com_numeral-system',
                 'medium_com_one-for-his-nobs',
                 'medium_com_oneway-city',
@@ -854,6 +853,7 @@ return [
                 'medium_com_the-g-note',
                 'medium_com_the-grand-festival---i',
                 'medium_com_the-grand-festival---ii',
+                'medium_com_the-hole-truth',
                 'medium_com_the-hooch-clash-grouch',        // removed puzzle
                 'medium_com_the-lord-of-the-annuli',
                 'medium_com_the-lost-child-episode-1',
@@ -1048,6 +1048,7 @@ return [
                 'hard_com_wave-function-collapse-sans-shannon',
                 'hard_com_who-dunnit',
                 'hard_com_x-egg-problem',
+                'hard_com_xth-lexicographically-smallest-number',
                 'hard_com_zergling-rush',
             ],
             'puzzle/community/expert/' => [
@@ -1230,4 +1231,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 26.03.27: 'medium_com_mana-quest-hunt-for-the-perfect-seven',
+// Note: last puzzle added on 26.04.16: 'medium_com_the-hole-truth',

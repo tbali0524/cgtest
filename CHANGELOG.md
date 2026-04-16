@@ -9,7 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+### Changed
+
+### Fixed
+
+## [v1.18.0](https://github.com/tbali0524/cgtest/releases/v1.18.0) - 2026-04-16
+
+### Added
+
 - More test cases added.
+- `cgtest-version` configuration option added to the global section.
+- `log-single` configuration option added to the global section.
+- `--log-single` command-line argument added.
 
 ### Changed
 

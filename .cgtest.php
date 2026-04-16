@@ -1,23 +1,20 @@
 <?php
 
-/**
- * CGTest v1.17.0 by Balint Toth [TBali]
- * A multi-language offline batch test runner for CodinGame (or other) solo I/O puzzles.
- *
- * configuration file
- */
+// Config for [CGTest](https://github.com/tbali0524/cgtest).
 
 declare(strict_types=1);
 
 namespace TBali\CGTest;
 
 return [
+    'cgtest-version' => '1.18',
     // == The following default config options can be overriden:
     // 'dry-run' => false,
     // 'run-only' => false,
     // 'alt' => false,
     // 'ansi' => true,
     // 'verbose' => true,
+    // 'log-single' => false,
     // 'stats' => false,
     // 'lang-versions' => false,
     // 'clean' => false,
