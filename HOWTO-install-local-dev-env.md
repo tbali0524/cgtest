@@ -5,11 +5,11 @@ No IDE is needed, only the compilers/interpreters, to be invoked via CLI.
 
 Instructions for [Windows](#windows) or [Linux](#linux)
 
-Last updated: _2026.02.06_
+Last updated: _2026.05.14_
 
 ## Windows
 
-Version numbers are current as of _2026.02.06_.
+Version numbers are current as of _2026.05.14_.
 
 The following methods are valid for __Windows 11__.
 The recommended method is to use
@@ -55,7 +55,7 @@ pacman -Sy msys2-keyring; pacman -Suy
 #### Using Clang
 
 * Homepage: <https://clang.llvm.org/>
-* Version: `clang version 21.1.8`
+* Version: `clang version 22.1.5`
 * Default path: `C:\Program Files\LLVM\bin\clang.exe`
 
 ```pwsh
@@ -69,7 +69,7 @@ winget update LLVM.LLVM
 
 * Homepage: <https://dotnet.microsoft.com/en-us/>
 * Install as part of __.NET__
-* Version: `dotnet 10.0.102` (LTS)
+* Version: `dotnet 10.0.204` (LTS)
 * Default path: `C:\Program Files\dotnet\dotnet.exe`
 
 ```pwsh
@@ -100,7 +100,7 @@ g++ --version
 * Homepage: <https://clojure.org/>
 * Use with __Babashka__: <https://babashka.org/>
 * Download `bb.exe` binary from [GitHub](https://github.com/babashka/babashka/releases), add to path
-* Version: `babashka v1.12.214`
+* Version: `babashka v1.12.218`
 * Recommended path: `c:\tools\cli\bb.exe`
 * Update manually
 
@@ -108,9 +108,9 @@ g++ --version
 mkdir c:\tools\cli
 cd c:\tools\cli
 # update version number below
-curl -OL https://github.com/babashka/babashka/releases/download/v1.12.214/babashka-1.12.214-windows-amd64.zip
-unzip babashka-1.12.214-windows-amd64.zip
-del babashka-1.12.214-windows-amd64.zip
+curl -OL https://github.com/babashka/babashka/releases/download/v1.12.218/babashka-1.12.218-windows-amd64.zip
+unzip babashka-1.12.218-windows-amd64.zip
+del babashka-1.12.218-windows-amd64.zip
 bb --version
 ```
 
@@ -144,8 +144,8 @@ winget update Google.DartSDK
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 10.0.102` (LTS)
-* Version: `Microsoft (R) F# Interactive version 14.0.102.0 for F# 10.0`
+* Version: `dotnet 10.0.204` (LTS)
+* Version: `Microsoft (R) F# Interactive version 15.2.204.0 for F# 10.0`
 
 ```pwsh
 dotnet --version
@@ -155,7 +155,7 @@ dotnet fsi --version
 ### Go
 
 * Homepage: <https://go.dev/>
-* Version: `go version go1.25.7 windows/amd64`
+* Version: `go version go1.26.3 windows/amd64`
 * Default path: `C:\Program Files\Go\bin\go.exe`
 
 ```pwsh
@@ -168,7 +168,7 @@ winget update GoLang.Go
 ### Groovy
 
 * Homepage: <https://groovy-lang.org/>
-* Version: `Groovy Version: 5.0.3 JVM: 25.0.2 Vendor: Eclipse Adoptium OS: Windows 11`
+* Version: `Groovy Version: 5.0.4 JVM: 25.0.3 Vendor: Eclipse Adoptium OS: Windows 11`
 * Default path: `C:\Program Files (x86)\Groovy\bin\groovy.bat`
 * Requires Java JDK installed.
 
@@ -198,15 +198,15 @@ ghcup tui
 
 * Homepage: <https://openjdk.org/>, <https://www.java.com/>
 * Recommended distribution: [Eclipse Adoptium](https://adoptium.net/)
-* Version: `OpenJDK Runtime Environment Temurin-25.0.2+10 (build 25.0.2+10-LTS)`
-* Default path: `C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\bin\java.exe`
+* Version: `OpenJDK Runtime Environment Temurin-25.0.3+9 (build 25.0.3+9-LTS)`
+* Default path: `C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin\java.exe`
 * Set environment variable: `JAVA_HOME`
 
 ```pwsh
 winget search groovy
 winget install EclipseAdoptium.Temurin.25.JDK
 java --version
-sudo setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\" /m
+sudo setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\" /m
 echo $Env:JAVA_HOME
 winget update EclipseAdoptium.Temurin.25.JDK
 ```
@@ -215,7 +215,7 @@ winget update EclipseAdoptium.Temurin.25.JDK
 
 * Homepage: <https://javascript.info/>
 * Recommended runtime: [Node.js](https://nodejs.org/)
-* Version: `v24.13.0` (LTS)
+* Version: `v24.15.0` (LTS)
 * Default path: `C:\Program Files\nodejs\node.exe`
 
 ```pwsh
@@ -230,7 +230,7 @@ winget update OpenJS.NodeJS.LTS
 
 * Homepage: <https://kotlinlang.org/>
 * Download compiler from [GitHub](https://github.com/JetBrains/kotlin/releases/latest/)
-* Version: `kotlinc-jvm 2.3.0 (JRE 25.0.2+10-LTS)`
+* Version: `kotlinc-jvm 2.3.21 (JRE 25.0.3+9-LTS)`
 * Recommended path: `C:\tools\kotlinc\bin\kotlinc.bat`
 * Requires Java JDK installed.
 * Update manually
@@ -238,9 +238,9 @@ winget update OpenJS.NodeJS.LTS
 ```pwsh
 mkdir c:\tools\kotlinc
 cd c:\tools\kotlinc
-curl -OL https://github.com/JetBrains/kotlin/releases/download/v2.3.0/kotlin-compiler-2.3.0.zip
-unzip kotlin-compiler-2.3.0.zip
-del kotlin-compiler-2.3.0.zip
+curl -OL https://github.com/JetBrains/kotlin/releases/download/v2.3.21/kotlin-compiler-2.3.21.zip
+unzip kotlin-compiler-2.3.21.zip
+del kotlin-compiler-2.3.21.zip
 kotlinc -version
 ```
 
@@ -307,10 +307,10 @@ winget update StrawberryPerl.StrawberryPerl
 * Homepage: <https://windows.php.net/download/>
 * Use `VS17 x64 Thread Safe` if using with Apache, `NTS` is also ok for CLI.
 * Install with `winget`
-* Also available: install as part of XAMPP (outdated): `winget search ApacheFriends.Xampp.8.2`
+* Also available: install as part of XAMPP _(outdated)_: `winget search ApacheFriends.Xampp.8.2`
 * Install extensions with [PIE](https://github.com/php/pie) or install [XDebug](https://xdebug.org/) manually
 * Keep separate configs for "JIT enabled" and "XDebug enabled" runs.
-* Version: `PHP 8.5.2 (cli) (built: Jan 13 2026 21:54:57) (ZTS Visual C++ 2022 x64)`
+* Version: `PHP 8.5.6 (cli) (built: May  5 2026 21:34:03) (ZTS Visual C++ 2022 x64)`
 * Default path (if using XAMPP): `c:\xampp\php\php.exe`
 
 ```pwsh
@@ -324,7 +324,7 @@ winget update PHP.PHP.8.5
 ### Python
 
 * Homepage: <https://www.python.org/>
-* Version: `Python 3.14.2`
+* Version: `Python 3.14.5`
 * Default path: `C:\Users\${Env:Username}\AppData\Local\Programs\Python\Python313\python.exe`
 
 ```pwsh
@@ -361,7 +361,7 @@ winget update RubyInstallerTeam.RubyWithDevKit.3.4
 * Homepage: <https://www.rust-lang.org/>
 * Install with the `rustup-init (64-bit)`, update with `rustup`
 * Also available: Installing with `winget`: `winget search Rustlang.Rust`
-* Version: `rustc 1.93.0 (254b59607 2026-01-19)`
+* Version: `rustc 1.95.0 (59807616e 2026-04-14)`
 * Toolchain: `stable-x86_64-pc-windows-msvc`
 * Recommended path (after moving to a DevDrive): `D:\packages\cargo\bin\rustc.exe`
 * Requires: [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
@@ -382,8 +382,8 @@ rustup update stable
 * Homepage: <https://www.scala-lang.org/>
 * Install with [Coursier](https://get-coursier.io/)
 * Use with [Scala-CLI](https://scala-cli.virtuslab.org/)
-* Version: `Scala version (default): 3.8.0`
-* Version: `Scala CLI version: 1.12.0`
+* Version: `Scala version (default): 3.8.3`
+* Version: `Scala CLI version: 1.13.0`
 * Default path: `C:\Users\{$Env:Username}\AppData\Local\Coursier\data\bin\scala-cli.bat`
 * Update manually
 
@@ -440,15 +440,15 @@ gfortran --version
 
 ## Linux
 
-Version numbers are current as of _2026.01.19_.
+Version numbers are current as of _2026.05.14_.
 
-The following methods are valid for __Ubuntu Linux__ `24.04` running on __WSL__.
+The following methods are valid for __Ubuntu Linux__ `26.04` running on __WSL__.
 Other distributions might need different methods.
 
 ### Bash
 
 * Already included in the default installation.
-* Version: `GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)`
+* Version: `GNU bash, version 5.3.9(1)-release (x86_64-pc-linux-gnu)`
 
 ```sh
 bash --version
@@ -461,7 +461,8 @@ sudo apt upgrade
 
 #### Using GCC
 
-* Version: `gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0`
+* `gcc 16` is available, but not the default version.
+* Version: `gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0`
 
 ```sh
 sudo apt update && sudo apt install -y build-essential
@@ -470,28 +471,30 @@ gcc --version
 
 #### Using Clang
 
-* Version: `Ubuntu clang version 19.1.7 (++20250804090312+cd708029e0b2-1~exp1~20250804210325.79)`
+* Version: `Ubuntu clang version 22.1.2 (1ubuntu1)`
 
 ```sh
-bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
-clang-19 --version
+sudo apt update && sudo apt install -y clang-22
+sudo ln -s /usr/bin/clang-22 /usr/bin/clang
+sudo ln -s /usr/bin/clang++-22 /usr/bin/clang++
+clang --version
 ```
 
 ### C\#
 
 * Install as part of __.NET__
-* Version: `dotnet 8.0.122`
+* Version: `dotnet 10.0.107`
 
 ```sh
-apt list dotnet-sdk-8.0
-sudo apt update && sudo apt install -y dotnet-sdk-8.0
+apt list dotnet-sdk-10.0
+sudo apt update && sudo apt install -y dotnet-sdk-10.0
 dotnet --version
 ```
 
 ### C++
 
 * See Section __C__
-* Version: `g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0`
+* Version: `g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0`
 
 ```sh
 g++ --version
@@ -499,7 +502,7 @@ g++ --version
 
 ### Clojure
 
-* Version: `babashka v1.12.214`
+* Version: `babashka v1.12.218`
 
 ```sh
 curl -sLO https://raw.githubusercontent.com/babashka/babashka/master/install
@@ -512,12 +515,12 @@ bb --version
 ### D
 
 * install & update manually (in home dir)
-* Version: `DMD64 D Compiler v2.111.0`
+* Version: `DMD64 D Compiler v2.112.0`
 
 ```sh
 curl -fsS https://dlang.org/install.sh | bash -s dmd
 # add to .bashrc
-source "/home/$USER/dlang/dmd-2.111.0/activate"
+source source ~/dlang/dmd-2.112.0/activate
 dmd --version
 ~/dlang/install.sh update
 ```
@@ -525,13 +528,13 @@ dmd --version
 ### Dart
 
 * install & update manually
-* Version: `Dart SDK version: 3.10.7 (stable) (None) on "linux_x64"`
+* Version: `Dart SDK version: 3.11.6 (stable) (Tue May 5 01:29:04 2026 -0700) on "linux_x64"`
 
 ```sh
-sudo apt-get update && sudo apt-get install apt-transport-https
+sudo apt update && sudo apt install -y apt-transport-https
 wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/dart.gpg
 echo 'deb [signed-by=/usr/share/keyrings/dart.gpg arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main' | sudo tee /etc/apt/sources.list.d/dart_stable.list
-sudo apt-get update && sudo apt-get install dart
+sudo apt update && sudo apt install -y dart
 dart --version
 ```
 
@@ -539,7 +542,7 @@ dart --version
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 8.0.122`
+* Version: `dotnet 10.0.107`
 
 ```sh
 dotnet --version
@@ -547,7 +550,7 @@ dotnet --version
 
 ### Go
 
-* Version: `go version go1.22.2 linux/amd64`
+* Version: `go version go1.26.0 linux/amd64`
 
 ```sh
 apt list golang
@@ -557,14 +560,17 @@ go version
 
 ### Groovy
 
-* Default Groovy in Ubuntu 24.04 is outdated v2.4: `apt list groovy`
+* Default Groovy in Ubuntu 26.04 is outdated v2.4: `apt list groovy`
 * Install with [SDKMan!](https://sdkman.io/)
-* Version: `Groovy Version: 5.0.3 JVM: 25.0.1 Vendor: Ubuntu OS: Linux`
+* Version: `Groovy Version: 5.0.6 JVM: 25.0.3-ea Vendor: Ubuntu OS: Linux`
 
 ```sh
+sudo apt update && sudo apt install -y zip
 curl -s "https://get.sdkman.io" | bash
 source "/home/$USER/.sdkman/bin/sdkman-init.sh"
 sdk version
+sdk list groovy
+sdk install groovy
 groovy --version
 sdk selfupdate
 sdk upgrade groovy
@@ -572,12 +578,12 @@ sdk upgrade groovy
 
 ### Haskell
 
-* Default Haskell in Ubuntu 24.04 is outdated v9.4: `apt list haskell`
+* Default Haskell in Ubuntu 26.04 is outdated v9.10: `apt list ghc`
 * Install with [GHCup](https://www.haskell.org/ghcup/)
 * Version: `The Glorious Glasgow Haskell Compilation System, version 9.14.1`
 
 ```sh
-sudo apt install -y build-essential curl libffi-dev libffi8 libgmp-dev libgmp10 libncurses-dev pkg-config
+sudo apt install -y vbuild-essential curl libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev pkg-config
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 . /home/tbali/.ghcup/env
 ghc --version
@@ -586,7 +592,7 @@ ghcup tui
 
 ### Java
 
-* Version: `OpenJDK Runtime Environment (build 25.0.1+8-Ubuntu-124.04)`
+* Version: `OpenJDK Runtime Environment (build 25.0.3-ea+7-Ubuntu-2)`
 
 ```sh
 apt search openjdk-25
@@ -596,28 +602,29 @@ java --version
 
 ### Javascript
 
-* Default Nodejs in Ubuntu 24.04 is outdated v18: `apt list nodejs`
-* Version: `node.js v24.13.0`
+* Default Nodejs in Ubuntu 24.04 is outdated v22: `apt list nodejs`
+* Version: `node.js v26.1.0`
 
 ```sh
 curl -o- https://fnm.vercel.app/install | bash
 source ~/.bashrc
 fnm --version
-fnm install 24
+fnm install 26
 node -v
 npm -v
-corepack -v
-corepack enable yarn
-yarn -v
-corepack enable pnpm
-pnpm -v
+# npm install -g corepack
+# corepack -v
+# corepack enable yarn
+# yarn -v
+# corepack enable pnpm
+# pnpm -v
 ```
 
 ### Kotlin
 
 * Install with [SDKMan!](https://sdkman.io/)
 * See Section __Groovy__
-* Version: `kotlinc-jvm 2.3.0 (JRE 25.0.1+8-Ubuntu-124.04)`
+* Version: `kotlinc-jvm 2.3.21 (JRE 25.0.3-ea+7-Ubuntu-2)`
 
 ```sh
 sdk list kotlin
@@ -628,11 +635,11 @@ sdk upgrade kotlin
 
 ### Lua
 
-* Version: `Lua 5.4.6  Copyright (C) 1994-2023 Lua.org, PUC-Rio`
+* Version: `Lua 5.5.0  Copyright (C) 1994-2025 Lua.org, PUC-Rio`
 
 ```sh
-apt list lua5.4
-sudo apt update && sudo apt install -y lua5.4
+apt list lua5.5
+sudo apt update && sudo apt install -y lua5.5
 lua -v
 ```
 
@@ -642,7 +649,7 @@ lua -v
 
 ### OCaml
 
-* Version: `OCaml 4.14.1`
+* Version: `OCaml 5.4.0`
 
 ```sh
 apt list ocaml
@@ -663,7 +670,7 @@ fpc -iW
 ### Perl
 
 * Already included in the default installation.
-* Version: `This is perl 5, version 38, subversion 2 (v5.38.2) built for x86_64-linux-gnu-thread-multi`
+* Version: `This is perl 5, version 40, subversion 1 (v5.40.1) built for x86_64-linux-gnu-thread-multi`
 
 ```sh
 perl --version
@@ -671,28 +678,39 @@ perl --version
 
 ### PHP
 
-* Already included in the default installation.
-* Version: `PHP 8.3.26 (cli) (built: Oct  1 2025 20:35:14) (NTS)`
-* For using the latest version: `sudo add-apt-repository ppa:ondrej/php`
+* Version: `PHP 8.5.4 (cli) (built: Apr  1 2026 09:36:11) (NTS)`
+* Additional package repo for latest version: `sudo add-apt-repository ppa:ondrej/php`
 
 ```sh
+apt list php
+sudo apt update && sudo apt install -y php
+sudo apt install -y php-bcmath php-bz2 php-curl php-gd php-gmp php-intl php-mbstring php-mysql php-pgsql php-sqlite3 php-tidy php-xml php-zip
 php --version
+php -m
 ```
 
 ### Python
 
 * Already included in the default installation.
-* Version: `Python 3.12.3`
+* Version: `Python 3.14.4`
 
 ```sh
+sudo apt install -y python-is-python3
+sudo apt install -y python3-pip
 python --version
+pip --version
+python -m pip install --upgrade pip
+sudo apt install -y python3-numpy
+sudo apt install -y python3-pandas
+sudo apt install -y python3-scipy
+pip list
 ```
 
 ### Ruby
 
-* Default ruby in Ubuntu 24.04 is outdated v1: `apt list ruby`
+* Default ruby in Ubuntu 26.04 is outdated v1: `apt list ruby`
 * Install with [rbenv](https://rbenv.org/) using [this help](https://docs.vultr.com/how-to-install-ruby-on-ubuntu-24-04)
-* Version: `ruby 3.4.3 (2025-04-14 revision d0b7e5b6a0) +PRISM [x86_64-linux]`
+* Version: `ruby 4.0.4 (2026-05-12 revision b89eb1bcbf) +PRISM [x86_64-linux]`
 
 ```sh
 sudo apt install -y autoconf patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev libtool uuid-dev
@@ -701,15 +719,15 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer
 source ~/.bashrc
 rbenv -v
 rbenv install -l
-rbenv install 3.4.3
-rbenv global 3.4.3
+rbenv install 4.0.4
+rbenv global 4.0.4
 ruby --version
 ```
 
 ### Rust
 
 * Install with [rustup](https://www.rust-lang.org/tools/install)
-* Version: `rustc 1.92.0 (ded5c06cf 2025-12-08)`
+* Version: `rustc 1.95.0 (59807616e 2026-04-14)`
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -721,10 +739,10 @@ rustup update stable
 
 ### Scala
 
-* Default Scala in Ubuntu 24.04 is outdated v2.11: `apt list scala`
+* Default Scala in Ubuntu 26.04 is outdated v2.11: `apt list scala`
 * Install with [SDKMan!](https://sdkman.io/)
 * See Section __Groovy__
-* Version: `Scala version (default): 3.7.4`
+* Version: `Scala version (default): 3.8.3`
 
 ```sh
 sdk list scala
@@ -740,6 +758,7 @@ sdk upgrade scala
 ### Typescript
 
 * See section __Javascript__.
+* Version: `tsc Version 6.0.3`
 
 ```sh
 npm install -g typescript
@@ -752,7 +771,7 @@ npm update -g
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 8.0.122`
+* Version: `dotnet 10.0.107`
 
 ```sh
 dotnet --version
@@ -760,7 +779,7 @@ dotnet --version
 
 ### Fortran
 
-* Version: `GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0`
+* Version: `GNU Fortran (Ubuntu 15.2.0-16ubuntu1) 15.2.0`
 * Requires `gcc`
 
 ```sh

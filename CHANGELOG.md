@@ -9,9 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- More test cases added.
+
 ### Changed
 
+- Default config for `c++` tweaked to exclude compiler version postfix.
+
 ### Fixed
+
+- Nothing yet.
 
 ## [v1.18.0](https://github.com/tbali0524/cgtest/releases/v1.18.0) - 2026-04-16
 

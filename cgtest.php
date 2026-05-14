@@ -159,7 +159,7 @@ $defaultConfig = [
         'runCommand' => '%b%p_%l.exe',
         'altVersionCommand' => 'clang --version',
         'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang-19 -std=c17 -o %b%p_%l.exe %s -lm'
+            ? 'clang -std=c17 -o %b%p_%l.exe %s -lm'
             : 'clang -std=c17 -o %b%p_%l.exe %s'
         ),
         'altRunCommand' => '%b%p_%l.exe',
@@ -194,13 +194,13 @@ $defaultConfig = [
         'versionCommand' => 'g++ --version',
         // note: omitting -ldl -lcrypt on Windows from CG settings
         'buildCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'g++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread -ldl -lcrypt'
+            ? 'g++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread -ldl' // removed -lcrypt
             : 'g++ -static-libgcc -static-libstdc++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm -lpthread'
         ),
         'runCommand' => '%b%p_%l.exe',
         'altVersionCommand' => 'clang++ --version',
         'altBuildCommand' => (PHP_OS_FAMILY != 'Windows'
-            ? 'clang++-19 -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm'
+            ? 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s -lm'
             : 'clang++ -m64 -std=c++20 -x c++ -o %b%p_%l.exe %s'
         ),
         'altRunCommand' => '%b%p_%l.exe',
@@ -2229,9 +2229,13 @@ if (!$config['dry-run']) {
     }
 }
 exit(0);
+
 // --------------------------------------------------------------------
 // Recursively delete directory and its contents
-function deleteDirectory(string $dirPath, string $warnTag, string $infoTag, string $ansiWarn, string $ansiReset, $verbose,
+function deleteDirectory(
+    string $dirPath,
+    string $warnTag, string $infoTag, string $ansiWarn, string $ansiReset,
+    bool $verbose,
     int $countDeleted = 0, int $countUnsuccessful = 0
 ): array {
     if (is_dir($dirPath)) {

@@ -362,6 +362,7 @@ return [
                 'easy_com_kiss-the-girls',
                 'easy_com_largest-number',
                 'easy_com_laughter-is-contagious',
+                'easy_com_leap-of-sheep',
                 'easy_com_library-dependencies',
                 'easy_com_lines-intersections',
                 'easy_com_logically-reasonable-inequalities',
@@ -1231,4 +1232,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 26.04.16: 'medium_com_the-hole-truth',
+// Note: last puzzle added on 26.05.14: 'easy_com_leap-of-sheep',
