@@ -5,11 +5,11 @@ No IDE is needed, only the compilers/interpreters, to be invoked via CLI.
 
 Instructions for [Windows](#windows) or [Linux](#linux)
 
-Last updated: _2026.05.14_
+Last updated: _2026.08.06_
 
 ## Windows
 
-Version numbers are current as of _2026.05.14_.
+Version numbers are current as of _2026.08.06_.
 
 The following methods are valid for __Windows 11__.
 The recommended method is to use
@@ -69,7 +69,7 @@ winget update LLVM.LLVM
 
 * Homepage: <https://dotnet.microsoft.com/en-us/>
 * Install as part of __.NET__
-* Version: `dotnet 10.0.204` (LTS)
+* Version: `dotnet 10.0.302` (LTS)
 * Default path: `C:\Program Files\dotnet\dotnet.exe`
 
 ```pwsh
@@ -100,7 +100,7 @@ g++ --version
 * Homepage: <https://clojure.org/>
 * Use with __Babashka__: <https://babashka.org/>
 * Download `bb.exe` binary from [GitHub](https://github.com/babashka/babashka/releases), add to path
-* Version: `babashka v1.12.218`
+* Version: `babashka v1.13.219`
 * Recommended path: `c:\tools\cli\bb.exe`
 * Update manually
 
@@ -108,9 +108,9 @@ g++ --version
 mkdir c:\tools\cli
 cd c:\tools\cli
 # update version number below
-curl -OL https://github.com/babashka/babashka/releases/download/v1.12.218/babashka-1.12.218-windows-amd64.zip
-unzip babashka-1.12.218-windows-amd64.zip
-del babashka-1.12.218-windows-amd64.zip
+curl -OL https://github.com/babashka/babashka/releases/download/v1.13.219/babashka-1.13.219-windows-amd64.zip
+unzip babashka-1.13.219-windows-amd64.zip
+del babashka-1.13.219-windows-amd64.zip
 bb --version
 ```
 
@@ -144,8 +144,8 @@ winget update Google.DartSDK
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 10.0.204` (LTS)
-* Version: `Microsoft (R) F# Interactive version 15.2.204.0 for F# 10.0`
+* Version: `dotnet 10.0.302` (LTS)
+* Version: `Microsoft (R) F# Interactive version 15.2.302.0 for F# 10.0`
 
 ```pwsh
 dotnet --version
@@ -155,7 +155,7 @@ dotnet fsi --version
 ### Go
 
 * Homepage: <https://go.dev/>
-* Version: `go version go1.26.3 windows/amd64`
+* Version: `go version go1.26.5 windows/amd64`
 * Default path: `C:\Program Files\Go\bin\go.exe`
 
 ```pwsh
@@ -168,7 +168,7 @@ winget update GoLang.Go
 ### Groovy
 
 * Homepage: <https://groovy-lang.org/>
-* Version: `Groovy Version: 5.0.4 JVM: 25.0.3 Vendor: Eclipse Adoptium OS: Windows 11`
+* Version: `Groovy Version: 5.0.4 JVM: 25.0.4 Vendor: Eclipse Adoptium OS: Windows 11`
 * Default path: `C:\Program Files (x86)\Groovy\bin\groovy.bat`
 * Requires Java JDK installed.
 
@@ -198,15 +198,15 @@ ghcup tui
 
 * Homepage: <https://openjdk.org/>, <https://www.java.com/>
 * Recommended distribution: [Eclipse Adoptium](https://adoptium.net/)
-* Version: `OpenJDK Runtime Environment Temurin-25.0.3+9 (build 25.0.3+9-LTS)`
-* Default path: `C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin\java.exe`
+* Version: `OpenJDK Runtime Environment Temurin-25.0.4+7 (build 25.0.4+7-LTS)`
+* Default path: `C:\Program Files\Eclipse Adoptium\jdk-25.0.4+7-hotspot\bin\java.exe`
 * Set environment variable: `JAVA_HOME`
 
 ```pwsh
 winget search groovy
 winget install EclipseAdoptium.Temurin.25.JDK
 java --version
-sudo setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\" /m
+sudo setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-25.0.4+7-hotspot\" /m
 echo $Env:JAVA_HOME
 winget update EclipseAdoptium.Temurin.25.JDK
 ```
@@ -215,7 +215,7 @@ winget update EclipseAdoptium.Temurin.25.JDK
 
 * Homepage: <https://javascript.info/>
 * Recommended runtime: [Node.js](https://nodejs.org/)
-* Version: `v24.15.0` (LTS)
+* Version: `v24.19.0` (LTS)
 * Default path: `C:\Program Files\nodejs\node.exe`
 
 ```pwsh
@@ -230,7 +230,7 @@ winget update OpenJS.NodeJS.LTS
 
 * Homepage: <https://kotlinlang.org/>
 * Download compiler from [GitHub](https://github.com/JetBrains/kotlin/releases/latest/)
-* Version: `kotlinc-jvm 2.3.21 (JRE 25.0.3+9-LTS)`
+* Version: `kotlinc-jvm 2.4.10 (JRE 25.0.4+7-LTS)`
 * Recommended path: `C:\tools\kotlinc\bin\kotlinc.bat`
 * Requires Java JDK installed.
 * Update manually
@@ -238,9 +238,9 @@ winget update OpenJS.NodeJS.LTS
 ```pwsh
 mkdir c:\tools\kotlinc
 cd c:\tools\kotlinc
-curl -OL https://github.com/JetBrains/kotlin/releases/download/v2.3.21/kotlin-compiler-2.3.21.zip
-unzip kotlin-compiler-2.3.21.zip
-del kotlin-compiler-2.3.21.zip
+curl -OL https://github.com/JetBrains/kotlin/releases/download/v2.4.10/kotlin-compiler-2.4.10.zip
+unzip kotlin-compiler-2.4.10.zip
+del kotlin-compiler-2.4.10.zip
 kotlinc -version
 ```
 
@@ -310,7 +310,7 @@ winget update StrawberryPerl.StrawberryPerl
 * Also available: install as part of XAMPP _(outdated)_: `winget search ApacheFriends.Xampp.8.2`
 * Install extensions with [PIE](https://github.com/php/pie) or install [XDebug](https://xdebug.org/) manually
 * Keep separate configs for "JIT enabled" and "XDebug enabled" runs.
-* Version: `PHP 8.5.6 (cli) (built: May  5 2026 21:34:03) (ZTS Visual C++ 2022 x64)`
+* Version: `PHP 8.5.9 (cli) (built: Jul 28 2026 13:21:24) (ZTS Visual C++ 2022 x64)`
 * Default path (if using XAMPP): `c:\xampp\php\php.exe`
 
 ```pwsh
@@ -324,7 +324,7 @@ winget update PHP.PHP.8.5
 ### Python
 
 * Homepage: <https://www.python.org/>
-* Version: `Python 3.14.5`
+* Version: `Python 3.14.6`
 * Default path: `C:\Users\${Env:Username}\AppData\Local\Programs\Python\Python313\python.exe`
 
 ```pwsh
@@ -361,7 +361,7 @@ winget update RubyInstallerTeam.RubyWithDevKit.3.4
 * Homepage: <https://www.rust-lang.org/>
 * Install with the `rustup-init (64-bit)`, update with `rustup`
 * Also available: Installing with `winget`: `winget search Rustlang.Rust`
-* Version: `rustc 1.95.0 (59807616e 2026-04-14)`
+* Version: `rustc 1.97.1 (8bab26f4f 2026-07-14)`
 * Toolchain: `stable-x86_64-pc-windows-msvc`
 * Recommended path (after moving to a DevDrive): `D:\packages\cargo\bin\rustc.exe`
 * Requires: [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
@@ -382,8 +382,8 @@ rustup update stable
 * Homepage: <https://www.scala-lang.org/>
 * Install with [Coursier](https://get-coursier.io/)
 * Use with [Scala-CLI](https://scala-cli.virtuslab.org/)
-* Version: `Scala version (default): 3.8.3`
-* Version: `Scala CLI version: 1.13.0`
+* Version: `Scala version (default): 3.8.4`
+* Version: `Scala CLI version: 1.16.0`
 * Default path: `C:\Users\{$Env:Username}\AppData\Local\Coursier\data\bin\scala-cli.bat`
 * Update manually
 
@@ -405,7 +405,7 @@ cs update scala-cli
 
 * Homepage: <https://www.typescriptlang.org/>
 * See section __Javascript__.
-* Version: `tsc v5.9.3`
+* Version: `tsc v7.0.2`
 
 ```pwsh
 npm install -g typescript
@@ -440,7 +440,7 @@ gfortran --version
 
 ## Linux
 
-Version numbers are current as of _2026.05.14_.
+Version numbers are current as of _2026.08.06_.
 
 The following methods are valid for __Ubuntu Linux__ `26.04` running on __WSL__.
 Other distributions might need different methods.
@@ -483,7 +483,7 @@ clang --version
 ### C\#
 
 * Install as part of __.NET__
-* Version: `dotnet 10.0.107`
+* Version: `dotnet 10.0.110`
 
 ```sh
 apt list dotnet-sdk-10.0
@@ -502,7 +502,7 @@ g++ --version
 
 ### Clojure
 
-* Version: `babashka v1.12.218`
+* Version: `babashka v1.13.219`
 
 ```sh
 curl -sLO https://raw.githubusercontent.com/babashka/babashka/master/install
@@ -528,7 +528,7 @@ dmd --version
 ### Dart
 
 * install & update manually
-* Version: `Dart SDK version: 3.11.6 (stable) (Tue May 5 01:29:04 2026 -0700) on "linux_x64"`
+* Version: `Dart SDK version: 3.12.2 (stable) (Tue Jun 9 01:11:39 2026 -0700) on "linux_x64"`
 
 ```sh
 sudo apt update && sudo apt install -y apt-transport-https
@@ -542,7 +542,7 @@ dart --version
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 10.0.107`
+* Version: `dotnet 10.0.110`
 
 ```sh
 dotnet --version
@@ -562,7 +562,7 @@ go version
 
 * Default Groovy in Ubuntu 26.04 is outdated v2.4: `apt list groovy`
 * Install with [SDKMan!](https://sdkman.io/)
-* Version: `Groovy Version: 5.0.6 JVM: 25.0.3-ea Vendor: Ubuntu OS: Linux`
+* Version: `Groovy Version: 5.0.8 JVM: 25.0.3 Vendor: Ubuntu OS: Linux`
 
 ```sh
 sudo apt update && sudo apt install -y zip
@@ -592,7 +592,7 @@ ghcup tui
 
 ### Java
 
-* Version: `OpenJDK Runtime Environment (build 25.0.3-ea+7-Ubuntu-2)`
+* Version: `OpenJDK Runtime Environment (build 25.0.3+9-2-26.04.2-Ubuntu)`
 
 ```sh
 apt search openjdk-25
@@ -603,13 +603,14 @@ java --version
 ### Javascript
 
 * Default Nodejs in Ubuntu 24.04 is outdated v22: `apt list nodejs`
-* Version: `node.js v26.1.0`
+* Version: `node.js v26.7.0`
 
 ```sh
 curl -o- https://fnm.vercel.app/install | bash
 source ~/.bashrc
 fnm --version
 fnm install 26
+fnm list
 node -v
 npm -v
 # npm install -g corepack
@@ -624,7 +625,7 @@ npm -v
 
 * Install with [SDKMan!](https://sdkman.io/)
 * See Section __Groovy__
-* Version: `kotlinc-jvm 2.3.21 (JRE 25.0.3-ea+7-Ubuntu-2)`
+* Version: `kotlinc-jvm 2.4.10 (JRE 25.0.3+9-2-26.04.2-Ubuntu)`
 
 ```sh
 sdk list kotlin
@@ -742,7 +743,7 @@ rustup update stable
 * Default Scala in Ubuntu 26.04 is outdated v2.11: `apt list scala`
 * Install with [SDKMan!](https://sdkman.io/)
 * See Section __Groovy__
-* Version: `Scala version (default): 3.8.3`
+* Version: `Scala version (default): 3.8.4`
 
 ```sh
 sdk list scala
@@ -771,7 +772,7 @@ npm update -g
 
 * Install as part of __.NET__
 * See section __C\#__.
-* Version: `dotnet 10.0.107`
+* Version: `dotnet 10.0.110`
 
 ```sh
 dotnet --version

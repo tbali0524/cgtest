@@ -1,0 +1,53 @@
+Orbital Logistics: Exact Load
+
+medium_com_orbital-logistics-exact-load
+https://www.codingame.com/training/medium/orbital-logistics-exact-load
+https://www.codingame.com/contribute/view/1460737ecdfdbf3e1faa74bc9d340d6ec822c4
+
+A contribution by kosynus
+Approved by hichemjadlaoui,User123,AbelLopezMesa
+
+Goal
+A cargo captain is preparing a shipment for a space journey.
+
+The spaceship has a weight capacity of capacity.
+
+There are itemCount available cargo items. Each item has a weight weight and a resale value value.
+
+The captain wants to find the maximum total value of a subset of items such that:
+- the total weight is exactly equal to capacity
+- each item is used at most once
+
+If it is not possible for the spaceship to carry items weighing exactly capacity, output -1 instead.
+
+Input
+Line 1: Two integers capacity and itemCount representing the capacity and the number of cargo items.
+Next itemCount lines: Two integers weight and value representing the weight and resale value of each cargo item.
+
+Output
+Line 1: An integer representing the maximum total value of a subset of items whose total weight is exactly equal to capacity, or -1 if no such subset exists.
+
+Constraints
+1 ≤ capacity ≤ 10^6
+1 ≤ itemCount ≤ 40
+1 ≤ weight ≤ 10^6
+1 ≤ value ≤ 10^6
+
+Example
+
+Input
+10 4
+3 4
+4 5
+6 8
+5 6
+
+Output
+13
+
+Difficulty
+Medium
+
+Tags
+Dynamic programming, Optimization, Combinatorics, Bin packing
+

@@ -1,0 +1,91 @@
+30
+   2
+`bgp
+~
+   2
+`bg~
+p
+   2
+`bpg
+~
+   2
+`bp~
+g
+   2
+`b~g
+p
+   2
+`b~p
+g
+   2
+`gbp
+~
+   2
+`gb~
+p
+   2
+`gpb
+~
+   2
+`gp~
+b
+   2
+`g~b
+p
+   2
+`g~p
+b
+   2
+`pbg
+~
+   2
+`pb~
+g
+   2
+`pgb
+~
+   2
+`pg~
+b
+   2
+`p~b
+g
+   2
+`p~g
+b
+   2
+`~bg
+p
+   2
+`~bp
+g
+   2
+`~gb
+p
+   2
+`~gp
+b
+   2
+`~pb
+g
+   2
+`~pg
+b
+   2
+bgp~
+`
+   2
+bg~p
+`
+   2
+bpg~
+`
+   2
+bp~g
+`
+   2
+b~gp
+`
+   2
+b~pg
+`

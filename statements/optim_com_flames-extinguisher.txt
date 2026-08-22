@@ -1,0 +1,107 @@
+Flames Extinguisher
+
+optim_com_flames-extinguisher
+https://www.codingame.com/multiplayer/optimization/flames-extinguisher
+https://www.codingame.com/contribute/view/143862b319cb97ec5517178d2635e4db113e51
+
+A contribution by PhOeNyX
+Approved by qimingzhenfeijin,TheCheezLord,20Ll37
+
+Goal
+You control a character moving across an arena. Flames appear, announced by purple glyphs, and persist until extinguished.
+Your objective is to extinguish all flames while preserving as many hit points (HP) as possible.
+Your final score is the number of HP remaining upon victory.
+This game is a port of the tactical fight against Bolgrot from the "Fire Extinction" quest in Dofus, developed by Ankama Games.
+
+Rules
+
+Map
+The origin (0, 0) is at the top-left corner of the map. x increases to the right and y increases downward. In every test case, the map is always the same in terms of character starting position, wall layout and dimensions (35x34), and the borders are always walls.
+
+Resources
+Your character starts with 40 HP (Health Points) and 10 AP (Action Points). HP can be refunded and AP can be restored (see details below).
+
+Turns and cycles
+A turn is one iteration of your program's game loop: you receive inputs and send one output. A cycle is the sequence of actions ending with a PASS . A cycle spans one or more turns, up to and including the turn in which a PASS is sent. In other words, all actions in a turn belong to only one cycle.
+
+Glyphs spawning
+During the first 6 cycles, new glyphs appear at the start of each cycle. Glyphs are merely marks on the ground that cannot be interacted with directly. Their positions are communicated to the player at the beginning of that same cycle. If no glyphs appear at the start of a cycle, the character loses 1 HP instead.
+
+Available actions
+Each turn, you send one or more actions separated by ; .
+MOVE dir : Moves the character 1 cell in the given direction. The destination can't be a wall. Cost: 1 AP and 1 HP. Valid directions: N , S , E , W .
+JUMP dir : Moves the character 2 cells in the given direction. The destination can't be a wall, but the intermediate cell can be. Cost: 2 AP and 1 HP. Maximum 2 jumps per cycle. Valid directions: N , S , E , W .
+IMMO dir : Stays in place and targets the non-wall diagonally adjacent cell in the given direction, toward which all flames are attracted. Cost: 1 AP and 5 HP. Valid directions: NE , NW , SE , SW .
+PASS : Ends the cycle. Restores AP to 10 and resets the jump counter to 0 . The end of a cycle converts glyphs into flames, provided its cell is not occupied by the character or another flame. Whether or not a glyph is converted, the glyph disappears.
+
+You may send any number of MOVE and IMMO during a cycle, subject to AP and HP availability.
+
+Effects of a movement ( MOVE or JUMP )
+The following events happen in the following order:
+The character moves to the destination cell and loses 1 HP.
+If the destination cell contains a flame, it is extinguished and the HP cost is refunded. Note: the HP loss is applied first, so a character with only 1 HP will die before the refund occurs.
+After a flame is extinguished, each flame adjacent to the destination (8-neighbours) is pushed one cell away from the character, keeping the same relative direction. A flame is blocked (and cannot be pushed) if its destination cell is a wall, or already occupied by another flame. For a diagonal push, the two orthogonal cells along the trajectory must also be free (not a wall and not occupied). If any flame is blocked, the character dies instantly.
+All flames on the arena are attracted one cell toward the destination cell, processed in order of increasing Manhattan distance to the destination (ties broken clockwise from North). Each flame moves in the direction that most closely aligns with the vector from the flame to the destination: if the flame is on the same row or column, it moves cardinally; if it is exactly diagonal, it moves diagonally; otherwise it moves cardinally along the dominant axis (the axis with the greatest Manhattan distance). If the target cell is a wall or already occupied by another flame, the flame stays in place. For a diagonal move, the two orthogonal cells along the trajectory must also be free (not a wall and not occupied), otherwise the flame stays in place. If a flame would be attracted onto the character's cell, the character dies instantly.
+
+Cardinal push:
+push_cardinal_before.svg push_cardinal_after.svg attract_cardinal_after.svg
+Diagonal push:
+push_diagonal_before.svg push_diagonal_after.svg attract_diagonal_after.svg
+
+Cardinal attraction:
+attract_cardinal_before.svg attract_cardinal_after.svg
+
+Diagonal attraction:
+attract_diagonal_before.svg attract_diagonal_after.svg
+
+Effects of IMMO
+The character stays in place and targets the non-wall diagonally adjacent cell in the given direction. For example, if the character is at (2, 2) , the possible target positions are (3, 1) with NE , (3, 3) with SE , (1, 3) with SW , or (1, 1) with NW . The following events happen in the following order:
+The character loses 5 HP.
+All flames are attracted one cell toward the targeted cell, using the same attraction rules as for movement (same ordering, same blocking conditions). Unlike movement, the character's cell behaves like a wall for flames, so no flame can move onto the character's position, and this does not cause instant death.
+
+Victory conditions
+All flames are extinguished and no glyphs remain. The score is the number of HP remaining (0 if the character died after a valid action).
+
+Defeat conditions
+The player sends an illegal or impossible action (wrong direction, insufficient AP, timeout, etc.).
+
+Additional info
+Click the gear icon in the viewer to access display options
+
+Game protocol
+
+Initialization input
+Line 1: 2 space-separated integers height (always 34 ) and width (always 35 ), the dimensions of the map.
+Next height lines: a string of length width representing the map ( # = wall, . = open cell, S = starting position).
+
+Input for each turn
+Line 1: 2 space-separated integers charX charY: current position of the character.
+Line 2: 3 space-separated integers hp ap jumpsLeft: remaining HP, remaining AP, jumps left this cycle.
+Line 3: 1 integer flameCount: number of flames.
+Next flameCount lines: 2 space-separated integers x y: position of each flame.
+Next line: 1 integer glyphCount: number of glyphs this turn.
+Next glyphCount lines: 2 space-separated integers x y: position of each glyph.
+Next line: 1 integer validActionCount: number of valid actions this turn.
+Next validActionCount lines: a string validAction: each valid action among PASS , MOVE dir, JUMP dir, IMMO dir.
+
+Output for each turn
+One line containing one or more actions separated by ; , among:
+MOVE dir with dir ∈ { N , S , E , W }
+JUMP dir with dir ∈ { N , S , E , W }
+IMMO dir with dir ∈ { NE , NW , SE , SW }
+PASS
+
+Actions are executed in order up to and including the first PASS encountered. Any action after the first PASS is ignored.
+
+Constraints
+0 ≤ charX, flameX, glyphX < width
+0 ≤ charY, flameY, glyphY < height
+1 ≤ hp ≤ 40
+0 ≤ ap ≤ 10
+0 ≤ jumpsLeft ≤ 2
+0 ≤ flameCount ≤ 36
+0 ≤ glyphCount ≤ 6
+Response time per turn < 100 ms
+
+Tags
+BFS, DFS, Optimization, Simulation

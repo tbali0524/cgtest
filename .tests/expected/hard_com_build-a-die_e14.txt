@@ -1,0 +1,10 @@
+3
+C
+CCNN
+Q
+C
+CNCN
+Q
+C
+CNCQ
+N

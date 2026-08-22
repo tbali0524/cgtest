@@ -1,0 +1,70 @@
+Build-A-Die
+
+hard_com_build-a-die
+https://www.codingame.com/training/hard/build-a-die
+https://www.codingame.com/contribute/view/143367a6dc2b779265dc06d35f0a92ed8edd4a
+
+A contribution by User123
+Approved by 3616yuboya,1234567424,feng00
+
+Goal
+Thank goodness you're here, toymaker. The factory's toy production has been stumped lately by a termite infestation that has chewed away portions of our die blueprints! We need your help to decipher whatever's left so that production can resume.
+
+A die is a standard cube with 6 labelled faces. For each die blueprint, you will be given the labels of all 6 faces and some 3D images of the fully constructed die that show some of its faces. Based on this information, please reconstruct the provided die template by labelling each face on the template!
+
+Input
+Line 1: 6 face labels used on the die, in no particular order
+Line 2: A single non-negative integer N; the number of 3D images of the fully constructed die
+Next 5 lines: N space-separated sets of 5x5 3D images showing the fully constructed die viewed from a certain angle. Each of the N images will either show 2 or 3 faces in one of the following 3 ways:
+  (1)  |  (2)  |  (3)
+ \ A / |       | --+--
+  \ /  | / A \ |   |  
+   v   | +---+ | B | C
+ B | C | | B | |   |  
+   |   |       | --+--
+Note: labels in each image are not guaranteed to be properly oriented. If N = 0, these 5 lines will be empty.
+Line 8: Two space-separated positive integers W and H
+Next H lines: Space-padded lines of length W denoting the die template as a cube net. Each question mark (?) represents an unlabelled face on the cube net
+Output
+Line 1: A single non-negative integer T; the number of unique die template(s) constructible from the given die blueprint
+Next TxH lines: T sets of H lines, where each set denotes a valid die template with its faces labelled with the 6 given face labels - one label per face
+
+- Two die templates are equal if their folded dice can be rotated such that every pair of corresponding faces match.
+- Each unique die template must be the lexicographically smallest among its valid permutations. Output the valid die template(s) in ascending lexicographical order.
+- Remove trailing spaces per output line.
+
+Constraints
+0 ≤ N ≤ 4
+2 ≤ W, H ≤ 5
+0 ≤ T ≤ 30
+Each face label is a printable non-whitespace non-question-mark ASCII character
+Each given die template is a valid cube net with exactly 6 question marks (?)
+
+Example
+
+Input
+ABCDEF
+3
+\ F / \ E / \ D /
+ \ /   \ /   \ / 
+  v     v     v  
+A | D C | F A | B
+  |     |     |  
+3 4
+???
+ ? 
+ ? 
+ ? 
+
+Output
+1
+ABE
+ C
+ F
+ D
+
+Difficulty
+Hard
+
+Tags
+Parsing, Logic, Geometry, 3D

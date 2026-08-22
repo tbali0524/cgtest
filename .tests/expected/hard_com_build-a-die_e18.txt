@@ -1,0 +1,61 @@
+15
+ 6
+ M
+\fr
+  r
+ 6
+ M
+\rf
+  r
+ 6
+ M
+\rr
+  f
+ 6
+ M
+f\r
+  r
+ 6
+ M
+fr\
+  r
+ 6
+ M
+frr
+  \
+ 6
+ M
+r\f
+  r
+ 6
+ M
+r\r
+  f
+ 6
+ M
+rf\
+  r
+ 6
+ M
+rfr
+  \
+ 6
+ M
+rr\
+  f
+ 6
+ M
+rrf
+  \
+ 6
+ \
+fMr
+  r
+ 6
+ \
+rMf
+  r
+ 6
+ \
+rMr
+  f

@@ -1,0 +1,61 @@
+15
+ 3
+DP
+ YY
+ x
+ 3
+DP
+ Yx
+ Y
+ 3
+DP
+ xY
+ Y
+ 3
+DY
+ PY
+ x
+ 3
+DY
+ Px
+ Y
+ 3
+DY
+ YP
+ x
+ 3
+DY
+ Yx
+ P
+ 3
+DY
+ xP
+ Y
+ 3
+DY
+ xY
+ P
+ 3
+Dx
+ PY
+ Y
+ 3
+Dx
+ YP
+ Y
+ 3
+Dx
+ YY
+ P
+ 3
+PY
+ DY
+ x
+ 3
+PY
+ Dx
+ Y
+ 3
+Px
+ DY
+ Y
