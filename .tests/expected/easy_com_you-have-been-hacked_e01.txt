@@ -1,0 +1,2 @@
+AeroCorp:Blocked
+BioPulse:Hacked

@@ -1,0 +1,18 @@
+4
+base.c 50
+extra.c 50
+base.o 100
+extra.o 100
+1
+top
+10
+top:left right
+	merge $^
+left: base.o extra.o
+	link-left $^
+right: base.o extra.o
+	link-right $^
+base.o: base.c
+	cc -c $< -o $@
+extra.o: extra.c
+	cc -c $< -o $@

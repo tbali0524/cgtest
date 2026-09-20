@@ -1,0 +1,19 @@
+3
+raw-b 100
+part-a 80
+raw-a 100
+1
+result
+12
+# Build the final product
+result: part-a part-b raw-c
+	join $^ > $@
+part-a: raw-a
+	echo building part-a
+	convert $< $@
+part-b: raw-b
+	convert $< $@
+raw-a:
+	fetch raw-a # get data
+raw-c:
+	fetch raw-c

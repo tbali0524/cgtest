@@ -1,0 +1,58 @@
+Signal Cascade
+
+easy_com_signal-cascade
+https://www.codingame.com/training/easy/signal-cascade
+https://www.codingame.com/contribute/view/1508586bd621271401005e38900483f7bb966c
+
+A contribution by CriusMaximus
+Approved by Sflubaduba,LeifTerry,Naglfae
+
+Goal
+This puzzle is about chain reactions and propagation.
+Your task: You are given a grid containing numbers.
+Each number represents the initial energy of a cell.
+
+Every time a cell receives a signal, its energy increases by 1.
+If the energy becomes greater than 9, the cell overloads:
+° Its energy resets to 0.
+° It sends the signal to all 8 neighboring cells (including horizontal, vertical and diagonal) except previously overloaded cells.
+
+If several cells overload simultaneously, they may be processed in any order and should give the same result.
+
+Your task is to simulate the cascade until no more overloads occur and output the final grid.
+
+Input
+Line 1: Two space-separated integers H and W, the height and width of the grid.
+Next H lines: Each line contains W digits (0–9) representing one row of the grid.
+Next line: Two space-separated integers R and C, the row and column indexes (0-based) of the starting cell receiving the initial signal.
+
+Output
+H lines: The final grid after the cascade.
+
+Constraints
+1 ≤ H, W ≤ 10
+0 ≤ R < H
+0 ≤ C < W
+
+Example
+Input
+5 5
+00000
+08120
+07930
+06540
+00000
+2 2
+
+Output
+00000
+09230
+08040
+07650
+00000
+
+Difficulty
+Easy
+
+Tags
+Simulation, Grid

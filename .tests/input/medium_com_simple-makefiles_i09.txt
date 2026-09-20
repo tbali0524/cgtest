@@ -1,0 +1,23 @@
+5
+part1.c 100
+part2.c 100
+header.h 100
+part1.o 50
+part2.o 200
+1
+app
+14
+app: lib
+	link $^
+lib: part1.o header.h
+	stage1 $<
+other: part1.o header.h
+	stage1 $<
+lib: part2.o header.h
+	stage2 $^
+part1.o: part1.c
+	cc -c $< -o $@
+part2.o: part2.c
+	cc -c $< -o $@
+other:
+	echo "extra target built"

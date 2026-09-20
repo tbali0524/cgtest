@@ -1,0 +1,25 @@
+2
+src.c 100
+config.ini 200
+1
+release
+19
+# Multi-step build with validation
+release: app docs
+	verify $^
+	publish $@
+app: config.ini lib.o src.o
+	link $^ -o $@
+	validate $@
+lib.o: lib.c config.ini
+	cc -c $< -o $@
+	test $@
+src.o: src.c
+	cc -c $< -o $@
+docs:
+	generate docs
+	index docs
+lib.c:
+	fetch
+config.ini:
+	init config.ini

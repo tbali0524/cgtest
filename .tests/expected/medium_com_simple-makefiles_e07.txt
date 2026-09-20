@@ -1,0 +1,4 @@
+link-left base.o extra.o
+link-right base.o extra.o
+merge left right
+[Build complete]

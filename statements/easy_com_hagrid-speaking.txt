@@ -1,0 +1,77 @@
+Hagrid speaking
+
+easy_com_hagrid-speaking
+https://www.codingame.com/training/easy/hagrid-speaking
+https://www.codingame.com/contribute/view/1518480e8b0b6f175d3867ccf1ae8aeb13d0f0
+
+A contribution by Vivien82
+Approved by CriusMaximus,foreign,Stef_3
+
+Goal
+Help J. K. Rowling in her writing. Indeed, Hagrid has a distinctive way of speaking.
+
+Apply letter and word transformations
+The final letter of each word is replaced by ' if it is f, t, d or g (case-insensitive).
+The first letter of each word is replaced by ' if it is h or H.
+The transformation should only take place if the word is longer than two characters.
+
+The word you is replaced by the word yeh.
+The word to is replaced by the word ter.
+The word and is replaced by the word an'.
+The word me is replaced by the word meh.
+
+Word replacements are applied regardless of case. Letter transformations do not apply to words already modified by word replacements.
+
+You have to be careful to modify only Hagrid's sentences.
+A sentence is considered to be spoken by Hagrid if Hagrid is mentioned outside the quotation marks.
+For example :
+✅"You going to the forest?" Asked Hagrid. => Hagrid is the speaker in this sentence because he is mentioned outside the quotation marks.
+❌"No it's ok Hagrid. I just want to reach the castle before lunch." Replied Harry fearfully. => Hagrid is NOT the speaker in this sentence because he is NOT mentioned outside the quotation marks.
+
+Only the standalone word Hagrid (case-sensitive) counts, for example:
+❌ McHagrid
+❌ Hagride
+❌ hagrid
+✅ Hagrid
+
+Punctuation must not be altered.
+Words consist of consecutive English letters. Leading or trailing punctuation is not considered part of the word.
+If a word contains an apostrophe (') or a hyphen (-) like "can't", "right-handed" or "it's" it should not be modified.
+
+Take care of the letter case.
+The transformation must preserve the original case pattern. If the replacement is longer than the original word, any extra letters inherit the case of the last original letter.
+
+For example:
+YoU => YeH
+going => goin'
+TO => TER
+mE => mEH
+Hello => 'ello
+
+Input
+Line 1 : An integer N for the number of lines.
+N next lines : The lines to transform (each a line).
+
+Output
+N lines : The lines transformed.
+
+Constraints
+1 ≤ N ≤ 20
+1 ≤ length of line ≤ 150
+line contains either 0 or 2 ".
+
+Example
+Input
+2
+"You going to the forest?" Asked Hagrid.
+"No it's ok Hagrid. I just want to reach the castle before lunch." Replied Harry fearfully.
+
+Output
+"Yeh goin' ter the fores'?" Asked Hagrid.
+"No it's ok Hagrid. I just want to reach the castle before lunch." Replied Harry fearfully.
+
+Difficulty
+Easy
+
+Tags
+Regular expressions, String manipulation

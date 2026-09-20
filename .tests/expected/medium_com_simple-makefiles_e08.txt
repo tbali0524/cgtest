@@ -1,0 +1,6 @@
+echo building part-a
+convert raw-a part-a
+convert raw-b part-b
+fetch raw-c
+join part-a part-b raw-c > result
+[Build complete]

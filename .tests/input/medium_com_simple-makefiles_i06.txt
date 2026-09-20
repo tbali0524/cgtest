@@ -1,0 +1,19 @@
+4
+seed.dat 100
+output 50
+config 999
+cooked.dat 80
+1
+final
+11
+final: cooked.dat config output stage
+	publish $^
+cooked.dat: seed.dat
+	cook $< -o $@
+stage: cooked.dat
+output:
+	create output
+data:
+	fetch data
+unused: config
+	skip

@@ -1,0 +1,4 @@
+generate result-d
+process data.raw -o result-a
+process data.raw -o result-b
+[Build complete]

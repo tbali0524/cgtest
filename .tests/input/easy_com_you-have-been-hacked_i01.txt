@@ -1,0 +1,10 @@
+2
+AeroCorp:9
+BioPulse:3
+6
+AeroCorp:ps:4350
+AeroCorp:bf:120
+AeroCorp:mi:95
+BioPulse:ps:320
+BioPulse:bf:740
+BioPulse:mi:1260

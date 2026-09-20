@@ -1,0 +1,3 @@
+cc -c src.c -o main.o
+link main.o util.o -o program
+[Build complete]

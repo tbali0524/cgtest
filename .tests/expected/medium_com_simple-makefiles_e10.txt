@@ -1,0 +1,4 @@
+cc -c io.c -o io.o
+make-plugin io.o net.o -o plugin
+ld core.o math.o io.o net.o plugin
+[Build complete]

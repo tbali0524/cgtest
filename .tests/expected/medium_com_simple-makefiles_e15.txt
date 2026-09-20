@@ -1,0 +1,14 @@
+cc -c hdr.h -o config.o
+redo hdr.h
+cc -c base.c -o base.o
+cc -c shared.h -o cache.o
+touch cache.o
+ar rcs lib.a base.o cache.o
+stamp util.o
+echo
+link lib.a util.o shared.dep -o app
+done
+setup config.o
+link lib.a util.o shared.dep -o tests
+done
+[Build complete]

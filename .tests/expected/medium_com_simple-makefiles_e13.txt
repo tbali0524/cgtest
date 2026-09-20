@@ -1,0 +1,8 @@
+gen generate
+cc -c algo.c -o algo.o
+ar rcs libcore.a algo.o parser.o
+ar rcs libcore.a logger.o
+cc -c render.c -o render.o
+ar rcs librender.a render.o
+ld librender.a libcore.a -o app
+[Build complete]

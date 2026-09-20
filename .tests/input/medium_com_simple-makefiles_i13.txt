@@ -1,0 +1,40 @@
+12
+sdk.h 100
+algo.c 300
+parser.c 100
+render.c 100
+logger.c 100
+algo.o 200
+parser.o 150
+render.o 80
+logger.o 200
+libcore.a 170
+librender.a 170
+config.h 90
+1
+app
+24
+# Top-level application build
+app: librender.a libcore.a
+	ld $^ -o $@
+# Core library: algo and parser modules
+libcore.a: algo.o parser.o
+	ar rcs $@ $^
+libcore.a: logger.o
+	ar rcs $@ $^
+# Render library
+librender.a: render.o
+	ar rcs $@ $^
+# Compile each module
+algo.o: algo.c sdk.h generate
+	cc -c $< -o $@
+parser.o: parser.c sdk.h
+	cc -c $< -o $@
+render.o: render.c sdk.h
+	cc -c $< -o $@
+logger.o: logger.c
+	cc -c $< -o $@
+config.h:
+	configure config.h
+generate:
+	gen generate

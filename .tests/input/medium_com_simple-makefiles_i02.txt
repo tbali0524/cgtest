@@ -1,0 +1,13 @@
+3
+src.c 150
+main.o 100
+util.o 200
+1
+program
+6
+program: main.o util.o
+	link $^ -o $@
+main.o: src.c
+	cc -c $< -o $@
+util.o: src.c
+	cc -c $< -o $@

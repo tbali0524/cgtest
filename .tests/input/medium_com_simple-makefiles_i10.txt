@@ -1,0 +1,25 @@
+8
+core.c 100
+math.c 100
+io.c 100
+net.c 100
+core.o 200
+math.o 200
+io.o 90
+net.o 200
+1
+app
+13
+# Partial rebuild test
+app: core.o math.o io.o net.o plugin
+	ld $^
+plugin: io.o net.o
+	make-plugin $^ -o $@
+core.o: core.c
+	cc -c $< -o $@
+math.o: math.c
+	cc -c $< -o $@
+io.o: io.c
+	cc -c $< -o $@
+net.o: net.c
+	cc -c $< -o $@

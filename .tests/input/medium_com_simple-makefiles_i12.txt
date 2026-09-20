@@ -1,0 +1,22 @@
+0
+1
+server
+18
+# Cycle detection test
+server: A B
+	start $<
+A: B C
+	build A
+B: D
+	build B
+C: D
+	build C
+D:
+	build D
+# Unreachable targets that form a cycle
+E: X
+	setup E
+X: Y
+	build X
+Y: E
+	build Y

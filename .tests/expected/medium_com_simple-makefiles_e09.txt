@@ -1,0 +1,5 @@
+cc -c part1.c -o part1.o
+stage1 part1.o
+stage2 part2.o header.h
+link lib
+[Build complete]

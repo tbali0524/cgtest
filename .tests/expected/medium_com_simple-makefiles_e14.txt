@@ -1,0 +1,11 @@
+fetch
+cc -c lib.c -o lib.o
+test lib.o
+cc -c src.c -o src.o
+link config.ini lib.o src.o -o app
+validate app
+generate docs
+index docs
+verify app docs
+publish release
+[Build complete]

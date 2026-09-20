@@ -1,0 +1,12 @@
+2
+main.c 100
+util.c 100
+1
+all
+6
+all: util.o main.o
+	gcc -o $@ $^
+util.o: util.c
+	gcc -c $< -o $@
+main.o: main.c
+	gcc -c $< -o $@

@@ -1,0 +1,8 @@
+MacroEdge:Blocked
+NanoVolt:Blocked
+OptimaCorp:Hacked
+ParagonSec:Blocked
+QuasarNet:Hacked
+RadiantDev:Blocked
+ApexShield:Hacked
+ByteGuard:Hacked

@@ -1,0 +1,16 @@
+4
+data.raw 100
+result-a 90
+result-b 100
+result-c 200
+4
+result-d result-a result-b result-c
+8
+result-a: data.raw
+	process $< -o $@
+result-b: data.raw
+	process $< -o $@
+result-c: data.raw
+	process $< -o $@
+result-d:
+	generate result-d

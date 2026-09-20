@@ -1,0 +1,6 @@
+AeroDynamics:Blocked
+BlueShift:Blocked
+CipherGate:Blocked
+DeepDive:Blocked
+ElevateIT:Blocked
+FrontierSys:Blocked

@@ -1,0 +1,4 @@
+gcc -c main.c -o main.o
+gcc -c util.c -o util.o
+gcc -o all util.o main.o
+[Build complete]

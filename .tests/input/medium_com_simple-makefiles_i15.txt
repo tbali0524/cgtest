@@ -1,0 +1,56 @@
+9
+hdr.h 100
+base.c 400
+data.cfg 100
+base.o 300
+shared.h 500
+cache.o 500
+lib.a 200
+util.o 150
+junk.bak 50
+2
+app tests
+43
+# KitchenSink: all-features build
+  #  whitespace comment
+ 
+
+tests : lib.a util.o shared.dep # all outputs
+        # Link everything together
+	link $^ -o $@
+	done
+app : lib.a util.o shared.dep
+	link $^ -o $@
+	done
+app: config.o # extra dep
+	setup $<
+# Note here that lib.a appears in multiple rules
+# including a rule with multiple targets
+lib.a: base.o cache.o
+	ar rcs $@ $^
+libb.a: base.o cache.o
+	ar rcs $@ $^
+lib.a: util.o
+	stamp $^
+base.o: base.c hdr.h
+	cc -c $< -o $@
+cache.o: shared.h hdr.h # compile
+	  cc -c $< -o $@ # compile
+
+# Case with no space after colon
+util.o:data.cfg hdr.h
+	cc -c $< -o $@
+config.o: hdr.h # extra module
+	  cc -c $< -o $@   
+config.o: hdr.h hdr.h
+	redo $<
+data.cfg:
+	  init data.cfg   
+init:
+	echo $^
+shared.dep: init
+cache.o: hdr.h
+	touch $@
+tag: # release tag
+garbage: junk.bak
+	delete $<
