@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # =========================================================================
       # Add missing languages, optionally matching the version at Codingame
 
       - name: Setup Clojure
-        uses: DeLaGuardo/setup-clojure@12.5
+        uses: DeLaGuardo/setup-clojure@13
         with:
           bb: latest
 
@@ -20,12 +20,12 @@ jobs:
         uses: dlang-community/setup-dlang@v1
         with:
           compiler: dmd-latest
-          # compiler: dmd-2.099.1
+          # compiler: dmd-2.113.0
 
       - name: Setup Lua
-        uses: leafo/gh-actions-lua@v10
+        uses: leafo/gh-actions-lua@v13
         # with:
-        #  luaVersion: "5.4.4" # omit for latest
+        #  luaVersion: "5.4.6" # omit for latest
 
       - name: Setup Pascal
         run: |
@@ -40,18 +40,18 @@ jobs:
         uses: dart-lang/setup-dart@v1
         with:
           sdk: stable
-          # sdk: 2.16.2
+          # sdk: 3.7.3
 
       - name: Setup Groovy
-        uses: wtfjoke/setup-groovy@v1
+        uses: wtfjoke/setup-groovy@v3
         with:
-          groovy-version: '3.x'
+          groovy-version: '5.x'
 
       - name: Setup Scala CLI
-        uses: VirtusLab/scala-cli-setup@main
+        uses: VirtusLab/scala-cli-setup@v1
         with:
           scala-cli-version: latest
-          # jvm: adopt:11
+          # jvm: adopt:21
           apps: scala scalac scala-cli
 
       # =========================================================================
@@ -72,25 +72,25 @@ jobs:
       #   run: echo "::add-matcher::${{ runner.tool_cache }}/php.json"
 
       # - name: Setup Java
-      #   uses: actions/setup-java@v3
+      #   uses: actions/setup-java@v6
       #   with:
       #       distribution: 'temurin'
-      #       java-version: '17'
+      #       java-version: '25'
 
       # - name: Setup Go
-      #   uses: actions/setup-go@v4
+      #   uses: actions/setup-go@v7
       #   with:
-      #     go-version: '1.18'
+      #     go-version: '1.27'
 
       # - name: Setup Python
-      #   uses: actions/setup-python@v4
+      #   uses: actions/setup-python@v7
       #   with:
-      #     python-version: '3.11'
+      #     python-version: '3.14'
 
       # - name: Setup Ruby
       #   uses: ruby/setup-ruby@v1
       #   with:
-      #     ruby-version: '3.1'
+      #     ruby-version: '3.4'
 
       # =========================================================================
 
@@ -110,7 +110,7 @@ jobs:
 
       - name: Upload cgtest logs
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cgtest-logs-all
           path: |

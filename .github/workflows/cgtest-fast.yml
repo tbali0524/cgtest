@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # This is not needed in the cgtest repo itself, but can be used in other code repos:
       #   - name: Download latest CGTest script from its repo
       #     run: curl -OL https://raw.githubusercontent.com/tbali0524/cgtest/main/cgtest.php
@@ -16,7 +16,7 @@ jobs:
         run: php cgtest.php --config=.cgtest.php --stats --lang=bash,c,c++,javascript,perl,php,python,ruby,rust
       - name: Upload cgtest logs
         if: ${{ failure() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cgtest-logs-fast
           path: |
