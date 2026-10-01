@@ -1,0 +1,76 @@
+Rubik's Cube stickers
+
+medium_com_rubiks-cube-stickers
+https://www.codingame.com/training/medium/rubiks-cube-stickers
+https://www.codingame.com/contribute/view/1492418eaaad7c901682fb9e162f2515aa339a
+
+A contribution by VilBoub
+Approved by Eng.Adnane,Ariko,Edjy
+
+Goal
+Your Rubik's Cube is scrambled and some of the stickers have come off!
+
+You still don't know how to solve a Rubik's Cube, but you'd like to stick the stickers back on correctly so that when you finally learn how, it will still be possible...
+
+The order of the colors of the solved cube is given in the first row.
+For example, W G R B O Y means :
+
+WWW
+WWW
+WWW
+---
+GGG|RRR|BBB|OOO
+GGG|RRR|BBB|OOO
+GGG|RRR|BBB|OOO
+---
+YYY
+YYY
+YYY
+
+Note: In a Rubik's Cube, the centers are linked; their order cannot be changed...
+
+Input
+Line 1 : 6 characters U F R B L D, separated by spaces, representing the colors of the Cube's faces in order: Up, Front, Right, Back, Left, Down.
+11 following lines : the colors of the stickers for each of the 27 small squares of the Rubik's Cube with a "." for the stickers that have been removed.
+
+Output
+11 lines : the colors of the stickers for each of the 27 small squares of the Rubik's Cube. (The Cube must not have rotated.)
+
+Constraints
+All Rubik's Cubes are guaranteed to be solvable, but you aren't required to solve them.
+U, F, R, B, L and D are all distinct.
+
+Example
+
+Input
+W G R B O Y
+ORO
+ROR
+ORO
+---
+WYW|BGB|YWY|GBG
+YWY|GBG|WYW|B.B
+WYW|BGB|YWY|GBG
+---
+ROR
+ORO
+ROR
+
+Output
+ORO
+ROR
+ORO
+---
+WYW|BGB|YWY|GBG
+YWY|GBG|WYW|BGB
+WYW|BGB|YWY|GBG
+---
+ROR
+ORO
+ROR
+
+Difficulty
+Medium
+
+Tags
+2D array, Conditions

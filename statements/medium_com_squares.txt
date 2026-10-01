@@ -86,7 +86,7 @@ Output
 5
 
 Difficulty
-Easy
+Medium
 
 Tags
 Intervals, Flood fill, Coordinates

@@ -1,0 +1,2 @@
+[CARD_REDACTED] is expired.
+[PAYMENT] Successfully processed transaction with card [CARD_REDACTED]

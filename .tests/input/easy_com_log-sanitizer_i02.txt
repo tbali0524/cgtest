@@ -1,0 +1,3 @@
+2
+1111-2222-3333-4444 is expired.
+[PAYMENT] Successfully processed transaction with card 4928-1029-3847-5610

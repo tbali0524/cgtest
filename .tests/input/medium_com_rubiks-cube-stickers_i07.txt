@@ -1,0 +1,12 @@
+C O D I N G
+...
+..I
+.ID
+---
+...|CDI|NNN|OOO
+D..|DDI|NGG|N.O
+DD.|III|NGO|GNO
+---
+GGG
+O.G
+.O.

@@ -1,0 +1,6 @@
+5
+GET /api/v1/user?Token=xyz987
+INFO Generating backup for token_99XqZ
+WARN Malformed request missing parameter token=
+DEBUG: Incoming parameter notatoken=abc12345 mapped to null.
+POST /check?token==invalid/token

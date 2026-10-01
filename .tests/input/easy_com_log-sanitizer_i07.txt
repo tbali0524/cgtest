@@ -1,0 +1,4 @@
+3
+POST /checkout?token=8291-3849-1029-4820
+POST /order?token=8291-3849-1029-4820-5731;done
+POST /batch?token=8291-8291-3849-1029-4820-5731-6842;completed
