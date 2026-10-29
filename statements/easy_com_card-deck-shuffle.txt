@@ -1,0 +1,99 @@
+Card Deck Shuffle
+
+easy_com_card-deck-shuffle
+https://www.codingame.com/training/easy/card-deck-shuffle
+https://www.codingame.com/contribute/view/154719de562d60582a816d7eac0e954714477b
+
+A contribution by Corpsman
+Approved by rc_D_Idaho,Chewys512,N3l
+
+Goal
+Your task is to find the correct starting order of a deck of cards so that, when the cards are dealt according to the procedure below, they appear in the requested pattern.
+
+The Challenge
+Arrange the cards in a deck so that, when they are dealt using the following procedure, they produce the given target pattern.
+
+Repeat the following steps until the deck is empty:
+
+1. Deal the top card.
+2. Move the new top card to the bottom of the deck.
+
+Card Notation
+
+The following mapping is used for suits:
+S = Spades
+H = Hearts
+D = Diamonds
+C = Clubs
+
+The following mapping is used for card values:
+1 = Ace
+7 = 7
+8 = 8
+9 = 9
+0 = 10
+J = Jack
+Q = Queen
+K = King
+
+Each card is represented by a two-character string.
+
+For example:
+S1 = Ace of Spades
+
+The cover image of this puzzle shows one valid solution.
+
+Example
+
+Consider the following starting deck, where the leftmost card represents the top of the deck:
+
+C7CQH8SJD9
+
+The following shows how the deck changes at each iteration:
+
+Iteration 1
+Dealt order so far: C7
+Remaining deck: H8SJD9CQ
+
+Iteration 2
+Dealt order so far: C7H8
+Remaining deck: D9CQSJ
+
+Iteration 3
+Dealt order so far: C7H8D9
+Remaining deck: SJCQ
+
+Iteration 4
+Dealt order so far: C7H8D9SJ
+Remaining deck: CQ
+
+Iteration 5
+Dealt order so far: C7H8D9SJCQ
+Remaining deck: empty
+
+Input
+Line 1: N — An integer, the number of cards in the deck.
+
+Line 2: D — A string, the desired dealing order of the N cards, separated by a space.
+
+Output
+Line 1: A string — the initial order of the deck of N cards, separated by a space, so that, when dealt according to the procedure, they produce the desired final order.
+
+Constraints
+1 ≤ N ≤ 200
+
+This puzzle uses a non-standard deck: cards may be repeated, and only the specified ranks are used.
+
+Example
+Input
+5
+C7 H8 D9 SJ CQ
+
+Output
+C7 CQ H8 SJ D9
+
+Difficulty
+Easy
+
+Tags
+Loops, Logic, Card games, Arrays

@@ -1,0 +1,47 @@
+Shopping carts
+
+easy_com_shopping-carts
+https://www.codingame.com/training/easy/shopping-carts
+https://www.codingame.com/contribute/view/154026f4c56967fa2dfb15ca7bbd572c9fe863
+
+A contribution by thomas.schuerger
+Approved by Sflubaduba,RunninglVlan,Dhinesh-karthik-M
+
+Goal
+A grocery store has n lines of available shopping carts next to each other. Each line is indexed from 1 to n. Line i has carts_i shopping carts. To balance out the lines, there are specific rules regarding how customers must take and return shopping carts. Shopping carts are taken and returned one at a time by customers.
+
+Taking a shopping cart requires taking it from the line with the largest number of shopping carts. If there are multiple such lines, it must be taken from the line with the smallest index.
+
+Returning a shopping cart requires returning it to the shortest line of shopping carts. If there are multiple shortest lines, return the shopping cart to the one with the largest index.
+
+Given n, the initial number of shopping carts carts_i in each shopping cart line and a string actions containing a sequence of action characters (T for take, R for return), output the resulting number of shopping carts carts_i in each shopping cart line after all actions have been performed from left to right. If at any time, a shopping cart shall be taken when none are left, output IMPOSSIBLE instead.
+
+Because the simulation can start from any initial condition, it is allowed to return carts that haven't been taken before.
+
+Input
+Line 1: The number of shopping cart lines n
+Line 2: The initial number of shopping carts carts_i in each shopping cart line from 1 to n, separated by spaces
+Line 3: The string actions, containing the sequence of T (take) and R (return) actions
+
+Output
+Line 1: The number of shopping carts in each line from 1 to n after executing all actions, separated by spaces, or IMPOSSIBLE if at any time, no carts are available and one shall be taken.
+
+Constraints
+0 < n <= 100
+0 <= carts_i <= 250
+0 < length(actions) <= 1000
+
+Example
+Input
+3
+1 2 3
+RTR
+
+Output
+2 2 3
+
+Difficulty
+Easy
+
+Tags
+Simulation
