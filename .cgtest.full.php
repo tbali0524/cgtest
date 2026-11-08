@@ -353,6 +353,7 @@ return [
                 'easy_com_how-high-up-does-the-beer-go',
                 'easy_com_how-time-flies',
                 'easy_com_hunger-games',
+                'easy_com_image-recovery-department',
                 'easy_com_in-stereo',
                 'easy_com_insert-to-string',
                 'easy_com_interstellar',
@@ -765,6 +766,7 @@ return [
                 'medium_com_mondrian-painting-strokes',
                 'medium_com_monthly-system',
                 'medium_com_mosaic',
+                'medium_com_moving-maze-part-1',
                 'medium_com_moving-target',
                 'medium_com_mrs--knuth---part-i',
                 'medium_com_mrs--knuth---part-ii',
@@ -1252,4 +1254,4 @@ return [
         ],
     ],
 ];
-// Note: last puzzle added on 26.10.29: 'medium_com_hunt-the-mumpus',
+// Note: last puzzle added on 26.11.06: 'easy_com_image-recovery-department',

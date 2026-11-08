@@ -1,0 +1,65 @@
+Moving Maze Part 1
+
+medium_com_moving-maze-part-1
+https://www.codingame.com/training/medium/moving-maze-part-1
+https://www.codingame.com/contribute/view/152541078689bfa05bb36d9956b0461f4c5e61
+
+A contribution by natehaze
+Approved by Dralliord,RunninglVlan,Yapix839
+
+Goal
+The maze is a 7x7 map of "tiles" that show your starting position, the location of a treasure, and symbols that represent limitations on how you can travel through the tiles as you search for the treasure.
+
+You will also be given an optional extra tile that you can push one time into the even numbered rows (from left or right) or columns (from top or bottom) to shift all tiles in that row or column by one and open the pathway to the treasure. If the extra tile is used it takes the position on the edge of the map where it is inserted, and every tile in that row/column is shifted until the tile on the opposite edge is pushed off and removed from the map. Rows and columns are numbered 1-7.
+
+Find the path to the treasure, either through the original maze or after making one shift with the optional tile.
+
+Each puzzle will have exactly one possible path to the treasure.
+
+Tile key:
+P: player's starting position
+T: treasure
++: a cell that can be entered and exited from any direction
+|: a cell that can only be entered and exited from top and bottom
+-: a cell that can only be entered and exited from left and right
+<: a cell that can be entered from top, bottom or right, but only exited to the left
+>: a cell that can be entered from top, bottom or left, but only exited to the right
+^: a cell that can be entered from bottom, left or right, but only exited to the top
+v: a cell that can be entered from top, left or right, but only exited to the bottom
+#: a blocked tile
+
+Input
+Lines 1-7: one row of tiles in the map.
+Line 8: the character representing your extra tile.
+
+Output
+7 lines: the final map of tiles showing the path to the treasure. Tiles not used in the path must be changed to #.
+
+Constraints
+There is exactly one P and one T in each case.
+
+Example
+Input
++^PvT-+
++v^v|v-
++|>#v|<
+>^<<^--
+->^#<<v
+<<^++^^
++-<->|+
+>
+
+Output
+##P>T##
+#######
+#######
+#######
+#######
+#######
+#######
+
+Difficulty
+Medium
+
+Tags
+Pathfinding, BFS
